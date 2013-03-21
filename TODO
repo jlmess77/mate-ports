@@ -1,3 +1,5 @@
+- Fork the marcusmerge.sh to matemerge.sh then make
+  it works with the github and other modify.
 - Update MATE to 1.5.x/1.6.x.
 - Remove packages that are no longer part of MATE.
   See here: http://wiki.mate-desktop.org/status:1.6#removed_packages
