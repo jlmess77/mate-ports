@@ -1,9 +1,12 @@
+- Document of how to have marcusmerge.sh works with GitHub until we
+  have matemerge.sh.
+
 - Fork the marcusmerge.sh to matemerge.sh then make it works with the
   github and other modify.
 
 - Update MATE to 1.5.x/1.6.x.
 
-- Remove packages that are no longer part of MATE.
+- Remove packages that are no longer part of MATE 1.6.
   See here: http://wiki.mate-desktop.org/status:1.6#removed_packages
 
 - Fix the conflict between gnome-panel and mate-panel if it still does
