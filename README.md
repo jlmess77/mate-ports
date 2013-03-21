@@ -11,7 +11,7 @@ Get mate-ports and install MATE (untest)
 -------------------------------
 You will need to make sure you have latest ports tree before you grab MATE. I am not going to give you a baby step of how to update FreeBSD ports tree or install other apps if your command line doesn't work. The FreeBSD Handbook (http://www.freebsd.org/) is a place where you need to visit and read. Anyway, let's get start.
 
-  # git clone https://github.com/jlmess77/mate-ports.git
+	# git clone https://github.com/jlmess77/mate-ports.git
 	# rm -rf mate-ports/.git
 
 I know that it's ugly to remove the ".git" directory, but you don't have to do it if you don't mind to put it in the /usr/ports/ by marcusmerge script. When I create a fork of marcusmerge script and it won't be copied in the /usr/ports/. Let's fetch marcusmerge script.
