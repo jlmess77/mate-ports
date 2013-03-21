@@ -31,3 +31,7 @@ It is recommend to unmerge the mate-ports first before you update your FreeBSD p
 	# sh ./marcusmerge -U
 
 After that, follow the same steps in the **"Get mate-ports and install MATE"**, but skip the fetch marcusmerge script part. I am not sure if you have to remove the mate-ports because of removed the ".git" directory. Hences for the README is untest and it's what in my mind.
+
+TODO
+----
+Please see the `TODO-mate` file.
