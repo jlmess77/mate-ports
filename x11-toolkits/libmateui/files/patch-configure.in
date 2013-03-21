@@ -1,0 +1,11 @@
+--- configure.in.orig	2012-07-16 12:19:50.000000000 -0500
++++ configure.in	2012-07-16 12:20:51.000000000 -0500
+@@ -236,7 +236,7 @@
+ 
+ 
+ dnl AC_SUBST GTK+ version
+-GTK_VERSION=`$PKG_CONFIG --modversion gtk+-$GTK_REQUIRED`
++GTK_VERSION=`$PKG_CONFIG --modversion gtk+-$GTK_API_VERSION`
+ AC_SUBST(GTK_VERSION)
+ 
+ AC_MSG_CHECKING([for gtk+ multihead support])

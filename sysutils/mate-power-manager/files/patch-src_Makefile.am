@@ -1,0 +1,42 @@
+--- src/Makefile.am.orig	2012-07-28 23:04:22.000000000 -0500
++++ src/Makefile.am	2012-07-28 23:06:03.000000000 -0500
+@@ -90,6 +90,7 @@
+ mate_power_backlight_helper_LDADD =			\
+ 	libgpmshared.a					\
+ 	$(GLIB_LIBS)					\
++	$(EXECINFO_LIBS)				\
+ 	-lm
+ 
+ mate_power_backlight_helper_CFLAGS =			\
+@@ -112,6 +113,7 @@
+ 	$(MATE_LIBS)					\
+ 	$(UNIQUE_LIBS)					\
+ 	$(DBUS_LIBS)					\
++	$(EXECINFO_LIBS)				\
+ 	-lm
+ 
+ mate_power_statistics_CFLAGS =				\
+@@ -133,6 +135,7 @@
+ 	$(UNIQUE_LIBS)					\
+ 	$(GPM_EXTRA_LIBS)				\
+ 	$(UPOWER_LIBS)					\
++	$(EXECINFO_LIBS)				\
+ 	-lm
+ 
+ mate_power_preferences_CFLAGS =			\
+@@ -190,6 +193,7 @@
+ 	$(LIBMATENOTIFY_LIBS)				\
+ 	$(GPM_EXTRA_LIBS)				\
+ 	$(UPOWER_LIBS)					\
++	$(EXECINFO_LIBS)				\
+ 	-lm
+ 
+ mate_power_manager_CFLAGS =				\
+@@ -258,6 +262,7 @@
+ 	$(X11_LIBS)						\
+ 	$(LIBMATENOTIFY_LIBS)				\
+ 	$(GPM_EXTRA_LIBS)				\
++	$(EXECINFO_LIBS)				\
+ 	-lm
+ 
+ mate_power_self_test_CFLAGS = -DEGG_TEST $(AM_CFLAGS) $(WARNINGFLAGS)

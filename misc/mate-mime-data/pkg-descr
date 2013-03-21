@@ -1,0 +1,4 @@
+The base MIME and Application database for MATE. It is meant to be accessed
+through the MIME functions in MateVFS.
+
+WWW: http://mate-desktop.org/

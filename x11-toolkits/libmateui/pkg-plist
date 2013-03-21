@@ -1,0 +1,340 @@
+include/libmateui-2.0/libmateui/libmateui.h
+include/libmateui-2.0/libmateui/mate-about.h
+include/libmateui-2.0/libmateui/mate-app-helper.h
+include/libmateui-2.0/libmateui/mate-app-util.h
+include/libmateui-2.0/libmateui/mate-app.h
+include/libmateui-2.0/libmateui/mate-appbar.h
+include/libmateui-2.0/libmateui/mate-authentication-manager.h
+include/libmateui-2.0/libmateui/mate-client.h
+include/libmateui-2.0/libmateui/mate-color-picker.h
+include/libmateui-2.0/libmateui/mate-dateedit.h
+include/libmateui-2.0/libmateui/mate-dialog-util.h
+include/libmateui-2.0/libmateui/mate-dialog.h
+include/libmateui-2.0/libmateui/mate-druid-page-edge.h
+include/libmateui-2.0/libmateui/mate-druid-page-standard.h
+include/libmateui-2.0/libmateui/mate-druid-page.h
+include/libmateui-2.0/libmateui/mate-druid.h
+include/libmateui-2.0/libmateui/mate-entry.h
+include/libmateui-2.0/libmateui/mate-file-entry.h
+include/libmateui-2.0/libmateui/mate-font-picker.h
+include/libmateui-2.0/libmateui/mate-help.h
+include/libmateui-2.0/libmateui/mate-href.h
+include/libmateui-2.0/libmateui/mate-ice.h
+include/libmateui-2.0/libmateui/mate-icon-entry.h
+include/libmateui-2.0/libmateui/mate-icon-item.h
+include/libmateui-2.0/libmateui/mate-icon-list.h
+include/libmateui-2.0/libmateui/mate-icon-lookup.h
+include/libmateui-2.0/libmateui/mate-icon-sel.h
+include/libmateui-2.0/libmateui/mate-icon-theme.h
+include/libmateui-2.0/libmateui/mate-mdi-child.h
+include/libmateui-2.0/libmateui/mate-mdi-generic-child.h
+include/libmateui-2.0/libmateui/mate-mdi-session.h
+include/libmateui-2.0/libmateui/mate-mdi.h
+include/libmateui-2.0/libmateui/mate-messagebox.h
+include/libmateui-2.0/libmateui/mate-password-dialog.h
+include/libmateui-2.0/libmateui/mate-pixmap-entry.h
+include/libmateui-2.0/libmateui/mate-pixmap.h
+include/libmateui-2.0/libmateui/mate-popup-menu.h
+include/libmateui-2.0/libmateui/mate-propertybox.h
+include/libmateui-2.0/libmateui/mate-scores.h
+include/libmateui-2.0/libmateui/mate-stock-icons.h
+include/libmateui-2.0/libmateui/mate-theme-parser.h
+include/libmateui-2.0/libmateui/mate-thumbnail.h
+include/libmateui-2.0/libmateui/mate-types.h
+include/libmateui-2.0/libmateui/mate-ui-init.h
+include/libmateui-2.0/libmateui/mate-uidefs.h
+include/libmateui-2.0/libmateui/mate-url.h
+include/libmateui-2.0/libmateui/mate-vfs-util.h
+include/libmateui-2.0/libmateui/mate-window-icon.h
+include/libmateui-2.0/libmateui/mate-window.h
+include/libmateui-2.0/libmateui/matetypebuiltins.h
+include/libmateui-2.0/mate.h
+lib/libglade/2.0/libmate.a
+lib/libglade/2.0/libmate.la
+lib/libglade/2.0/libmate.so
+lib/libmateui-2.a
+lib/libmateui-2.la
+lib/libmateui-2.so
+lib/libmateui-2.so.0
+libdata/pkgconfig/libmateui-2.0.pc
+%%DOCSDIR%%/MateAbout.html
+%%DOCSDIR%%/MateColorPicker.html
+%%DOCSDIR%%/MateDialog.html
+%%DOCSDIR%%/MateDruid.html
+%%DOCSDIR%%/MateDruidPage.html
+%%DOCSDIR%%/MateDruidPageStandard.html
+%%DOCSDIR%%/MateFileEntry.html
+%%DOCSDIR%%/MateHRef.html
+%%DOCSDIR%%/MateIconSelection.html
+%%DOCSDIR%%/MateIconTextItem.html
+%%DOCSDIR%%/MateMDIGenericChild.html
+%%DOCSDIR%%/MatePixmapEntry.html
+%%DOCSDIR%%/MatePropertyBox.html
+%%DOCSDIR%%/MateScores.html
+%%DOCSDIR%%/application-mgmt.html
+%%DOCSDIR%%/deprecated.html
+%%DOCSDIR%%/druids.html
+%%DOCSDIR%%/fixme.html
+%%DOCSDIR%%/home.png
+%%DOCSDIR%%/index.html
+%%DOCSDIR%%/index.sgml
+%%DOCSDIR%%/initialization.html
+%%DOCSDIR%%/ix01.html
+%%DOCSDIR%%/ix02.html
+%%DOCSDIR%%/ix03.html
+%%DOCSDIR%%/ix04.html
+%%DOCSDIR%%/ix05.html
+%%DOCSDIR%%/ix06.html
+%%DOCSDIR%%/ix07.html
+%%DOCSDIR%%/ix08.html
+%%DOCSDIR%%/ix09.html
+%%DOCSDIR%%/ix10.html
+%%DOCSDIR%%/left.png
+%%DOCSDIR%%/libmateui-MateAuthentication.html
+%%DOCSDIR%%/libmateui-MateIce.html
+%%DOCSDIR%%/libmateui-MateIconLookup.html
+%%DOCSDIR%%/libmateui-MateIconTheme.html
+%%DOCSDIR%%/libmateui-MateMultiScreen.html
+%%DOCSDIR%%/libmateui-MatePassword.html
+%%DOCSDIR%%/libmateui-MateThemeFile.html
+%%DOCSDIR%%/libmateui-MateThumbnail.html
+%%DOCSDIR%%/libmateui-mate-app-helper.html
+%%DOCSDIR%%/libmateui-mate-app-util.html
+%%DOCSDIR%%/libmateui-mate-app.html
+%%DOCSDIR%%/libmateui-mate-appbar.html
+%%DOCSDIR%%/libmateui-mate-client.html
+%%DOCSDIR%%/libmateui-mate-dateedit.html
+%%DOCSDIR%%/libmateui-mate-dialog-util.html
+%%DOCSDIR%%/libmateui-mate-druid-page-edge.html
+%%DOCSDIR%%/libmateui-mate-entry.html
+%%DOCSDIR%%/libmateui-mate-font-picker.html
+%%DOCSDIR%%/libmateui-mate-icon-entry.html
+%%DOCSDIR%%/libmateui-mate-icon-list.html
+%%DOCSDIR%%/libmateui-mate-mdi-child.html
+%%DOCSDIR%%/libmateui-mate-mdi-session.html
+%%DOCSDIR%%/libmateui-mate-mdi.html
+%%DOCSDIR%%/libmateui-mate-messagebox.html
+%%DOCSDIR%%/libmateui-mate-pixmap.html
+%%DOCSDIR%%/libmateui-mate-popup-menu.html
+%%DOCSDIR%%/libmateui-mate-stock-icons.html
+%%DOCSDIR%%/libmateui-mate-types.html
+%%DOCSDIR%%/libmateui-mate-ui-init.html
+%%DOCSDIR%%/libmateui-mate-uidefs.html
+%%DOCSDIR%%/libmateui-mate-vfs-util.html
+%%DOCSDIR%%/libmateui-mate-window-icon.html
+%%DOCSDIR%%/libmateui-mate-window.html
+%%DOCSDIR%%/libmateui-matetypebuiltins.html
+%%DOCSDIR%%/libmateui-objects.html
+%%DOCSDIR%%/libmateui.devhelp
+%%DOCSDIR%%/libmateui.devhelp2
+%%DOCSDIR%%/miscellaneous.html
+%%DOCSDIR%%/pt01.html
+%%DOCSDIR%%/right.png
+%%DOCSDIR%%/stock_attach.png
+%%DOCSDIR%%/stock_book_blue.png
+%%DOCSDIR%%/stock_book_green.png
+%%DOCSDIR%%/stock_book_open.png
+%%DOCSDIR%%/stock_book_red.png
+%%DOCSDIR%%/stock_book_yellow.png
+%%DOCSDIR%%/stock_line_in.png
+%%DOCSDIR%%/stock_mail.png
+%%DOCSDIR%%/stock_mail_compose.png
+%%DOCSDIR%%/stock_mail_forward.png
+%%DOCSDIR%%/stock_mail_receive.png
+%%DOCSDIR%%/stock_mail_reply.png
+%%DOCSDIR%%/stock_mail_send.png
+%%DOCSDIR%%/stock_menu_about.png
+%%DOCSDIR%%/stock_menu_blank.png
+%%DOCSDIR%%/stock_mic.png
+%%DOCSDIR%%/stock_midi.png
+%%DOCSDIR%%/stock_multiple_file.png
+%%DOCSDIR%%/stock_not.png
+%%DOCSDIR%%/stock_scores.png
+%%DOCSDIR%%/stock_table_borders.png
+%%DOCSDIR%%/stock_table_fill.png
+%%DOCSDIR%%/stock_text_bulleted_list.png
+%%DOCSDIR%%/stock_text_indent.png
+%%DOCSDIR%%/stock_text_numbered_list.png
+%%DOCSDIR%%/stock_text_unindent.png
+%%DOCSDIR%%/stock_timer.png
+%%DOCSDIR%%/stock_timer_stopped.png
+%%DOCSDIR%%/stock_trash.png
+%%DOCSDIR%%/stock_trash_full.png
+%%DOCSDIR%%/stock_volume.png
+%%DOCSDIR%%/style.css
+%%DOCSDIR%%/up.png
+share/locale/af/LC_MESSAGES/libmateui.mo
+share/locale/am/LC_MESSAGES/libmateui.mo
+share/locale/ar/LC_MESSAGES/libmateui.mo
+share/locale/as/LC_MESSAGES/libmateui.mo
+share/locale/ast/LC_MESSAGES/libmateui.mo
+share/locale/az/LC_MESSAGES/libmateui.mo
+share/locale/be/LC_MESSAGES/libmateui.mo
+share/locale/be@latin/LC_MESSAGES/libmateui.mo
+share/locale/bg/LC_MESSAGES/libmateui.mo
+share/locale/bn/LC_MESSAGES/libmateui.mo
+share/locale/bn_IN/LC_MESSAGES/libmateui.mo
+share/locale/br/LC_MESSAGES/libmateui.mo
+share/locale/bs/LC_MESSAGES/libmateui.mo
+share/locale/ca/LC_MESSAGES/libmateui.mo
+share/locale/ca@valencia/LC_MESSAGES/libmateui.mo
+share/locale/crh/LC_MESSAGES/libmateui.mo
+share/locale/cs/LC_MESSAGES/libmateui.mo
+share/locale/cy/LC_MESSAGES/libmateui.mo
+share/locale/da/LC_MESSAGES/libmateui.mo
+share/locale/de/LC_MESSAGES/libmateui.mo
+share/locale/dz/LC_MESSAGES/libmateui.mo
+share/locale/el/LC_MESSAGES/libmateui.mo
+share/locale/en@shaw/LC_MESSAGES/libmateui.mo
+share/locale/en_CA/LC_MESSAGES/libmateui.mo
+share/locale/en_GB/LC_MESSAGES/libmateui.mo
+share/locale/eo/LC_MESSAGES/libmateui.mo
+share/locale/es/LC_MESSAGES/libmateui.mo
+share/locale/et/LC_MESSAGES/libmateui.mo
+share/locale/eu/LC_MESSAGES/libmateui.mo
+share/locale/fa/LC_MESSAGES/libmateui.mo
+share/locale/fi/LC_MESSAGES/libmateui.mo
+share/locale/fr/LC_MESSAGES/libmateui.mo
+share/locale/fur/LC_MESSAGES/libmateui.mo
+share/locale/ga/LC_MESSAGES/libmateui.mo
+share/locale/gl/LC_MESSAGES/libmateui.mo
+share/locale/gu/LC_MESSAGES/libmateui.mo
+share/locale/he/LC_MESSAGES/libmateui.mo
+share/locale/hi/LC_MESSAGES/libmateui.mo
+share/locale/hr/LC_MESSAGES/libmateui.mo
+share/locale/hu/LC_MESSAGES/libmateui.mo
+share/locale/hy/LC_MESSAGES/libmateui.mo
+share/locale/id/LC_MESSAGES/libmateui.mo
+share/locale/is/LC_MESSAGES/libmateui.mo
+share/locale/it/LC_MESSAGES/libmateui.mo
+share/locale/ja/LC_MESSAGES/libmateui.mo
+share/locale/ka/LC_MESSAGES/libmateui.mo
+share/locale/kk/LC_MESSAGES/libmateui.mo
+share/locale/kn/LC_MESSAGES/libmateui.mo
+share/locale/ko/LC_MESSAGES/libmateui.mo
+share/locale/ku/LC_MESSAGES/libmateui.mo
+share/locale/la/LC_MESSAGES/libmateui.mo
+share/locale/li/LC_MESSAGES/libmateui.mo
+share/locale/lt/LC_MESSAGES/libmateui.mo
+share/locale/lv/LC_MESSAGES/libmateui.mo
+share/locale/mai/LC_MESSAGES/libmateui.mo
+share/locale/mg/LC_MESSAGES/libmateui.mo
+share/locale/mi/LC_MESSAGES/libmateui.mo
+share/locale/mk/LC_MESSAGES/libmateui.mo
+share/locale/ml/LC_MESSAGES/libmateui.mo
+share/locale/mn/LC_MESSAGES/libmateui.mo
+share/locale/mr/LC_MESSAGES/libmateui.mo
+share/locale/ms/LC_MESSAGES/libmateui.mo
+share/locale/nb/LC_MESSAGES/libmateui.mo
+share/locale/nds/LC_MESSAGES/libmateui.mo
+share/locale/ne/LC_MESSAGES/libmateui.mo
+share/locale/nl/LC_MESSAGES/libmateui.mo
+share/locale/nn/LC_MESSAGES/libmateui.mo
+share/locale/nso/LC_MESSAGES/libmateui.mo
+share/locale/oc/LC_MESSAGES/libmateui.mo
+share/locale/or/LC_MESSAGES/libmateui.mo
+share/locale/pa/LC_MESSAGES/libmateui.mo
+share/locale/pl/LC_MESSAGES/libmateui.mo
+share/locale/ps/LC_MESSAGES/libmateui.mo
+share/locale/pt/LC_MESSAGES/libmateui.mo
+share/locale/pt_BR/LC_MESSAGES/libmateui.mo
+share/locale/ro/LC_MESSAGES/libmateui.mo
+share/locale/ru/LC_MESSAGES/libmateui.mo
+share/locale/rw/LC_MESSAGES/libmateui.mo
+share/locale/si/LC_MESSAGES/libmateui.mo
+share/locale/sk/LC_MESSAGES/libmateui.mo
+share/locale/sl/LC_MESSAGES/libmateui.mo
+share/locale/sq/LC_MESSAGES/libmateui.mo
+share/locale/sr/LC_MESSAGES/libmateui.mo
+share/locale/sr@ije/LC_MESSAGES/libmateui.mo
+share/locale/sr@latin/LC_MESSAGES/libmateui.mo
+share/locale/sv/LC_MESSAGES/libmateui.mo
+share/locale/ta/LC_MESSAGES/libmateui.mo
+share/locale/te/LC_MESSAGES/libmateui.mo
+share/locale/th/LC_MESSAGES/libmateui.mo
+share/locale/tk/LC_MESSAGES/libmateui.mo
+share/locale/tr/LC_MESSAGES/libmateui.mo
+share/locale/tt/LC_MESSAGES/libmateui.mo
+share/locale/ug/LC_MESSAGES/libmateui.mo
+share/locale/uk/LC_MESSAGES/libmateui.mo
+share/locale/uz@cyrillic/LC_MESSAGES/libmateui.mo
+share/locale/vi/LC_MESSAGES/libmateui.mo
+share/locale/wa/LC_MESSAGES/libmateui.mo
+share/locale/xh/LC_MESSAGES/libmateui.mo
+share/locale/yi/LC_MESSAGES/libmateui.mo
+share/locale/zh_CN/LC_MESSAGES/libmateui.mo
+share/locale/zh_HK/LC_MESSAGES/libmateui.mo
+share/locale/zh_TW/LC_MESSAGES/libmateui.mo
+share/locale/zu/LC_MESSAGES/libmateui.mo
+share/pixmaps/mate-about-logo.png
+@dirrmtry share/locale/zu/LC_MESSAGES
+@dirrmtry share/locale/zu
+@dirrmtry share/locale/zh_HK/LC_MESSAGES
+@dirrmtry share/locale/zh_HK
+@dirrmtry share/locale/yi/LC_MESSAGES
+@dirrmtry share/locale/yi
+@dirrmtry share/locale/xh/LC_MESSAGES
+@dirrmtry share/locale/xh
+@dirrmtry share/locale/uz@cyrillic/LC_MESSAGES
+@dirrmtry share/locale/uz@cyrillic
+@dirrmtry share/locale/ug/LC_MESSAGES
+@dirrmtry share/locale/ug
+@dirrmtry share/locale/tt/LC_MESSAGES
+@dirrmtry share/locale/tt
+@dirrmtry share/locale/te/LC_MESSAGES
+@dirrmtry share/locale/te
+@dirrmtry share/locale/sr@latin/LC_MESSAGES
+@dirrmtry share/locale/sr@latin
+@dirrmtry share/locale/sr@ije/LC_MESSAGES
+@dirrmtry share/locale/sr@ije
+@dirrmtry share/locale/si/LC_MESSAGES
+@dirrmtry share/locale/si
+@dirrmtry share/locale/rw/LC_MESSAGES
+@dirrmtry share/locale/rw
+@dirrmtry share/locale/ps/LC_MESSAGES
+@dirrmtry share/locale/ps
+@dirrmtry share/locale/oc/LC_MESSAGES
+@dirrmtry share/locale/oc
+@dirrmtry share/locale/nso/LC_MESSAGES
+@dirrmtry share/locale/nso
+@dirrmtry share/locale/nds/LC_MESSAGES
+@dirrmtry share/locale/nds
+@dirrmtry share/locale/mr/LC_MESSAGES
+@dirrmtry share/locale/mr
+@dirrmtry share/locale/mi/LC_MESSAGES
+@dirrmtry share/locale/mi
+@dirrmtry share/locale/mg/LC_MESSAGES
+@dirrmtry share/locale/mg
+@dirrmtry share/locale/mai/LC_MESSAGES
+@dirrmtry share/locale/mai
+@dirrmtry share/locale/la/LC_MESSAGES
+@dirrmtry share/locale/la
+@dirrmtry share/locale/ku/LC_MESSAGES
+@dirrmtry share/locale/ku
+@dirrmtry share/locale/kk/LC_MESSAGES
+@dirrmtry share/locale/kk
+@dirrmtry share/locale/hy/LC_MESSAGES
+@dirrmtry share/locale/hy
+@dirrmtry share/locale/fur/LC_MESSAGES
+@dirrmtry share/locale/fur
+@dirrmtry share/locale/en@shaw/LC_MESSAGES
+@dirrmtry share/locale/en@shaw
+@dirrmtry share/locale/dz/LC_MESSAGES
+@dirrmtry share/locale/dz
+@dirrmtry share/locale/crh/LC_MESSAGES
+@dirrmtry share/locale/crh
+@dirrmtry share/locale/ca@valencia/LC_MESSAGES
+@dirrmtry share/locale/ca@valencia
+@dirrmtry share/locale/bn_IN/LC_MESSAGES
+@dirrmtry share/locale/bn_IN
+@dirrmtry share/locale/be@latin/LC_MESSAGES
+@dirrmtry share/locale/be@latin
+@dirrmtry share/locale/ast/LC_MESSAGES
+@dirrmtry share/locale/ast
+@dirrmtry share/locale/as/LC_MESSAGES
+@dirrmtry share/locale/as
+@dirrm %%DOCSDIR%%
+@dirrmtry lib/libglade/2.0
+@dirrmtry lib/libglade
+@dirrm include/libmateui-2.0/libmateui
+@dirrm include/libmateui-2.0

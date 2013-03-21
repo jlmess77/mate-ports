@@ -1,0 +1,356 @@
+bin/mate-screensaver
+bin/mate-screensaver-command
+bin/mate-screensaver-preferences
+%%PAM%%etc/pam.d/mate-screensaver
+etc/xdg/autostart/mate-screensaver.desktop
+etc/xdg/menus/mate-screensavers.menu
+libdata/pkgconfig/mate-screensaver.pc
+libexec/mate-screensaver-dialog
+libexec/mate-screensaver-gl-helper
+libexec/mate-screensaver/floaters
+libexec/mate-screensaver/popsquares
+libexec/mate-screensaver/slideshow
+share/applications/mate-screensaver-preferences.desktop
+share/applications/screensavers/abstractile.desktop
+share/applications/screensavers/anemone.desktop
+share/applications/screensavers/anemotaxis.desktop
+share/applications/screensavers/antinspect.desktop
+share/applications/screensavers/antmaze.desktop
+share/applications/screensavers/antspotlight.desktop
+share/applications/screensavers/apollonian.desktop
+share/applications/screensavers/apple2.desktop
+share/applications/screensavers/atlantis.desktop
+share/applications/screensavers/attraction.desktop
+share/applications/screensavers/atunnel.desktop
+share/applications/screensavers/barcode.desktop
+share/applications/screensavers/blaster.desktop
+share/applications/screensavers/blinkbox.desktop
+share/applications/screensavers/blitspin.desktop
+share/applications/screensavers/blocktube.desktop
+share/applications/screensavers/boing.desktop
+share/applications/screensavers/bouboule.desktop
+share/applications/screensavers/bouncingcow.desktop
+share/applications/screensavers/boxed.desktop
+share/applications/screensavers/boxfit.desktop
+share/applications/screensavers/braid.desktop
+share/applications/screensavers/bsod.desktop
+share/applications/screensavers/bubble3d.desktop
+share/applications/screensavers/bumps.desktop
+share/applications/screensavers/cage.desktop
+share/applications/screensavers/carousel.desktop
+share/applications/screensavers/ccurve.desktop
+share/applications/screensavers/celtic.desktop
+share/applications/screensavers/circuit.desktop
+share/applications/screensavers/cloudlife.desktop
+share/applications/screensavers/compass.desktop
+share/applications/screensavers/coral.desktop
+share/applications/screensavers/cosmos-slideshow.desktop
+share/applications/screensavers/crackberg.desktop
+share/applications/screensavers/crystal.desktop
+share/applications/screensavers/cube21.desktop
+share/applications/screensavers/cubenetic.desktop
+share/applications/screensavers/cubestorm.desktop
+share/applications/screensavers/cubicgrid.desktop
+share/applications/screensavers/cwaves.desktop
+share/applications/screensavers/cynosure.desktop
+share/applications/screensavers/dangerball.desktop
+share/applications/screensavers/decayscreen.desktop
+share/applications/screensavers/deco.desktop
+share/applications/screensavers/deluxe.desktop
+share/applications/screensavers/demon.desktop
+share/applications/screensavers/discrete.desktop
+share/applications/screensavers/distort.desktop
+share/applications/screensavers/drift.desktop
+share/applications/screensavers/endgame.desktop
+share/applications/screensavers/engine.desktop
+share/applications/screensavers/epicycle.desktop
+share/applications/screensavers/eruption.desktop
+share/applications/screensavers/euler2d.desktop
+share/applications/screensavers/extrusion.desktop
+share/applications/screensavers/fadeplot.desktop
+share/applications/screensavers/fiberlamp.desktop
+share/applications/screensavers/fireworkx.desktop
+share/applications/screensavers/flame.desktop
+share/applications/screensavers/flipflop.desktop
+share/applications/screensavers/flipscreen3d.desktop
+share/applications/screensavers/fliptext.desktop
+share/applications/screensavers/flow.desktop
+share/applications/screensavers/fluidballs.desktop
+share/applications/screensavers/flurry.desktop
+share/applications/screensavers/flyingtoasters.desktop
+share/applications/screensavers/fontglide.desktop
+share/applications/screensavers/footlogo-floaters.desktop
+share/applications/screensavers/fuzzyflakes.desktop
+share/applications/screensavers/galaxy.desktop
+share/applications/screensavers/gears.desktop
+share/applications/screensavers/gflux.desktop
+share/applications/screensavers/glblur.desktop
+share/applications/screensavers/glcells.desktop
+share/applications/screensavers/gleidescope.desktop
+share/applications/screensavers/glhanoi.desktop
+share/applications/screensavers/glknots.desktop
+share/applications/screensavers/glmatrix.desktop
+share/applications/screensavers/glplanet.desktop
+share/applications/screensavers/glschool.desktop
+share/applications/screensavers/glslideshow.desktop
+share/applications/screensavers/glsnake.desktop
+share/applications/screensavers/gltext.desktop
+share/applications/screensavers/goop.desktop
+share/applications/screensavers/grav.desktop
+share/applications/screensavers/greynetic.desktop
+share/applications/screensavers/halftone.desktop
+share/applications/screensavers/halo.desktop
+share/applications/screensavers/helix.desktop
+share/applications/screensavers/hopalong.desktop
+share/applications/screensavers/hypertorus.desktop
+share/applications/screensavers/hypnowheel.desktop
+share/applications/screensavers/ifs.desktop
+share/applications/screensavers/imsmap.desktop
+share/applications/screensavers/interaggregate.desktop
+share/applications/screensavers/interference.desktop
+share/applications/screensavers/intermomentary.desktop
+share/applications/screensavers/jigglypuff.desktop
+share/applications/screensavers/jigsaw.desktop
+share/applications/screensavers/juggler3d.desktop
+share/applications/screensavers/julia.desktop
+share/applications/screensavers/kaleidescope.desktop
+share/applications/screensavers/klein.desktop
+share/applications/screensavers/kumppa.desktop
+share/applications/screensavers/lament.desktop
+share/applications/screensavers/lavalite.desktop
+share/applications/screensavers/lcdscrub.desktop
+share/applications/screensavers/lockward.desktop
+share/applications/screensavers/loop.desktop
+share/applications/screensavers/m6502.desktop
+share/applications/screensavers/maze.desktop
+share/applications/screensavers/memscroller.desktop
+share/applications/screensavers/menger.desktop
+share/applications/screensavers/metaballs.desktop
+share/applications/screensavers/mirrorblob.desktop
+share/applications/screensavers/moebius.desktop
+share/applications/screensavers/moebiusgears.desktop
+share/applications/screensavers/moire.desktop
+share/applications/screensavers/moire2.desktop
+share/applications/screensavers/molecule.desktop
+share/applications/screensavers/morph3d.desktop
+share/applications/screensavers/mountain.desktop
+share/applications/screensavers/munch.desktop
+share/applications/screensavers/nerverot.desktop
+share/applications/screensavers/noof.desktop
+share/applications/screensavers/noseguy.desktop
+share/applications/screensavers/pacman.desktop
+share/applications/screensavers/pedal.desktop
+share/applications/screensavers/penetrate.desktop
+share/applications/screensavers/penrose.desktop
+share/applications/screensavers/personal-slideshow.desktop
+share/applications/screensavers/petri.desktop
+share/applications/screensavers/phosphor.desktop
+share/applications/screensavers/photopile.desktop
+share/applications/screensavers/piecewise.desktop
+share/applications/screensavers/pinion.desktop
+share/applications/screensavers/pipes.desktop
+share/applications/screensavers/polyhedra.desktop
+share/applications/screensavers/polyominoes.desktop
+share/applications/screensavers/polytopes.desktop
+share/applications/screensavers/pong.desktop
+share/applications/screensavers/popsquares.desktop
+share/applications/screensavers/providence.desktop
+share/applications/screensavers/pulsar.desktop
+share/applications/screensavers/pyro.desktop
+share/applications/screensavers/qix.desktop
+share/applications/screensavers/queens.desktop
+share/applications/screensavers/rd-bomb.desktop
+share/applications/screensavers/ripples.desktop
+share/applications/screensavers/rocks.desktop
+share/applications/screensavers/rorschach.desktop
+share/applications/screensavers/rotzoomer.desktop
+share/applications/screensavers/rubik.desktop
+share/applications/screensavers/rubikblocks.desktop
+share/applications/screensavers/sballs.desktop
+share/applications/screensavers/shadebobs.desktop
+share/applications/screensavers/sierpinski.desktop
+share/applications/screensavers/sierpinski3d.desktop
+share/applications/screensavers/skytentacles.desktop
+share/applications/screensavers/slidescreen.desktop
+share/applications/screensavers/slip.desktop
+share/applications/screensavers/sonar.desktop
+share/applications/screensavers/speedmine.desktop
+share/applications/screensavers/spheremonics.desktop
+share/applications/screensavers/spotlight.desktop
+share/applications/screensavers/sproingies.desktop
+share/applications/screensavers/squiral.desktop
+share/applications/screensavers/stairs.desktop
+share/applications/screensavers/starfish.desktop
+share/applications/screensavers/starwars.desktop
+share/applications/screensavers/stonerview.desktop
+share/applications/screensavers/strange.desktop
+share/applications/screensavers/substrate.desktop
+share/applications/screensavers/superquadrics.desktop
+share/applications/screensavers/surfaces.desktop
+share/applications/screensavers/swirl.desktop
+share/applications/screensavers/tangram.desktop
+share/applications/screensavers/thornbird.desktop
+share/applications/screensavers/timetunnel.desktop
+share/applications/screensavers/topblock.desktop
+share/applications/screensavers/triangle.desktop
+share/applications/screensavers/truchet.desktop
+share/applications/screensavers/twang.desktop
+share/applications/screensavers/vermiculate.desktop
+share/applications/screensavers/vidwhacker.desktop
+share/applications/screensavers/voronoi.desktop
+share/applications/screensavers/wander.desktop
+share/applications/screensavers/webcollage.desktop
+share/applications/screensavers/whirlwindwarp.desktop
+share/applications/screensavers/wormhole.desktop
+share/applications/screensavers/xanalogtv.desktop
+share/applications/screensavers/xflame.desktop
+share/applications/screensavers/xjack.desktop
+share/applications/screensavers/xlyap.desktop
+share/applications/screensavers/xmatrix.desktop
+share/applications/screensavers/xrayswarm.desktop
+share/applications/screensavers/xspirograph.desktop
+share/applications/screensavers/zoom.desktop
+share/backgrounds/cosmos/background-1.xml
+share/backgrounds/cosmos/blue-marble-west.jpg
+share/backgrounds/cosmos/cloud.jpg
+share/backgrounds/cosmos/comet.jpg
+share/backgrounds/cosmos/earth-horizon.jpg
+share/backgrounds/cosmos/galaxy-ngc3370.jpg
+share/backgrounds/cosmos/helix-nebula.jpg
+share/backgrounds/cosmos/jupiter.jpg
+share/backgrounds/cosmos/sombrero.jpg
+share/backgrounds/cosmos/whirlpool.jpg
+share/dbus-1/services/org.mate.ScreenSaver.service
+share/desktop-directories/mate-screensaver.directory
+share/locale/ar/LC_MESSAGES/mate-screensaver.mo
+share/locale/as/LC_MESSAGES/mate-screensaver.mo
+share/locale/ast/LC_MESSAGES/mate-screensaver.mo
+share/locale/be/LC_MESSAGES/mate-screensaver.mo
+share/locale/be@latin/LC_MESSAGES/mate-screensaver.mo
+share/locale/bg/LC_MESSAGES/mate-screensaver.mo
+share/locale/bn/LC_MESSAGES/mate-screensaver.mo
+share/locale/bn_IN/LC_MESSAGES/mate-screensaver.mo
+share/locale/br/LC_MESSAGES/mate-screensaver.mo
+share/locale/ca/LC_MESSAGES/mate-screensaver.mo
+share/locale/ca@valencia/LC_MESSAGES/mate-screensaver.mo
+share/locale/crh/LC_MESSAGES/mate-screensaver.mo
+share/locale/cs/LC_MESSAGES/mate-screensaver.mo
+share/locale/cy/LC_MESSAGES/mate-screensaver.mo
+share/locale/da/LC_MESSAGES/mate-screensaver.mo
+share/locale/de/LC_MESSAGES/mate-screensaver.mo
+share/locale/dz/LC_MESSAGES/mate-screensaver.mo
+share/locale/el/LC_MESSAGES/mate-screensaver.mo
+share/locale/en@shaw/LC_MESSAGES/mate-screensaver.mo
+share/locale/en_CA/LC_MESSAGES/mate-screensaver.mo
+share/locale/en_GB/LC_MESSAGES/mate-screensaver.mo
+share/locale/es/LC_MESSAGES/mate-screensaver.mo
+share/locale/et/LC_MESSAGES/mate-screensaver.mo
+share/locale/eu/LC_MESSAGES/mate-screensaver.mo
+share/locale/fa/LC_MESSAGES/mate-screensaver.mo
+share/locale/fi/LC_MESSAGES/mate-screensaver.mo
+share/locale/fr/LC_MESSAGES/mate-screensaver.mo
+share/locale/ga/LC_MESSAGES/mate-screensaver.mo
+share/locale/gl/LC_MESSAGES/mate-screensaver.mo
+share/locale/gu/LC_MESSAGES/mate-screensaver.mo
+share/locale/he/LC_MESSAGES/mate-screensaver.mo
+share/locale/hi/LC_MESSAGES/mate-screensaver.mo
+share/locale/hr/LC_MESSAGES/mate-screensaver.mo
+share/locale/hu/LC_MESSAGES/mate-screensaver.mo
+share/locale/id/LC_MESSAGES/mate-screensaver.mo
+share/locale/is/LC_MESSAGES/mate-screensaver.mo
+share/locale/it/LC_MESSAGES/mate-screensaver.mo
+share/locale/ja/LC_MESSAGES/mate-screensaver.mo
+share/locale/ka/LC_MESSAGES/mate-screensaver.mo
+share/locale/kn/LC_MESSAGES/mate-screensaver.mo
+share/locale/ko/LC_MESSAGES/mate-screensaver.mo
+share/locale/ku/LC_MESSAGES/mate-screensaver.mo
+share/locale/lt/LC_MESSAGES/mate-screensaver.mo
+share/locale/lv/LC_MESSAGES/mate-screensaver.mo
+share/locale/mai/LC_MESSAGES/mate-screensaver.mo
+share/locale/mg/LC_MESSAGES/mate-screensaver.mo
+share/locale/mk/LC_MESSAGES/mate-screensaver.mo
+share/locale/ml/LC_MESSAGES/mate-screensaver.mo
+share/locale/mn/LC_MESSAGES/mate-screensaver.mo
+share/locale/mr/LC_MESSAGES/mate-screensaver.mo
+share/locale/nb/LC_MESSAGES/mate-screensaver.mo
+share/locale/nds/LC_MESSAGES/mate-screensaver.mo
+share/locale/ne/LC_MESSAGES/mate-screensaver.mo
+share/locale/nl/LC_MESSAGES/mate-screensaver.mo
+share/locale/nn/LC_MESSAGES/mate-screensaver.mo
+share/locale/oc/LC_MESSAGES/mate-screensaver.mo
+share/locale/or/LC_MESSAGES/mate-screensaver.mo
+share/locale/pa/LC_MESSAGES/mate-screensaver.mo
+share/locale/pl/LC_MESSAGES/mate-screensaver.mo
+share/locale/ps/LC_MESSAGES/mate-screensaver.mo
+share/locale/pt/LC_MESSAGES/mate-screensaver.mo
+share/locale/pt_BR/LC_MESSAGES/mate-screensaver.mo
+share/locale/ro/LC_MESSAGES/mate-screensaver.mo
+share/locale/ru/LC_MESSAGES/mate-screensaver.mo
+share/locale/si/LC_MESSAGES/mate-screensaver.mo
+share/locale/sk/LC_MESSAGES/mate-screensaver.mo
+share/locale/sl/LC_MESSAGES/mate-screensaver.mo
+share/locale/sq/LC_MESSAGES/mate-screensaver.mo
+share/locale/sr/LC_MESSAGES/mate-screensaver.mo
+share/locale/sr@latin/LC_MESSAGES/mate-screensaver.mo
+share/locale/sv/LC_MESSAGES/mate-screensaver.mo
+share/locale/ta/LC_MESSAGES/mate-screensaver.mo
+share/locale/te/LC_MESSAGES/mate-screensaver.mo
+share/locale/th/LC_MESSAGES/mate-screensaver.mo
+share/locale/tr/LC_MESSAGES/mate-screensaver.mo
+share/locale/uk/LC_MESSAGES/mate-screensaver.mo
+share/locale/vi/LC_MESSAGES/mate-screensaver.mo
+share/locale/zh_CN/LC_MESSAGES/mate-screensaver.mo
+share/locale/zh_HK/LC_MESSAGES/mate-screensaver.mo
+share/locale/zh_TW/LC_MESSAGES/mate-screensaver.mo
+share/mate-background-properties/cosmos.xml
+%%DATADIR%%/lock-dialog-default.ui
+%%DATADIR%%/mate-screensaver-preferences.ui
+share/pixmaps/mate-logo-white.svg
+@dirrm %%DATADIR%%
+@dirrmtry share/mate-background-properties
+@dirrmtry share/locale/zh_HK/LC_MESSAGES
+@dirrmtry share/locale/zh_HK
+@dirrmtry share/locale/te/LC_MESSAGES
+@dirrmtry share/locale/te
+@dirrmtry share/locale/sr@latin/LC_MESSAGES
+@dirrmtry share/locale/sr@latin
+@dirrmtry share/locale/si/LC_MESSAGES
+@dirrmtry share/locale/si
+@dirrmtry share/locale/ps/LC_MESSAGES
+@dirrmtry share/locale/ps
+@dirrmtry share/locale/oc/LC_MESSAGES
+@dirrmtry share/locale/oc
+@dirrmtry share/locale/nds/LC_MESSAGES
+@dirrmtry share/locale/nds
+@dirrmtry share/locale/mr/LC_MESSAGES
+@dirrmtry share/locale/mr
+@dirrmtry share/locale/mg/LC_MESSAGES
+@dirrmtry share/locale/mg
+@dirrmtry share/locale/mai/LC_MESSAGES
+@dirrmtry share/locale/mai
+@dirrmtry share/locale/ku/LC_MESSAGES
+@dirrmtry share/locale/ku
+@dirrmtry share/locale/en@shaw/LC_MESSAGES
+@dirrmtry share/locale/en@shaw
+@dirrmtry share/locale/dz/LC_MESSAGES
+@dirrmtry share/locale/dz
+@dirrmtry share/locale/crh/LC_MESSAGES
+@dirrmtry share/locale/crh
+@dirrmtry share/locale/ca@valencia/LC_MESSAGES
+@dirrmtry share/locale/ca@valencia
+@dirrmtry share/locale/bn_IN/LC_MESSAGES
+@dirrmtry share/locale/bn_IN
+@dirrmtry share/locale/be@latin/LC_MESSAGES
+@dirrmtry share/locale/be@latin
+@dirrmtry share/locale/ast/LC_MESSAGES
+@dirrmtry share/locale/ast
+@dirrmtry share/locale/as/LC_MESSAGES
+@dirrmtry share/locale/as
+@dirrmtry share/desktop-directories
+@dirrm share/backgrounds/cosmos
+@dirrm share/backgrounds
+@dirrm share/applications/screensavers
+@dirrmtry share/applications
+@dirrm libexec/mate-screensaver
+@dirrmtry etc/xdg/menus
+@dirrm etc/xdg/autostart

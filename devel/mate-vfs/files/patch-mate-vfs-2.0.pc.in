@@ -1,0 +1,9 @@
+--- mate-vfs-2.0.pc.in.orig	Tue Jul 11 07:31:58 2006
++++ mate-vfs-2.0.pc.in	Tue Jul 11 09:33:47 2006
+@@ -8,5 +8,5 @@
+ Description: The MATE virtual file-system libraries
+ Version: @VERSION@
+ Requires: mateconf-2.0 gthread-2.0 gmodule-no-export-2.0 gobject-2.0
+-Libs: -L${libdir} -lmatevfs-2
++Libs: -L${libdir} -lmatevfs-2 @PTHREAD_LIB@
+ Cflags: -I${includedir}/mate-vfs-2.0 -I${libdir}/mate-vfs-2.0/include

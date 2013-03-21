@@ -1,0 +1,101 @@
+bin/matecorba-idl-2
+bin/matecorba-ior-decode-2
+bin/matecorba-linc-cleanup-sockets
+bin/matecorba-typelib-dump
+bin/matecorba2-config
+@unexec if cmp -s %D/etc/matecorbarc.default %D/etc/matecorbarc; then rm -f %D/etc/matecorbarc; fi
+etc/matecorbarc.default
+@exec if [ ! -f %D/etc/matecorbarc ] ; then cp -p %D/%F %B/matecorbarc; fi
+include/matecorba-2.0/MateCORBAservices/CosNaming.h
+include/matecorba-2.0/MateCORBAservices/CosNaming_impl.h
+include/matecorba-2.0/MateCORBAservices/matecorba-imodule.h
+include/matecorba-2.0/matecorba-idl/matecorba-idl-backend.h
+include/matecorba-2.0/matecorba/dynamic/dynamic-defs.h
+include/matecorba-2.0/matecorba/dynamic/dynamic.h
+include/matecorba-2.0/matecorba/matecorba-config.h
+include/matecorba-2.0/matecorba/matecorba-types.h
+include/matecorba-2.0/matecorba/matecorba.h
+include/matecorba-2.0/matecorba/orb-core/allocators.h
+include/matecorba-2.0/matecorba/orb-core/corba-any-type.h
+include/matecorba-2.0/matecorba/orb-core/corba-any.h
+include/matecorba-2.0/matecorba/orb-core/corba-context-type.h
+include/matecorba-2.0/matecorba/orb-core/corba-context.h
+include/matecorba-2.0/matecorba/orb-core/corba-defs.h
+include/matecorba-2.0/matecorba/orb-core/corba-environment-type.h
+include/matecorba-2.0/matecorba/orb-core/corba-environment.h
+include/matecorba-2.0/matecorba/orb-core/corba-nvlist.h
+include/matecorba-2.0/matecorba/orb-core/corba-object-type.h
+include/matecorba-2.0/matecorba/orb-core/corba-object.h
+include/matecorba-2.0/matecorba/orb-core/corba-orb-type.h
+include/matecorba-2.0/matecorba/orb-core/corba-orb.h
+include/matecorba-2.0/matecorba/orb-core/corba-pobj.h
+include/matecorba-2.0/matecorba/orb-core/corba-policy-type.h
+include/matecorba-2.0/matecorba/orb-core/corba-string.h
+include/matecorba-2.0/matecorba/orb-core/corba-typecode-type.h
+include/matecorba-2.0/matecorba/orb-core/corba-typecode.h
+include/matecorba-2.0/matecorba/orb-core/iop-defs.h
+include/matecorba-2.0/matecorba/orb-core/matecorba-interface.h
+include/matecorba-2.0/matecorba/orb-core/matecorba-object.h
+include/matecorba-2.0/matecorba/orb-core/matecorba-small.h
+include/matecorba-2.0/matecorba/orb-core/orb-core-types.h
+include/matecorba-2.0/matecorba/orb-core/orb-core.h
+include/matecorba-2.0/matecorba/orb-core/orb-types.h
+include/matecorba-2.0/matecorba/poa/matecorba-adaptor.h
+include/matecorba-2.0/matecorba/poa/poa-basics.h
+include/matecorba-2.0/matecorba/poa/poa-defs.h
+include/matecorba-2.0/matecorba/poa/poa-policy.h
+include/matecorba-2.0/matecorba/poa/poa-types.h
+include/matecorba-2.0/matecorba/poa/poa.h
+include/matecorba-2.0/matecorba/poa/portableserver-current-type.h
+include/matecorba-2.0/matecorba/poa/portableserver-poa-type.h
+include/matecorba-2.0/matecorba/util/basic_types.h
+include/matecorba-2.0/matecorba/util/matecorba-genrand.h
+include/matecorba-2.0/matecorba/util/matecorba-util.h
+lib/libMateCORBA-2.a
+lib/libMateCORBA-2.la
+lib/libMateCORBA-2.so
+lib/libMateCORBA-2.so.0
+lib/libMateCORBA-imodule-2.a
+lib/libMateCORBA-imodule-2.la
+lib/libMateCORBA-imodule-2.so
+lib/libMateCORBA-imodule-2.so.0
+lib/libMateCORBACosNaming-2.a
+lib/libMateCORBACosNaming-2.la
+lib/libMateCORBACosNaming-2.so
+lib/libMateCORBACosNaming-2.so.0
+lib/libname-matecorba-server-2.a
+lib/matecorba-2.0/Everything_module.a
+lib/matecorba-2.0/Everything_module.la
+lib/matecorba-2.0/Everything_module.so
+libdata/pkgconfig/MateCORBA-2.0.pc
+libdata/pkgconfig/MateCORBA-CosNaming-2.0.pc
+libdata/pkgconfig/MateCORBA-idl-2.0.pc
+libdata/pkgconfig/MateCORBA-imodule-2.0.pc
+share/aclocal/MateCORBA2.m4
+share/doc/MateCORBA2/MateCORBA2-matecorba2-allocators.html
+share/doc/MateCORBA2/MateCORBA2-matecorba2-small.html
+share/doc/MateCORBA2/MateCORBA2.devhelp
+share/doc/MateCORBA2/MateCORBA2.devhelp2
+share/doc/MateCORBA2/general.html
+share/doc/MateCORBA2/home.png
+share/doc/MateCORBA2/index.html
+share/doc/MateCORBA2/index.sgml
+share/doc/MateCORBA2/left.png
+share/doc/MateCORBA2/right.png
+share/doc/MateCORBA2/style.css
+share/doc/MateCORBA2/up.png
+share/idl/matecorba-2.0/CosNaming.idl
+@dirrm share/idl/matecorba-2.0
+@dirrmtry share/idl
+@dirrm share/doc/MateCORBA2
+@exec /bin/mkdir -p %D/lib/matecorba-2.0/idl-backends
+@dirrmtry lib/matecorba-2.0/idl-backends
+@dirrmtry lib/matecorba-2.0
+@dirrm include/matecorba-2.0/matecorba/util
+@dirrm include/matecorba-2.0/matecorba/poa
+@dirrm include/matecorba-2.0/matecorba/orb-core
+@dirrm include/matecorba-2.0/matecorba/dynamic
+@dirrm include/matecorba-2.0/matecorba-idl
+@dirrm include/matecorba-2.0/matecorba
+@dirrm include/matecorba-2.0/MateCORBAservices
+@dirrm include/matecorba-2.0

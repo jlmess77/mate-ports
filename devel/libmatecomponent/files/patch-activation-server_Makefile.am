@@ -1,0 +1,11 @@
+--- activation-server/Makefile.am.orig	2012-07-05 15:29:51.000000000 -0500
++++ activation-server/Makefile.am	2012-07-05 15:32:37.000000000 -0500
+@@ -12,7 +12,7 @@
+ 	-I$(top_builddir)/matecomponent-activation	\
+ 	-I$(top_srcdir)/matecomponent-activation	\
+ 	-DPREFIX=\""$(prefix)"\"		\
+-	-DSERVERINFODIR=\"$(libdir)/matecomponent/servers\" \
++	-DSERVERINFODIR=\"$(prefix)/libdata/matecomponent/servers:${LOCALBASE}/libdata/matecomponent/servers\" \
+         -DSERVER_LOCALEDIR=\""${prefix}/${DATADIRNAME}/locale"\" \
+ 	$(SERVER_CFLAGS)			\
+ 	$(WARN_CFLAGS)				\

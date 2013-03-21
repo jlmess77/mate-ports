@@ -1,0 +1,315 @@
+bin/matevfs-cat
+bin/matevfs-copy
+bin/matevfs-df
+bin/matevfs-info
+bin/matevfs-ls
+bin/matevfs-mkdir
+bin/matevfs-monitor
+bin/matevfs-mv
+bin/matevfs-rm
+etc/mate-vfs-2.0/modules/default-modules.conf
+etc/mate-vfs-2.0/modules/smb-module.conf
+etc/mate-vfs-2.0/modules/ssl-modules.conf
+include/mate-vfs-2.0/include/mate-vfs-file-size.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-ace.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-acl.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-address.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-application-registry.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-async-ops.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-cancellation.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-context.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-directory.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-dns-sd.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-drive.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-enum-types.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-file-info.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-file-size.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-find-directory.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-handle.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-init.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-job-limit.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-mime-deprecated.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-mime-handlers.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-mime-info-cache.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-mime-monitor.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-mime-utils.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-mime.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-module-callback.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-monitor.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-ops.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-resolve.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-result.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-standard-callbacks.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-types.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-uri.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-utils.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-version.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-volume-monitor.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-volume.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs-xfer.h
+include/mate-vfs-2.0/libmatevfs/mate-vfs.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-cancellable-ops.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-inet-connection.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-method.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-mime-info.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-module-callback-module-api.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-module-shared.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-module.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-parse-ls.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-pty.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-socket-buffer.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-socket.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-ssl.h
+include/mate-vfs-module-2.0/libmatevfs/mate-vfs-transform.h
+lib/libmatevfs-2.a
+lib/libmatevfs-2.la
+lib/libmatevfs-2.so
+lib/libmatevfs-2.so.0
+lib/mate-vfs-2.0/modules/libbzip2.a
+lib/mate-vfs-2.0/modules/libbzip2.la
+lib/mate-vfs-2.0/modules/libbzip2.so
+lib/mate-vfs-2.0/modules/libcomputer.a
+lib/mate-vfs-2.0/modules/libcomputer.la
+lib/mate-vfs-2.0/modules/libcomputer.so
+lib/mate-vfs-2.0/modules/libdns-sd.a
+lib/mate-vfs-2.0/modules/libdns-sd.la
+lib/mate-vfs-2.0/modules/libdns-sd.so
+lib/mate-vfs-2.0/modules/libfile.a
+lib/mate-vfs-2.0/modules/libfile.la
+lib/mate-vfs-2.0/modules/libfile.so
+lib/mate-vfs-2.0/modules/libftp.a
+lib/mate-vfs-2.0/modules/libftp.la
+lib/mate-vfs-2.0/modules/libftp.so
+lib/mate-vfs-2.0/modules/libgzip.a
+lib/mate-vfs-2.0/modules/libgzip.la
+lib/mate-vfs-2.0/modules/libgzip.so
+lib/mate-vfs-2.0/modules/libhttp.a
+lib/mate-vfs-2.0/modules/libhttp.la
+lib/mate-vfs-2.0/modules/libhttp.so
+lib/mate-vfs-2.0/modules/libnetwork.a
+lib/mate-vfs-2.0/modules/libnetwork.la
+lib/mate-vfs-2.0/modules/libnetwork.so
+lib/mate-vfs-2.0/modules/libnntp.a
+lib/mate-vfs-2.0/modules/libnntp.la
+lib/mate-vfs-2.0/modules/libnntp.so
+lib/mate-vfs-2.0/modules/libsftp.a
+lib/mate-vfs-2.0/modules/libsftp.la
+lib/mate-vfs-2.0/modules/libsftp.so
+lib/mate-vfs-2.0/modules/libsmb.a
+lib/mate-vfs-2.0/modules/libsmb.la
+lib/mate-vfs-2.0/modules/libsmb.so
+lib/mate-vfs-2.0/modules/libtar.a
+lib/mate-vfs-2.0/modules/libtar.la
+lib/mate-vfs-2.0/modules/libtar.so
+lib/mate-vfs-2.0/modules/libvfs-test.a
+lib/mate-vfs-2.0/modules/libvfs-test.la
+lib/mate-vfs-2.0/modules/libvfs-test.so
+libdata/pkgconfig/mate-vfs-2.0.pc
+libdata/pkgconfig/mate-vfs-module-2.0.pc
+libexec/mate-vfs-daemon
+share/dbus-1/services/mate-vfs-daemon.service
+share/doc/mate-vfs-2.0/about.html
+share/doc/mate-vfs-2.0/data-types.html
+share/doc/mate-vfs-2.0/home.png
+share/doc/mate-vfs-2.0/index.html
+share/doc/mate-vfs-2.0/index.sgml
+share/doc/mate-vfs-2.0/left.png
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-application-registry.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-async-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-cancellation.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-context.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-directory-basic-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-directory-find-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-directory-list-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-dns-sd.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-drive.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-file-advanced-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-file-basic-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-file-info-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-file-info.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-file-rw-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-file-size.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-file-trunc-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-inet-connection.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-init.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-method.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-mime-database-deprecated.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-mime-database.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-mime-monitor.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-mime-utils.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-mime.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-module-callback-module-api.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-module-callback.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-module-shared.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-module.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-monitor.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-parse-ls.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-resolve.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-result.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-socket-buffer.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-socket.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-ssl.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-standard-callbacks.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-transform.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-uri.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-utils.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-volume-monitor.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-volume.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0-mate-vfs-xfer.html
+share/doc/mate-vfs-2.0/mate-vfs-2.0.devhelp
+share/doc/mate-vfs-2.0/mate-vfs-2.0.devhelp2
+share/doc/mate-vfs-2.0/mate-vfs-basic-file-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-directory-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-file-and-dirs-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-file-async-ops.html
+share/doc/mate-vfs-2.0/mate-vfs-first-steps.html
+share/doc/mate-vfs-2.0/mate-vfs-writing-modules.html
+share/doc/mate-vfs-2.0/mime-registry.html
+share/doc/mate-vfs-2.0/modules.html
+share/doc/mate-vfs-2.0/networking.html
+share/doc/mate-vfs-2.0/right.png
+share/doc/mate-vfs-2.0/style.css
+share/doc/mate-vfs-2.0/up.png
+share/doc/mate-vfs-2.0/volumes.html
+share/locale/af/LC_MESSAGES/mate-vfs.mo
+share/locale/am/LC_MESSAGES/mate-vfs.mo
+share/locale/ar/LC_MESSAGES/mate-vfs.mo
+share/locale/as/LC_MESSAGES/mate-vfs.mo
+share/locale/ast/LC_MESSAGES/mate-vfs.mo
+share/locale/az/LC_MESSAGES/mate-vfs.mo
+share/locale/be/LC_MESSAGES/mate-vfs.mo
+share/locale/bg/LC_MESSAGES/mate-vfs.mo
+share/locale/bn/LC_MESSAGES/mate-vfs.mo
+share/locale/bn_IN/LC_MESSAGES/mate-vfs.mo
+share/locale/bs/LC_MESSAGES/mate-vfs.mo
+share/locale/ca/LC_MESSAGES/mate-vfs.mo
+share/locale/ca@valencia/LC_MESSAGES/mate-vfs.mo
+share/locale/cs/LC_MESSAGES/mate-vfs.mo
+share/locale/cy/LC_MESSAGES/mate-vfs.mo
+share/locale/da/LC_MESSAGES/mate-vfs.mo
+share/locale/de/LC_MESSAGES/mate-vfs.mo
+share/locale/dz/LC_MESSAGES/mate-vfs.mo
+share/locale/el/LC_MESSAGES/mate-vfs.mo
+share/locale/en@shaw/LC_MESSAGES/mate-vfs.mo
+share/locale/en_CA/LC_MESSAGES/mate-vfs.mo
+share/locale/en_GB/LC_MESSAGES/mate-vfs.mo
+share/locale/eo/LC_MESSAGES/mate-vfs.mo
+share/locale/es/LC_MESSAGES/mate-vfs.mo
+share/locale/et/LC_MESSAGES/mate-vfs.mo
+share/locale/eu/LC_MESSAGES/mate-vfs.mo
+share/locale/fa/LC_MESSAGES/mate-vfs.mo
+share/locale/fi/LC_MESSAGES/mate-vfs.mo
+share/locale/fr/LC_MESSAGES/mate-vfs.mo
+share/locale/ga/LC_MESSAGES/mate-vfs.mo
+share/locale/gl/LC_MESSAGES/mate-vfs.mo
+share/locale/gu/LC_MESSAGES/mate-vfs.mo
+share/locale/he/LC_MESSAGES/mate-vfs.mo
+share/locale/hi/LC_MESSAGES/mate-vfs.mo
+share/locale/hr/LC_MESSAGES/mate-vfs.mo
+share/locale/hu/LC_MESSAGES/mate-vfs.mo
+share/locale/id/LC_MESSAGES/mate-vfs.mo
+share/locale/is/LC_MESSAGES/mate-vfs.mo
+share/locale/it/LC_MESSAGES/mate-vfs.mo
+share/locale/ja/LC_MESSAGES/mate-vfs.mo
+share/locale/ka/LC_MESSAGES/mate-vfs.mo
+share/locale/kn/LC_MESSAGES/mate-vfs.mo
+share/locale/ko/LC_MESSAGES/mate-vfs.mo
+share/locale/ku/LC_MESSAGES/mate-vfs.mo
+share/locale/li/LC_MESSAGES/mate-vfs.mo
+share/locale/lt/LC_MESSAGES/mate-vfs.mo
+share/locale/lv/LC_MESSAGES/mate-vfs.mo
+share/locale/mai/LC_MESSAGES/mate-vfs.mo
+share/locale/mg/LC_MESSAGES/mate-vfs.mo
+share/locale/mk/LC_MESSAGES/mate-vfs.mo
+share/locale/ml/LC_MESSAGES/mate-vfs.mo
+share/locale/mn/LC_MESSAGES/mate-vfs.mo
+share/locale/mr/LC_MESSAGES/mate-vfs.mo
+share/locale/ms/LC_MESSAGES/mate-vfs.mo
+share/locale/nb/LC_MESSAGES/mate-vfs.mo
+share/locale/ne/LC_MESSAGES/mate-vfs.mo
+share/locale/nl/LC_MESSAGES/mate-vfs.mo
+share/locale/nn/LC_MESSAGES/mate-vfs.mo
+share/locale/nso/LC_MESSAGES/mate-vfs.mo
+share/locale/oc/LC_MESSAGES/mate-vfs.mo
+share/locale/or/LC_MESSAGES/mate-vfs.mo
+share/locale/pa/LC_MESSAGES/mate-vfs.mo
+share/locale/pl/LC_MESSAGES/mate-vfs.mo
+share/locale/pt/LC_MESSAGES/mate-vfs.mo
+share/locale/pt_BR/LC_MESSAGES/mate-vfs.mo
+share/locale/ro/LC_MESSAGES/mate-vfs.mo
+share/locale/ru/LC_MESSAGES/mate-vfs.mo
+share/locale/rw/LC_MESSAGES/mate-vfs.mo
+share/locale/sk/LC_MESSAGES/mate-vfs.mo
+share/locale/sl/LC_MESSAGES/mate-vfs.mo
+share/locale/sq/LC_MESSAGES/mate-vfs.mo
+share/locale/sr/LC_MESSAGES/mate-vfs.mo
+share/locale/sr@ije/LC_MESSAGES/mate-vfs.mo
+share/locale/sr@latin/LC_MESSAGES/mate-vfs.mo
+share/locale/sv/LC_MESSAGES/mate-vfs.mo
+share/locale/ta/LC_MESSAGES/mate-vfs.mo
+share/locale/te/LC_MESSAGES/mate-vfs.mo
+share/locale/th/LC_MESSAGES/mate-vfs.mo
+share/locale/tr/LC_MESSAGES/mate-vfs.mo
+share/locale/uk/LC_MESSAGES/mate-vfs.mo
+share/locale/uz/LC_MESSAGES/mate-vfs.mo
+share/locale/uz@cyrillic/LC_MESSAGES/mate-vfs.mo
+share/locale/vi/LC_MESSAGES/mate-vfs.mo
+share/locale/wa/LC_MESSAGES/mate-vfs.mo
+share/locale/xh/LC_MESSAGES/mate-vfs.mo
+share/locale/yi/LC_MESSAGES/mate-vfs.mo
+share/locale/zh_CN/LC_MESSAGES/mate-vfs.mo
+share/locale/zh_HK/LC_MESSAGES/mate-vfs.mo
+share/locale/zh_TW/LC_MESSAGES/mate-vfs.mo
+share/locale/zu/LC_MESSAGES/mate-vfs.mo
+@dirrmtry share/locale/zu/LC_MESSAGES
+@dirrmtry share/locale/zu
+@dirrmtry share/locale/zh_HK/LC_MESSAGES
+@dirrmtry share/locale/zh_HK
+@dirrmtry share/locale/yi/LC_MESSAGES
+@dirrmtry share/locale/yi
+@dirrmtry share/locale/xh/LC_MESSAGES
+@dirrmtry share/locale/xh
+@dirrmtry share/locale/uz@cyrillic/LC_MESSAGES
+@dirrmtry share/locale/uz@cyrillic
+@dirrmtry share/locale/te/LC_MESSAGES
+@dirrmtry share/locale/te
+@dirrmtry share/locale/sr@latin/LC_MESSAGES
+@dirrmtry share/locale/sr@latin
+@dirrmtry share/locale/sr@ije/LC_MESSAGES
+@dirrmtry share/locale/sr@ije
+@dirrmtry share/locale/rw/LC_MESSAGES
+@dirrmtry share/locale/rw
+@dirrmtry share/locale/oc/LC_MESSAGES
+@dirrmtry share/locale/oc
+@dirrmtry share/locale/nso/LC_MESSAGES
+@dirrmtry share/locale/nso
+@dirrmtry share/locale/mr/LC_MESSAGES
+@dirrmtry share/locale/mr
+@dirrmtry share/locale/mg/LC_MESSAGES
+@dirrmtry share/locale/mg
+@dirrmtry share/locale/mai/LC_MESSAGES
+@dirrmtry share/locale/mai
+@dirrmtry share/locale/ku/LC_MESSAGES
+@dirrmtry share/locale/ku
+@dirrmtry share/locale/en@shaw/LC_MESSAGES
+@dirrmtry share/locale/en@shaw
+@dirrmtry share/locale/dz/LC_MESSAGES
+@dirrmtry share/locale/dz
+@dirrmtry share/locale/ca@valencia/LC_MESSAGES
+@dirrmtry share/locale/ca@valencia
+@dirrmtry share/locale/bn_IN/LC_MESSAGES
+@dirrmtry share/locale/bn_IN
+@dirrmtry share/locale/ast/LC_MESSAGES
+@dirrmtry share/locale/ast
+@dirrmtry share/locale/as/LC_MESSAGES
+@dirrmtry share/locale/as
+@dirrm share/doc/mate-vfs-2.0
+@dirrmtry share/dbus-1/services
+@dirrmtry share/dbus-1
+@dirrm include/mate-vfs-module-2.0/libmatevfs
+@dirrm include/mate-vfs-module-2.0
+@dirrm include/mate-vfs-2.0/libmatevfs
+@dirrm include/mate-vfs-2.0/include
+@dirrm include/mate-vfs-2.0
+@dirrm etc/mate-vfs-2.0/modules
+@dirrm etc/mate-vfs-2.0

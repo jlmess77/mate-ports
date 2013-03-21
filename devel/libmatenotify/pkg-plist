@@ -1,0 +1,24 @@
+bin/mate-notify-send
+include/libmatenotify/notification.h
+include/libmatenotify/notify-enum-types.h
+include/libmatenotify/notify-features.h
+include/libmatenotify/notify.h
+lib/libmatenotify.a
+lib/libmatenotify.la
+lib/libmatenotify.so
+lib/libmatenotify.so.1
+libdata/pkgconfig/libmatenotify.pc
+%%DOCSDIR%%/ch01.html
+%%DOCSDIR%%/home.png
+%%DOCSDIR%%/index.html
+%%DOCSDIR%%/index.sgml
+%%DOCSDIR%%/left.png
+%%DOCSDIR%%/libmatenotify-notification.html
+%%DOCSDIR%%/libmatenotify-notify.html
+%%DOCSDIR%%/libmatenotify.devhelp
+%%DOCSDIR%%/libmatenotify.devhelp2
+%%DOCSDIR%%/right.png
+%%DOCSDIR%%/style.css
+%%DOCSDIR%%/up.png
+@dirrm %%DOCSDIR%%
+@dirrm include/libmatenotify

@@ -1,0 +1,7 @@
+MateComponent is a set of language- and system-independant CORBA
+interfaces for creating reusable components and compound documents.
+
+libmatecomponentui includes a Gtk+-based implementation of the MateComponent
+interfaces.
+
+WWW: http://mate-desktop.org/

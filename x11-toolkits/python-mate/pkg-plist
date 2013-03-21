@@ -1,0 +1,118 @@
+include/mate-python-2.0/pymatevfs.h
+include/mate-python-2.0/pymatevfsmatecomponent.h
+lib/mate-vfs-2.0/modules/libpythonmethod.a
+lib/mate-vfs-2.0/modules/libpythonmethod.la
+lib/mate-vfs-2.0/modules/libpythonmethod.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/__init__.py
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/__init__.pyc
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/__init__.pyo
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/_mate.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/_mate.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/_mate.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/canvas.py
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/canvas.pyc
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/canvas.pyo
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/ui.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/ui.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/ui.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/vfs.py
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/vfs.pyc
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mate/vfs.pyo
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecanvas.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecanvas.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecanvas.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/__init__.py
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/__init__.pyc
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/__init__.pyo
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/_matecomponent.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/_matecomponent.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/_matecomponent.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/activation.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/activation.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/activation.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/ui.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/ui.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent/ui.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mateconf.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mateconf.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/mateconf.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/__init__.py
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/__init__.pyc
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/__init__.pyo
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/_matevfs.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/_matevfs.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/_matevfs.so
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/matevfsmatecomponent.a
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/matevfsmatecomponent.la
+%%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs/matevfsmatecomponent.so
+libdata/pkgconfig/mate-python-2.0.pc
+share/doc/pymatevfs/class-matevfs-context.html
+share/doc/pymatevfs/class-matevfs-directoryhandle.html
+share/doc/pymatevfs/class-matevfs-drive.html
+share/doc/pymatevfs/class-matevfs-fileinfo.html
+share/doc/pymatevfs/class-matevfs-handle.html
+share/doc/pymatevfs/class-matevfs-uri.html
+share/doc/pymatevfs/class-matevfs-volume.html
+share/doc/pymatevfs/index.html
+share/doc/pymatevfs/index.sgml
+share/doc/pymatevfs/matevfs-class-reference.html
+share/doc/pymatevfs/matevfs-constants.html
+share/doc/pymatevfs/matevfs-functions.html
+share/doc/pymatevfs/pymatevfs.devhelp
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/bug-buddy-integration.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/canvas/canvas-curve.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/canvas/canvas-example.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/matecomponent/echo/README
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/matecomponent/echo/echo-client.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/matecomponent/matecomponent-application.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/matecomponent/matecomponentui/MateComponent_Sample_Hello.xml
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/matecomponent/matecomponentui/hello.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/matecomponent/unknown.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/mateconf/basic-mateconf-app.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/mateconf/simple-controller.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/mateconf/simple-view.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/popt/goption.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/popt/popt.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/vfs/async-xfer.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/vfs/async.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/vfs/cancellation.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/vfs/pygvfsmethod/README
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/vfs/pygvfsmethod/pyfs.conf
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/vfs/pygvfsmethod/pyfs.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/vfs/shell.py
+%%NOPORTEXAMPLES%%%%EXAMPLESDIR%%/vfs/sync-xfer.py
+share/pygtk/2.0/argtypes/matecomponent-arg-types.py
+share/pygtk/2.0/argtypes/matecomponent-arg-types.pyc
+share/pygtk/2.0/argtypes/matecomponent-arg-types.pyo
+share/pygtk/2.0/argtypes/mateconf-arg-types.py
+share/pygtk/2.0/argtypes/mateconf-arg-types.pyc
+share/pygtk/2.0/argtypes/mateconf-arg-types.pyo
+share/pygtk/2.0/defs/mate/canvas.defs
+share/pygtk/2.0/defs/mate/mate-types.defs
+share/pygtk/2.0/defs/mate/mate.defs
+share/pygtk/2.0/defs/mate/ui.defs
+share/pygtk/2.0/defs/matecomponent-types.defs
+share/pygtk/2.0/defs/matecomponent.defs
+share/pygtk/2.0/defs/matecomponentui-types.defs
+share/pygtk/2.0/defs/matecomponentui.defs
+share/pygtk/2.0/defs/mateconf.defs
+@dirrmtry share/pygtk/2.0/defs/mate
+@dirrmtry share/pygtk/2.0/defs
+@dirrmtry share/pygtk/2.0/argtypes
+@dirrmtry share/pygtk/2.0
+@dirrmtry share/pygtk
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/vfs/pygvfsmethod
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/vfs
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/popt
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/mateconf
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/matecomponent/matecomponentui
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/matecomponent/echo
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/matecomponent
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%/canvas
+%%NOPORTEXAMPLES%%@dirrm %%EXAMPLESDIR%%
+@dirrm share/doc/pymatevfs
+@dirrm %%PYTHON_SITELIBDIR%%/gtk-2.0/matevfs
+@dirrm %%PYTHON_SITELIBDIR%%/gtk-2.0/matecomponent
+@dirrm %%PYTHON_SITELIBDIR%%/gtk-2.0/mate
+@dirrm %%PYTHON_SITELIBDIR%%/gtk-2.0
+@dirrm include/mate-python-2.0

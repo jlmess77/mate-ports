@@ -1,0 +1,78 @@
+- Fork the marcusmerge.sh to matemerge.sh then make it works with the
+  github and other modify.
+
+- Update MATE to 1.5.x/1.6.x.
+
+- Remove packages that are no longer part of MATE.
+  See here: http://wiki.mate-desktop.org/status:1.6#removed_packages
+
+- Fix the conflict between gnome-panel and mate-panel if it still does
+  conflict in the 1.5.x/1.6.x.
+
+- Make it bugs free as much as possible.
+
+- Add extra packages if you think it's useful.
+  See here: http://wiki.mate-desktop.org/status:1.6#mate_packages
+
+- When the MATE 1.6 releases. Merge mate-ports into FreeBSD ports tree.
+
+- Clean up in the bsd.mate.mk.
+
+- Document in the bsd.mate.mk.
+
+
+**done** -Ports that need to be recopied. The single space means that it's done.
+
+Base (x11/mate-base):
+------------------------------
+ devel/gnome-common -> devel/mate-common
+ textproc/gnome-doc-utils -> textproc/mate-doc-utils
+ devel/ORBit2 -> devel/mate-corba
+ devel/gconf2 -> devel/mate-conf
+ devel/libbonobo -> devel/libmatecomponent
+ misc/gnome-mime-data -> misc/mate-mime-data
+ devel/gnome-vfs -> devel/mate-vfs
+ x11/libgnome -> x11/libmate
+ graphics/libgnomecanvas -> graphics/libmatecanvas
+ x11-toolkits/libbonoboui -> x11-toolkits/libmatecomponentui
+ security/libgnome-keyring -> security/libmatekeyring
+ security/gnome-keyring -> security/mate-keyring
+ x11-toolkits/libgnomeui -> x11-toolkits/libmateui
+ devel/libnotify -> devel/libmatenotify
+ x11/libgnomekbd -> x11/libmatekbd
+ net/libgweather -> net/libmateweather
+ misc/gnome-icon-theme -> x11-themes/mate-icon-theme
+ x11/zenity -> x11/mate-dialogs
+ x11/gnome-desktop -> x11/mate-desktop
+ x11-fm/nautilus -> x11-fm/mate-file-manager
+ deskutils/notification-daemon -> deskutils/mate-notification-daemon
+ x11-themes/gnome-backgrounds -> x11-themes/mate-backgrounds
+ x11/gnome-menus -> x11/mate-menus
+ x11-wm/metacity -> x11-wm/mate-window-manager
+ sysutils/polkit-gnome -> sysutils/mate-polkit
+ sysutils/gnome-settings-daemon -> sysutils/mate-settings-daemon
+ sysutils/gnome-control-center -> sysutils/mate-control-center
+ x11/gnome-panel -> x11/mate-panel
+ x11/gnome-session -> x11/mate-session-manager
+ x11-themes/gnome-themes -> x11-themes/mate-themes
+------------------------------
+
+Extras (x11/mate):
+------------------------------
+ editors/gedit -> editors/mate-text-editor
+ x11/gnome-terminal -> x11/mate-terminal
+ x11/gnome-screensaver -> x11/mate-screensaver
+ math/gcalctool -> math/mate-calc
+ sysutils/gconf-editor -> sysutils/mate-conf-editor
+ deskutils/gnome-utils -> deskutils/mate-utils
+ sysutils/gnome-system-monitor -> sysutils/mate-system-monitor
+ graphics/eog -> graphics/mate-image-viewer
+ archivers/file-roller -> archivers/mate-file-archiver
+ graphics/evince -> graphics/mate-document-viewer
+ audio/gnome-media -> audio/mate-media
+ sysutils/gnome-power-manager -> sysutils/mate-power-manager
+ devel/py-orbit -> devel/python-corba
+ x11-toolkits/py-gnome2 -> x11-toolkits/python-mate
+ deskutils/alacarte -> deskutils/mate-menu-editor
+ x11/gnome-applets -> x11/mate-applets
+------------------------------

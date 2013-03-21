@@ -1,0 +1,184 @@
+include/libmatecanvas-2.0/libmatecanvas/libmatecanvas.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-bpath.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-clipgroup.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-line.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-path-def.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-pixbuf.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-polygon.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-rect-ellipse.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-rich-text.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-shape.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-text.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-util.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas-widget.h
+include/libmatecanvas-2.0/libmatecanvas/mate-canvas.h
+lib/libglade/2.0/libgladematecanvas.a
+lib/libglade/2.0/libgladematecanvas.la
+lib/libglade/2.0/libgladematecanvas.so
+lib/libmatecanvas-2.a
+lib/libmatecanvas-2.la
+lib/libmatecanvas-2.so
+lib/libmatecanvas-2.so.0
+libdata/pkgconfig/libmatecanvas-2.0.pc
+%%DOCSDIR%%/MateCanvas.html
+%%DOCSDIR%%/MateCanvasBpath.html
+%%DOCSDIR%%/MateCanvasClipgroup.html
+%%DOCSDIR%%/MateCanvasEllipse.html
+%%DOCSDIR%%/MateCanvasGroup.html
+%%DOCSDIR%%/MateCanvasItem.html
+%%DOCSDIR%%/MateCanvasLine.html
+%%DOCSDIR%%/MateCanvasPixbuf.html
+%%DOCSDIR%%/MateCanvasPolygon.html
+%%DOCSDIR%%/MateCanvasRE.html
+%%DOCSDIR%%/MateCanvasRect.html
+%%DOCSDIR%%/MateCanvasRichText.html
+%%DOCSDIR%%/MateCanvasShape.html
+%%DOCSDIR%%/MateCanvasWidget.html
+%%DOCSDIR%%/ch01.html
+%%DOCSDIR%%/ch02.html
+%%DOCSDIR%%/home.png
+%%DOCSDIR%%/index.html
+%%DOCSDIR%%/index.sgml
+%%DOCSDIR%%/left.png
+%%DOCSDIR%%/libmatecanvas-mate-canvas-path-def.html
+%%DOCSDIR%%/libmatecanvas-mate-canvas-text.html
+%%DOCSDIR%%/libmatecanvas-mate-canvas-util.html
+%%DOCSDIR%%/libmatecanvas.devhelp
+%%DOCSDIR%%/libmatecanvas.devhelp2
+%%DOCSDIR%%/right.png
+%%DOCSDIR%%/style.css
+%%DOCSDIR%%/up.png
+share/locale/am/LC_MESSAGES/libmatecanvas.mo
+share/locale/ang/LC_MESSAGES/libmatecanvas.mo
+share/locale/ar/LC_MESSAGES/libmatecanvas.mo
+share/locale/as/LC_MESSAGES/libmatecanvas.mo
+share/locale/ast/LC_MESSAGES/libmatecanvas.mo
+share/locale/az/LC_MESSAGES/libmatecanvas.mo
+share/locale/be/LC_MESSAGES/libmatecanvas.mo
+share/locale/bg/LC_MESSAGES/libmatecanvas.mo
+share/locale/bn/LC_MESSAGES/libmatecanvas.mo
+share/locale/bn_IN/LC_MESSAGES/libmatecanvas.mo
+share/locale/br/LC_MESSAGES/libmatecanvas.mo
+share/locale/bs/LC_MESSAGES/libmatecanvas.mo
+share/locale/ca/LC_MESSAGES/libmatecanvas.mo
+share/locale/ca@valencia/LC_MESSAGES/libmatecanvas.mo
+share/locale/crh/LC_MESSAGES/libmatecanvas.mo
+share/locale/cs/LC_MESSAGES/libmatecanvas.mo
+share/locale/cy/LC_MESSAGES/libmatecanvas.mo
+share/locale/da/LC_MESSAGES/libmatecanvas.mo
+share/locale/de/LC_MESSAGES/libmatecanvas.mo
+share/locale/dz/LC_MESSAGES/libmatecanvas.mo
+share/locale/el/LC_MESSAGES/libmatecanvas.mo
+share/locale/en@shaw/LC_MESSAGES/libmatecanvas.mo
+share/locale/en_CA/LC_MESSAGES/libmatecanvas.mo
+share/locale/en_GB/LC_MESSAGES/libmatecanvas.mo
+share/locale/eo/LC_MESSAGES/libmatecanvas.mo
+share/locale/es/LC_MESSAGES/libmatecanvas.mo
+share/locale/et/LC_MESSAGES/libmatecanvas.mo
+share/locale/eu/LC_MESSAGES/libmatecanvas.mo
+share/locale/fa/LC_MESSAGES/libmatecanvas.mo
+share/locale/fi/LC_MESSAGES/libmatecanvas.mo
+share/locale/fr/LC_MESSAGES/libmatecanvas.mo
+share/locale/ga/LC_MESSAGES/libmatecanvas.mo
+share/locale/gl/LC_MESSAGES/libmatecanvas.mo
+share/locale/gu/LC_MESSAGES/libmatecanvas.mo
+share/locale/he/LC_MESSAGES/libmatecanvas.mo
+share/locale/hi/LC_MESSAGES/libmatecanvas.mo
+share/locale/hr/LC_MESSAGES/libmatecanvas.mo
+share/locale/hu/LC_MESSAGES/libmatecanvas.mo
+share/locale/id/LC_MESSAGES/libmatecanvas.mo
+share/locale/is/LC_MESSAGES/libmatecanvas.mo
+share/locale/it/LC_MESSAGES/libmatecanvas.mo
+share/locale/ja/LC_MESSAGES/libmatecanvas.mo
+share/locale/ka/LC_MESSAGES/libmatecanvas.mo
+share/locale/kn/LC_MESSAGES/libmatecanvas.mo
+share/locale/ko/LC_MESSAGES/libmatecanvas.mo
+share/locale/ku/LC_MESSAGES/libmatecanvas.mo
+share/locale/li/LC_MESSAGES/libmatecanvas.mo
+share/locale/lt/LC_MESSAGES/libmatecanvas.mo
+share/locale/lv/LC_MESSAGES/libmatecanvas.mo
+share/locale/mai/LC_MESSAGES/libmatecanvas.mo
+share/locale/mg/LC_MESSAGES/libmatecanvas.mo
+share/locale/mk/LC_MESSAGES/libmatecanvas.mo
+share/locale/ml/LC_MESSAGES/libmatecanvas.mo
+share/locale/mn/LC_MESSAGES/libmatecanvas.mo
+share/locale/mr/LC_MESSAGES/libmatecanvas.mo
+share/locale/ms/LC_MESSAGES/libmatecanvas.mo
+share/locale/nb/LC_MESSAGES/libmatecanvas.mo
+share/locale/ne/LC_MESSAGES/libmatecanvas.mo
+share/locale/nl/LC_MESSAGES/libmatecanvas.mo
+share/locale/nn/LC_MESSAGES/libmatecanvas.mo
+share/locale/oc/LC_MESSAGES/libmatecanvas.mo
+share/locale/or/LC_MESSAGES/libmatecanvas.mo
+share/locale/pa/LC_MESSAGES/libmatecanvas.mo
+share/locale/pl/LC_MESSAGES/libmatecanvas.mo
+share/locale/pt/LC_MESSAGES/libmatecanvas.mo
+share/locale/pt_BR/LC_MESSAGES/libmatecanvas.mo
+share/locale/ro/LC_MESSAGES/libmatecanvas.mo
+share/locale/ru/LC_MESSAGES/libmatecanvas.mo
+share/locale/rw/LC_MESSAGES/libmatecanvas.mo
+share/locale/sk/LC_MESSAGES/libmatecanvas.mo
+share/locale/sl/LC_MESSAGES/libmatecanvas.mo
+share/locale/sq/LC_MESSAGES/libmatecanvas.mo
+share/locale/sr/LC_MESSAGES/libmatecanvas.mo
+share/locale/sr@ije/LC_MESSAGES/libmatecanvas.mo
+share/locale/sr@latin/LC_MESSAGES/libmatecanvas.mo
+share/locale/sv/LC_MESSAGES/libmatecanvas.mo
+share/locale/ta/LC_MESSAGES/libmatecanvas.mo
+share/locale/te/LC_MESSAGES/libmatecanvas.mo
+share/locale/th/LC_MESSAGES/libmatecanvas.mo
+share/locale/tr/LC_MESSAGES/libmatecanvas.mo
+share/locale/tt/LC_MESSAGES/libmatecanvas.mo
+share/locale/uk/LC_MESSAGES/libmatecanvas.mo
+share/locale/vi/LC_MESSAGES/libmatecanvas.mo
+share/locale/wa/LC_MESSAGES/libmatecanvas.mo
+share/locale/xh/LC_MESSAGES/libmatecanvas.mo
+share/locale/yi/LC_MESSAGES/libmatecanvas.mo
+share/locale/zh_CN/LC_MESSAGES/libmatecanvas.mo
+share/locale/zh_HK/LC_MESSAGES/libmatecanvas.mo
+share/locale/zh_TW/LC_MESSAGES/libmatecanvas.mo
+@dirrmtry share/locale/zh_HK/LC_MESSAGES
+@dirrmtry share/locale/zh_HK
+@dirrmtry share/locale/yi/LC_MESSAGES
+@dirrmtry share/locale/yi
+@dirrmtry share/locale/xh/LC_MESSAGES
+@dirrmtry share/locale/xh
+@dirrmtry share/locale/tt/LC_MESSAGES
+@dirrmtry share/locale/tt
+@dirrmtry share/locale/te/LC_MESSAGES
+@dirrmtry share/locale/te
+@dirrmtry share/locale/sr@latin/LC_MESSAGES
+@dirrmtry share/locale/sr@latin
+@dirrmtry share/locale/sr@ije/LC_MESSAGES
+@dirrmtry share/locale/sr@ije
+@dirrmtry share/locale/rw/LC_MESSAGES
+@dirrmtry share/locale/rw
+@dirrmtry share/locale/oc/LC_MESSAGES
+@dirrmtry share/locale/oc
+@dirrmtry share/locale/mr/LC_MESSAGES
+@dirrmtry share/locale/mr
+@dirrmtry share/locale/mg/LC_MESSAGES
+@dirrmtry share/locale/mg
+@dirrmtry share/locale/mai/LC_MESSAGES
+@dirrmtry share/locale/mai
+@dirrmtry share/locale/ku/LC_MESSAGES
+@dirrmtry share/locale/ku
+@dirrmtry share/locale/en@shaw/LC_MESSAGES
+@dirrmtry share/locale/en@shaw
+@dirrmtry share/locale/dz/LC_MESSAGES
+@dirrmtry share/locale/dz
+@dirrmtry share/locale/crh/LC_MESSAGES
+@dirrmtry share/locale/crh
+@dirrmtry share/locale/ca@valencia/LC_MESSAGES
+@dirrmtry share/locale/ca@valencia
+@dirrmtry share/locale/bn_IN/LC_MESSAGES
+@dirrmtry share/locale/bn_IN
+@dirrmtry share/locale/ast/LC_MESSAGES
+@dirrmtry share/locale/ast
+@dirrmtry share/locale/as/LC_MESSAGES
+@dirrmtry share/locale/as
+@dirrmtry share/locale/ang/LC_MESSAGES
+@dirrmtry share/locale/ang
+@dirrm %%DOCSDIR%%
+@dirrm include/libmatecanvas-2.0/libmatecanvas
+@dirrm include/libmatecanvas-2.0

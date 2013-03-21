@@ -1,0 +1,211 @@
+bin/mateconf-gsettings-data-convert
+bin/mateconf-gsettings-schema-convert
+bin/mateconf-merge-tree
+bin/mateconftool-2
+etc/dbus-1/system.d/org.mate.MateConf.Defaults.conf
+%%LDAP%%etc/mateconf/2/evoldap.conf
+etc/mateconf/2/path
+etc/xdg/autostart/mateconf-gsettings-data-convert.desktop
+include/mateconf/2/mateconf/mateconf-changeset.h
+include/mateconf/2/mateconf/mateconf-client.h
+include/mateconf/2/mateconf/mateconf-engine.h
+include/mateconf/2/mateconf/mateconf-enum-types.h
+include/mateconf/2/mateconf/mateconf-error.h
+include/mateconf/2/mateconf/mateconf-listeners.h
+include/mateconf/2/mateconf/mateconf-schema.h
+include/mateconf/2/mateconf/mateconf-value.h
+include/mateconf/2/mateconf/mateconf.h
+%%LDAP%%lib/MateConf/2/libmateconfbackend-evoldap.a
+%%LDAP%%lib/MateConf/2/libmateconfbackend-evoldap.la
+%%LDAP%%lib/MateConf/2/libmateconfbackend-evoldap.so
+lib/MateConf/2/libmateconfbackend-oldxml.a
+lib/MateConf/2/libmateconfbackend-oldxml.la
+lib/MateConf/2/libmateconfbackend-oldxml.so
+lib/MateConf/2/libmateconfbackend-xml.a
+lib/MateConf/2/libmateconfbackend-xml.la
+lib/MateConf/2/libmateconfbackend-xml.so
+lib/girepository-1.0/MateConf-2.0.typelib
+lib/gio/modules/libgsettingsmateconfbackend.a
+lib/gio/modules/libgsettingsmateconfbackend.la
+lib/gio/modules/libgsettingsmateconfbackend.so
+lib/libmateconf-2.a
+lib/libmateconf-2.la
+lib/libmateconf-2.so
+lib/libmateconf-2.so.4
+libdata/pkgconfig/mateconf-2.0.pc
+libexec/mateconf-defaults-mechanism
+libexec/mateconf-sanity-check-2
+libexec/mateconfd-2
+%%LDAP%%share/MateConf/schema/evoldap.schema
+share/aclocal/mateconf-2.m4
+share/dbus-1/services/org.mate.MateConf.service
+share/dbus-1/system-services/org.mate.MateConf.Defaults.service
+share/doc/mateconf/ch01.html
+share/doc/mateconf/home.png
+share/doc/mateconf/index.html
+share/doc/mateconf/index.sgml
+share/doc/mateconf/left.png
+share/doc/mateconf/mateconf-mateconf-backend.html
+share/doc/mateconf/mateconf-mateconf-changeset.html
+share/doc/mateconf/mateconf-mateconf-client.html
+share/doc/mateconf/mateconf-mateconf-engine.html
+share/doc/mateconf/mateconf-mateconf-error.html
+share/doc/mateconf/mateconf-mateconf-internals.html
+share/doc/mateconf/mateconf-mateconf-listeners.html
+share/doc/mateconf/mateconf-mateconf-locale.html
+share/doc/mateconf/mateconf-mateconf-schema.html
+share/doc/mateconf/mateconf-mateconf-sources.html
+share/doc/mateconf/mateconf-mateconf-value.html
+share/doc/mateconf/mateconf-mateconf.html
+share/doc/mateconf/mateconf.devhelp
+share/doc/mateconf/mateconf.devhelp2
+share/doc/mateconf/right.png
+share/doc/mateconf/style.css
+share/doc/mateconf/up.png
+share/gir-1.0/MateConf-2.0.gir
+share/locale/af/LC_MESSAGES/mate-conf.mo
+share/locale/am/LC_MESSAGES/mate-conf.mo
+share/locale/ar/LC_MESSAGES/mate-conf.mo
+share/locale/as/LC_MESSAGES/mate-conf.mo
+share/locale/ast/LC_MESSAGES/mate-conf.mo
+share/locale/az/LC_MESSAGES/mate-conf.mo
+share/locale/be/LC_MESSAGES/mate-conf.mo
+share/locale/bg/LC_MESSAGES/mate-conf.mo
+share/locale/bn/LC_MESSAGES/mate-conf.mo
+share/locale/bn_IN/LC_MESSAGES/mate-conf.mo
+share/locale/bs/LC_MESSAGES/mate-conf.mo
+share/locale/ca/LC_MESSAGES/mate-conf.mo
+share/locale/ca@valencia/LC_MESSAGES/mate-conf.mo
+share/locale/cs/LC_MESSAGES/mate-conf.mo
+share/locale/cy/LC_MESSAGES/mate-conf.mo
+share/locale/da/LC_MESSAGES/mate-conf.mo
+share/locale/de/LC_MESSAGES/mate-conf.mo
+share/locale/dz/LC_MESSAGES/mate-conf.mo
+share/locale/el/LC_MESSAGES/mate-conf.mo
+share/locale/en@shaw/LC_MESSAGES/mate-conf.mo
+share/locale/en_CA/LC_MESSAGES/mate-conf.mo
+share/locale/en_GB/LC_MESSAGES/mate-conf.mo
+share/locale/eo/LC_MESSAGES/mate-conf.mo
+share/locale/es/LC_MESSAGES/mate-conf.mo
+share/locale/es_CL/LC_MESSAGES/mate-conf.mo
+share/locale/et/LC_MESSAGES/mate-conf.mo
+share/locale/eu/LC_MESSAGES/mate-conf.mo
+share/locale/fa/LC_MESSAGES/mate-conf.mo
+share/locale/fi/LC_MESSAGES/mate-conf.mo
+share/locale/fr/LC_MESSAGES/mate-conf.mo
+share/locale/ga/LC_MESSAGES/mate-conf.mo
+share/locale/gl/LC_MESSAGES/mate-conf.mo
+share/locale/gu/LC_MESSAGES/mate-conf.mo
+share/locale/he/LC_MESSAGES/mate-conf.mo
+share/locale/hi/LC_MESSAGES/mate-conf.mo
+share/locale/hr/LC_MESSAGES/mate-conf.mo
+share/locale/hu/LC_MESSAGES/mate-conf.mo
+share/locale/hy/LC_MESSAGES/mate-conf.mo
+share/locale/id/LC_MESSAGES/mate-conf.mo
+share/locale/is/LC_MESSAGES/mate-conf.mo
+share/locale/it/LC_MESSAGES/mate-conf.mo
+share/locale/ja/LC_MESSAGES/mate-conf.mo
+share/locale/ka/LC_MESSAGES/mate-conf.mo
+share/locale/kn/LC_MESSAGES/mate-conf.mo
+share/locale/ko/LC_MESSAGES/mate-conf.mo
+share/locale/ku/LC_MESSAGES/mate-conf.mo
+share/locale/lt/LC_MESSAGES/mate-conf.mo
+share/locale/lv/LC_MESSAGES/mate-conf.mo
+share/locale/mai/LC_MESSAGES/mate-conf.mo
+share/locale/mg/LC_MESSAGES/mate-conf.mo
+share/locale/mk/LC_MESSAGES/mate-conf.mo
+share/locale/ml/LC_MESSAGES/mate-conf.mo
+share/locale/mn/LC_MESSAGES/mate-conf.mo
+share/locale/mr/LC_MESSAGES/mate-conf.mo
+share/locale/ms/LC_MESSAGES/mate-conf.mo
+share/locale/nb/LC_MESSAGES/mate-conf.mo
+share/locale/ne/LC_MESSAGES/mate-conf.mo
+share/locale/nl/LC_MESSAGES/mate-conf.mo
+share/locale/nn/LC_MESSAGES/mate-conf.mo
+share/locale/oc/LC_MESSAGES/mate-conf.mo
+share/locale/or/LC_MESSAGES/mate-conf.mo
+share/locale/pa/LC_MESSAGES/mate-conf.mo
+share/locale/pl/LC_MESSAGES/mate-conf.mo
+share/locale/pt/LC_MESSAGES/mate-conf.mo
+share/locale/pt_BR/LC_MESSAGES/mate-conf.mo
+share/locale/ro/LC_MESSAGES/mate-conf.mo
+share/locale/ru/LC_MESSAGES/mate-conf.mo
+share/locale/rw/LC_MESSAGES/mate-conf.mo
+share/locale/si/LC_MESSAGES/mate-conf.mo
+share/locale/sk/LC_MESSAGES/mate-conf.mo
+share/locale/sl/LC_MESSAGES/mate-conf.mo
+share/locale/sq/LC_MESSAGES/mate-conf.mo
+share/locale/sr/LC_MESSAGES/mate-conf.mo
+share/locale/sr@latin/LC_MESSAGES/mate-conf.mo
+share/locale/sv/LC_MESSAGES/mate-conf.mo
+share/locale/ta/LC_MESSAGES/mate-conf.mo
+share/locale/te/LC_MESSAGES/mate-conf.mo
+share/locale/th/LC_MESSAGES/mate-conf.mo
+share/locale/tr/LC_MESSAGES/mate-conf.mo
+share/locale/uk/LC_MESSAGES/mate-conf.mo
+share/locale/vi/LC_MESSAGES/mate-conf.mo
+share/locale/xh/LC_MESSAGES/mate-conf.mo
+share/locale/yi/LC_MESSAGES/mate-conf.mo
+share/locale/zh_CN/LC_MESSAGES/mate-conf.mo
+share/locale/zh_HK/LC_MESSAGES/mate-conf.mo
+share/locale/zh_TW/LC_MESSAGES/mate-conf.mo
+share/polkit-1/actions/org.mate.mateconf.defaults.policy
+share/sgml/mateconf/mateconf-1.0.dtd
+@dirrm share/sgml/mateconf
+%%LDAP%%@dirrm share/MateConf/schema
+%%LDAP%%@dirrm share/MateConf
+@dirrmtry share/polkit-1/actions
+@dirrmtry share/polkit-1
+@dirrmtry share/locale/zh_HK/LC_MESSAGES
+@dirrmtry share/locale/zh_HK
+@dirrmtry share/locale/yi/LC_MESSAGES
+@dirrmtry share/locale/yi
+@dirrmtry share/locale/xh/LC_MESSAGES
+@dirrmtry share/locale/xh
+@dirrmtry share/locale/te/LC_MESSAGES
+@dirrmtry share/locale/te
+@dirrmtry share/locale/sr@latin/LC_MESSAGES
+@dirrmtry share/locale/sr@latin
+@dirrmtry share/locale/si/LC_MESSAGES
+@dirrmtry share/locale/si
+@dirrmtry share/locale/rw/LC_MESSAGES
+@dirrmtry share/locale/rw
+@dirrmtry share/locale/oc/LC_MESSAGES
+@dirrmtry share/locale/oc
+@dirrmtry share/locale/mr/LC_MESSAGES
+@dirrmtry share/locale/mr
+@dirrmtry share/locale/mg/LC_MESSAGES
+@dirrmtry share/locale/mg
+@dirrmtry share/locale/mai/LC_MESSAGES
+@dirrmtry share/locale/mai
+@dirrmtry share/locale/ku/LC_MESSAGES
+@dirrmtry share/locale/ku
+@dirrmtry share/locale/hy/LC_MESSAGES
+@dirrmtry share/locale/hy
+@dirrmtry share/locale/es_CL/LC_MESSAGES
+@dirrmtry share/locale/es_CL
+@dirrmtry share/locale/en@shaw/LC_MESSAGES
+@dirrmtry share/locale/en@shaw
+@dirrmtry share/locale/dz/LC_MESSAGES
+@dirrmtry share/locale/dz
+@dirrmtry share/locale/ca@valencia/LC_MESSAGES
+@dirrmtry share/locale/ca@valencia
+@dirrmtry share/locale/bn_IN/LC_MESSAGES
+@dirrmtry share/locale/bn_IN
+@dirrmtry share/locale/ast/LC_MESSAGES
+@dirrmtry share/locale/ast
+@dirrmtry share/locale/as/LC_MESSAGES
+@dirrmtry share/locale/as
+@dirrmtry share/gir-1.0
+@dirrm share/doc/mateconf
+@dirrmtry lib/girepository-1.0
+@dirrm lib/MateConf/2
+@dirrm lib/MateConf
+@dirrm include/mateconf/2/mateconf
+@dirrm include/mateconf/2
+@dirrm include/mateconf
+@dirrm etc/mateconf/2
+@dirrmtry etc/dbus-1/system.d
+@dirrmtry etc/dbus-1
+@exec %D/bin/gio-querymodules %D/lib/gio/modules 2>/dev/null || /usr/bin/true
+@unexec %D/bin/gio-querymodules %D/lib/gio/modules 2>/dev/null || /usr/bin/true

@@ -1,0 +1,12 @@
+include/pymatecorba-2/pymatecorba.h
+%%PYTHON_SITELIBDIR%%/MATECORBA.py
+%%PYTHON_SITELIBDIR%%/MATECORBA.pyc
+%%PYTHON_SITELIBDIR%%/MATECORBA.pyo
+%%PYTHON_SITELIBDIR%%/MateCORBA.a
+%%PYTHON_SITELIBDIR%%/MateCORBA.la
+%%PYTHON_SITELIBDIR%%/MateCORBA.so
+%%PYTHON_SITELIBDIR%%/MatePortableServer.py
+%%PYTHON_SITELIBDIR%%/MatePortableServer.pyc
+%%PYTHON_SITELIBDIR%%/MatePortableServer.pyo
+libdata/pkgconfig/pymatecorba-2.pc
+@dirrm include/pymatecorba-2

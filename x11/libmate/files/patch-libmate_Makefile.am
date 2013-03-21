@@ -1,0 +1,11 @@
+--- libmate/Makefile.am.orig	2012-07-05 15:54:30.000000000 -0500
++++ libmate/Makefile.am	2012-07-05 15:55:15.000000000 -0500
+@@ -13,6 +13,8 @@
+ libmateincludedir = $(includedir)/libmate-2.0/libmate
+ 
+ INCLUDES = \
++	-DPREFIX=\""$(PREFIX)"\" \
++	-DLOCALBASE=\""$(LOCALBASE)"\" \
+ 	-I.. \
+ 	-I$(srcdir)/.. \
+ 	$(WARN_CFLAGS) \

@@ -1,0 +1,210 @@
+bin/mate-open
+etc/sound/events/gtk2-mate-events.soundlist
+etc/sound/events/mate.soundlist
+include/libmate-2.0/libmate/libmate.h
+include/libmate-2.0/libmate/libmatetypebuiltins.h
+include/libmate-2.0/libmate/mate-config.h
+include/libmate-2.0/libmate/mate-exec.h
+include/libmate-2.0/libmate/mate-help.h
+include/libmate-2.0/libmate/mate-i18n.h
+include/libmate-2.0/libmate/mate-init.h
+include/libmate-2.0/libmate/mate-macros.h
+include/libmate-2.0/libmate/mate-mateconf.h
+include/libmate-2.0/libmate/mate-program.h
+include/libmate-2.0/libmate/mate-score.h
+include/libmate-2.0/libmate/mate-sound.h
+include/libmate-2.0/libmate/mate-triggers.h
+include/libmate-2.0/libmate/mate-url.h
+include/libmate-2.0/libmate/mate-util.h
+lib/libmate-2.a
+lib/libmate-2.la
+lib/libmate-2.so
+lib/libmate-2.so.0
+lib/matecomponent/monikers/libmoniker_extra_2.a
+lib/matecomponent/monikers/libmoniker_extra_2.la
+lib/matecomponent/monikers/libmoniker_extra_2.so
+libdata/matecomponent/servers/MATE_Moniker_std.server
+libdata/pkgconfig/libmate-2.0.pc
+%%DOCSDIR%%/ch01.html
+%%DOCSDIR%%/ch02.html
+%%DOCSDIR%%/ch03.html
+%%DOCSDIR%%/ch04.html
+%%DOCSDIR%%/ch05.html
+%%DOCSDIR%%/ch06.html
+%%DOCSDIR%%/home.png
+%%DOCSDIR%%/index.html
+%%DOCSDIR%%/index.sgml
+%%DOCSDIR%%/ix01.html
+%%DOCSDIR%%/ix02.html
+%%DOCSDIR%%/ix03.html
+%%DOCSDIR%%/ix04.html
+%%DOCSDIR%%/ix05.html
+%%DOCSDIR%%/ix06.html
+%%DOCSDIR%%/ix07.html
+%%DOCSDIR%%/ix08.html
+%%DOCSDIR%%/ix09.html
+%%DOCSDIR%%/ix10.html
+%%DOCSDIR%%/left.png
+%%DOCSDIR%%/libmate-libmatetypebuiltins.html
+%%DOCSDIR%%/libmate-mate-config.html
+%%DOCSDIR%%/libmate-mate-exec.html
+%%DOCSDIR%%/libmate-mate-help.html
+%%DOCSDIR%%/libmate-mate-i18n.html
+%%DOCSDIR%%/libmate-mate-init.html
+%%DOCSDIR%%/libmate-mate-mateconf.html
+%%DOCSDIR%%/libmate-mate-program.html
+%%DOCSDIR%%/libmate-mate-score.html
+%%DOCSDIR%%/libmate-mate-sound.html
+%%DOCSDIR%%/libmate-mate-triggers.html
+%%DOCSDIR%%/libmate-mate-url.html
+%%DOCSDIR%%/libmate-mate-util.html
+%%DOCSDIR%%/libmate.devhelp
+%%DOCSDIR%%/libmate.devhelp2
+%%DOCSDIR%%/libmate.html
+%%DOCSDIR%%/right.png
+%%DOCSDIR%%/style.css
+%%DOCSDIR%%/up.png
+share/locale/am/LC_MESSAGES/libmate.mo
+share/locale/ar/LC_MESSAGES/libmate.mo
+share/locale/as/LC_MESSAGES/libmate.mo
+share/locale/ast/LC_MESSAGES/libmate.mo
+share/locale/az/LC_MESSAGES/libmate.mo
+share/locale/be/LC_MESSAGES/libmate.mo
+share/locale/bg/LC_MESSAGES/libmate.mo
+share/locale/bn/LC_MESSAGES/libmate.mo
+share/locale/bn_IN/LC_MESSAGES/libmate.mo
+share/locale/br/LC_MESSAGES/libmate.mo
+share/locale/bs/LC_MESSAGES/libmate.mo
+share/locale/ca/LC_MESSAGES/libmate.mo
+share/locale/ca@valencia/LC_MESSAGES/libmate.mo
+share/locale/crh/LC_MESSAGES/libmate.mo
+share/locale/cs/LC_MESSAGES/libmate.mo
+share/locale/cy/LC_MESSAGES/libmate.mo
+share/locale/da/LC_MESSAGES/libmate.mo
+share/locale/de/LC_MESSAGES/libmate.mo
+share/locale/dz/LC_MESSAGES/libmate.mo
+share/locale/el/LC_MESSAGES/libmate.mo
+share/locale/en@shaw/LC_MESSAGES/libmate.mo
+share/locale/en_CA/LC_MESSAGES/libmate.mo
+share/locale/en_GB/LC_MESSAGES/libmate.mo
+share/locale/eo/LC_MESSAGES/libmate.mo
+share/locale/es/LC_MESSAGES/libmate.mo
+share/locale/et/LC_MESSAGES/libmate.mo
+share/locale/eu/LC_MESSAGES/libmate.mo
+share/locale/fa/LC_MESSAGES/libmate.mo
+share/locale/fi/LC_MESSAGES/libmate.mo
+share/locale/fr/LC_MESSAGES/libmate.mo
+share/locale/fur/LC_MESSAGES/libmate.mo
+share/locale/ga/LC_MESSAGES/libmate.mo
+share/locale/gl/LC_MESSAGES/libmate.mo
+share/locale/gu/LC_MESSAGES/libmate.mo
+share/locale/he/LC_MESSAGES/libmate.mo
+share/locale/hi/LC_MESSAGES/libmate.mo
+share/locale/hr/LC_MESSAGES/libmate.mo
+share/locale/hu/LC_MESSAGES/libmate.mo
+share/locale/id/LC_MESSAGES/libmate.mo
+share/locale/is/LC_MESSAGES/libmate.mo
+share/locale/it/LC_MESSAGES/libmate.mo
+share/locale/ja/LC_MESSAGES/libmate.mo
+share/locale/ka/LC_MESSAGES/libmate.mo
+share/locale/kk/LC_MESSAGES/libmate.mo
+share/locale/kn/LC_MESSAGES/libmate.mo
+share/locale/ko/LC_MESSAGES/libmate.mo
+share/locale/ku/LC_MESSAGES/libmate.mo
+share/locale/lt/LC_MESSAGES/libmate.mo
+share/locale/lv/LC_MESSAGES/libmate.mo
+share/locale/mai/LC_MESSAGES/libmate.mo
+share/locale/mg/LC_MESSAGES/libmate.mo
+share/locale/mk/LC_MESSAGES/libmate.mo
+share/locale/ml/LC_MESSAGES/libmate.mo
+share/locale/mn/LC_MESSAGES/libmate.mo
+share/locale/mr/LC_MESSAGES/libmate.mo
+share/locale/ms/LC_MESSAGES/libmate.mo
+share/locale/nb/LC_MESSAGES/libmate.mo
+share/locale/nds/LC_MESSAGES/libmate.mo
+share/locale/ne/LC_MESSAGES/libmate.mo
+share/locale/nl/LC_MESSAGES/libmate.mo
+share/locale/nn/LC_MESSAGES/libmate.mo
+share/locale/oc/LC_MESSAGES/libmate.mo
+share/locale/or/LC_MESSAGES/libmate.mo
+share/locale/pa/LC_MESSAGES/libmate.mo
+share/locale/pl/LC_MESSAGES/libmate.mo
+share/locale/pt/LC_MESSAGES/libmate.mo
+share/locale/pt_BR/LC_MESSAGES/libmate.mo
+share/locale/ro/LC_MESSAGES/libmate.mo
+share/locale/ru/LC_MESSAGES/libmate.mo
+share/locale/rw/LC_MESSAGES/libmate.mo
+share/locale/si/LC_MESSAGES/libmate.mo
+share/locale/sk/LC_MESSAGES/libmate.mo
+share/locale/sl/LC_MESSAGES/libmate.mo
+share/locale/sq/LC_MESSAGES/libmate.mo
+share/locale/sr/LC_MESSAGES/libmate.mo
+share/locale/sr@ije/LC_MESSAGES/libmate.mo
+share/locale/sr@latin/LC_MESSAGES/libmate.mo
+share/locale/sv/LC_MESSAGES/libmate.mo
+share/locale/ta/LC_MESSAGES/libmate.mo
+share/locale/te/LC_MESSAGES/libmate.mo
+share/locale/th/LC_MESSAGES/libmate.mo
+share/locale/tr/LC_MESSAGES/libmate.mo
+share/locale/tt/LC_MESSAGES/libmate.mo
+share/locale/uk/LC_MESSAGES/libmate.mo
+share/locale/vi/LC_MESSAGES/libmate.mo
+share/locale/wa/LC_MESSAGES/libmate.mo
+share/locale/xh/LC_MESSAGES/libmate.mo
+share/locale/yi/LC_MESSAGES/libmate.mo
+share/locale/zh_CN/LC_MESSAGES/libmate.mo
+share/locale/zh_HK/LC_MESSAGES/libmate.mo
+share/locale/zh_TW/LC_MESSAGES/libmate.mo
+share/mate-background-properties/mate-default.xml
+@dirrmtry share/mate-background-properties
+@dirrmtry share/locale/zh_HK/LC_MESSAGES
+@dirrmtry share/locale/zh_HK
+@dirrmtry share/locale/yi/LC_MESSAGES
+@dirrmtry share/locale/yi
+@dirrmtry share/locale/xh/LC_MESSAGES
+@dirrmtry share/locale/xh
+@dirrmtry share/locale/tt/LC_MESSAGES
+@dirrmtry share/locale/tt
+@dirrmtry share/locale/te/LC_MESSAGES
+@dirrmtry share/locale/te
+@dirrmtry share/locale/sr@latin/LC_MESSAGES
+@dirrmtry share/locale/sr@latin
+@dirrmtry share/locale/sr@ije/LC_MESSAGES
+@dirrmtry share/locale/sr@ije
+@dirrmtry share/locale/si/LC_MESSAGES
+@dirrmtry share/locale/si
+@dirrmtry share/locale/rw/LC_MESSAGES
+@dirrmtry share/locale/rw
+@dirrmtry share/locale/oc/LC_MESSAGES
+@dirrmtry share/locale/oc
+@dirrmtry share/locale/nds/LC_MESSAGES
+@dirrmtry share/locale/nds
+@dirrmtry share/locale/mr/LC_MESSAGES
+@dirrmtry share/locale/mr
+@dirrmtry share/locale/mg/LC_MESSAGES
+@dirrmtry share/locale/mg
+@dirrmtry share/locale/mai/LC_MESSAGES
+@dirrmtry share/locale/mai
+@dirrmtry share/locale/ku/LC_MESSAGES
+@dirrmtry share/locale/ku
+@dirrmtry share/locale/kk/LC_MESSAGES
+@dirrmtry share/locale/kk
+@dirrmtry share/locale/fur/LC_MESSAGES
+@dirrmtry share/locale/fur
+@dirrmtry share/locale/en@shaw/LC_MESSAGES
+@dirrmtry share/locale/en@shaw
+@dirrmtry share/locale/dz/LC_MESSAGES
+@dirrmtry share/locale/dz
+@dirrmtry share/locale/crh/LC_MESSAGES
+@dirrmtry share/locale/crh
+@dirrmtry share/locale/ca@valencia/LC_MESSAGES
+@dirrmtry share/locale/ca@valencia
+@dirrmtry share/locale/bn_IN/LC_MESSAGES
+@dirrmtry share/locale/bn_IN
+@dirrmtry share/locale/ast/LC_MESSAGES
+@dirrmtry share/locale/ast
+@dirrmtry share/locale/as/LC_MESSAGES
+@dirrmtry share/locale/as
+@dirrm %%DOCSDIR%%
+@dirrm include/libmate-2.0/libmate
+@dirrm include/libmate-2.0
