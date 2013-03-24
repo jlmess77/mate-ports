@@ -1,13 +1,8 @@
-# New ports collection makefile for:	gnomesession
-# Date created:				08 May 2002
-# Whom:					Joe Marcus Clarke <marcus@FreeBSD.org>
-#
+# Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/x11/mate-session-manager/Makefile,v 1.4 2012/07/27 01:34:27 mezz Exp $
-#
 
 PORTNAME=	mate-session-manager
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.2
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -22,23 +17,23 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:${PORTSDIR}/sysutils/consoleki
 		${LOCALBASE}/bin/xdpyinfo:${PORTSDIR}/x11/xdpyinfo
 
 USE_XZ=		yes
-USE_MATE=	autogen common:build conf intlhack matehack settingsdaemon
+USE_MATE=	autogen common:build intlhack matehack settingsdaemon
 USE_XORG=	ice sm xau xext xrandr xrender xtrans xtst
 USE_GMAKE=	yes
-USE_GNOME=	glib20 gtk20 librsvg2 libxslt pango
+USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxslt pango
 USE_GETTEXT=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docbook-docs \
 		--with-gtk=2.0 \
-		${MATECONF_PREFIX}
+		--with-systemd=no
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 MAN1=		mate-session.1 mate-wm.1 mate-session-properties.1 \
 		mate-session-save.1
-MATECONF_SCHEMAS=mate-session.schemas
+GLIB_SCHEMAS=	org.mate.session.gschema.xml
 
 .include <bsd.port.mk>
