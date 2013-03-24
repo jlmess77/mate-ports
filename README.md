@@ -11,7 +11,7 @@ You will need to make sure you have latest ports tree before you grab MATE. I am
 
 	# fetch http://people.freebsd.org/~mezz/script/matemerge.sh
 
-You will need to edit in the marcusmerge in your editor. Although, you can use the flag options instead of edit it but it's much easier if you edit it. The two variables, `SRCDIR` and `DESTDIR` are what you need to change it. You may skip `DESTDIR` if it's same default in your FreeBSD. To merge mate-ports into FreeBSD ports:
+You will need to edit in the marcusmerge in your editor. The two variables, `SRCDIR` and `DESTDIR` are what you need to change it. You may skip `DESTDIR` if it's same default in your FreeBSD. To merge mate-ports into FreeBSD ports:
 
 	# sh matemerge.sh
 
