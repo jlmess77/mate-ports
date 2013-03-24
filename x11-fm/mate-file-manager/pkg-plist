@@ -20,6 +20,7 @@ lib/libcaja-extension.so
 lib/libcaja-extension.so.1
 libdata/pkgconfig/libcaja-extension.pc
 libexec/caja-convert-metadata
+share/MateConf/gsettings/caja.convert
 share/applications/caja-autorun-software.desktop
 share/applications/caja-browser.desktop
 share/applications/caja-computer.desktop
@@ -74,6 +75,7 @@ share/caja/ui/caja-list-view-ui.xml
 share/caja/ui/caja-navigation-window-ui.xml
 share/caja/ui/caja-shell-ui.xml
 share/caja/ui/caja-spatial-window-ui.xml
+share/dbus-1/services/org.mate.freedesktop.FileManager1.service
 share/doc/libcaja-extension/ch01.html
 share/doc/libcaja-extension/home.png
 share/doc/libcaja-extension/index.html
@@ -125,6 +127,7 @@ share/locale/de/LC_MESSAGES/caja.mo
 share/locale/dz/LC_MESSAGES/caja.mo
 share/locale/el/LC_MESSAGES/caja.mo
 share/locale/en@shaw/LC_MESSAGES/caja.mo
+share/locale/en_AU/LC_MESSAGES/caja.mo
 share/locale/en_CA/LC_MESSAGES/caja.mo
 share/locale/en_GB/LC_MESSAGES/caja.mo
 share/locale/eo/LC_MESSAGES/caja.mo
@@ -297,8 +300,9 @@ share/pixmaps/caja/thumbnail_frame.png
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
-@dirrmtry share/gir-1.0
 @dirrm share/doc/libcaja-extension
+@dirrmtry share/dbus-1/services
+@dirrmtry share/dbus-1
 @dirrm share/caja/ui
 @dirrm share/caja/patterns
 @dirrm share/caja/icons/hicolor/48x48/emblems
@@ -311,7 +315,6 @@ share/pixmaps/caja/thumbnail_frame.png
 @dirrm share/caja/icons
 @dirrm share/caja
 @dirrmtry share/applications
-@dirrmtry lib/girepository-1.0
 @dirrm lib/caja/extensions-2.0
 @dirrm lib/caja
 @dirrm include/caja/libcaja-extension
