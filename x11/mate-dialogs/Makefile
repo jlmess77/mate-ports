@@ -1,13 +1,8 @@
-# New ports collection makefile for:	zenity
-# Date created:				01 Mar 2003
-# Whom:					Franz Klammer <klammer@webonaut.com>
-#
+# Created by: Franz Klammer <klammer@webonaut.com>
 # $FreeBSD$
-#   $MCom: ports-experimental/x11/mate-dialogs/Makefile,v 1.3 2012/07/27 01:34:26 mezz Exp $
-#
 
 PORTNAME=	mate-dialogs
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -21,7 +16,7 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack matehack
 USE_GMAKE=	yes
-USE_GNOME=	glib20 gtk20
+USE_GNOME=	gnomehier glib20 gtk20
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
@@ -33,19 +28,20 @@ CPPFLAGS+=	-I${LOCALBASE}/include ${PTHREAD_CFLAGS}
 
 MAN1=		matedialog.1
 
-OPTIONS=	MATENOTIFY "Enable libnotify support" on
+OPTIONS_DEFINE=	NOTIFY
+OPTIONS_DEFAULT=NOTIFY
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
-.if !defined(WITHOUT_MATENOTIFY)
-USE_MATE+=	libmatenotify
-CONFIGURE_ARGS+=--enable-libmatenotify
+.if ${PORT_OPTIONS:MNOTIFY}
+LIB_DEPENDS+=	notify:${PORTSDIR}/devel/libnotify
+CONFIGURE_ARGS+=--enable-libnotify
 .else
-CONFIGURE_ARGS+=--disable-libmatenotify
+CONFIGURE_ARGS+=--disable-libnotify
 .endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|bin_SCRIPTS = gdialog||g' \
 		${WRKSRC}/src/Makefile.am
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
