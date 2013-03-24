@@ -1,9 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/x11-toolkits/libmatewnck/Makefile,v 1.3 2013/03/09 09:44:23 kwm Exp $
 
 PORTNAME=	libmatewnck
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.1
 CATEGORIES=	x11-toolkits mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -19,7 +18,7 @@ USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack ltverhack matehack
 USE_XORG=	x11 xres
 USE_GMAKE=	yes
-USE_GNOME=	gdkpixbuf2 glib20 gtk20
+USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20
 USES=		bison
 USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
