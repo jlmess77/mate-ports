@@ -1,7 +1,5 @@
-bin/matekbd-indicator-plugins-capplet
 include/libmatekbd/matekbd-desktop-config.h
 include/libmatekbd/matekbd-indicator-config.h
-include/libmatekbd/matekbd-indicator-plugin.h
 include/libmatekbd/matekbd-indicator.h
 include/libmatekbd/matekbd-keyboard-config.h
 include/libmatekbd/matekbd-keyboard-drawing.h
@@ -17,9 +15,8 @@ lib/libmatekbdui.so
 lib/libmatekbdui.so.4
 libdata/pkgconfig/libmatekbd.pc
 libdata/pkgconfig/libmatekbdui.pc
-share/applications/matekbd-indicator-plugins-capplet.desktop
-%%DATADIR%%/ui/matekbd-indicator-plugins.ui
-%%DATADIR%%/ui/matekbd-indicator-plugins_add.ui
+share/MateConf/gsettings/matekbd.convert
+share/glib-2.0/schemas/org.mate.peripherals-keyboard-xkb.gschema.xml
 %%DATADIR%%/ui/show-layout.ui
 share/locale/ar/LC_MESSAGES/libmatekbd.mo
 share/locale/as/LC_MESSAGES/libmatekbd.mo
@@ -119,5 +116,4 @@ share/locale/zh_TW/LC_MESSAGES/libmatekbd.mo
 @dirrmtry share/locale/as
 @dirrm %%DATADIR%%/ui
 @dirrm %%DATADIR%%
-@dirrmtry share/applications
 @dirrm include/libmatekbd
