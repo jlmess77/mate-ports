@@ -1,13 +1,8 @@
-# New ports collection makefile for:	gnome-menus
-# Date created:				30 November 2004
-# Whom:					Joe Marcus Clarke <marcus@FreeBSD.org>
-#
+# Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/x11/mate-menus/Makefile,v 1.4 2012/08/21 22:21:09 mezz Exp $
-#
 
 PORTNAME=	mate-menus
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
