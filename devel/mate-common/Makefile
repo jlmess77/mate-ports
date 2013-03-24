@@ -1,14 +1,8 @@
-# New ports collection makefile for:	gnomecommon
-# Date created:				04 April 2002
-# Whom:					Joe Marcus Clarke <marcus@FreeBSD.org>
-#
+#Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/devel/mate-common/Makefile,v 1.3 2012/07/27 01:34:25 mezz Exp $
-#
 
 PORTNAME=	mate-common
-PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTVERSION=	1.5.2
 CATEGORIES=	devel mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
