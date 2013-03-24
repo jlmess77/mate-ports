@@ -12,6 +12,7 @@ lib/libmate-desktop-2.la
 lib/libmate-desktop-2.so
 lib/libmate-desktop-2.so.17
 libdata/pkgconfig/mate-desktop-2.0.pc
+share/MateConf/gsettings/mate-desktop.convert
 share/applications/mate-about.desktop
 %%DOCSDIR%%/MateBG.html
 %%DOCSDIR%%/MateDesktopThumbnailFactory.html
@@ -63,6 +64,7 @@ share/locale/de/LC_MESSAGES/mate-desktop.mo
 share/locale/dz/LC_MESSAGES/mate-desktop.mo
 share/locale/el/LC_MESSAGES/mate-desktop.mo
 share/locale/en@shaw/LC_MESSAGES/mate-desktop.mo
+share/locale/en_AU/LC_MESSAGES/mate-desktop.mo
 share/locale/en_CA/LC_MESSAGES/mate-desktop.mo
 share/locale/en_GB/LC_MESSAGES/mate-desktop.mo
 share/locale/eo/LC_MESSAGES/mate-desktop.mo

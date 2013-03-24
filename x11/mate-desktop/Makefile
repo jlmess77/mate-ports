@@ -1,9 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/x11/mate-desktop/Makefile,v 1.6 2013/03/21 16:07:55 mezz Exp $
 
 PORTNAME=	mate-desktop
-PORTVERSION=	1.4.2
+PORTVERSION=	1.5.8
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -15,11 +14,11 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	startup-notification-1:${PORTSDIR}/x11/startup-notification
 
 USE_XZ=		yes
-USE_MATE=	autogen common:build conf docutils intlhack ltverhack matehack
+USE_MATE=	autogen common:build docutils intlhack ltverhack matehack
 USE_XORG=	x11 xrandr
 USES=		bison
 USE_GMAKE=	yes
-USE_GNOME=	gdkpixbuf2 glib20 gtk20
+USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20
 USE_PYTHON=	yes
 USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
@@ -34,5 +33,23 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 MAN1=		mate-about.1
+
+GLIB_SCHEMAS=	org.mate.accessibility-keyboard.gschema.xml \
+		org.mate.accessibility-startup.gschema.xml \
+		org.mate.applications-at-mobility.gschema.xml \
+		org.mate.applications-at-visual.gschema.xml \
+		org.mate.applications-browser.gschema.xml \
+		org.mate.applications-office.gschema.xml \
+		org.mate.applications-terminal.gschema.xml \
+		org.mate.background.gschema.xml \
+		org.mate.file-views.gschema.xml \
+		org.mate.interface.gschema.xml \
+		org.mate.lockdown.gschema.xml \
+		org.mate.peripherals-keyboard.gschema.xml \
+		org.mate.peripherals-mouse.gschema.xml \
+		org.mate.sound.gschema.xml \
+		org.mate.thumbnail-cache.gschema.xml \
+		org.mate.thumbnailers.gschema.xml \
+		org.mate.typing-break.gschema.xml
 
 .include <bsd.port.mk>
