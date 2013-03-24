@@ -1,7 +1,6 @@
 include/libmateweather/location-entry.h
 include/libmateweather/mateweather-enum-types.h
 include/libmateweather/mateweather-location.h
-include/libmateweather/mateweather-mateconf.h
 include/libmateweather/mateweather-prefs.h
 include/libmateweather/mateweather-timezone.h
 include/libmateweather/mateweather-xml.h
@@ -20,7 +19,6 @@ libdata/pkgconfig/mateweather.pc
 %%DOCSDIR%%/index.sgml
 %%DOCSDIR%%/left.png
 %%DOCSDIR%%/libmateweather-mateweather-location.html
-%%DOCSDIR%%/libmateweather-mateweather-mateconf.html
 %%DOCSDIR%%/libmateweather-mateweather-prefs.html
 %%DOCSDIR%%/libmateweather-mateweather-timezone.html
 %%DOCSDIR%%/libmateweather-mateweather-xml.html
