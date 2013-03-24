@@ -14,6 +14,7 @@ lib/libmarco-private.la
 lib/libmarco-private.so
 lib/libmarco-private.so.0
 libdata/pkgconfig/libmarco-private.pc
+share/MateConf/gsettings/marco.convert
 share/applications/marco.desktop
 share/locale/am/LC_MESSAGES/marco.mo
 share/locale/ar/LC_MESSAGES/marco.mo
@@ -37,6 +38,7 @@ share/locale/de/LC_MESSAGES/marco.mo
 share/locale/dz/LC_MESSAGES/marco.mo
 share/locale/el/LC_MESSAGES/marco.mo
 share/locale/en@shaw/LC_MESSAGES/marco.mo
+share/locale/en_AU/LC_MESSAGES/marco.mo
 share/locale/en_CA/LC_MESSAGES/marco.mo
 share/locale/en_GB/LC_MESSAGES/marco.mo
 share/locale/eo/LC_MESSAGES/marco.mo
@@ -64,6 +66,7 @@ share/locale/ka/LC_MESSAGES/marco.mo
 share/locale/kn/LC_MESSAGES/marco.mo
 share/locale/ko/LC_MESSAGES/marco.mo
 share/locale/ku/LC_MESSAGES/marco.mo
+share/locale/ky/LC_MESSAGES/marco.mo
 share/locale/la/LC_MESSAGES/marco.mo
 share/locale/lt/LC_MESSAGES/marco.mo
 share/locale/lv/LC_MESSAGES/marco.mo
@@ -110,7 +113,8 @@ share/locale/zh_HK/LC_MESSAGES/marco.mo
 share/locale/zh_TW/LC_MESSAGES/marco.mo
 share/marco/icons/marco-window-demo.png
 share/mate-control-center/keybindings/50-marco-desktop-key.xml
-share/mate-control-center/keybindings/50-marco-key.xml
+share/mate-control-center/keybindings/50-marco-global-key.xml
+share/mate-control-center/keybindings/50-marco-window-key.xml
 share/mate/help/creating-marco-themes/C/creating-marco-themes.xml
 share/mate/wm-properties/marco-wm.desktop
 share/themes/ClearlooksRe/metacity-1/metacity-theme-1.xml
@@ -218,6 +222,8 @@ share/themes/eOS/metacity-1/unmaximize_unfocused_over.png
 @dirrmtry share/locale/mai
 @dirrmtry share/locale/la/LC_MESSAGES
 @dirrmtry share/locale/la
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
 @dirrmtry share/locale/ig/LC_MESSAGES
