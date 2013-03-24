@@ -1,40 +1,21 @@
 bin/mate-desktop-item-edit
 bin/mate-panel
 bin/mate-panel-test-applets
-bin/panel-test-applets-matecomponent
-@unexec mateconftool-2 --direct --config-source=xml::%D/etc/mateconf/mateconf.xml.defaults --unload %D/etc/mateconf/schemas/panel-default-setup.entries /apps/panel > /dev/null || /usr/bin/true
-@unexec mateconftool-2 --direct --config-source=xml::%D/etc/mateconf/mateconf.xml.defaults --unload %D/etc/mateconf/schemas/panel-default-setup.entries > /dev/null || /usr/bin/true
-etc/mateconf/schemas/panel-default-setup.entries
-@exec mateconftool-2 --direct --config-source=xml::%D/etc/mateconf/mateconf.xml.defaults --load %D/etc/mateconf/schemas/panel-default-setup.entries > /dev/null || /usr/bin/true
-@exec mateconftool-2 --direct --config-source=xml::%D/etc/mateconf/mateconf.xml.defaults --load %D/etc/mateconf/schemas/panel-default-setup.entries /apps/panel > /dev/null || /usr/bin/true
-include/mate-panel-3.0/libmate-panel-applet/mate-panel-applet-enums.h
-include/mate-panel-3.0/libmate-panel-applet/mate-panel-applet-mateconf.h
-include/mate-panel-3.0/libmate-panel-applet/mate-panel-applet.h
-include/panel-2.0/MATE_Panel.h
-include/panel-2.0/mate-panel-applet-enums.h
-include/panel-2.0/mate-panel-applet-mateconf.h
-include/panel-2.0/mate-panel-applet.h
-lib/girepository-1.0/MatePanelApplet-3.0.typelib
-lib/libmate-panel-applet-2.a
-lib/libmate-panel-applet-2.la
-lib/libmate-panel-applet-2.so
-lib/libmate-panel-applet-2.so.1
-lib/libmate-panel-applet-3.a
-lib/libmate-panel-applet-3.la
-lib/libmate-panel-applet-3.so
-lib/libmate-panel-applet-3.so.1
-@exec %%LOCALBASE%%/bin/gio-querymodules %D/lib/mate-panel/modules 2>/dev/null || /usr/bin/true
-@unexec /bin/rm -f %D/lib/mate-panel/modules/giomodule.cache
-lib/mate-panel/modules/libmate-panel-applets-matecomponent.a
-lib/mate-panel/modules/libmate-panel-applets-matecomponent.la
-lib/mate-panel/modules/libmate-panel-applets-matecomponent.so
-libdata/pkgconfig/libmatepanelapplet-2.0.pc
-libdata/pkgconfig/libmatepanelapplet-3.0.pc
+include/mate-panel-4.0/libmate-panel-applet/mate-panel-applet-enums.h
+include/mate-panel-4.0/libmate-panel-applet/mate-panel-applet-gsettings.h
+include/mate-panel-4.0/libmate-panel-applet/mate-panel-applet.h
+lib/girepository-1.0/MatePanelApplet-4.0.typelib
+lib/libmate-panel-applet-4.a
+lib/libmate-panel-applet-4.la
+lib/libmate-panel-applet-4.so
+lib/libmate-panel-applet-4.so.1
+libdata/pkgconfig/libmatepanelapplet-4.0.pc
 libexec/clock-applet
 libexec/fish-applet
 libexec/mate-panel-add
 libexec/notification-area-applet
 libexec/wnck-applet
+share/MateConf/gsettings/mate-panel.convert
 share/applications/mate-panel.desktop
 share/dbus-1/services/org.mate.panel.applet.ClockAppletFactory.service
 share/dbus-1/services/org.mate.panel.applet.FishAppletFactory.service
@@ -47,7 +28,6 @@ share/doc/mate-panel-applet/home.png
 share/doc/mate-panel-applet/index.html
 share/doc/mate-panel-applet/index.sgml
 share/doc/mate-panel-applet/left.png
-share/doc/mate-panel-applet/mate-panel-applet-Panel-Applet-MateConf-Utilities.html
 share/doc/mate-panel-applet/mate-panel-applet-mate-panel-applet.html
 share/doc/mate-panel-applet/mate-panel-applet.devhelp
 share/doc/mate-panel-applet/mate-panel-applet.devhelp2
@@ -116,7 +96,6 @@ share/icons/hicolor/scalable/apps/mate-panel-window-list.svg
 share/icons/hicolor/scalable/apps/mate-panel-window-menu.svg
 share/icons/hicolor/scalable/apps/mate-panel-workspace-switcher.svg
 share/icons/hicolor/scalable/apps/mate-panel.svg
-share/idl/mate-panel-2.0/MATE_Panel.idl
 share/locale/af/LC_MESSAGES/mate-panel.mo
 share/locale/am/LC_MESSAGES/mate-panel.mo
 share/locale/ar/LC_MESSAGES/mate-panel.mo
@@ -140,6 +119,7 @@ share/locale/de/LC_MESSAGES/mate-panel.mo
 share/locale/dz/LC_MESSAGES/mate-panel.mo
 share/locale/el/LC_MESSAGES/mate-panel.mo
 share/locale/en@shaw/LC_MESSAGES/mate-panel.mo
+share/locale/en_AU/LC_MESSAGES/mate-panel.mo
 share/locale/en_CA/LC_MESSAGES/mate-panel.mo
 share/locale/en_GB/LC_MESSAGES/mate-panel.mo
 share/locale/eo/LC_MESSAGES/mate-panel.mo
@@ -225,11 +205,11 @@ share/locale/zh_CN/LC_MESSAGES/mate-panel.mo
 share/locale/zh_HK/LC_MESSAGES/mate-panel.mo
 share/locale/zh_TW/LC_MESSAGES/mate-panel.mo
 share/locale/zu/LC_MESSAGES/mate-panel.mo
-share/mate-2.0/ui/MATE_Panel_Popup.xml
 %%DATADIR%%/applets/org.mate.panel.ClockApplet.mate-panel-applet
 %%DATADIR%%/applets/org.mate.panel.FishApplet.mate-panel-applet
 %%DATADIR%%/applets/org.mate.panel.NotificationAreaApplet.mate-panel-applet
 %%DATADIR%%/applets/org.mate.panel.Wncklet.mate-panel-applet
+%%DATADIR%%/panel-default-layout.mate
 %%DATADIR%%/pixmaps/clock-calendar-icon.png
 %%DATADIR%%/pixmaps/clock-face-large.svg
 %%DATADIR%%/pixmaps/clock-face-small-day.svg
@@ -246,7 +226,6 @@ share/mate-2.0/ui/MATE_Panel_Popup.xml
 %%DATADIR%%/pixmaps/mate-gegl2-2.png
 %%DATADIR%%/pixmaps/mate-gegl2.png
 %%DATADIR%%/pixmaps/monkey.png
-%%DATADIR%%/pixmaps/nyan.png
 %%DATADIR%%/pixmaps/oldwanda.png
 %%DATADIR%%/pixmaps/wanda.png
 %%DATADIR%%/ui/clock-menu.xml
@@ -256,7 +235,6 @@ share/mate-2.0/ui/MATE_Panel_Popup.xml
 %%DATADIR%%/ui/notification-area-menu.xml
 %%DATADIR%%/ui/panel-properties-dialog.ui
 %%DATADIR%%/ui/panel-run-dialog.ui
-%%DATADIR%%/ui/panel-test-applets-matecomponent.ui
 %%DATADIR%%/ui/panel-test-applets.ui
 %%DATADIR%%/ui/showdesktop-menu.xml
 %%DATADIR%%/ui/window-list-menu.xml
@@ -631,14 +609,11 @@ share/omf/mate-applet-fish/mate-applet-fish-zh_CN.omf
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
-@dirrm share/idl/mate-panel-2.0
-@dirrmtry share/idl
 @dirrm share/doc/mate-panel-applet
 @dirrmtry share/dbus-1/services
 @dirrmtry share/dbus-1
 @dirrmtry share/applications
-@dirrm lib/mate-panel/modules
-@dirrm lib/mate-panel
-@dirrm include/panel-2.0
-@dirrm include/mate-panel-3.0/libmate-panel-applet
-@dirrm include/mate-panel-3.0
+@dirrmtry lib/mate-panel/modules
+@dirrmtry lib/mate-panel
+@dirrm include/mate-panel-4.0/libmate-panel-applet
+@dirrm include/mate-panel-4.0

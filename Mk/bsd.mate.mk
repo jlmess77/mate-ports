@@ -203,9 +203,9 @@ notificationdaemon_DETECT=${LOCALBASE}/libexec/mate-notification-daemon
 notificationdaemon_BUILD_DEPENDS=${notificationdaemon_DETECT}:${PORTSDIR}/deskutils/mate-notification-daemon
 notificationdaemon_RUN_DEPENDS=${notificationdaemon_DETECT}:${PORTSDIR}/deskutils/mate-notification-daemon
 
-panel_DETECT=			${LOCALBASE}/libdata/pkgconfig/libmatepanelapplet-3.0.pc
+panel_DETECT=			${LOCALBASE}/libdata/pkgconfig/libmatepanelapplet-4.0.pc
 panel_BUILD_DEPENDS=	${panel_DETECT}:${PORTSDIR}/x11/mate-panel
-panel_LIB_DEPENDS=		mate-panel-applet-3:${PORTSDIR}/x11/mate-panel
+panel_LIB_DEPENDS=		mate-panel-applet-4:${PORTSDIR}/x11/mate-panel
 panel_RUN_DEPENDS=		${panel_DETECT}:${PORTSDIR}/x11/mate-panel
 
 polkit_DETECT=			${LOCALBASE}/libdata/pkgconfig/polkit-gtk-mate-1.pc
