@@ -30,16 +30,19 @@ share/doc/mate-keyring/mate-keyring.devhelp2
 share/doc/mate-keyring/right.png
 share/doc/mate-keyring/style.css
 share/doc/mate-keyring/up.png
+share/locale/am/LC_MESSAGES/libmatekeyring.mo
 share/locale/ar/LC_MESSAGES/libmatekeyring.mo
 share/locale/ast/LC_MESSAGES/libmatekeyring.mo
 share/locale/bg/LC_MESSAGES/libmatekeyring.mo
 share/locale/bn/LC_MESSAGES/libmatekeyring.mo
+share/locale/bn_IN/LC_MESSAGES/libmatekeyring.mo
 share/locale/ca/LC_MESSAGES/libmatekeyring.mo
 share/locale/ca@valencia/LC_MESSAGES/libmatekeyring.mo
 share/locale/cs/LC_MESSAGES/libmatekeyring.mo
 share/locale/da/LC_MESSAGES/libmatekeyring.mo
 share/locale/de/LC_MESSAGES/libmatekeyring.mo
 share/locale/el/LC_MESSAGES/libmatekeyring.mo
+share/locale/en_AU/LC_MESSAGES/libmatekeyring.mo
 share/locale/en_GB/LC_MESSAGES/libmatekeyring.mo
 share/locale/eo/LC_MESSAGES/libmatekeyring.mo
 share/locale/es/LC_MESSAGES/libmatekeyring.mo
@@ -53,6 +56,7 @@ share/locale/fy/LC_MESSAGES/libmatekeyring.mo
 share/locale/gl/LC_MESSAGES/libmatekeyring.mo
 share/locale/gu/LC_MESSAGES/libmatekeyring.mo
 share/locale/he/LC_MESSAGES/libmatekeyring.mo
+share/locale/hr/LC_MESSAGES/libmatekeyring.mo
 share/locale/hu/LC_MESSAGES/libmatekeyring.mo
 share/locale/id/LC_MESSAGES/libmatekeyring.mo
 share/locale/it/LC_MESSAGES/libmatekeyring.mo
@@ -77,6 +81,7 @@ share/locale/ro/LC_MESSAGES/libmatekeyring.mo
 share/locale/ru/LC_MESSAGES/libmatekeyring.mo
 share/locale/sk/LC_MESSAGES/libmatekeyring.mo
 share/locale/sl/LC_MESSAGES/libmatekeyring.mo
+share/locale/sq/LC_MESSAGES/libmatekeyring.mo
 share/locale/sr/LC_MESSAGES/libmatekeyring.mo
 share/locale/sr@latin/LC_MESSAGES/libmatekeyring.mo
 share/locale/sv/LC_MESSAGES/libmatekeyring.mo
@@ -103,6 +108,8 @@ share/locale/zh_TW/LC_MESSAGES/libmatekeyring.mo
 @dirrmtry share/locale/es_CL
 @dirrmtry share/locale/ca@valencia/LC_MESSAGES
 @dirrmtry share/locale/ca@valencia
+@dirrmtry share/locale/bn_IN/LC_MESSAGES
+@dirrmtry share/locale/bn_IN
 @dirrmtry share/locale/ast/LC_MESSAGES
 @dirrmtry share/locale/ast
 @dirrm share/doc/mate-keyring
