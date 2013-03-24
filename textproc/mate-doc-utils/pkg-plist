@@ -18,6 +18,7 @@ share/locale/de/LC_MESSAGES/mate-doc-utils.mo
 share/locale/dz/LC_MESSAGES/mate-doc-utils.mo
 share/locale/el/LC_MESSAGES/mate-doc-utils.mo
 share/locale/en@shaw/LC_MESSAGES/mate-doc-utils.mo
+share/locale/en_AU/LC_MESSAGES/mate-doc-utils.mo
 share/locale/en_CA/LC_MESSAGES/mate-doc-utils.mo
 share/locale/en_GB/LC_MESSAGES/mate-doc-utils.mo
 share/locale/es/LC_MESSAGES/mate-doc-utils.mo
@@ -46,6 +47,7 @@ share/locale/mk/LC_MESSAGES/mate-doc-utils.mo
 share/locale/ml/LC_MESSAGES/mate-doc-utils.mo
 share/locale/mn/LC_MESSAGES/mate-doc-utils.mo
 share/locale/mr/LC_MESSAGES/mate-doc-utils.mo
+share/locale/ms/LC_MESSAGES/mate-doc-utils.mo
 share/locale/nb/LC_MESSAGES/mate-doc-utils.mo
 share/locale/ne/LC_MESSAGES/mate-doc-utils.mo
 share/locale/nl/LC_MESSAGES/mate-doc-utils.mo

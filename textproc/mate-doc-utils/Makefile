@@ -1,14 +1,8 @@
-# New ports collection makefile for:	gnome-doc-utils
-# Date created:				11 November 2004
-# Whom:					Adam Weinberger <adamw@FreeBSD.org>
-#
+# Created by: Adam Weinberger <adamw@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/textproc/mate-doc-utils/Makefile,v 1.5 2012/07/28 05:23:52 mezz Exp $
-#
 
 PORTNAME=	mate-doc-utils
-PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTVERSION=	1.5.0
 CATEGORIES=	textproc mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -27,7 +21,7 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian \
 USE_XZ=		yes
 USE_MATE=	autogen common:build matehack intlhack
 USE_GMAKE=	yes
-USE_GNOME=	libxml2 libxslt
+USE_GNOME=	gnomehier libxml2 libxslt
 USE_PYTHON=	build
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
