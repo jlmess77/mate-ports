@@ -1,24 +1,13 @@
-bin/mate-audio-profiles-properties
-bin/mate-gstreamer-properties
 bin/mate-volume-control
-include/mate-media/profiles/audio-profile-choose.h
-include/mate-media/profiles/audio-profile-edit.h
-include/mate-media/profiles/audio-profile.h
-include/mate-media/profiles/audio-profiles-edit.h
-include/mate-media/profiles/mate-media-profiles.h
-lib/libmate-media-profiles.a
-lib/libmate-media-profiles.la
-lib/libmate-media-profiles.so
-lib/libmate-media-profiles.so.0
-libdata/pkgconfig/mate-media-profiles.pc
-share/applications/mate-gstreamer-properties.desktop
+libexec/mixer_applet2
+share/MateConf/gsettings/mate-volume-control.convert
 share/applications/mate-volume-control.desktop
+share/dbus-1/services/org.mate.panel.applet.MixerAppletFactory.service
 share/icons/mate/16x16/devices/gvc-3d-sound.png
 share/icons/mate/16x16/devices/gvc-headphones.png
 share/icons/mate/16x16/devices/gvc-line-in.png
 share/icons/mate/16x16/devices/gvc-tone.png
 share/icons/mate/16x16/status/audio-input-microphone-muted.png
-share/icons/mate/48x48/apps/gstreamer-properties.png
 share/locale/af/LC_MESSAGES/mate-media.mo
 share/locale/am/LC_MESSAGES/mate-media.mo
 share/locale/ar/LC_MESSAGES/mate-media.mo
@@ -106,76 +95,54 @@ share/locale/xh/LC_MESSAGES/mate-media.mo
 share/locale/zh_CN/LC_MESSAGES/mate-media.mo
 share/locale/zh_HK/LC_MESSAGES/mate-media.mo
 share/locale/zh_TW/LC_MESSAGES/mate-media.mo
-share/mate-gstreamer-properties/gstreamer-properties.ui
-share/mate-gstreamer-properties/icons/gstreamer-properties.png
-%%DATADIR%%/mate-audio-profile-edit.ui
-%%DATADIR%%/mate-audio-profile-new.ui
+share/mate-2.0/ui/mixer-applet-menu.xml
 %%DATADIR%%/pixmaps/chain-broken.png
 %%DATADIR%%/pixmaps/chain.png
 %%DATADIR%%/sounds/mate-sounds-default.xml
-share/mate/help/mate-audio-profiles/C/figures/mate-audio-profiles-profile-window.png
-share/mate/help/mate-audio-profiles/C/figures/mate-audio-profiles-profiles-window.png
-share/mate/help/mate-audio-profiles/C/legal.xml
-share/mate/help/mate-audio-profiles/C/mate-audio-profiles.xml
-share/mate/help/mate-audio-profiles/da/figures/mate-audio-profiles-profile-window.png
-share/mate/help/mate-audio-profiles/da/figures/mate-audio-profiles-profiles-window.png
-share/mate/help/mate-audio-profiles/da/legal.xml
-share/mate/help/mate-audio-profiles/da/mate-audio-profiles.xml
-share/mate/help/mate-audio-profiles/de/figures/mate-audio-profiles-profile-window.png
-share/mate/help/mate-audio-profiles/de/figures/mate-audio-profiles-profiles-window.png
-share/mate/help/mate-audio-profiles/de/legal.xml
-share/mate/help/mate-audio-profiles/de/mate-audio-profiles.xml
-share/mate/help/mate-audio-profiles/el/figures/mate-audio-profiles-profile-window.png
-share/mate/help/mate-audio-profiles/el/figures/mate-audio-profiles-profiles-window.png
-share/mate/help/mate-audio-profiles/el/legal.xml
-share/mate/help/mate-audio-profiles/el/mate-audio-profiles.xml
-share/mate/help/mate-audio-profiles/es/figures/mate-audio-profiles-profile-window.png
-share/mate/help/mate-audio-profiles/es/figures/mate-audio-profiles-profiles-window.png
-share/mate/help/mate-audio-profiles/es/legal.xml
-share/mate/help/mate-audio-profiles/es/mate-audio-profiles.xml
-share/mate/help/mate-audio-profiles/fr/figures/mate-audio-profiles-profile-window.png
-share/mate/help/mate-audio-profiles/fr/figures/mate-audio-profiles-profiles-window.png
-share/mate/help/mate-audio-profiles/fr/legal.xml
-share/mate/help/mate-audio-profiles/fr/mate-audio-profiles.xml
-share/mate/help/mate-audio-profiles/sv/figures/mate-audio-profiles-profile-window.png
-share/mate/help/mate-audio-profiles/sv/figures/mate-audio-profiles-profiles-window.png
-share/mate/help/mate-audio-profiles/sv/legal.xml
-share/mate/help/mate-audio-profiles/sv/mate-audio-profiles.xml
-share/mate/help/mate-gstreamer-properties/C/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/C/legal.xml
-share/mate/help/mate-gstreamer-properties/C/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/ca/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/ca/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/cs/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/cs/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/da/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/da/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/de/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/de/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/el/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/el/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/en_GB/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/en_GB/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/es/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/es/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/fr/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/fr/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/it/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/it/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/oc/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/oc/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/pt_BR/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/pt_BR/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/ru/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/ru/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/sv/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/sv/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/th/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/th/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/uk/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/uk/mate-gstreamer-properties.xml
-share/mate/help/mate-gstreamer-properties/zh_CN/figures/gstreamer_properties_window.png
-share/mate/help/mate-gstreamer-properties/zh_CN/mate-gstreamer-properties.xml
+share/mate-panel/applets/org.mate.applets.MixerApplet.mate-panel-applet
+share/mate/help/mate-mixer_applet2/C/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/C/legal.xml
+share/mate/help/mate-mixer_applet2/C/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/ca/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/ca/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/cs/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/cs/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/da/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/da/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/de/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/de/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/el/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/el/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/en_GB/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/en_GB/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/es/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/es/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/eu/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/eu/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/fi/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/fi/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/fr/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/fr/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/hu/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/hu/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/it/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/it/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/ko/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/ko/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/oc/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/oc/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/pa/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/pa/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/pt_BR/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/pt_BR/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/ru/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/ru/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/sv/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/sv/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/uk/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/uk/mate-mixer_applet2.xml
+share/mate/help/mate-mixer_applet2/zh_CN/figures/volumecontrol_applet.png
+share/mate/help/mate-mixer_applet2/zh_CN/mate-mixer_applet2.xml
 share/mate/help/mate-volume-control/C/figures/mate-volume-control_window.png
 share/mate/help/mate-volume-control/C/legal.xml
 share/mate/help/mate-volume-control/C/mate-volume-control.xml
@@ -205,30 +172,27 @@ share/mate/help/mate-volume-control/sv/figures/mate-volume-control_window.png
 share/mate/help/mate-volume-control/sv/mate-volume-control.xml
 share/mate/help/mate-volume-control/zh_CN/figures/mate-volume-control_window.png
 share/mate/help/mate-volume-control/zh_CN/mate-volume-control.xml
-share/omf/mate-audio-profiles/mate-audio-profiles-C.omf
-share/omf/mate-audio-profiles/mate-audio-profiles-da.omf
-share/omf/mate-audio-profiles/mate-audio-profiles-de.omf
-share/omf/mate-audio-profiles/mate-audio-profiles-el.omf
-share/omf/mate-audio-profiles/mate-audio-profiles-es.omf
-share/omf/mate-audio-profiles/mate-audio-profiles-fr.omf
-share/omf/mate-audio-profiles/mate-audio-profiles-sv.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-C.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-ca.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-cs.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-da.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-de.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-el.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-en_GB.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-es.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-fr.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-it.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-oc.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-pt_BR.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-ru.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-sv.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-th.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-uk.omf
-share/omf/mate-gstreamer-properties/mate-gstreamer-properties-zh_CN.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-C.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-ca.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-cs.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-da.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-de.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-el.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-en_GB.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-es.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-eu.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-fi.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-fr.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-hu.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-it.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-ko.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-oc.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-pa.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-pt_BR.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-ru.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-sv.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-uk.omf
+share/omf/mate-mixer_applet2/mate-mixer_applet2-zh_CN.omf
 share/omf/mate-volume-control/mate-volume-control-C.omf
 share/omf/mate-volume-control/mate-volume-control-ca.omf
 share/omf/mate-volume-control/mate-volume-control-cs.omf
@@ -251,8 +215,7 @@ share/sounds/mate/default/alerts/sonar.ogg
 @dirrm share/sounds/mate/default
 @dirrm share/sounds/mate
 @dirrm share/omf/mate-volume-control
-@dirrm share/omf/mate-gstreamer-properties
-@dirrm share/omf/mate-audio-profiles
+@dirrm share/omf/mate-mixer_applet2
 @dirrm share/mate/help/mate-volume-control/zh_CN/figures
 @dirrm share/mate/help/mate-volume-control/zh_CN
 @dirrm share/mate/help/mate-volume-control/sv/figures
@@ -282,61 +245,54 @@ share/sounds/mate/default/alerts/sonar.ogg
 @dirrm share/mate/help/mate-volume-control/C/figures
 @dirrm share/mate/help/mate-volume-control/C
 @dirrm share/mate/help/mate-volume-control
-@dirrm share/mate/help/mate-gstreamer-properties/zh_CN/figures
-@dirrm share/mate/help/mate-gstreamer-properties/zh_CN
-@dirrm share/mate/help/mate-gstreamer-properties/uk/figures
-@dirrm share/mate/help/mate-gstreamer-properties/uk
-@dirrm share/mate/help/mate-gstreamer-properties/th/figures
-@dirrm share/mate/help/mate-gstreamer-properties/th
-@dirrm share/mate/help/mate-gstreamer-properties/sv/figures
-@dirrm share/mate/help/mate-gstreamer-properties/sv
-@dirrm share/mate/help/mate-gstreamer-properties/ru/figures
-@dirrm share/mate/help/mate-gstreamer-properties/ru
-@dirrm share/mate/help/mate-gstreamer-properties/pt_BR/figures
-@dirrm share/mate/help/mate-gstreamer-properties/pt_BR
-@dirrm share/mate/help/mate-gstreamer-properties/oc/figures
-@dirrm share/mate/help/mate-gstreamer-properties/oc
-@dirrm share/mate/help/mate-gstreamer-properties/it/figures
-@dirrm share/mate/help/mate-gstreamer-properties/it
-@dirrm share/mate/help/mate-gstreamer-properties/fr/figures
-@dirrm share/mate/help/mate-gstreamer-properties/fr
-@dirrm share/mate/help/mate-gstreamer-properties/es/figures
-@dirrm share/mate/help/mate-gstreamer-properties/es
-@dirrm share/mate/help/mate-gstreamer-properties/en_GB/figures
-@dirrm share/mate/help/mate-gstreamer-properties/en_GB
-@dirrm share/mate/help/mate-gstreamer-properties/el/figures
-@dirrm share/mate/help/mate-gstreamer-properties/el
-@dirrm share/mate/help/mate-gstreamer-properties/de/figures
-@dirrm share/mate/help/mate-gstreamer-properties/de
-@dirrm share/mate/help/mate-gstreamer-properties/da/figures
-@dirrm share/mate/help/mate-gstreamer-properties/da
-@dirrm share/mate/help/mate-gstreamer-properties/cs/figures
-@dirrm share/mate/help/mate-gstreamer-properties/cs
-@dirrm share/mate/help/mate-gstreamer-properties/ca/figures
-@dirrm share/mate/help/mate-gstreamer-properties/ca
-@dirrm share/mate/help/mate-gstreamer-properties/C/figures
-@dirrm share/mate/help/mate-gstreamer-properties/C
-@dirrm share/mate/help/mate-gstreamer-properties
-@dirrm share/mate/help/mate-audio-profiles/sv/figures
-@dirrm share/mate/help/mate-audio-profiles/sv
-@dirrm share/mate/help/mate-audio-profiles/fr/figures
-@dirrm share/mate/help/mate-audio-profiles/fr
-@dirrm share/mate/help/mate-audio-profiles/es/figures
-@dirrm share/mate/help/mate-audio-profiles/es
-@dirrm share/mate/help/mate-audio-profiles/el/figures
-@dirrm share/mate/help/mate-audio-profiles/el
-@dirrm share/mate/help/mate-audio-profiles/de/figures
-@dirrm share/mate/help/mate-audio-profiles/de
-@dirrm share/mate/help/mate-audio-profiles/da/figures
-@dirrm share/mate/help/mate-audio-profiles/da
-@dirrm share/mate/help/mate-audio-profiles/C/figures
-@dirrm share/mate/help/mate-audio-profiles/C
-@dirrm share/mate/help/mate-audio-profiles
+@dirrm share/mate/help/mate-mixer_applet2/zh_CN/figures
+@dirrm share/mate/help/mate-mixer_applet2/zh_CN
+@dirrm share/mate/help/mate-mixer_applet2/uk/figures
+@dirrm share/mate/help/mate-mixer_applet2/uk
+@dirrm share/mate/help/mate-mixer_applet2/sv/figures
+@dirrm share/mate/help/mate-mixer_applet2/sv
+@dirrm share/mate/help/mate-mixer_applet2/ru/figures
+@dirrm share/mate/help/mate-mixer_applet2/ru
+@dirrm share/mate/help/mate-mixer_applet2/pt_BR/figures
+@dirrm share/mate/help/mate-mixer_applet2/pt_BR
+@dirrm share/mate/help/mate-mixer_applet2/pa/figures
+@dirrm share/mate/help/mate-mixer_applet2/pa
+@dirrm share/mate/help/mate-mixer_applet2/oc/figures
+@dirrm share/mate/help/mate-mixer_applet2/oc
+@dirrm share/mate/help/mate-mixer_applet2/ko/figures
+@dirrm share/mate/help/mate-mixer_applet2/ko
+@dirrm share/mate/help/mate-mixer_applet2/it/figures
+@dirrm share/mate/help/mate-mixer_applet2/it
+@dirrm share/mate/help/mate-mixer_applet2/hu/figures
+@dirrm share/mate/help/mate-mixer_applet2/hu
+@dirrm share/mate/help/mate-mixer_applet2/fr/figures
+@dirrm share/mate/help/mate-mixer_applet2/fr
+@dirrm share/mate/help/mate-mixer_applet2/fi/figures
+@dirrm share/mate/help/mate-mixer_applet2/fi
+@dirrm share/mate/help/mate-mixer_applet2/eu/figures
+@dirrm share/mate/help/mate-mixer_applet2/eu
+@dirrm share/mate/help/mate-mixer_applet2/es/figures
+@dirrm share/mate/help/mate-mixer_applet2/es
+@dirrm share/mate/help/mate-mixer_applet2/en_GB/figures
+@dirrm share/mate/help/mate-mixer_applet2/en_GB
+@dirrm share/mate/help/mate-mixer_applet2/el/figures
+@dirrm share/mate/help/mate-mixer_applet2/el
+@dirrm share/mate/help/mate-mixer_applet2/de/figures
+@dirrm share/mate/help/mate-mixer_applet2/de
+@dirrm share/mate/help/mate-mixer_applet2/da/figures
+@dirrm share/mate/help/mate-mixer_applet2/da
+@dirrm share/mate/help/mate-mixer_applet2/cs/figures
+@dirrm share/mate/help/mate-mixer_applet2/cs
+@dirrm share/mate/help/mate-mixer_applet2/ca/figures
+@dirrm share/mate/help/mate-mixer_applet2/ca
+@dirrm share/mate/help/mate-mixer_applet2/C/figures
+@dirrm share/mate/help/mate-mixer_applet2/C
+@dirrm share/mate/help/mate-mixer_applet2
+@dirrm share/mate-panel/applets
+@dirrm share/mate-panel
 @dirrm %%DATADIR%%/sounds
 @dirrm %%DATADIR%%/pixmaps
 @dirrm %%DATADIR%%
-@dirrm share/mate-gstreamer-properties/icons
-@dirrm share/mate-gstreamer-properties
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
 @dirrmtry share/locale/zh_HK
 @dirrmtry share/locale/xh/LC_MESSAGES
@@ -377,13 +333,9 @@ share/sounds/mate/default/alerts/sonar.ogg
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
-@dirrmtry share/icons/mate/48x48/apps
-@dirrmtry share/icons/mate/48x48
 @dirrmtry share/icons/mate/16x16/status
 @dirrmtry share/icons/mate/16x16/devices
 @dirrmtry share/icons/mate/16x16
 @dirrmtry share/icons/mate
 @dirrmtry share/icons
 @dirrmtry share/applications
-@dirrm include/mate-media/profiles
-@dirrm include/mate-media
