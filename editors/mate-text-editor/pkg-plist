@@ -1,28 +1,28 @@
 bin/mate-text-editor
 bin/pluma
-include/pluma/pluma/pluma-app.h
-include/pluma/pluma/pluma-commands.h
-include/pluma/pluma/pluma-debug.h
-include/pluma/pluma/pluma-document.h
-include/pluma/pluma/pluma-encodings-combo-box.h
-include/pluma/pluma/pluma-encodings.h
-include/pluma/pluma/pluma-file-chooser-dialog.h
-include/pluma/pluma/pluma-help.h
-include/pluma/pluma/pluma-message-bus.h
-include/pluma/pluma/pluma-message-type.h
-include/pluma/pluma/pluma-message.h
-include/pluma/pluma/pluma-notebook.h
-include/pluma/pluma/pluma-panel.h
-include/pluma/pluma/pluma-plugin.h
-include/pluma/pluma/pluma-prefs-manager-app.h
-include/pluma/pluma/pluma-prefs-manager.h
-include/pluma/pluma/pluma-progress-message-area.h
-include/pluma/pluma/pluma-status-combo-box.h
-include/pluma/pluma/pluma-statusbar.h
-include/pluma/pluma/pluma-tab.h
-include/pluma/pluma/pluma-utils.h
-include/pluma/pluma/pluma-view.h
-include/pluma/pluma/pluma-window.h
+include/pluma/pluma-app.h
+include/pluma/pluma-commands.h
+include/pluma/pluma-debug.h
+include/pluma/pluma-document.h
+include/pluma/pluma-encodings-combo-box.h
+include/pluma/pluma-encodings.h
+include/pluma/pluma-file-chooser-dialog.h
+include/pluma/pluma-help.h
+include/pluma/pluma-message-bus.h
+include/pluma/pluma-message-type.h
+include/pluma/pluma-message.h
+include/pluma/pluma-notebook.h
+include/pluma/pluma-panel.h
+include/pluma/pluma-plugin.h
+include/pluma/pluma-prefs-manager-app.h
+include/pluma/pluma-prefs-manager.h
+include/pluma/pluma-progress-message-area.h
+include/pluma/pluma-status-combo-box.h
+include/pluma/pluma-statusbar.h
+include/pluma/pluma-tab.h
+include/pluma/pluma-utils.h
+include/pluma/pluma-view.h
+include/pluma/pluma-window.h
 lib/pluma/plugin-loaders/libcloader.a
 lib/pluma/plugin-loaders/libcloader.la
 lib/pluma/plugin-loaders/libcloader.so
@@ -645,7 +645,6 @@ share/pluma/ui/pluma-ui.xml
 @dirrmtry lib/pluma/plugins
 @dirrmtry lib/pluma/plugin-loaders
 @dirrmtry lib/pluma
-@dirrm include/pluma/pluma
 @dirrm include/pluma
 @exec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
 @unexec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true

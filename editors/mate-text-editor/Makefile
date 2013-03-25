@@ -1,13 +1,8 @@
-# New ports collection makefile for:	gedit2
-# Date created:				14 May 2002
-# Whom:					Joe Marcus Clarke <marcus@FreeBSD.org>
-#
+# Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/editors/mate-text-editor/Makefile,v 1.1 2012/07/28 02:49:41 mezz Exp $
-#
 
 PORTNAME=	mate-text-editor
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	editors mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -22,12 +17,12 @@ LIB_DEPENDS=	enchant:${PORTSDIR}/textproc/enchant \
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
 
 USE_XZ=		yes
-USE_MATE=	autogen common:build conf docutils intlhack ltasneededhack \
+USE_MATE=	autogen common:build docutils intlhack ltasneededhack \
 		matehack
 USE_XORG=	sm x11
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils glib20 gtk20 gtksourceview2 gvfs libxml2 \
-		pygobject pygtk2 pygtksourceview
+USE_GNOME=	desktopfileutils glib20 gnomehier gtk20 gtksourceview2 gvfs \
+		libxml2 pygobject pygtk2 pygtksourceview
 WANT_GNOME=	yes
 USE_PYTHON=	yes
 USE_GETTEXT=	yes
@@ -37,13 +32,14 @@ USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc \
-		--with-html-dir=${PREFIX}/share/doc \
-		${MATECONF_PREFIX}
+		--with-html-dir=${PREFIX}/share/doc
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 MAN1=		pluma.1
-MATECONF_SCHEMAS=pluma-file-browser.schemas pluma.schemas
+GLIB_SCHEMAS=	org.mate.pluma.gschema.xml \
+		org.mate.pluma.plugins.filebrowser.gschema.xml \
+		org.mate.pluma.plugins.time.gschema.xml
 
 post-install:
 	@-update-desktop-database
