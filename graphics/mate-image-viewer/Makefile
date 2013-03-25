@@ -1,13 +1,8 @@
-# New ports collection makefile for:	eog2
-# Date created:		21 May 2002
-# Whom:			Joe Marcus Clarke <marcus@FreeBSD.org>
-#
+# Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/graphics/mate-image-viewer/Makefile,v 1.1 2012/07/28 20:22:47 mezz Exp $
-#
 
 PORTNAME=	mate-image-viewer
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.1
 CATEGORIES=	graphics mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -21,10 +16,11 @@ LIB_DEPENDS=	jpeg:${PORTSDIR}/graphics/jpeg
 RUN_DEPENDS=	update-mime-database:${PORTSDIR}/misc/shared-mime-info
 
 USE_XZ=		yes
-USE_MATE=	autogen common:build conf desktop docutils icontheme matehack
+USE_MATE=	autogen common:build desktop docutils icontheme matehack
 USE_XORG=	x11
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils gdkpixbuf2 glib20 gtk20 librsvg2 libxml2
+USE_GNOME=	desktopfileutils gdkpixbuf2 glib20 gnomehier gtk20 \
+		librsvg2 libxml2
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -32,14 +28,13 @@ USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc \
-		${MATECONF_PREFIX} \
 		--disable-python \
 		--without-cms
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-MATECONF_SCHEMAS=eom.schemas
+GLIB_SCHEMAS=	org.mate.eom.gschema.xml
 
 _WITH_EXIF=	no
 _WITH_EXEMPI=	no
