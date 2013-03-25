@@ -1,14 +1,8 @@
-# New ports collection makefile for:	atril
-# Date created:				09 January 2005
-# Whom:					Adam Weinberger <adamw@FreeBSD.org>
-#
+# Created by: Adam Weinberger <adamw@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/graphics/mate-document-viewer/Makefile,v 1.4 2012/08/22 13:45:43 kwm Exp $
-#
 
 PORTNAME=	mate-document-viewer
-PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTVERSION=	1.5.0
 CATEGORIES=	graphics print mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -23,26 +17,23 @@ LIB_DEPENDS=	poppler-glib:${PORTSDIR}/graphics/poppler-glib \
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
 USE_XZ=		yes
-USE_MATE=	autogen common:build conf docutils icontheme intlhack \
+USE_MATE=	autogen common:build docutils icontheme intlhack \
 		ltasneededhack ltverhack matehack
 USE_XORG=	sm
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils glib20 gtk20 libxml2
+USE_GNOME=	desktopfileutils glib20 gnomehier gtk20 libxml2
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-gtk=2.0 \
-		${MATECONF_PREFIX}
+CONFIGURE_ARGS=	--with-gtk=2.0
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.Atril.gschema.xml
-MATECONF_SCHEMAS=atril-thumbnailer.schemas \
-		 atril-thumbnailer-ps.schemas
 
 MAN1=		atril.1
 
@@ -66,7 +57,6 @@ BUILD_DEPENDS+=	tex:${PORTSDIR}/print/teTeX-base
 RUN_DEPENDS+=	tex:${PORTSDIR}/print/teTeX-base
 
 CONFIGURE_ARGS+=--enable-dvi
-MATECONF_SCHEMAS+=atril-thumbnailer-dvi.schemas
 PLIST_SUB+=	DVI=""
 . if defined(WITH_T1LIB)
 LIB_DEPENDS+=	t15:${PORTSDIR}/devel/t1lib
@@ -103,7 +93,6 @@ PLIST_SUB+=	IMPRESS="@comment "
 .if defined(WITH_DJVU)
 LIB_DEPENDS+=	djvulibre:${PORTSDIR}/graphics/djvulibre
 CONFIGURE_ARGS+=--enable-djvu
-MATECONF_SCHEMAS+=atril-thumbnailer-djvu.schemas
 PLIST_SUB+=	DJVU=""
 .else
 CONFIGURE_ARGS+=--disable-djvu
@@ -117,7 +106,6 @@ LIB_DEPENDS+=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib
 .if !defined(WITHOUT_COMICS)
 RUN_DEPENDS+=	unzip:${PORTSDIR}/archivers/unzip
 CONFIGURE_ARGS+=--enable-comics
-MATECONF_SCHEMAS+=atril-thumbnailer-comics.schemas
 PLIST_SUB+=	COMICS=""
 .else
 CONFIGURE_ARGS+=--disable-comics

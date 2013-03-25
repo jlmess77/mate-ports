@@ -1,57 +1,57 @@
 bin/atril
 bin/atril-previewer
 bin/atril-thumbnailer
-include/atril/2.32/atril-document.h
-include/atril/2.32/atril-view.h
-include/atril/2.32/libdocument/ev-annotation.h
-include/atril/2.32/libdocument/ev-async-renderer.h
-include/atril/2.32/libdocument/ev-attachment.h
-include/atril/2.32/libdocument/ev-backends-manager.h
-include/atril/2.32/libdocument/ev-document-annotations.h
-include/atril/2.32/libdocument/ev-document-attachments.h
-include/atril/2.32/libdocument/ev-document-factory.h
-include/atril/2.32/libdocument/ev-document-find.h
-include/atril/2.32/libdocument/ev-document-fonts.h
-include/atril/2.32/libdocument/ev-document-forms.h
-include/atril/2.32/libdocument/ev-document-images.h
-include/atril/2.32/libdocument/ev-document-info.h
-include/atril/2.32/libdocument/ev-document-layers.h
-include/atril/2.32/libdocument/ev-document-links.h
-include/atril/2.32/libdocument/ev-document-misc.h
-include/atril/2.32/libdocument/ev-document-print.h
-include/atril/2.32/libdocument/ev-document-security.h
-include/atril/2.32/libdocument/ev-document-text.h
-include/atril/2.32/libdocument/ev-document-thumbnails.h
-include/atril/2.32/libdocument/ev-document-transition.h
-include/atril/2.32/libdocument/ev-document-type-builtins.h
-include/atril/2.32/libdocument/ev-document.h
-include/atril/2.32/libdocument/ev-file-exporter.h
-include/atril/2.32/libdocument/ev-file-helpers.h
-include/atril/2.32/libdocument/ev-form-field.h
-include/atril/2.32/libdocument/ev-image.h
-include/atril/2.32/libdocument/ev-init.h
-include/atril/2.32/libdocument/ev-layer.h
-include/atril/2.32/libdocument/ev-link-action.h
-include/atril/2.32/libdocument/ev-link-dest.h
-include/atril/2.32/libdocument/ev-link.h
-include/atril/2.32/libdocument/ev-mapping-list.h
-include/atril/2.32/libdocument/ev-page.h
-include/atril/2.32/libdocument/ev-render-context.h
-include/atril/2.32/libdocument/ev-selection.h
-include/atril/2.32/libdocument/ev-transition-effect.h
-include/atril/2.32/libdocument/ev-version.h
-include/atril/2.32/libview/ev-document-model.h
-include/atril/2.32/libview/ev-job-scheduler.h
-include/atril/2.32/libview/ev-jobs.h
-include/atril/2.32/libview/ev-print-operation.h
-include/atril/2.32/libview/ev-stock-icons.h
-include/atril/2.32/libview/ev-view-presentation.h
-include/atril/2.32/libview/ev-view-type-builtins.h
-include/atril/2.32/libview/ev-view.h
+include/atril/1.5.0/atril-document.h
+include/atril/1.5.0/atril-view.h
+include/atril/1.5.0/libdocument/ev-annotation.h
+include/atril/1.5.0/libdocument/ev-async-renderer.h
+include/atril/1.5.0/libdocument/ev-attachment.h
+include/atril/1.5.0/libdocument/ev-backends-manager.h
+include/atril/1.5.0/libdocument/ev-document-annotations.h
+include/atril/1.5.0/libdocument/ev-document-attachments.h
+include/atril/1.5.0/libdocument/ev-document-factory.h
+include/atril/1.5.0/libdocument/ev-document-find.h
+include/atril/1.5.0/libdocument/ev-document-fonts.h
+include/atril/1.5.0/libdocument/ev-document-forms.h
+include/atril/1.5.0/libdocument/ev-document-images.h
+include/atril/1.5.0/libdocument/ev-document-info.h
+include/atril/1.5.0/libdocument/ev-document-layers.h
+include/atril/1.5.0/libdocument/ev-document-links.h
+include/atril/1.5.0/libdocument/ev-document-misc.h
+include/atril/1.5.0/libdocument/ev-document-print.h
+include/atril/1.5.0/libdocument/ev-document-security.h
+include/atril/1.5.0/libdocument/ev-document-text.h
+include/atril/1.5.0/libdocument/ev-document-thumbnails.h
+include/atril/1.5.0/libdocument/ev-document-transition.h
+include/atril/1.5.0/libdocument/ev-document-type-builtins.h
+include/atril/1.5.0/libdocument/ev-document.h
+include/atril/1.5.0/libdocument/ev-file-exporter.h
+include/atril/1.5.0/libdocument/ev-file-helpers.h
+include/atril/1.5.0/libdocument/ev-form-field.h
+include/atril/1.5.0/libdocument/ev-image.h
+include/atril/1.5.0/libdocument/ev-init.h
+include/atril/1.5.0/libdocument/ev-layer.h
+include/atril/1.5.0/libdocument/ev-link-action.h
+include/atril/1.5.0/libdocument/ev-link-dest.h
+include/atril/1.5.0/libdocument/ev-link.h
+include/atril/1.5.0/libdocument/ev-mapping-list.h
+include/atril/1.5.0/libdocument/ev-page.h
+include/atril/1.5.0/libdocument/ev-render-context.h
+include/atril/1.5.0/libdocument/ev-selection.h
+include/atril/1.5.0/libdocument/ev-transition-effect.h
+include/atril/1.5.0/libdocument/ev-version.h
+include/atril/1.5.0/libview/ev-document-model.h
+include/atril/1.5.0/libview/ev-job-scheduler.h
+include/atril/1.5.0/libview/ev-jobs.h
+include/atril/1.5.0/libview/ev-print-operation.h
+include/atril/1.5.0/libview/ev-stock-icons.h
+include/atril/1.5.0/libview/ev-view-presentation.h
+include/atril/1.5.0/libview/ev-view-type-builtins.h
+include/atril/1.5.0/libview/ev-view.h
 %%COMICS%%lib/atril/3/backends/comicsdocument.atril-backend
-%%DJVU%%lib/atril/3/backends/djvudocument.evince-backend
-%%DVI%%lib/atril/3/backends/dvidocument.evince-backend
-%%IMPRESS%%lib/atril/3/backends/impressdocument.evince-backend
+%%DJVU%%lib/atril/3/backends/djvudocument.atril-backend
+%%DVI%%lib/atril/3/backends/dvidocument.atril-backend
+%%IMPRESS%%lib/atril/3/backends/impressdocument.atril-backend
 %%COMICS%%lib/atril/3/backends/libcomicsdocument.a
 %%COMICS%%lib/atril/3/backends/libcomicsdocument.la
 %%COMICS%%lib/atril/3/backends/libcomicsdocument.so
@@ -87,8 +87,8 @@ lib/libatrilview.so.3
 %%CAJA%%lib/caja/extensions-2.0/libatril-properties-page.a
 %%CAJA%%lib/caja/extensions-2.0/libatril-properties-page.la
 %%CAJA%%lib/caja/extensions-2.0/libatril-properties-page.so
-libdata/pkgconfig/atril-document-2.32.pc
-libdata/pkgconfig/atril-view-2.32.pc
+libdata/pkgconfig/atril-document-1.5.0.pc
+libdata/pkgconfig/atril-view-1.5.0.pc
 libexec/atril-convert-metadata
 libexec/atrild
 share/MateConf/gsettings/atril.convert
@@ -137,6 +137,8 @@ share/atril/icons/hicolor/scalable/actions/object-rotate-left.svg
 share/atril/icons/hicolor/scalable/actions/object-rotate-right.svg
 share/atril/icons/hicolor/scalable/mimetypes/x-office-presentation.svg
 share/dbus-1/services/org.mate.atril.Daemon.service
+share/doc/mate/atril/atril.html
+share/doc/mate/atril/atril_start_window.png
 share/icons/hicolor/16x16/apps/atril.png
 share/icons/hicolor/22x22/apps/atril.png
 share/icons/hicolor/24x24/apps/atril.png
@@ -296,6 +298,8 @@ share/omf/atril/atril-sv.omf
 share/omf/atril/atril-uk.omf
 share/omf/atril/atril-vi.omf
 share/omf/atril/atril-zh_CN.omf
+share/thumbnailers/atril.thumbnailer
+@dirrmtry share/thumbnailers
 @dirrm share/omf/atril
 @dirrm share/mate/help/atril/zh_CN/figures
 @dirrm share/mate/help/atril/zh_CN
@@ -386,10 +390,8 @@ share/omf/atril/atril-zh_CN.omf
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
-@dirrmtry share/glib-2.0/schemas
-@dirrmtry share/glib-2.0
-@dirrmtry share/dbus-1/services
-@dirrmtry share/dbus-1
+@dirrm share/doc/mate/atril
+@dirrmtry share/doc/mate
 @dirrm share/atril/icons/hicolor/scalable/mimetypes
 @dirrm share/atril/icons/hicolor/scalable/actions
 @dirrm share/atril/icons/hicolor/scalable
@@ -414,9 +416,9 @@ share/omf/atril/atril-zh_CN.omf
 @dirrm lib/atril/3/backends
 @dirrm lib/atril/3
 @dirrm lib/atril
-@dirrm include/atril/2.32/libview
-@dirrm include/atril/2.32/libdocument
-@dirrm include/atril/2.32
+@dirrm include/atril/1.5.0/libview
+@dirrm include/atril/1.5.0/libdocument
+@dirrm include/atril/1.5.0
 @dirrm include/atril
 @exec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
 @unexec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
