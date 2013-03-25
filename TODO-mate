@@ -42,6 +42,7 @@ Base (x11/mate-base):
  x11/zenity -> x11/mate-dialogs
  x11/gnome-desktop -> x11/mate-desktop
  x11-fm/nautilus -> x11-fm/mate-file-manager
+ x11-toolkits/libwnck -> x11-toolkits/libmatewnck
  deskutils/notification-daemon -> deskutils/mate-notification-daemon
  x11-themes/gnome-backgrounds -> x11-themes/mate-backgrounds
  x11/gnome-menus -> x11/mate-menus
