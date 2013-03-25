@@ -10,6 +10,7 @@ libexec/mate-screensaver-gl-helper
 libexec/mate-screensaver/floaters
 libexec/mate-screensaver/popsquares
 libexec/mate-screensaver/slideshow
+share/MateConf/gsettings/org.mate.screensaver.gschema.migrate
 share/applications/mate-screensaver-preferences.desktop
 share/applications/screensavers/abstractile.desktop
 share/applications/screensavers/anemone.desktop
@@ -220,8 +221,8 @@ share/backgrounds/cosmos/helix-nebula.jpg
 share/backgrounds/cosmos/jupiter.jpg
 share/backgrounds/cosmos/sombrero.jpg
 share/backgrounds/cosmos/whirlpool.jpg
-share/dbus-1/services/org.mate.ScreenSaver.service
 share/desktop-directories/mate-screensaver.directory
+share/locale/am/LC_MESSAGES/mate-screensaver.mo
 share/locale/ar/LC_MESSAGES/mate-screensaver.mo
 share/locale/as/LC_MESSAGES/mate-screensaver.mo
 share/locale/ast/LC_MESSAGES/mate-screensaver.mo
@@ -241,6 +242,7 @@ share/locale/de/LC_MESSAGES/mate-screensaver.mo
 share/locale/dz/LC_MESSAGES/mate-screensaver.mo
 share/locale/el/LC_MESSAGES/mate-screensaver.mo
 share/locale/en@shaw/LC_MESSAGES/mate-screensaver.mo
+share/locale/en_AU/LC_MESSAGES/mate-screensaver.mo
 share/locale/en_CA/LC_MESSAGES/mate-screensaver.mo
 share/locale/en_GB/LC_MESSAGES/mate-screensaver.mo
 share/locale/es/LC_MESSAGES/mate-screensaver.mo
@@ -272,6 +274,7 @@ share/locale/mk/LC_MESSAGES/mate-screensaver.mo
 share/locale/ml/LC_MESSAGES/mate-screensaver.mo
 share/locale/mn/LC_MESSAGES/mate-screensaver.mo
 share/locale/mr/LC_MESSAGES/mate-screensaver.mo
+share/locale/ms/LC_MESSAGES/mate-screensaver.mo
 share/locale/nb/LC_MESSAGES/mate-screensaver.mo
 share/locale/nds/LC_MESSAGES/mate-screensaver.mo
 share/locale/ne/LC_MESSAGES/mate-screensaver.mo
@@ -353,4 +356,3 @@ share/pixmaps/mate-logo-white.svg
 @dirrmtry share/applications
 @dirrm libexec/mate-screensaver
 @dirrmtry etc/xdg/menus
-@dirrm etc/xdg/autostart
