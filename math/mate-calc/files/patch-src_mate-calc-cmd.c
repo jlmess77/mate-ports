@@ -1,7 +1,7 @@
---- src/mate-calc-cmd.c.orig	2009-12-08 21:27:37.000000000 -0500
-+++ src/mate-calc-cmd.c	2010-01-24 13:38:19.000000000 -0500
-@@ -18,16 +18,89 @@
-  *  02111-1307, USA.
+--- src/mate-calc-cmd.c.orig	2013-03-24 20:56:44.000000000 -0500
++++ src/mate-calc-cmd.c	2013-03-24 20:58:28.000000000 -0500
+@@ -8,10 +8,12 @@
+  * license.
   */
  
 +#include <errno.h>
@@ -11,10 +11,11 @@
  #include <sys/types.h>
 +#include <sys/param.h>
  #include <time.h>
+ #include <locale.h>
  
- #include "mp-equation.h"
+@@ -22,6 +24,77 @@
  
- #define MAXLINE 1024
+ static MpSerializer *result_serializer;
  
 +#if __FreeBSD_version < 800067
 +static ssize_t
