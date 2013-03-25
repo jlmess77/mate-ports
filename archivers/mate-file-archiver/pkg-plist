@@ -4,6 +4,7 @@ lib/caja/extensions-2.0/libcaja-engrampa.la
 lib/caja/extensions-2.0/libcaja-engrampa.so
 libexec/engrampa/isoinfo.sh
 libexec/engrampa/rpm2cpio
+share/MateConf/gsettings/engrampa.convert
 share/applications/engrampa.desktop
 share/engrampa/icons/hicolor/16x16/actions/add-files-to-archive.png
 share/engrampa/icons/hicolor/16x16/actions/add-folder-to-archive.png
