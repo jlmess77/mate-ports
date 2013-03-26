@@ -1,13 +1,8 @@
-# New ports collection makefile for:	menueditor
-# Date created:				22 March 2005
-# Whom:					FreeBSD GNOME Team
-#
+# Created by: FreeBSD GNOME Team
 # $FreeBSD$
-#    $MCom: ports-experimental/deskutils/mate-menu-editor/Makefile,v 1.1 2012/07/29 17:29:11 mezz Exp $
-#
 
 PORTNAME=	mate-menu-editor
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
