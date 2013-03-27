@@ -9,12 +9,12 @@ lib/libmate-panel-applet-4.a
 lib/libmate-panel-applet-4.la
 lib/libmate-panel-applet-4.so
 lib/libmate-panel-applet-4.so.1
+lib/mate-panel/clock-applet
+lib/mate-panel/fish-applet
+lib/mate-panel/mate-panel-add
+lib/mate-panel/notification-area-applet
+lib/mate-panel/wnck-applet
 libdata/pkgconfig/libmatepanelapplet-4.0.pc
-libexec/clock-applet
-libexec/fish-applet
-libexec/mate-panel-add
-libexec/notification-area-applet
-libexec/wnck-applet
 share/MateConf/gsettings/mate-panel.convert
 share/applications/mate-panel.desktop
 share/dbus-1/services/org.mate.panel.applet.ClockAppletFactory.service
@@ -39,7 +39,7 @@ share/doc/mate-panel-applet/server-files.html
 share/doc/mate-panel-applet/session-saving.html
 share/doc/mate-panel-applet/style.css
 share/doc/mate-panel-applet/up.png
-share/gir-1.0/MatePanelApplet-3.0.gir
+share/gir-1.0/MatePanelApplet-4.0.gir
 share/icons/hicolor/16x16/apps/mate-panel-clock.png
 share/icons/hicolor/16x16/apps/mate-panel-drawer.png
 share/icons/hicolor/16x16/apps/mate-panel-fish.png

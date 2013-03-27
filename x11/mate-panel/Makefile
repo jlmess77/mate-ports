@@ -3,6 +3,7 @@
 
 PORTNAME=	mate-panel
 PORTVERSION=	1.5.6
+PORTREVISION=	1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -16,8 +17,6 @@ LIB_DEPENDS=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
 		canberra-gtk:${PORTSDIR}/audio/libcanberra \
 		cairo:${PORTSDIR}/graphics/cairo \
 		dconf:${PORTSDIR}/devel/dconf
-
-CONFLICT=	gnome-panel-*
 
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
@@ -34,7 +33,8 @@ USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-network-manager \
 		--disable-gtk-doc \
-		--with-html-dir=${PREFIX}/share/doc
+		--with-html-dir=${PREFIX}/share/doc \
+		--libexecdir=${PREFIX}/lib/mate-panel
 INSTALLS_ICONS=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib
 CPPFLAGS+=	-I${LOCALBASE}/include
