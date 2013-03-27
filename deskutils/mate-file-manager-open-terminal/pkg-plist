@@ -1,3 +1,6 @@
+lib/caja/extensions-2.0/libcaja-open-terminal.a
+lib/caja/extensions-2.0/libcaja-open-terminal.la
+lib/caja/extensions-2.0/libcaja-open-terminal.so
 share/locale/ar/LC_MESSAGES/caja-open-terminal.mo
 share/locale/be/LC_MESSAGES/caja-open-terminal.mo
 share/locale/be@latin/LC_MESSAGES/caja-open-terminal.mo
@@ -63,3 +66,4 @@ share/locale/zh_TW/LC_MESSAGES/caja-open-terminal.mo
 @dirrmtry share/locale/bn_IN
 @dirrmtry share/locale/be@latin/LC_MESSAGES
 @dirrmtry share/locale/be@latin
+@dirrmtry lib/caja/extensions-2.0
