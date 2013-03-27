@@ -84,9 +84,9 @@ canvas_LIB_DEPENDS=		matecanvas-2:${PORTSDIR}/graphics/libmatecanvas
 canvas_RUN_DEPENDS=		${canvas_DETECT}:${PORTSDIR}/graphics/libmatecanvas
 
 mucharmap_DETECT=		${LOCALBASE}/libdata/pkgconfig/mucharmap-2.pc
-mucharmap_BUILD_DEPENDS=${canvas_DETECT}:${PORTSDIR}/deskutils/mate-character-map
+mucharmap_BUILD_DEPENDS=${mucharmap_DETECT}:${PORTSDIR}/deskutils/mate-character-map
 mucharmap_LIB_DEPENDS=	mucharmap:${PORTSDIR}/deskutils/mate-character-map
-mucharmap_RUN_DEPENDS=	${canvas_DETECT}:${PORTSDIR}/deskutils/mate-character-map
+mucharmap_RUN_DEPENDS=	${mucharmap_DETECT}:${PORTSDIR}/deskutils/mate-character-map
 
 common_DETECT=			${LOCALBASE}/bin/mate-autogen
 common_BUILD_DEPENDS=	${common_DETECT}:${PORTSDIR}/devel/mate-common
