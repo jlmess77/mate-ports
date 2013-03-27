@@ -1,14 +1,8 @@
-# New ports collection makefile for:	gnome2
-# Date created:		21 May 2002
-# Whom:			Joe Marcus Clarke <marcus@FreeBSD.org>
-#
+# Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
-#   $MCom: ports-experimental/x11/mate/Makefile,v 1.3 2012/09/05 02:43:27 mezz Exp $
-#
 
 PORTNAME=	mate
-PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTVERSION=	1.5.0
 CATEGORIES=	x11 mate
 MASTER_SITES=	# empty
 DISTFILES=	# empty
