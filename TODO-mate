@@ -70,5 +70,6 @@ Extras (x11/mate):
  devel/py-orbit -> devel/python-corba
  x11-toolkits/py-gnome2 -> x11-toolkits/python-mate
  deskutils/alacarte -> deskutils/mate-menu-editor
+ deskutils/gucharmap -> deskutils/mate-character-map
  x11/gnome-applets -> x11/mate-applets
 ------------------------------
