@@ -1,53 +1,82 @@
 %%CPUFREQ%%bin/mate-cpufreq-selector
+bin/mate-invest-chart
 %%CPUFREQ%%etc/dbus-1/system.d/org.mate.CPUFreqSelector.conf
 %%BATTERY%%etc/sound/events/mate-battstat_applet.soundlist
-libdata/matecomponent/servers/MATE_CDPlayerApplet.server
-libdata/matecomponent/servers/MATE_KeyboardApplet.server
-libdata/matecomponent/servers/MATE_MailcheckApplet_Factory.server
-libdata/matecomponent/servers/MATE_NullApplet_Factory.server
-libdata/matecomponent/servers/MATE_Panel_WirelessApplet.server
+%%PYTHON_SITELIBDIR%%/mate_invest/__init__.py
+%%PYTHON_SITELIBDIR%%/mate_invest/__init__.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/__init__.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/about.py
+%%PYTHON_SITELIBDIR%%/mate_invest/about.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/about.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/applet.py
+%%PYTHON_SITELIBDIR%%/mate_invest/applet.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/applet.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/chart.py
+%%PYTHON_SITELIBDIR%%/mate_invest/chart.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/chart.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/currencies.py
+%%PYTHON_SITELIBDIR%%/mate_invest/currencies.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/currencies.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/defs.py
+%%PYTHON_SITELIBDIR%%/mate_invest/defs.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/defs.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/help.py
+%%PYTHON_SITELIBDIR%%/mate_invest/help.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/help.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/networkmanager.py
+%%PYTHON_SITELIBDIR%%/mate_invest/networkmanager.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/networkmanager.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/preferences.py
+%%PYTHON_SITELIBDIR%%/mate_invest/preferences.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/preferences.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/quotes.py
+%%PYTHON_SITELIBDIR%%/mate_invest/quotes.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/quotes.pyo
+%%PYTHON_SITELIBDIR%%/mate_invest/widgets.py
+%%PYTHON_SITELIBDIR%%/mate_invest/widgets.pyc
+%%PYTHON_SITELIBDIR%%/mate_invest/widgets.pyo
 libexec/accessx-status-applet
 %%BATTERY%%libexec/battstat-applet-2
 libexec/charpick_applet2
-%%CPUFREQ%%libexec/cpufreq-applet
 libexec/drivemount_applet2
 libexec/geyes_applet2
-libexec/mate-applets/mc-install-default-macros
+libexec/invest-applet
+%%CPUFREQ%%libexec/mate-cpufreq-applet
 libexec/mateweather-applet-2
-libexec/mini_commander_applet
-libexec/mixer_applet2
 libexec/multiload-applet-2
-libexec/null_applet
 libexec/stickynotes_applet
 libexec/trashapplet
+share/MateConf/gsettings/stickynotes-applet.convert
 share/dbus-1/services/org.mate.panel.applet.AccessxStatusAppletFactory.service
 %%BATTERY%%share/dbus-1/services/org.mate.panel.applet.BattstatAppletFactory.service
 %%CPUFREQ%%share/dbus-1/services/org.mate.panel.applet.CPUFreqAppletFactory.service
 share/dbus-1/services/org.mate.panel.applet.CharpickerAppletFactory.service
 share/dbus-1/services/org.mate.panel.applet.DriveMountAppletFactory.service
 share/dbus-1/services/org.mate.panel.applet.GeyesAppletFactory.service
+share/dbus-1/services/org.mate.panel.applet.InvestAppletFactory.service
 share/dbus-1/services/org.mate.panel.applet.MateWeatherAppletFactory.service
-share/dbus-1/services/org.mate.panel.applet.MiniCommanderAppletFactory.service
-share/dbus-1/services/org.mate.panel.applet.MixerAppletFactory.service
 share/dbus-1/services/org.mate.panel.applet.MultiLoadAppletFactory.service
 share/dbus-1/services/org.mate.panel.applet.StickyNotesAppletFactory.service
 share/dbus-1/services/org.mate.panel.applet.TrashAppletFactory.service
 %%CPUFREQ%%share/dbus-1/system-services/org.mate.CPUFreqSelector.service
 %%CPUFREQ%%share/icons/hicolor/16x16/apps/mate-cpu-frequency-applet.png
 share/icons/hicolor/16x16/apps/mate-eyes-applet.png
+share/icons/hicolor/16x16/apps/mate-invest-applet.png
 share/icons/hicolor/16x16/apps/mate-sticky-notes-applet.png
 %%CPUFREQ%%share/icons/hicolor/22x22/apps/mate-cpu-frequency-applet.png
 share/icons/hicolor/22x22/apps/mate-eyes-applet.png
+share/icons/hicolor/22x22/apps/mate-invest-applet.png
 share/icons/hicolor/22x22/apps/mate-sticky-notes-applet.png
-share/icons/hicolor/24x24/apps/mate-cpu-frequency-applet.png
+%%CPUFREQ%%share/icons/hicolor/24x24/apps/mate-cpu-frequency-applet.png
 share/icons/hicolor/24x24/apps/mate-eyes-applet.png
 share/icons/hicolor/24x24/apps/mate-sticky-notes-applet.png
 %%CPUFREQ%%share/icons/hicolor/32x32/apps/mate-cpu-frequency-applet.png
 share/icons/hicolor/32x32/apps/mate-eyes-applet.png
 share/icons/hicolor/32x32/apps/mate-sticky-notes-applet.png
-share/icons/hicolor/48x48/apps/mate-mini-commander.png
+share/icons/hicolor/48x48/apps/mate-invest-applet.png
 %%CPUFREQ%%share/icons/hicolor/scalable/apps/mate-cpu-frequency-applet.svg
 share/icons/hicolor/scalable/apps/mate-eyes-applet.svg
+share/icons/hicolor/scalable/apps/mate-invest-applet.svg
 share/icons/hicolor/scalable/apps/mate-sticky-notes-applet.svg
 share/icons/mate/48x48/apps/ax-applet.png
 share/locale/af/LC_MESSAGES/mate-applets.mo
@@ -166,14 +195,14 @@ share/mate-2.0/ui/charpick-applet-menu.xml
 share/mate-2.0/ui/drivemount-applet-menu.xml
 share/mate-2.0/ui/geyes-applet-menu.xml
 share/mate-2.0/ui/mateweather-applet-menu.xml
-share/mate-2.0/ui/mini-commander-applet-menu.xml
-share/mate-2.0/ui/mixer-applet-menu.xml
 share/mate-2.0/ui/multiload-applet-menu.xml
 share/mate-2.0/ui/stickynotes-applet-menu.xml
 share/mate-2.0/ui/trashapplet-menu.xml
+%%DATADIR%%/Invest_Applet.xml
 %%BATTERY%%%%DATADIR%%/builder/battstat_applet.ui
 %%CPUFREQ%%%%DATADIR%%/builder/cpufreq-preferences.ui
-%%DATADIR%%/builder/mini-commander.ui
+%%DATADIR%%/builder/financialchart.ui
+%%DATADIR%%/builder/prefs-dialog.ui
 %%DATADIR%%/builder/stickynotes.ui
 %%DATADIR%%/builder/trashapplet-empty-progress.ui
 %%DATADIR%%/geyes/Bizarre/Bizarre-eye.png
@@ -194,15 +223,21 @@ share/mate-2.0/ui/trashapplet-menu.xml
 %%DATADIR%%/geyes/Tango/config
 %%DATADIR%%/geyes/Tango/tango-eye.png
 %%DATADIR%%/geyes/Tango/tango-pupil.png
+%%DATADIR%%/invest-applet/invest-16_neutral.png
+%%DATADIR%%/invest-applet/invest-22_down.png
+%%DATADIR%%/invest-applet/invest-22_neutral.png
+%%DATADIR%%/invest-applet/invest-22_up.png
+%%DATADIR%%/invest-applet/invest_down.svg
+%%DATADIR%%/invest-applet/invest_neutral.svg
+%%DATADIR%%/invest-applet/invest_up.svg
 share/mate-panel/applets/org.mate.applets.AccessxStatusApplet.mate-panel-applet
 %%BATTERY%%share/mate-panel/applets/org.mate.applets.BattstatApplet.mate-panel-applet
 %%CPUFREQ%%share/mate-panel/applets/org.mate.applets.CPUFreqApplet.mate-panel-applet
 share/mate-panel/applets/org.mate.applets.CharpickerApplet.mate-panel-applet
 share/mate-panel/applets/org.mate.applets.DriveMountApplet.mate-panel-applet
 share/mate-panel/applets/org.mate.applets.GeyesApplet.mate-panel-applet
+share/mate-panel/applets/org.mate.applets.InvestApplet.mate-panel-applet
 share/mate-panel/applets/org.mate.applets.MateWeatherApplet.mate-panel-applet
-share/mate-panel/applets/org.mate.applets.MiniCommanderApplet.mate-panel-applet
-share/mate-panel/applets/org.mate.applets.MixerApplet.mate-panel-applet
 share/mate-panel/applets/org.mate.applets.MultiLoadApplet.mate-panel-applet
 share/mate-panel/applets/org.mate.applets.StickyNotesApplet.mate-panel-applet
 share/mate-panel/applets/org.mate.applets.TrashApplet.mate-panel-applet
@@ -651,63 +686,6 @@ share/mate/help/mate-char-palette/zh_CN/figures/charpalette_chargroup.png
 share/mate/help/mate-char-palette/zh_CN/figures/charpick-preferences.png
 share/mate/help/mate-char-palette/zh_CN/figures/charpick_characters.png
 share/mate/help/mate-char-palette/zh_CN/mate-char-palette.xml
-share/mate/help/mate-command-line/C/figures/command-line.png
-share/mate/help/mate-command-line/C/figures/prefs-macros.png
-share/mate/help/mate-command-line/C/figures/prefs.png
-share/mate/help/mate-command-line/C/legal.xml
-share/mate/help/mate-command-line/C/mate-command-line.xml
-share/mate/help/mate-command-line/ca/figures/command-line.png
-share/mate/help/mate-command-line/ca/figures/prefs-macros.png
-share/mate/help/mate-command-line/ca/figures/prefs.png
-share/mate/help/mate-command-line/ca/mate-command-line.xml
-share/mate/help/mate-command-line/de/figures/command-line.png
-share/mate/help/mate-command-line/de/figures/prefs-macros.png
-share/mate/help/mate-command-line/de/figures/prefs.png
-share/mate/help/mate-command-line/de/mate-command-line.xml
-share/mate/help/mate-command-line/el/figures/command-line.png
-share/mate/help/mate-command-line/el/figures/prefs-macros.png
-share/mate/help/mate-command-line/el/figures/prefs.png
-share/mate/help/mate-command-line/el/mate-command-line.xml
-share/mate/help/mate-command-line/en_GB/figures/command-line.png
-share/mate/help/mate-command-line/en_GB/figures/prefs-macros.png
-share/mate/help/mate-command-line/en_GB/figures/prefs.png
-share/mate/help/mate-command-line/en_GB/mate-command-line.xml
-share/mate/help/mate-command-line/es/figures/command-line.png
-share/mate/help/mate-command-line/es/figures/prefs-macros.png
-share/mate/help/mate-command-line/es/figures/prefs.png
-share/mate/help/mate-command-line/es/mate-command-line.xml
-share/mate/help/mate-command-line/eu/figures/command-line.png
-share/mate/help/mate-command-line/eu/figures/prefs-macros.png
-share/mate/help/mate-command-line/eu/figures/prefs.png
-share/mate/help/mate-command-line/eu/mate-command-line.xml
-share/mate/help/mate-command-line/fr/figures/command-line.png
-share/mate/help/mate-command-line/fr/figures/prefs-macros.png
-share/mate/help/mate-command-line/fr/figures/prefs.png
-share/mate/help/mate-command-line/fr/mate-command-line.xml
-share/mate/help/mate-command-line/ko/figures/command-line.png
-share/mate/help/mate-command-line/ko/figures/prefs-macros.png
-share/mate/help/mate-command-line/ko/figures/prefs.png
-share/mate/help/mate-command-line/ko/mate-command-line.xml
-share/mate/help/mate-command-line/oc/figures/command-line.png
-share/mate/help/mate-command-line/oc/figures/prefs-macros.png
-share/mate/help/mate-command-line/oc/figures/prefs.png
-share/mate/help/mate-command-line/oc/mate-command-line.xml
-share/mate/help/mate-command-line/pt_BR/figures/command-line.png
-share/mate/help/mate-command-line/pt_BR/figures/prefs-macros.png
-share/mate/help/mate-command-line/pt_BR/figures/prefs.png
-share/mate/help/mate-command-line/pt_BR/mate-command-line.xml
-share/mate/help/mate-command-line/sv/figures/command-line.png
-share/mate/help/mate-command-line/sv/figures/prefs-macros.png
-share/mate/help/mate-command-line/sv/figures/prefs.png
-share/mate/help/mate-command-line/sv/mate-command-line.xml
-share/mate/help/mate-command-line/uk/figures/command-line.png
-share/mate/help/mate-command-line/uk/figures/prefs-macros.png
-share/mate/help/mate-command-line/uk/figures/prefs.png
-share/mate/help/mate-command-line/uk/mate-command-line.xml
-share/mate/help/mate-command-line/zh_CN/figures/command-line.png
-share/mate/help/mate-command-line/zh_CN/figures/prefs-macros.png
-share/mate/help/mate-command-line/zh_CN/figures/prefs.png
-share/mate/help/mate-command-line/zh_CN/mate-command-line.xml
 %%CPUFREQ%%share/mate/help/mate-cpufreq-applet/C/figures/cpufreq-100.png
 %%CPUFREQ%%share/mate/help/mate-cpufreq-applet/C/figures/cpufreq-25.png
 %%CPUFREQ%%share/mate/help/mate-cpufreq-applet/C/figures/cpufreq-50.png
@@ -1069,49 +1047,27 @@ share/mate/help/mate-geyes/zh_HK/figures/geyes_applet.png
 share/mate/help/mate-geyes/zh_HK/mate-geyes.xml
 share/mate/help/mate-geyes/zh_TW/figures/geyes_applet.png
 share/mate/help/mate-geyes/zh_TW/mate-geyes.xml
-share/mate/help/mate-mixer_applet2/C/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/C/legal.xml
-share/mate/help/mate-mixer_applet2/C/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/ca/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/ca/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/cs/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/cs/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/da/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/da/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/de/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/de/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/el/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/el/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/en_GB/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/en_GB/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/es/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/es/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/eu/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/eu/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/fi/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/fi/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/fr/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/fr/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/hu/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/hu/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/it/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/it/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/ko/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/ko/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/oc/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/oc/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/pa/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/pa/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/pt_BR/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/pt_BR/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/ru/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/ru/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/sv/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/sv/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/uk/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/uk/mate-mixer_applet2.xml
-share/mate/help/mate-mixer_applet2/zh_CN/figures/volumecontrol_applet.png
-share/mate/help/mate-mixer_applet2/zh_CN/mate-mixer_applet2.xml
+share/mate/help/mate-invest-applet/C/figures/symbol-search.png
+share/mate/help/mate-invest-applet/C/legal.xml
+share/mate/help/mate-invest-applet/C/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/ca/figures/symbol-search.png
+share/mate/help/mate-invest-applet/ca/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/de/figures/symbol-search.png
+share/mate/help/mate-invest-applet/de/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/el/figures/symbol-search.png
+share/mate/help/mate-invest-applet/el/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/en_GB/figures/symbol-search.png
+share/mate/help/mate-invest-applet/en_GB/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/es/figures/symbol-search.png
+share/mate/help/mate-invest-applet/es/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/fi/figures/symbol-search.png
+share/mate/help/mate-invest-applet/fi/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/ru/figures/symbol-search.png
+share/mate/help/mate-invest-applet/ru/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/sv/figures/symbol-search.png
+share/mate/help/mate-invest-applet/sv/mate-invest-applet.xml
+share/mate/help/mate-invest-applet/zh_CN/figures/symbol-search.png
+share/mate/help/mate-invest-applet/zh_CN/mate-invest-applet.xml
 share/mate/help/mate-multiload/C/figures/multiload-preferences.png
 share/mate/help/mate-multiload/C/figures/system-monitor-applet_window.png
 share/mate/help/mate-multiload/C/figures/system_monitor.png
@@ -1712,20 +1668,6 @@ share/omf/mate-char-palette/mate-char-palette-ru.omf
 share/omf/mate-char-palette/mate-char-palette-sv.omf
 share/omf/mate-char-palette/mate-char-palette-uk.omf
 share/omf/mate-char-palette/mate-char-palette-zh_CN.omf
-share/omf/mate-command-line/mate-command-line-C.omf
-share/omf/mate-command-line/mate-command-line-ca.omf
-share/omf/mate-command-line/mate-command-line-de.omf
-share/omf/mate-command-line/mate-command-line-el.omf
-share/omf/mate-command-line/mate-command-line-en_GB.omf
-share/omf/mate-command-line/mate-command-line-es.omf
-share/omf/mate-command-line/mate-command-line-eu.omf
-share/omf/mate-command-line/mate-command-line-fr.omf
-share/omf/mate-command-line/mate-command-line-ko.omf
-share/omf/mate-command-line/mate-command-line-oc.omf
-share/omf/mate-command-line/mate-command-line-pt_BR.omf
-share/omf/mate-command-line/mate-command-line-sv.omf
-share/omf/mate-command-line/mate-command-line-uk.omf
-share/omf/mate-command-line/mate-command-line-zh_CN.omf
 share/omf/mate-cpufreq-applet/mate-cpufreq-applet-C.omf
 share/omf/mate-cpufreq-applet/mate-cpufreq-applet-ca.omf
 share/omf/mate-cpufreq-applet/mate-cpufreq-applet-cs.omf
@@ -1787,27 +1729,16 @@ share/omf/mate-geyes/mate-geyes-uk.omf
 share/omf/mate-geyes/mate-geyes-zh_CN.omf
 share/omf/mate-geyes/mate-geyes-zh_HK.omf
 share/omf/mate-geyes/mate-geyes-zh_TW.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-C.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-ca.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-cs.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-da.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-de.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-el.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-en_GB.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-es.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-eu.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-fi.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-fr.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-hu.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-it.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-ko.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-oc.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-pa.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-pt_BR.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-ru.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-sv.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-uk.omf
-share/omf/mate-mixer_applet2/mate-mixer_applet2-zh_CN.omf
+share/omf/mate-invest-applet/mate-invest-applet-C.omf
+share/omf/mate-invest-applet/mate-invest-applet-ca.omf
+share/omf/mate-invest-applet/mate-invest-applet-de.omf
+share/omf/mate-invest-applet/mate-invest-applet-el.omf
+share/omf/mate-invest-applet/mate-invest-applet-en_GB.omf
+share/omf/mate-invest-applet/mate-invest-applet-es.omf
+share/omf/mate-invest-applet/mate-invest-applet-fi.omf
+share/omf/mate-invest-applet/mate-invest-applet-ru.omf
+share/omf/mate-invest-applet/mate-invest-applet-sv.omf
+share/omf/mate-invest-applet/mate-invest-applet-zh_CN.omf
 share/omf/mate-multiload/mate-multiload-C.omf
 share/omf/mate-multiload/mate-multiload-ca.omf
 share/omf/mate-multiload/mate-multiload-cs.omf
@@ -1936,8 +1867,6 @@ share/pixmaps/mate-stickynotes/resize_se.png
 share/pixmaps/mate-stickynotes/resize_sw.png
 share/pixmaps/mate-stickynotes/unlocked.png
 share/polkit-1/actions/org.mate.cpufreqselector.policy
-@dirrmtry share/polkit-1/actions
-@dirrmtry share/polkit-1
 @dirrm share/pixmaps/mate-stickynotes
 @dirrm share/pixmaps/mate-cpufreq-applet
 @dirrm share/pixmaps/mate-accessx-status-applet
@@ -1945,11 +1874,10 @@ share/polkit-1/actions/org.mate.cpufreqselector.policy
 @dirrm share/omf/mate-trashapplet
 @dirrm share/omf/mate-stickynotes_applet
 @dirrm share/omf/mate-multiload
-@dirrm share/omf/mate-mixer_applet2
+@dirrm share/omf/mate-invest-applet
 @dirrm share/omf/mate-geyes
 @dirrm share/omf/mate-drivemount
 @dirrm share/omf/mate-cpufreq-applet
-@dirrm share/omf/mate-command-line
 @dirrm share/omf/mate-char-palette
 @dirrm share/omf/mate-battstat
 @dirrm share/omf/mate-accessx-status
@@ -2119,49 +2047,27 @@ share/polkit-1/actions/org.mate.cpufreqselector.policy
 @dirrm share/mate/help/mate-multiload/C/figures
 @dirrm share/mate/help/mate-multiload/C
 @dirrm share/mate/help/mate-multiload
-@dirrm share/mate/help/mate-mixer_applet2/zh_CN/figures
-@dirrm share/mate/help/mate-mixer_applet2/zh_CN
-@dirrm share/mate/help/mate-mixer_applet2/uk/figures
-@dirrm share/mate/help/mate-mixer_applet2/uk
-@dirrm share/mate/help/mate-mixer_applet2/sv/figures
-@dirrm share/mate/help/mate-mixer_applet2/sv
-@dirrm share/mate/help/mate-mixer_applet2/ru/figures
-@dirrm share/mate/help/mate-mixer_applet2/ru
-@dirrm share/mate/help/mate-mixer_applet2/pt_BR/figures
-@dirrm share/mate/help/mate-mixer_applet2/pt_BR
-@dirrm share/mate/help/mate-mixer_applet2/pa/figures
-@dirrm share/mate/help/mate-mixer_applet2/pa
-@dirrm share/mate/help/mate-mixer_applet2/oc/figures
-@dirrm share/mate/help/mate-mixer_applet2/oc
-@dirrm share/mate/help/mate-mixer_applet2/ko/figures
-@dirrm share/mate/help/mate-mixer_applet2/ko
-@dirrm share/mate/help/mate-mixer_applet2/it/figures
-@dirrm share/mate/help/mate-mixer_applet2/it
-@dirrm share/mate/help/mate-mixer_applet2/hu/figures
-@dirrm share/mate/help/mate-mixer_applet2/hu
-@dirrm share/mate/help/mate-mixer_applet2/fr/figures
-@dirrm share/mate/help/mate-mixer_applet2/fr
-@dirrm share/mate/help/mate-mixer_applet2/fi/figures
-@dirrm share/mate/help/mate-mixer_applet2/fi
-@dirrm share/mate/help/mate-mixer_applet2/eu/figures
-@dirrm share/mate/help/mate-mixer_applet2/eu
-@dirrm share/mate/help/mate-mixer_applet2/es/figures
-@dirrm share/mate/help/mate-mixer_applet2/es
-@dirrm share/mate/help/mate-mixer_applet2/en_GB/figures
-@dirrm share/mate/help/mate-mixer_applet2/en_GB
-@dirrm share/mate/help/mate-mixer_applet2/el/figures
-@dirrm share/mate/help/mate-mixer_applet2/el
-@dirrm share/mate/help/mate-mixer_applet2/de/figures
-@dirrm share/mate/help/mate-mixer_applet2/de
-@dirrm share/mate/help/mate-mixer_applet2/da/figures
-@dirrm share/mate/help/mate-mixer_applet2/da
-@dirrm share/mate/help/mate-mixer_applet2/cs/figures
-@dirrm share/mate/help/mate-mixer_applet2/cs
-@dirrm share/mate/help/mate-mixer_applet2/ca/figures
-@dirrm share/mate/help/mate-mixer_applet2/ca
-@dirrm share/mate/help/mate-mixer_applet2/C/figures
-@dirrm share/mate/help/mate-mixer_applet2/C
-@dirrm share/mate/help/mate-mixer_applet2
+@dirrm share/mate/help/mate-invest-applet/zh_CN/figures
+@dirrm share/mate/help/mate-invest-applet/zh_CN
+@dirrm share/mate/help/mate-invest-applet/sv/figures
+@dirrm share/mate/help/mate-invest-applet/sv
+@dirrm share/mate/help/mate-invest-applet/ru/figures
+@dirrm share/mate/help/mate-invest-applet/ru
+@dirrm share/mate/help/mate-invest-applet/fi/figures
+@dirrm share/mate/help/mate-invest-applet/fi
+@dirrm share/mate/help/mate-invest-applet/es/figures
+@dirrm share/mate/help/mate-invest-applet/es
+@dirrm share/mate/help/mate-invest-applet/en_GB/figures
+@dirrm share/mate/help/mate-invest-applet/en_GB
+@dirrm share/mate/help/mate-invest-applet/el/figures
+@dirrm share/mate/help/mate-invest-applet/el
+@dirrm share/mate/help/mate-invest-applet/de/figures
+@dirrm share/mate/help/mate-invest-applet/de
+@dirrm share/mate/help/mate-invest-applet/ca/figures
+@dirrm share/mate/help/mate-invest-applet/ca
+@dirrm share/mate/help/mate-invest-applet/C/figures
+@dirrm share/mate/help/mate-invest-applet/C
+@dirrm share/mate/help/mate-invest-applet
 @dirrm share/mate/help/mate-geyes/zh_TW/figures
 @dirrm share/mate/help/mate-geyes/zh_TW
 @dirrm share/mate/help/mate-geyes/zh_HK/figures
@@ -2287,35 +2193,6 @@ share/polkit-1/actions/org.mate.cpufreqselector.policy
 %%CPUFREQ%%@dirrm share/mate/help/mate-cpufreq-applet/C/figures
 %%CPUFREQ%%@dirrm share/mate/help/mate-cpufreq-applet/C
 %%CPUFREQ%%@dirrm share/mate/help/mate-cpufreq-applet
-@dirrm share/mate/help/mate-command-line/zh_CN/figures
-@dirrm share/mate/help/mate-command-line/zh_CN
-@dirrm share/mate/help/mate-command-line/uk/figures
-@dirrm share/mate/help/mate-command-line/uk
-@dirrm share/mate/help/mate-command-line/sv/figures
-@dirrm share/mate/help/mate-command-line/sv
-@dirrm share/mate/help/mate-command-line/pt_BR/figures
-@dirrm share/mate/help/mate-command-line/pt_BR
-@dirrm share/mate/help/mate-command-line/oc/figures
-@dirrm share/mate/help/mate-command-line/oc
-@dirrm share/mate/help/mate-command-line/ko/figures
-@dirrm share/mate/help/mate-command-line/ko
-@dirrm share/mate/help/mate-command-line/fr/figures
-@dirrm share/mate/help/mate-command-line/fr
-@dirrm share/mate/help/mate-command-line/eu/figures
-@dirrm share/mate/help/mate-command-line/eu
-@dirrm share/mate/help/mate-command-line/es/figures
-@dirrm share/mate/help/mate-command-line/es
-@dirrm share/mate/help/mate-command-line/en_GB/figures
-@dirrm share/mate/help/mate-command-line/en_GB
-@dirrm share/mate/help/mate-command-line/el/figures
-@dirrm share/mate/help/mate-command-line/el
-@dirrm share/mate/help/mate-command-line/de/figures
-@dirrm share/mate/help/mate-command-line/de
-@dirrm share/mate/help/mate-command-line/ca/figures
-@dirrm share/mate/help/mate-command-line/ca
-@dirrm share/mate/help/mate-command-line/C/figures
-@dirrm share/mate/help/mate-command-line/C
-@dirrm share/mate/help/mate-command-line
 @dirrm share/mate/help/mate-char-palette/zh_CN/figures
 @dirrm share/mate/help/mate-char-palette/zh_CN
 @dirrm share/mate/help/mate-char-palette/uk/figures
@@ -2435,6 +2312,9 @@ share/polkit-1/actions/org.mate.cpufreqselector.policy
 @dirrm share/mate/help/mate-accessx-status/C/figures
 @dirrm share/mate/help/mate-accessx-status/C
 @dirrm share/mate/help/mate-accessx-status
+@dirrmtry share/mate-panel/applets
+@dirrmtry share/mate-panel
+@dirrm %%DATADIR%%/invest-applet
 @dirrm %%DATADIR%%/geyes/Tango
 @dirrm %%DATADIR%%/geyes/Horrid
 @dirrm %%DATADIR%%/geyes/Default-tiny
@@ -2526,4 +2406,6 @@ share/polkit-1/actions/org.mate.cpufreqselector.policy
 @dirrmtry share/icons/mate/48x48
 @dirrmtry share/icons/mate
 @dirrmtry share/icons
-@dirrm libexec/mate-applets
+@dirrm %%PYTHON_SITELIBDIR%%/mate_invest
+@dirrmtry %%PYTHON_SITELIBDIR%%
+@dirrmtry %%PYTHON_LIBDIR%%

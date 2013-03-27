@@ -1,6 +1,6 @@
---- battstat/acpi-freebsd.h.orig	Sun Jul  3 16:50:22 2005
-+++ battstat/acpi-freebsd.h	Sun Jul  3 16:54:14 2005
-@@ -29,61 +29,31 @@
+--- battstat/acpi-freebsd.h.orig	2013-03-26 20:55:32.000000000 -0500
++++ battstat/acpi-freebsd.h	2013-03-26 20:57:36.000000000 -0500
+@@ -29,61 +29,30 @@
  #define ACPI_LIFE "hw.acpi.battery.life"
  #define ACPI_STATE "hw.acpi.battery.state"
  
@@ -10,7 +10,6 @@
 -  int       max_capacity;
 -  int       low_capacity;
 -  int       critical_capacity;
-+/* XXX: AMD64 does not have machine/apm_bios.h. */
 +#if !defined(__i386__)
 +struct apm_info {
 +  guint    ai_acline;
@@ -41,7 +40,7 @@
 - *
 - *  You should have received a copy of the GNU General Public License
 - *  along with this program; if not, write to the Free Software
-- *  Foundation, Inc., 59 Temple Street #330, Boston, MA 02111-1307, USA.
+- *  Foundation, Inc., 59 Temple Street #330, Boston, MA 02110-1301, USA.
 - */
 -
 -#ifndef __ACPI_FREEBSD_H__
