@@ -1,7 +1,5 @@
-- Update MATE to 1.5.x/1.6.x.
-
-- Remove packages that are no longer part of MATE 1.6.
-  See here: http://wiki.mate-desktop.org/status:1.6#removed_packages
+- MATE has been updated to 1.5.x, but keep update those ports when upstream
+  update one of MATE packages.
 
 - Fix the conflict between gnome-panel and mate-panel if it still does
   conflict in the 1.5.x/1.6.x.
