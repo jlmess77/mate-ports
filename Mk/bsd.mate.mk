@@ -52,7 +52,7 @@ _USE_MATE_ALL=	autogen intlhack intltool ltasneededhack lthack ltverhack \
 _USE_MATE_ALL+=	caja canvas common component componentui conf controlcenter \
 				corba desktop dialogs docutils icontheme keyring libmate \
 				libmatekbd libmatekeyring libmatenotify libmateui \
-				libmateweather libmatewnck marco menus mimedata \
+				libmateweather libmatewnck marco menus mimedata mucharmap \
 				notificationdaemon panel polkit pluma pycorba pymate \
 				settingsdaemon vfs
 
@@ -82,6 +82,11 @@ canvas_DETECT=			${LOCALBASE}/libdata/pkgconfig/libmatecanvas-2.0.pc
 canvas_BUILD_DEPENDS=	${canvas_DETECT}:${PORTSDIR}/graphics/libmatecanvas
 canvas_LIB_DEPENDS=		matecanvas-2:${PORTSDIR}/graphics/libmatecanvas
 canvas_RUN_DEPENDS=		${canvas_DETECT}:${PORTSDIR}/graphics/libmatecanvas
+
+mucharmap_DETECT=		${LOCALBASE}/libdata/pkgconfig/mucharmap-2.pc
+mucharmap_BUILD_DEPENDS=${canvas_DETECT}:${PORTSDIR}/deskutils/mate-character-map
+mucharmap_LIB_DEPENDS=	mucharmap:${PORTSDIR}/deskutils/mate-character-map
+mucharmap_RUN_DEPENDS=	${canvas_DETECT}:${PORTSDIR}/deskutils/mate-character-map
 
 common_DETECT=			${LOCALBASE}/bin/mate-autogen
 common_BUILD_DEPENDS=	${common_DETECT}:${PORTSDIR}/devel/mate-common
