@@ -49,12 +49,10 @@ _USE_MATE_ALL=	autogen intlhack intltool ltasneededhack lthack ltverhack \
 # and :run, it will be added in both build and run dependency. It will check
 # for the library dependency first. If not exists then do the build/run on
 # the *.pc file instead.
-_USE_MATE_ALL+=	caja canvas common component componentui conf controlcenter \
-				corba desktop dialogs docutils icontheme keyring libmate \
-				libmatekbd libmatekeyring libmatenotify libmateui \
-				libmateweather libmatewnck marco menus mimedata mucharmap \
-				notificationdaemon panel polkit pluma pycorba pymate \
-				settingsdaemon vfs
+_USE_MATE_ALL+=	caja common controlcenter desktop dialogs docutils icontheme \
+				keyring libmatekbd libmatekeyring libmateweather libmatewnck \
+				marco menus mucharmap notificationdaemon panel polkit pluma \
+				settingsdaemon
 
 MATE_MAKEFILEIN?=	Makefile.*
 SCROLLKEEPER_DIR=	/var/db/rarian
@@ -63,8 +61,7 @@ matehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "${MATE_MAKEFILEIN}*" -type f | ${XA
 				 s|[(]libdir[)]/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
 				 s|[(]datadir[)]/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
 				 s|[(]prefix[)]/lib/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
-				 s|[$$][(]localstatedir[)]/scrollkeeper|${SCROLLKEEPER_DIR}|g ; \
-				 s|[(]libdir[)]/matecomponent/servers|(prefix)/libdata/matecomponent/servers|g' ; \
+				 s|[$$][(]localstatedir[)]/scrollkeeper|${SCROLLKEEPER_DIR}|g' ; \
 			${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINPLACE_CMD} -e \
 				's|-lpthread|${PTHREAD_LIBS}|g ; \
 				 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
@@ -78,11 +75,6 @@ caja_BUILD_DEPENDS=		${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
 caja_LIB_DEPENDS=		caja-extension:${PORTSDIR}/x11-fm/mate-file-manager
 caja_RUN_DEPENDS=		${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
 
-canvas_DETECT=			${LOCALBASE}/libdata/pkgconfig/libmatecanvas-2.0.pc
-canvas_BUILD_DEPENDS=	${canvas_DETECT}:${PORTSDIR}/graphics/libmatecanvas
-canvas_LIB_DEPENDS=		matecanvas-2:${PORTSDIR}/graphics/libmatecanvas
-canvas_RUN_DEPENDS=		${canvas_DETECT}:${PORTSDIR}/graphics/libmatecanvas
-
 mucharmap_DETECT=		${LOCALBASE}/libdata/pkgconfig/mucharmap-2.pc
 mucharmap_BUILD_DEPENDS=${mucharmap_DETECT}:${PORTSDIR}/deskutils/mate-character-map
 mucharmap_LIB_DEPENDS=	mucharmap:${PORTSDIR}/deskutils/mate-character-map
@@ -92,34 +84,10 @@ common_DETECT=			${LOCALBASE}/bin/mate-autogen
 common_BUILD_DEPENDS=	${common_DETECT}:${PORTSDIR}/devel/mate-common
 common_RUN_DEPENDS=		${common_DETECT}:${PORTSDIR}/devel/mate-common
 
-component_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatecomponent-2.0.pc
-component_BUILD_DEPENDS=${component_DETECT}:${PORTSDIR}/devel/libmatecomponent
-component_LIB_DEPENDS=	matecomponent-2:${PORTSDIR}/devel/libmatecomponent
-component_RUN_DEPENDS=	${component_DETECT}:${PORTSDIR}/devel/libmatecomponent
-
-componentui_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatecomponentui-2.0.pc
-componentui_BUILD_DEPENDS=${componentui_DETECT}:${PORTSDIR}/x11-toolkits/libmatecomponentui
-componentui_LIB_DEPENDS=matecomponentui-2:${PORTSDIR}/x11-toolkits/libmatecomponentui
-componentui_RUN_DEPENDS=${componentui_DETECT}:${PORTSDIR}/x11-toolkits/libmatecomponentui
-
-conf_DETECT=			${LOCALBASE}/libdata/pkgconfig/mateconf-2.0.pc
-conf_BUILD_DEPENDS=		${conf_DETECT}:${PORTSDIR}/devel/mate-conf
-conf_LIB_DEPENDS=		mateconf-2:${PORTSDIR}/devel/mate-conf
-conf_RUN_DEPENDS=		${conf_DETECT}:${PORTSDIR}/devel/mate-conf
-MATECONF_CONFIG_OPTIONS?=merged
-MATECONF_CONFIG_DIRECTORY?=etc/mateconf/mateconf.xml.defaults
-MATECONF_CONFIG_SOURCE?=xml:${MATECONF_CONFIG_OPTIONS}:${PREFIX}/${MATECONF_CONFIG_DIRECTORY}
-MATECONF_PREFIX=		--with-mateconf-source=${MATECONF_CONFIG_SOURCE}
-
 controlcenter_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-window-settings-2.0.pc
 controlcenter_BUILD_DEPENDS=${controlcenter_DETECT}:${PORTSDIR}/sysutils/mate-control-center
 controlcenter_LIB_DEPENDS=mate-window-settings:${PORTSDIR}/sysutils/mate-control-center
 controlcenter_RUN_DEPENDS=${controlcenter_DETECT}:${PORTSDIR}/sysutils/mate-control-center
-
-corba_DETECT=			${LOCALBASE}/libdata/pkgconfig/MateCORBA-2.0.pc
-corba_BUILD_DEPENDS=	${corba_DETECT}:${PORTSDIR}/devel/mate-corba
-corba_LIB_DEPENDS=		MateCORBA-2:${PORTSDIR}/devel/mate-corba
-corba_RUN_DEPENDS=		${corba_DETECT}:${PORTSDIR}/devel/mate-corba
 
 desktop_DETECT=			${LOCALBASE}/libdata/pkgconfig/mate-desktop-2.0.pc
 desktop_BUILD_DEPENDS=	${desktop_DETECT}:${PORTSDIR}/x11/mate-desktop
@@ -155,11 +123,6 @@ keyring_BUILD_DEPENDS=	${keyring_DETECT}:${PORTSDIR}/security/mate-keyring
 keyring_LIB_DEPENDS=	mategcr:${PORTSDIR}/security/mate-keyring
 keyring_RUN_DEPENDS=	${keyring_DETECT}:${PORTSDIR}/security/mate-keyring
 
-libmate_DETECT=			${LOCALBASE}/libdata/pkgconfig/libmate-2.0.pc
-libmate_BUILD_DEPENDS=	${libmate_DETECT}:${PORTSDIR}/x11/libmate
-libmate_LIB_DEPENDS=	mate-2:${PORTSDIR}/x11/libmate
-libmate_RUN_DEPENDS=	${libmate_DETECT}:${PORTSDIR}/x11/libmate
-
 libmatekbd_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatekbd.pc
 libmatekbd_BUILD_DEPENDS=${libmatekbd_DETECT}:${PORTSDIR}/x11/libmatekbd
 libmatekbd_LIB_DEPENDS=	matekbd:${PORTSDIR}/x11/libmatekbd
@@ -169,16 +132,6 @@ libmatekeyring_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-keyring-1.pc
 libmatekeyring_BUILD_DEPENDS=${libmatekeyring_DETECT}:${PORTSDIR}/security/libmatekeyring
 libmatekeyring_LIB_DEPENDS=mate-keyring:${PORTSDIR}/security/libmatekeyring
 libmatekeyring_RUN_DEPENDS=${libmatekeyring_DETECT}:${PORTSDIR}/security/libmatekeyring
-
-libmatenotify_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatenotify.pc
-libmatenotify_BUILD_DEPENDS=${libmatenotify_DETECT}:${PORTSDIR}/devel/libmatenotify
-libmatenotify_LIB_DEPENDS=	matenotify:${PORTSDIR}/devel/libmatenotify
-libmatenotify_RUN_DEPENDS=	${libmatenotify_DETECT}:${PORTSDIR}/devel/libmatenotify
-
-libmateui_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmateui-2.0.pc
-libmateui_BUILD_DEPENDS=${libmateui_DETECT}:${PORTSDIR}/x11-toolkits/libmateui
-libmateui_LIB_DEPENDS=	mateui-2:${PORTSDIR}/x11-toolkits/libmateui
-libmateui_RUN_DEPENDS=	${libmateui_DETECT}:${PORTSDIR}/x11-toolkits/libmateui
 
 libmateweather_DETECT=	${LOCALBASE}/libdata/pkgconfig/mateweather.pc
 libmateweather_BUILD_DEPENDS=${libmateweather_DETECT}:${PORTSDIR}/net/libmateweather
@@ -200,10 +153,6 @@ menus_BUILD_DEPENDS=	${menus_DETECT}:${PORTSDIR}/x11/mate-menus
 menus_LIB_DEPENDS=		mate-menu:${PORTSDIR}/x11/mate-menus
 menus_RUN_DEPENDS=		${menus_DETECT}:${PORTSDIR}/x11/mate-menus
 
-mimedata_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-mime-data-2.0.pc
-mimedata_BUILD_DEPENDS=	${mimedata_DETECT}:${PORTSDIR}/misc/mate-mime-data
-mimedata_RUN_DEPENDS=	${mimedata_DETECT}:${PORTSDIR}/misc/mate-mime-data
-
 notificationdaemon_DETECT=${LOCALBASE}/libexec/mate-notification-daemon
 notificationdaemon_BUILD_DEPENDS=${notificationdaemon_DETECT}:${PORTSDIR}/deskutils/mate-notification-daemon
 notificationdaemon_RUN_DEPENDS=${notificationdaemon_DETECT}:${PORTSDIR}/deskutils/mate-notification-daemon
@@ -222,22 +171,9 @@ pluma_DETECT=			${LOCALBASE}/libdata/pkgconfig/pluma.pc
 pluma_BUILD_DEPENDS=	${pluma_DETECT}:${PORTSDIR}/editors/mate-text-editor
 pluma_RUN_DEPENDS=		${pluma_DETECT}:${PORTSDIR}/editors/mate-text-editor
 
-pycorba_DETECT=			${LOCALBASE}/libdata/pkgconfig/pymatecorba-2.pc
-pycorba_BUILD_DEPENDS=	${pycorba_DETECT}:${PORTSDIR}/devel/python-corba
-pycorba_RUN_DEPENDS=	${pycorba_DETECT}:${PORTSDIR}/devel/python-corba
-
-pymate_DETECT=			${LOCALBASE}/libdata/pkgconfig/mate-python-2.0.pc
-pymate_BUILD_DEPENDS=	${pymate_DETECT}:${PORTSDIR}/x11-toolkits/python-mate
-pymate_RUN_DEPENDS=		${pymate_DETECT}:${PORTSDIR}/x11-toolkits/python-mate
-
 settingsdaemon_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-settings-daemon.pc
 settingsdaemon_BUILD_DEPENDS=${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-settings-daemon
 settingsdaemon_RUN_DEPENDS=${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-settings-daemon
-
-vfs_DETECT=				${LOCALBASE}/libdata/pkgconfig/mate-vfs-2.0.pc
-vfs_BUILD_DEPENDS=		${vfs_DETECT}:${PORTSDIR}/devel/mate-vfs
-vfs_LIB_DEPENDS=		matevfs-2:${PORTSDIR}/devel/mate-vfs
-vfs_RUN_DEPENDS=		${vfs_DETECT}:${PORTSDIR}/devel/mate-vfs
 
 # End component definition section
 
@@ -367,30 +303,6 @@ mate-pre-configure-script:
 
 .if ${MAINTAINER}=="gnome@FreeBSD.org"
 CONFIGURE_FAIL_MESSAGE= "Please run the gnomelogalyzer, available from \"http://www.freebsd.org/gnome/gnomelogalyzer.sh\", which will diagnose the problem and suggest a solution. If - and only if - the gnomelogalyzer cannot solve the problem, report the build failure to the FreeBSD MATE team at ${MAINTAINER}, and attach (a) \"${CONFIGURE_WRKSRC}/${CONFIGURE_LOG}\", (b) the output of the failed make command, and (c) the gnomelogalyzer output. Also, it might be a good idea to provide an overview of all packages installed on your system (i.e. an \`ls ${PKG_DBDIR}\`). Put your attachment up on any website, copy-and-paste into http://freebsd-gnome.pastebin.com, or use send-pr(1) with the attachment. Try to avoid sending any attachments to the mailing list (${MAINTAINER}), because attachments sent to FreeBSD mailing lists are usually discarded by the mailing list software."
-.endif
-
-
-.if defined(MATECONF_SCHEMAS)
-pre-su-install: mate-pre-su-install
-post-install: mate-post-install
-
-mate-pre-su-install:
-. if defined(MATECONF_SCHEMAS)
-	@${MKDIR} ${PREFIX}/etc/mateconf/mateconf.xml.defaults/
-. else
-	@${DO_NADA}
-. endif
-
-mate-post-install:
-. if defined(MATECONF_SCHEMAS)
-	@for i in ${MATECONF_SCHEMAS}; do \
-		${ECHO_CMD} "@unexec env MATECONF_CONFIG_SOURCE=xml:${MATECONF_CONFIG_OPTIONS}:%D/${MATECONF_CONFIG_DIRECTORY} mateconftool-2 --makefile-uninstall-rule %D/etc/mateconf/schemas/$${i} > /dev/null || /usr/bin/true" \
-			>> ${TMPPLIST}; \
-		${ECHO_CMD} "etc/mateconf/schemas/$${i}" >> ${TMPPLIST}; \
-		${ECHO_CMD} "@exec env MATECONF_CONFIG_SOURCE=xml:${MATECONF_CONFIG_OPTIONS}:%D/${MATECONF_CONFIG_DIRECTORY} mateconftool-2 --makefile-install-rule %D/etc/mateconf/schemas/$${i} > /dev/null || /usr/bin/true" \
-			>> ${TMPPLIST}; \
-	done
-. endif
 .endif
 
 .endif

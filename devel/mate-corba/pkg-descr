@@ -1,5 +1,0 @@
-mate-corba is a high-performance CORBA ORB with support for the C language.
-It allows programs to communicate with each other, regardless of their
-physical and logical locations.
-
-WWW: http://mate-desktop.org/
