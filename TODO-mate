@@ -19,18 +19,8 @@ Base (x11/mate-base):
 ------------------------------
  devel/gnome-common -> devel/mate-common
  textproc/gnome-doc-utils -> textproc/mate-doc-utils
- devel/ORBit2 -> devel/mate-corba
- devel/gconf2 -> devel/mate-conf
- devel/libbonobo -> devel/libmatecomponent
- misc/gnome-mime-data -> misc/mate-mime-data
- devel/gnome-vfs -> devel/mate-vfs
- x11/libgnome -> x11/libmate
- graphics/libgnomecanvas -> graphics/libmatecanvas
- x11-toolkits/libbonoboui -> x11-toolkits/libmatecomponentui
  security/libgnome-keyring -> security/libmatekeyring
  security/gnome-keyring -> security/mate-keyring
- x11-toolkits/libgnomeui -> x11-toolkits/libmateui
- devel/libnotify -> devel/libmatenotify
  x11/libgnomekbd -> x11/libmatekbd
  net/libgweather -> net/libmateweather
  misc/gnome-icon-theme -> x11-themes/mate-icon-theme
@@ -56,7 +46,6 @@ Extras (x11/mate):
  x11/gnome-terminal -> x11/mate-terminal
  x11/gnome-screensaver -> x11/mate-screensaver
  math/gcalctool -> math/mate-calc
- sysutils/gconf-editor -> sysutils/mate-conf-editor
  deskutils/gnome-utils -> deskutils/mate-utils
  sysutils/gnome-system-monitor -> sysutils/mate-system-monitor
  graphics/eog -> graphics/mate-image-viewer
@@ -64,9 +53,9 @@ Extras (x11/mate):
  graphics/evince -> graphics/mate-document-viewer
  audio/gnome-media -> audio/mate-media
  sysutils/gnome-power-manager -> sysutils/mate-power-manager
- devel/py-orbit -> devel/python-corba
- x11-toolkits/py-gnome2 -> x11-toolkits/python-mate
  deskutils/alacarte -> deskutils/mate-menu-editor
  deskutils/gucharmap -> deskutils/mate-character-map
  x11/gnome-applets -> x11/mate-applets
+ deskutils/nautilus-open-terminal -> deskutils/mate-file-manager-open-terminal
+ x11-themes/mate-icon-theme-faenza
 ------------------------------
