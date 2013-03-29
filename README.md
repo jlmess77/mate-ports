@@ -7,7 +7,7 @@ MATE is a fork of GNOME 2. More information can be found at http://mate-desktop.
 
 Get mate-ports and install MATE
 -------------------------------
-You will need to make sure you have latest ports tree before you grab MATE. I am not going to give you a baby step of how to update FreeBSD ports tree or install other apps if your command line doesn't work. The FreeBSD Handbook (http://www.freebsd.org/) is a place where you need to visit and read. Anyway, let's get start to grab matemerge.sh script that will allow merge the mate-ports into your /usr/ports.
+You will need to make sure you have latest ports tree before you grab MATE. I am not going to give you a baby step of how to update FreeBSD ports tree or install other apps if your command line doesn't work. The FreeBSD Handbook (http://www.freebsd.org/) is a place where you need to visit and read. Anyway, let's get start to grab matemerge.sh script that will allow merge the mate-ports into your /usr/ports. You will need to install the `devel/git` as matemerge.sh depends on it to fetch mate-ports from GitHub.
 
 	# fetch http://people.freebsd.org/~mezz/script/matemerge.sh
 
