@@ -3,6 +3,7 @@
 
 PORTNAME=	mate-themes
 PORTVERSION=	1.5.2
+PORTREVISION=	1
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -12,7 +13,8 @@ COMMENT=	A collection of themes and icons for MATE
 
 BUILD_DEPENDS=	gtk-engines2>=2.15.0:${PORTSDIR}/x11-themes/gtk-engines2 \
 		icon-naming-utils>=0.8.7:${PORTSDIR}/x11-themes/icon-naming-utils
-RUN_DEPENDS=	gtk-engines2>=2.15.0:${PORTSDIR}/x11-themes/gtk-engines2
+RUN_DEPENDS=	gtk-engines2>=2.15.0:${PORTSDIR}/x11-themes/gtk-engines2 \
+		gtk-murrine-engine>=0.98:${PORTSDIR}/x11-themes/gtk-murrine-engine
 
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack marco matehack
