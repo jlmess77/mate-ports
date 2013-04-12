@@ -161,6 +161,7 @@ share/locale/km/LC_MESSAGES/caja.mo
 share/locale/kn/LC_MESSAGES/caja.mo
 share/locale/ko/LC_MESSAGES/caja.mo
 share/locale/ku/LC_MESSAGES/caja.mo
+share/locale/ky/LC_MESSAGES/caja.mo
 share/locale/li/LC_MESSAGES/caja.mo
 share/locale/lt/LC_MESSAGES/caja.mo
 share/locale/lv/LC_MESSAGES/caja.mo
@@ -264,6 +265,8 @@ share/pixmaps/caja/thumbnail_frame.png
 @dirrmtry share/locale/mg
 @dirrmtry share/locale/mai/LC_MESSAGES
 @dirrmtry share/locale/mai
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
 @dirrmtry share/locale/km/LC_MESSAGES
@@ -300,6 +303,8 @@ share/pixmaps/caja/thumbnail_frame.png
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/glib-2.0/schemas
+@dirrmtry share/glib-2.0
 @dirrm share/doc/libcaja-extension
 @dirrmtry share/dbus-1/services
 @dirrmtry share/dbus-1
@@ -315,8 +320,8 @@ share/pixmaps/caja/thumbnail_frame.png
 @dirrm share/caja/icons
 @dirrm share/caja
 @dirrmtry share/applications
-@dirrm lib/caja/extensions-2.0
-@dirrm lib/caja
+@dirrmtry lib/caja/extensions-2.0
+@dirrmtry lib/caja
 @dirrm include/caja/libcaja-extension
 @dirrm include/caja
 @exec %%LOCALBASE%%/bin/update-mime-database %D/share/mime
