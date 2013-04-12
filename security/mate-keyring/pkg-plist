@@ -105,6 +105,7 @@ share/doc/mate-gcr-0/storage.html
 share/doc/mate-gcr-0/style.css
 share/doc/mate-gcr-0/up.png
 share/locale/af/LC_MESSAGES/mate-keyring.mo
+share/locale/am/LC_MESSAGES/mate-keyring.mo
 share/locale/ar/LC_MESSAGES/mate-keyring.mo
 share/locale/as/LC_MESSAGES/mate-keyring.mo
 share/locale/ast/LC_MESSAGES/mate-keyring.mo
@@ -124,6 +125,7 @@ share/locale/de/LC_MESSAGES/mate-keyring.mo
 share/locale/dz/LC_MESSAGES/mate-keyring.mo
 share/locale/el/LC_MESSAGES/mate-keyring.mo
 share/locale/en@shaw/LC_MESSAGES/mate-keyring.mo
+share/locale/en_AU/LC_MESSAGES/mate-keyring.mo
 share/locale/en_CA/LC_MESSAGES/mate-keyring.mo
 share/locale/en_GB/LC_MESSAGES/mate-keyring.mo
 share/locale/es/LC_MESSAGES/mate-keyring.mo
@@ -146,6 +148,7 @@ share/locale/ja/LC_MESSAGES/mate-keyring.mo
 share/locale/ka/LC_MESSAGES/mate-keyring.mo
 share/locale/kn/LC_MESSAGES/mate-keyring.mo
 share/locale/ko/LC_MESSAGES/mate-keyring.mo
+share/locale/ky/LC_MESSAGES/mate-keyring.mo
 share/locale/lt/LC_MESSAGES/mate-keyring.mo
 share/locale/lv/LC_MESSAGES/mate-keyring.mo
 share/locale/mai/LC_MESSAGES/mate-keyring.mo
@@ -215,6 +218,8 @@ share/mategcr/ui/gcr-unlock-options-widget.ui
 @dirrmtry share/locale/mg
 @dirrmtry share/locale/mai/LC_MESSAGES
 @dirrmtry share/locale/mai
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/en@shaw/LC_MESSAGES
 @dirrmtry share/locale/en@shaw
 @dirrmtry share/locale/dz/LC_MESSAGES
@@ -233,6 +238,8 @@ share/mategcr/ui/gcr-unlock-options-widget.ui
 @dirrmtry share/glib-2.0
 @dirrm share/doc/mate-gcr-0
 @dirrm share/doc/mate-gck
+@dirrmtry share/dbus-1/services
+@dirrmtry share/dbus-1
 @dirrm lib/pkcs11
 @dirrm lib/mate-keyring/standalone
 @dirrm lib/mate-keyring/devel
