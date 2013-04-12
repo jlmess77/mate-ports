@@ -63,6 +63,7 @@ share/locale/it/LC_MESSAGES/libmatekeyring.mo
 share/locale/ja/LC_MESSAGES/libmatekeyring.mo
 share/locale/kn/LC_MESSAGES/libmatekeyring.mo
 share/locale/ko/LC_MESSAGES/libmatekeyring.mo
+share/locale/ky/LC_MESSAGES/libmatekeyring.mo
 share/locale/lt/LC_MESSAGES/libmatekeyring.mo
 share/locale/lv/LC_MESSAGES/libmatekeyring.mo
 share/locale/ml/LC_MESSAGES/libmatekeyring.mo
@@ -102,6 +103,8 @@ share/locale/zh_TW/LC_MESSAGES/libmatekeyring.mo
 @dirrmtry share/locale/sr@latin
 @dirrmtry share/locale/nds/LC_MESSAGES
 @dirrmtry share/locale/nds
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/fy/LC_MESSAGES
 @dirrmtry share/locale/fy
 @dirrmtry share/locale/es_CL/LC_MESSAGES
