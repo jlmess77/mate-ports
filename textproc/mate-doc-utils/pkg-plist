@@ -2,6 +2,7 @@ bin/mate-doc-prepare
 bin/mate-doc-tool
 libdata/pkgconfig/mate-doc-utils.pc
 share/aclocal/mate-doc-utils.m4
+share/locale/am/LC_MESSAGES/mate-doc-utils.mo
 share/locale/ar/LC_MESSAGES/mate-doc-utils.mo
 share/locale/as/LC_MESSAGES/mate-doc-utils.mo
 share/locale/ast/LC_MESSAGES/mate-doc-utils.mo
@@ -32,6 +33,7 @@ share/locale/gl/LC_MESSAGES/mate-doc-utils.mo
 share/locale/gu/LC_MESSAGES/mate-doc-utils.mo
 share/locale/he/LC_MESSAGES/mate-doc-utils.mo
 share/locale/hi/LC_MESSAGES/mate-doc-utils.mo
+share/locale/hr/LC_MESSAGES/mate-doc-utils.mo
 share/locale/hu/LC_MESSAGES/mate-doc-utils.mo
 share/locale/id/LC_MESSAGES/mate-doc-utils.mo
 share/locale/it/LC_MESSAGES/mate-doc-utils.mo

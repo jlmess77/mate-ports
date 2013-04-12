@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-doc-utils
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	textproc mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -34,7 +34,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-W compat|--traditional|g' \
-		${WRKSRC}/configure.in
+		${WRKSRC}/configure.ac
 
 pre-install:
 	@${REINPLACE_CMD} -e 's|build_SUBDIRS = xml2po|build_SUBDIRS =|g ; \
