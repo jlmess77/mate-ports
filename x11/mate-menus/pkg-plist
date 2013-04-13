@@ -12,6 +12,7 @@ lib/girepository-1.0/MateMenu-2.0.typelib
 libdata/pkgconfig/libmate-menu.pc
 share/gir-1.0/MateMenu-2.0.gir
 share/locale/af/LC_MESSAGES/mate-menus.mo
+share/locale/am/LC_MESSAGES/mate-menus.mo
 share/locale/an/LC_MESSAGES/mate-menus.mo
 share/locale/ar/LC_MESSAGES/mate-menus.mo
 share/locale/as/LC_MESSAGES/mate-menus.mo
@@ -33,6 +34,7 @@ share/locale/dv/LC_MESSAGES/mate-menus.mo
 share/locale/dz/LC_MESSAGES/mate-menus.mo
 share/locale/el/LC_MESSAGES/mate-menus.mo
 share/locale/en@shaw/LC_MESSAGES/mate-menus.mo
+share/locale/en_AU/LC_MESSAGES/mate-menus.mo
 share/locale/en_CA/LC_MESSAGES/mate-menus.mo
 share/locale/en_GB/LC_MESSAGES/mate-menus.mo
 share/locale/eo/LC_MESSAGES/mate-menus.mo
