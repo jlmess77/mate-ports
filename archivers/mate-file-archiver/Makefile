@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-file-archiver
-PORTVERSION=	1.5.1
+PORTVERSION=	1.6.0
 CATEGORIES=	archivers mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
