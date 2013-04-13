@@ -45,12 +45,14 @@ SCREENSAVER_DIR=	share/applications/screensavers
 
 XSCREENSAVER_EXCLUDE=	"(popsquares.xml)"
 
-OPTIONS=	PAM "Pluggable Authentication Module support" on \
-		KEYRING "Enable MateKeyring integration (needs PAM)" on
+OPTIONS_DEFINE=	PAM KEYRING
+OPTIONS_DEFAULT=PAM KEYRING
+PAM_DESC=	Pluggable Authentication Module support
+KEYRING_DESC=	GnomeKeyring integration (needs PAM)
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
-.if defined(WITH_PAM)
+.if ${PORT_OPTIONS:MPAM}
 RUN_DEPENDS+=		pam_helper:${PORTSDIR}/security/pam_helper
 CONFIGURE_ARGS+=	--enable-authentication-scheme=helper \
 			--with-passwd-helper=${LOCALBASE}/bin/pam_helper
@@ -60,7 +62,7 @@ CONFIGURE_ARGS+=	--disable-pam
 PLIST_SUB+=		PAM="@comment "
 .endif
 
-.if defined(WITH_KEYRING) && defined(WITH_PAM)
+.if ${PORT_OPTIONS:MKEYRING} && ${PORT_OPTIONS:MPAM}
 SUB_LIST+=		PAM_KEYRING=
 USE_MATE+=		keyring:run
 .else
@@ -68,12 +70,12 @@ SUB_LIST+=		PAM_KEYRING=\#
 .endif
 
 pre-everything::
-.if defined(WITHOUT_PAM) && defined(WITH_KEYRING)
+.if !${PORT_OPTIONS:MPAM} && ${PORT_OPTIONS:MKEYRING}
 	@${ECHO_MSG} "Keyring integration is disabled because it needs PAM."
 .endif
 
 post-patch:
-.if defined(WITH_PAM)
+.if ${PORT_OPTIONS:MPAM}
 	@${REINPLACE_CMD} -e 's|/etc/pam.d|${PREFIX}/etc/pam.d|g' \
 		${WRKSRC}/src/gs-auth-pam.c
 .endif
@@ -94,8 +96,8 @@ post-install:
 		${FIND} -s ${XSCREENSAVER_DIR} -maxdepth 1 -type f -name "*.xml" | \
 			${GREP} -Ev ${XSCREENSAVER_EXCLUDE} | \
 			${XARGS} ${WRKSRC}/data/migrate-xscreensaver-config.sh
-.if defined(WITH_PAM)
+.if ${PORT_OPTIONS:MPAM}
 	${INSTALL_DATA} ${WRKDIR}/mate-screensaver.pam ${PREFIX}/etc/pam.d/mate-screensaver
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
