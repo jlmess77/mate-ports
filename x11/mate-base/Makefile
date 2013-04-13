@@ -15,8 +15,8 @@ RUN_DEPENDS=	${LOCALBASE}/lib/X11/fonts/dejavu/DejaVuSerif.ttf:${PORTSDIR}/x11-f
 		${LOCALBASE}/share/hal/fdi/information/10freedesktop/10-camera-ptp.fdi:${PORTSDIR}/sysutils/hal-info \
 		${LOCALBASE}/share/mate-background-properties/mate-desktop.xml:${PORTSDIR}/x11-themes/mate-backgrounds \
 		${LOCALBASE}/bin/mate-session:${PORTSDIR}/x11/mate-session-manager \
-		mate-themes>=1.5.0:${PORTSDIR}/x11-themes/mate-themes \
-		mate-icon-theme-faenza>=1.5.0:${PORTSDIR}/x11-themes/mate-icon-theme-faenza
+		mate-themes>=1.6.0:${PORTSDIR}/x11-themes/mate-themes \
+		mate-icon-theme-faenza>=1.6.0:${PORTSDIR}/x11-themes/mate-icon-theme-faenza
 
 USE_MATE=	caja:run controlcenter:run dialogs:run icontheme:run \
 		keyring:run marco:run notificationdaemon:run panel:run \
