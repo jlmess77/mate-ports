@@ -145,6 +145,7 @@ share/icons/hicolor/24x24/apps/atril.png
 share/icons/hicolor/48x48/apps/atril.png
 share/icons/hicolor/scalable/apps/atril.svg
 share/locale/af/LC_MESSAGES/atril.mo
+share/locale/am/LC_MESSAGES/atril.mo
 share/locale/ar/LC_MESSAGES/atril.mo
 share/locale/as/LC_MESSAGES/atril.mo
 share/locale/ast/LC_MESSAGES/atril.mo
@@ -163,6 +164,7 @@ share/locale/de/LC_MESSAGES/atril.mo
 share/locale/dz/LC_MESSAGES/atril.mo
 share/locale/el/LC_MESSAGES/atril.mo
 share/locale/en@shaw/LC_MESSAGES/atril.mo
+share/locale/en_AU/LC_MESSAGES/atril.mo
 share/locale/en_CA/LC_MESSAGES/atril.mo
 share/locale/en_GB/LC_MESSAGES/atril.mo
 share/locale/eo/LC_MESSAGES/atril.mo
@@ -187,6 +189,7 @@ share/locale/kn/LC_MESSAGES/atril.mo
 share/locale/ko/LC_MESSAGES/atril.mo
 share/locale/ks/LC_MESSAGES/atril.mo
 share/locale/ku/LC_MESSAGES/atril.mo
+share/locale/ky/LC_MESSAGES/atril.mo
 share/locale/lt/LC_MESSAGES/atril.mo
 share/locale/lv/LC_MESSAGES/atril.mo
 share/locale/mai/LC_MESSAGES/atril.mo
@@ -370,6 +373,8 @@ share/thumbnailers/atril.thumbnailer
 @dirrmtry share/locale/mg
 @dirrmtry share/locale/mai/LC_MESSAGES
 @dirrmtry share/locale/mai
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
 @dirrmtry share/locale/ks/LC_MESSAGES
@@ -390,8 +395,12 @@ share/thumbnailers/atril.thumbnailer
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/glib-2.0/schemas
+@dirrmtry share/glib-2.0
 @dirrm share/doc/mate/atril
 @dirrmtry share/doc/mate
+@dirrmtry share/dbus-1/services
+@dirrmtry share/dbus-1
 @dirrm share/atril/icons/hicolor/scalable/mimetypes
 @dirrm share/atril/icons/hicolor/scalable/actions
 @dirrm share/atril/icons/hicolor/scalable

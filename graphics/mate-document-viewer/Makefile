@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-document-viewer
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	graphics print mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -13,7 +13,8 @@ COMMENT=	MATE multi-format document viewer
 BUILD_DEPENDS=	gtkdoc-scan:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	poppler-glib:${PORTSDIR}/graphics/poppler-glib \
 		spectre:${PORTSDIR}/print/libspectre \
-		cairo:${PORTSDIR}/graphics/cairo
+		cairo:${PORTSDIR}/graphics/cairo \
+		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
 USE_XZ=		yes
@@ -34,40 +35,36 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.Atril.gschema.xml
-
 MAN1=		atril.1
 
-OPTIONS=	DVI	"Enable DVI viewer support"		off \
-		T1LIB	"Enable T1LIB for TYPE1 fonts to DVI (Enables DVI)"	off \
-		CAJA	"Enable Nautilus plugin"		on  \
-		KEYRING	"Enable Gnome-Keyring without Nautilus" on \
-		DBUS	"Enable D-BUS support"			on \
-		COMICS	"Enable comic book archives support"	on \
-		IMPRESS	"Enable Impress presentations support"	off \
-		DJVU	"Enable DJVU support"			off
+OPTIONS_DEFINE=	DVI T1LIB CAJA KEYRING COMICS IMPRESS DJVU
+OPTIONS_DEFAULT=CAJA KEYRING COMICS
+DVI_DESC=	DVI viewer support
+T1LIB_DESC=	T1LIB for TYPE1 fonts to DVI (Enables DVI)
+CAJA_DESC=	Caja plugin
+KEYRING_DESC=	Gnome-Keyring without Nautilus
+COMICS_DESC=	Comic book archives support
+IMPRESS_DESC=	Impress presentations support
+DJVU_DESC=	DJVU support
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
-.if defined(PACKAGE_BUILDING) || exists(${LOCALBASE}/lib/libdbus-glib-1.so)
-WITH_DBUS=	yes
-.endif
-
-.if defined(WITH_DVI) || defined(WITH_T1LIB) || exists(${LOCALBASE}/lib/libkpathsea.a)
+.if ${PORT_OPTIONS:MDVI} || ${PORT_OPTIONS:MT1LIB}
 BUILD_DEPENDS+=	tex:${PORTSDIR}/print/teTeX-base
 RUN_DEPENDS+=	tex:${PORTSDIR}/print/teTeX-base
-
 CONFIGURE_ARGS+=--enable-dvi
 PLIST_SUB+=	DVI=""
-. if defined(WITH_T1LIB)
-LIB_DEPENDS+=	t15:${PORTSDIR}/devel/t1lib
 
+. if ${PORT_OPTIONS:MT1LIB}
+LIB_DEPENDS+=	t15:${PORTSDIR}/devel/t1lib
 CONFIGURE_ARGS+=--enable-t1lib
 . endif
+
 .else
 PLIST_SUB+=	DVI="@comment "
 .endif
 
-.if !defined(WITHOUT_CAJA)
+.if ${PORT_OPTIONS:MCAJA}
 USE_MATE+=	caja
 CONFIGURE_ARGS+=--enable-caja
 PLIST_SUB+=	CAJA=""
@@ -76,13 +73,13 @@ CONFIGURE_ARGS+=--disable-caja
 PLIST_SUB+=	CAJA="@comment "
 .endif
 
-. if !defined(WITHOUT_KEYRING)
+.if ${PORT_OPTIONS:MKEYRING}
 USE_MATE+=	libmatekeyring
 . else
 CONFIGURE_ARGS+=--without-keyring
 . endif
 
-.if defined(WITH_IMPRESS)
+.if ${PORT_OPTIONS:MIMPRESS}
 CONFIGURE_ARGS+=--enable-impress
 PLIST_SUB+=	IMPRESS=""
 .else
@@ -90,7 +87,7 @@ CONFIGURE_ARGS+=--disable-impress
 PLIST_SUB+=	IMPRESS="@comment "
 .endif
 
-.if defined(WITH_DJVU)
+.if ${PORT_OPTIONS:MDJVU}
 LIB_DEPENDS+=	djvulibre:${PORTSDIR}/graphics/djvulibre
 CONFIGURE_ARGS+=--enable-djvu
 PLIST_SUB+=	DJVU=""
@@ -99,11 +96,7 @@ CONFIGURE_ARGS+=--disable-djvu
 PLIST_SUB+=	DJVU="@comment "
 .endif
 
-.if !defined(WITHOUT_DBUS)
-LIB_DEPENDS+=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib
-.endif
-
-.if !defined(WITHOUT_COMICS)
+.if ${PORT_OPTIONS:MCOMICS}
 RUN_DEPENDS+=	unzip:${PORTSDIR}/archivers/unzip
 CONFIGURE_ARGS+=--enable-comics
 PLIST_SUB+=	COMICS=""
@@ -120,4 +113,4 @@ post-patch:
 post-install:
 	@-update-desktop-database
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
