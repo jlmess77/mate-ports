@@ -21,6 +21,7 @@ share/locale/de/LC_MESSAGES/mate-terminal.mo
 share/locale/dz/LC_MESSAGES/mate-terminal.mo
 share/locale/el/LC_MESSAGES/mate-terminal.mo
 share/locale/en@shaw/LC_MESSAGES/mate-terminal.mo
+share/locale/en_AU/LC_MESSAGES/mate-terminal.mo
 share/locale/en_CA/LC_MESSAGES/mate-terminal.mo
 share/locale/en_GB/LC_MESSAGES/mate-terminal.mo
 share/locale/eo/LC_MESSAGES/mate-terminal.mo
@@ -47,6 +48,7 @@ share/locale/kk/LC_MESSAGES/mate-terminal.mo
 share/locale/kn/LC_MESSAGES/mate-terminal.mo
 share/locale/ko/LC_MESSAGES/mate-terminal.mo
 share/locale/ku/LC_MESSAGES/mate-terminal.mo
+share/locale/ky/LC_MESSAGES/mate-terminal.mo
 share/locale/lt/LC_MESSAGES/mate-terminal.mo
 share/locale/lv/LC_MESSAGES/mate-terminal.mo
 share/locale/mai/LC_MESSAGES/mate-terminal.mo
@@ -259,6 +261,8 @@ share/omf/mate-terminal/mate-terminal-zh_TW.omf
 @dirrmtry share/locale/mg
 @dirrmtry share/locale/mai/LC_MESSAGES
 @dirrmtry share/locale/mai
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
 @dirrmtry share/locale/kk/LC_MESSAGES
@@ -281,4 +285,6 @@ share/omf/mate-terminal/mate-terminal-zh_TW.omf
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/glib-2.0/schemas
+@dirrmtry share/glib-2.0
 @dirrmtry share/applications
