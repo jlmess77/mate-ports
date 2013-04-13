@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-power-manager
-PORTVERSION=	1.5.2
+PORTVERSION=	1.6.0
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -41,17 +41,8 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.power-manager.gschema.xml
 
-.if !defined(NO_INSTALL_MANPAGES)
-BUILD_DEPENDS+=	docbook2html:${PORTSDIR}/textproc/docbook-utils \
-		${LOCALBASE}/share/sgml/docbook/4.1/dtd/catalog:${PORTSDIR}/textproc/docbook-410
-MAN1=		mate-power-manager.1 mate-power-preferences.1 \
-		mate-power-statistics.1
-.endif
-
 post-patch:
-.if defined(NO_INSTALL_MANPAGES)
 	@${REINPLACE_CMD} -e "s|docbook2man|docbook2man_disabled|g" \
-		${WRKSRC}/configure
-.endif
+		${WRKSRC}/configure.ac
 
 .include <bsd.port.mk>
