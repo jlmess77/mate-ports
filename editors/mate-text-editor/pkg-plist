@@ -154,6 +154,7 @@ lib/pluma/plugins/taglist.pluma-plugin
 lib/pluma/plugins/time.pluma-plugin
 libdata/pkgconfig/pluma.pc
 libexec/pluma/pluma-bugreport.sh
+share/MateConf/gsettings/pluma.convert
 share/applications/pluma.desktop
 share/locale/af/LC_MESSAGES/pluma.mo
 share/locale/am/LC_MESSAGES/pluma.mo
@@ -178,6 +179,7 @@ share/locale/de/LC_MESSAGES/pluma.mo
 share/locale/dz/LC_MESSAGES/pluma.mo
 share/locale/el/LC_MESSAGES/pluma.mo
 share/locale/en@shaw/LC_MESSAGES/pluma.mo
+share/locale/en_AU/LC_MESSAGES/pluma.mo
 share/locale/en_CA/LC_MESSAGES/pluma.mo
 share/locale/en_GB/LC_MESSAGES/pluma.mo
 share/locale/eo/LC_MESSAGES/pluma.mo
@@ -204,6 +206,7 @@ share/locale/kk/LC_MESSAGES/pluma.mo
 share/locale/kn/LC_MESSAGES/pluma.mo
 share/locale/ko/LC_MESSAGES/pluma.mo
 share/locale/ku/LC_MESSAGES/pluma.mo
+share/locale/ky/LC_MESSAGES/pluma.mo
 share/locale/la/LC_MESSAGES/pluma.mo
 share/locale/lt/LC_MESSAGES/pluma.mo
 share/locale/lv/LC_MESSAGES/pluma.mo
@@ -614,6 +617,8 @@ share/pluma/ui/pluma-ui.xml
 @dirrmtry share/locale/mai
 @dirrmtry share/locale/la/LC_MESSAGES
 @dirrmtry share/locale/la
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
 @dirrmtry share/locale/kk/LC_MESSAGES
@@ -636,6 +641,8 @@ share/pluma/ui/pluma-ui.xml
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/glib-2.0/schemas
+@dirrmtry share/glib-2.0
 @dirrmtry share/applications
 @dirrm libexec/pluma
 @dirrm lib/pluma/plugins/snippets

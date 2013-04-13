@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-text-editor
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	editors mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
