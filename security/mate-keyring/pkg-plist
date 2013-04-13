@@ -240,7 +240,7 @@ share/mategcr/ui/gcr-unlock-options-widget.ui
 @dirrm share/doc/mate-gck
 @dirrmtry share/dbus-1/services
 @dirrmtry share/dbus-1
-@dirrm lib/pkcs11
+@dirrmtry lib/pkcs11
 @dirrm lib/mate-keyring/standalone
 @dirrm lib/mate-keyring/devel
 @dirrm lib/mate-keyring
