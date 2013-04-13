@@ -3,6 +3,7 @@
 
 PORTNAME=	mate-screensaver
 PORTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -53,20 +54,20 @@ KEYRING_DESC=	GnomeKeyring integration (needs PAM)
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPAM}
-RUN_DEPENDS+=		pam_helper:${PORTSDIR}/security/pam_helper
-CONFIGURE_ARGS+=	--enable-authentication-scheme=helper \
-			--with-passwd-helper=${LOCALBASE}/bin/pam_helper
-PLIST_SUB+=		PAM=""
+RUN_DEPENDS+=	pam_helper:${PORTSDIR}/security/pam_helper
+CONFIGURE_ARGS+=--enable-authentication-scheme=helper \
+		--with-passwd-helper=${LOCALBASE}/bin/pam_helper
+PLIST_SUB+=	PAM=""
 .else
-CONFIGURE_ARGS+=	--disable-pam
-PLIST_SUB+=		PAM="@comment "
+CONFIGURE_ARGS+=--disable-pam
+PLIST_SUB+=	PAM="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MKEYRING} && ${PORT_OPTIONS:MPAM}
-SUB_LIST+=		PAM_KEYRING=
-USE_MATE+=		keyring:run
+SUB_LIST+=	PAM_KEYRING=
+USE_MATE+=	keyring:run
 .else
-SUB_LIST+=		PAM_KEYRING=\#
+SUB_LIST+=	PAM_KEYRING=\#
 .endif
 
 pre-everything::
