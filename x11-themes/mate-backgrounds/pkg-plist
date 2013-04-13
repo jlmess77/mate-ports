@@ -1,3 +1,23 @@
+share/backgrounds/mate/abstract/Arc-Colors-Transparent-Wallpaper.png
+share/backgrounds/mate/abstract/Flow.png
+share/backgrounds/mate/abstract/Gulp.png
+share/backgrounds/mate/abstract/Silk.png
+share/backgrounds/mate/abstract/Spring.png
+share/backgrounds/mate/abstract/Waves.png
+share/backgrounds/mate/desktop/GreenTraditional.jpg
+share/backgrounds/mate/desktop/Stripes.png
+share/backgrounds/mate/nature/Aqua.jpg
+share/backgrounds/mate/nature/Blinds.jpg
+share/backgrounds/mate/nature/Dune.jpg
+share/backgrounds/mate/nature/FreshFlower.jpg
+share/backgrounds/mate/nature/Garden.jpg
+share/backgrounds/mate/nature/GreenMeadow.jpg
+share/backgrounds/mate/nature/LadyBird.jpg
+share/backgrounds/mate/nature/RainDrops.jpg
+share/backgrounds/mate/nature/Storm.jpg
+share/backgrounds/mate/nature/TwoWings.jpg
+share/backgrounds/mate/nature/Wood.jpg
+share/backgrounds/mate/nature/YellowFlower.jpg
 share/locale/af/LC_MESSAGES/mate-backgrounds.mo
 share/locale/an/LC_MESSAGES/mate-backgrounds.mo
 share/locale/ar/LC_MESSAGES/mate-backgrounds.mo
@@ -89,32 +109,7 @@ share/locale/zh_TW/LC_MESSAGES/mate-backgrounds.mo
 share/mate-background-properties/mate-abstract.xml
 share/mate-background-properties/mate-desktop.xml
 share/mate-background-properties/mate-nature.xml
-share/pixmaps/backgrounds/mate/abstract/Arc-Colors-Transparent-Wallpaper.png
-share/pixmaps/backgrounds/mate/abstract/Flow.png
-share/pixmaps/backgrounds/mate/abstract/Gulp.png
-share/pixmaps/backgrounds/mate/abstract/Silk.png
-share/pixmaps/backgrounds/mate/abstract/Spring.png
-share/pixmaps/backgrounds/mate/abstract/Waves.png
-share/pixmaps/backgrounds/mate/desktop/GreenTraditional.jpg
-share/pixmaps/backgrounds/mate/desktop/Stripes.png
-share/pixmaps/backgrounds/mate/nature/Aqua.jpg
-share/pixmaps/backgrounds/mate/nature/Blinds.jpg
-share/pixmaps/backgrounds/mate/nature/Dune.jpg
-share/pixmaps/backgrounds/mate/nature/FreshFlower.jpg
-share/pixmaps/backgrounds/mate/nature/Garden.jpg
-share/pixmaps/backgrounds/mate/nature/GreenMeadow.jpg
-share/pixmaps/backgrounds/mate/nature/LadyBird.jpg
-share/pixmaps/backgrounds/mate/nature/RainDrops.jpg
-share/pixmaps/backgrounds/mate/nature/Storm.jpg
-share/pixmaps/backgrounds/mate/nature/TwoWings.jpg
-share/pixmaps/backgrounds/mate/nature/Wood.jpg
-share/pixmaps/backgrounds/mate/nature/YellowFlower.jpg
-@dirrm share/pixmaps/backgrounds/mate/nature
-@dirrm share/pixmaps/backgrounds/mate/desktop
-@dirrm share/pixmaps/backgrounds/mate/abstract
-@dirrmtry share/pixmaps/backgrounds/mate
-@dirrmtry share/pixmaps/backgrounds
-@dirrmtry share/mate-background-properties
+@dirrm share/mate-background-properties
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
 @dirrmtry share/locale/zh_HK
 @dirrmtry share/locale/uz@cyrillic/LC_MESSAGES
@@ -167,3 +162,8 @@ share/pixmaps/backgrounds/mate/nature/YellowFlower.jpg
 @dirrmtry share/locale/as
 @dirrmtry share/locale/an/LC_MESSAGES
 @dirrmtry share/locale/an
+@dirrmtry share/backgrounds/mate/nature
+@dirrmtry share/backgrounds/mate/desktop
+@dirrmtry share/backgrounds/mate/abstract
+@dirrmtry share/backgrounds/mate
+@dirrmtry share/backgrounds
