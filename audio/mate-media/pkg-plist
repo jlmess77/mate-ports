@@ -288,8 +288,8 @@ share/sounds/mate/default/alerts/sonar.ogg
 @dirrm share/mate/help/mate-mixer_applet2/C/figures
 @dirrm share/mate/help/mate-mixer_applet2/C
 @dirrm share/mate/help/mate-mixer_applet2
-@dirrm share/mate-panel/applets
-@dirrm share/mate-panel
+@dirrmtry share/mate-panel/applets
+@dirrmtry share/mate-panel
 @dirrm %%DATADIR%%/sounds
 @dirrm %%DATADIR%%/pixmaps
 @dirrm %%DATADIR%%
