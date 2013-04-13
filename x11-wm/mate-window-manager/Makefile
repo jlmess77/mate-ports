@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-window-manager
-PORTVERSION=	1.5.5
+PORTVERSION=	1.6.1
 CATEGORIES=	x11-wm mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
