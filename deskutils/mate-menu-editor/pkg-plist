@@ -22,6 +22,7 @@ share/icons/hicolor/256x256/apps/mozo.png
 share/icons/hicolor/32x32/apps/mozo.png
 share/icons/hicolor/48x48/apps/mozo.png
 share/locale/af/LC_MESSAGES/mozo.mo
+share/locale/am/LC_MESSAGES/mozo.mo
 share/locale/an/LC_MESSAGES/mozo.mo
 share/locale/ar/LC_MESSAGES/mozo.mo
 share/locale/as/LC_MESSAGES/mozo.mo
@@ -43,6 +44,7 @@ share/locale/de/LC_MESSAGES/mozo.mo
 share/locale/dz/LC_MESSAGES/mozo.mo
 share/locale/el/LC_MESSAGES/mozo.mo
 share/locale/en@shaw/LC_MESSAGES/mozo.mo
+share/locale/en_AU/LC_MESSAGES/mozo.mo
 share/locale/en_CA/LC_MESSAGES/mozo.mo
 share/locale/en_GB/LC_MESSAGES/mozo.mo
 share/locale/eo/LC_MESSAGES/mozo.mo
@@ -72,6 +74,7 @@ share/locale/kk/LC_MESSAGES/mozo.mo
 share/locale/kn/LC_MESSAGES/mozo.mo
 share/locale/ko/LC_MESSAGES/mozo.mo
 share/locale/ku/LC_MESSAGES/mozo.mo
+share/locale/ky/LC_MESSAGES/mozo.mo
 share/locale/lt/LC_MESSAGES/mozo.mo
 share/locale/lv/LC_MESSAGES/mozo.mo
 share/locale/mai/LC_MESSAGES/mozo.mo
@@ -138,6 +141,8 @@ share/mozo/mozo.ui
 @dirrmtry share/locale/mg
 @dirrmtry share/locale/mai/LC_MESSAGES
 @dirrmtry share/locale/mai
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
 @dirrmtry share/locale/kk/LC_MESSAGES
