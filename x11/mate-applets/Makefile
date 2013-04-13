@@ -51,10 +51,10 @@ GLIB_SCHEMAS=	org.mate.panel.applet.charpick.gschema.xml \
 
 .if ${ARCH} != "i386" && ${ARCH} != "amd64"
 CFLAGS+=	-fPIC
-PLIST_SUB=	BATTERY="@comment "
+PLIST_SUB+=	BATTERY="@comment "
 .else
 GLIB_SCHEMAS+=	org.mate.panel.applet.battstat.gschema.xml
-PLIST_SUB=	BATTERY=""
+PLIST_SUB+=	BATTERY=""
 .endif
 
 .if ${ARCH} != "i386" && ${ARCH} != "amd64"
