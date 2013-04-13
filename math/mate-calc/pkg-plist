@@ -23,6 +23,7 @@ share/locale/de/LC_MESSAGES/mate-calc.mo
 share/locale/dz/LC_MESSAGES/mate-calc.mo
 share/locale/el/LC_MESSAGES/mate-calc.mo
 share/locale/en@shaw/LC_MESSAGES/mate-calc.mo
+share/locale/en_AU/LC_MESSAGES/mate-calc.mo
 share/locale/en_CA/LC_MESSAGES/mate-calc.mo
 share/locale/en_GB/LC_MESSAGES/mate-calc.mo
 share/locale/en_US/LC_MESSAGES/mate-calc.mo
@@ -50,6 +51,7 @@ share/locale/km/LC_MESSAGES/mate-calc.mo
 share/locale/kn/LC_MESSAGES/mate-calc.mo
 share/locale/ko/LC_MESSAGES/mate-calc.mo
 share/locale/ku/LC_MESSAGES/mate-calc.mo
+share/locale/ky/LC_MESSAGES/mate-calc.mo
 share/locale/lt/LC_MESSAGES/mate-calc.mo
 share/locale/lv/LC_MESSAGES/mate-calc.mo
 share/locale/mai/LC_MESSAGES/mate-calc.mo
@@ -122,6 +124,8 @@ share/locale/zh_TW/LC_MESSAGES/mate-calc.mo
 @dirrmtry share/locale/mg
 @dirrmtry share/locale/mai/LC_MESSAGES
 @dirrmtry share/locale/mai
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
 @dirrmtry share/locale/km/LC_MESSAGES
@@ -146,4 +150,6 @@ share/locale/zh_TW/LC_MESSAGES/mate-calc.mo
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/glib-2.0/schemas
+@dirrmtry share/glib-2.0
 @dirrmtry share/applications
