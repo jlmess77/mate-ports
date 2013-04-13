@@ -102,6 +102,7 @@ share/locale/de/LC_MESSAGES/mate-applets.mo
 share/locale/dz/LC_MESSAGES/mate-applets.mo
 share/locale/el/LC_MESSAGES/mate-applets.mo
 share/locale/en@shaw/LC_MESSAGES/mate-applets.mo
+share/locale/en_AU/LC_MESSAGES/mate-applets.mo
 share/locale/en_CA/LC_MESSAGES/mate-applets.mo
 share/locale/en_GB/LC_MESSAGES/mate-applets.mo
 share/locale/eo/LC_MESSAGES/mate-applets.mo
@@ -1867,6 +1868,8 @@ share/pixmaps/mate-stickynotes/resize_se.png
 share/pixmaps/mate-stickynotes/resize_sw.png
 share/pixmaps/mate-stickynotes/unlocked.png
 share/polkit-1/actions/org.mate.cpufreqselector.policy
+@dirrmtry share/polkit-1/actions
+@dirrmtry share/polkit-1
 @dirrm share/pixmaps/mate-stickynotes
 @dirrm share/pixmaps/mate-cpufreq-applet
 @dirrm share/pixmaps/mate-accessx-status-applet
@@ -2406,6 +2409,11 @@ share/polkit-1/actions/org.mate.cpufreqselector.policy
 @dirrmtry share/icons/mate/48x48
 @dirrmtry share/icons/mate
 @dirrmtry share/icons
+@dirrmtry share/glib-2.0/schemas
+@dirrmtry share/glib-2.0
+@dirrmtry share/dbus-1/system-services
+@dirrmtry share/dbus-1/services
+@dirrmtry share/dbus-1
 @dirrm %%PYTHON_SITELIBDIR%%/mate_invest
-@dirrmtry %%PYTHON_SITELIBDIR%%
-@dirrmtry %%PYTHON_LIBDIR%%
+@dirrmtry etc/dbus-1/system.d
+@dirrmtry etc/dbus-1
