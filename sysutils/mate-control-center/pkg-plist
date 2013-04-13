@@ -279,9 +279,7 @@ share/mate/help/mate-control-center/th/mate-control-center.xml
 share/mate/help/mate-control-center/uk/mate-control-center.xml
 share/mate/help/mate-control-center/vi/mate-control-center.xml
 share/mate/help/mate-control-center/zh_CN/mate-control-center.xml
-share/mime/application/x-mate-theme-package.xml
 share/mime/packages/mate-theme-package.xml
-share/mime/version
 share/omf/mate-control-center/mate-control-center-C.omf
 share/omf/mate-control-center/mate-control-center-ca.omf
 share/omf/mate-control-center/mate-control-center-ca@valencia.omf
@@ -338,7 +336,6 @@ share/thumbnailers/mate-font-viewer.thumbnailer
 @dirrm share/mate/cursor-fonts
 @dirrm %%DATADIR%%/ui
 @dirrm %%DATADIR%%/pixmaps
-@dirrm %%DATADIR%%
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
@@ -389,6 +386,8 @@ share/thumbnailers/mate-font-viewer.thumbnailer
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/glib-2.0/schemas
+@dirrmtry share/glib-2.0
 @dirrmtry share/desktop-directories
 @dirrmtry share/applications
 @dirrm lib/window-manager-settings
