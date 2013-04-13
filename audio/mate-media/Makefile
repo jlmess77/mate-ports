@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-media
-PORTVERSION=	1.5.2
+PORTVERSION=	1.6.0
 CATEGORIES=	audio mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -24,9 +24,9 @@ USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_GSTREAMER=	good
 USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
+INSTALLS_ICONS=	yes
 CONFIGURE_ARGS=	--disable-pulseaudio \
 		--enable-gst-mixer-applet
-INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
