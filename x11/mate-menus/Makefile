@@ -3,6 +3,7 @@
 
 PORTNAME=	mate-menus
 PORTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -31,9 +32,11 @@ post-patch:
 		${WRKSRC}/layout/mate-settings.menu
 	@${SED} -e 's|/usr/local|${LOCALBASE}|g' \
 		< ${FILESDIR}/KDE.directory > ${WRKSRC}/KDE.directory
+	@${SED} -e 's|/usr/local|${LOCALBASE}|g' \
+		< ${FILESDIR}/GNOME.directory > ${WRKSRC}/GNOME.directory
 
 post-install:
-	@${INSTALL_DATA} ${WRKSRC}/KDE.directory \
+	@${INSTALL_DATA} ${WRKSRC}/*.directory \
 		${PREFIX}/share/mate/desktop-directories/
 
 .include <bsd.port.mk>
