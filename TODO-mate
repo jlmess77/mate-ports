@@ -1,4 +1,9 @@
-- MATE has been updated to 1.5.x, but keep update those ports when upstream
+- When ports tree has been thawed from hard freeze. 1) Fix g-c-c build
+  (libslab) when m-c-c exists in the system. 2) Remove mate-panel from
+  gnome-panel's CONFLICT as both of them are no longer conflict.
+  3) Remove directories from gnomehier such as mateconf and etc.
+
+- MATE has been updated to 1.6.x, but keep update those ports when upstream
   update one of MATE packages.
 
 - Make it bugs free as much as possible.
@@ -6,7 +11,7 @@
 - Add extra packages if you think it's useful.
   See here: http://wiki.mate-desktop.org/status:1.6#mate_packages
 
-- When the MATE 1.6 releases. Merge mate-ports into FreeBSD ports tree.
+- Merge mate-ports into FreeBSD ports tree when it's stable.
 
 - Clean up in the bsd.mate.mk.
 
