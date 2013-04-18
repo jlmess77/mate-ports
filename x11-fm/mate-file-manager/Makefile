@@ -17,12 +17,13 @@ LIB_DEPENDS=	exif:${PORTSDIR}/graphics/libexif \
 		exempi:${PORTSDIR}/textproc/exempi
 RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 
+USES=		desktop-file-info shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop icontheme:run intlhack \
 		ltasneededhack ltverhack matehack
 USE_XORG=	ice x11 xrender
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils glib20 gnomehier gtk20 libxml2 pango
+USE_GNOME=	glib20 gnomehier gtk20 libxml2 pango
 USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -46,6 +47,5 @@ MAN1=		caja.1 caja-connect-server.1 caja-file-management-properties.1
 
 post-install:
 	@${MKDIR} ${PREFIX}/lib/caja/extensions-2.0
-	@-update-desktop-database
 
 .include <bsd.port.mk>

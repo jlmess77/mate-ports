@@ -653,5 +653,3 @@ share/pluma/ui/pluma-ui.xml
 @dirrmtry lib/pluma/plugin-loaders
 @dirrmtry lib/pluma
 @dirrm include/pluma
-@exec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
-@unexec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true

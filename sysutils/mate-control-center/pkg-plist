@@ -394,7 +394,3 @@ share/thumbnailers/mate-font-viewer.thumbnailer
 @dirrm include/mate-window-settings-2.0
 @dirrm include/libslab
 @dirrmtry etc/xdg/menus
-@exec %%LOCALBASE%%/bin/update-mime-database %D/share/mime
-@unexec %%LOCALBASE%%/bin/update-mime-database %D/share/mime
-@exec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
-@unexec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true

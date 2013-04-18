@@ -17,12 +17,13 @@ LIB_DEPENDS=	poppler-glib:${PORTSDIR}/graphics/poppler-glib \
 		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
+USES=		desktop-file-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
 		ltasneededhack ltverhack matehack
 USE_XORG=	sm
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils glib20 gnomehier gtk20 libxml2
+USE_GNOME=	glib20 gnomehier gtk20 libxml2
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
@@ -109,8 +110,5 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|AC_CHECK_HEADERS([execinfo.h])||g' \
 		-e 's|" == "|" = "|g' \
 			${WRKSRC}/configure.ac
-
-post-install:
-	@-update-desktop-database
 
 .include <bsd.port.mk>

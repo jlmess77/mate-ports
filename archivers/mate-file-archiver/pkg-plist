@@ -365,5 +365,3 @@ share/omf/engrampa/engrampa-zh_CN.omf
 @dirrm share/engrampa
 @dirrmtry share/applications
 @dirrm libexec/engrampa
-@exec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
-@unexec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true

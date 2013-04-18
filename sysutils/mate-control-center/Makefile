@@ -18,12 +18,13 @@ LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra \
 		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
 		dconf:${PORTSDIR}/devel/dconf
 
+USES=		desktop-file-info shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
 		ltverhack libmatekbd marco matehack menus settingsdaemon
 USE_XORG=	x11 xcursor xext xxf86misc xft xi xrandr xscrnsaver
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils glib20 gnomehier gtk20 libxml2 librsvg2 pango
+USE_GNOME=	glib20 gnomehier gtk20 libxml2 librsvg2 pango
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
@@ -43,8 +44,5 @@ post-patch:
 	    	${WRKSRC}/capplets/common/mate-theme-info.c
 	@${REINPLACE_CMD} -e 's|/usr/sbin|${PREFIX}/sbin|g' \
 		${WRKSRC}/capplets/display/org.mate.randr.policy.in
-
-post-install:
-	@-update-desktop-database
 
 .include <bsd.port.mk>

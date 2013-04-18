@@ -16,13 +16,14 @@ LIB_DEPENDS=	enchant:${PORTSDIR}/textproc/enchant \
 		soup-2.4:${PORTSDIR}/devel/libsoup
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
 
+USES=		desktop-file-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltasneededhack \
 		matehack
 USE_XORG=	sm x11
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils glib20 gnomehier gtk20 gtksourceview2 gvfs \
-		libxml2 pygobject pygtk2 pygtksourceview
+USE_GNOME=	glib20 gnomehier gtk20 gtksourceview2 gvfs libxml2 \
+		pygobject pygtk2 pygtksourceview
 WANT_GNOME=	yes
 USE_PYTHON=	yes
 USE_GETTEXT=	yes
@@ -40,8 +41,5 @@ MAN1=		pluma.1
 GLIB_SCHEMAS=	org.mate.pluma.gschema.xml \
 		org.mate.pluma.plugins.filebrowser.gschema.xml \
 		org.mate.pluma.plugins.time.gschema.xml
-
-post-install:
-	@-update-desktop-database
 
 .include <bsd.port.mk>

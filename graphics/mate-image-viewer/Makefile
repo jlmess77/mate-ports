@@ -10,17 +10,15 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	The Eye of MATE image viewer
 
-BUILD_DEPENDS=	update-mime-database:${PORTSDIR}/misc/shared-mime-info \
-		gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
+BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	jpeg:${PORTSDIR}/graphics/jpeg
-RUN_DEPENDS=	update-mime-database:${PORTSDIR}/misc/shared-mime-info
 
+USES=		desktop-file-info shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme matehack
 USE_XORG=	x11
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils gdkpixbuf2 glib20 gnomehier gtk20 \
-		librsvg2 libxml2
+USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 librsvg2 libxml2
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -59,8 +57,5 @@ PLIST_SUB+=	EXIFEXEMPI=""
 .else
 PLIST_SUB+=	EXIFEXEMPI="@comment "
 .endif
-
-post-install:
-	@-update-desktop-database > /dev/null
 
 .include <bsd.port.mk>

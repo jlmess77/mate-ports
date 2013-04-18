@@ -420,5 +420,3 @@ share/omf/eom/eom-zh_TW.omf
 @dirrm lib/eom
 @dirrm include/eom-2.20/eom
 @dirrm include/eom-2.20
-@exec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
-@unexec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true

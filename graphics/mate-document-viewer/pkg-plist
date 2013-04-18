@@ -429,5 +429,3 @@ share/thumbnailers/atril.thumbnailer
 @dirrm include/atril/1.5.0/libdocument
 @dirrm include/atril/1.5.0
 @dirrm include/atril
-@exec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true
-@unexec %%LOCALBASE%%/bin/update-desktop-database > /dev/null || /usr/bin/true

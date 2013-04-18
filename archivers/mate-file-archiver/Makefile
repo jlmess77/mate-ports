@@ -13,11 +13,12 @@ COMMENT=	An archive manager for zip files, tar, etc
 RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
     		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 
+USES=		desktop-file-info
 USE_XZ=		yes
 USE_MATE=	autogen caja common:build docutils intlhack matehack
 USE_XORG=	sm
 USE_GMAKE=	yes
-USE_GNOME=	desktopfileutils glib20 gnomehier gtk20
+USE_GNOME=	glib20 gnomehier gtk20
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
@@ -36,8 +37,5 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' \
 		${WRKSRC}/src/fr-command-tar.c \
 		${WRKSRC}/src/fr-command-zip.c
-
-post-install:
-	@-update-desktop-database
 
 .include <bsd.port.mk>
