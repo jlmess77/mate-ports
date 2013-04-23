@@ -15,6 +15,7 @@ LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
 		gtkmm-2.4:${PORTSDIR}/x11-toolkits/gtkmm24 \
 		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
 		libmatewnck matehack
@@ -23,7 +24,6 @@ USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxml2
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib -lutil"
 CPPFLAGS+=	-I${LOCALBASE}/include

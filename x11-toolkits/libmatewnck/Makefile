@@ -14,7 +14,7 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
 		g-ir-scanner:${PORTSDIR}/devel/gobject-introspection
 RUN_DEPENDS=	g-ir-scanner:${PORTSDIR}/devel/gobject-introspection
 
-USES=		bison
+USES=		bison pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack ltverhack matehack
 USE_XORG=	x11 xres
@@ -23,7 +23,6 @@ USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20
 USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc

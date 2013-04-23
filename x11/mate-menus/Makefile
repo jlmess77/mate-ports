@@ -13,6 +13,7 @@ COMMENT=	Implementation of the FreeDesktop Desktop Menu Spec
 
 BUILD_DEPENDS=	g-ir-scanner:${PORTSDIR}/devel/gobject-introspection
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack ltverhack matehack
 USE_GMAKE=	yes
@@ -21,7 +22,6 @@ USE_PYTHON=	yes
 USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

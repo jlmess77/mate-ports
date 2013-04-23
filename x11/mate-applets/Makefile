@@ -20,6 +20,7 @@ LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
 		upower-glib:${PORTSDIR}/sysutils/upower \
 		notify:${PORTSDIR}/devel/libnotify
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme intlhack \
 		libmateweather libmatewnck matehack mucharmap panel \
@@ -33,7 +34,6 @@ USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CONFIGURE_ARGS=	--enable-mixer-applet \

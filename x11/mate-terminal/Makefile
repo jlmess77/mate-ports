@@ -12,6 +12,7 @@ COMMENT=	Terminal component for the MATE Desktop
 
 LIB_DEPENDS=	dconf:${PORTSDIR}/devel/dconf
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack matehack
 USE_XORG=	sm x11
@@ -20,7 +21,6 @@ USE_GNOME=	glib20 gnomehier gtk20 vte
 USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include

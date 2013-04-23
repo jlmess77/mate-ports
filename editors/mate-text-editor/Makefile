@@ -16,7 +16,7 @@ LIB_DEPENDS=	enchant:${PORTSDIR}/textproc/enchant \
 		soup-2.4:${PORTSDIR}/devel/libsoup
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
 
-USES=		desktop-file-utils
+USES=		desktop-file-utils pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltasneededhack \
 		matehack
@@ -30,7 +30,6 @@ USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc

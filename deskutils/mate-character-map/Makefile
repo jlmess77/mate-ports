@@ -12,6 +12,7 @@ COMMENT=	A Unicode/ISO10646 character map and font viewer
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack matehack
 USE_GMAKE=	yes
@@ -20,7 +21,6 @@ USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0 \
 		--disable-unihan

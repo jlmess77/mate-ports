@@ -10,11 +10,11 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Common automake macros for MATE
 
+USES=		pkgconfig:both
 USE_XZ=		yes
 USE_MATE=	autogen
 USE_GMAKE=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
-USE_PKGCONFIG=	both
 GNU_CONFIGURE=	yes
 
 MAN1=		mate-autogen.1 mate-doc-common.1

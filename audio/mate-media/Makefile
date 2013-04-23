@@ -12,6 +12,7 @@ COMMENT=	Multimedia applications for the MATE desktop
 
 LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack ltverhack \
 		matehack panel
@@ -22,7 +23,6 @@ INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_GSTREAMER=	good
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CONFIGURE_ARGS=	--disable-pulseaudio \

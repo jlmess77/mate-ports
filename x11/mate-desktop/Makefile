@@ -13,17 +13,16 @@ COMMENT=	Additional UI API for MATE
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	startup-notification-1:${PORTSDIR}/x11/startup-notification
 
+USES=		bison pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack matehack
 USE_XORG=	x11 xrandr
-USES=		bison
 USE_GMAKE=	yes
 USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20
 USE_PYTHON=	yes
 USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0 \
 		--disable-gtk-doc \

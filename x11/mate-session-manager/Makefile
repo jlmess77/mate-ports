@@ -16,6 +16,7 @@ LIB_DEPENDS=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
 RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:${PORTSDIR}/sysutils/consolekit \
 		${LOCALBASE}/bin/xdpyinfo:${PORTSDIR}/x11/xdpyinfo
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack matehack settingsdaemon
 USE_XORG=	ice sm xau xext xrandr xrender xtrans xtst
@@ -23,7 +24,6 @@ USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxslt pango
 USE_GETTEXT=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docbook-docs \
 		--with-gtk=2.0 \

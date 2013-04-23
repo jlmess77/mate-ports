@@ -18,7 +18,7 @@ LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra \
 		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
 		dconf:${PORTSDIR}/devel/dconf
 
-USES=		desktop-file-utils shared-mime-info
+USES=		desktop-file-utils pkgconfig shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
 		ltverhack libmatekbd marco matehack menus settingsdaemon
@@ -29,7 +29,6 @@ USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-appindicator=no
 INSTALLS_ICONS=	yes

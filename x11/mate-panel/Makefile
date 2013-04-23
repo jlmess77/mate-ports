@@ -17,6 +17,7 @@ LIB_DEPENDS=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
 		cairo:${PORTSDIR}/graphics/cairo \
 		dconf:${PORTSDIR}/devel/dconf
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
 		libmateweather libmatewnck ltverhack matehack menus
@@ -28,7 +29,6 @@ USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-network-manager \
 		--disable-gtk-doc \

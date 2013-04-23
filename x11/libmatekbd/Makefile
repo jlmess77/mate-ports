@@ -12,6 +12,7 @@ COMMENT=	MATE keyboard shared library
 
 LIB_DEPENDS=	xklavier:${PORTSDIR}/x11/libxklavier
 
+USES=		pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack ltverhack matehack
 USE_GMAKE=	yes
@@ -19,7 +20,6 @@ USE_GNOME=	gnomehier glib20 gtk20
 USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 INSTALLS_ICONS=	yes

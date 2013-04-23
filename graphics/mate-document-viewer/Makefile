@@ -17,7 +17,7 @@ LIB_DEPENDS=	poppler-glib:${PORTSDIR}/graphics/poppler-glib \
 		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
-USES=		desktop-file-utils
+USES=		desktop-file-utils pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
 		ltasneededhack ltverhack matehack
@@ -28,7 +28,6 @@ USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
-USE_PKGCONFIG=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 INSTALLS_ICONS=	yes
