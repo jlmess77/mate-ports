@@ -17,7 +17,7 @@ LIB_DEPENDS=	exif:${PORTSDIR}/graphics/libexif \
 		exempi:${PORTSDIR}/textproc/exempi
 RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 
-USES=		desktop-file-info shared-mime-info
+USES=		desktop-file-utils shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop icontheme:run intlhack \
 		ltasneededhack ltverhack matehack

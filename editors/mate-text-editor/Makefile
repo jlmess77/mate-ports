@@ -16,7 +16,7 @@ LIB_DEPENDS=	enchant:${PORTSDIR}/textproc/enchant \
 		soup-2.4:${PORTSDIR}/devel/libsoup
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
 
-USES=		desktop-file-info
+USES=		desktop-file-utils
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltasneededhack \
 		matehack

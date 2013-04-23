@@ -18,7 +18,7 @@ LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra \
 		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
 		dconf:${PORTSDIR}/devel/dconf
 
-USES=		desktop-file-info shared-mime-info
+USES=		desktop-file-utils shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
 		ltverhack libmatekbd marco matehack menus settingsdaemon

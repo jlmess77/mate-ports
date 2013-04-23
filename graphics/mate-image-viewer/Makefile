@@ -13,7 +13,7 @@ COMMENT=	The Eye of MATE image viewer
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	jpeg:${PORTSDIR}/graphics/jpeg
 
-USES=		desktop-file-info shared-mime-info
+USES=		desktop-file-utils shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme matehack
 USE_XORG=	x11

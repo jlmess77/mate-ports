@@ -17,7 +17,7 @@ LIB_DEPENDS=	poppler-glib:${PORTSDIR}/graphics/poppler-glib \
 		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
-USES=		desktop-file-info
+USES=		desktop-file-utils
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
 		ltasneededhack ltverhack matehack

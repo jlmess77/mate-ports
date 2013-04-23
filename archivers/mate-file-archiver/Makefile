@@ -13,7 +13,7 @@ COMMENT=	An archive manager for zip files, tar, etc
 RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
     		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 
-USES=		desktop-file-info
+USES=		desktop-file-utils
 USE_XZ=		yes
 USE_MATE=	autogen caja common:build docutils intlhack matehack
 USE_XORG=	sm
