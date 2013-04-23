@@ -533,10 +533,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #
 # USE_NCURSES	- If set, this port relies on the ncurses package.
 #
-# USE_PKGCONFIG	- Implies that the port uses pkg-config in one way or another:
-#		  'build', 'run', 'both', implying build,
-#		  runtime, and both build/run dependencies
-#
 # Conflict checking.  Use if your port cannot be installed at the same time as
 # another package.
 #
@@ -944,6 +940,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #
 # WITH_CCACHE_BUILD
 # 				- Enable CCACHE support (devel/ccache).  User settable.
+# CCACHE_DIR
+# 				- Which directory to use for ccache (default: $HOME/.ccache)
 # NO_CCACHE
 #				- Disable CCACHE support for example for certain ports if
 #				  CCACHE is enabled.  User settable.
@@ -1480,7 +1478,7 @@ PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
 .endif
 
-.if defined(WANT_MATE) || defined(USE_MATE)
+.if defined(USE_MATE)
 .include "${PORTSDIR}/Mk/bsd.mate.mk"
 .endif
 
@@ -1533,7 +1531,7 @@ ${_f}_ARGS:=	${f:C/^[^\:]*\://g}
 
 # You can force skipping these test by defining IGNORE_PATH_CHECKS
 .if !defined(IGNORE_PATH_CHECKS)
-.if (${PREFIX:C,(^.).*,\1,} != "/")
+.if ! ${PREFIX:M/*}
 .BEGIN:
 	@${ECHO_MSG} "PREFIX must be defined as an absolute path so that when 'make'"
 	@${ECHO_MSG} "is invoked in the work area PREFIX points to the right place."
@@ -1701,18 +1699,6 @@ EXTRACT_DEPENDS+=	unmakeself:${PORTSDIR}/archivers/unmakeself
 .if defined(USE_GMAKE)
 BUILD_DEPENDS+=		gmake:${PORTSDIR}/devel/gmake
 CONFIGURE_ENV+=	MAKE=${GMAKE}
-.endif
-.if defined(USE_PKGCONFIG)
-.if ${USE_PKGCONFIG:L} == yes || ${USE_PKGCONFIG:L} == build
-BUILD_DEPENDS+=	pkgconf:${PORTSDIR}/devel/pkgconf
-CONFIGURE_ENV+=	PKG_CONFIG=pkgconf
-.elif ${USE_PKGCONFIG:L} == both
-RUN_DEPENDS+=	pkgconf:${PORTSDIR}/devel/pkgconf
-BUILD_DEPENDS+=	pkgconf:${PORTSDIR}/devel/pkgconf
-CONFIGURE_ENV+=	PKG_CONFIG=pkgconf
-.elif ${USE_PKGCONFIG:L} == run
-RUN_DEPENDS+=	pkgconf:${PORTSDIR}/devel/pkgconf
-.endif
 .endif
 
 .if defined(USE_GCC) || defined(USE_FORTRAN)
@@ -2103,7 +2089,7 @@ RUN_DEPENDS+=	${_GL_${_component}_RUN_DEPENDS}
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
 .endif
 
-.if defined(WANT_MATE) || defined(USE_MATE)
+.if defined(USE_MATE)
 .include "${PORTSDIR}/Mk/bsd.mate.mk"
 .endif
 
@@ -2257,7 +2243,12 @@ BUILD_DEPENDS+=		${LOCALBASE}/bin/ccache:${PORTSDIR}/devel/ccache
 .	endif
 
 # Prepend the ccache dir into the PATH and setup ccache env
-MAKE_ENV+=	PATH=${LOCALBASE}/libexec/ccache:${PATH}
+MAKE_ENV+=		PATH=${LOCALBASE}/libexec/ccache:${PATH}
+CONFIGURE_ENV+=	PATH=${LOCALBASE}/libexec/ccache:${PATH}
+.	if defined(CCACHE_DIR)
+MAKE_ENV+=		CCACHE_DIR="${CCACHE_DIR}"
+CONFIGURE_ENV+=	CCACHE_DIR="${CCACHE_DIR}"
+.	endif
 .endif
 
 PTHREAD_CFLAGS?=
@@ -2959,7 +2950,7 @@ CONFIGURE_MAX_CMD_LEN!=	${SYSCTL} -n kern.argmax
 .endif
 GNU_CONFIGURE_PREFIX?=	${PREFIX}
 CONFIGURE_ARGS+=	--prefix=${GNU_CONFIGURE_PREFIX} $${_LATE_CONFIGURE_ARGS}
-CONFIGURE_ENV+=		lt_cv_sys_max_cmd_len=${CONFIGURE_MAX_CMD_LEN}
+CONFIGURE_ENV+=		CONFIG_SITE=${PORTSDIR}/Templates/config.site lt_cv_sys_max_cmd_len=${CONFIGURE_MAX_CMD_LEN}
 HAS_CONFIGURE=		yes
 
 SET_LATE_CONFIGURE_ARGS= \
