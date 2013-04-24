@@ -18,14 +18,13 @@ LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra \
 		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
 		dconf:${PORTSDIR}/devel/dconf
 
-USES=		desktop-file-utils pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext pkgconfig shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
 		ltverhack libmatekbd marco matehack menus settingsdaemon
 USE_XORG=	x11 xcursor xext xxf86misc xft xi xrandr xscrnsaver
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 libxml2 librsvg2 pango
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

@@ -12,12 +12,11 @@ COMMENT=	A Unicode/ISO10646 character map and font viewer
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack matehack
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 gnomedocutils
-USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

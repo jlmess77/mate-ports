@@ -16,7 +16,7 @@ LIB_DEPENDS=	enchant:${PORTSDIR}/textproc/enchant \
 		soup-2.4:${PORTSDIR}/devel/libsoup
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
 
-USES=		desktop-file-utils pkgconfig
+USES=		desktop-file-utils gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltasneededhack \
 		matehack
@@ -24,9 +24,7 @@ USE_XORG=	sm x11
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 gtksourceview2 gvfs libxml2 \
 		pygobject pygtk2 pygtksourceview
-WANT_GNOME=	yes
 USE_PYTHON=	yes
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

@@ -10,11 +10,11 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	A collection of backgrounds for MATE
 
+USES=		gettext
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack matehack
 USE_GNOME=	glib20
 USE_GMAKE=	yes
-USE_GETTEXT=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

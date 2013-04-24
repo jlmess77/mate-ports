@@ -18,13 +18,12 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian \
 		${LOCALBASE}/share/xml/docbook/4.4/catalog.xml:${PORTSDIR}/textproc/docbook-xml-440 \
 		xml2po:${PORTSDIR}/textproc/gnome-doc-utils
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build matehack intlhack
 USE_GMAKE=	yes
 USE_GNOME=	gnomehier libxml2 libxslt
 USE_PYTHON=	build
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes

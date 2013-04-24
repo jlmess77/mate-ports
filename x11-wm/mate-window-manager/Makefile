@@ -13,14 +13,13 @@ COMMENT=	A window manager for the adult in you
 LIB_DEPENDS=	startup-notification-1:${PORTSDIR}/x11/startup-notification \
 		canberra-gtk:${PORTSDIR}/audio/libcanberra
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build dialogs docutils intlhack ltverhack \
 		matehack
 USE_XORG=	x11 xcomposite xcursor xdamage xrandr
 USE_GMAKE=	yes
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 pango
-USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

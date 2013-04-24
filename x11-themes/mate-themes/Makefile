@@ -15,12 +15,11 @@ BUILD_DEPENDS=	gtk-engines2>=2.15.0:${PORTSDIR}/x11-themes/gtk-engines2 \
 RUN_DEPENDS=	gtk-engines2>=2.15.0:${PORTSDIR}/x11-themes/gtk-engines2 \
 		gtk-murrine-engine>=0.98:${PORTSDIR}/x11-themes/gtk-murrine-engine
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack marco matehack
 USE_GMAKE=	yes
 USE_GNOME=	gdkpixbuf2 gtk20
-USE_GETTEXT=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes

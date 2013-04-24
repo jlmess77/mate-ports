@@ -20,14 +20,13 @@ LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra \
 		notify:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack libmatekeyring \
 		matehack panel
 USE_XORG=	x11 xext xproto xrandr xrender
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

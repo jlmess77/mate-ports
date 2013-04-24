@@ -20,13 +20,12 @@ LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
 		dconf:${PORTSDIR}/devel/dconf
 RUN_DEPENDS=	xrdb:${PORTSDIR}/x11/xrdb
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop intlhack libmatekbd matehack
 USE_XORG=	xxf86misc
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
-USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_GSTREAMER=	good

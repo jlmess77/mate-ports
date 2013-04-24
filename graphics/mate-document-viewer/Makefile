@@ -17,14 +17,13 @@ LIB_DEPENDS=	poppler-glib:${PORTSDIR}/graphics/poppler-glib \
 		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
-USES=		desktop-file-utils pkgconfig
+USES=		desktop-file-utils gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
 		ltasneededhack ltverhack matehack
 USE_XORG=	sm
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 libxml2
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

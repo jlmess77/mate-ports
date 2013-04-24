@@ -12,13 +12,12 @@ COMMENT=	Multimedia applications for the MATE desktop
 
 LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack ltverhack \
 		matehack panel
 USE_GMAKE=	yes
 USE_GNOME=	gnomehier glib20 gnomehier gtk20 libxml2
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

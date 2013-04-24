@@ -20,7 +20,7 @@ LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
 		upower-glib:${PORTSDIR}/sysutils/upower \
 		notify:${PORTSDIR}/devel/libnotify
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme intlhack \
 		libmateweather libmatewnck matehack mucharmap panel \
@@ -30,7 +30,6 @@ USE_GMAKE=	yes
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 libxml2 libxslt pygobject \
 		pygtk2
 USE_PYTHON=	yes
-USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

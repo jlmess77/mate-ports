@@ -18,13 +18,12 @@ LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack libmatewnck matehack
 USE_XORG=	x11
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2
-USE_GETTEXT=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \

@@ -17,12 +17,11 @@ LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
 		tasn1:${PORTSDIR}/security/libtasn1
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:${PORTSDIR}/security/ca_root_nss
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack libmatekeyring ltverhack matehack
 USE_GMAKE=	yes
 USE_GNOME=	gnomehier glib20 gtk20
-USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

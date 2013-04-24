@@ -16,7 +16,7 @@ LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
 		notify:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	xscreensaver-gl-helper:${PORTSDIR}/x11/xscreensaver-gnome-hacks
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_GL=		gl
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop intlhack libmatekbd \
@@ -24,7 +24,6 @@ USE_MATE=	autogen common:build desktop intlhack libmatekbd \
 USE_XORG=	ice sm x11 xext xtst xxf86misc xxf86vm
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
-USE_GETTEXT=	yes
 GNU_CONFIGURE=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 CONFIGURE_ARGS=	--with-xscreensaverdir=${XSCREENSAVER_DIR} \

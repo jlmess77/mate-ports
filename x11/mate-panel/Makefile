@@ -17,7 +17,7 @@ LIB_DEPENDS=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
 		cairo:${PORTSDIR}/graphics/cairo \
 		dconf:${PORTSDIR}/devel/dconf
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
 		libmateweather libmatewnck ltverhack matehack menus
@@ -25,7 +25,6 @@ USE_XORG=	ice sm x11 xau xrandr
 USE_GMAKE=	yes
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 librsvg2 pango
 USE_PYTHON=	yes
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

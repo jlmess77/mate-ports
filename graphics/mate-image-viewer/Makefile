@@ -13,13 +13,12 @@ COMMENT=	The Eye of MATE image viewer
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	jpeg:${PORTSDIR}/graphics/jpeg
 
-USES=		desktop-file-utils pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext pkgconfig shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme matehack
 USE_XORG=	x11
 USE_GMAKE=	yes
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 librsvg2 libxml2
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

@@ -10,13 +10,12 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	An editor for the freedesktop.org menu specification
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack matehack menus
 USE_GMAKE=	yes
 USE_GNOME=	pygobject pygtk2
 USE_PYTHON=	yes
-USE_GETTEXT=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes

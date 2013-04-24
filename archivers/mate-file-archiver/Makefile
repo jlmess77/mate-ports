@@ -13,13 +13,12 @@ COMMENT=	An archive manager for zip files, tar, etc
 RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
     		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 
-USES=		desktop-file-utils pkgconfig
+USES=		desktop-file-utils gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen caja common:build docutils intlhack matehack
 USE_XORG=	sm
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
-USE_GETTEXT=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

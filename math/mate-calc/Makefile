@@ -12,14 +12,12 @@ COMMENT=	A MATE calculator tool based on the old calctool for OpenWindows
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex
 
-USES=		bison pkgconfig
+USES=		bison gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack matehack
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 libxml2
-USE_GETTEXT=	yes
-USE_AUTOTOOLS=	libtool
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
+USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include

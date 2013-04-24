@@ -15,14 +15,13 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
 LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
 		canberra-gtk:${PORTSDIR}/audio/libcanberra
 
-USES=		pkgconfig
+USES=		gettext pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack \
 		matehack panel
 USE_XORG=	x11 xext
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
-USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

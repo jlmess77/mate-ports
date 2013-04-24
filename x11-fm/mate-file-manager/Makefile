@@ -17,14 +17,13 @@ LIB_DEPENDS=	exif:${PORTSDIR}/graphics/libexif \
 		exempi:${PORTSDIR}/textproc/exempi
 RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 
-USES=		desktop-file-utils pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext pkgconfig shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop icontheme:run intlhack \
 		ltasneededhack ltverhack matehack
 USE_XORG=	ice x11 xrender
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 libxml2 pango
-USE_GETTEXT=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
