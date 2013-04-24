@@ -17,7 +17,7 @@ USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack matehack
 USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 libxml2
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool
+USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include
