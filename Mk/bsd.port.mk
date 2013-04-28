@@ -324,7 +324,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # GMAKE			- Set to path of GNU make if not in $PATH.
 #				  Default: gmake
 ##
-# USE_ICONV		- If set, this port uses libiconv.
 # USE_GETTEXT	- The port uses GNU gettext (libintl).
 #					'build'		as a build-time dependency
 #					'yes'		as a library dependency
@@ -360,7 +359,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  if PACKAGE_BUILDING is not set, then CONFIGURE_ENV and
 #				  MAKE_ENV are extended with a DISPLAY variable.
 #
-# USE_FREETYPE	- If set, this port uses the freetype print libraries.
 # USE_GL		- A list of Mesa or GL related dependencies needed by the port.
 #				  Supported components are: glut, glu, glw, gl and linux.
 #				  If set to "yes", this is equivalent to "glu". Note that
@@ -528,8 +526,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  this option is not needed unless the port installs in the base.
 ##
 # USE_APACHE	- If set, this port relies on an apache webserver.
-#
-# USE_CDRTOOLS	- If set, this port depends on sysutils/cdrtools.
 #
 # USE_NCURSES	- If set, this port relies on the ncurses package.
 #
@@ -1857,10 +1853,6 @@ USE_LDCONFIG=	${PREFIX}/lib
 IGNORE=			has USE_LDCONFIG32 set to yes, which is not correct
 .endif
 
-.if defined(USE_ICONV)
-LIB_DEPENDS+=	iconv.3:${PORTSDIR}/converters/libiconv
-.endif
-
 .if defined(USE_GETTEXT)
 .	if ${USE_GETTEXT:L} == "build"
 BUILD_DEPENDS+=	xgettext:${PORTSDIR}/devel/gettext
@@ -1928,10 +1920,6 @@ NO_OPENMOTIF=		yes
 .if !defined(NO_OPENMOTIF)
 LIB_DEPENDS+=		Xm.4:${PORTSDIR}/x11-toolkits/open-motif
 .endif
-.endif
-
-.if defined(USE_FREETYPE)
-LIB_DEPENDS+=			ttf.4:${PORTSDIR}/print/freetype
 .endif
 
 X_IMAKE_PORT=		${PORTSDIR}/devel/imake
@@ -2155,12 +2143,6 @@ BUILD_DEPENDS+=	gs:${PORTSDIR}/${GHOSTSCRIPT_PORT}
 .endif
 .if defined(USE_GHOSTSCRIPT) || defined(USE_GHOSTSCRIPT_RUN)
 RUN_DEPENDS+=	gs:${PORTSDIR}/${GHOSTSCRIPT_PORT}
-.endif
-
-# Set up the cdrtools.
-.if defined(USE_CDRTOOLS)
-BUILD_DEPENDS+=	cdrecord:${PORTSDIR}/sysutils/cdrtools
-RUN_DEPENDS+=	cdrecord:${PORTSDIR}/sysutils/cdrtools
 .endif
 
 # Macro for doing in-place file editing using regexps
