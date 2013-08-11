@@ -12,15 +12,14 @@ COMMENT=	MATE support utilities
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
 		scrollkeeper-config:${PORTSDIR}/textproc/rarian
-LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
-		canberra-gtk:${PORTSDIR}/audio/libcanberra
+LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
+		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack \
 		matehack panel
 USE_XORG=	x11 xext
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes

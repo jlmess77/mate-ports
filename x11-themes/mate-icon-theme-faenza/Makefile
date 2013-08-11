@@ -8,7 +8,7 @@ MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	A collection of Faenza and Faience icons for the MATE desktop
+COMMENT=	Collection of Faenza and Faience icons for the MATE desktop
 
 USE_XZ=		yes
 NO_BUILD=	yes

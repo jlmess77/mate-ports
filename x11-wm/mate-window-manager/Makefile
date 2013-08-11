@@ -8,17 +8,16 @@ MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	A window manager for the adult in you
+COMMENT=	Window manager for the adult in you
 
-LIB_DEPENDS=	startup-notification-1:${PORTSDIR}/x11/startup-notification \
-		canberra-gtk:${PORTSDIR}/audio/libcanberra
+LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification \
+		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build dialogs docutils intlhack ltverhack \
 		matehack
 USE_XORG=	x11 xcomposite xcursor xdamage xrandr
-USE_GMAKE=	yes
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 pango
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

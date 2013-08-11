@@ -10,17 +10,16 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Session component for the MATE desktop
 
-LIB_DEPENDS=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		upower-glib:${PORTSDIR}/sysutils/upower \
-		execinfo:${PORTSDIR}/devel/libexecinfo
+LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libupower-glib.so:${PORTSDIR}/sysutils/upower \
+		libexecinfo.so:${PORTSDIR}/devel/libexecinfo
 RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:${PORTSDIR}/sysutils/consolekit \
 		${LOCALBASE}/bin/xdpyinfo:${PORTSDIR}/x11/xdpyinfo
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack matehack settingsdaemon
 USE_XORG=	ice sm xau xext xrandr xrender xtrans xtst
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxslt pango
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

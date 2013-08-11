@@ -8,20 +8,19 @@ MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	A small but powerful text editor for MATE Desktop Environment
+COMMENT=	Small but powerful text editor for MATE Desktop Environment
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
 		${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
-LIB_DEPENDS=	enchant:${PORTSDIR}/textproc/enchant \
-		soup-2.4:${PORTSDIR}/devel/libsoup
+LIB_DEPENDS=	libenchant.so:${PORTSDIR}/textproc/enchant \
+		libsoup-2.4.so:${PORTSDIR}/devel/libsoup
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
 
-USES=		desktop-file-utils gettext pkgconfig
+USES=		desktop-file-utils gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltasneededhack \
 		matehack
 USE_XORG=	sm x11
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 gtksourceview2 gvfs libxml2 \
 		pygobject pygtk2 pygtksourceview
 USE_PYTHON=	yes

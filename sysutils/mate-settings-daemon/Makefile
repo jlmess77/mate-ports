@@ -10,22 +10,20 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE settings daemon
 
-LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		xklavier:${PORTSDIR}/x11/libxklavier \
-		nss3:${PORTSDIR}/security/nss \
-		fontconfig:${PORTSDIR}/x11-fonts/fontconfig \
-		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
-		notify:${PORTSDIR}/devel/libnotify \
-		dconf:${PORTSDIR}/devel/dconf
+LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libxklavier.so:${PORTSDIR}/x11/libxklavier \
+		libnss3.so:${PORTSDIR}/security/nss \
+		libfontconfig.so:${PORTSDIR}/x11-fonts/fontconfig \
+		libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	xrdb:${PORTSDIR}/x11/xrdb
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop intlhack libmatekbd matehack
 USE_XORG=	xxf86misc
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20
+USE_GNOME=	dconf glib20 gnomehier gtk20
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_GSTREAMER=	good

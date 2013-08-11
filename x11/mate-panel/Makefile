@@ -10,20 +10,17 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Panel component for the MATE Desktop
 
-BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
-		g-ir-scanner:${PORTSDIR}/devel/gobject-introspection
-LIB_DEPENDS=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		canberra-gtk:${PORTSDIR}/audio/libcanberra \
-		cairo:${PORTSDIR}/graphics/cairo \
-		dconf:${PORTSDIR}/devel/dconf
+BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
+LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
 		libmateweather libmatewnck ltverhack matehack menus
 USE_XORG=	ice sm x11 xau xrandr
-USE_GMAKE=	yes
-USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 librsvg2 pango
+USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
+		introspection:build librsvg2 pango
 USE_PYTHON=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes

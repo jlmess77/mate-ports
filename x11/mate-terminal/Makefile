@@ -10,14 +10,11 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Terminal component for the MATE Desktop
 
-LIB_DEPENDS=	dconf:${PORTSDIR}/devel/dconf
-
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack matehack
 USE_XORG=	sm x11
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20 vte
+USE_GNOME=	dconf glib20 gnomehier gtk20 vte
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

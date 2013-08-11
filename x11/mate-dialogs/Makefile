@@ -13,10 +13,9 @@ COMMENT=	Display MATE dialogs from the command line
 BUILD_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack matehack
-USE_GMAKE=	yes
 USE_GNOME=	gnomehier glib20 gtk20
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
@@ -33,7 +32,7 @@ OPTIONS_DEFAULT=NOTIFY
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MNOTIFY}
-LIB_DEPENDS+=	notify:${PORTSDIR}/devel/libnotify
+LIB_DEPENDS+=	libnotify.so:${PORTSDIR}/devel/libnotify
 CONFIGURE_ARGS+=--enable-libnotify
 .else
 CONFIGURE_ARGS+=--disable-libnotify

@@ -10,21 +10,19 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Control center for MATE project
 
-LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra \
-		dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		unique-1.0:${PORTSDIR}/x11-toolkits/unique \
-		xklavier:${PORTSDIR}/x11/libxklavier \
-		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
-		dconf:${PORTSDIR}/devel/dconf
+LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
+		libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libunique-1.0.so:${PORTSDIR}/x11-toolkits/unique \
+		libxklavier.so:${PORTSDIR}/x11/libxklavier \
+		libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit
 
-USES=		desktop-file-utils gettext pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext gmake pkgconfig shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
 		ltverhack libmatekbd marco matehack menus settingsdaemon
 USE_XORG=	x11 xcursor xext xxf86misc xft xi xrandr xscrnsaver
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20 libxml2 librsvg2 pango
+USE_GNOME=	dconf glib20 gnomehier gtk20 libxml2 librsvg2 pango
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

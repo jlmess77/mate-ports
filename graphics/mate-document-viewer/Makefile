@@ -11,19 +11,17 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE multi-format document viewer
 
 BUILD_DEPENDS=	gtkdoc-scan:${PORTSDIR}/textproc/gtk-doc
-LIB_DEPENDS=	poppler-glib:${PORTSDIR}/graphics/poppler-glib \
-		spectre:${PORTSDIR}/print/libspectre \
-		cairo:${PORTSDIR}/graphics/cairo \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
+LIB_DEPENDS=	libpoppler-glib.so:${PORTSDIR}/graphics/poppler-glib \
+		libspectre.so:${PORTSDIR}/print/libspectre \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
-USES=		desktop-file-utils gettext pkgconfig
+USES=		desktop-file-utils gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
 		ltasneededhack ltverhack matehack
 USE_XORG=	sm
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20 libxml2
+USE_GNOME=	cairo glib20 gnomehier gtk20 libxml2
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -55,7 +53,7 @@ CONFIGURE_ARGS+=--enable-dvi
 PLIST_SUB+=	DVI=""
 
 . if ${PORT_OPTIONS:MT1LIB}
-LIB_DEPENDS+=	t15:${PORTSDIR}/devel/t1lib
+LIB_DEPENDS+=	libt15.so:${PORTSDIR}/devel/t1lib
 CONFIGURE_ARGS+=--enable-t1lib
 . endif
 
@@ -87,7 +85,7 @@ PLIST_SUB+=	IMPRESS="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MDJVU}
-LIB_DEPENDS+=	djvulibre:${PORTSDIR}/graphics/djvulibre
+LIB_DEPENDS+=	libdjvulibre.so:${PORTSDIR}/graphics/djvulibre
 CONFIGURE_ARGS+=--enable-djvu
 PLIST_SUB+=	DJVU=""
 .else
@@ -96,7 +94,6 @@ PLIST_SUB+=	DJVU="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MCOMICS}
-RUN_DEPENDS+=	unzip:${PORTSDIR}/archivers/unzip
 CONFIGURE_ARGS+=--enable-comics
 PLIST_SUB+=	COMICS=""
 .else

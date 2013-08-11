@@ -10,10 +10,9 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Caja extension which allows you to open a terminal
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen caja common:build desktop intlhack matehack
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

@@ -10,23 +10,21 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Power management system for the MATE Desktop
 
-LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra \
-		dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		cairo:${PORTSDIR}/graphics/cairo \
-		unique-1.0:${PORTSDIR}/x11-toolkits/unique \
-		upower-glib:${PORTSDIR}/sysutils/upower \
-		execinfo:${PORTSDIR}/devel/libexecinfo \
-		notify:${PORTSDIR}/devel/libnotify
+LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
+		libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libunique-1.0.so:${PORTSDIR}/x11-toolkits/unique \
+		libupower-glib.so:${PORTSDIR}/sysutils/upower \
+		libexecinfo.so:${PORTSDIR}/devel/libexecinfo \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack libmatekeyring \
 		matehack panel
 USE_XORG=	x11 xext xproto xrandr xrender
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20
+USE_GNOME=	cairo glib20 gnomehier gtk20
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

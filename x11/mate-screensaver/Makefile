@@ -11,18 +11,17 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE screen saver and locker
 
-LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		notify:${PORTSDIR}/devel/libnotify
+LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	xscreensaver-gl-helper:${PORTSDIR}/x11/xscreensaver-gnome-hacks
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_GL=		gl
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop intlhack libmatekbd \
 		matehack menus
 USE_XORG=	ice sm x11 xext xtst xxf86misc xxf86vm
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
 GNU_CONFIGURE=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

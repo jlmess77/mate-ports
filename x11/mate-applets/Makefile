@@ -10,25 +10,23 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Applets components for the MATE Desktop Environment
 
-BUILD_DEPENDS=	g-ir-scanner:${PORTSDIR}/devel/gobject-introspection
-LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
-		xklavier:${PORTSDIR}/x11/libxklavier \
-		dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
-		hal:${PORTSDIR}/sysutils/hal \
-		upower-glib:${PORTSDIR}/sysutils/upower \
-		notify:${PORTSDIR}/devel/libnotify
+LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
+		libxklavier.so:${PORTSDIR}/x11/libxklavier \
+		libdbus-1.s0:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.s0:${PORTSDIR}/devel/dbus-glib \
+		libpolkit-gobject-1.s0:${PORTSDIR}/sysutils/polkit \
+		libhal.so:${PORTSDIR}/sysutils/hal \
+		libupower-glib.so:${PORTSDIR}/sysutils/upower \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme intlhack \
 		libmateweather libmatewnck matehack mucharmap panel \
 		polkit settingsdaemon
 USE_XORG=	x11
-USE_GMAKE=	yes
-USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 libxml2 libxslt pygobject \
-		pygtk2
+USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection:build \
+		libxml2 libxslt pygobject pygtk2
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes

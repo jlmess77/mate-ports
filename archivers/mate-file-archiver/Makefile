@@ -8,16 +8,15 @@ MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	An archive manager for zip files, tar, etc
+COMMENT=	Archive manager for zip files, tar, etc
 
 RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
     		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 
-USES=		desktop-file-utils gettext pkgconfig
+USES=		desktop-file-utils gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen caja common:build docutils intlhack matehack
 USE_XORG=	sm
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes

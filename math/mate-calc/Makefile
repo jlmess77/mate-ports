@@ -8,14 +8,13 @@ MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	A MATE calculator tool based on the old calctool for OpenWindows
+COMMENT=	MATE calculator tool based on the old calctool for OpenWindows
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex
 
-USES=		bison gettext pkgconfig
+USES=		bison gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack matehack
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 libxml2
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

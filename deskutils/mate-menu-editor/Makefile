@@ -1,3 +1,4 @@
+
 # Created by: FreeBSD GNOME Team
 # $FreeBSD$
 
@@ -8,12 +9,11 @@ MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	An editor for the freedesktop.org menu specification
+COMMENT=	Editor for the freedesktop.org menu specification
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack matehack menus
-USE_GMAKE=	yes
 USE_GNOME=	pygobject pygtk2
 USE_PYTHON=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env

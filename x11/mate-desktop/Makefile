@@ -1,3 +1,4 @@
+
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
 
@@ -11,13 +12,12 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Additional UI API for MATE
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
-LIB_DEPENDS=	startup-notification-1:${PORTSDIR}/x11/startup-notification
+LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification
 
-USES=		bison gettext pkgconfig
+USES=		bison gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack matehack
 USE_XORG=	x11 xrandr
-USE_GMAKE=	yes
 USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes

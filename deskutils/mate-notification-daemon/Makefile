@@ -10,19 +10,18 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Send small notifications to your desktop
 
-LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		canberra-gtk:${PORTSDIR}/audio/libcanberra \
-		notify:${PORTSDIR}/devel/libnotify
+LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack libmatewnck matehack
 USE_XORG=	x11
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

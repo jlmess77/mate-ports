@@ -11,13 +11,12 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	The Eye of MATE image viewer
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
-LIB_DEPENDS=	jpeg:${PORTSDIR}/graphics/jpeg
+LIB_DEPENDS=	libjpeg.so:${PORTSDIR}/graphics/jpeg
 
-USES=		desktop-file-utils gettext pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext gmake pkgconfig shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme matehack
 USE_XORG=	x11
-USE_GMAKE=	yes
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 librsvg2 libxml2
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -37,7 +36,7 @@ _WITH_EXEMPI=	no
 
 .if !defined(WITHOUT_EXIF) || (exists(${LOCALBASE}/lib/libexif.so) || \
 	defined(WITH_EXIF))
-LIB_DEPENDS+=	exif:${PORTSDIR}/graphics/libexif
+LIB_DEPENDS+=	libexif.so:${PORTSDIR}/graphics/libexif
 PLIST_SUB+=	EXIF=""
 _WITH_EXIF=	yes
 .else
@@ -46,7 +45,7 @@ PLIST_SUB+=	EXIF="@comment "
 
 .if !defined(WITHOUT_EXEMPI) || (exists(${LOCALBASE}/lib/libexempi.so)) || \
     	defined(WITH_EXEMPI)
-LIB_DEPENDS+=	exempi:${PORTSDIR}/textproc/exempi
+LIB_DEPENDS+=	libexempi.so:${PORTSDIR}/textproc/exempi
 _WITH_EXEMPI=	yes
 .endif
 

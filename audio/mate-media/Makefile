@@ -10,13 +10,12 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Multimedia applications for the MATE desktop
 
-LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra
+LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack ltverhack \
 		matehack panel
-USE_GMAKE=	yes
 USE_GNOME=	gnomehier glib20 gnomehier gtk20 libxml2
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes

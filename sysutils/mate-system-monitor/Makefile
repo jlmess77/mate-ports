@@ -10,17 +10,14 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE system monitor program
 
-LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
-		glibmm-2.4.1:${PORTSDIR}/devel/glibmm \
-		gtkmm-2.4:${PORTSDIR}/x11-toolkits/gtkmm24 \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
+LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 
-USES=		gettext pkgconfig
+USES=		gettext gmake pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
 		libmatewnck matehack
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxml2
+USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxml2 gtkmm24
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

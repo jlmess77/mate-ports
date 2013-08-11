@@ -10,20 +10,18 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT?=	File manager for the MATE desktop
 
-BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
-		g-ir-compiler:${PORTSDIR}/devel/gobject-introspection
-LIB_DEPENDS=	exif:${PORTSDIR}/graphics/libexif \
-		unique-1.0:${PORTSDIR}/x11-toolkits/unique \
-		exempi:${PORTSDIR}/textproc/exempi
+BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
+LIB_DEPENDS=	libexif.so:${PORTSDIR}/graphics/libexif \
+		libunique-1.0.so:${PORTSDIR}/x11-toolkits/unique \
+		libexempi.so:${PORTSDIR}/textproc/exempi
 RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 
-USES=		desktop-file-utils gettext pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext gmake pkgconfig shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop icontheme:run intlhack \
 		ltasneededhack ltverhack matehack
 USE_XORG=	ice x11 xrender
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20 libxml2 pango
+USE_GNOME=	glib20 gnomehier gtk20 introspection:build libxml2 pango
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
