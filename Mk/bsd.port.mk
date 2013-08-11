@@ -320,14 +320,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  the system or installed from a port.
 # USE_CSTD		- Override the default C language standard (gnu89, gnu99)
 # USE_BINUTILS	- Use binutils suite from port instead of the version in base.
-# USE_GMAKE		- If set, this port uses gmake.
-# GMAKE			- Set to path of GNU make if not in $PATH.
-#				  Default: gmake
-##
-# USE_GETTEXT	- The port uses GNU gettext (libintl).
-#					'build'		as a build-time dependency
-#					'yes'		as a library dependency
-#					'run'		as a run-time dependency
 ##
 # USE_GHOSTSCRIPT
 #				- If set, this port needs ghostscript to both
@@ -350,9 +342,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  this is for users, not for port maintainers.  This
 #				  should not be used in Makefile.
 ##
-# USE_IMAKE		- If set, this port uses imake.
-# XMKMF			- Set to path of `xmkmf' if not in $PATH
-#				  Default: xmkmf -a
 # USE_DISPLAY	- If set, this ports requires a (virtual) X11 environment
 #				  setup. If the environment variable DISPLAY Is not set,
 #				  then an extra build dependency on Xvfb is added. Further,
@@ -360,25 +349,12 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  MAKE_ENV are extended with a DISPLAY variable.
 #
 # USE_GL		- A list of Mesa or GL related dependencies needed by the port.
-#				  Supported components are: glut, glu, glw, gl and linux.
+#				  Supported components are: glut, glu, glw, and gl.
 #				  If set to "yes", this is equivalent to "glu". Note that
 #				  glew and glut depend on glu, glw and glu depend on gl.
-# USE_MOTIF		- If set, this port uses a Motif toolkit. Implies USE_XORG+= xpm
-# NO_OPENMOTIF	- If set, this port uses a custom Motif toolkit
-#				  instead of Openmotif.
-#				  Used only when USE_MOTIF is set.
-# WANT_LESSTIF	- If set, this port uses Lesstif as Motif toolkit.
-#				  Used only when USE_MOTIF is set.  Implies
-#				  NO_OPENMOTIF.
 ##
 # USE_SDL		- If set, this port uses the sdl libraries.
 #				  See bsd.sdl.mk for more information.
-##
-# USE_READLINE	- If set, this port uses libreadline.
-# 				  Legal values are: yes, base, port
-#				  yes, base: use base system libreadline on FreeBSD 9 or earlier,
-#				  	use ports/devel/readline on FreeBSD 10.0+
-#				  port: always use ports/devel/readline
 ##
 # USE_OPENAL	- If set, this port relies on the OpenAL package.
 #				  Legal values are: al, soft, si, alut.
@@ -455,19 +431,10 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # USE_WX		- If set, this port uses the WxWidgets library and related
 #				  components. See bsd.wx.mk for more details.
 ##
-# USE_KDEBASE_VER		- Set to 3 to use the KDE windowing system.
-#				  Implies inclusion of bsd.kde.mk.
-#
-# USE_KDELIBS_VER		- Set to 3 to use the KDE libraries.
-#				  Implies inclusion of bsd.kde.mk.
-#
 # USE_KDE4		- A list of the KDE4 dependencies the port has (e.g.,
 #				  kdelibs, kdebase).  Implies that the port needs KDE.
 #				  Implies inclusion of bsd.kde4.mk.  See bsd.kde4.mk
 #				  for more details.
-#
-# USE_QT_VER	- Set to 3 to use the Qt 3 libraries.
-#				  Implies inclusion of bsd.kde.mk.
 #
 # USE_QT4		- A list of the QT4 dependencies the port has (e.g,
 #				  corelib, webkit).  Implies that the port needs Qt.
@@ -476,7 +443,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #
 # USE_LINUX		- Set to yes to say the port needs the default linux base port.
 #				  Set to value <X>, if the port needs emulators/linux_base-<X>.
-#				  If set to "7", a dependency is registered to emulators/linux_base.
 #				  Implies appropriate settings for STRIP and STRIP_CMD.
 # USE_LINUX_PREFIX
 #				- controls the action of PREFIX (see above). Only use this
@@ -494,7 +460,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # LINUX_OSRELEASE	- Contains the value of compat.linux.osrelease sysctl.
 #				  Will be used to distinguish which linux
 #				  infrastructure ports should be used.
-#				  Valid values: 2.4.2, 2.6.16.
+#				  Valid values: 2.6.16.
 # AUTOMATIC_PLIST
 #				- Set to yes to enable automatic packing list generation.
 #				  Currently has no effect unless USE_LINUX_RPM is set.
@@ -513,6 +479,9 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # USE_XORG			- Set to a list of X.org module dependencies.
 #				  Implies inclusion of bsd.xorg.mk.
 ##
+# USE_TEX			- A list of the TeX dependencies the port has.
+#
+##
 # USE_RC_SUBR	- If set, the ports startup/shutdown script uses the common
 #				  routines found in /etc/rc.subr.
 #				  If this is set to a list of files, these files will be
@@ -526,8 +495,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  this option is not needed unless the port installs in the base.
 ##
 # USE_APACHE	- If set, this port relies on an apache webserver.
-#
-# USE_NCURSES	- If set, this port relies on the ncurses package.
 #
 # Conflict checking.  Use if your port cannot be installed at the same time as
 # another package.
@@ -583,6 +550,9 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  unpacks to.
 #				  Default: ${WRKDIR}/${DISTNAME} unless NO_WRKSUBDIR is set,
 #				  in which case simply ${WRKDIR}
+# WRKSRC_SUBDIR	- A subdirectory of ${WRKSRC} where the distribution actually
+#				  builds in.
+#				  Default: not set
 # NO_WRKSUBDIR	- Assume port unpacks directly into ${WRKDIR}.
 # PATCHDIR		- A directory containing any additional patches you made
 #				  to port this software to FreeBSD.
@@ -657,7 +627,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  "maybe".  "yes" means manpages are installed
 #				  compressed; "no" means they are not; "maybe" means
 #				  it changes depending on the value of NO_MANCOMPRESS.
-#				  Default: "yes" if USE_IMAKE is set and NO_INSTALL_MANPAGES
+#				  Default: "yes" if USES=imake is set and NO_INSTALL_MANPAGES
 #				  is not set, and "no" otherwise.
 #
 # Set the following to specify all .info files your port installs.
@@ -918,20 +888,16 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # MAKE_ARGS		- Any extra arguments to sub-make in build and install stages.
 #				  Default: none
 ##
-# MAKE_JOBS_SAFE
-#				- This port can safely be built on multiple cpus in parallel.
-#				  The make will be invoked with -jX parameter where X equals
-#				  number of cores present in the system.
 # MAKE_JOBS_UNSAFE
 #				- Disallow multiple jobs even when user set a global override.
 #				  To be used with known bad ports.
 # DISABLE_MAKE_JOBS
 #				- Set to disable the multiple jobs feature.  User settable.
-# FORCE_MAKE_JOBS
-#				- Force all ports to be built with multiple jobs, except ports
-#				  that are explicitly marked MAKE_JOBS_UNSAFE.  User settable.
 # MAKE_JOBS_NUMBER
 #				- Override the number of make jobs to be used.  User settable.
+# MAKE_JOBS_NUMBER_LIMIT
+#				- Set a limit for maximum number of make jobs allowed to be
+#				  used.
 ## cacche
 #
 # WITH_CCACHE_BUILD
@@ -1146,6 +1112,12 @@ _DISTDIR?=		${DISTDIR}/${DIST_SUBDIR}
 INDEXDIR?=		${PORTSDIR}
 SRC_BASE?=		/usr/src
 USESDIR?=		${PORTSDIR}/Mk/Uses
+LIB_DIRS?=		/lib /usr/lib ${LOCALBASE}/lib
+
+# make sure bmake treats -V as expected 
+.MAKE.EXPAND_VARIABLES= yes
+# tell bmake we use the old :L :U modifiers
+.MAKE.FreeBSD_UL= yes
 
 .include "${PORTSDIR}/Mk/bsd.commands.mk"
 
@@ -1215,7 +1187,7 @@ OSVERSION!=	${SYSCTL} -n kern.osreldate
 
 .if ${OSVERSION} >= 1000017
 .if !defined(WITHOUT_PKGNG)
-WITH_PKGNG=	yes
+WITH_PKGNG?=	yes
 .else
 .undef	WITH_PKGNG
 .endif
@@ -1262,6 +1234,13 @@ USE_SUBMAKE=	yes
 .include "${MASTERDIR}/Makefile.local"
 USE_SUBMAKE=	yes
 .endif
+
+.for _CATEGORY in ${CATEGORIES}
+PKGCATEGORY?=	${_CATEGORY}
+.endfor
+_PORTDIRNAME=	${.CURDIR:T}
+PORTDIRNAME?=	${_PORTDIRNAME}
+PKGORIGIN?=		${PKGCATEGORY}/${PORTDIRNAME}
 
 # where 'make config' records user configuration options
 PORT_DBDIR?=	/var/db/ports
@@ -1454,12 +1433,12 @@ PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 .include "${PORTSDIR}/Mk/bsd.apache.mk"
 .endif
 
-.if (defined(USE_QT_VER) && ${USE_QT_VER:L} == 3) || defined(USE_KDELIBS_VER) || defined(USE_KDEBASE_VER)
-.include "${PORTSDIR}/Mk/bsd.kde.mk"
-.endif
-
 .if defined(USE_QT4)
 .include "${PORTSDIR}/Mk/bsd.qt.mk"
+.endif
+
+.if defined(USE_TEX)
+.include "${PORTSDIR}/Mk/bsd.tex.mk"
 .endif
 
 .if defined(USE_DRUPAL)
@@ -1472,10 +1451,6 @@ PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 
 .if defined(WANT_GNOME) || defined(USE_GNOME) || defined(INSTALLS_ICONS)
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
-.endif
-
-.if defined(USE_MATE)
-.include "${PORTSDIR}/Mk/bsd.mate.mk"
 .endif
 
 .if defined(WANT_LUA) || defined(USE_LUA) || defined(USE_LUA_NOT)
@@ -1502,11 +1477,11 @@ PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 .include "${PORTSDIR}/Mk/bsd.kde4.mk"
 .endif
 
-.if defined(USE_NCURSES)
-.include "${PORTSDIR}/Mk/bsd.ncurses.mk"
-.endif
-
 .include "${PORTSDIR}/Mk/bsd.pbi.mk"
+
+.if defined(USE_GMAKE)
+USES+=	gmake
+.endif
 
 # Loading features
 .for f in ${USES}
@@ -1556,6 +1531,9 @@ WRKSRC?=		${WRKDIR}/${GH_ACCOUNT}-${GH_PROJECT}-${GH_COMMIT}
 WRKSRC?=		${WRKDIR}
 .else
 WRKSRC?=		${WRKDIR}/${DISTNAME}
+.endif
+.if defined(WRKSRC_SUBDIR)
+WRKSRC:=		${WRKSRC}/${WRKSRC_SUBDIR}
 .endif
 
 PATCH_WRKSRC?=	${WRKSRC}
@@ -1624,16 +1602,16 @@ check-makevars::
 .endif
 .endif
 
-.if defined(USE_IMAKE) && !defined(NO_INSTALL_MANPAGES)
-MANCOMPRESSED?=	yes
-.else
 MANCOMPRESSED?=	no
-.endif
 
 .if defined(PATCHFILES)
 .if ${PATCHFILES:M*.zip}x != x
 PATCH_DEPENDS+=		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 .endif
+.endif
+
+.if !defined(UID)
+UID!=	${ID} -u
 .endif
 
 # Check the compatibility layer for amd64/ia64
@@ -1643,7 +1621,10 @@ PATCH_DEPENDS+=		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 HAVE_COMPAT_IA32_LIBS?=  YES
 .endif
 .if !defined(HAVE_COMPAT_IA32_KERN)
-HAVE_COMPAT_IA32_KERN!= if ${SYSCTL} -n compat.ia32.maxvmem >/dev/null 2>&1; then echo YES; fi
+HAVE_COMPAT_IA32_KERN!= if ${SYSCTL} -n compat.ia32.maxvmem >/dev/null 2>&1; then echo YES; fi; echo
+.if empty(HAVE_COMPAT_IA32_KERN)
+.undef HAVE_COMPAT_IA32_KERN
+.endif
 .endif
 .endif
 
@@ -1664,10 +1645,14 @@ LIB32DIR=	lib
 .endif
 PLIST_SUB+=	LIB32DIR=${LIB32DIR}
 
+PKGNG_ORIGIN?=	ports-mgmt/pkg
 .if defined(WITH_PKGNG)
+.if ${WITH_PKGNG} == devel
+PKGNG_ORIGIN=		ports-mgmt/pkg-devel
+.endif
 .if !defined(PKG_DEPENDS)
 .if !defined(CLEAN_FETCH_ENV)
-PKG_DEPENDS+=		${LOCALBASE}/sbin/pkg:${PORTSDIR}/ports-mgmt/pkg
+PKG_DEPENDS+=		${LOCALBASE}/sbin/pkg:${PORTSDIR}/${PKGNG_ORIGIN}
 .endif
 .endif
 .endif
@@ -1683,10 +1668,6 @@ EXTRACT_DEPENDS+=	${LOCALBASE}/bin/xz:${PORTSDIR}/archivers/xz
 .endif
 .if defined(USE_MAKESELF)
 EXTRACT_DEPENDS+=	unmakeself:${PORTSDIR}/archivers/unmakeself
-.endif
-.if defined(USE_GMAKE)
-BUILD_DEPENDS+=		gmake:${PORTSDIR}/devel/gmake
-CONFIGURE_ENV+=	MAKE=${GMAKE}
 .endif
 
 .if defined(USE_GCC) || defined(USE_FORTRAN)
@@ -1711,14 +1692,6 @@ MAKE_ENV+=	${b}="${${b}}"
 
 .if defined(USE_OPENLDAP) || defined(WANT_OPENLDAP_VER)
 .include "${PORTSDIR}/Mk/bsd.ldap.mk"
-.endif
-
-.if defined(USE_READLINE)
-.if ${USE_READLINE} == "port" || ${OSVERSION} > 1000000
-LIB_DEPENDS+=	readline.6:${PORTSDIR}/devel/readline
-CPPFLAGS+=		-I${LOCALBASE}/include
-LDFLAGS+=		-L${LOCALBASE}/lib -lreadline
-.endif
 .endif
 
 .if defined(USE_OPENAL)
@@ -1853,18 +1826,6 @@ USE_LDCONFIG=	${PREFIX}/lib
 IGNORE=			has USE_LDCONFIG32 set to yes, which is not correct
 .endif
 
-.if defined(USE_GETTEXT)
-.	if ${USE_GETTEXT:L} == "build"
-BUILD_DEPENDS+=	xgettext:${PORTSDIR}/devel/gettext
-.	elif ${USE_GETTEXT:L} == "run"
-RUN_DEPENDS+=	xgettext:${PORTSDIR}/devel/gettext
-.	elif ${USE_GETTEXT:L} == "yes"
-LIB_DEPENDS+=	intl:${PORTSDIR}/devel/gettext
-.	else
-IGNORE=			USE_GETTEXT can be only one of build, run, or yes
-.	endif
-.endif
-
 .if defined(USE_LINUX_PREFIX) && defined(USE_LDCONFIG)
 # we need ${LINUXBASE}/sbin/ldconfig
 USE_LINUX?=	yes
@@ -1898,11 +1859,7 @@ USE_LINUX=	${OVERRIDE_LINUX_BASE_PORT}
 LINUX_BASE_PORT=	${LINUXBASE}/bin/sh:${PORTSDIR}/emulators/linux_base-${USE_LINUX}
 .	else
 .		if ${USE_LINUX:L} == "yes"
-.			if ${OSVERSION} < 800076 || ${LINUX_OSRELEASE} == "2.4.2"
-LINUX_BASE_PORT=	${LINUXBASE}/etc/fedora-release:${PORTSDIR}/emulators/linux_base-fc4
-.			else
 LINUX_BASE_PORT=	${LINUXBASE}/etc/fedora-release:${PORTSDIR}/emulators/linux_base-f10
-.			endif
 .		else
 IGNORE=		cannot be built: there is no emulators/linux_base-${USE_LINUX}, perhaps wrong use of USE_LINUX or OVERRIDE_LINUX_BASE_PORT
 .		endif
@@ -1911,41 +1868,10 @@ IGNORE=		cannot be built: there is no emulators/linux_base-${USE_LINUX}, perhaps
 RUN_DEPENDS+=	${LINUX_BASE_PORT}
 .endif
 
-.if defined(USE_MOTIF)
-USE_XORG+=			xpm
-.if defined(WANT_LESSTIF)
-LIB_DEPENDS+=		Xm:${PORTSDIR}/x11-toolkits/lesstif
-NO_OPENMOTIF=		yes
-.endif
-.if !defined(NO_OPENMOTIF)
-LIB_DEPENDS+=		Xm.4:${PORTSDIR}/x11-toolkits/open-motif
-.endif
-.endif
-
-X_IMAKE_PORT=		${PORTSDIR}/devel/imake
-X_FONTSERVER_PORT=	${PORTSDIR}/x11-fonts/xfs
-X_VFBSERVER_PORT=	${PORTSDIR}/x11-servers/xorg-vfbserver
-X_NESTSERVER_PORT=	${PORTSDIR}/x11-servers/xorg-nestserver
-X_FONTS_ENCODINGS_PORT=	${PORTSDIR}/x11-fonts/encodings
-X_FONTS_MISC_PORT=	${PORTSDIR}/x11-fonts/xorg-fonts-miscbitmaps
-X_FONTS_100DPI_PORT=	${PORTSDIR}/x11-fonts/xorg-fonts-100dpi
-X_FONTS_75DPI_PORT=	${PORTSDIR}/x11-fonts/xorg-fonts-75dpi
-X_FONTS_CYRILLIC_PORT=	${PORTSDIR}/x11-fonts/xorg-fonts-cyrillic
-X_FONTS_TTF_PORT=	${PORTSDIR}/x11-fonts/xorg-fonts-truetype
-X_FONTS_TYPE1_PORT=	${PORTSDIR}/x11-fonts/xorg-fonts-type1
-X_FONTS_ALIAS_PORT=	${PORTSDIR}/x11-fonts/font-alias
-
-.if defined(USE_IMAKE)
-CONFIGURE_ENV+=		IMAKECPP="${CPP}"
-MAKE_ENV+=		IMAKECPP="${CPP}"
-MAKE_FLAGS?=		CC="${CC}" CXX="${CXX}"
-BUILD_DEPENDS+=		imake:${X_IMAKE_PORT}
-.endif
-
 .if defined(USE_DISPLAY) && !defined(DISPLAY)
-BUILD_DEPENDS+=	Xvfb:${X_VFBSERVER_PORT} \
-	${LOCALBASE}/lib/X11/fonts/misc/8x13O.pcf.gz:${X_FONTS_MISC_PORT} \
-	${LOCALBASE}/lib/X11/fonts/misc/fonts.alias:${X_FONTS_ALIAS_PORT} \
+BUILD_DEPENDS+=	Xvfb:${PORTSDIR}/x11-servers/xorg-vfbserver \
+	${LOCALBASE}/lib/X11/fonts/misc/8x13O.pcf.gz:${PORTSDIR}/x11-fonts/xorg-fonts-miscbitmaps \
+	${LOCALBASE}/lib/X11/fonts/misc/fonts.alias:${PORTSDIR}/x11-fonts/font-alias \
 	${LOCALBASE}/share/X11/xkb/rules/base:${PORTSDIR}/x11/xkeyboard-config \
 	xkbcomp:${PORTSDIR}/x11/xkbcomp
 .if !defined(PACKAGE_BUILDING)
@@ -1957,11 +1883,12 @@ MAKE_ENV+=		DISPLAY="localhost:1001"
 PKG_IGNORE_DEPENDS?=		'this_port_does_not_exist'
 
 _GL_gl_LIB_DEPENDS=		GL.1:${PORTSDIR}/graphics/libGL
+_GL_gl_USE_XORG=		glproto dri2proto
 _GL_glew_LIB_DEPENDS=		GLEW.1:${PORTSDIR}/graphics/glew
 _GL_glu_LIB_DEPENDS=		GLU.1:${PORTSDIR}/graphics/libGLU
+_GL_glu_USE_XORG=		glproto dri2proto
 _GL_glw_LIB_DEPENDS=		GLw.1:${PORTSDIR}/graphics/libGLw
 _GL_glut_LIB_DEPENDS=		glut.12:${PORTSDIR}/graphics/freeglut
-_GL_linux_RUN_DEPENDS=		${LINUXBASE}/usr/X11R6/lib/libGL.so.1:${PORTSDIR}/graphics/linux_dri
 
 .if defined(USE_GL)
 . if ${USE_GL:L} == "yes"
@@ -1972,6 +1899,8 @@ USE_GL=		glu
 		!defined(_GL_${_component}_RUN_DEPENDS)
 IGNORE=		uses unknown GL component
 .  else
+USE_XORG+=	${_GL_${_component}_USE_XORG}
+BUILD_DEPENDS+=	${_GL_${_component}_BUILD_DEPENDS}
 LIB_DEPENDS+=	${_GL_${_component}_LIB_DEPENDS}
 RUN_DEPENDS+=	${_GL_${_component}_RUN_DEPENDS}
 .  endif
@@ -2086,6 +2015,15 @@ RUN_DEPENDS+=	${_GL_${_component}_RUN_DEPENDS}
 USE_SUBMAKE=	yes
 .endif
 
+# Loading features
+.for f in ${_USES_POST}
+_f=${f:C/\:.*//g}
+.if ${_f} != ${f}
+${_f}_ARGS:=	${f:C/^[^\:]*\://g}
+.endif
+.include "${USESDIR}/${_f}.mk"
+.endfor
+
 .if defined(USE_XORG)
 # Add explicit X options to avoid problems with false positives in configure
 .if defined(GNU_CONFIGURE)
@@ -2105,7 +2043,7 @@ _USE_GHOSTSCRIPT=	${USE_GHOSTSCRIPT_RUN}
 _USE_GHOSTSCRIPT=	${USE_GHOSTSCRIPT}
 .endif
 
-.if defined(WITH_GHOSTSCRIPT_VER) && !empty(WITH_GHOSTSCRIPT_VER:M[89])
+.if defined(WITH_GHOSTSCRIPT_VER) && !empty(WITH_GHOSTSCRIPT_VER:M[789])
 _USE_GHOSTSCRIPT_DEFAULT_VER=	${WITH_GHOSTSCRIPT_VER}
 .else
 _USE_GHOSTSCRIPT_DEFAULT_VER=	9
@@ -2117,8 +2055,8 @@ _USE_GHOSTSCRIPT_PKGNAME_SUFFIX=
 .	else
 _USE_GHOSTSCRIPT_PKGNAME_SUFFIX=-nox11
 .	endif
-.	if !empty(_USE_GHOSTSCRIPT:M[89])
-_USE_GHOSTSCRIPT_VER=${_USE_GHOSTSCRIPT:M[89]}
+.	if !empty(_USE_GHOSTSCRIPT:M[789])
+_USE_GHOSTSCRIPT_VER=${_USE_GHOSTSCRIPT:M[789]}
 .	else
 _USE_GHOSTSCRIPT_VER=${_USE_GHOSTSCRIPT_DEFAULT_VER}
 .	endif
@@ -2128,7 +2066,7 @@ _USE_GHOSTSCRIPT_VER=${_USE_GHOSTSCRIPT_DEFAULT_VER}
 
 # Sanity check
 .if defined(_USE_GHOSTSCRIPT) && defined(WITH_GHOSTSCRIPT_VER)
-.	if empty(WITH_GHOSTSCRIPT_VER:M[89])
+.	if empty(WITH_GHOSTSCRIPT_VER:M[789])
 .		error You set an invalid value "${WITH_GHOSTSCRIPT_VER}" in WITH_GHOSTSCRIPT_VER.  Abort.
 .	elif ${_USE_GHOSTSCRIPT_VER} != ${WITH_GHOSTSCRIPT_VER}
 .		error You set WITH_GHOSTSCRIPT_VER as ${WITH_GHOSTSCRIPT_VER} but ${PKGNAME} requires print/ghostscript${_USE_GHOSTSCRIPT_VER}.  Abort.
@@ -2170,9 +2108,10 @@ DISTINFO_FILE?=		${MASTERDIR}/distinfo
 
 MAKE_FLAGS?=	-f
 MAKEFILE?=		Makefile
+MAKE_CMD?=		/usr/bin/make
 MAKE_ENV+=		PREFIX=${PREFIX} \
 			LOCALBASE=${LOCALBASE} \
-			MOTIFLIB="${MOTIFLIB}" LIBDIR="${LIBDIR}" \
+			LIBDIR="${LIBDIR}" \
 			CC="${CC}" CFLAGS="${CFLAGS}" \
 			CPP="${CPP}" CPPFLAGS="${CPPFLAGS}" \
 			LDFLAGS="${LDFLAGS}" \
@@ -2197,14 +2136,20 @@ CFLAGS:=	${CFLAGS:N-std=*} -std=${USE_CSTD}
 # Multiple make jobs support
 .if defined(DISABLE_MAKE_JOBS) || defined(MAKE_JOBS_UNSAFE)
 _MAKE_JOBS=		#
+MAKE_JOBS_NUMBER=	1
 .else
-.if defined(MAKE_JOBS_SAFE) || defined(FORCE_MAKE_JOBS)
-MAKE_JOBS_NUMBER?=	`${SYSCTL} -n kern.smp.cpus`
+.if defined(MAKE_JOBS_NUMBER)
+_MAKE_JOBS_NUMBER:=	${MAKE_JOBS_NUMBER}
+.else
+_MAKE_JOBS_NUMBER!=	${SYSCTL} -n kern.smp.cpus
+.endif
+.if defined(MAKE_JOBS_NUMBER_LIMIT) && ( ${MAKE_JOBS_NUMBER_LIMIT} < ${_MAKE_JOBS_NUMBER} )
+MAKE_JOBS_NUMBER=	${MAKE_JOBS_NUMBER_LIMIT}
+.else
+MAKE_JOBS_NUMBER=	${_MAKE_JOBS_NUMBER}
+.endif
 _MAKE_JOBS?=		-j${MAKE_JOBS_NUMBER}
-.if defined(FORCE_MAKE_JOBS) && !defined(MAKE_JOBS_SAFE)
-BUILD_FAIL_MESSAGE+=	"You have chosen to use multiple make jobs (parallelization) for all ports.  This port was not tested for this setting.  Please remove FORCE_MAKE_JOBS and retry the build before reporting the failure to the maintainer."
-.endif
-.endif
+BUILD_FAIL_MESSAGE+=	Try to set MAKE_JOBS_UNSAFE=yes and rebuild before reporting the failure to the maintainer.
 .endif
 
 # ccache support
@@ -2216,9 +2161,15 @@ BUILD_FAIL_MESSAGE+=	"You have chosen to use multiple make jobs (parallelization
 BUILD_DEPENDS+=		${LOCALBASE}/bin/ccache:${PORTSDIR}/devel/ccache
 .	endif
 
+_CCACHE_PATH=	${LOCALBASE}/libexec/ccache
+
 # Prepend the ccache dir into the PATH and setup ccache env
-MAKE_ENV+=		PATH=${LOCALBASE}/libexec/ccache:${PATH}
-CONFIGURE_ENV+=	PATH=${LOCALBASE}/libexec/ccache:${PATH}
+PATH:=	${_CCACHE_PATH}:${PATH}
+.if !${MAKE_ENV:M*PATH=*} && !${CONFIGURE_ENV:M*PATH=*}
+MAKE_ENV+=			PATH=${PATH}
+CONFIGURE_ENV+=		PATH=${PATH}
+.endif
+
 .	if defined(CCACHE_DIR)
 MAKE_ENV+=		CCACHE_DIR="${CCACHE_DIR}"
 CONFIGURE_ENV+=	CCACHE_DIR="${CCACHE_DIR}"
@@ -2228,6 +2179,7 @@ CONFIGURE_ENV+=	CCACHE_DIR="${CCACHE_DIR}"
 PTHREAD_CFLAGS?=
 PTHREAD_LIBS?=		-pthread
 
+FETCH_ENV?=		SSL_NO_VERIFY_PEER=1 SSL_NO_VERIFY_HOSTNAME=1
 FETCH_BINARY?=	/usr/bin/fetch
 FETCH_ARGS?=	-AFpr
 FETCH_REGET?=	1
@@ -2318,9 +2270,6 @@ MTREE_ARGS?=	-U ${MTREE_FOLLOWS_SYMLINKS} -f ${MTREE_FILE} -d -e -p
 READLINK_CMD?=	/usr/bin/readlink
 
 # Determine whether or not we can use rootly owner/group functions.
-.if !defined(UID)
-UID!=	${ID} -u
-.endif
 .if ${UID} == 0
 _BINOWNGRP=	-o ${BINOWN} -g ${BINGRP}
 _SHROWNGRP=	-o ${SHAREOWN} -g ${SHAREGRP}
@@ -2394,14 +2343,6 @@ TMPPLIST?=	${WRKDIR}/.PLIST.mktmp
 TMPPLIST_SORT?=	${WRKDIR}/.PLIST.mktmp.sorted
 TMPGUCMD?=	${WRKDIR}/.PLIST.gucmd
 
-.for _CATEGORY in ${CATEGORIES}
-PKGCATEGORY?=	${_CATEGORY}
-.endfor
-_PORTDIRNAME=	${.CURDIR:T}
-PORTDIRNAME?=	${_PORTDIRNAME}
-PKGORIGIN?=		${PKGCATEGORY}/${PORTDIRNAME}
-
-
 .if !defined(PKG_ARGS)
 PKG_ARGS=		-v -c -${COMMENT:Q} -d ${DESCR} -f ${TMPPLIST} -p ${PREFIX} -P "`cd ${.CURDIR} && ${MAKE} actual-package-depends | ${GREP} -v -E ${PKG_IGNORE_DEPENDS} | ${SORT} -u -t : -k 2`" ${EXTRA_PKG_ARGS} $${_LATE_PKG_ARGS}
 .if !defined(NO_MTREE)
@@ -2429,10 +2370,9 @@ PKG_SUFX?=		.tbz
 # where pkg_add records its dirty deeds.
 PKG_DBDIR?=		/var/db/pkg
 
-MOTIFLIB?=	-L${LOCALBASE}/lib -lXm -lXp
-
 ALL_TARGET?=		all
 INSTALL_TARGET?=	install
+INSTALL_TARGET+=	${LATE_INSTALL_ARGS}
 
 # Integrate with the license auditing framework
 .if !defined (DISABLE_LICENSES)
@@ -2806,18 +2746,12 @@ patch-sites: patch-sites-DEFAULT
 
 .if defined(IGNOREFILES)
 .if !defined(CKSUMFILES)
-CKSUMFILES!=	\
-	for file in ${ALLFILES}; do \
-		ignore=0; \
-		for tmp in ${IGNOREFILES}; do \
-			if [ "$$file" = "$$tmp" ]; then \
-				ignore=1; \
-			fi; \
-		done; \
-		if [ "$$ignore" = 0 ]; then \
-			${ECHO_CMD} "$$file"; \
-		fi; \
-	done
+.  for _f in ${ALLFILES}
+.    if ! ${IGNOREFILES:M${_f}}
+CKSUMFILES+=	${_f}
+.   endif
+.  endfor
+.  undef _f
 .endif
 .else
 CKSUMFILES=		${ALLFILES}
@@ -2965,6 +2899,11 @@ MANEXT=	.gz
 .endif
 
 .if (defined(MLINKS) || defined(_MLINKS_PREPEND)) && !defined(_MLINKS)
+
+.if defined(.PARSEDIR)
+_MLINKS=	 ${_MLINKS_PREPEND} \
+		 ${MANLANG:S,^,man/,:S,/"",,:@m@${MLINKS:@p@${MAN${p:E:C/(.).*/\1/g}PREFIX}/$m/man${p:E:C/(.).*/\1/g}/$p${MANEXT}@}@}
+.else
 __pmlinks!=	${ECHO_CMD} '${MLINKS:S/	/ /}' | ${AWK} \
  '{ if (NF % 2 != 0) { print "broken"; exit; } \
 	for (i=1; i<=NF; i++) { \
@@ -2990,6 +2929,7 @@ _MLINKS+=	${___pmlinks:S// /g}
 .endfor
 .endfor
 .endfor
+.endif
 .endif
 _COUNT=0
 .for ___tpmlinks in ${_MLINKS}
@@ -3603,31 +3543,34 @@ patch-dos2unix:
 do-patch:
 .if defined(PATCHFILES)
 	@${ECHO_MSG} "===>  Applying distribution patches for ${PKGNAME}"
-	@(cd ${_DISTDIR}; \
-	  for i in ${_PATCHFILES}; do \
+	@set -e ; \
+	(cd ${_DISTDIR} ; \
+	for i  in ${_PATCHFILES}; do \
 		if [ ${PATCH_DEBUG_TMP} = yes ]; then \
 			${ECHO_MSG} "===>   Applying distribution patch $$i" ; \
-		fi; \
+		fi ; \
 		case $$i in \
-			*.Z|*.gz) \
-				${GZCAT} $$i | ${PATCH} ${PATCH_DIST_ARGS}; \
-				;; \
-			*.bz2) \
-				${BZCAT} $$i | ${PATCH} ${PATCH_DIST_ARGS}; \
-				;; \
-			*) \
-				${PATCH} ${PATCH_DIST_ARGS} < $$i; \
-				;; \
-		esac; \
-	  done)
+		*.Z|*.gz) ${GZCAT} $$i ;; \
+		*.bz2) ${BZCAT} $$i ;; \
+		*.xz) ${XZCAT} $$i ;; \
+		*) ${CAT} $$i ;; \
+		esac | ${PATCH} ${PATCH_DIST_ARGS} ; \
+	done )
 .endif
 .if defined(EXTRA_PATCHES)
-	@for i in ${EXTRA_PATCHES}; do \
-		${ECHO_MSG} "===>  Applying extra patch $$i"; \
-		${PATCH} ${PATCH_ARGS} < $$i; \
+	@set -e ; \
+	for i in ${EXTRA_PATCHES}; do \
+		${ECHO_MSG} "===>  Applying extra patch $$i" ; \
+		case $$i in \
+		*.Z|*.gz) ${GZCAT} $$i ;; \
+		*.bz2) ${BZCAT} $$i ;; \
+		*.xz) ${XZCAT} $$i ;; \
+		*) ${CAT} $$i ;; \
+		esac | ${PATCH} ${PATCH_ARGS} ; \
 	done
 .endif
-	@if [ -d ${PATCHDIR} ]; then \
+	@set -e ;\
+	if [ -d ${PATCHDIR} ]; then \
 		if [ "`${ECHO_CMD} ${PATCHDIR}/patch-*`" != "${PATCHDIR}/patch-*" ]; then \
 			${ECHO_MSG} "===>  Applying ${OPSYS} patches for ${PKGNAME}" ; \
 			PATCHES_APPLIED="" ; \
@@ -3723,32 +3666,19 @@ do-configure:
 			 ${FALSE}; \
 		fi)
 .endif
-.if defined(USE_IMAKE)
-	@(cd ${CONFIGURE_WRKSRC}; ${SETENV} ${MAKE_ENV} ${XMKMF})
-.endif
 .endif
 
 # Build
 
 .if !target(do-build)
 do-build:
-.if defined(USE_GMAKE)
-	@(cd ${BUILD_WRKSRC}; if ! ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${_MAKE_JOBS} ${MAKE_ARGS} ${ALL_TARGET}; then \
-		if [ x != x${BUILD_FAIL_MESSAGE} ] ; then \
+	@(cd ${BUILD_WRKSRC}; if ! ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} ${MAKEFILE} ${_MAKE_JOBS} ${MAKE_ARGS} ${ALL_TARGET}; then \
+		if [ -n "${BUILD_FAIL_MESSAGE}" ] ; then \
 			${ECHO_MSG} "===> Compilation failed unexpectedly."; \
-			(${ECHO_CMD} ${BUILD_FAIL_MESSAGE}) | ${FMT} 75 79 ; \
+			(${ECHO_CMD} "${BUILD_FAIL_MESSAGE}") | ${FMT} 75 79 ; \
 			fi; \
 		${FALSE}; \
 		fi)
-.else
-	@(cd ${BUILD_WRKSRC}; if ! ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ${_MAKE_JOBS} ${MAKE_ARGS} ${ALL_TARGET}; then \
-		if [ x != x${BUILD_FAIL_MESSAGE} ] ; then \
-			${ECHO_MSG} "===> Compilation failed unexpectedly."; \
-			(${ECHO_CMD} ${BUILD_FAIL_MESSAGE}) | ${FMT} 75 79 ; \
-			fi; \
-		${FALSE}; \
-		fi)
-.endif
 .endif
 
 # Check conflicts
@@ -3869,17 +3799,7 @@ check-install-conflicts:
 
 .if !target(do-install)
 do-install:
-.if defined(USE_GMAKE)
-	@(cd ${INSTALL_WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET})
-.if defined(USE_IMAKE) && !defined(NO_INSTALL_MANPAGES)
-	@(cd ${INSTALL_WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} install.man)
-.endif
-.else # !defined(USE_GMAKE)
-	@(cd ${INSTALL_WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET})
-.if defined(USE_IMAKE) && !defined(NO_INSTALL_MANPAGES)
-	@(cd ${INSTALL_WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} install.man)
-.endif
-.endif
+	@(cd ${INSTALL_WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET})
 .endif
 
 # Package
@@ -4811,7 +4731,8 @@ makesum: check-checksum-algorithms
 
 .if !target(checksum)
 checksum: fetch check-checksum-algorithms
-	@${checksum_init} \
+	@set -e ; \
+	${checksum_init} \
 	if [ -f ${DISTINFO_FILE} ]; then \
 		cd ${DISTDIR}; OK="";\
 		for file in ${_CKSUMFILES}; do \
@@ -5002,7 +4923,7 @@ _INSTALL_DEPENDS=	\
 ${deptype:L}-depends:
 .if defined(${deptype}_DEPENDS)
 .if !defined(NO_DEPENDS)
-	@for i in `${ECHO_CMD} "${${deptype}_DEPENDS}"`; do \
+	@set -e ; for i in `${ECHO_CMD} "${${deptype}_DEPENDS}"`; do \
 		prog=$${i%%:*}; \
 		if [ -z "$$prog" ]; then \
 			${ECHO_MSG} "Error: there is an empty port dependency in ${deptype}_DEPENDS."; \
@@ -5100,7 +5021,34 @@ ${deptype:L}-depends:
 
 lib-depends:
 .if defined(LIB_DEPENDS) && !defined(NO_DEPENDS)
-	@for i in ${LIB_DEPENDS}; do \
+	@set -e ; \
+	for i in ${LIB_DEPENDS:M*.so*\:*}; do \
+		lib=$${i%%:*} ; \
+		dir=$${i#*:}  ; \
+		target="${DEPENDS_TARGET}"; \
+		depends_args="${DEPENDS_ARGS}"; \
+		${ECHO_MSG}  -n "===>   ${PKGNAME} depends on shared library: $${lib}" ; \
+		found=0 ; \
+		dirs="${LIB_DIRS} `${CAT} ${LOCALBASE}/libdata/ldconfig/* 2>/dev/null || : `" ; \
+		for libdir in $$dirs; do \
+			test -f $${libdir}/$${lib} || continue; \
+			if [ -x /usr/bin/file ]; then \
+				[ `file -b -L --mime-type $${libdir}/$${lib}` = "application/x-sharedlib" ] || continue ; \
+			fi ; \
+			found=1 ; \
+			${ECHO_MSG} " - found"; \
+		done ; \
+		if [ $${found} -eq 0 ]; then \
+			${ECHO_MSG} " - not found"; \
+			${ECHO_MSG} "===>    Verifying for $$lib in $$dir"; \
+			if [ ! -d "$$dir" ] ; then \
+				${ECHO_MSG} "    => No directory for $$lib.  Skipping.."; \
+			else \
+				${_INSTALL_DEPENDS} \
+			fi ; \
+		fi ; \
+	done
+	@set -e ; for i in ${LIB_DEPENDS:N*.so*\:*}; do \
 		lib=$${i%%:*}; \
 		pattern="`${ECHO_CMD} $$lib | ${SED} -E -e 's/\./\\\\./g' -e 's/(\\\\)?\+/\\\\+/g'`"\
 		dir=$${i#*:}; \
@@ -6076,6 +6024,7 @@ D4P_ENV=	PKGNAME="${PKGNAME}" \
 		OPTIONS_SINGLE="${OPTIONS_SINGLE}" \
 		OPTIONS_RADIO="${OPTIONS_RADIO}" \
 		OPTIONS_GROUP="${OPTIONS_GROUP}" \
+		NEW_OPTIONS="${NEW_OPTIONS}" \
 		DIALOG4PORTS="${DIALOG4PORTS}" \
 		PREFIX="${PREFIX}" \
 		LOCALBASE="${LOCALBASE}" \
@@ -6090,37 +6039,17 @@ D4P_ENV+=	PKGHELP="${PKGHELP}"
 .for opt in ${ALL_OPTIONS}
 D4P_ENV+=	 ${opt}_DESC=""${${opt}_DESC:Q}""
 .endfor
-.for multi in ${OPTIONS_MULTI}
-D4P_ENV+=	OPTIONS_MULTI_${multi}="${OPTIONS_MULTI_${multi}}" \
-		${multi}_DESC=""${${multi}_DESC:Q}""
-.  for opt in ${OPTIONS_MULTI_${multi}}
+.for otype in MULTI GROUP SINGLE RADIO
+.  for m in ${OPTIONS_${otype}}
+D4P_ENV+=	OPTIONS_${otype}_${m}="${OPTIONS_${otype}_${m}}" \
+		${m}_DESC=""${${m}_DESC:Q}""
+.    for opt in ${OPTIONS_${otype}_${m}}
 D4P_ENV+=	 ${opt}_DESC=""${${opt}_DESC:Q}""
+.    endfor
 .  endfor
 .endfor
-.for single in ${OPTIONS_SINGLE}
-D4P_ENV+=	OPTIONS_SINGLE_${single}="${OPTIONS_SINGLE_${single}}" \
-		${single}_DESC=""${${single}_DESC:Q}""
-.  for opt in ${OPTIONS_SINGLE_${single}}
-D4P_ENV+=	 ${opt}_DESC=""${${opt}_DESC:Q}""
-.  endfor
-.endfor
-.for radio in ${OPTIONS_RADIO}
-D4P_ENV+=	OPTIONS_RADIO_${radio}="${OPTIONS_RADIO_${radio}}" \
-		${radio}_DESC=""${${radio}_DESC:Q}""
-.  for opt in ${OPTIONS_RADIO_${radio}}
-D4P_ENV+=	 ${opt}_DESC=""${${opt}_DESC:Q}""
-.  endfor
-.endfor
-.for group in ${OPTIONS_GROUP}
-D4P_ENV+=	OPTIONS_GROUP_${group}="${OPTIONS_GROUP_${group}}" \
-		${group}_DESC=""${${group}_DESC:Q}""
-.  for opt in ${OPTIONS_GROUP_${group}}
-D4P_ENV+=	 ${opt}_DESC=""${${opt}_DESC:Q}""
-.  endfor
-.endfor
-.undef multi
-.undef single
-.undef group
+.undef m
+.undef otype
 .undef opt
 .endif # pre-config
 
@@ -6130,14 +6059,21 @@ do-config:
 	@${ECHO_MSG} "===> No options to configure"
 .else
 .if ${UID} != 0 && !defined(INSTALL_AS_USER)
-	@optionsdir=${OPTIONSFILE}; optionsdir=$${optionsdir%/*}; \
+	@optionsdir=${OPTIONS_FILE}; optionsdir=$${optionsdir%/*}; \
+	oldoptionsdir=${OPTIONSFILE}; oldoptionsdir=$${oldoptionsdir%/*}; \
 	${ECHO_MSG} "===>  Switching to root credentials to create $${optionsdir}"; \
-	(${SU_CMD} "${SH} -c \"${MKDIR} $${optionsdir} 2> /dev/null\"") || \
+	(${SU_CMD} "${SH} -c \"if [ -d $${oldoptionsdir} -a ! -d $${optionsdir} ]; then ${MV} $${oldoptionsdir} $${optionsdir}; elif [ -d $${oldoptionsdir} -a -d $${optionsdir} ]; then ${RM} -rf $${oldoptionsdir} ; fi ; ${MKDIR} $${optionsdir} 2> /dev/null\"") || \
 		(${ECHO_MSG} "===> Cannot create $${optionsdir}, check permissions"; exit 1); \
 	${ECHO_MSG} "===>  Returning to user credentials"
 .else
-	@(optionsdir=${OPTIONSFILE}; optionsdir=$${optionsdir%/*}; \
-	${MKDIR} $${optionsdir} 2> /dev/null) || \
+	@optionsdir=${OPTIONS_FILE}; optionsdir=$${optionsdir%/*}; \
+	oldoptionsdir=${OPTIONSFILE}; oldoptionsdir=$${oldoptionsdir%/*}; \
+	if [ -d $${oldoptionsdir} -a ! -d $${optionsdir} ]; then \
+		${MV} $${oldoptionsdir} $${optionsdir}; \
+	elif [ -d $${oldoptionsdir} -a -d $${optionsdir} ]; then \
+		${RM} -rf $${oldoptionsdir} ; \
+	fi ; \
+	${MKDIR} $${optionsdir} 2> /dev/null || \
 	(${ECHO_MSG} "===> Cannot create $${optionsdir}, check permissions"; exit 1)
 .endif
 	@TMPOPTIONSFILE=$$(mktemp -t portoptions); \
@@ -6168,11 +6104,11 @@ do-config:
 		fi; \
 	done; \
 	if [ ${UID} != 0 -a "x${INSTALL_AS_USER}" = "x" ]; then \
-		${ECHO_MSG} "===>  Switching to root credentials to write ${OPTIONSFILE}"; \
-		${SU_CMD} "${CAT} $${TMPOPTIONSFILE} > ${OPTIONSFILE}"; \
+		${ECHO_MSG} "===>  Switching to root credentials to write ${OPTIONS_FILE}"; \
+		${SU_CMD} "${CAT} $${TMPOPTIONSFILE} > ${OPTIONS_FILE}"; \
 		${ECHO_MSG} "===>  Returning to user credentials"; \
 	else \
-		${CAT} $${TMPOPTIONSFILE} > ${OPTIONSFILE}; \
+		${CAT} $${TMPOPTIONSFILE} > ${OPTIONS_FILE}; \
 	fi; \
 	${RM} -f $${TMPOPTIONSFILE}
 	@cd ${.CURDIR} && ${MAKE} sanity-config
@@ -6197,96 +6133,48 @@ config-recursive:
 .endif # config-recursive
 
 .if !target(config-conditional)
-config-conditional: pre-config
-.if defined(COMPLETE_OPTIONS_LIST) && !defined(NO_DIALOG)
-.  if !defined(_FILE_COMPLETE_OPTIONS_LIST) || ${COMPLETE_OPTIONS_LIST:O} != ${_FILE_COMPLETE_OPTIONS_LIST:O}
-	@cd ${.CURDIR} && ${MAKE} do-config;
-.  endif
+config-conditional:
+.if !empty(NEW_OPTIONS)
+	@cd ${.CURDIR} && ${MAKE} config;
 .endif
 .endif # config-conditional
 
 .if !target(showconfig)
 .include "${PORTSDIR}/Mk/bsd.options.desc.mk"
+MULTI_EOL=	: you have to choose at least one of them
+SINGLE_EOL=	: you have to select exactly one of them
+RADIO_EOL=	: you can only select none or one of them
 showconfig:
-.if !empty(ALL_OPTIONS) || !empty(OPTIONS_SINGLE) || !empty(OPTIONS_MULTI) || !empty(OPTIONS_RADIO) || !empty(OPTIONS_GROUP)
+.if !empty(COMPLETE_OPTIONS_LIST)
 	@${ECHO_MSG} "===> The following configuration options are available for ${PKGNAME}":
 .for opt in ${ALL_OPTIONS}
-.  if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "     ${opt}=off"
-.  else
-	@${ECHO_MSG} -n "     ${opt}=on"
-.  endif
+	@[ -z "${PORT_OPTIONS:M${opt}}" ] || match="on" ; ${ECHO_MSG} -n "     ${opt}=$${match:-off}"
 .  if !empty(${opt}_DESC)
 	@${ECHO_MSG} -n ": "${${opt}_DESC:Q}
 .  endif
 	@${ECHO_MSG} ""
 .endfor
+
 #multi and conditional multis
-.for multi in ${OPTIONS_MULTI}
-	@${ECHO_MSG} "====> Options available for the multi ${multi}: you have to choose at least one of them"
-.  for opt in ${OPTIONS_MULTI_${multi}}
-.    if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "     ${opt}=off"
+.for otype in MULTI GROUP SINGLE RADIO
+.  for m in ${OPTIONS_${otype}}
+.    if empty(${m}_DESC)
+		@${ECHO_MSG} "====> Options available for the ${otype:L} ${m}${${otype}_EOL}"
 .    else
-	@${ECHO_MSG} -n "     ${opt}=on"
+		@${ECHO_MSG} "====> ${${m}_DESC}${${otype}_EOL}"
 .    endif
-.    if !empty(${opt}_DESC)
+.    for opt in ${OPTIONS_${otype}_${m}}
+	@[ -z "${PORT_OPTIONS:M${opt}}" ] || match="on" ; ${ECHO_MSG} -n "     ${opt}=$${match:-off}"
+.      if !empty(${opt}_DESC)
 	@${ECHO_MSG} -n ": "${${opt}_DESC:Q}
-.    endif
+.      endif
 	@${ECHO_MSG} ""
-.  endfor
-.endfor
-#single and conditional singles
-
-.for single in ${OPTIONS_SINGLE}
-	@${ECHO_MSG} "====> Options available for the single ${single}: you have to select exactly one of them"
-.  for opt in ${OPTIONS_SINGLE_${single}}
-.    if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "     ${opt}=off"
-.    else
-	@${ECHO_MSG} -n "     ${opt}=on"
-.    endif
-.    if !empty(${opt}_DESC)
-	@${ECHO_MSG} -n ": "${${opt}_DESC:Q}
-.    endif
-	@${ECHO_MSG} ""
+.    endfor
 .  endfor
 .endfor
 
-.for radio in ${OPTIONS_RADIO}
-	@${ECHO_MSG} "====> Options available for the radio ${radio}: you can only select none or one of them"
-.  for opt in ${OPTIONS_RADIO_${radio}}
-.    if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "     ${opt}=off"
-.    else
-	@${ECHO_MSG} -n "     ${opt}=on"
-.    endif
-.    if !empty(${opt}_DESC)
-	@${ECHO_MSG} -n ": "${${opt}_DESC:Q}
-.    endif
-	@${ECHO_MSG} ""
-.  endfor
-.endfor
-
-.for group in ${OPTIONS_GROUP}
-	@${ECHO_MSG} "====> Options available for the group ${group}"
-.  for opt in ${OPTIONS_GROUP_${group}}
-.    if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "     ${opt}=off"
-.    else
-	@${ECHO_MSG} -n "     ${opt}=on"
-.    endif
-.    if !empty(${opt}_DESC)
-	@${ECHO_MSG} -n ": "${${opt}_DESC:Q}
-.    endif
-	@${ECHO_MSG} ""
-.  endfor
-.endfor
-
-.undef multi
-.undef single
-.undef radio
-.undef group
+.undef otype
+.undef m
 .undef opt
 	@${ECHO_MSG} "===> Use 'make config' to modify these settings"
 .endif
@@ -6314,6 +6202,19 @@ rmconfig:
 		${RM} -f ${OPTIONSFILE}; \
 		${RMDIR} $${optionsdir} 2>/dev/null || return 0; \
 	fi
+.endif
+.if exists(${OPTIONS_FILE})
+	-@${ECHO_MSG} "===> Removing user-configured options for ${PKGNAME}"; \
+	optionsdir=${OPTIONS_FILE}; optionsdir=$${optionsdir%/*}; \
+	if [ ${UID} != 0 -a "x${INSTALL_AS_USER}" = "x" ]; then \
+		${ECHO_MSG} "===> Switching to root credentials to remove ${OPTIONS_FILE} and $${optionsdir}"; \
+		${SU_CMD} "${RM} -f ${OPTIONS_FILE} ; \
+			${RMDIR} $${optionsdir}"; \
+		${ECHO_MSG} "===> Returning to user credentials"; \
+	else \
+		${RM} -f ${OPTIONS_FILE}; \
+		${RMDIR} $${optionsdir} 2>/dev/null || return 0; \
+	fi
 .else
 	@${ECHO_MSG} "===> No user-specified options configured for ${PKGNAME}"
 .endif
@@ -6328,62 +6229,29 @@ rmconfig-recursive:
 .endif # rmconfig-recursive
 
 .if !target(pretty-print-config)
+MULTI_START=	[
+MULTI_END=	]
+GROUP_START=	[
+GROUP_END=	]
+SINGLE_START=	(
+SINGLE_END=	)
+RADIO_START=	(
+RADIO_END=	)
 pretty-print-config:
 .for opt in ${ALL_OPTIONS}
-.  if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "-${opt} "
-.  else
-	@${ECHO_MSG} -n "+${opt} "
-.  endif
+	@[ -z "${PORT_OPTIONS:M${opt}}" ] || match="+" ; ${ECHO_MSG} -n "$${match:--}${opt} "
 .endfor
-.for multi in ${OPTIONS_MULTI}
-	@${ECHO_MSG} -n "${multi}[ "
-.  for opt in ${OPTIONS_MULTI_${multi}}
-.    if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "-${opt} "
-.    else
-	@${ECHO_MSG} -n "+${opt} "
-.    endif
+.for otype in MULTI GROUP SINGLE RADIO
+.  for m in ${OPTIONS_${otype}}
+	@${ECHO_MSG} -n "${m}${${otype}_START} "
+.    for opt in ${OPTIONS_${otype}_${m}}
+		@[ -z "${PORT_OPTIONS:M${opt}}" ] || match="+" ; ${ECHO_MSG} -n "$${match:--}${opt} "
+.    endfor
+	@${ECHO_MSG} -n "${${otype}_END} "
 .  endfor
-	@${ECHO_MSG} -n "] "
 .endfor
-.for single in ${OPTIONS_SINGLE}
-	@${ECHO_MSG} -n "${single}( "
-.  for opt in ${OPTIONS_SINGLE_${single}}
-.    if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "-${opt} "
-.    else
-	@${ECHO_MSG} -n "+${opt} "
-.    endif
-.  endfor
-	@${ECHO_MSG} -n ") "
-.endfor
-.for radio in ${OPTIONS_RADIO}
-	@${ECHO_MSG} -n "${radio}( "
-.  for opt in ${OPTIONS_RADIO_${radio}}
-.    if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "-${opt} "
-.    else
-	@${ECHO_MSG} -n "+${opt} "
-.    endif
-.  endfor
-	@${ECHO_MSG} -n ") "
-.endfor
-.for group in ${OPTIONS_GROUP}
-	@${ECHO_MSG} -n "${group}[ "
-.  for opt in ${OPTIONS_GROUP_${group}}
-.    if empty(PORT_OPTIONS:M${opt})
-	@${ECHO_MSG} -n "-${opt} "
-.    else
-	@${ECHO_MSG} -n "+${opt} "
-.    endif
-.  endfor
-	@${ECHO_MSG} -n "] "
-.endfor
-.undef multi
-.undef single
-.undef radio
-.undef group
+.undef otype
+.undef m
 .undef opt
 	@${ECHO_MSG} ""
 .endif # pretty-print-config
@@ -6423,7 +6291,7 @@ desktop-categories:
 			lang)			c="Development"					;; \
 			lisp)			c="Development"					;; \
 			mail)			c="Office Email"				;; \
-			mate)			c="MATE GTK"					;; \
+			mate)			c="MATE GTK"				;; \
 			math)			c="Education Science Math"		;; \
 			mbone)			c="Network AudioVideo"			;; \
 			multimedia)		c="AudioVideo"					;; \
