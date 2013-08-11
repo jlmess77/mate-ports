@@ -68,17 +68,17 @@ MASTER_SITE_APACHE+= \
 	http://www.apache.org/dist/%SUBDIR%/ \
 	http://archive.apache.org/dist/%SUBDIR%/ \
 	http://ftp.twaren.net/Unix/Web/apache/%SUBDIR%/ \
-	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.apache.org/dist/%SUBDIR%/ \
+	http://apache.mirror.uber.com.au/%SUBDIR%/ \
+	http://apache.spd.co.il/%SUBDIR%/ \
+	http://ftp.mirrorservice.org/sites/ftp.apache.org/%SUBDIR/ \
+	http://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.apache.org/dist/%SUBDIR%/ \
 	ftp://mir1.ovh.net/ftp.apache.org/dist/%SUBDIR%/ \
 	ftp://ftp.forthnet.gr/pub/www/apache/%SUBDIR%/ \
 	ftp://xenia.sote.hu/pub/mirrors/www.apache.org/%SUBDIR%/ \
 	ftp://ftp.heanet.ie/mirrors/www.apache.org/dist/%SUBDIR%/ \
-	ftp://ftp.rhnet.is/pub/apache/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/apache/&,} \
-	ftp://ftp.task.gda.pl/pub/www/apache/dist/%SUBDIR%/ \
-	ftp://sunsite.icm.edu.pl/pub/www/apache/dist/%SUBDIR%/ \
-	ftp://apache.rinet.ru/pub/mirror/apache.org/dist/%SUBDIR%/ \
-	ftp://ftp.sunet.se/pub/www/servers/apache/dist/%SUBDIR%/
+	ftp://ftp.sunet.se/pub/www/servers/apache/dist/%SUBDIR%/ \
+	http://mirrors.ircam.fr/pub/apache/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_APACHE_COMMONS_BINARIES)
@@ -218,18 +218,13 @@ MASTER_SITE_EASYSW+= \
 
 .if !defined(IGNORE_MASTER_SITE_ECLIPSE)
 MASTER_SITE_ECLIPSE+= \
+	ftp://sunsite.informatik.rwth-aachen.de/pub/mirror/eclipse.org/%SUBDIR%/ \
 	ftp://sunsite.informatik.rwth-aachen.de/pub/mirror/eclipse/%SUBDIR%/ \
-	http://sunsite.informatik.rwth-aachen.de/eclipse/downloads/drops/%SUBDIR%/ \
-	ftp://ftp.tu-clausthal.de/pub/eclipse/downloads/drops/%SUBDIR%/ \
 	http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/%SUBDIR%/ \
-	ftp://ftp.unixag-zw.fh-kl.de/pub/mirrors/eclipse/drops/%SUBDIR%/ \
-	http://eclipse.teccomm.les.inf.puc-rio.br/downloads/drops/%SUBDIR%/ \
-	http://mirrors.ibiblio.org/pub/mirrors/eclipse/eclipse/downloads/drops/%SUBDIR%/ \
-	http://www.eclipse.ps.pl/downloads/drops/%SUBDIR%/ \
-	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,misc/eclipse/downloads/drops/&,} \
+	ftp://sunsite.cnlab-switch.ch/mirror/eclipse/%SUBDIR%/ \
 	ftp://sunsite.cnlab-switch.ch/mirror/eclipse/eclipse/downloads/drops/%SUBDIR%/ \
-	http://download.eclipse.org/eclipse/downloads/drops/%SUBDIR%/ \
-	ftp://download.eclipse.org/%SUBDIR%/
+	ftp://sunsite.cnlab-switch.ch/mirror/eclipse/eclipse/downloads/drops4/%SUBDIR%/ \
+	http://eclipse.org/downloads/download.php?mirror_id=96&r=1&file=/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_EXIM)
@@ -524,7 +519,9 @@ MASTER_SITE_GENTOO+= \
 # GH_PROJECT    - name of the project on GitHub
 #                 default: ${PORTNAME}
 #
-# GH_TAGNAME    - name of the tag to download (master, 2.0.1, ...)
+# GH_TAGNAME    - name of the tag to download (2.0.1, hash, ...)
+#                 Using the name of a branch here is incorrect. It is
+#                 possible to do GH_TAGNAME=${GH_COMMIT} to do a snapshot
 #                 default: ${DISTVERSION}
 #
 # GH_COMMIT     - first 7 digits of the commit that generated GH_TAGNAME
@@ -532,8 +529,13 @@ MASTER_SITE_GENTOO+= \
 #                 default: not set, mandatory
 #
 .if defined(USE_GITHUB)
-MASTER_SITE_GITHUB+=		https://nodeload.github.com/%SUBDIR% \
-				http://nodeload.github.com/%SUBDIR%
+.if defined(GH_TAGNAME) && ${GH_TAGNAME} == master
+IGNORE?=	Using master as GH_TAGNAME is invalid. \
+		Must use a tag or commit hash so the upstream does\
+		not "reroll" as soon as the branch is updated
+.endif
+MASTER_SITE_GITHUB+=		https://codeload.github.com/%SUBDIR% \
+				http://codeload.github.com/%SUBDIR%
 MASTER_SITE_GITHUB_CLOUD+=	http://cloud.github.com/downloads/%SUBDIR%
 .if !defined(MASTER_SITES) || !${MASTER_SITES:MGH} && !${MASTER_SITES:MGHC}
 MASTER_SITES+=	GH GHC
@@ -736,6 +738,7 @@ MASTER_SITE_KDE+= \
 
 .if !defined(IGNORE_MASTER_SITE_LOGILAB)
 MASTER_SITE_LOGILAB+= \
+	http://download.logilab.org/pub/%SUBDIR%/ \
 	http://ftp.logilab.org/pub/%SUBDIR%/ \
 	ftp://ftp.logilab.org/pub/%SUBDIR%/ \
 	ftp://ftp.logilab.fr/pub/%SUBDIR%/
@@ -1057,10 +1060,16 @@ MASTER_SITE_QMAIL+= \
 
 .if !defined(IGNORE_MASTER_SITE_QT)
 MASTER_SITE_QT+= \
-	http://releases.qt-project.org/qt4/source/%SUBDIR%/ \
-	ftp://ftp.heanet.ie/mirrors/trolltech/pub/qt/source/%SUBDIR%/ \
-	http://download.qt.nokia.com/qt/source/%SUBDIR%/ \
-	ftp://ftp.trolltech.com/qt/source/%SUBDIR%/
+	http://download.qt-project.org/%SUBDIR%/ \
+	http://master.qt-project.org/%SUBDIR%/ \
+	http://www.mirrorservice.org/sites/download.qt-project.org/%SUBDIR%/ \
+	http://www.nic.funet.fi/pub/mirrors/download.qt-project.org/%SUBDIR%/ \
+	http://qtmirror.ics.com/pub/qtproject/%SUBDIR%/ \
+	http://anychimirror101.mirrors.tds.net/pub/Qt/%SUBDIR%/ \
+	http://www.las.ic.unicamp.br/pub/qtproject/%SUBDIR%/ \
+	http://linorg.usp.br/Qt/%SUBDIR%/ \
+	http://ftp.jaist.ac.jp/pub/qtproject/%SUBDIR%/ \
+	http://mirrors.neusoft.edu.cn/qt/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_REDHAT_LINUX)
@@ -1453,8 +1462,8 @@ MASTER_SITE_XORG+= \
 
 .if !defined(IGNORE_MASTER_SITE_KERNEL_ORG)
 MASTER_SITE_KERNEL_ORG+= \
-	http://kernel.org/pub/%SUBDIR%/ \
-	http://ftp.ntu.edu.tw/%SUBDIR%/ \
+	https://www.kernel.org/pub/%SUBDIR%/ \
+	ftp://ftp.ntu.edu.tw/%SUBDIR%/ \
 	http://ftp.sunet.se/pub/Linux/kernel.org/%SUBDIR%/ \
 	http://ftp.yandex.ru/pub/%SUBDIR%/ \
 	http://ftp.heanet.ie/pub/%SUBDIR%/ \
@@ -1485,7 +1494,6 @@ MASTER_SITES_SUBDIRS=	\
 			GNU:${PORTNAME} \
 			HORDE:${PORTNAME} \
 			LOGILAB:${PORTNAME} \
-			MATE:${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/} \
 			MOZDEV:${PORTNAME:L} \
 			NETLIB:${PORTNAME} \
 			PERL_CPAN:${PORTNAME:C/-.*//} \
