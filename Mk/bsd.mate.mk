@@ -164,7 +164,7 @@ panel_RUN_DEPENDS=	${panel_DETECT}:${PORTSDIR}/x11/mate-panel
 
 polkit_DETECT=		${LOCALBASE}/libdata/pkgconfig/polkit-gtk-mate-1.pc
 polkit_BUILD_DEPENDS=	${polkit_DETECT}:${PORTSDIR}/sysutils/mate-polkit
-polkit_LIB_DEPENDS=	libpolkit-gtk-mate.so:${PORTSDIR}/sysutils/mate-polkit
+polkit_LIB_DEPENDS=	libpolkit-gtk-mate-1.so:${PORTSDIR}/sysutils/mate-polkit
 polkit_RUN_DEPENDS=	${polkit_DETECT}:${PORTSDIR}/sysutils/mate-polkit
 
 pluma_DETECT=		${LOCALBASE}/libdata/pkgconfig/pluma.pc
