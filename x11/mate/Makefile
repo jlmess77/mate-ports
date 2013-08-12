@@ -17,7 +17,6 @@ RUN_DEPENDS=	mate-base>=1.6.0:${PORTSDIR}/x11/mate-base \
 		mate-terminal:${PORTSDIR}/x11/mate-terminal \
 		mate-screensaver:${PORTSDIR}/x11/mate-screensaver \
 		mate-calc:${PORTSDIR}/math/mate-calc \
-		mateconf-editor:${PORTSDIR}/sysutils/mate-conf-editor \
 		mate-screenshot:${PORTSDIR}/deskutils/mate-utils \
 		mate-system-monitor:${PORTSDIR}/sysutils/mate-system-monitor \
 		eom:${PORTSDIR}/graphics/mate-image-viewer \
