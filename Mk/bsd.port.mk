@@ -1453,6 +1453,10 @@ PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
 .endif
 
+.if defined(USE_MATE)
+.include "${PORTSDIR}/Mk/bsd.mate.mk"
+.endif
+
 .if defined(WANT_LUA) || defined(USE_LUA) || defined(USE_LUA_NOT)
 .include "${PORTSDIR}/Mk/bsd.lua.mk"
 .endif
