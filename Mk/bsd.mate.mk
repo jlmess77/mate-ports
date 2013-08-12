@@ -70,43 +70,43 @@ matehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "${MATE_MAKEFILEIN}*" -type f | ${XA
 lthack_PRE_PATCH=	${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINPLACE_CMD} -e \
 				'/^LIBTOOL_DEPS="$$ac_aux_dir\/ltmain.sh"$$/s|$$|; $$ac_aux_dir/ltconfig $$LIBTOOL_DEPS;|'
 
-caja_DETECT=			${LOCALBASE}/libdata/pkgconfig/libcaja-extension.pc
-caja_BUILD_DEPENDS=		${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
-caja_LIB_DEPENDS=		caja-extension:${PORTSDIR}/x11-fm/mate-file-manager
-caja_RUN_DEPENDS=		${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
+caja_DETECT=		${LOCALBASE}/libdata/pkgconfig/libcaja-extension.pc
+caja_BUILD_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
+caja_LIB_DEPENDS=	libcaja-extension.so:${PORTSDIR}/x11-fm/mate-file-manager
+caja_RUN_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
 
 mucharmap_DETECT=		${LOCALBASE}/libdata/pkgconfig/mucharmap-2.pc
 mucharmap_BUILD_DEPENDS=${mucharmap_DETECT}:${PORTSDIR}/deskutils/mate-character-map
-mucharmap_LIB_DEPENDS=	mucharmap:${PORTSDIR}/deskutils/mate-character-map
+mucharmap_LIB_DEPENDS=	libmucharmap.so:${PORTSDIR}/deskutils/mate-character-map
 mucharmap_RUN_DEPENDS=	${mucharmap_DETECT}:${PORTSDIR}/deskutils/mate-character-map
 
-common_DETECT=			${LOCALBASE}/bin/mate-autogen
+common_DETECT=		${LOCALBASE}/bin/mate-autogen
 common_BUILD_DEPENDS=	${common_DETECT}:${PORTSDIR}/devel/mate-common
-common_RUN_DEPENDS=		${common_DETECT}:${PORTSDIR}/devel/mate-common
+common_RUN_DEPENDS=	${common_DETECT}:${PORTSDIR}/devel/mate-common
 
-controlcenter_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-window-settings-2.0.pc
-controlcenter_BUILD_DEPENDS=${controlcenter_DETECT}:${PORTSDIR}/sysutils/mate-control-center
-controlcenter_LIB_DEPENDS=mate-window-settings:${PORTSDIR}/sysutils/mate-control-center
-controlcenter_RUN_DEPENDS=${controlcenter_DETECT}:${PORTSDIR}/sysutils/mate-control-center
+controlcenter_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-window-settings-2.0.pc
+controlcenter_BUILD_DEPENDS=	${controlcenter_DETECT}:${PORTSDIR}/sysutils/mate-control-center
+controlcenter_LIB_DEPENDS=	libmate-window-settings.so:${PORTSDIR}/sysutils/mate-control-center
+controlcenter_RUN_DEPENDS=	${controlcenter_DETECT}:${PORTSDIR}/sysutils/mate-control-center
 
-desktop_DETECT=			${LOCALBASE}/libdata/pkgconfig/mate-desktop-2.0.pc
+desktop_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-desktop-2.0.pc
 desktop_BUILD_DEPENDS=	${desktop_DETECT}:${PORTSDIR}/x11/mate-desktop
-desktop_LIB_DEPENDS=	mate-desktop-2:${PORTSDIR}/x11/mate-desktop
+desktop_LIB_DEPENDS=	libmate-desktop-2.so:${PORTSDIR}/x11/mate-desktop
 desktop_RUN_DEPENDS=	${desktop_DETECT}:${PORTSDIR}/x11/mate-desktop
 
-dialogs_DETECT=			${LOCALBASE}/bin/matedialog
+dialogs_DETECT=		${LOCALBASE}/bin/matedialog
 dialogs_BUILD_DEPENDS=	${dialogs_DETECT}:${PORTSDIR}/x11/mate-dialogs
 dialogs_RUN_DEPENDS=	${dialogs_DETECT}:${PORTSDIR}/x11/mate-dialogs
 
-docutils_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-doc-utils.pc
+docutils_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-doc-utils.pc
 docutils_BUILD_DEPENDS=	${docutils_DETECT}:${PORTSDIR}/textproc/mate-doc-utils
 docutils_RUN_DEPENDS=	${docutils_DETECT}:${PORTSDIR}/textproc/mate-doc-utils
 
-icontheme_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-icon-theme.pc
+icontheme_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-icon-theme.pc
 icontheme_BUILD_DEPENDS=${icontheme_DETECT}:${PORTSDIR}/x11-themes/mate-icon-theme
 icontheme_RUN_DEPENDS=	${icontheme_DETECT}:${PORTSDIR}/x11-themes/mate-icon-theme
 
-intltool_DETECT=		${LOCALBASE}/bin/intltool-extract
+intltool_DETECT=	${LOCALBASE}/bin/intltool-extract
 intltool_BUILD_DEPENDS=	${intltool_DETECT}:${PORTSDIR}/textproc/intltool
 
 intlhack_PRE_PATCH=		${FIND} ${WRKSRC} -name "intltool-merge.in" | ${XARGS} ${REINPLACE_CMD} -e \
@@ -118,62 +118,62 @@ intlhack_PRE_PATCH=		${FIND} ${WRKSRC} -name "intltool-merge.in" | ${XARGS} ${RE
 USE_MATE+=				intltool
 .endif
 
-keyring_DETECT=			${LOCALBASE}/libdata/pkgconfig/mate-gcr-0.pc
+keyring_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-gcr-0.pc
 keyring_BUILD_DEPENDS=	${keyring_DETECT}:${PORTSDIR}/security/mate-keyring
-keyring_LIB_DEPENDS=	mategcr:${PORTSDIR}/security/mate-keyring
+keyring_LIB_DEPENDS=	libmategcr.so:${PORTSDIR}/security/mate-keyring
 keyring_RUN_DEPENDS=	${keyring_DETECT}:${PORTSDIR}/security/mate-keyring
 
 libmatekbd_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatekbd.pc
-libmatekbd_BUILD_DEPENDS=${libmatekbd_DETECT}:${PORTSDIR}/x11/libmatekbd
-libmatekbd_LIB_DEPENDS=	matekbd:${PORTSDIR}/x11/libmatekbd
-libmatekbd_RUN_DEPENDS=	${libmatekbd_DETECT}:${PORTSDIR}/x11/libmatekbd
+libmatekbd_BUILD_DEPENDS=	${libmatekbd_DETECT}:${PORTSDIR}/x11/libmatekbd
+libmatekbd_LIB_DEPENDS=		libmatekbd.so:${PORTSDIR}/x11/libmatekbd
+libmatekbd_RUN_DEPENDS=		${libmatekbd_DETECT}:${PORTSDIR}/x11/libmatekbd
 
-libmatekeyring_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-keyring-1.pc
-libmatekeyring_BUILD_DEPENDS=${libmatekeyring_DETECT}:${PORTSDIR}/security/libmatekeyring
-libmatekeyring_LIB_DEPENDS=mate-keyring:${PORTSDIR}/security/libmatekeyring
-libmatekeyring_RUN_DEPENDS=${libmatekeyring_DETECT}:${PORTSDIR}/security/libmatekeyring
+libmatekeyring_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-keyring-1.pc
+libmatekeyring_BUILD_DEPENDS=	${libmatekeyring_DETECT}:${PORTSDIR}/security/libmatekeyring
+libmatekeyring_LIB_DEPENDS=	libmate-keyring.so:${PORTSDIR}/security/libmatekeyring
+libmatekeyring_RUN_DEPENDS=	${libmatekeyring_DETECT}:${PORTSDIR}/security/libmatekeyring
 
-libmateweather_DETECT=	${LOCALBASE}/libdata/pkgconfig/mateweather.pc
-libmateweather_BUILD_DEPENDS=${libmateweather_DETECT}:${PORTSDIR}/net/libmateweather
-libmateweather_LIB_DEPENDS=mateweather:${PORTSDIR}/net/libmateweather
-libmateweather_RUN_DEPENDS=${libmateweather_DETECT}:${PORTSDIR}/net/libmateweather
+libmateweather_DETECT=		${LOCALBASE}/libdata/pkgconfig/mateweather.pc
+libmateweather_BUILD_DEPENDS=	${libmateweather_DETECT}:${PORTSDIR}/net/libmateweather
+libmateweather_LIB_DEPENDS=	libmateweather.so:${PORTSDIR}/net/libmateweather
+libmateweather_RUN_DEPENDS=	${libmateweather_DETECT}:${PORTSDIR}/net/libmateweather
 
 libmatewnck_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatewnck.pc
-libmatewnck_BUILD_DEPENDS=${libmatewnck_DETECT}:${PORTSDIR}/x11-toolkits/libmatewnck
-libmatewnck_LIB_DEPENDS=matewnck:${PORTSDIR}/x11-toolkits/libmatewnck
-libmatewnck_RUN_DEPENDS=${libmatewnck_DETECT}:${PORTSDIR}/x11-toolkits/libmatewnck
+libmatewnck_BUILD_DEPENDS=	${libmatewnck_DETECT}:${PORTSDIR}/x11-toolkits/libmatewnck
+libmatewnck_LIB_DEPENDS=	libmatewnck.so:${PORTSDIR}/x11-toolkits/libmatewnck
+libmatewnck_RUN_DEPENDS=	${libmatewnck_DETECT}:${PORTSDIR}/x11-toolkits/libmatewnck
 
-marco_DETECT=			${LOCALBASE}/libdata/pkgconfig/libmarco-private.pc
+marco_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmarco-private.pc
 marco_BUILD_DEPENDS=	${marco_DETECT}:${PORTSDIR}/x11-wm/mate-window-manager
-marco_LIB_DEPENDS=		marco-private:${PORTSDIR}/x11-wm/mate-window-manager
-marco_RUN_DEPENDS=		${marco_DETECT}:${PORTSDIR}/x11-wm/mate-window-manager
+marco_LIB_DEPENDS=	libmarco-private.so:${PORTSDIR}/x11-wm/mate-window-manager
+marco_RUN_DEPENDS=	${marco_DETECT}:${PORTSDIR}/x11-wm/mate-window-manager
 
-menus_DETECT=			${LOCALBASE}/libdata/pkgconfig/libmate-menu.pc
+menus_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmate-menu.pc
 menus_BUILD_DEPENDS=	${menus_DETECT}:${PORTSDIR}/x11/mate-menus
-menus_LIB_DEPENDS=		mate-menu:${PORTSDIR}/x11/mate-menus
-menus_RUN_DEPENDS=		${menus_DETECT}:${PORTSDIR}/x11/mate-menus
+menus_LIB_DEPENDS=	libmate-menu.so:${PORTSDIR}/x11/mate-menus
+menus_RUN_DEPENDS=	${menus_DETECT}:${PORTSDIR}/x11/mate-menus
 
-notificationdaemon_DETECT=${LOCALBASE}/libexec/mate-notification-daemon
-notificationdaemon_BUILD_DEPENDS=${notificationdaemon_DETECT}:${PORTSDIR}/deskutils/mate-notification-daemon
-notificationdaemon_RUN_DEPENDS=${notificationdaemon_DETECT}:${PORTSDIR}/deskutils/mate-notification-daemon
+notificationdaemon_DETECT=		${LOCALBASE}/libexec/mate-notification-daemon
+notificationdaemon_BUILD_DEPENDS=	${notificationdaemon_DETECT}:${PORTSDIR}/deskutils/mate-notification-daemon
+notificationdaemon_RUN_DEPENDS=		${notificationdaemon_DETECT}:${PORTSDIR}/deskutils/mate-notification-daemon
 
-panel_DETECT=			${LOCALBASE}/libdata/pkgconfig/libmatepanelapplet-4.0.pc
+panel_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatepanelapplet-4.0.pc
 panel_BUILD_DEPENDS=	${panel_DETECT}:${PORTSDIR}/x11/mate-panel
-panel_LIB_DEPENDS=		mate-panel-applet-4:${PORTSDIR}/x11/mate-panel
-panel_RUN_DEPENDS=		${panel_DETECT}:${PORTSDIR}/x11/mate-panel
+panel_LIB_DEPENDS=	libmate-panel-applet-4.so:${PORTSDIR}/x11/mate-panel
+panel_RUN_DEPENDS=	${panel_DETECT}:${PORTSDIR}/x11/mate-panel
 
-polkit_DETECT=			${LOCALBASE}/libdata/pkgconfig/polkit-gtk-mate-1.pc
+polkit_DETECT=		${LOCALBASE}/libdata/pkgconfig/polkit-gtk-mate-1.pc
 polkit_BUILD_DEPENDS=	${polkit_DETECT}:${PORTSDIR}/sysutils/mate-polkit
-polkit_LIB_DEPENDS=		polkit-gtk-mate:${PORTSDIR}/sysutils/mate-polkit
-polkit_RUN_DEPENDS=		${polkit_DETECT}:${PORTSDIR}/sysutils/mate-polkit
+polkit_LIB_DEPENDS=	libpolkit-gtk-mate.so:${PORTSDIR}/sysutils/mate-polkit
+polkit_RUN_DEPENDS=	${polkit_DETECT}:${PORTSDIR}/sysutils/mate-polkit
 
-pluma_DETECT=			${LOCALBASE}/libdata/pkgconfig/pluma.pc
+pluma_DETECT=		${LOCALBASE}/libdata/pkgconfig/pluma.pc
 pluma_BUILD_DEPENDS=	${pluma_DETECT}:${PORTSDIR}/editors/mate-text-editor
-pluma_RUN_DEPENDS=		${pluma_DETECT}:${PORTSDIR}/editors/mate-text-editor
+pluma_RUN_DEPENDS=	${pluma_DETECT}:${PORTSDIR}/editors/mate-text-editor
 
-settingsdaemon_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-settings-daemon.pc
-settingsdaemon_BUILD_DEPENDS=${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-settings-daemon
-settingsdaemon_RUN_DEPENDS=${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-settings-daemon
+settingsdaemon_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-settings-daemon.pc
+settingsdaemon_BUILD_DEPENDS=	${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-settings-daemon
+settingsdaemon_RUN_DEPENDS=	${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-settings-daemon
 
 # End component definition section
 
@@ -230,7 +230,9 @@ ltasneededhack_PRE_PATCH=	if [ -f ${WRKDIR}/mate-libtool ]; then \
 
 # Comparing between USE_MATE and _USE_MATE_ALL to make sure the component
 # exists in _USE_MATE_ALL. If it does not exist then give an error about it.
-. for component in ${USE_MATE:O:u:C/^([^:]+).*/\1/}
+#. for component in ${USE_MATE:O:u:C/^([^:]+).*/\1/}
+. for component in ${USE_MATE:C/^([^:]+).*/\1/}
+#. for component in ${USE_GNOME:C/^([^:]+).*/\1/}
 .  if ${_USE_MATE_ALL:M${component}}==""
 .error cannot install: Unknown component USE_MATE=${component}
 .  endif
