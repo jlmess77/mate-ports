@@ -12,9 +12,9 @@ COMMENT=	Applets components for the MATE Desktop Environment
 
 LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libxklavier.so:${PORTSDIR}/x11/libxklavier \
-		libdbus-1.s0:${PORTSDIR}/devel/dbus \
-		libdbus-glib-1.s0:${PORTSDIR}/devel/dbus-glib \
-		libpolkit-gobject-1.s0:${PORTSDIR}/sysutils/polkit \
+		libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit \
 		libhal.so:${PORTSDIR}/sysutils/hal \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
 		libnotify.so:${PORTSDIR}/devel/libnotify
