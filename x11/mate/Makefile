@@ -22,7 +22,7 @@ RUN_DEPENDS=	mate-base>=1.6.0:${PORTSDIR}/x11/mate-base \
 		eom:${PORTSDIR}/graphics/mate-image-viewer \
 		engrampa:${PORTSDIR}/archivers/mate-file-archiver \
 		atril:${PORTSDIR}/graphics/mate-document-viewer \
-		mate-audio-profiles-properties:${PORTSDIR}/audio/mate-media \
+		mate-volume-control:${PORTSDIR}/audio/mate-media \
 		mate-power-manager:${PORTSDIR}/sysutils/mate-power-manager \
 		mozo:${PORTSDIR}/deskutils/mate-menu-editor \
 		mate-applets>=1.6.0:${PORTSDIR}/x11/mate-applets
