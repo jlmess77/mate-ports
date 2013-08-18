@@ -54,10 +54,10 @@ libdata/pkgconfig/mate-keybindings.pc
 libdata/pkgconfig/mate-window-settings-2.0.pc
 sbin/mate-display-properties-install-systemwide
 share/MateConf/gsettings/mate-control-center.convert
-share/applications/at-properties.desktop
-share/applications/default-applications.desktop
-share/applications/display-properties.desktop
-share/applications/keyboard.desktop
+share/applications/mate-at-properties.desktop
+share/applications/mate-default-applications.desktop
+share/applications/mate-display-properties.desktop
+share/applications/mate-keyboard.desktop
 share/applications/mate-about-me.desktop
 share/applications/mate-appearance-properties.desktop
 share/applications/mate-font-viewer.desktop
@@ -65,8 +65,8 @@ share/applications/mate-keybinding.desktop
 share/applications/mate-network-properties.desktop
 share/applications/mate-settings-mouse.desktop
 share/applications/mate-theme-installer.desktop
+share/applications/mate-window-properties.desktop
 share/applications/matecc.desktop
-share/applications/window-properties.desktop
 share/desktop-directories/matecc.directory
 share/icons/hicolor/16x16/apps/mate-network-properties.png
 share/icons/hicolor/16x16/apps/mate-preferences-desktop-display.png

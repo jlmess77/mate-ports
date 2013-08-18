@@ -35,10 +35,28 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 GLIB_SCHEMAS=	org.mate.control-center.gschema.xml \
 		org.mate.control-center.keybinding.gschema.xml
 
+FIX_FILES=	capplets/accessibility/at-properties \
+		capplets/default-applications capplets/display \
+		capplets/keyboard capplets/windows
+
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|' \
 	    	${WRKSRC}/capplets/common/mate-theme-info.c
 	@${REINPLACE_CMD} -e 's|/usr/sbin|${PREFIX}/sbin|g' \
 		${WRKSRC}/capplets/display/org.mate.randr.policy.in
+.for dir in ${FIX_FILES}
+	@${REINPLACE_CMD} -e 's|Desktop_in_files = |Desktop_in_files = mate-|g' \
+		${WRKSRC}/${dir}/Makefile.am
+.endfor
+	@${MV} ${WRKSRC}/capplets/accessibility/at-properties/at-properties.desktop.in.in \
+		${WRKSRC}/capplets/accessibility/at-properties/mate-at-properties.desktop.in.in
+	@${MV} ${WRKSRC}/capplets/default-applications/default-applications.desktop.in.in \
+		${WRKSRC}/capplets/default-applications/mate-default-applications.desktop.in.in
+	@${MV} ${WRKSRC}/capplets/display/display-properties.desktop.in.in \
+		${WRKSRC}/capplets/display/mate-display-properties.desktop.in.in
+	@${MV} ${WRKSRC}/capplets/keyboard/keyboard.desktop.in.in \
+		${WRKSRC}/capplets/keyboard/mate-keyboard.desktop.in.in
+	@${MV} ${WRKSRC}/capplets/windows/window-properties.desktop.in.in \
+		${WRKSRC}/capplets/windows/mate-window-properties.desktop.in.in
 
 .include <bsd.port.mk>

@@ -1,0 +1,37 @@
+--- configure.ac.orig	2013-04-01 00:20:21.000000000 +0200
++++ configure.ac	2013-08-18 13:55:02.000000000 +0200
+@@ -311,7 +311,7 @@
+ capplets/about-me/mate-about-me.desktop.in
+ capplets/about-me/icons/Makefile
+ capplets/accessibility/Makefile
+-capplets/accessibility/at-properties/at-properties.desktop.in
++capplets/accessibility/at-properties/mate-at-properties.desktop.in
+ capplets/accessibility/at-properties/Makefile
+ capplets/appearance/Makefile
+ capplets/appearance/data/Makefile
+@@ -319,21 +319,21 @@
+ capplets/appearance/data/mate-theme-installer.desktop.in
+ capplets/common/Makefile
+ capplets/default-applications/Makefile
+-capplets/default-applications/default-applications.desktop.in
++capplets/default-applications/mate-default-applications.desktop.in
+ capplets/default-applications/mate-default-applications.pc
+ capplets/display/Makefile
+-capplets/display/display-properties.desktop.in
++capplets/display/mate-display-properties.desktop.in
+ capplets/keybindings/Makefile
+ capplets/keybindings/mate-keybindings.pc
+ capplets/keybindings/mate-keybinding.desktop.in
+ capplets/keyboard/Makefile
+-capplets/keyboard/keyboard.desktop.in
++capplets/keyboard/mate-keyboard.desktop.in
+ capplets/mouse/Makefile
+ capplets/mouse/mate-settings-mouse.desktop.in
+ capplets/network/Makefile
+ capplets/network/mate-network-properties.desktop.in
+ capplets/windows/Makefile
+-capplets/windows/window-properties.desktop.in
++capplets/windows/mate-window-properties.desktop.in
+ font-viewer/Makefile
+ font-viewer/mate-font-viewer.desktop.in
+ help/Makefile
