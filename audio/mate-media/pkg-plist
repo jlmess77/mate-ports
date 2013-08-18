@@ -1,5 +1,5 @@
 bin/mate-volume-control
-libexec/mixer_applet2
+libexec/mate_mixer_applet2
 share/MateConf/gsettings/mate-volume-control.convert
 share/applications/mate-volume-control.desktop
 share/dbus-1/services/org.mate.panel.applet.MixerAppletFactory.service

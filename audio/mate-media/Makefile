@@ -31,4 +31,11 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 GLIB_SCHEMAS=	org.mate.panel.applet.mixer.gschema.xml \
 		org.mate.volume-control.gschema.xml
 
+post-patch:
+	@${REINPLACE_CMD} -e 's|mixer_applet2|mate_mixer_applet2|g' \
+		${WRKSRC}/gst-mixer-applet/Makefile.am \
+		${WRKSRC}/gst-mixer-applet/load.c \
+		${WRKSRC}/gst-mixer-applet/org.mate.panel.applet.MixerAppletFactory.service.in \
+		${WRKSRC}/gst-mixer-applet/org.mate.applets.MixerApplet.mate-panel-applet.in.in
+
 .include <bsd.port.mk>
