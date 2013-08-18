@@ -44,6 +44,9 @@ GLIB_SCHEMAS=	org.mate.panel.applet.charpick.gschema.xml \
 		org.mate.panel.applet.multiload.gschema.xml \
 		org.mate.stickynotes.gschema.xml
 
+FIX_APPLETS=	accessx-status battstat charpick drivemount geyes \
+		invest-applet/data multiload stickynotes trashapplet
+
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} != "i386" && ${ARCH} != "amd64"
@@ -64,5 +67,11 @@ GLIB_SCHEMAS+=	org.mate.panel.applet.cpufreq.gschema.xml
 post-patch:
 	@${FIND} ${WRKSRC} -name Makefile.am | ${XARGS} ${REINPLACE_CMD} -e \
 	    	's|" == "|" = "|g'
+	${MV} ${WRKSRC}/invest-applet/invest/invest-applet.py \
+		${WRKSRC}/invest-applet/invest/mate-invest-applet.py
+.for dir in ${FIX_APPLETS}
+	@${REINPLACE_CMD} -e 's|@LIBEXECDIR@/|@LIBEXECDIR@/mate-|g' \
+		${WRKSRC}/${dir}/org.mate.*
+.endfor
 
 .include <bsd.port.post.mk>
