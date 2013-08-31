@@ -10,10 +10,8 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE doc utils
 
-# XXX GAWK
 BUILD_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian \
-		${PYTHON_SITELIBDIR}/libxml2mod.so:${PORTSDIR}/textproc/py-libxml2 \
-		gawk:${PORTSDIR}/lang/gawk
+		${PYTHON_SITELIBDIR}/libxml2mod.so:${PORTSDIR}/textproc/py-libxml2
 RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian \
 		${LOCALBASE}/share/xml/docbook/4.3/catalog.xml:${PORTSDIR}/textproc/docbook-xml-430 \
 		${LOCALBASE}/share/xml/docbook/4.4/catalog.xml:${PORTSDIR}/textproc/docbook-xml-440 \
