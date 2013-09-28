@@ -33,7 +33,7 @@ Mate_Pre_Include=			bsd.mate.mk
 
 # Ports can use this as follows:
 #
-# USE_MATE=	gnomeprint bonobo
+# USE_MATE=	caja common desktop
 #
 # .include <bsd.port.mk>
 #
