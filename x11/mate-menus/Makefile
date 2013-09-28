@@ -35,4 +35,5 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/*.directory \
 		${PREFIX}/share/mate/desktop-directories/
 
+NO_STAGE=	yes
 .include <bsd.port.mk>

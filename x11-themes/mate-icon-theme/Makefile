@@ -23,6 +23,7 @@ INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
+NO_STAGE=	yes
 pre-install:
 	@${REINPLACE_CMD} -e 's|install: install-data|install:|g' \
 		${WRKSRC}/po/Makefile

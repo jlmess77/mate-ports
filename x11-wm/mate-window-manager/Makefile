@@ -25,11 +25,11 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-MAKE_ENV=	G_CHARSET_ALIAS="${LOCALBASE}/libdata/charset.alias"
 
 GLIB_SCHEMAS=	org.mate.marco.gschema.xml
 
 MAN1=		marco-message.1 marco-theme-viewer.1 marco-window-demo.1 \
 		marco.1
 
+NO_STAGE=	yes
 .include <bsd.port.mk>

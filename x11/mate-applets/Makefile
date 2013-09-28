@@ -47,6 +47,7 @@ GLIB_SCHEMAS=	org.mate.panel.applet.charpick.gschema.xml \
 FIX_APPLETS=	accessx-status battstat charpick drivemount geyes \
 		invest-applet/data multiload stickynotes trashapplet
 
+NO_STAGE=	yes
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} != "i386" && ${ARCH} != "amd64"

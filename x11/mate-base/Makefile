@@ -24,6 +24,7 @@ USE_MATE=	caja:run controlcenter:run dialogs:run icontheme:run \
 
 NO_BUILD=	yes
 
+NO_STAGE=	yes
 do-install:	# empty
 
 .include <bsd.port.mk>

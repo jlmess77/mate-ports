@@ -34,13 +34,13 @@ CONFIGURE_ARGS=	--enable-static \
 		--with-html-dir=${PREFIX}/share/doc
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
-MAKE_ENV=	G_CHARSET_ALIAS="${LOCALBASE}/libdata/charset.alias"
 
 GLIB_SCHEMAS=	org.mate.caja.gschema.xml \
 		org.mate.media-handling.gschema.xml
 
 MAN1=		caja.1 caja-connect-server.1 caja-file-management-properties.1
 
+NO_STAGE=	yes
 post-install:
 	@${MKDIR} ${PREFIX}/lib/caja/extensions-2.0
 

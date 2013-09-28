@@ -39,6 +39,7 @@ FIX_FILES=	capplets/accessibility/at-properties \
 		capplets/default-applications capplets/display \
 		capplets/keyboard capplets/windows
 
+NO_STAGE=	yes
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|' \
 	    	${WRKSRC}/capplets/common/mate-theme-info.c

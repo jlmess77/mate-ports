@@ -18,4 +18,5 @@ GNU_CONFIGURE=	yes
 
 MAN1=		mate-autogen.1 mate-doc-common.1
 
+NO_STAGE=	yes
 .include <bsd.port.mk>

@@ -29,6 +29,7 @@ CONFIGURE_ARGS=--with-omf-dir=${PREFIX}/share/omf
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
+NO_STAGE=	yes
 post-patch:
 	@${REINPLACE_CMD} -e 's|-W compat|--traditional|g' \
 		${WRKSRC}/configure.ac

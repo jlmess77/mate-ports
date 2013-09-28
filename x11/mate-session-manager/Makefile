@@ -34,4 +34,5 @@ MAN1=		mate-session.1 mate-wm.1 mate-session-properties.1 \
 		mate-session-save.1
 GLIB_SCHEMAS=	org.mate.session.gschema.xml
 
+NO_STAGE=	yes
 .include <bsd.port.mk>

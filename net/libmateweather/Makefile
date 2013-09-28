@@ -28,4 +28,5 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.weather.gschema.xml
 
+NO_STAGE=	yes
 .include <bsd.port.mk>

@@ -25,6 +25,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 MAN1=		mate-calc.1 mate-calc-cmd.1
 GLIB_SCHEMAS=	org.mate.calc.gschema.xml
 
+NO_STAGE=	yes
 post-patch:
 	@${REINPLACE_CMD} -e 's|$$(LEX)|${LOCALBASE}/bin/flex|g' \
 		${WRKSRC}/src/Makefile.am

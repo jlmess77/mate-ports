@@ -38,6 +38,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.power-manager.gschema.xml
 
+NO_STAGE=	yes
 post-patch:
 	@${REINPLACE_CMD} -e "s|docbook2man|docbook2man_disabled|g" \
 		${WRKSRC}/configure.ac

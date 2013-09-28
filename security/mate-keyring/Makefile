@@ -35,4 +35,5 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 GLIB_SCHEMAS=	org.mate.crypto.cache.gschema.xml \
 		org.mate.crypto.pgp.gschema.xml
 
+NO_STAGE=	yes
 .include <bsd.port.mk>

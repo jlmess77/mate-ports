@@ -31,6 +31,7 @@ USE_MATE=	pluma:run
 
 NO_BUILD=	yes
 
+NO_STAGE=	yes
 do-install:	# empty
 
 .include <bsd.port.mk>

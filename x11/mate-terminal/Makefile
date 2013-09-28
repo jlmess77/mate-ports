@@ -25,4 +25,5 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 MAN1=		mate-terminal.1
 GLIB_SCHEMAS=	org.mate.terminal.gschema.xml
 
+NO_STAGE=	yes
 .include <bsd.port.mk>

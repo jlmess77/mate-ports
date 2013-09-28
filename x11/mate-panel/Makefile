@@ -44,6 +44,7 @@ GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 		org.mate.panel.object.gschema.xml \
 		org.mate.panel.toplevel.gschema.xml
 
+NO_STAGE=	yes
 post-install:
 	@${MKDIR} ${PREFIX}/lib/mate-panel/modules
 	-${LOCALBASE}/bin/gio-querymodules ${PREFIX}/lib/mate-panel/modules

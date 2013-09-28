@@ -1,4 +1,3 @@
-
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
 
@@ -50,4 +49,5 @@ GLIB_SCHEMAS=	org.mate.accessibility-keyboard.gschema.xml \
 		org.mate.thumbnailers.gschema.xml \
 		org.mate.typing-break.gschema.xml
 
+NO_STAGE=	yes
 .include <bsd.port.mk>

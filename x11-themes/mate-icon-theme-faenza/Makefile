@@ -14,6 +14,7 @@ USE_XZ=		yes
 NO_BUILD=	yes
 INSTALLS_ICONS=	yes
 
+NO_STAGE=	yes
 do-install:
 	@${MKDIR} ${PREFIX}/share/icons
 	@(cd ${WRKSRC} && ${FIND} matefaenza -name '*[^~]' | \

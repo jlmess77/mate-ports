@@ -39,4 +39,5 @@ GLIB_SCHEMAS=	org.mate.dictionary.gschema.xml \
 		org.mate.search-tool.gschema.xml \
 		org.mate.system-log.gschema.xml
 
+NO_STAGE=	yes
 .include <bsd.port.mk>
