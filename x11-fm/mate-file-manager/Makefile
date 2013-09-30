@@ -25,7 +25,7 @@ USE_GNOME=	glib20 gnomehier gtk20 introspection:build libxml2 pango
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LIBS="${PTHREAD_LIBS} -L${LOCALBASE}/lib -liconv" \
+CONFIGURE_ENV=	LIBS="${PTHREAD_LIBS} -L${LOCALBASE}/lib" \
 		LIBPNG="-L${LOCALBASE}/lib -lpng -lz"
 CONFIGURE_ARGS=	--enable-static \
 		--disable-packagekit \
