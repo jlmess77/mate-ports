@@ -47,7 +47,7 @@ XSCREENSAVER_EXCLUDE=	"(popsquares.xml)"
 OPTIONS_DEFINE=	PAM KEYRING
 OPTIONS_DEFAULT=PAM KEYRING
 PAM_DESC=	Pluggable Authentication Module support
-KEYRING_DESC=	GnomeKeyring integration (needs PAM)
+KEYRING_DESC=	MateKeyring integration (needs PAM)
 
 NO_STAGE=	yes
 .include <bsd.port.options.mk>
