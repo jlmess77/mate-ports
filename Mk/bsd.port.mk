@@ -107,6 +107,12 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  patches. Make will look for them at PATCH_SITES (see below).
 #				  They will automatically be uncompressed before patching if
 #				  the names end with ".gz", ".bz2" or ".Z".
+#				  For each file you can optionally specify a strip
+#				  flag of patch(1) after a colon if it has a different
+#				  base directory, e.g. "file1 file2:-p1 file3".
+#				  You can also use a :group at the end for matching up to
+#				  dist file groups. See Porters Handbook for more information.
+#				  Syntax: PATCHFILES= patch[:-pX][:group]
 #				  Default: not set.
 # PATCH_SITES	- Primary location(s) for distribution patch files
 #				  if not found locally.
@@ -166,9 +172,12 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  because it cannot be manually fetched, etc).  Error
 #				  logs will not appear on pointyhat, so this should be
 #				  used sparingly.
-# BROKEN		- Port is believed to be broken.  Package builds will
-#				  still be attempted on the pointyhat package cluster to
-#				  test this assumption.
+# BROKEN		- Port is believed to be broken.  Package builds can
+# 				  still be attempted using TRYBROKEN to test this
+#				  assumption.
+# BROKEN_${ARCH}  Port is believed to be broken on ${ARCH}. Package builds
+#				  can still be attempted using TRYBROKEN to test this
+#				  assumption.
 # DEPRECATED	- Port is deprecated to install. Advisory only.
 # EXPIRATION_DATE
 #				- If DEPRECATED is set, determines a date when
@@ -358,7 +367,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  MAKE_ENV are extended with a DISPLAY variable.
 #
 # USE_GL		- A list of Mesa or GL related dependencies needed by the port.
-#				  Supported components are: glut, glu, glw, and gl.
+#				  Supported components are: egl, glesv2, glut, glu, glw, and gl.
 #				  If set to "yes", this is equivalent to "glu". Note that
 #				  glew and glut depend on glu, glw and glu depend on gl.
 ##
@@ -1900,13 +1909,15 @@ MAKE_ENV+=		DISPLAY="localhost:1001"
 
 PKG_IGNORE_DEPENDS?=		'this_port_does_not_exist'
 
-_GL_gl_LIB_DEPENDS=		GL.1:${PORTSDIR}/graphics/libGL
+_GL_glesv2_LIB_DEPENDS=		libGLESv2.so:${PORTSDIR}/grahpics/libglesv2
+_GL_egl_LIB_DEPENDS=		libEGL.so:${PORTSDIR}/graphics/libEGL
+_GL_gl_LIB_DEPENDS=		libGL.so:${PORTSDIR}/graphics/libGL
 _GL_gl_USE_XORG=		glproto dri2proto
-_GL_glew_LIB_DEPENDS=		GLEW.1:${PORTSDIR}/graphics/glew
-_GL_glu_LIB_DEPENDS=		GLU.1:${PORTSDIR}/graphics/libGLU
+_GL_glew_LIB_DEPENDS=		libGLEW.so:${PORTSDIR}/graphics/glew
+_GL_glu_LIB_DEPENDS=		libGLU.so:${PORTSDIR}/graphics/libGLU
 _GL_glu_USE_XORG=		glproto dri2proto
-_GL_glw_LIB_DEPENDS=		GLw.1:${PORTSDIR}/graphics/libGLw
-_GL_glut_LIB_DEPENDS=		glut.12:${PORTSDIR}/graphics/freeglut
+_GL_glw_LIB_DEPENDS=		libGLw.so:${PORTSDIR}/graphics/libGLw
+_GL_glut_LIB_DEPENDS=		libglut.so:${PORTSDIR}/graphics/freeglut
 
 .if defined(USE_GL)
 . if ${USE_GL:L} == "yes"
@@ -2657,9 +2668,12 @@ _DISTFILES+=	${_D}
 .endfor
 _G_TEMP=	DEFAULT
 .for _P in ${PATCHFILES}
-_P_TEMP=	${_P:S/^${_P:C/:[^:]+$//}//}
-.	if !empty(_P_TEMP)
-.		for _group in ${_P_TEMP:S/^://:S/,/ /g}
+_P_TEMP=	${_P:C/:[^-:][^:]*$//}
+_P_groups=	${_P:S/^${_P:C/:[^:]+$//}//:S/^://}
+_P_file=	${_P_TEMP:C/:-[^:]+$//}
+_P_strip=	${_P_TEMP:S/^${_P_TEMP:C/:-[^:]*$//}//:S/^://}
+.	if !empty(_P_groups)
+.		for _group in ${_P_groups:S/,/ /g}
 .			if !defined(_PATCH_SITES_${_group})
 _G_TEMP_TEMP=	${_G_TEMP:M/${_group}/}
 .				if empty(_G_TEMP_TEMP)
@@ -2668,11 +2682,15 @@ _PATCH_SITES_ALL+=	${_PATCH_SITES_${_group}}
 .				endif
 .			endif
 .		endfor
-_PATCHFILES+=	${_P:C/:[^:]+$//}
-.	else
-_PATCHFILES+=	${_P}
+.	endif
+_PATCHFILES:=	${_PATCHFILES} ${_P_file}
+.	if !empty(_P_strip)
+_PATCH_DIST_STRIP_CASES:=	${_PATCH_DIST_STRIP_CASES} ("${_P_file}") printf %s "${_P_strip}" ;;
 .	endif
 .endfor
+_P_groups=
+_P_file=
+_P_strip=
 _G_TEMP=
 _G_TEMP_TEMP=
 ALLFILES?=	${_DISTFILES} ${_PATCHFILES}
@@ -2741,7 +2759,7 @@ _MASTER_SITES_ENV+=	_MASTER_SITES_${_group}="${_MASTER_SITES_${_group}}"
 .endfor
 _PATCH_SITES_ENV=	_PATCH_SITES_DEFAULT="${_PATCH_SITES_DEFAULT}"
 .for _F in ${PATCHFILES}
-_F_TEMP=	${_F:S/^${_F:C/:[^:]+$//}//:S/^://}
+_F_TEMP=	${_F:S/^${_F:C/:[^-:][^:]*$//}//:S/^://}
 .	if !empty(_F_TEMP)
 .		for _group in ${_F_TEMP:S/,/ /g}
 .			if defined(_PATCH_SITES_${_group})
@@ -3136,6 +3154,10 @@ IGNORE=		is restricted: ${RESTRICTED}
 .if !defined(TRYBROKEN)
 IGNORE=		is marked as broken: ${BROKEN}
 .endif
+.elif defined(BROKEN_${ARCH})
+.if !defined(TRYBROKEN)
+IGNORE=		is marked as broken on ${ARCH}: ${BROKEN_${ARCH}}
+.endif
 .elif defined(FORBIDDEN)
 IGNORE=		is forbidden: ${FORBIDDEN}
 .endif
@@ -3490,8 +3512,9 @@ do-fetch:
 	@cd ${_DISTDIR};\
 	${_PATCH_SITES_ENV} ; \
 	for _file in ${PATCHFILES}; do \
-		file=`${ECHO_CMD} $$_file | ${SED} -E -e 's/:[^:]+$$//'` ; \
+		file=`${ECHO_CMD} $$_file | ${SED} -E -e 's/:[^-:][^:]*$$//'` ; \
 		select=`${ECHO_CMD} $${_file#$${file}} | ${SED} -e 's/^://' -e 's/,/ /g'` ; \
+		file=`${ECHO_CMD} $$file | ${SED} -E -e 's/:-[^:]+$$//'` ; \
 		force_fetch=false; \
 		filebasename=$${file##*/}; \
 		for afile in ${FORCE_FETCH}; do \
@@ -3592,9 +3615,13 @@ patch-dos2unix:
 do-patch:
 .if defined(PATCHFILES)
 	@${ECHO_MSG} "===>  Applying distribution patches for ${PKGNAME}"
-	@set -e ; \
-	(cd ${_DISTDIR} ; \
-	for i  in ${_PATCHFILES}; do \
+	@(cd ${_DISTDIR}; \
+	patch_dist_strip () { \
+		case "$$1" in \
+		${_PATCH_DIST_STRIP_CASES} \
+		esac; \
+	}; \
+	for i in ${_PATCHFILES}; do \
 		if [ ${PATCH_DEBUG_TMP} = yes ]; then \
 			${ECHO_MSG} "===>   Applying distribution patch $$i" ; \
 		fi ; \
@@ -3603,7 +3630,7 @@ do-patch:
 		*.bz2) ${BZCAT} $$i ;; \
 		*.xz) ${XZCAT} $$i ;; \
 		*) ${CAT} $$i ;; \
-		esac | ${PATCH} ${PATCH_DIST_ARGS} ; \
+		esac | ${PATCH} ${PATCH_DIST_ARGS} `patch_dist_strip $$i` ; \
 	done )
 .endif
 .if defined(EXTRA_PATCHES)
@@ -3886,8 +3913,10 @@ do-package: ${TMPPLIST}
 	if [ -f ${PKGMESSAGE} ]; then \
 		_LATE_PKG_ARGS="$${_LATE_PKG_ARGS} -D ${PKGMESSAGE}"; \
 	fi; \
-	if ${PKG_CMD} -S ${STAGEDIR} ${PKG_ARGS} ${PKGFILE}; then \
-		if [ -d ${PACKAGES} ]; then \
+	if ${PKG_CMD} -S ${STAGEDIR} ${PKG_ARGS} ${WRKDIR}/${PKGNAME}${PKG_SUFX}; then \
+		if [ -d ${PACKAGES} -a -w ${PACKAGES} ]; then \
+			${LN} -f ${WRKDIR}/${PKGNAME}${PKG_SUFX} ${PKGFILE} 2>/dev/null || \
+			    ${CP} -af ${WRKDIR}/${PKGNAME}${PKG_SUFX} ${PKGFILE}; \
 			cd ${.CURDIR} && eval ${MAKE} package-links; \
 		fi; \
 	else \
@@ -3933,7 +3962,12 @@ delete-package-links:
 
 .if !target(delete-package)
 delete-package: delete-package-links
+.	if defined(NO_STAGE)
 	@${RM} -f ${PKGFILE}
+.	else
+# When staging, the package may only be in the workdir if not root
+	@${RM} -f ${PKGFILE} ${WRKDIR}/${PKGNAME}${PKG_SUFX} 2>/dev/null || :
+.	endif
 .endif
 
 .if !target(delete-package-links-list)
@@ -3951,12 +3985,13 @@ delete-package-list: delete-package-links-list
 	@${ECHO_CMD} "[ -f ${PKGFILE} ] && (${ECHO_CMD} deleting ${PKGFILE}; ${RM} -f ${PKGFILE})"
 .endif
 
+# Only used if !defined(NO_STAGE)
 .if !target(install-package)
 install-package:
 .if defined(FORCE_PKG_REGISTER)
-	@${PKG_ADD} -f ${PKGFILE}
+	@${PKG_ADD} -f ${WRKDIR}/${PKGNAME}${PKG_SUFX}
 .else
-	@${PKG_ADD} ${PKGFILE}
+	@${PKG_ADD} ${WRKDIR}/${PKGNAME}${PKG_SUFX}
 .endif
 .endif
 
@@ -4325,7 +4360,7 @@ _STAGE_SEQ+=	create-users-groups do-install post-install post-stage compress-man
 .endif
 .if defined(WITH_PKGNG)
 _INSTALL_DEP=	stage
-_INSTALL_SEQ=	install-message run-depends lib-depends
+_INSTALL_SEQ=	install-message run-depends lib-depends check-already-installed
 _INSTALL_SUSEQ=	fake-pkg security-check
 
 _PACKAGE_DEP=	stage
@@ -4337,11 +4372,11 @@ _PACKAGE_DEP=	stage
 _PACKAGE_SEQ=	package-message pre-package pre-package-script do-package post-package-script
 
 _INSTALL_DEP=	package
-_INSTALL_SEQ=	install-message run-depends lib-depends install-package
+_INSTALL_SEQ=	install-message run-depends lib-depends check-already-installed
 _INSTALL_SUSEQ=	install-package security-check
 .endif
 
-.else
+.else # NO_STAGE
 
 _INSTALL_DEP=	build
 _INSTALL_SEQ=	install-message check-install-conflicts run-depends lib-depends apply-slist pre-install \
@@ -4713,8 +4748,9 @@ fetch-list:
 	@(cd ${_DISTDIR}; \
 	 ${_PATCH_SITES_ENV} ; \
 	 for _file in ${PATCHFILES}; do \
-		file=`${ECHO_CMD} $$_file | ${SED} -E -e 's/:[^:]+$$//'` ; \
+		file=`${ECHO_CMD} $$_file | ${SED} -E -e 's/:[^-:][^:]*$$//'` ; \
 		select=`${ECHO_CMD} $${_file#$${file}} | ${SED} -e 's/^://' -e 's/,/ /g'` ; \
+		file=`${ECHO_CMD} $$file | ${SED} -E -e 's/:-[^:]+$$//'` ; \
 		if [ ! -f $$file -a ! -f $${file##*/} ]; then \
 			if [ ! -z "$$select" ] ; then \
 				__PATCH_SITES_TMP= ; \
@@ -4779,9 +4815,10 @@ fetch-url-list-int:
 	@(cd ${_DISTDIR}; \
 	${_PATCH_SITES_ENV} ; \
 	for _file in ${PATCHFILES}; do \
-		file=`${ECHO_CMD} $$_file | ${SED} -E -e 's/:[^:]+$$//'` ; \
-			fileptn=`${ECHO_CMD} $$file | ${SED} 's|/|\\\\/|g;s/\./\\\\./g;s/\+/\\\\+/g;s/\?/\\\\?/g'` ; \
+		file=`${ECHO_CMD} $$_file | ${SED} -E -e 's/:[^-:][^:]*$$//'` ; \
 		select=`${ECHO_CMD} $${_file#$${file}} | ${SED} -e 's/^://' -e 's/,/ /g'` ; \
+		file=`${ECHO_CMD} $$file | ${SED} -E -e 's/:-[^:]+$$//'` ; \
+		fileptn=`${ECHO_CMD} $$file | ${SED} 's|/|\\\\/|g;s/\./\\\\./g;s/\+/\\\\+/g;s/\?/\\\\?/g'` ; \
 		if [ ! -z "${LISTALL}" -o ! -f $$file -a ! -f $${file##*/} ]; then \
 			if [ ! -z "$$select" ] ; then \
 				__PATCH_SITES_TMP= ; \
