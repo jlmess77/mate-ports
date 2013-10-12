@@ -12,15 +12,16 @@ COMMENT=	MATE calculator tool based on the old calctool for OpenWindows
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex
 
-USES=		bison gettext gmake pkgconfig
+USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack matehack
+USE_MATE=	autogen common:build docutils intlhack
 USE_GNOME=	glib20 gnomehier gtk20 libxml2
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 MAN1=		mate-calc.1 mate-calc-cmd.1
 GLIB_SCHEMAS=	org.mate.calc.gschema.xml

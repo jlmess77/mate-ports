@@ -13,10 +13,9 @@ COMMENT=	Window manager for the adult in you
 LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build dialogs docutils intlhack ltverhack \
-		matehack
+USE_MATE=	autogen common:build dialogs docutils intlhack ltverhack
 USE_XORG=	x11 xcomposite xcursor xdamage xrandr
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 pango
 USE_LDCONFIG=	yes
@@ -25,6 +24,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.marco.gschema.xml
 

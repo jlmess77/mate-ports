@@ -19,10 +19,10 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack libmatekeyring \
-		matehack panel
+		panel
 USE_XORG=	x11 xext xproto xrandr xrender
 USE_GNOME=	cairo glib20 gnomehier gtk20
 INSTALLS_OMF=	yes
@@ -35,6 +35,7 @@ CONFIGURE_ARGS=	--with-doc-dir=${PREFIX}/share/doc \
 		--with-systemdinhibit=no
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.power-manager.gschema.xml
 

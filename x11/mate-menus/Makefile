@@ -11,9 +11,9 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Implementation of the FreeDesktop Desktop Menu Spec
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack matehack
+USE_MATE=	autogen common:build intlhack ltverhack
 USE_GNOME=	glib20 gnomehier introspection:build
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
@@ -21,6 +21,7 @@ USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/share/mate|${LOCALBASE}/share/mate|g' \

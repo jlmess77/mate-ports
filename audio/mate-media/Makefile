@@ -12,10 +12,10 @@ COMMENT=	Multimedia applications for the MATE desktop
 
 LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack ltverhack \
-		matehack panel
+		panel
 USE_GNOME=	gnomehier glib20 gnomehier gtk20 libxml2
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
@@ -27,6 +27,7 @@ CONFIGURE_ARGS=	--disable-pulseaudio \
 		--enable-gst-mixer-applet
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.panel.applet.mixer.gschema.xml \
 		org.mate.volume-control.gschema.xml

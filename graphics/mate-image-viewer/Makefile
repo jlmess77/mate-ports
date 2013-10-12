@@ -13,9 +13,10 @@ COMMENT=	The Eye of MATE image viewer
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libjpeg.so:${PORTSDIR}/graphics/jpeg
 
-USES=		desktop-file-utils gettext gmake pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
+		shared-mime-info
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop docutils icontheme matehack
+USE_MATE=	autogen common:build desktop docutils icontheme
 USE_XORG=	x11
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 librsvg2 libxml2
 INSTALLS_OMF=	yes
@@ -28,6 +29,7 @@ CONFIGURE_ARGS=	--disable-gtk-doc \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.eom.gschema.xml
 

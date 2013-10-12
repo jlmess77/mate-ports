@@ -13,9 +13,9 @@ COMMENT=	Display MATE dialogs from the command line
 BUILD_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack matehack
+USE_MATE=	autogen common:build docutils intlhack
 USE_GNOME=	gnomehier glib20 gtk20
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
@@ -23,6 +23,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}"
 CPPFLAGS+=	-I${LOCALBASE}/include ${PTHREAD_CFLAGS}
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 MAN1=		matedialog.1
 

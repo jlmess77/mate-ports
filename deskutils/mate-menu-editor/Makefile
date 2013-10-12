@@ -11,9 +11,9 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Editor for the freedesktop.org menu specification
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack matehack menus
+USE_MATE=	autogen common:build intlhack menus
 USE_GNOME=	pygobject pygtk2
 USE_PYTHON=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
@@ -21,6 +21,7 @@ GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 NO_STAGE=	yes
 post-patch:

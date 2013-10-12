@@ -17,9 +17,9 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libtasn1.so:${PORTSDIR}/security/libtasn1
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:${PORTSDIR}/security/ca_root_nss
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack libmatekeyring ltverhack matehack
+USE_MATE=	autogen common:build intlhack libmatekeyring ltverhack
 USE_GNOME=	gnomehier glib20 gtk20
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -31,6 +31,7 @@ CONFIGURE_ARGS=	--with-pam-dir="${PREFIX}/lib" \
 		--with-html-dir=${PREFIX}/share/doc
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.crypto.cache.gschema.xml \
 		org.mate.crypto.pgp.gschema.xml

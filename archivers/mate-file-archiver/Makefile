@@ -13,9 +13,9 @@ COMMENT=	Archive manager for zip files, tar, etc
 RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
     		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 
-USES=		desktop-file-utils gettext gmake pkgconfig
+USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen caja common:build docutils intlhack matehack
+USE_MATE=	autogen caja common:build docutils intlhack
 USE_XORG=	sm
 USE_GNOME=	glib20 gnomehier gtk20
 INSTALLS_OMF=	yes
@@ -27,6 +27,7 @@ CONFIGURE_ARGS=	--disable-packagekit \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.engrampa.gschema.xml
 

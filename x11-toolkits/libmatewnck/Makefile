@@ -12,9 +12,9 @@ COMMENT=	Library used for writing pagers and taskslists
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 
-USES=		bison gettext gmake pkgconfig
+USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack matehack
+USE_MATE=	autogen common:build intlhack ltverhack
 USE_XORG=	x11 xres
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection
 USE_LDCONFIG=	yes
@@ -24,6 +24,7 @@ CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 OPTIONS_DEFINE=	STARTUP
 OPTIONS_DEFAULT=STARTUP

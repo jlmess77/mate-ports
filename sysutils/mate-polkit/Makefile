@@ -13,9 +13,9 @@ COMMENT=	MATE frontend to the PolicKit framework
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack matehack
+USE_MATE=	autogen common:build intlhack ltverhack
 USE_GNOME=	gnomehier gtk20 introspection:build
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -24,6 +24,7 @@ CONFIGURE_ARGS=	--disable-gtk-doc \
 		--localstatedir=/var
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 NO_STAGE=	yes
 .include <bsd.port.mk>

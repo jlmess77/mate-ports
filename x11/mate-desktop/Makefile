@@ -13,9 +13,9 @@ COMMENT=	Additional UI API for MATE
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification
 
-USES=		bison gettext gmake pkgconfig
+USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack ltverhack matehack
+USE_MATE=	autogen common:build docutils intlhack ltverhack
 USE_XORG=	x11 xrandr
 USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20
 USE_PYTHON=	yes
@@ -28,6 +28,7 @@ CONFIGURE_ARGS=	--with-gtk=2.0 \
 		--disable-desktop-docs
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 MAN1=		mate-about.1
 

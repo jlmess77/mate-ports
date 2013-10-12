@@ -12,9 +12,9 @@ COMMENT=	MATE keyboard shared library
 
 LIB_DEPENDS=	libxklavier.so:${PORTSDIR}/x11/libxklavier
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack matehack
+USE_MATE=	autogen common:build intlhack ltverhack
 USE_GNOME=	gnomehier glib20 gtk20
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -23,6 +23,7 @@ CONFIGURE_ARGS=	--with-gtk=2.0
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.peripherals-keyboard-xkb.gschema.xml
 

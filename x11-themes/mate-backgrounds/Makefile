@@ -10,14 +10,15 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Collection of backgrounds for MATE
 
-USES=		gettext gmake
+USES=		gettext gmake pathfix
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack matehack
+USE_MATE=	autogen common:build intlhack
 USE_GNOME=	glib20
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 NO_STAGE=	yes
 .include <bsd.port.mk>

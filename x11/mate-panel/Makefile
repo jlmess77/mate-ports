@@ -14,10 +14,10 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack \
-		libmateweather libmatewnck ltverhack matehack menus
+		libmateweather libmatewnck ltverhack menus
 USE_XORG=	ice sm x11 xau xrandr
 USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
 		introspection:build librsvg2 pango
@@ -33,6 +33,7 @@ CONFIGURE_ARGS=	--disable-network-manager \
 INSTALLS_ICONS=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib
 CPPFLAGS+=	-I${LOCALBASE}/include
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 MAN1=		mate-panel.1
 GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \

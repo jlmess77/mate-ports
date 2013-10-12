@@ -42,8 +42,7 @@ Mate_Pre_Include=			bsd.mate.mk
 #
 
 # non-version specific components. Do not use :build/:run on those.
-_USE_MATE_ALL=	autogen intlhack intltool ltasneededhack lthack ltverhack \
-				matehack
+_USE_MATE_ALL=	autogen intlhack intltool ltasneededhack lthack ltverhack
 
 # MATE components, you can use the :build or :run if need. Without the :build
 # and :run, it will be added in both build and run dependency. It will check
@@ -56,16 +55,6 @@ _USE_MATE_ALL+=	caja common controlcenter desktop dialogs docutils icontheme \
 
 MATE_MAKEFILEIN?=	Makefile.*
 SCROLLKEEPER_DIR=	/var/db/rarian
-matehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "${MATE_MAKEFILEIN}*" -type f | ${XARGS} ${REINPLACE_CMD} -e \
-				's|[(]libdir[)]/locale|(prefix)/share/locale|g ; \
-				 s|[(]libdir[)]/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
-				 s|[(]datadir[)]/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
-				 s|[(]prefix[)]/lib/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
-				 s|[$$][(]localstatedir[)]/scrollkeeper|${SCROLLKEEPER_DIR}|g' ; \
-			${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINPLACE_CMD} -e \
-				's|-lpthread|${PTHREAD_LIBS}|g ; \
-				 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
-				 s|{libdir}/locale|{prefix}/share/locale|g'
 
 lthack_PRE_PATCH=	${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINPLACE_CMD} -e \
 				'/^LIBTOOL_DEPS="$$ac_aux_dir\/ltmain.sh"$$/s|$$|; $$ac_aux_dir/ltconfig $$LIBTOOL_DEPS;|'

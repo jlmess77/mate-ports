@@ -10,9 +10,9 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Terminal component for the MATE Desktop
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack matehack
+USE_MATE=	autogen common:build docutils intlhack
 USE_XORG=	sm x11
 USE_GNOME=	dconf glib20 gnomehier gtk20 vte
 INSTALLS_OMF=	yes
@@ -21,6 +21,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 MAN1=		mate-terminal.1
 GLIB_SCHEMAS=	org.mate.terminal.gschema.xml

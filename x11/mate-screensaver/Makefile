@@ -16,11 +16,11 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	xscreensaver-gl-helper:${PORTSDIR}/x11/xscreensaver-gnome-hacks
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_GL=		gl
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop intlhack libmatekbd \
-		matehack menus
+		menus
 USE_XORG=	ice sm x11 xext xtst xxf86misc xxf86vm
 USE_GNOME=	glib20 gnomehier gtk20
 GNU_CONFIGURE=	yes
@@ -31,6 +31,7 @@ CONFIGURE_ARGS=	--with-xscreensaverdir=${XSCREENSAVER_DIR} \
 		--with-systemd=no
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.screensaver.gschema.xml
 MAN1=		mate-screensaver-command.1 mate-screensaver-preferences.1 \

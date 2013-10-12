@@ -19,9 +19,9 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	xrdb:${PORTSDIR}/x11/xrdb
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop intlhack libmatekbd matehack
+USE_MATE=	autogen common:build desktop intlhack libmatekbd
 USE_XORG=	xxf86misc
 USE_GNOME=	dconf glib20 gnomehier gtk20
 USE_LDCONFIG=	yes
@@ -33,6 +33,7 @@ CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.SettingsDaemon.plugins.a11y-keyboard.gschema.xml \
 		org.mate.SettingsDaemon.plugins.background.gschema.xml \

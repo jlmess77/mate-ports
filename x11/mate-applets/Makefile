@@ -19,10 +19,10 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme intlhack \
-		libmateweather libmatewnck matehack mucharmap panel \
+		libmateweather libmatewnck mucharmap panel \
 		polkit settingsdaemon
 USE_XORG=	x11
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection:build \
@@ -38,6 +38,7 @@ CONFIGURE_ARGS=	--enable-mixer-applet \
 CONFIGURE_ENV=	OS_SYS="/usr/include"
 CPPFLAGS+=	-I${LOCALBASE}/include ${PTHREAD_CFLAGS}
 LDFLAGS+=	-L${LOCALBASE}/lib ${PTHREAD_LIBS}
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.panel.applet.charpick.gschema.xml \
 		org.mate.panel.applet.geyes.gschema.xml \

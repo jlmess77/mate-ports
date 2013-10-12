@@ -13,16 +13,17 @@ COMMENT=	MATE system monitor program
 LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
-		libmatewnck matehack
+		libmatewnck
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxml2 gtkmm24
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib -lutil"
 CPPFLAGS+=	-I${LOCALBASE}/include
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.system-monitor.enums.xml \
 		org.mate.system-monitor.gschema.xml

@@ -16,10 +16,10 @@ LIB_DEPENDS=	libpoppler-glib.so:${PORTSDIR}/graphics/poppler-glib \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
-USES=		desktop-file-utils gettext gmake pkgconfig
+USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \
-		ltasneededhack ltverhack matehack
+		ltasneededhack ltverhack
 USE_XORG=	sm
 USE_GNOME=	cairo glib20 gnomehier gtk20 libxml2
 INSTALLS_OMF=	yes
@@ -30,6 +30,7 @@ CONFIGURE_ARGS=	--with-gtk=2.0
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.Atril.gschema.xml
 MAN1=		atril.1

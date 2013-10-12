@@ -16,10 +16,9 @@ LIB_DEPENDS=	libenchant.so:${PORTSDIR}/textproc/enchant \
 		libsoup-2.4.so:${PORTSDIR}/devel/libsoup
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
 
-USES=		desktop-file-utils gettext gmake pkgconfig
+USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack ltasneededhack \
-		matehack
+USE_MATE=	autogen common:build docutils intlhack ltasneededhack
 USE_XORG=	sm x11
 USE_GNOME=	glib20 gnomehier gtk20 gtksourceview2 gvfs libxml2 \
 		pygobject pygtk2 pygtksourceview
@@ -32,6 +31,7 @@ CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 MAN1=		pluma.1
 GLIB_SCHEMAS=	org.mate.pluma.gschema.xml \

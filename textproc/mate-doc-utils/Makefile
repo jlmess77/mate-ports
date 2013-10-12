@@ -17,9 +17,9 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian \
 		${LOCALBASE}/share/xml/docbook/4.4/catalog.xml:${PORTSDIR}/textproc/docbook-xml-440 \
 		xml2po:${PORTSDIR}/textproc/gnome-doc-utils
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build matehack intlhack
+USE_MATE=	autogen common:build intlhack
 USE_GNOME=	gnomehier libxml2 libxslt
 USE_PYTHON=	build
 INSTALLS_OMF=	yes
@@ -28,6 +28,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=--with-omf-dir=${PREFIX}/share/omf
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 NO_STAGE=	yes
 post-patch:

@@ -16,9 +16,9 @@ LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:${PORTSDIR}/sysutils/consolekit \
 		${LOCALBASE}/bin/xdpyinfo:${PORTSDIR}/x11/xdpyinfo
 
-USES=		gettext gmake pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack matehack settingsdaemon
+USE_MATE=	autogen common:build intlhack settingsdaemon
 USE_XORG=	ice sm xau xext xrandr xrender xtrans xtst
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxslt pango
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
@@ -29,6 +29,7 @@ CONFIGURE_ARGS=	--disable-docbook-docs \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 MAN1=		mate-session.1 mate-wm.1 mate-session-properties.1 \
 		mate-session-save.1

@@ -16,10 +16,11 @@ LIB_DEPENDS=	libexif.so:${PORTSDIR}/graphics/libexif \
 		libexempi.so:${PORTSDIR}/textproc/exempi
 RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 
-USES=		desktop-file-utils gettext gmake pkgconfig shared-mime-info
+USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
+		shared-mime-info
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop icontheme:run intlhack \
-		ltasneededhack ltverhack matehack
+		ltasneededhack ltverhack
 USE_XORG=	ice x11 xrender
 USE_GNOME=	glib20 gnomehier gtk20 introspection:build libxml2 pango
 USE_LDCONFIG=	yes
@@ -34,6 +35,7 @@ CONFIGURE_ARGS=	--enable-static \
 		--with-html-dir=${PREFIX}/share/doc
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.caja.gschema.xml \
 		org.mate.media-handling.gschema.xml
