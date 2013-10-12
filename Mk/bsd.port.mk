@@ -205,11 +205,12 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  to skip this port by setting ${BATCH}, or compiling only
 #				  the interactive ports by setting ${INTERACTIVE}.
 #				  Default: not set.
-# USE_SUBMAKE	- Set this if you want that each of the port's main 6 targets
-#				  (extract, patch, configure, build, install and package) to be
-#				  executed in a separate make(1) process. Useful when one of
-#				  the stages needs to influence make(1) variables of the later
-#				  stages using ${WRKDIR}/Makefile.inc generated on the fly.
+# USE_SUBMAKE	- Set this if you want that each of the port's main 7 targets
+#				  (extract, patch, configure, build, stage, install and
+#				  package) to be executed in a separate make(1) process.
+#				  Useful when one of the stages needs to influence make(1)
+#				  variables of the later stages using ${WRKDIR}/Makefile.inc
+#				  generated on the fly.
 #				  Default: not set.
 #
 # Set these if your port only makes sense to certain architectures.
@@ -1133,6 +1134,7 @@ _DISTDIR?=		${DISTDIR}/${DIST_SUBDIR}
 INDEXDIR?=		${PORTSDIR}
 SRC_BASE?=		/usr/src
 USESDIR?=		${PORTSDIR}/Mk/Uses
+SCRIPTSDIR?=	${PORTSDIR}/Mk/Scripts
 LIB_DIRS?=		/lib /usr/lib ${LOCALBASE}/lib
 
 .if defined(FORCE_STAGE)
@@ -2193,7 +2195,7 @@ BUILD_FAIL_MESSAGE+=	Try to set MAKE_JOBS_UNSAFE=yes and rebuild before reportin
 # Support NO_CCACHE for common setups, require WITH_CCACHE_BUILD, and
 # don't use if ccache already set in CC
 .if !defined(NO_CCACHE) && defined(WITH_CCACHE_BUILD) && !${CC:M*ccache*} && \
-  !defined(NO_BUILD)
+  !defined(NO_BUILD) && !defined(NOCCACHE)
 # Avoid depends loops between pkg and ccache
 .	if !${.CURDIR:M*/devel/ccache} && !${.CURDIR:M*/ports-mgmt/pkg}
 BUILD_DEPENDS+=		${LOCALBASE}/bin/ccache:${PORTSDIR}/devel/ccache
@@ -3595,9 +3597,9 @@ patch-dos2unix:
 	@${FIND} -E ${WRKSRC} -type f -iregex '${DOS2UNIX_REGEX}' -print0 | \
 			${XARGS} -0 ${REINPLACE_CMD} -i '' -e 's/$$//'
 .else
-	@${ECHO_MSG} "===>   Converting DOS text file to UNIX text file: ${f}"
 .if ${USE_DOS2UNIX:M*/*}
 .for f in ${USE_DOS2UNIX}
+	@${ECHO_MSG} "===>   Converting DOS text file to UNIX text file: ${f}"
 	@${REINPLACE_CMD} -i '' -e 's/$$//' ${WRKSRC}/${f}
 .endfor
 .else
@@ -4353,11 +4355,17 @@ _STAGE_SUSEQ=	create-users-groups do-install post-install post-stage compress-ma
 				install-rc-script install-ldconfig-file install-license \
 				install-desktop-entries add-plist-info add-plist-docs add-plist-examples \
 				add-plist-data add-plist-post fix-plist-sequence
+.if defined(DEVELOPER)
+_STAGE_SUSEQ+=	stage-qa
+.endif
 .else
 _STAGE_SEQ+=	create-users-groups do-install post-install post-stage compress-man \
 				install-rc-script install-ldconfig-file install-license \
 				install-desktop-entries add-plist-info add-plist-docs add-plist-examples \
 				add-plist-data add-plist-post fix-plist-sequence
+.if defined(DEVELOPER)
+_STAGE_SEQ+=	stage-qa
+.endif
 .endif
 .if defined(WITH_PKGNG)
 _INSTALL_DEP=	stage
@@ -4412,7 +4420,7 @@ fetch: ${_FETCH_DEP} ${_FETCH_SEQ}
 pkg: ${_PKG_DEP} ${_PKG_SEQ}
 .endif
 
-# Main logic. The loop generates 6 main targets and using cookies
+# Main logic. The loop generates 7 main targets and using cookies
 # ensures that those already completed are skipped.
 
 .for target in extract patch configure build stage install package
@@ -5100,7 +5108,7 @@ _INSTALL_DEPENDS=	\
 				fi; \
 			elif [ -n "${USE_PACKAGE_DEPENDS_ONLY}" -a "$${target}" = "${DEPENDS_TARGET}" ]; then \
 				${ECHO_MSG} "===>   ${PKGNAME} depends on package: $${subpkgfile} - not found"; \
-				${ECHO_MSG} "===>   USE_PACKAGE_DEPENDS_ONLY set - will not build from source"; \
+				${ECHO_MSG} "===>   USE_PACKAGE_DEPENDS_ONLY set - not building missing dependency from source"; \
 				exit 1; \
 			else \
 			  (cd $$dir; ${MAKE} -DINSTALLS_DEPENDS $$target $$depends_args) ; \
@@ -6278,7 +6286,7 @@ do-config:
 .endif
 	@TMPOPTIONSFILE=$$(mktemp -t portoptions); \
 	trap "${RM} -f $${TMPOPTIONSFILE}; exit 1" 1 2 3 5 10 13 15; \
-	${SETENV} ${D4P_ENV} ${SH} ${PORTSDIR}/Tools/scripts/dialog4ports.sh $${TMPOPTIONSFILE} || { \
+	${SETENV} ${D4P_ENV} ${SH} ${SCRIPTSDIR}/dialog4ports.sh $${TMPOPTIONSFILE} || { \
 		${RM} -f $${TMPOPTIONSFILE}; \
 		${ECHO_MSG} "===> Options unchanged"; \
 		exit 0; \
