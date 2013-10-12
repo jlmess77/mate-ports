@@ -10,7 +10,7 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE calculator tool based on the old calctool for OpenWindows
 
-USES=		bison gettext gmake pathfix pkgconfig
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack
 USE_GNOME=	glib20 gnomehier gtk20 libxml2
