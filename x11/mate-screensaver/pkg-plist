@@ -29,6 +29,7 @@ share/backgrounds/cosmos/helix-nebula.jpg
 share/backgrounds/cosmos/jupiter.jpg
 share/backgrounds/cosmos/sombrero.jpg
 share/backgrounds/cosmos/whirlpool.jpg
+share/dbus-1/services/org.mate.ScreenSaver.service
 share/desktop-directories/mate-screensaver.directory
 share/locale/am/LC_MESSAGES/mate-screensaver.mo
 share/locale/ar/LC_MESSAGES/mate-screensaver.mo
