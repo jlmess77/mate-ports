@@ -32,13 +32,10 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 PATHFIX_MAKEFILEIN=	Makefile.*
 
-MAN1=		mate-dictionary.1 mate-disk-usage-analyzer.1 \
-		mate-screenshot.1 mate-search-tool.1 mate-system-log.1
 GLIB_SCHEMAS=	org.mate.dictionary.gschema.xml \
 		org.mate.disk-usage-analyzer.gschema.xml \
 		org.mate.screenshot.gschema.xml \
 		org.mate.search-tool.gschema.xml \
 		org.mate.system-log.gschema.xml
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

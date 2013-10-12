@@ -154,6 +154,7 @@ lib/pluma/plugins/taglist.pluma-plugin
 lib/pluma/plugins/time.pluma-plugin
 libdata/pkgconfig/pluma.pc
 libexec/pluma/pluma-bugreport.sh
+man/man1/pluma.1.gz
 share/MateConf/gsettings/pluma.convert
 share/applications/pluma.desktop
 share/locale/af/LC_MESSAGES/pluma.mo

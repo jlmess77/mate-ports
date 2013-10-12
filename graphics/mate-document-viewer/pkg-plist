@@ -91,6 +91,7 @@ libdata/pkgconfig/atril-document-1.5.0.pc
 libdata/pkgconfig/atril-view-1.5.0.pc
 libexec/atril-convert-metadata
 libexec/atrild
+man/man1/atril.1.gz
 share/MateConf/gsettings/atril.convert
 share/applications/atril.desktop
 share/atril/atril-previewer-ui.xml

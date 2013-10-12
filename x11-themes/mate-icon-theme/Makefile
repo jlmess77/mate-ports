@@ -24,7 +24,6 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 PATHFIX_MAKEFILEIN=	Makefile.*
 
-NO_STAGE=	yes
 pre-install:
 	@${REINPLACE_CMD} -e 's|install: install-data|install:|g' \
 		${WRKSRC}/po/Makefile

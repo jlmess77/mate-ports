@@ -16,7 +16,4 @@ USE_MATE=	autogen
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 
-MAN1=		mate-autogen.1 mate-doc-common.1
-
-NO_STAGE=	yes
 .include <bsd.port.mk>

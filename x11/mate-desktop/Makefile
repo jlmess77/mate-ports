@@ -30,8 +30,6 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 PATHFIX_MAKEFILEIN=	Makefile.*
 
-MAN1=		mate-about.1
-
 GLIB_SCHEMAS=	org.mate.accessibility-keyboard.gschema.xml \
 		org.mate.accessibility-startup.gschema.xml \
 		org.mate.applications-at-mobility.gschema.xml \
@@ -50,5 +48,4 @@ GLIB_SCHEMAS=	org.mate.accessibility-keyboard.gschema.xml \
 		org.mate.thumbnailers.gschema.xml \
 		org.mate.typing-break.gschema.xml
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

@@ -20,6 +20,9 @@ lib/libcaja-extension.so
 lib/libcaja-extension.so.1
 libdata/pkgconfig/libcaja-extension.pc
 libexec/caja-convert-metadata
+man/man1/caja.1.gz
+man/man1/caja-connect-server.1.gz
+man/man1/caja-file-management-properties.1.gz
 share/MateConf/gsettings/caja.convert
 share/applications/caja-autorun-software.desktop
 share/applications/caja-browser.desktop

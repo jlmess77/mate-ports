@@ -26,5 +26,4 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 PATHFIX_MAKEFILEIN=	Makefile.*
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

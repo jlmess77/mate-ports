@@ -12,6 +12,7 @@ lib/libmate-desktop-2.la
 lib/libmate-desktop-2.so
 lib/libmate-desktop-2.so.17
 libdata/pkgconfig/mate-desktop-2.0.pc
+man/man1/mate-about.1.gz
 share/MateConf/gsettings/mate-desktop.convert
 share/applications/mate-about.desktop
 %%DOCSDIR%%/MateBG.html

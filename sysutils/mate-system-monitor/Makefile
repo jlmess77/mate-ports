@@ -28,5 +28,4 @@ PATHFIX_MAKEFILEIN=	Makefile.*
 GLIB_SCHEMAS=	org.mate.system-monitor.enums.xml \
 		org.mate.system-monitor.gschema.xml
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

@@ -24,5 +24,4 @@ PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.apps.caja-open-terminal.gschema.xml
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

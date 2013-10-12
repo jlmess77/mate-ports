@@ -1,4 +1,5 @@
 bin/mate-terminal
+man/man1/mate-terminal.1.gz
 share/applications/mate-terminal.desktop
 share/locale/am/LC_MESSAGES/mate-terminal.mo
 share/locale/ar/LC_MESSAGES/mate-terminal.mo

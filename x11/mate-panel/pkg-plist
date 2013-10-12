@@ -15,6 +15,7 @@ lib/mate-panel/mate-panel-add
 lib/mate-panel/notification-area-applet
 lib/mate-panel/wnck-applet
 libdata/pkgconfig/libmatepanelapplet-4.0.pc
+man/man1/mate-panel.1.gz
 share/MateConf/gsettings/mate-panel.convert
 share/applications/mate-panel.desktop
 share/dbus-1/services/org.mate.panel.applet.ClockAppletFactory.service
@@ -619,3 +620,4 @@ share/omf/mate-applet-fish/mate-applet-fish-zh_CN.omf
 @dirrmtry lib/mate-panel
 @dirrm include/mate-panel-4.0/libmate-panel-applet
 @dirrm include/mate-panel-4.0
+@exec %D/bin/gio-querymodules %D/lib/mate-panel/modules

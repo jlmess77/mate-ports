@@ -27,5 +27,4 @@ PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.peripherals-keyboard-xkb.gschema.xml
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

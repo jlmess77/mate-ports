@@ -57,5 +57,4 @@ GLIB_SCHEMAS=	org.mate.SettingsDaemon.plugins.a11y-keyboard.gschema.xml \
 		org.mate.peripherals-smartcard.gschema.xml \
 		org.mate.peripherals-touchpad.gschema.xml
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

@@ -34,8 +34,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.screensaver.gschema.xml
-MAN1=		mate-screensaver-command.1 mate-screensaver-preferences.1 \
-		mate-screensaver.1
 
 PLIST=		${WRKDIR}/pkg-plist
 SUB_FILES+=	mate-screensaver.pam
@@ -50,7 +48,6 @@ OPTIONS_DEFAULT=PAM KEYRING
 PAM_DESC=	Pluggable Authentication Module support
 KEYRING_DESC=	MateKeyring integration (needs PAM)
 
-NO_STAGE=	yes
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPAM}
@@ -90,15 +87,15 @@ pre-install:
 	@${ECHO_CMD} @dirrm ${SCREENSAVER_DIR} >> ${PLIST}
 
 post-install:
-	${CHOWN} root ${PREFIX}/libexec/mate-screensaver-dialog
-	${CHMOD} +s ${PREFIX}/libexec/mate-screensaver-dialog
-	${MKDIR} ${PREFIX}/${SCREENSAVER_DIR}
-	cd ${PREFIX}/${SCREENSAVER_DIR} && \
+	${CHOWN} root ${STAGEDIR}${PREFIX}/libexec/mate-screensaver-dialog
+	${CHMOD} +s ${STAGEDIR}${PREFIX}/libexec/mate-screensaver-dialog
+	${MKDIR} ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR}
+	cd ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR} && \
 		${FIND} -s ${XSCREENSAVER_DIR} -maxdepth 1 -type f -name "*.xml" | \
 			${GREP} -Ev ${XSCREENSAVER_EXCLUDE} | \
 			${XARGS} ${WRKSRC}/data/migrate-xscreensaver-config.sh
 .if ${PORT_OPTIONS:MPAM}
-	${INSTALL_DATA} ${WRKDIR}/mate-screensaver.pam ${PREFIX}/etc/pam.d/mate-screensaver
+	${INSTALL_DATA} ${WRKDIR}/mate-screensaver.pam ${STAGEDIR}${PREFIX}/etc/pam.d/mate-screensaver
 .endif
 
 .include <bsd.port.mk>

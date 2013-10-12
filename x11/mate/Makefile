@@ -30,8 +30,8 @@ RUN_DEPENDS=	mate-base>=1.6.0:${PORTSDIR}/x11/mate-base \
 USE_MATE=	pluma:run 
 
 NO_BUILD=	yes
+NO_MTREE=	yes
 
-NO_STAGE=	yes
 do-install:	# empty
 
 .include <bsd.port.mk>

@@ -14,14 +14,13 @@ USE_XZ=		yes
 NO_BUILD=	yes
 INSTALLS_ICONS=	yes
 
-NO_STAGE=	yes
 do-install:
-	@${MKDIR} ${PREFIX}/share/icons
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons
 	@(cd ${WRKSRC} && ${FIND} matefaenza -name '*[^~]' | \
-		${CPIO} -pdu -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/icons)
+		${CPIO} -pdu -R ${SHAREOWN}:${SHAREGRP} ${STAGEDIR}${PREFIX}/share/icons)
 	@(cd ${WRKSRC} && ${FIND} matefaenzadark -name '*[^~]' | \
-		${CPIO} -pdu -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/icons)
+		${CPIO} -pdu -R ${SHAREOWN}:${SHAREGRP} ${STAGEDIR}${PREFIX}/share/icons)
 	@(cd ${WRKSRC} && ${FIND} matefaenzagray -name '*[^~]' | \
-		${CPIO} -pdu -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/icons)
+		${CPIO} -pdu -R ${SHAREOWN}:${SHAREGRP} ${STAGEDIR}${PREFIX}/share/icons)
 
 .include <bsd.port.mk>

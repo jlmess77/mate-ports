@@ -29,5 +29,4 @@ PATHFIX_MAKEFILEIN=	Makefile.*
 GLIB_SCHEMAS=	org.mate.mucharmap.enums.xml \
 		org.mate.mucharmap.gschema.xml
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

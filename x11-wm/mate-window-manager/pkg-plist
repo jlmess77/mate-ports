@@ -14,6 +14,10 @@ lib/libmarco-private.la
 lib/libmarco-private.so
 lib/libmarco-private.so.0
 libdata/pkgconfig/libmarco-private.pc
+man/man1/marco-message.1.gz
+man/man1/marco-theme-viewer.1.gz
+man/man1/marco-window-demo.1.gz
+man/man1/marco.1.gz
 share/MateConf/gsettings/marco.convert
 share/applications/marco.desktop
 share/locale/am/LC_MESSAGES/marco.mo

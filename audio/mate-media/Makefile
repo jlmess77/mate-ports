@@ -32,7 +32,6 @@ PATHFIX_MAKEFILEIN=	Makefile.*
 GLIB_SCHEMAS=	org.mate.panel.applet.mixer.gschema.xml \
 		org.mate.volume-control.gschema.xml
 
-NO_STAGE=	yes
 post-patch:
 	@${REINPLACE_CMD} -e 's|mixer_applet2|mate_mixer_applet2|g' \
 		${WRKSRC}/gst-mixer-applet/Makefile.am \

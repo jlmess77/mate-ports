@@ -35,7 +35,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 CPPFLAGS+=	-I${LOCALBASE}/include
 PATHFIX_MAKEFILEIN=	Makefile.*
 
-MAN1=		mate-panel.1
 GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 		org.mate.panel.applet.fish.gschema.xml \
 		org.mate.panel.applet.window-list.gschema.xml \
@@ -45,9 +44,7 @@ GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 		org.mate.panel.object.gschema.xml \
 		org.mate.panel.toplevel.gschema.xml
 
-NO_STAGE=	yes
 post-install:
-	@${MKDIR} ${PREFIX}/lib/mate-panel/modules
-	-${LOCALBASE}/bin/gio-querymodules ${PREFIX}/lib/mate-panel/modules
+	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/mate-panel/modules
 
 .include <bsd.port.mk>

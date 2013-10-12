@@ -28,8 +28,4 @@ PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.marco.gschema.xml
 
-MAN1=		marco-message.1 marco-theme-viewer.1 marco-window-demo.1 \
-		marco.1
-
-NO_STAGE=	yes
 .include <bsd.port.mk>

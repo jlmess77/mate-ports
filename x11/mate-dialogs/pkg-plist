@@ -1,4 +1,5 @@
 bin/matedialog
+man/man1/matedialog.1.gz
 share/locale/am/LC_MESSAGES/mate-dialogs.mo
 share/locale/ar/LC_MESSAGES/mate-dialogs.mo
 share/locale/as/LC_MESSAGES/mate-dialogs.mo

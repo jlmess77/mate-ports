@@ -57,5 +57,4 @@ PLIST_SUB+=	EXIFEXEMPI=""
 PLIST_SUB+=	EXIFEXEMPI="@comment "
 .endif
 
-NO_STAGE=	yes
 .include <bsd.port.mk>
