@@ -20,10 +20,11 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
 		shared-mime-info
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop docutils intlhack \
-		ltverhack libmatekbd marco menus settingsdaemon
+USE_MATE=	autogen common:build desktop docutils libmatekbd marco \
+		menus settingsdaemon
 USE_XORG=	x11 xcursor xext xxf86misc xft xi xrandr xscrnsaver
-USE_GNOME=	dconf glib20 gnomehier gtk20 libxml2 librsvg2 pango
+USE_GNOME=	dconf glib20 gnomehier gtk20 intlhack libxml2 librsvg2 \
+		ltverhack pango
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

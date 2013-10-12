@@ -19,8 +19,8 @@ RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:${PORTSDIR}/security/ca_ro
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack libmatekeyring ltverhack
-USE_GNOME=	gnomehier glib20 gtk20
+USE_MATE=	autogen common:build libmatekeyring
+USE_GNOME=	gnomehier glib20 gtk20 intlhack ltverhack
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

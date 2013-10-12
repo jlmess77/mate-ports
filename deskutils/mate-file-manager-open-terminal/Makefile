@@ -12,8 +12,8 @@ COMMENT=	Caja extension which allows you to open a terminal
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen caja common:build desktop intlhack
-USE_GNOME=	glib20 gnomehier
+USE_MATE=	autogen caja common:build desktop
+USE_GNOME=	glib20 gnomehier intlhack
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env \

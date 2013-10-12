@@ -16,7 +16,8 @@ RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicol
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack
+USE_MATE=	autogen common:build
+USE_GNOME=	intlhack
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes

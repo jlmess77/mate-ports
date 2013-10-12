@@ -15,9 +15,8 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils icontheme intlhack \
-		libmatewnck
-USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxml2 gtkmm24
+USE_MATE=	autogen common:build docutils icontheme libmatewnck
+USE_GNOME=	glib20 gnomehier gtk20 intlhack librsvg2 libxml2 gtkmm24
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

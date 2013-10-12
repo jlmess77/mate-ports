@@ -21,10 +21,9 @@ RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack libmatekeyring \
-		panel
+USE_MATE=	autogen common:build docutils libmatekeyring panel
 USE_XORG=	x11 xext xproto xrandr xrender
-USE_GNOME=	cairo glib20 gnomehier gtk20
+USE_GNOME=	cairo glib20 gnomehier gtk20 intlhack
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

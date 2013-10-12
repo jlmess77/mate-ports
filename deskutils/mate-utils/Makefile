@@ -17,10 +17,9 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack ltverhack \
-		panel
+USE_MATE=	autogen common:build docutils panel
 USE_XORG=	x11 xext
-USE_GNOME=	glib20 gnomehier gtk20
+USE_GNOME=	glib20 gnomehier gtk20 intlhack ltverhack
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

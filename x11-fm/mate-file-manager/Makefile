@@ -19,10 +19,10 @@ RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
 		shared-mime-info
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop icontheme:run intlhack \
-		ltasneededhack ltverhack
+USE_MATE=	autogen common:build desktop icontheme:run
 USE_XORG=	ice x11 xrender
-USE_GNOME=	glib20 gnomehier gtk20 introspection:build libxml2 pango
+USE_GNOME=	glib20 gnomehier gtk20 intlhack introspection:build libxml2 \
+		ltasneededhack ltverhack pango
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

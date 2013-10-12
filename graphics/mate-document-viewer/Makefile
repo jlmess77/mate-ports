@@ -18,10 +18,10 @@ RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicol
 
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils icontheme intlhack \
-		ltasneededhack ltverhack
+USE_MATE=	autogen common:build docutils icontheme
 USE_XORG=	sm
-USE_GNOME=	cairo glib20 gnomehier gtk20 libxml2
+USE_GNOME=	cairo glib20 gnomehier gtk20 intlhack ltasneededhack \
+		libxml2 ltverhack
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
