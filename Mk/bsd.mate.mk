@@ -53,7 +53,6 @@ _USE_MATE_ALL+=	caja common controlcenter desktop dialogs docutils icontheme \
 				marco menus mucharmap notificationdaemon panel polkit pluma \
 				settingsdaemon
 
-MATE_MAKEFILEIN?=	Makefile.*
 SCROLLKEEPER_DIR=	/var/db/rarian
 
 lthack_PRE_PATCH=	${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINPLACE_CMD} -e \
