@@ -410,7 +410,6 @@ share/mate-panel/applets/org.mate.InhibitApplet.mate-panel-applet
 %%DATADIR%%/icons/hicolor/48x48/status/gpm-ups-100-charging.png
 %%DATADIR%%/icons/hicolor/48x48/status/gpm-ups-100.png
 %%DATADIR%%/icons/hicolor/48x48/status/gpm-ups-missing.png
-%%DATADIR%%/icons/hicolor/icon-theme.cache
 %%DATADIR%%/icons/hicolor/scalable/actions/gpm-hibernate.svg
 %%DATADIR%%/icons/hicolor/scalable/actions/gpm-suspend.svg
 %%DATADIR%%/icons/hicolor/scalable/status/gpm-ac-adapter.svg
