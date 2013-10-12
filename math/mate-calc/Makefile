@@ -29,4 +29,8 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|$$(LEX)|${LOCALBASE}/bin/flex|g' \
 		${WRKSRC}/src/Makefile.am
 
+post-configure:
+	@${REINPLACE_CMD} -e '/^DATADIRNAME/s/lib/share/' \
+		${WRKSRC}/po/Makefile
+
 .include <bsd.port.mk>
