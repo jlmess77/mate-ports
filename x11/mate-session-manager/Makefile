@@ -31,8 +31,6 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 PATHFIX_MAKEFILEIN=	Makefile.*
 
-MAN1=		mate-session.1 mate-wm.1 mate-session-properties.1 \
-		mate-session-save.1
 GLIB_SCHEMAS=	org.mate.session.gschema.xml
 
 .include <bsd.port.mk>
