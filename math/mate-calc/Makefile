@@ -10,8 +10,6 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE calculator tool based on the old calctool for OpenWindows
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/flex:${PORTSDIR}/textproc/flex
-
 USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack
@@ -24,10 +22,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.calc.gschema.xml
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|$$(LEX)|${LOCALBASE}/bin/flex|g' \
-		${WRKSRC}/src/Makefile.am
 
 post-configure:
 	@${REINPLACE_CMD} -e '/^DATADIRNAME/s/lib/share/' \
