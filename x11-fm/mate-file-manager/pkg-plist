@@ -17,7 +17,7 @@ lib/girepository-1.0/Caja-2.0.typelib
 lib/libcaja-extension.a
 lib/libcaja-extension.la
 lib/libcaja-extension.so
-lib/libcaja-extension.so.1
+lib/libcaja-extension.so.5
 libdata/pkgconfig/libcaja-extension.pc
 libexec/caja-convert-metadata
 man/man1/caja.1.gz
