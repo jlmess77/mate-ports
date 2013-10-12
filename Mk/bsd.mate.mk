@@ -49,9 +49,9 @@ _USE_MATE_ALL=	autogen
 # for the library dependency first. If not exists then do the build/run on
 # the *.pc file instead.
 _USE_MATE_ALL+=	caja common controlcenter desktop dialogs docutils icontheme \
-				keyring libmatekbd libmatekeyring libmateweather libmatewnck \
-				marco menus mucharmap notificationdaemon panel polkit pluma \
-				settingsdaemon
+		keyring libmatekbd libmatekeyring libmateweather libmatewnck \
+		marco menus mucharmap notificationdaemon panel polkit pluma \
+		settingsdaemon
 
 caja_DETECT=		${LOCALBASE}/libdata/pkgconfig/libcaja-extension.pc
 caja_BUILD_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
