@@ -26,14 +26,14 @@
 # Please make sure all changes to this file are passed through the maintainer.
 # Do not commit them yourself (unless of course you're the Port's Wraith ;).
 Mate_Include_MAINTAINER=	gnome@FreeBSD.org
-Mate_Pre_Include=		bsd.mate.mk
+Mate_Pre_Include=			bsd.mate.mk
 
 # This section defines possible names of MATE components and all information
 # necessary for ports to use those components.
 
 # Ports can use this as follows:
 #
-# USE_MATE=	caja common:build desktop
+# USE_MATE=	caja common desktop
 #
 # .include <bsd.port.mk>
 #
@@ -42,8 +42,7 @@ Mate_Pre_Include=		bsd.mate.mk
 #
 
 # non-version specific components. Do not use :build/:run on those.
-_USE_MATE_ALL=	autogen
-# intlhack intltool ltasneededhack lthack ltverhack
+_USE_MATE_ALL=	autogen intlhack intltool ltasneededhack lthack ltverhack
 
 # MATE components, you can use the :build or :run if need. Without the :build
 # and :run, it will be added in both build and run dependency. It will check
@@ -53,6 +52,11 @@ _USE_MATE_ALL+=	caja common controlcenter desktop dialogs docutils icontheme \
 		keyring libmatekbd libmatekeyring libmateweather libmatewnck \
 		marco menus mucharmap notificationdaemon panel polkit pluma \
 		settingsdaemon
+
+SCROLLKEEPER_DIR=	/var/db/rarian
+
+lthack_PRE_PATCH=	${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINPLACE_CMD} -e \
+				'/^LIBTOOL_DEPS="$$ac_aux_dir\/ltmain.sh"$$/s|$$|; $$ac_aux_dir/ltconfig $$LIBTOOL_DEPS;|'
 
 caja_DETECT=		${LOCALBASE}/libdata/pkgconfig/libcaja-extension.pc
 caja_BUILD_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
@@ -89,6 +93,18 @@ docutils_RUN_DEPENDS=	${docutils_DETECT}:${PORTSDIR}/textproc/mate-doc-utils
 icontheme_DETECT=	${LOCALBASE}/libdata/pkgconfig/mate-icon-theme.pc
 icontheme_BUILD_DEPENDS=${icontheme_DETECT}:${PORTSDIR}/x11-themes/mate-icon-theme
 icontheme_RUN_DEPENDS=	${icontheme_DETECT}:${PORTSDIR}/x11-themes/mate-icon-theme
+
+intltool_DETECT=	${LOCALBASE}/bin/intltool-extract
+intltool_BUILD_DEPENDS=	${intltool_DETECT}:${PORTSDIR}/textproc/intltool
+
+intlhack_PRE_PATCH=		${FIND} ${WRKSRC} -name "intltool-merge.in" | ${XARGS} ${REINPLACE_CMD} -e \
+				's|mkdir $$lang or|mkdir $$lang, 0777 or| ; \
+				 s|^push @INC, "/.*|push @INC, "${LOCALBASE}/share/intltool";| ; \
+				 s|/usr/bin/iconv|${LOCALBASE}/bin/iconv|g ; \
+				 s|unpack *[(]'"'"'U\*'"'"'|unpack ('"'"'C*'"'"'|'
+.if ${USE_MATE:Mintlhack}!=""
+USE_MATE+=				intltool
+.endif
 
 keyring_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-gcr-0.pc
 keyring_BUILD_DEPENDS=	${keyring_DETECT}:${PORTSDIR}/security/mate-keyring
@@ -157,6 +173,49 @@ settingsdaemon_RUN_DEPENDS=	${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-s
 Mate_Post_Include=		bsd.mate.mk
 
 .if defined(USE_MATE)
+# Then handle the ltverhack component (it has to be done here, because
+# we rely on some bsd.autotools.mk variables, and bsd.autotools.mk is
+# included in the post-makefile section).
+.if defined(_AUTOTOOL_libtool)
+lthacks_CONFIGURE_ENV=	ac_cv_path_DOLT_BASH=
+lthacks_PRE_PATCH=		${CP} -pf ${LTMAIN} ${WRKDIR}/mate-ltmain.sh && \
+						${CP} -pf ${LIBTOOL} ${WRKDIR}/mate-libtool && \
+						for file in ${LIBTOOLFILES}; do \
+							${REINPLACE_CMD} -e \
+								'/^ltmain=/!s|$$ac_aux_dir/ltmain\.sh|${LIBTOOLFLAGS} ${WRKDIR}/mate-ltmain.sh|g; \
+								 /^LIBTOOL=/s|$$(top_builddir)/libtool|${WRKDIR}/mate-libtool|g' \
+								${PATCH_WRKSRC}/$$file; \
+						done;
+.else
+.  if ${USE_MATE:Mltverhack*}!="" || ${USE_MATE:Mltasneededhack}!=""
+IGNORE=	cannot install: ${PORTNAME} uses the ltverhack and/or ltasneededhack MATE components but does not use libtool
+.  endif
+.endif
+
+.if ${USE_MATE:Mltverhack\:*:C/^[^:]+:([^:]+).*/\1/}==""
+ltverhack_LIB_VERSION=	major=.`expr $$current - $$age`
+.else
+ltverhack_LIB_VERSION=	major=".${USE_MATE:Mltverhack\:*:C/^[^:]+:([^:]+).*/\1/}"
+.endif
+ltverhack_PATCH_DEPENDS=${LIBTOOL_DEPENDS}
+ltverhack_PRE_PATCH=	for file in mate-ltmain.sh mate-libtool; do \
+							if [ -f ${WRKDIR}/$$file ]; then \
+								${REINPLACE_CMD} -e \
+									'/freebsd-elf)/,/;;/ s|major="\.$$current"|${ltverhack_LIB_VERSION}|; \
+									 /freebsd-elf)/,/;;/ s|versuffix="\.$$current"|versuffix="$$major"|' \
+									${WRKDIR}/$$file; \
+							fi; \
+						done
+
+ltasneededhack_PATCH_DEPENDS=${LIBTOOL_DEPENDS}
+ltasneededhack_PRE_PATCH=	if [ -f ${WRKDIR}/mate-libtool ]; then \
+								${REINPLACE_CMD} -e \
+									'/^archive_cmds=/s/-shared/-shared -Wl,--as-needed/ ; \
+									/^archive_expsym_cmds=/s/-shared/-shared -Wl,--as-needed/' \
+									${WRKDIR}/mate-libtool; \
+							fi
+
+
 # Comparing between USE_MATE and _USE_MATE_ALL to make sure the component
 # exists in _USE_MATE_ALL. If it does not exist then give an error about it.
 #. for component in ${USE_MATE:O:u:C/^([^:]+).*/\1/}
@@ -166,6 +225,11 @@ Mate_Post_Include=		bsd.mate.mk
 .error cannot install: Unknown component USE_MATE=${component}
 .  endif
 . endfor
+
+. if ${USE_MATE:Mltverhack*}!= "" || ${USE_MATE:Mltasneededhack}!= ""
+MATE_PRE_PATCH+=	${lthacks_PRE_PATCH}
+CONFIGURE_ENV+=		${lthacks_CONFIGURE_ENV}
+. endif
 
 . for component in ${USE_MATE:O:u:C/^([^:]+).*/\1/}
 .  if defined(${component}_PATCH_DEPENDS)

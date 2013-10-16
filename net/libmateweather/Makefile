@@ -15,8 +15,8 @@ LIB_DEPENDS=	libsoup-2.4.so:${PORTSDIR}/devel/libsoup
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build
-USE_GNOME=	glib20 gtk20 intlhack libxml2 ltverhack
+USE_MATE=	autogen common:build intlhack ltverhack
+USE_GNOME=	glib20 gtk20 libxml2
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

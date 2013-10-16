@@ -15,8 +15,8 @@ LIB_DEPENDS=	libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build
-USE_GNOME=	gnomehier gtk20 intlhack introspection:build ltverhack
+USE_MATE=	autogen common:build intlhack ltverhack
+USE_GNOME=	gnomehier gtk20 introspection:build
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

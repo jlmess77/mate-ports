@@ -12,8 +12,8 @@ COMMENT=	Collection of backgrounds for MATE
 
 USES=		gettext gmake pathfix
 USE_XZ=		yes
-USE_MATE=	autogen common:build
-USE_GNOME=	glib20 intlhack
+USE_MATE=	autogen common:build intlhack
+USE_GNOME=	glib20
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

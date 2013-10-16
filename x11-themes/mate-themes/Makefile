@@ -17,8 +17,8 @@ RUN_DEPENDS=	gtk-engines2>=2.15.0:${PORTSDIR}/x11-themes/gtk-engines2 \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build marco
-USE_GNOME=	gdkpixbuf2 gtk20 intlhack
+USE_MATE=	autogen common:build intlhack marco
+USE_GNOME=	gdkpixbuf2 gtk20
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes

@@ -1,3 +1,4 @@
+
 # Created by: FreeBSD GNOME Team
 # $FreeBSD$
 
@@ -12,8 +13,8 @@ COMMENT=	Editor for the freedesktop.org menu specification
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build menus
-USE_GNOME=	intlhack pygobject pygtk2
+USE_MATE=	autogen common:build intlhack menus
+USE_GNOME=	pygobject pygtk2
 USE_PYTHON=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes

@@ -19,9 +19,10 @@ RUN_DEPENDS=	xscreensaver-gl-helper:${PORTSDIR}/x11/xscreensaver-gnome-hacks
 USES=		gettext gmake pathfix pkgconfig
 USE_GL=		gl
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop libmatekbd menus
+USE_MATE=	autogen common:build desktop intlhack libmatekbd \
+		menus
 USE_XORG=	ice sm x11 xext xtst xxf86misc xxf86vm
-USE_GNOME=	glib20 gnomehier gtk20 intlhack
+USE_GNOME=	glib20 gnomehier gtk20
 GNU_CONFIGURE=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 CONFIGURE_ARGS=	--with-xscreensaverdir=${XSCREENSAVER_DIR} \

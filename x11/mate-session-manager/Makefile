@@ -18,9 +18,9 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:${PORTSDIR}/sysutils/consoleki
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build settingsdaemon
+USE_MATE=	autogen common:build intlhack settingsdaemon
 USE_XORG=	ice sm xau xext xrandr xrender xtrans xtst
-USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxslt intlhack pango
+USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxslt pango
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docbook-docs \

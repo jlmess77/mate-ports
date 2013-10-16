@@ -16,11 +16,11 @@ LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop docutils libmateweather \
-		libmatewnck menus
+USE_MATE=	autogen common:build desktop docutils intlhack \
+		libmateweather libmatewnck ltverhack menus
 USE_XORG=	ice sm x11 xau xrandr
 USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
-		intlhack introspection:build librsvg2 ltverhack pango
+		introspection:build librsvg2 pango
 USE_PYTHON=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes

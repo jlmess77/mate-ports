@@ -20,9 +20,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build libmatewnck
+USE_MATE=	autogen common:build intlhack libmatewnck
 USE_XORG=	x11
-USE_GNOME=	glib20 gnomehier gtk20 intlhack librsvg2
+USE_GNOME=	glib20 gnomehier gtk20 librsvg2
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \

@@ -12,8 +12,8 @@ COMMENT=	MATE calculator tool based on the old calctool for OpenWindows
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils
-USE_GNOME=	glib20 gnomehier gtk20 intlhack libxml2
+USE_MATE=	autogen common:build docutils intlhack
+USE_GNOME=	glib20 gnomehier gtk20 libxml2
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0

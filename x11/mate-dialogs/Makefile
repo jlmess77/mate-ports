@@ -15,8 +15,8 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils
-USE_GNOME=	gnomehier glib20 gtk20 intlhack
+USE_MATE=	autogen common:build docutils intlhack
+USE_GNOME=	gnomehier glib20 gtk20
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes

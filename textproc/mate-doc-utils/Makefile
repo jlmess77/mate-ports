@@ -19,8 +19,8 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build
-USE_GNOME=	gnomehier intlhack libxml2 libxslt
+USE_MATE=	autogen common:build intlhack
+USE_GNOME=	gnomehier libxml2 libxslt
 USE_PYTHON=	build
 INSTALLS_OMF=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env

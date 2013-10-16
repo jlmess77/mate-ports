@@ -21,9 +21,9 @@ RUN_DEPENDS=	xrdb:${PORTSDIR}/x11/xrdb
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop libmatekbd
+USE_MATE=	autogen common:build desktop intlhack libmatekbd
 USE_XORG=	xxf86misc
-USE_GNOME=	dconf glib20 gnomehier gtk20 intlhack
+USE_GNOME=	dconf glib20 gnomehier gtk20
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_GSTREAMER=	good

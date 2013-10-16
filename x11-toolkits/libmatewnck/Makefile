@@ -14,10 +14,9 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 
 USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build
+USE_MATE=	autogen common:build intlhack ltverhack
 USE_XORG=	x11 xres
-USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 intlhack introspection \
-		ltverhack
+USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

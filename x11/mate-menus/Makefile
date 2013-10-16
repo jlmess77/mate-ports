@@ -13,8 +13,8 @@ COMMENT=	Implementation of the FreeDesktop Desktop Menu Spec
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build
-USE_GNOME=	glib20 gnomehier introspection:build intlhack ltverhack
+USE_MATE=	autogen common:build intlhack ltverhack
+USE_GNOME=	glib20 gnomehier introspection:build
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

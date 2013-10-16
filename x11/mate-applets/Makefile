@@ -21,12 +21,12 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop docutils icontheme \
+USE_MATE=	autogen common:build desktop docutils icontheme intlhack \
 		libmateweather libmatewnck mucharmap panel \
 		polkit settingsdaemon
 USE_XORG=	x11
-USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 intlhack \
-		introspection:build libxml2 libxslt pygobject pygtk2
+USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection:build \
+		libxml2 libxslt pygobject pygtk2
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes

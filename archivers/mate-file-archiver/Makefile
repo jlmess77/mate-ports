@@ -15,9 +15,9 @@ RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
 
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen caja common:build docutils
+USE_MATE=	autogen caja common:build docutils intlhack
 USE_XORG=	sm
-USE_GNOME=	glib20 gnomehier gtk20 intlhack
+USE_GNOME=	glib20 gnomehier gtk20
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

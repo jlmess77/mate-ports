@@ -14,8 +14,9 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop docutils panel
-USE_GNOME=	gnomehier glib20 gnomehier gtk20 intlhack ltverhack libxml2
+USE_MATE=	autogen common:build desktop docutils intlhack ltverhack \
+		panel
+USE_GNOME=	gnomehier glib20 gnomehier gtk20 libxml2
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

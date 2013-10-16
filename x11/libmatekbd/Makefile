@@ -14,8 +14,8 @@ LIB_DEPENDS=	libxklavier.so:${PORTSDIR}/x11/libxklavier
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build
-USE_GNOME=	gnomehier glib20 gtk20 intlhack ltverhack
+USE_MATE=	autogen common:build intlhack ltverhack
+USE_GNOME=	gnomehier glib20 gtk20
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes

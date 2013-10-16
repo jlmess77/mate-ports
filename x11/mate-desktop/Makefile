@@ -15,9 +15,9 @@ LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification
 
 USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils
+USE_MATE=	autogen common:build docutils intlhack ltverhack
 USE_XORG=	x11 xrandr
-USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20 intlhack ltverhack
+USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env

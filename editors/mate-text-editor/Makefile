@@ -18,10 +18,10 @@ RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-co
 
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils
+USE_MATE=	autogen common:build docutils intlhack ltasneededhack
 USE_XORG=	sm x11
-USE_GNOME=	glib20 gnomehier gtk20 gtksourceview2 gvfs intlhack \
-		ltasneededhack libxml2 pygobject pygtk2 pygtksourceview
+USE_GNOME=	glib20 gnomehier gtk20 gtksourceview2 gvfs libxml2 \
+		pygobject pygtk2 pygtksourceview
 USE_PYTHON=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
