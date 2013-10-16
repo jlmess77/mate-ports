@@ -43,6 +43,7 @@ Mate_Pre_Include=		bsd.mate.mk
 
 # non-version specific components. Do not use :build/:run on those.
 _USE_MATE_ALL=	autogen
+# intlhack intltool ltasneededhack lthack ltverhack
 
 # MATE components, you can use the :build or :run if need. Without the :build
 # and :run, it will be added in both build and run dependency. It will check
