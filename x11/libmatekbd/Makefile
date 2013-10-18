@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	libmatekbd
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -14,17 +14,21 @@ LIB_DEPENDS=	libxklavier.so:${PORTSDIR}/x11/libxklavier
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack
-USE_GNOME=	gnomehier glib20 gtk20
+USE_GNOME=	gnomehier glib20 gtk20 intlhack ltverhack
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
+USE_AUTOTOOLS=	libtool
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.peripherals-keyboard-xkb.gschema.xml
+
+.if ! defined(WITH_DEBUG)
+post-install:
+	@${STRIP_CMD} ${STRIP} ${STAGEDIR}${PREFIX}/lib/libmatekbd*.so.4
+.endif
+
 
 .include <bsd.port.mk>
