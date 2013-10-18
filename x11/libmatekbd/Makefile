@@ -30,5 +30,4 @@ post-install:
 	@${STRIP_CMD} ${STRIP} ${STAGEDIR}${PREFIX}/lib/libmatekbd*.so.4
 .endif
 
-
 .include <bsd.port.mk>
