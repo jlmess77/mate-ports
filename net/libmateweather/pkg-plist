@@ -19,6 +19,7 @@ libdata/pkgconfig/mateweather.pc
 %%DOCSDIR%%/index.sgml
 %%DOCSDIR%%/left.png
 %%DOCSDIR%%/libmateweather-mateweather-location.html
+%%DOCSDIR%%/libmateweather-mateweather-mateconf.html
 %%DOCSDIR%%/libmateweather-mateweather-prefs.html
 %%DOCSDIR%%/libmateweather-mateweather-timezone.html
 %%DOCSDIR%%/libmateweather-mateweather-xml.html
