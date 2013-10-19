@@ -16,6 +16,7 @@ man/man1/mate-about.1.gz
 share/MateConf/gsettings/mate-desktop.convert
 share/applications/mate-about.desktop
 %%DOCSDIR%%/MateBG.html
+%%DOCSDIR%%/MateDesktopItem.html
 %%DOCSDIR%%/MateDesktopThumbnailFactory.html
 %%DOCSDIR%%/MateRRLabeler.html
 %%DOCSDIR%%/background.html
