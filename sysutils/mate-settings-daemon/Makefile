@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-settings-daemon
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -21,11 +21,10 @@ RUN_DEPENDS=	xrdb:${PORTSDIR}/x11/xrdb
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop intlhack libmatekbd
+USE_MATE=	desktop libmatekbd
 USE_XORG=	xxf86misc
-USE_GNOME=	dconf glib20 gnomehier gtk20
+USE_GNOME=	dconf glib20 gnomehier gtk20 intlhack
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_GSTREAMER=	good
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
@@ -33,7 +32,6 @@ CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.SettingsDaemon.plugins.a11y-keyboard.gschema.xml \
 		org.mate.SettingsDaemon.plugins.background.gschema.xml \
