@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-power-manager
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.2
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -42,5 +42,6 @@ GLIB_SCHEMAS=	org.mate.power-manager.gschema.xml
 post-patch:
 	@${REINPLACE_CMD} -e "s|docbook2man|docbook2man_disabled|g" \
 		${WRKSRC}/configure.ac
+	@${CHMOD} +x ${WRKSRC}/autogen.sh
 
 .include <bsd.port.mk>

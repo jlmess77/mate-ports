@@ -1,10 +1,10 @@
---- applets/inhibit/Makefile.am.orig	2012-07-28 23:03:14.000000000 -0500
-+++ applets/inhibit/Makefile.am	2012-07-28 23:03:31.000000000 -0500
-@@ -35,6 +35,7 @@
+--- applets/inhibit/Makefile.am.orig	2013-10-19 12:05:52.000000000 +0200
++++ applets/inhibit/Makefile.am	2013-10-19 12:06:06.000000000 +0200
+@@ -34,6 +34,7 @@
+ 	gpm-common.h
+ 
  mate_inhibit_applet_LDADD =					\
++	$(EXECINFO_LIBS)					\
  	$(DBUS_LIBS)						\
  	$(MATE_LIBS)						\
-+	$(EXECINFO_LIBS)					\
  	$(PANEL_LIBS)
- 
- serverdir       = $(libdir)/matecomponent/servers

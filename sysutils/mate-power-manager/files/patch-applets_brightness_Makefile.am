@@ -1,10 +1,10 @@
---- applets/brightness/Makefile.am.orig	2012-07-28 23:01:55.000000000 -0500
-+++ applets/brightness/Makefile.am	2012-07-28 23:02:23.000000000 -0500
-@@ -35,6 +35,7 @@
+--- applets/brightness/Makefile.am.orig	2013-10-19 12:04:49.000000000 +0200
++++ applets/brightness/Makefile.am	2013-10-19 12:05:17.000000000 +0200
+@@ -34,6 +34,7 @@
+ 	gpm-common.h
+ 
  mate_brightness_applet_LDADD =					\
++	$(EXECINFO_LIBS)					\
  	$(DBUS_LIBS)						\
  	$(MATE_LIBS)						\
-+	$(EXECINFO_LIBS)					\
  	$(PANEL_LIBS)
- 
- serverdir       = $(libdir)/matecomponent/servers

@@ -1,6 +1,6 @@
---- src/Makefile.am.orig	2013-03-25 22:25:16.000000000 -0500
-+++ src/Makefile.am	2013-03-25 22:28:28.000000000 -0500
-@@ -93,6 +93,7 @@
+--- src/Makefile.am.orig	2013-10-19 12:02:39.000000000 +0200
++++ src/Makefile.am	2013-10-19 12:03:48.000000000 +0200
+@@ -95,6 +95,7 @@
  mate_power_backlight_helper_LDADD =			\
  	libgpmshared.a					\
  	$(GLIB_LIBS)					\
@@ -8,7 +8,7 @@
  	-lm
  
  mate_power_backlight_helper_CFLAGS =			\
-@@ -115,6 +116,7 @@
+@@ -117,6 +118,7 @@
  	$(MATE_LIBS)					\
  	$(UNIQUE_LIBS)					\
  	$(DBUS_LIBS)					\
@@ -16,7 +16,7 @@
  	-lm
  
  mate_power_statistics_CFLAGS =				\
-@@ -136,6 +138,7 @@
+@@ -138,6 +140,7 @@
  	$(UNIQUE_LIBS)					\
  	$(GPM_EXTRA_LIBS)				\
  	$(UPOWER_LIBS)					\
@@ -24,34 +24,16 @@
  	-lm
  
  mate_power_preferences_CFLAGS =			\
-@@ -182,17 +185,18 @@
- mate_power_manager_LDADD =				\
- 	libgpmshared.a					\
- 	$(GLIB_LIBS)					\
--	$(X11_LIBS)				\
-+	$(X11_LIBS)					\
- 	$(GSTREAMER_LIBS)				\
- 	$(MATE_LIBS)					\
- 	$(KEYRING_LIBS)					\
- 	$(DBUS_LIBS)					\
--	$(X11_LIBS)						\
-+	$(X11_LIBS)					\
- 	$(CANBERRA_LIBS)				\
+@@ -194,6 +197,7 @@
  	$(LIBNOTIFY_LIBS)				\
  	$(GPM_EXTRA_LIBS)				\
  	$(UPOWER_LIBS)					\
--	$(SYSTEMD_INHIBIT_LIBS)         \
-+	$(SYSTEMD_INHIBIT_LIBS)				\
 +	$(EXECINFO_LIBS)				\
  	-lm
  
  mate_power_manager_CFLAGS =				\
-@@ -257,9 +261,10 @@
- 	$(GSTREAMER_LIBS)				\
- 	$(UPOWER_LIBS)					\
- 	$(DBUS_LIBS)					\
--	$(X11_LIBS)						\
-+	$(X11_LIBS)					\
+@@ -262,6 +266,7 @@
+ 	$(X11_LIBS)						\
  	$(LIBNOTIFY_LIBS)				\
  	$(GPM_EXTRA_LIBS)				\
 +	$(EXECINFO_LIBS)				\
