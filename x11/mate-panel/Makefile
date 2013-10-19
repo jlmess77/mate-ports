@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-panel
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -16,15 +16,14 @@ LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop docutils intlhack \
-		libmateweather libmatewnck ltverhack menus
+USE_MATE=	desktop docutils libmateweather libmatewnck menus
 USE_XORG=	ice sm x11 xau xrandr
 USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
-		introspection:build librsvg2 pango
+		intlhack introspection:build librsvg2 ltverhack pango
 USE_PYTHON=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
+USE_AUTOTOOLS=	libtool
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-network-manager \
 		--disable-gtk-doc \
@@ -33,7 +32,6 @@ CONFIGURE_ARGS=	--disable-network-manager \
 INSTALLS_ICONS=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib
 CPPFLAGS+=	-I${LOCALBASE}/include
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 		org.mate.panel.applet.fish.gschema.xml \
@@ -46,5 +44,6 @@ GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/mate-panel/modules
+	@${STRIP_CMD} ${STAGEDIR}/${PREFIX}/lib/libmate-panel-applet-4.so.1
 
 .include <bsd.port.mk>

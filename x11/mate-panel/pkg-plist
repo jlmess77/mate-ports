@@ -11,10 +11,11 @@ lib/libmate-panel-applet-4.so
 lib/libmate-panel-applet-4.so.1
 lib/mate-panel/clock-applet
 lib/mate-panel/fish-applet
-lib/mate-panel/mate-panel-add
 lib/mate-panel/notification-area-applet
 lib/mate-panel/wnck-applet
 libdata/pkgconfig/libmatepanelapplet-4.0.pc
+man/man1/mate-desktop-item-edit.1.gz
+man/man1/mate-panel-test-applets.1.gz
 man/man1/mate-panel.1.gz
 share/MateConf/gsettings/mate-panel.convert
 share/applications/mate-panel.desktop
@@ -29,8 +30,8 @@ share/doc/mate-panel-applet/home.png
 share/doc/mate-panel-applet/index.html
 share/doc/mate-panel-applet/index.sgml
 share/doc/mate-panel-applet/left.png
+share/doc/mate-panel-applet/mate-panel-applet-Panel-Applet-MateConf-Utilities.html
 share/doc/mate-panel-applet/mate-panel-applet-mate-panel-applet.html
-share/doc/mate-panel-applet/mate-panel-applet.devhelp
 share/doc/mate-panel-applet/mate-panel-applet.devhelp2
 share/doc/mate-panel-applet/mate-panel-applet.html
 share/doc/mate-panel-applet/multi-applets.html
@@ -243,7 +244,6 @@ share/locale/zu/LC_MESSAGES/mate-panel.mo
 %%DATADIR%%/ui/window-menu-menu.xml
 %%DATADIR%%/ui/workspace-switcher-menu.xml
 %%DATADIR%%/ui/workspace-switcher.ui
-share/mate-panelrc
 share/mate/help/mate-applet-clock/C/figures/clock_applet.png
 share/mate/help/mate-applet-clock/C/legal.xml
 share/mate/help/mate-applet-clock/C/mate-applet-clock.xml
