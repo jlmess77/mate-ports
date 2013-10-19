@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-document-viewer
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	graphics print mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -53,7 +53,7 @@ CONFIGURE_ARGS+=--enable-dvi
 PLIST_SUB+=	DVI=""
 
 . if ${PORT_OPTIONS:MT1LIB}
-LIB_DEPENDS+=	libt15.so:${PORTSDIR}/devel/t1lib
+LIB_DEPENDS+=	libt1.so:${PORTSDIR}/devel/t1lib
 CONFIGURE_ARGS+=--enable-t1lib
 . endif
 
@@ -105,5 +105,13 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|AC_CHECK_HEADERS([execinfo.h])||g' \
 		-e 's|" == "|" = "|g' \
 			${WRKSRC}/configure.ac
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libatrildocument.so.3
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/atril/3/backends/*.so
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libatrilview.so.3
+.if ${PORT_OPTIONS:MCAJA}
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/caja/extensions-2.0/libatril-properties-page.so
+.endif
 
 .include <bsd.port.mk>
