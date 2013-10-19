@@ -218,6 +218,10 @@ share/locale/zh_CN/LC_MESSAGES/caja.mo
 share/locale/zh_HK/LC_MESSAGES/caja.mo
 share/locale/zh_TW/LC_MESSAGES/caja.mo
 share/locale/zu/LC_MESSAGES/caja.mo
+%%DATADIR%%/icons/hicolor/16x16/emblems/emblem-note.png
+%%DATADIR%%/icons/hicolor/24x24/emblems/emblem-note.png
+%%DATADIR%%/icons/hicolor/48x48/emblems/emblem-note.png
+share/mime/application/x-mate-saved-search.xml
 share/mime/packages/caja.xml
 share/pixmaps/caja/audio.svg
 share/pixmaps/caja/backgrounds.png
@@ -228,6 +232,15 @@ share/pixmaps/caja/erase.png
 share/pixmaps/caja/knob.png
 share/pixmaps/caja/thumbnail_frame.png
 @dirrm share/pixmaps/caja
+@dirrmtry %%DATADIR%%/icons/hicolor/48x48/emblems
+@dirrmtry %%DATADIR%%/icons/hicolor/48x48
+@dirrmtry %%DATADIR%%/icons/hicolor/24x24/emblems
+@dirrmtry %%DATADIR%%/icons/hicolor/24x24
+@dirrmtry %%DATADIR%%/icons/hicolor/16x16/emblems
+@dirrmtry %%DATADIR%%/icons/hicolor/16x16
+@dirrmtry %%DATADIR%%/icons/hicolor
+@dirrmtry %%DATADIR%%/icons
+@dirrmtry %%DATADIR%%
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
