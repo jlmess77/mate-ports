@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-screensaver
-PORTVERSION=	1.6.0
-PORTREVISION=	1
+PORTVERSION=	1.6.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -14,24 +13,24 @@ COMMENT=	MATE screen saver and locker
 LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libnotify.so:${PORTSDIR}/devel/libnotify
-RUN_DEPENDS=	xscreensaver-gl-helper:${PORTSDIR}/x11/xscreensaver-gnome-hacks
+RUN_DEPENDS=	xscreensaver-gnome-hacks>=0:${PORTSDIR}/x11/xscreensaver-gnome-hacks
 
 USES=		gettext gmake pathfix pkgconfig
 USE_GL=		gl
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop intlhack libmatekbd \
-		menus
+USE_MATE=	desktop libmatekbd menus
+#USE_MATE=	autogen common:build desktop intlhack libmatekbd \
+#		menus
 USE_XORG=	ice sm x11 xext xtst xxf86misc xxf86vm
-USE_GNOME=	glib20 gnomehier gtk20
+USE_GNOME=	glib20 gnomehier gtk20 intlhack
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
+#USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 CONFIGURE_ARGS=	--with-xscreensaverdir=${XSCREENSAVER_DIR} \
 		--with-xscreensaverhackdir=${LOCALBASE}/bin/xscreensaver-hacks \
 		--with-console-kit=yes \
 		--with-systemd=no
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.screensaver.gschema.xml
 
