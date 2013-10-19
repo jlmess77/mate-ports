@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	libmatewnck
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	x11-toolkits mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -14,17 +14,16 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 
 USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack
 USE_XORG=	x11 xres
-USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection
+USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 intlhack \
+		introspection:build ltverhack
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
+USE_AUTOTOOLS=	libtool
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 OPTIONS_DEFINE=	STARTUP
 OPTIONS_DEFAULT=STARTUP
@@ -37,6 +36,11 @@ LIB_DEPENDS+=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification
 CONFIGURE_ARGS+=--enable-startup-notification
 .else
 CONFIGURE_ARGS+=--disable-startup-notification
+.endif
+
+.if ! defined(WITH_DEBUG)
+post-install:
+	@${STRIP_CMD} ${STRIP} ${STAGEDIR}${PREFIX}/lib/libmatewnck.so.0
 .endif
 
 .include <bsd.port.mk>
