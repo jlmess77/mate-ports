@@ -35,30 +35,85 @@ lib/eom/plugins/libstatusbar-date.so
 lib/eom/plugins/reload.eom-plugin
 lib/eom/plugins/statusbar-date.eom-plugin
 libdata/pkgconfig/eom.pc
+man/man1/eom.1.gz
 share/MateConf/gsettings/eom.convert
 share/applications/eom.desktop
-share/eom/eom-image-properties-dialog.ui
-share/eom/eom-multiple-save-as-dialog.ui
-share/eom/eom-preferences-dialog.ui
-share/eom/eom-toolbar.xml
-share/eom/eom-ui.xml
-share/eom/gtkrc
-share/eom/icons/hicolor/16x16/actions/eom-image-collection.png
-share/eom/icons/hicolor/16x16/actions/eom-plugin.png
-share/eom/icons/hicolor/16x16/actions/slideshow-play.png
-share/eom/icons/hicolor/22x22/actions/eom-image-collection.png
-share/eom/icons/hicolor/22x22/actions/eom-plugin.png
-share/eom/icons/hicolor/22x22/actions/slideshow-play.png
-share/eom/icons/hicolor/24x24/actions/eom-image-collection.png
-share/eom/icons/hicolor/24x24/actions/slideshow-play.png
-share/eom/icons/hicolor/32x32/actions/eom-image-collection.png
-share/eom/icons/hicolor/32x32/actions/eom-plugin.png
-share/eom/icons/hicolor/32x32/actions/slideshow-play.png
-share/eom/icons/hicolor/48x48/actions/slideshow-play.png
-share/eom/icons/hicolor/scalable/actions/eom-image-collection.svg
-share/eom/icons/hicolor/scalable/actions/eom-plugin.svg
-share/eom/icons/hicolor/scalable/actions/slideshow-play.svg
-share/eom/pixmaps/thumbnail-frame.png
+share/doc/eom/EomDialog.html
+share/doc/eom/EomExifDetails.html
+share/doc/eom/EomFileChooser.html
+share/doc/eom/EomImageSaveInfo.html
+share/doc/eom/EomMetadataReaderJpg.html
+share/doc/eom/EomMetadataReaderPng.html
+share/doc/eom/EomPluginManager.html
+share/doc/eom/EomPreferencesDialog.html
+share/doc/eom/EomPrintImageSetup.html
+share/doc/eom/EomPrintPreview.html
+share/doc/eom/EomScrollView.html
+share/doc/eom/EomSidebar.html
+share/doc/eom/EomStatusbar.html
+share/doc/eom/ch01.html
+share/doc/eom/ch02.html
+share/doc/eom/ch03.html
+share/doc/eom/ch04.html
+share/doc/eom/ch05.html
+share/doc/eom/ch06.html
+share/doc/eom/ch07.html
+share/doc/eom/eom-eom-application.html
+share/doc/eom/eom-eom-config-keys.html
+share/doc/eom/eom-eom-debug.html
+share/doc/eom/eom-eom-error-message-area.html
+share/doc/eom/eom-eom-exif-util.html
+share/doc/eom/eom-eom-image.html
+share/doc/eom/eom-eom-job-queue.html
+share/doc/eom/eom-eom-jobs.html
+share/doc/eom/eom-eom-list-store.html
+share/doc/eom/eom-eom-metadata-reader.html
+share/doc/eom/eom-eom-pixbuf-util.html
+share/doc/eom/eom-eom-plugin-engine.html
+share/doc/eom/eom-eom-plugin.html
+share/doc/eom/eom-eom-print.html
+share/doc/eom/eom-eom-properties-dialog.html
+share/doc/eom/eom-eom-save-as-dialog-helper.html
+share/doc/eom/eom-eom-session.html
+share/doc/eom/eom-eom-thumb-nav.html
+share/doc/eom/eom-eom-thumb-view.html
+share/doc/eom/eom-eom-thumbnail.html
+share/doc/eom/eom-eom-transform.html
+share/doc/eom/eom-eom-uri-converter.html
+share/doc/eom/eom-eom-util.html
+share/doc/eom/eom-eom-window.html
+share/doc/eom/eom-uta.html
+share/doc/eom/eom-zoom.html
+share/doc/eom/eom.devhelp2
+share/doc/eom/home.png
+share/doc/eom/index.html
+share/doc/eom/index.sgml
+share/doc/eom/left.png
+share/doc/eom/right.png
+share/doc/eom/style.css
+share/doc/eom/up.png
+share/mate-image-viewer/eom-image-properties-dialog.ui
+share/mate-image-viewer/eom-multiple-save-as-dialog.ui
+share/mate-image-viewer/eom-preferences-dialog.ui
+share/mate-image-viewer/eom-toolbar.xml
+share/mate-image-viewer/eom-ui.xml
+share/mate-image-viewer/gtkrc
+share/mate-image-viewer/icons/hicolor/16x16/actions/eom-image-collection.png
+share/mate-image-viewer/icons/hicolor/16x16/actions/eom-plugin.png
+share/mate-image-viewer/icons/hicolor/16x16/actions/slideshow-play.png
+share/mate-image-viewer/icons/hicolor/22x22/actions/eom-image-collection.png
+share/mate-image-viewer/icons/hicolor/22x22/actions/eom-plugin.png
+share/mate-image-viewer/icons/hicolor/22x22/actions/slideshow-play.png
+share/mate-image-viewer/icons/hicolor/24x24/actions/eom-image-collection.png
+share/mate-image-viewer/icons/hicolor/24x24/actions/slideshow-play.png
+share/mate-image-viewer/icons/hicolor/32x32/actions/eom-image-collection.png
+share/mate-image-viewer/icons/hicolor/32x32/actions/eom-plugin.png
+share/mate-image-viewer/icons/hicolor/32x32/actions/slideshow-play.png
+share/mate-image-viewer/icons/hicolor/48x48/actions/slideshow-play.png
+share/mate-image-viewer/icons/hicolor/scalable/actions/eom-image-collection.svg
+share/mate-image-viewer/icons/hicolor/scalable/actions/eom-plugin.svg
+share/mate-image-viewer/icons/hicolor/scalable/actions/slideshow-play.svg
+share/mate-image-viewer/pixmaps/thumbnail-frame.png
 share/icons/hicolor/16x16/apps/eom.png
 share/icons/hicolor/22x22/apps/eom.png
 share/icons/hicolor/24x24/apps/eom.png
@@ -399,22 +454,22 @@ share/omf/eom/eom-zh_TW.omf
 @dirrmtry share/locale/as
 @dirrmtry share/glib-2.0/schemas
 @dirrmtry share/glib-2.0
-@dirrm share/eom/pixmaps
-@dirrm share/eom/icons/hicolor/scalable/actions
-@dirrm share/eom/icons/hicolor/scalable
-@dirrm share/eom/icons/hicolor/48x48/actions
-@dirrm share/eom/icons/hicolor/48x48
-@dirrm share/eom/icons/hicolor/32x32/actions
-@dirrm share/eom/icons/hicolor/32x32
-@dirrm share/eom/icons/hicolor/24x24/actions
-@dirrm share/eom/icons/hicolor/24x24
-@dirrm share/eom/icons/hicolor/22x22/actions
-@dirrm share/eom/icons/hicolor/22x22
-@dirrm share/eom/icons/hicolor/16x16/actions
-@dirrm share/eom/icons/hicolor/16x16
-@dirrm share/eom/icons/hicolor
-@dirrm share/eom/icons
-@dirrm share/eom
+@dirrm share/mate-image-viewer/pixmaps
+@dirrm share/mate-image-viewer/icons/hicolor/scalable/actions
+@dirrm share/mate-image-viewer/icons/hicolor/scalable
+@dirrm share/mate-image-viewer/icons/hicolor/48x48/actions
+@dirrm share/mate-image-viewer/icons/hicolor/48x48
+@dirrm share/mate-image-viewer/icons/hicolor/32x32/actions
+@dirrm share/mate-image-viewer/icons/hicolor/32x32
+@dirrm share/mate-image-viewer/icons/hicolor/24x24/actions
+@dirrm share/mate-image-viewer/icons/hicolor/24x24
+@dirrm share/mate-image-viewer/icons/hicolor/22x22/actions
+@dirrm share/mate-image-viewer/icons/hicolor/22x22
+@dirrm share/mate-image-viewer/icons/hicolor/16x16/actions
+@dirrm share/mate-image-viewer/icons/hicolor/16x16
+@dirrm share/mate-image-viewer/icons/hicolor
+@dirrm share/mate-image-viewer/icons
+@dirrm share/mate-image-viewer
 @dirrmtry share/applications
 @dirrm lib/eom/plugins
 @dirrm lib/eom
