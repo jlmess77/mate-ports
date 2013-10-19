@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-dialogs
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -15,15 +15,13 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack
-USE_GNOME=	gnomehier glib20 gtk20
+USE_MATE=	docutils
+USE_GNOME=	gnomehier glib20 gtk20 intlhack
 INSTALLS_OMF=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}"
 CPPFLAGS+=	-I${LOCALBASE}/include ${PTHREAD_CFLAGS}
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 OPTIONS_DEFINE=	NOTIFY
 OPTIONS_DEFAULT=NOTIFY
