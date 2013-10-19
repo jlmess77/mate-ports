@@ -25,9 +25,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.peripherals-keyboard-xkb.gschema.xml
 
-.if ! defined(WITH_DEBUG)
 post-install:
-	@${STRIP_CMD} ${STRIP} ${STAGEDIR}${PREFIX}/lib/libmatekbd*.so.4
-.endif
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmatekbd*.so.4
 
 .include <bsd.port.mk>

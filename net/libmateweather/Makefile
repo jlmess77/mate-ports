@@ -27,9 +27,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.weather.gschema.xml
 
-.if ! defined(WITH_DEBUG)
 post-install:
-	@${STRIP_CMD} ${STRIP} ${STAGEDIR}${PREFIX}/lib/libmateweather.so.1
-.endif
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmateweather.so.1
 
 .include <bsd.port.mk>

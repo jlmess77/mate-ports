@@ -38,9 +38,7 @@ CONFIGURE_ARGS+=--enable-startup-notification
 CONFIGURE_ARGS+=--disable-startup-notification
 .endif
 
-.if ! defined(WITH_DEBUG)
 post-install:
-	@${STRIP_CMD} ${STRIP} ${STAGEDIR}${PREFIX}/lib/libmatewnck.so.0
-.endif
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmatewnck.so.0
 
 .include <bsd.port.mk>
