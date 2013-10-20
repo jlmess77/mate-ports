@@ -5,7 +5,11 @@ bin/mate-screensaver-preferences
 etc/xdg/autostart/mate-screensaver.desktop
 etc/xdg/menus/mate-screensavers.menu
 libdata/pkgconfig/mate-screensaver.pc
+@owner root
+@mode 6555
 libexec/mate-screensaver-dialog
+@owner
+@mode
 libexec/mate-screensaver-gl-helper
 libexec/mate-screensaver/floaters
 libexec/mate-screensaver/popsquares

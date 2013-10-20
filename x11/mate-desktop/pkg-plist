@@ -26,7 +26,6 @@ share/applications/mate-about.desktop
 %%DOCSDIR%%/intro.html
 %%DOCSDIR%%/left.png
 %%DOCSDIR%%/libmate.html
-%%DOCSDIR%%/mate-desktop-MateDesktopItem.html
 %%DOCSDIR%%/mate-desktop-Miscellaneous-Functions.html
 %%DOCSDIR%%/mate-desktop-Miscellaneous-Thumbnail-Functions.html
 %%DOCSDIR%%/mate-desktop-mate-rr-config.html
@@ -34,7 +33,6 @@ share/applications/mate-about.desktop
 %%DOCSDIR%%/mate-desktop-mate-rr-mode.html
 %%DOCSDIR%%/mate-desktop-mate-rr-output.html
 %%DOCSDIR%%/mate-desktop-mate-rr-screen.html
-%%DOCSDIR%%/mate-desktop.devhelp
 %%DOCSDIR%%/mate-desktop.devhelp2
 %%DOCSDIR%%/randr.html
 %%DOCSDIR%%/right.png

@@ -35,9 +35,6 @@ share/applications/mate-network-scheme.desktop
 share/caja/browser.xml
 share/caja/caja-extras.placeholder
 share/caja/caja-suggested.placeholder
-share/caja/icons/hicolor/16x16/emblems/emblem-note.png
-share/caja/icons/hicolor/24x24/emblems/emblem-note.png
-share/caja/icons/hicolor/48x48/emblems/emblem-note.png
 share/caja/patterns/blue_gray_rough.png
 share/caja/patterns/blue_ridge.png
 share/caja/patterns/blue_type.png
@@ -95,7 +92,6 @@ share/doc/libcaja-extension/libcaja-extension-caja-menu-provider.html
 share/doc/libcaja-extension/libcaja-extension-caja-menu.html
 share/doc/libcaja-extension/libcaja-extension-caja-property-page-provider.html
 share/doc/libcaja-extension/libcaja-extension-caja-property-page.html
-share/doc/libcaja-extension/libcaja-extension.devhelp
 share/doc/libcaja-extension/libcaja-extension.devhelp2
 share/doc/libcaja-extension/pt01.html
 share/doc/libcaja-extension/right.png
@@ -218,9 +214,9 @@ share/locale/zh_CN/LC_MESSAGES/caja.mo
 share/locale/zh_HK/LC_MESSAGES/caja.mo
 share/locale/zh_TW/LC_MESSAGES/caja.mo
 share/locale/zu/LC_MESSAGES/caja.mo
-%%DATADIR%%/icons/hicolor/16x16/emblems/emblem-note.png
-%%DATADIR%%/icons/hicolor/24x24/emblems/emblem-note.png
-%%DATADIR%%/icons/hicolor/48x48/emblems/emblem-note.png
+share/mate-file-manager/icons/hicolor/16x16/emblems/emblem-note.png
+share/mate-file-manager/icons/hicolor/24x24/emblems/emblem-note.png
+share/mate-file-manager/icons/hicolor/48x48/emblems/emblem-note.png
 share/mime/application/x-mate-saved-search.xml
 share/mime/packages/caja.xml
 share/pixmaps/caja/audio.svg
@@ -232,15 +228,15 @@ share/pixmaps/caja/erase.png
 share/pixmaps/caja/knob.png
 share/pixmaps/caja/thumbnail_frame.png
 @dirrm share/pixmaps/caja
-@dirrmtry %%DATADIR%%/icons/hicolor/48x48/emblems
-@dirrmtry %%DATADIR%%/icons/hicolor/48x48
-@dirrmtry %%DATADIR%%/icons/hicolor/24x24/emblems
-@dirrmtry %%DATADIR%%/icons/hicolor/24x24
-@dirrmtry %%DATADIR%%/icons/hicolor/16x16/emblems
-@dirrmtry %%DATADIR%%/icons/hicolor/16x16
-@dirrmtry %%DATADIR%%/icons/hicolor
-@dirrmtry %%DATADIR%%/icons
-@dirrmtry %%DATADIR%%
+@dirrmtry share/mate-file-manager/icons/hicolor/48x48/emblems
+@dirrmtry share/mate-file-manager/icons/hicolor/48x48
+@dirrmtry share/mate-file-manager/icons/hicolor/24x24/emblems
+@dirrmtry share/mate-file-manager/icons/hicolor/24x24
+@dirrmtry share/mate-file-manager/icons/hicolor/16x16/emblems
+@dirrmtry share/mate-file-manager/icons/hicolor/16x16
+@dirrmtry share/mate-file-manager/icons/hicolor
+@dirrmtry share/mate-file-manager/icons
+@dirrmtry share/mate-file-manager
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
@@ -326,14 +322,6 @@ share/pixmaps/caja/thumbnail_frame.png
 @dirrmtry share/dbus-1
 @dirrm share/caja/ui
 @dirrm share/caja/patterns
-@dirrm share/caja/icons/hicolor/48x48/emblems
-@dirrm share/caja/icons/hicolor/48x48
-@dirrm share/caja/icons/hicolor/24x24/emblems
-@dirrm share/caja/icons/hicolor/24x24
-@dirrm share/caja/icons/hicolor/16x16/emblems
-@dirrm share/caja/icons/hicolor/16x16
-@dirrm share/caja/icons/hicolor
-@dirrm share/caja/icons
 @dirrm share/caja
 @dirrmtry share/applications
 @dirrmtry lib/caja/extensions-2.0

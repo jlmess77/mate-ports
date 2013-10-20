@@ -55,4 +55,7 @@ GLIB_SCHEMAS=	org.mate.SettingsDaemon.plugins.a11y-keyboard.gschema.xml \
 		org.mate.peripherals-smartcard.gschema.xml \
 		org.mate.peripherals-touchpad.gschema.xml
 
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/mate-settings-daemon/*.so
+
 .include <bsd.port.mk>

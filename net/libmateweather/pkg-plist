@@ -24,7 +24,6 @@ libdata/pkgconfig/mateweather.pc
 %%DOCSDIR%%/libmateweather-mateweather-timezone.html
 %%DOCSDIR%%/libmateweather-mateweather-xml.html
 %%DOCSDIR%%/libmateweather-weather.html
-%%DOCSDIR%%/libmateweather.devhelp
 %%DOCSDIR%%/libmateweather.devhelp2
 %%DOCSDIR%%/right.png
 %%DOCSDIR%%/style.css

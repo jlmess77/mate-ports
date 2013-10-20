@@ -96,52 +96,7 @@ man/man1/atril-thumbnailer.1.gz
 man/man1/atril.1.gz
 share/MateConf/gsettings/atril.convert
 share/applications/atril.desktop
-share/atril/atril-previewer-ui.xml
-share/atril/atril-toolbar.xml
-share/atril/atril-ui.xml
-share/atril/hand-open.png
-share/atril/icons/hicolor/16x16/actions/object-rotate-left.png
-share/atril/icons/hicolor/16x16/actions/object-rotate-right.png
-share/atril/icons/hicolor/16x16/actions/view-page-continuous.png
-share/atril/icons/hicolor/16x16/actions/view-page-facing.png
-share/atril/icons/hicolor/16x16/actions/zoom-fit-height.png
-share/atril/icons/hicolor/16x16/actions/zoom-fit-width.png
-share/atril/icons/hicolor/16x16/actions/zoom.png
-share/atril/icons/hicolor/16x16/mimetypes/x-office-presentation.png
-share/atril/icons/hicolor/22x22/actions/eye.png
-share/atril/icons/hicolor/22x22/actions/object-rotate-left.png
-share/atril/icons/hicolor/22x22/actions/object-rotate-right.png
-share/atril/icons/hicolor/22x22/actions/view-page-continuous.png
-share/atril/icons/hicolor/22x22/actions/view-page-facing.png
-share/atril/icons/hicolor/22x22/actions/zoom-fit-page.png
-share/atril/icons/hicolor/22x22/actions/zoom-fit-width.png
-share/atril/icons/hicolor/22x22/actions/zoom.png
-share/atril/icons/hicolor/22x22/mimetypes/x-office-presentation.png
-share/atril/icons/hicolor/24x24/actions/object-rotate-left.png
-share/atril/icons/hicolor/24x24/actions/object-rotate-right.png
-share/atril/icons/hicolor/24x24/actions/stock_filters-invert.png
-share/atril/icons/hicolor/24x24/actions/view-page-continuous.png
-share/atril/icons/hicolor/24x24/actions/view-page-facing.png
-share/atril/icons/hicolor/24x24/actions/zoom-fit-height.png
-share/atril/icons/hicolor/24x24/actions/zoom-fit-width.png
-share/atril/icons/hicolor/24x24/actions/zoom.png
-share/atril/icons/hicolor/24x24/mimetypes/x-office-presentation.png
-share/atril/icons/hicolor/32x32/actions/object-rotate-left.png
-share/atril/icons/hicolor/32x32/actions/object-rotate-right.png
-share/atril/icons/hicolor/32x32/actions/view-page-continuous.png
-share/atril/icons/hicolor/32x32/actions/view-page-facing.png
-share/atril/icons/hicolor/32x32/mimetypes/x-office-presentation.png
-share/atril/icons/hicolor/48x48/actions/close.png
-share/atril/icons/hicolor/48x48/actions/resize-se.png
-share/atril/icons/hicolor/48x48/actions/resize-sw.png
-share/atril/icons/hicolor/48x48/actions/view-page-continuous.png
-share/atril/icons/hicolor/48x48/actions/view-page-facing.png
-share/atril/icons/hicolor/scalable/actions/object-rotate-left.svg
-share/atril/icons/hicolor/scalable/actions/object-rotate-right.svg
-share/atril/icons/hicolor/scalable/mimetypes/x-office-presentation.svg
 share/dbus-1/services/org.mate.atril.Daemon.service
-share/doc/mate/atril/atril.html
-share/doc/mate/atril/atril_start_window.png
 share/gtk-doc/html/atril/EggFindBar.html
 share/gtk-doc/html/atril/EvFileMonitor.html
 share/gtk-doc/html/atril/EvHistory.html
@@ -576,28 +531,6 @@ share/thumbnailers/atril.thumbnailer
 @dirrmtry share/gtk-doc/html/atril
 @dirrmtry share/gtk-doc/html
 @dirrmtry share/gtk-doc
-@dirrm share/doc/mate/atril
-@dirrmtry share/doc/mate
-@dirrm share/atril/icons/hicolor/scalable/mimetypes
-@dirrm share/atril/icons/hicolor/scalable/actions
-@dirrm share/atril/icons/hicolor/scalable
-@dirrm share/atril/icons/hicolor/48x48/actions
-@dirrm share/atril/icons/hicolor/48x48
-@dirrm share/atril/icons/hicolor/32x32/mimetypes
-@dirrm share/atril/icons/hicolor/32x32/actions
-@dirrm share/atril/icons/hicolor/32x32
-@dirrm share/atril/icons/hicolor/24x24/mimetypes
-@dirrm share/atril/icons/hicolor/24x24/actions
-@dirrm share/atril/icons/hicolor/24x24
-@dirrm share/atril/icons/hicolor/22x22/mimetypes
-@dirrm share/atril/icons/hicolor/22x22/actions
-@dirrm share/atril/icons/hicolor/22x22
-@dirrm share/atril/icons/hicolor/16x16/mimetypes
-@dirrm share/atril/icons/hicolor/16x16/actions
-@dirrm share/atril/icons/hicolor/16x16
-@dirrm share/atril/icons/hicolor
-@dirrm share/atril/icons
-@dirrm share/atril
 @dirrmtry share/applications
 @dirrm lib/atril/3/backends
 @dirrm lib/atril/3

@@ -86,8 +86,6 @@ pre-install:
 	@${ECHO_CMD} @dirrm ${SCREENSAVER_DIR} >> ${PLIST}
 
 post-install:
-	${CHOWN} root ${STAGEDIR}${PREFIX}/libexec/mate-screensaver-dialog
-	${CHMOD} +s ${STAGEDIR}${PREFIX}/libexec/mate-screensaver-dialog
 	${MKDIR} ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR}
 	cd ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR} && \
 		${FIND} -s ${XSCREENSAVER_DIR} -maxdepth 1 -type f -name "*.xml" | \

@@ -55,9 +55,12 @@ PLIST_SUB+=	DVI=""
 . if ${PORT_OPTIONS:MT1LIB}
 LIB_DEPENDS+=	libt1.so:${PORTSDIR}/devel/t1lib
 CONFIGURE_ARGS+=--enable-t1lib
+.else
+CONFIGURE_ARGS+=--disable-t1lib
 . endif
 
 .else
+CONFIGURE_ARGS+=--disable-dvi
 PLIST_SUB+=	DVI="@comment "
 .endif
 
