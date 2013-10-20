@@ -115,7 +115,7 @@ share/locale/yo/LC_MESSAGES/marco.mo
 share/locale/zh_CN/LC_MESSAGES/marco.mo
 share/locale/zh_HK/LC_MESSAGES/marco.mo
 share/locale/zh_TW/LC_MESSAGES/marco.mo
-share/marco/icons/marco-window-demo.png
+share/mate-window-manager/icons/marco-window-demo.png
 share/mate-control-center/keybindings/50-marco-desktop-key.xml
 share/mate-control-center/keybindings/50-marco-global-key.xml
 share/mate-control-center/keybindings/50-marco-window-key.xml
@@ -198,8 +198,8 @@ share/themes/eOS/metacity-1/unmaximize_unfocused_over.png
 @dirrm share/mate/wm-properties
 @dirrm share/mate/help/creating-marco-themes/C
 @dirrm share/mate/help/creating-marco-themes
-@dirrm share/marco/icons
-@dirrm share/marco
+@dirrm share/mate-window-manager/icons
+@dirrm share/mate-window-manager
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
 @dirrmtry share/locale/zh_HK
 @dirrmtry share/locale/yo/LC_MESSAGES
