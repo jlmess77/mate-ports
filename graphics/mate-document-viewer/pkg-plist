@@ -51,7 +51,6 @@ include/atril/1.5.0/libview/ev-view.h
 %%COMICS%%lib/atril/3/backends/comicsdocument.atril-backend
 %%DJVU%%lib/atril/3/backends/djvudocument.atril-backend
 %%DVI%%lib/atril/3/backends/dvidocument.atril-backend
-%%IMPRESS%%lib/atril/3/backends/impressdocument.atril-backend
 %%COMICS%%lib/atril/3/backends/libcomicsdocument.a
 %%COMICS%%lib/atril/3/backends/libcomicsdocument.la
 %%COMICS%%lib/atril/3/backends/libcomicsdocument.so
@@ -61,9 +60,6 @@ include/atril/1.5.0/libview/ev-view.h
 %%DVI%%lib/atril/3/backends/libdvidocument.a
 %%DVI%%lib/atril/3/backends/libdvidocument.la
 %%DVI%%lib/atril/3/backends/libdvidocument.so
-%%IMPRESS%%lib/atril/3/backends/libimpressdocument.a
-%%IMPRESS%%lib/atril/3/backends/libimpressdocument.la
-%%IMPRESS%%lib/atril/3/backends/libimpressdocument.so
 lib/atril/3/backends/libpdfdocument.a
 lib/atril/3/backends/libpdfdocument.la
 lib/atril/3/backends/libpdfdocument.so

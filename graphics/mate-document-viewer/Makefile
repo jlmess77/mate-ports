@@ -34,14 +34,13 @@ PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.Atril.gschema.xml
 
-OPTIONS_DEFINE=	DVI T1LIB CAJA KEYRING COMICS IMPRESS DJVU
+OPTIONS_DEFINE=	DVI T1LIB CAJA KEYRING COMICS DJVU
 OPTIONS_DEFAULT=CAJA KEYRING COMICS
 DVI_DESC=	DVI viewer support
 T1LIB_DESC=	T1LIB for TYPE1 fonts to DVI (Enables DVI)
 CAJA_DESC=	Caja plugin
 KEYRING_DESC=	Gnome-Keyring without Nautilus
 COMICS_DESC=	Comic book archives support
-IMPRESS_DESC=	Impress presentations support
 DJVU_DESC=	DJVU support
 
 .include <bsd.port.options.mk>
@@ -78,14 +77,6 @@ USE_MATE+=	libmatekeyring
 . else
 CONFIGURE_ARGS+=--without-keyring
 . endif
-
-.if ${PORT_OPTIONS:MIMPRESS}
-CONFIGURE_ARGS+=--enable-impress
-PLIST_SUB+=	IMPRESS=""
-.else
-CONFIGURE_ARGS+=--disable-impress
-PLIST_SUB+=	IMPRESS="@comment "
-.endif
 
 .if ${PORT_OPTIONS:MDJVU}
 LIB_DEPENDS+=	libdjvulibre.so:${PORTSDIR}/graphics/djvulibre
