@@ -2583,75 +2583,6 @@ share/locale/zh_TW/LC_MESSAGES/mate-themes.mo
 share/themes/AlaDelta/gtk-2.0/gtkrc
 share/themes/AlaDelta/index.theme
 share/themes/AlaDelta/metacity-1/metacity-theme-1.xml
-share/themes/Aldabra/gtk-2.0/assets/checkbox-checked-insensitive.svg
-share/themes/Aldabra/gtk-2.0/assets/checkbox-checked.svg
-share/themes/Aldabra/gtk-2.0/assets/checkbox-mixed.svg
-share/themes/Aldabra/gtk-2.0/assets/checkbox-unchecked-insensitive.svg
-share/themes/Aldabra/gtk-2.0/assets/checkbox-unchecked.svg
-share/themes/Aldabra/gtk-2.0/assets/handle.png
-share/themes/Aldabra/gtk-2.0/assets/notebook-gap-bottom.png
-share/themes/Aldabra/gtk-2.0/assets/notebook-gap-top.png
-share/themes/Aldabra/gtk-2.0/assets/notebook.png
-share/themes/Aldabra/gtk-2.0/assets/null.png
-share/themes/Aldabra/gtk-2.0/assets/radio-mixed.svg
-share/themes/Aldabra/gtk-2.0/assets/radio-selected-insensitive.svg
-share/themes/Aldabra/gtk-2.0/assets/radio-selected.svg
-share/themes/Aldabra/gtk-2.0/assets/radio-unselected-insensitive.svg
-share/themes/Aldabra/gtk-2.0/assets/radio-unselected.svg
-share/themes/Aldabra/gtk-2.0/assets/scroll-background.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-down-active.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-down-disabled.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-down-hover.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-down.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-left-active.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-left-disabled.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-left-hover.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-left.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-right-active.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-right-disabled.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-right-hover.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-right.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-up-active.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-up-disabled.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-up-hover.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-button-up.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-hhandle-active.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-hhandle-hover.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-hhandle.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-vhandle-active.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-vhandle-hover.png
-share/themes/Aldabra/gtk-2.0/assets/scroll-vhandle.png
-share/themes/Aldabra/gtk-2.0/assets/tab-bottom-active.png
-share/themes/Aldabra/gtk-2.0/assets/tab-bottom.png
-share/themes/Aldabra/gtk-2.0/assets/tab-left-active.png
-share/themes/Aldabra/gtk-2.0/assets/tab-left.png
-share/themes/Aldabra/gtk-2.0/assets/tab-right-active.png
-share/themes/Aldabra/gtk-2.0/assets/tab-right.png
-share/themes/Aldabra/gtk-2.0/assets/tab-top-active.png
-share/themes/Aldabra/gtk-2.0/assets/tab-top.png
-share/themes/Aldabra/gtk-2.0/assets/toolbar.png
-share/themes/Aldabra/gtk-2.0/gtkrc
-share/themes/Aldabra/gtk-3.0/assets/checkbox-checked-insensitive.svg
-share/themes/Aldabra/gtk-3.0/assets/checkbox-checked.svg
-share/themes/Aldabra/gtk-3.0/assets/checkbox-mixed.svg
-share/themes/Aldabra/gtk-3.0/assets/checkbox-unchecked-insensitive.svg
-share/themes/Aldabra/gtk-3.0/assets/checkbox-unchecked.svg
-share/themes/Aldabra/gtk-3.0/assets/radio-mixed.svg
-share/themes/Aldabra/gtk-3.0/assets/radio-selected-insensitive.svg
-share/themes/Aldabra/gtk-3.0/assets/radio-selected.svg
-share/themes/Aldabra/gtk-3.0/assets/radio-unselected-insensitive.svg
-share/themes/Aldabra/gtk-3.0/assets/radio-unselected.svg
-share/themes/Aldabra/gtk-3.0/gtk-widgets.css
-share/themes/Aldabra/gtk-3.0/gtk.css
-share/themes/Aldabra/gtk-3.0/settings.ini
-share/themes/Aldabra/index.theme
-share/themes/Aldabra/metacity-1/background.png
-share/themes/Aldabra/metacity-1/button_close.png
-share/themes/Aldabra/metacity-1/button_close_prelight.png
-share/themes/Aldabra/metacity-1/button_close_pressed.png
-share/themes/Aldabra/metacity-1/metacity-theme-1.xml
-share/themes/Aldabra/metacity-1/metacity-theme-2.xml
-share/themes/Aldabra/metacity-1/metacity-theme-3.xml
 share/themes/Atantla/metacity-1/metacity-theme-1.xml
 share/themes/BlackMATE/README
 share/themes/BlackMATE/cinnamon/add-workspace-hover.png
@@ -2676,44 +2607,6 @@ share/themes/BlackMATE/cinnamon/toggle-off-us.png
 share/themes/BlackMATE/cinnamon/toggle-on-intl.png
 share/themes/BlackMATE/cinnamon/toggle-on-us.png
 share/themes/BlackMATE/cinnamon/trash-icon.png
-share/themes/BlackMATE/gnome-shell/GnomishDark-preview.png
-share/themes/BlackMATE/gnome-shell/calendar-arrow-left.svg
-share/themes/BlackMATE/gnome-shell/calendar-arrow-right.svg
-share/themes/BlackMATE/gnome-shell/checkbox-focused.svg
-share/themes/BlackMATE/gnome-shell/checkbox-off-focused.svg
-share/themes/BlackMATE/gnome-shell/checkbox-off.svg
-share/themes/BlackMATE/gnome-shell/checkbox.svg
-share/themes/BlackMATE/gnome-shell/close-window.svg
-share/themes/BlackMATE/gnome-shell/close.svg
-share/themes/BlackMATE/gnome-shell/corner-ripple-ltr.png
-share/themes/BlackMATE/gnome-shell/corner-ripple-rtl.png
-share/themes/BlackMATE/gnome-shell/corner-ripple.png
-share/themes/BlackMATE/gnome-shell/dash-placeholder.svg
-share/themes/BlackMATE/gnome-shell/dashtodock/four.svg
-share/themes/BlackMATE/gnome-shell/dashtodock/four_rtl.svg
-share/themes/BlackMATE/gnome-shell/dashtodock/one.svg
-share/themes/BlackMATE/gnome-shell/dashtodock/one_rtl.svg
-share/themes/BlackMATE/gnome-shell/dashtodock/three.svg
-share/themes/BlackMATE/gnome-shell/dashtodock/three_rtl.svg
-share/themes/BlackMATE/gnome-shell/dashtodock/two.svg
-share/themes/BlackMATE/gnome-shell/dashtodock/two_rtl.svg
-share/themes/BlackMATE/gnome-shell/dialog-error.svg
-share/themes/BlackMATE/gnome-shell/filter-hover-rtl.svg
-share/themes/BlackMATE/gnome-shell/filter-hover.svg
-share/themes/BlackMATE/gnome-shell/gnome-shell.css
-share/themes/BlackMATE/gnome-shell/logged-in-indicator.svg
-share/themes/BlackMATE/gnome-shell/panel-button-highlight-narrow.svg
-share/themes/BlackMATE/gnome-shell/process-working.png
-share/themes/BlackMATE/gnome-shell/process-working.svg
-share/themes/BlackMATE/gnome-shell/running-indicator.svg
-share/themes/BlackMATE/gnome-shell/summary-counter.svg
-share/themes/BlackMATE/gnome-shell/theme.json
-share/themes/BlackMATE/gnome-shell/toggle-off-intl.png
-share/themes/BlackMATE/gnome-shell/toggle-off-us.png
-share/themes/BlackMATE/gnome-shell/toggle-on-intl.png
-share/themes/BlackMATE/gnome-shell/toggle-on-us.png
-share/themes/BlackMATE/gnome-shell/ws-switch-arrow-down.svg
-share/themes/BlackMATE/gnome-shell/ws-switch-arrow-up.svg
 share/themes/BlackMATE/gtk-2.0/Styles/caja.rc
 share/themes/BlackMATE/gtk-2.0/assets/bg-entry.png
 share/themes/BlackMATE/gtk-2.0/assets/bg.png
@@ -2803,8 +2696,6 @@ share/themes/BlackMATE/gtk-3.0/gtk-main.css
 share/themes/BlackMATE/gtk-3.0/gtk-widgets-assets-dark.css
 share/themes/BlackMATE/gtk-3.0/gtk-widgets.css
 share/themes/BlackMATE/gtk-3.0/gtk.css
-share/themes/BlackMATE/gtk-3.0/gtk.gresource
-share/themes/BlackMATE/gtk-3.0/gtk.gresource.xml
 share/themes/BlackMATE/gtk-3.0/settings.ini
 share/themes/BlackMATE/index.theme
 share/themes/BlackMATE/metacity-1/bar.png
@@ -2827,6 +2718,7 @@ share/themes/ContrastHigh/gtk-3.0/gtk-widgets.css
 share/themes/ContrastHigh/gtk-3.0/gtk.css
 share/themes/ContrastHigh/gtk-3.0/settings.ini
 share/themes/ContrastHigh/index.theme
+share/themes/ContrastHigh/metacity-1/metacity-theme-1.xml
 share/themes/ContrastHigh/metacity-1/metacity-theme-3.xml
 share/themes/ContrastHighInverse/gtk-2.0/gtkrc
 share/themes/ContrastHighInverse/index.theme
@@ -3333,7 +3225,6 @@ share/themes/GreenLaguna/gtk-3.0/assets/switch-trough-border-active.svg
 share/themes/GreenLaguna/gtk-3.0/assets/toolbar-button-border.svg
 share/themes/GreenLaguna/gtk-3.0/assets/treeview-border-dark.svg
 share/themes/GreenLaguna/gtk-3.0/assets/treeview-focus-border-dark.svg
-share/themes/GreenLaguna/gtk-3.0/gtk
 share/themes/GreenLaguna/gtk-3.0/gtk-main-common.css
 share/themes/GreenLaguna/gtk-3.0/gtk-main.css
 share/themes/GreenLaguna/gtk-3.0/gtk-widgets-assets.css
@@ -3398,32 +3289,6 @@ share/themes/Menta/cinnamon/switch-on.png
 share/themes/Menta/cinnamon/thumbnail.png
 share/themes/Menta/cinnamon/ws-switch-arrow-down.svg
 share/themes/Menta/cinnamon/ws-switch-arrow-up.svg
-share/themes/Menta/gnome-shell/calendar-arrow-left.svg
-share/themes/Menta/gnome-shell/calendar-arrow-right.svg
-share/themes/Menta/gnome-shell/checkbox-focused.svg
-share/themes/Menta/gnome-shell/checkbox-off-focused.svg
-share/themes/Menta/gnome-shell/checkbox-off.svg
-share/themes/Menta/gnome-shell/checkbox.svg
-share/themes/Menta/gnome-shell/close-window.svg
-share/themes/Menta/gnome-shell/close.svg
-share/themes/Menta/gnome-shell/corner-ripple-ltr.png
-share/themes/Menta/gnome-shell/corner-ripple-rtl.png
-share/themes/Menta/gnome-shell/dash-placeholder.svg
-share/themes/Menta/gnome-shell/filter-selected-ltr.svg
-share/themes/Menta/gnome-shell/filter-selected-rtl.svg
-share/themes/Menta/gnome-shell/gdm.css
-share/themes/Menta/gnome-shell/gnome-shell.css
-share/themes/Menta/gnome-shell/heart-hover.png
-share/themes/Menta/gnome-shell/heart.png
-share/themes/Menta/gnome-shell/logged-in-indicator.svg
-share/themes/Menta/gnome-shell/message-tray-background.png
-share/themes/Menta/gnome-shell/noise-texture.png
-share/themes/Menta/gnome-shell/panel-button-border.svg
-share/themes/Menta/gnome-shell/panel-button-highlight-narrow.svg
-share/themes/Menta/gnome-shell/panel-button-highlight-wide.svg
-share/themes/Menta/gnome-shell/process-working.svg
-share/themes/Menta/gnome-shell/running-indicator.svg
-share/themes/Menta/gnome-shell/summary-counter.svg
 share/themes/Menta/gtk-2.0/apps/Caja/breadcrumb_active.png
 share/themes/Menta/gtk-2.0/apps/Caja/breadcrumb_normal.png
 share/themes/Menta/gtk-2.0/apps/Caja/breadcrumb_prelight.png
@@ -3471,83 +3336,102 @@ share/themes/Menta/gtk-2.0/widgets/Panel/panel-button-active.png
 share/themes/Menta/gtk-2.0/widgets/Panel/panel-button-hover.png
 share/themes/Menta/gtk-2.0/widgets/Panel/panel-button-inactive.png
 share/themes/Menta/gtk-2.0/widgets/README
+share/themes/Menta/gtk-2.0/widgets/Scale/slider-hover.png
+share/themes/Menta/gtk-2.0/widgets/Scale/slider-ins.png
+share/themes/Menta/gtk-2.0/widgets/Scale/slider.png
+share/themes/Menta/gtk-2.0/widgets/Scale/trough-horizontal.png
+share/themes/Menta/gtk-2.0/widgets/Scale/trough-vertical.png
 share/themes/Menta/gtk-2.0/widgets/panel-black.rc
 share/themes/Menta/gtk-2.0/widgets/panel-dark-grey.rc
 share/themes/Menta/gtk-2.0/widgets/panel.rc
-share/themes/Menta/gtk-3.0/apps/gedit.css
-share/themes/Menta/gtk-3.0/apps/gnome-panel.css
-share/themes/Menta/gtk-3.0/apps/gnome-terminal.css
-share/themes/Menta/gtk-3.0/apps/nautilus.css
-share/themes/Menta/gtk-3.0/apps/nemo.css
-share/themes/Menta/gtk-3.0/apps/popover.css
-share/themes/Menta/gtk-3.0/apps/unity.css
 share/themes/Menta/gtk-3.0/assets/check-active-ins.png
 share/themes/Menta/gtk-3.0/assets/check-active.png
-share/themes/Menta/gtk-3.0/assets/check-menuitem-dark.png
-share/themes/Menta/gtk-3.0/assets/check-menuitem-insensitive-dark.png
-share/themes/Menta/gtk-3.0/assets/check-menuitem-insensitive.png
-share/themes/Menta/gtk-3.0/assets/check-menuitem-unselected.png
-share/themes/Menta/gtk-3.0/assets/check-menuitem.png
 share/themes/Menta/gtk-3.0/assets/check-mixed-active-ins.png
 share/themes/Menta/gtk-3.0/assets/check-mixed-active.png
-share/themes/Menta/gtk-3.0/assets/check-normal-hover.png
 share/themes/Menta/gtk-3.0/assets/check-normal-ins.png
 share/themes/Menta/gtk-3.0/assets/check-normal.png
+share/themes/Menta/gtk-3.0/assets/dnd-counter.svg
+share/themes/Menta/gtk-3.0/assets/grid-selection-checked.svg
+share/themes/Menta/gtk-3.0/assets/grid-selection-unchecked.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-checkbox-checked-insensitive.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-checkbox-checked-selected.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-checkbox-checked.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-checkbox-mixed-insensitive.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-checkbox-mixed-selected.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-checkbox-mixed.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-radio-checked-insensitive.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-radio-checked-selected.svg
+share/themes/Menta/gtk-3.0/assets/menuitem-radio-checked.svg
+share/themes/Menta/gtk-3.0/assets/null.png
+share/themes/Menta/gtk-3.0/assets/pane-separator-grip-vertical.svg
+share/themes/Menta/gtk-3.0/assets/pane-separator-grip.svg
 share/themes/Menta/gtk-3.0/assets/radio-active-ins.png
 share/themes/Menta/gtk-3.0/assets/radio-active.png
-share/themes/Menta/gtk-3.0/assets/radio-menuitem-dark.png
-share/themes/Menta/gtk-3.0/assets/radio-menuitem-insensitive-dark.png
-share/themes/Menta/gtk-3.0/assets/radio-menuitem-insensitive.png
-share/themes/Menta/gtk-3.0/assets/radio-menuitem.png
 share/themes/Menta/gtk-3.0/assets/radio-mixed-active-ins.png
 share/themes/Menta/gtk-3.0/assets/radio-mixed-active.png
-share/themes/Menta/gtk-3.0/assets/radio-normal-hover.png
 share/themes/Menta/gtk-3.0/assets/radio-normal-ins.png
 share/themes/Menta/gtk-3.0/assets/radio-normal.png
-share/themes/Menta/gtk-3.0/assets/switch-off-ins.png
-share/themes/Menta/gtk-3.0/assets/switch-off.png
-share/themes/Menta/gtk-3.0/assets/switch-on-ins.png
+share/themes/Menta/gtk-3.0/assets/resize-grip.svg
+share/themes/Menta/gtk-3.0/assets/sidebar-radio-checked.svg
+share/themes/Menta/gtk-3.0/assets/sidebar-radio-prelight.svg
+share/themes/Menta/gtk-3.0/assets/sidebar-radio-selected-prelight.svg
+share/themes/Menta/gtk-3.0/assets/sidebar-radio-selected.svg
+share/themes/Menta/gtk-3.0/assets/slider-hover.png
+share/themes/Menta/gtk-3.0/assets/slider-ins.png
+share/themes/Menta/gtk-3.0/assets/slider.png
+share/themes/Menta/gtk-3.0/assets/switch-off-ins.svg
+share/themes/Menta/gtk-3.0/assets/switch-off.svg
+share/themes/Menta/gtk-3.0/assets/switch-on-ins.svg
 share/themes/Menta/gtk-3.0/assets/switch-on.png
+share/themes/Menta/gtk-3.0/assets/switch-on.svg
+share/themes/Menta/gtk-3.0/assets/thumbnail-frame.png
 share/themes/Menta/gtk-3.0/borders/button-active-focus.png
+share/themes/Menta/gtk-3.0/borders/button-active-ins.png
 share/themes/Menta/gtk-3.0/borders/button-active.png
 share/themes/Menta/gtk-3.0/borders/button-focus.png
 share/themes/Menta/gtk-3.0/borders/button-ins.png
 share/themes/Menta/gtk-3.0/borders/button.png
+share/themes/Menta/gtk-3.0/borders/nohl-generic-border.png
+share/themes/Menta/gtk-3.0/gnome-applications.css
+share/themes/Menta/gtk-3.0/gtk-fallback.css
 share/themes/Menta/gtk-3.0/gtk-main-common.css
 share/themes/Menta/gtk-3.0/gtk-main.css
 share/themes/Menta/gtk-3.0/gtk-widgets-assets.css
+share/themes/Menta/gtk-3.0/gtk-widgets-backgrounds.css
 share/themes/Menta/gtk-3.0/gtk-widgets-borders.css
 share/themes/Menta/gtk-3.0/gtk-widgets.css
 share/themes/Menta/gtk-3.0/gtk.css
+share/themes/Menta/gtk-3.0/other-applications.css
+share/themes/Menta/gtk-3.0/settings.ini
+share/themes/Menta/gtk-3.0/unity.css
 share/themes/Menta/index.theme
-share/themes/Menta/metacity-1/close_focused_normal.png
-share/themes/Menta/metacity-1/close_focused_prelight.png
-share/themes/Menta/metacity-1/close_focused_pressed.png
-share/themes/Menta/metacity-1/close_unfocused.png
-share/themes/Menta/metacity-1/close_unfocused_prelight.png
-share/themes/Menta/metacity-1/maximize_focused_normal.png
-share/themes/Menta/metacity-1/maximize_focused_prelight.png
-share/themes/Menta/metacity-1/maximize_focused_pressed.png
-share/themes/Menta/metacity-1/maximize_unfocused.png
-share/themes/Menta/metacity-1/maximize_unfocused_prelight.png
+share/themes/Menta/metacity-1/close_focused_normal.svg
+share/themes/Menta/metacity-1/close_focused_prelight.svg
+share/themes/Menta/metacity-1/close_focused_pressed.svg
+share/themes/Menta/metacity-1/close_unfocused.svg
+share/themes/Menta/metacity-1/close_unfocused_prelight.svg
+share/themes/Menta/metacity-1/maximize_focused_normal.svg
+share/themes/Menta/metacity-1/maximize_focused_prelight.svg
+share/themes/Menta/metacity-1/maximize_focused_pressed.svg
+share/themes/Menta/metacity-1/maximize_unfocused.svg
+share/themes/Menta/metacity-1/maximize_unfocused_prelight.svg
 share/themes/Menta/metacity-1/menu.png
 share/themes/Menta/metacity-1/menu_prelight.png
 share/themes/Menta/metacity-1/metacity-theme-1.xml
 share/themes/Menta/metacity-1/metacity-theme-3.xml
-share/themes/Menta/metacity-1/minimize_focused_normal.png
-share/themes/Menta/metacity-1/minimize_focused_prelight.png
-share/themes/Menta/metacity-1/minimize_focused_pressed.png
-share/themes/Menta/metacity-1/minimize_unfocused.png
-share/themes/Menta/metacity-1/minimize_unfocused_prelight.png
+share/themes/Menta/metacity-1/minimize_focused_normal.svg
+share/themes/Menta/metacity-1/minimize_focused_prelight.svg
+share/themes/Menta/metacity-1/minimize_focused_pressed.svg
+share/themes/Menta/metacity-1/minimize_unfocused.svg
+share/themes/Menta/metacity-1/minimize_unfocused_prelight.svg
 share/themes/Menta/metacity-1/trough_left.png
 share/themes/Menta/metacity-1/trough_middle.png
 share/themes/Menta/metacity-1/trough_right.png
-share/themes/Menta/metacity-1/unmaximize_focused_normal.png
-share/themes/Menta/metacity-1/unmaximize_focused_prelight.png
-share/themes/Menta/metacity-1/unmaximize_focused_pressed.png
-share/themes/Menta/metacity-1/unmaximize_unfocused.png
-share/themes/Menta/metacity-1/unmaximize_unfocused_prelight.png
-share/themes/Menta/panelbg.png
+share/themes/Menta/metacity-1/unmaximize_focused_normal.svg
+share/themes/Menta/metacity-1/unmaximize_focused_prelight.svg
+share/themes/Menta/metacity-1/unmaximize_focused_pressed.svg
+share/themes/Menta/metacity-1/unmaximize_unfocused.svg
+share/themes/Menta/metacity-1/unmaximize_unfocused_prelight.svg
 share/themes/Menta/unity/close.png
 share/themes/Menta/unity/close_focused_normal.png
 share/themes/Menta/unity/close_focused_prelight.png
@@ -3710,7 +3594,6 @@ share/themes/TraditionalOk/doc/exemple2.png
 share/themes/TraditionalOk/doc/exemple3.png
 share/themes/TraditionalOk/doc/gpl-3.0-fr.txt
 share/themes/TraditionalOk/doc/gpl-3.0.txt
-share/themes/TraditionalOk/doc/images.sh.txt
 share/themes/TraditionalOk/doc/version.txt
 share/themes/TraditionalOk/gtk-2.0/applications.rc
 share/themes/TraditionalOk/gtk-2.0/gtkrc
@@ -3882,8 +3765,8 @@ share/themes/TraditionalOk/xfwm4/top-right-inactive.xpm
 @dirrmtry share/themes/Menta/metacity-1
 @dirrmtry share/themes/Menta/gtk-3.0/borders
 @dirrmtry share/themes/Menta/gtk-3.0/assets
-@dirrmtry share/themes/Menta/gtk-3.0/apps
 @dirrmtry share/themes/Menta/gtk-3.0
+@dirrmtry share/themes/Menta/gtk-2.0/widgets/Scale
 @dirrmtry share/themes/Menta/gtk-2.0/widgets/Panel
 @dirrmtry share/themes/Menta/gtk-2.0/widgets/Others
 @dirrmtry share/themes/Menta/gtk-2.0/widgets/Null
@@ -3894,7 +3777,6 @@ share/themes/TraditionalOk/xfwm4/top-right-inactive.xpm
 @dirrmtry share/themes/Menta/gtk-2.0/apps/Caja
 @dirrmtry share/themes/Menta/gtk-2.0/apps
 @dirrmtry share/themes/Menta/gtk-2.0
-@dirrmtry share/themes/Menta/gnome-shell
 @dirrmtry share/themes/Menta/cinnamon
 @dirrmtry share/themes/Menta-Black/metacity-1
 @dirrmtry share/themes/Menta-Black
@@ -3930,18 +3812,10 @@ share/themes/TraditionalOk/xfwm4/top-right-inactive.xpm
 @dirrmtry share/themes/BlackMATE/gtk-2.0/assets
 @dirrmtry share/themes/BlackMATE/gtk-2.0/Styles
 @dirrmtry share/themes/BlackMATE/gtk-2.0
-@dirrmtry share/themes/BlackMATE/gnome-shell/dashtodock
-@dirrmtry share/themes/BlackMATE/gnome-shell
 @dirrmtry share/themes/BlackMATE/cinnamon
 @dirrmtry share/themes/BlackMATE
 @dirrmtry share/themes/Atantla/metacity-1
 @dirrmtry share/themes/Atantla
-@dirrmtry share/themes/Aldabra/metacity-1
-@dirrmtry share/themes/Aldabra/gtk-3.0/assets
-@dirrmtry share/themes/Aldabra/gtk-3.0
-@dirrmtry share/themes/Aldabra/gtk-2.0/assets
-@dirrmtry share/themes/Aldabra/gtk-2.0
-@dirrmtry share/themes/Aldabra
 @dirrmtry share/themes/AlaDelta/metacity-1
 @dirrmtry share/themes/AlaDelta/gtk-2.0
 @dirrmtry share/themes/AlaDelta

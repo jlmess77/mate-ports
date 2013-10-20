@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-themes
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -17,13 +17,11 @@ RUN_DEPENDS=	gtk-engines2>=2.15.0:${PORTSDIR}/x11-themes/gtk-engines2 \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack marco
-USE_GNOME=	gdkpixbuf2 gtk20
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
+USE_MATE=	marco
+USE_GNOME=	gdkpixbuf2 gtk20 intlhack
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 .include <bsd.port.mk>
