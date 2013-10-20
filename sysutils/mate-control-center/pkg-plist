@@ -59,7 +59,6 @@ sbin/mate-display-properties-install-systemwide
 share/MateConf/gsettings/mate-control-center.convert
 share/applications/mate-at-properties.desktop
 share/applications/mate-default-applications-properties.desktop
-share/applications/mate-default-applications.desktop
 share/applications/mate-display-properties.desktop
 share/applications/mate-keyboard.desktop
 share/applications/mate-about-me.desktop
