@@ -3547,7 +3547,13 @@ do-fetch:
 			else \
 				SORTED_PATCH_SITES_CMD_TMP="${SORTED_PATCH_SITES_DEFAULT_CMD}" ; \
 			fi; \
-			for site in `eval $$SORTED_PATCH_SITES_CMD_TMP`; do \
+			sites_remaining=0; \
+			sites="`eval $$SORTED_PATCH_SITES_CMD_TMP`"; \
+			for site in $${sites}; do \
+				sites_remaining=$$(($${sites_remaining} + 1)); \
+			done; \
+			for site in $${sites}; do \
+				sites_remaining=$$(($${sites_remaining} - 1)); \
 			    ${ECHO_MSG} "=> Attempting to fetch $${site}$${file}"; \
 				CKSIZE=`alg=SIZE; ${DISTINFO_DATA}`; \
 				case $${file} in \
@@ -3556,7 +3562,16 @@ do-fetch:
 				*)		args=$${site}$${file};; \
 				esac; \
 				if ${SETENV} ${FETCH_ENV} ${FETCH_CMD} ${FETCH_BEFORE_ARGS} $${args} ${FETCH_AFTER_ARGS}; then \
-					continue 2; \
+					actual_size=`stat -f %z "$${file}"`; \
+					if [ -n "${DISABLE_SIZE}" ] || [ -z "$${CKSIZE}" ] || [ $${actual_size} -eq $${CKSIZE} ]; then \
+						continue 2; \
+					else \
+						${ECHO_MSG} "=> Fetched file size mismatch (expected $${CKSIZE}, actual $${actual_size})"; \
+						if [ $${sites_remaining} -gt 1 ]; then \
+							${ECHO_MSG} "=> Trying next site"; \
+							${RM} -f $${file}; \
+						fi; \
+					fi; \
 				fi; \
 			done; \
 			${ECHO_MSG} "=> Couldn't fetch it - please try to retrieve this";\
@@ -4351,7 +4366,7 @@ _STAGE_DEP=		build
 _STAGE_SEQ=		stage-message stage-dir run-depends lib-depends apply-slist pre-install generate-plist \
 				pre-su-install
 .if defined(NEED_ROOT)
-_STAGE_SUSEQ=	create-users-groups do-install post-install post-stage compress-man \
+_STAGE_SUSEQ=	create-users-groups do-install post-install post-install-script post-stage compress-man \
 				install-rc-script install-ldconfig-file install-license \
 				install-desktop-entries add-plist-info add-plist-docs add-plist-examples \
 				add-plist-data add-plist-post fix-plist-sequence
@@ -4359,7 +4374,7 @@ _STAGE_SUSEQ=	create-users-groups do-install post-install post-stage compress-ma
 _STAGE_SUSEQ+=	stage-qa
 .endif
 .else
-_STAGE_SEQ+=	create-users-groups do-install post-install post-stage compress-man \
+_STAGE_SEQ+=	create-users-groups do-install post-install post-install-script post-stage compress-man \
 				install-rc-script install-ldconfig-file install-license \
 				install-desktop-entries add-plist-info add-plist-docs add-plist-examples \
 				add-plist-data add-plist-post fix-plist-sequence
