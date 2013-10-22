@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-doc-utils
-PORTVERSION=	1.6.1
+PORTVERSION=	1.6.2
 CATEGORIES=	textproc mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -19,17 +19,21 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian \
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_GNOME=	gnomehier libxml2 libxslt intlhack
+USE_MATE=	autogen common:build intlhack
+USE_GNOME=	gnomehier libxml2 libxslt
 USE_PYTHON=	build
 INSTALLS_OMF=	yes
 GNU_CONFIGURE=	yes
+USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 CONFIGURE_ARGS=--with-omf-dir=${PREFIX}/share/omf
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-W compat|--traditional|g' \
 		${WRKSRC}/configure.ac
+	@${CHMOD} +x ${WRKSRC}/autogen.sh
 
 pre-install:
 	@${REINPLACE_CMD} -e 's|build_SUBDIRS = xml2po|build_SUBDIRS =|g ; \
