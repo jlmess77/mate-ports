@@ -13,6 +13,8 @@ COMMENT=	Additional UI API for MATE
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification
 
+PORTSCOUT=	limitw:1,even
+
 USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	docutils

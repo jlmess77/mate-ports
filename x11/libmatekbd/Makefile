@@ -12,6 +12,8 @@ COMMENT=	MATE keyboard shared library
 
 LIB_DEPENDS=	libxklavier.so:${PORTSDIR}/x11/libxklavier
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_GNOME=	gnomehier glib20 gtk20 intlhack ltverhack

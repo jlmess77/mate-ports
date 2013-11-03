@@ -13,6 +13,8 @@ COMMENT=	Archive manager for zip files, tar, etc
 RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
     		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 
+PORTSCOUT=	limitw:1,even
+
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen caja common:build docutils intlhack

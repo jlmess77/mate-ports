@@ -17,6 +17,8 @@ RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian \
 		${LOCALBASE}/share/xml/docbook/4.4/catalog.xml:${PORTSDIR}/textproc/docbook-xml-440 \
 		xml2po:${PORTSDIR}/textproc/gnome-doc-utils
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack

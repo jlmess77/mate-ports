@@ -16,6 +16,8 @@ LIB_DEPENDS=	libpoppler-glib.so:${PORTSDIR}/graphics/poppler-glib \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
 
+PORTSCOUT=	limitw:1,even
+
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils icontheme intlhack \

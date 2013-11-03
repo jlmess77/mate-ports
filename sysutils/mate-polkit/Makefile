@@ -13,6 +13,8 @@ COMMENT=	MATE frontend to the PolicKit framework
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack ltverhack

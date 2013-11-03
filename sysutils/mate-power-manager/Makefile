@@ -19,6 +19,8 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack libmatekeyring \

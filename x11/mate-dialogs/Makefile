@@ -13,6 +13,8 @@ COMMENT=	Display MATE dialogs from the command line
 BUILD_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	docutils

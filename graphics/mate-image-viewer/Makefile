@@ -13,6 +13,8 @@ COMMENT=	Eye of MATE image viewer
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libjpeg.so:${PORTSDIR}/graphics/jpeg
 
+PORTSCOUT=	limitw:1,even
+
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
 		shared-mime-info
 USE_XZ=		yes

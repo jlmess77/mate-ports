@@ -15,6 +15,8 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
 LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack \

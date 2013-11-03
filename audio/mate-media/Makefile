@@ -12,6 +12,8 @@ COMMENT=	Multimedia applications for the MATE desktop
 
 LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack ltverhack \

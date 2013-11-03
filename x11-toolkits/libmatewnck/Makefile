@@ -12,6 +12,8 @@ COMMENT=	Library used for writing pagers and taskslists
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 
+PORTSCOUT=	limitw:1,even
+
 USES=		bison gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_XORG=	x11 xres

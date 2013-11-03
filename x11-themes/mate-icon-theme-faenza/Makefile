@@ -10,6 +10,8 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Collection of Faenza and Faience icons for the MATE desktop
 
+PORTSCOUT=	limitw:1,even
+
 USE_XZ=		yes
 NO_BUILD=	yes
 INSTALLS_ICONS=	yes

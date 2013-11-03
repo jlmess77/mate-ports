@@ -17,6 +17,8 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libxklavier.so:${PORTSDIR}/x11/libxklavier \
 		libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit
 
+PORTSCOUT=	limitw:1,even
+
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
 		shared-mime-info
 USE_XZ=		yes

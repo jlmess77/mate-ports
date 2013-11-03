@@ -15,6 +15,8 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	xscreensaver-gnome-hacks>=0:${PORTSDIR}/x11/xscreensaver-gnome-hacks
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_GL=		gl
 USE_XZ=		yes

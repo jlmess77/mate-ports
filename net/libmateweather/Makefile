@@ -13,6 +13,8 @@ COMMENT=	Library to accessing online weather informations
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libsoup-2.4.so:${PORTSDIR}/devel/libsoup
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_GNOME=	glib20 gtk20 libxml2 intlhack ltverhack

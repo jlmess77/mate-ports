@@ -19,6 +19,8 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	xrdb:${PORTSDIR}/x11/xrdb
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	desktop libmatekbd

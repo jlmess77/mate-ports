@@ -12,6 +12,8 @@ COMMENT=	Unicode/ISO10646 character map and font viewer
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack

@@ -17,6 +17,8 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libtasn1.so:${PORTSDIR}/security/libtasn1
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:${PORTSDIR}/security/ca_root_nss
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack libmatekeyring ltverhack

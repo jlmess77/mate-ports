@@ -13,6 +13,8 @@ COMMENT=	MATE system monitor program
 LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	docutils icontheme libmatewnck

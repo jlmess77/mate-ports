@@ -19,6 +19,8 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme intlhack \

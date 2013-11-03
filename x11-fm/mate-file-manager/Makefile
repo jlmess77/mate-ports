@@ -16,6 +16,8 @@ LIB_DEPENDS=	libexif.so:${PORTSDIR}/graphics/libexif \
 		libexempi.so:${PORTSDIR}/textproc/exempi
 RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 
+PORTSCOUT=	limitw:1,even
+
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
 		shared-mime-info
 USE_XZ=		yes

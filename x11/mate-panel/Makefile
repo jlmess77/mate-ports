@@ -14,6 +14,8 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	desktop docutils libmateweather libmatewnck menus

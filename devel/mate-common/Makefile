@@ -10,6 +10,8 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Common automake macros for MATE
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gmake pkgconfig:both
 USE_XZ=		yes
 USE_MATE=	autogen

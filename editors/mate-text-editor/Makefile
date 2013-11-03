@@ -16,6 +16,8 @@ LIB_DEPENDS=	libenchant.so:${PORTSDIR}/textproc/enchant \
 		libsoup-2.4.so:${PORTSDIR}/devel/libsoup
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-codes
 
+PORTSCOUT=	limitw:1,even
+
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltasneededhack

@@ -18,6 +18,8 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack libmatewnck

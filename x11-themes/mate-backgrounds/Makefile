@@ -10,6 +10,8 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Collection of backgrounds for MATE
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack

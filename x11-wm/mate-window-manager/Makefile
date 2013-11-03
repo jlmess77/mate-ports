@@ -13,6 +13,8 @@ COMMENT=	Window manager for the adult in you
 LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	dialogs docutils

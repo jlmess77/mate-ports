@@ -14,6 +14,8 @@ BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 LIB_DEPENDS=	libgcrypt.so:${PORTSDIR}/security/libgcrypt \
 		libdbus-1.so:${PORTSDIR}/devel/dbus
 
+PORTSCOUT=	limitw:1,even
+
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build intlhack ltverhack
