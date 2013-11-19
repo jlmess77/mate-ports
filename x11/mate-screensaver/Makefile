@@ -13,7 +13,6 @@ COMMENT=	MATE screen saver and locker
 LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libnotify.so:${PORTSDIR}/devel/libnotify
-RUN_DEPENDS=	xscreensaver-gnome-hacks>=0:${PORTSDIR}/x11/xscreensaver-gnome-hacks
 
 PORTSCOUT=	limitw:1,even
 
@@ -41,12 +40,16 @@ SCREENSAVER_DIR=	share/applications/screensavers
 
 XSCREENSAVER_EXCLUDE=	"(popsquares.xml)"
 
-OPTIONS_DEFINE=	PAM KEYRING
+OPTIONS_DEFINE=	PAM KEYRING XSCREENSAVER
 OPTIONS_DEFAULT=PAM KEYRING
 PAM_DESC=	Pluggable Authentication Module support
 KEYRING_DESC=	MateKeyring integration (needs PAM)
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MXSCREENSAVER}
+RUN_DEPENDS=	xscreensaver-gnome-hacks>=0:${PORTSDIR}/x11/xscreensaver-gnome-hacks
+.endif
 
 .if ${PORT_OPTIONS:MPAM}
 RUN_DEPENDS+=	pam_helper:${PORTSDIR}/security/pam_helper
