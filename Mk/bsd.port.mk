@@ -311,6 +311,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #                         passed to the compiler by setting DEBUG_FLAGS. It is
 #                         set to "-g" at default.
 #
+# WITH_DEBUG_PORTS		- A list of origins for which WITH_DEBUG will be set
+#
 # WITH_SSP_PORTS
 # 				- If set, SSP_FLAGS (defaults to -fstack-protector)
 #				  is added to CFLAGS and the necessary flags
@@ -1307,6 +1309,12 @@ MAKE_ENV+=	TMPDIR="${TMPDIR}"
 CONFIGURE_ENV+=	TMPDIR="${TMPDIR}"
 .endif # defined(TMPDIR)
 
+.if defined(WITH_DEBUG_PORTS)
+.if ${WITH_DEBUG_PORTS:M${PKGORIGIN}}
+WITH_DEBUG=	yes
+.endif
+.endif
+
 # Reset value from bsd.own.mk.
 .if defined(WITH_DEBUG) && !defined(WITHOUT_DEBUG)
 STRIP=	#none
@@ -1364,19 +1372,6 @@ ETCDIR?=		${PREFIX}/etc/${PORTNAME}
 .include "${PORTSDIR}/Mk/bsd.xorg.mk"
 .endif
 
-.if defined(USE_BZIP2)
-EXTRACT_SUFX?=			.tar.bz2
-.elif defined(USE_LHA)
-EXTRACT_SUFX?=			.lzh
-.elif defined(USE_ZIP)
-EXTRACT_SUFX?=			.zip
-.elif defined(USE_XZ)
-EXTRACT_SUFX?=			.tar.xz
-.elif defined(USE_MAKESELF)
-EXTRACT_SUFX?=			.run
-.else
-EXTRACT_SUFX?=			.tar.gz
-.endif
 PACKAGES?=		${PORTSDIR}/packages
 TEMPLATES?=		${PORTSDIR}/Templates
 
@@ -1520,6 +1515,20 @@ ${_f}_ARGS:=	${f:C/^[^\:]*\://g}
 .endif
 .include "${USESDIR}/${_f}.mk"
 .endfor
+
+.if defined(USE_BZIP2)
+EXTRACT_SUFX?=			.tar.bz2
+.elif defined(USE_LHA)
+EXTRACT_SUFX?=			.lzh
+.elif defined(USE_ZIP)
+EXTRACT_SUFX?=			.zip
+.elif defined(USE_XZ)
+EXTRACT_SUFX?=			.tar.xz
+.elif defined(USE_MAKESELF)
+EXTRACT_SUFX?=			.run
+.else
+EXTRACT_SUFX?=			.tar.gz
+.endif
 
 # You can force skipping these test by defining IGNORE_PATH_CHECKS
 .if !defined(IGNORE_PATH_CHECKS)
@@ -4273,7 +4282,7 @@ create-users-groups:
 								echo \"Adding user '$${_login}' to group '${_group}'.\"; \
 								${PW} groupmod ${_group} -m $${_login}; fi" >> ${TMPPLIST}; \
 					else \
-							${ECHO_CMD} "if ! ${PW} groupshow ${_group} | ${GREP} -qw $${_login}; then \n \
+							${ECHO_CMD} -e "if ! ${PW} groupshow ${_group} | ${GREP} -qw $${_login}; then \n \
 								echo \"Adding user '$${_login}' to group '${_group}'.\" \n \
 								${PW} groupmod ${_group} -m $${_login} \nfi" >> ${_UG_OUTPUT}; \
 					fi ; \
