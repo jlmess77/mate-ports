@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: head/Mk/bsd.port.mk 334461 2013-11-20 21:50:11Z bapt $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -864,8 +864,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  Default: ${WRKSRC}
 # CONFIGURE_SCRIPT
 #				- Name of configure script, relative to ${CONFIGURE_WRKSRC}.
-#				  Default: "Makefile.PL" if PERL_CONFIGURE is set,
-#				  "configure" otherwise.
+#				  Default: "Makefile.PL" if USES=perl5 and USE_PERL5=configure
+#				  are set, "configure" otherwise.
 # CONFIGURE_TARGET
 #				- The name of target to call when GNU_CONFIGURE is
 #				  defined.
@@ -880,8 +880,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  --mandir=${MANPREFIX}/man --build=${CONFIGURE_TARGET}" if
 #				  GNU_CONFIGURE is set, "CC=${CC} CFLAGS=${CFLAGS}
 #				  PREFIX=${PREFIX} INSTALLPRIVLIB=${PREFIX}/lib
-#				  INSTALLARCHLIB=${PREFIX}/lib" if PERL_CONFIGURE is set,
-#				  empty otherwise.
+#				  INSTALLARCHLIB=${PREFIX}/lib" if USES=perl5 and
+#				  USE_PERL5=configure are set, empty otherwise.
 # CONFIGURE_ENV	- Pass these env (shell-like) to configure if
 #				  ${HAS_CONFIGURE} is set.
 # CONFIGURE_LOG	- The name of configure log file. It will be printed to
@@ -3642,7 +3642,8 @@ patch-dos2unix:
 do-patch:
 .if defined(PATCHFILES)
 	@${ECHO_MSG} "===>  Applying distribution patches for ${PKGNAME}"
-	@(cd ${_DISTDIR}; \
+	@(set -e; \
+	cd ${_DISTDIR}; \
 	patch_dist_strip () { \
 		case "$$1" in \
 		${_PATCH_DIST_STRIP_CASES} \
@@ -6779,7 +6780,7 @@ show-dev-errors:
 	@${FALSE}
 check-makefile:: show-dev-errors
 .endif
-.endif #DVELOPER
+.endif #DEVELOPER
 .endif
 # End of post-makefile section.
 
