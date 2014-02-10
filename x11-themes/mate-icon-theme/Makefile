@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-icon-theme
-PORTVERSION=	1.6.2
+PORTVERSION=	1.7.1
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -19,7 +19,7 @@ PORTSCOUT=	limitw:1,even
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_GNOME=	intlhack
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
+#USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
