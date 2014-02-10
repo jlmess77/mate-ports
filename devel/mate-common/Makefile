@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-common
-PORTVERSION=	1.6.2
+PORTVERSION=	1.7.3
 CATEGORIES=	devel mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -14,8 +14,6 @@ PORTSCOUT=	limitw:1,even
 
 USES=		gmake pkgconfig:both
 USE_XZ=		yes
-USE_MATE=	autogen
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>
