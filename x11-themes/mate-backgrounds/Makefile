@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-backgrounds
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.2
 CATEGORIES=	x11-themes graphics mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -14,12 +14,9 @@ PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack
-USE_GNOME=	glib20
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
+USE_GNOME=	glib20 intlhack
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 .include <bsd.port.mk>
