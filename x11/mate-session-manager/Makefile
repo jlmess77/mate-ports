@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-session-manager
-PORTVERSION=	1.6.1
+PORTVERSION=	1.7.2
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -22,7 +22,7 @@ USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	settingsdaemon
 USE_XORG=	ice sm xau xext xrandr xrender xtrans xtst
-USE_GNOME=	glib20 gnomehier gtk20 intlhack librsvg2 libxslt pango
+USE_GNOME=	gnomehier gtk20 intlhack librsvg2 libxslt pango
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docbook-docs \
 		--with-gtk=2.0 \
