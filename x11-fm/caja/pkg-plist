@@ -14,13 +14,14 @@ include/caja/libcaja-extension/caja-menu.h
 include/caja/libcaja-extension/caja-property-page-provider.h
 include/caja/libcaja-extension/caja-property-page.h
 lib/girepository-1.0/Caja-2.0.typelib
-lib/libcaja-extension.a
 lib/libcaja-extension.la
 lib/libcaja-extension.so
 lib/libcaja-extension.so.1
+lib/libcaja-extension.so.1.4.0
 libdata/pkgconfig/libcaja-extension.pc
 libexec/caja-convert-metadata
 man/man1/caja.1.gz
+man/man1/caja-autorun-software.1.gz
 man/man1/caja-connect-server.1.gz
 man/man1/caja-file-management-properties.1.gz
 share/MateConf/gsettings/caja.convert
@@ -99,9 +100,12 @@ share/doc/libcaja-extension/style.css
 share/doc/libcaja-extension/up.png
 share/gir-1.0/Caja-2.0.gir
 share/icons/hicolor/16x16/apps/caja.png
+share/icons/hicolor/16x16/emblems/emblem-note.png
 share/icons/hicolor/22x22/apps/caja.png
 share/icons/hicolor/24x24/apps/caja.png
+share/icons/hicolor/24x24/emblems/emblem-note.png
 share/icons/hicolor/32x32/apps/caja.png
+share/icons/hicolor/48x48/emblems/emblem-note.png
 share/icons/hicolor/scalable/apps/caja.svg
 share/locale/af/LC_MESSAGES/caja.mo
 share/locale/am/LC_MESSAGES/caja.mo
@@ -118,6 +122,7 @@ share/locale/br/LC_MESSAGES/caja.mo
 share/locale/bs/LC_MESSAGES/caja.mo
 share/locale/ca/LC_MESSAGES/caja.mo
 share/locale/ca@valencia/LC_MESSAGES/caja.mo
+share/locale/cmn/LC_MESSAGES/caja.mo
 share/locale/crh/LC_MESSAGES/caja.mo
 share/locale/cs/LC_MESSAGES/caja.mo
 share/locale/cy/LC_MESSAGES/caja.mo
@@ -203,6 +208,7 @@ share/locale/tk/LC_MESSAGES/caja.mo
 share/locale/tr/LC_MESSAGES/caja.mo
 share/locale/ug/LC_MESSAGES/caja.mo
 share/locale/uk/LC_MESSAGES/caja.mo
+share/locale/ur/LC_MESSAGES/caja.mo
 share/locale/uz/LC_MESSAGES/caja.mo
 share/locale/uz@cyrillic/LC_MESSAGES/caja.mo
 share/locale/vi/LC_MESSAGES/caja.mo
@@ -214,9 +220,6 @@ share/locale/zh_CN/LC_MESSAGES/caja.mo
 share/locale/zh_HK/LC_MESSAGES/caja.mo
 share/locale/zh_TW/LC_MESSAGES/caja.mo
 share/locale/zu/LC_MESSAGES/caja.mo
-share/mate-file-manager/icons/hicolor/16x16/emblems/emblem-note.png
-share/mate-file-manager/icons/hicolor/24x24/emblems/emblem-note.png
-share/mate-file-manager/icons/hicolor/48x48/emblems/emblem-note.png
 share/mime/application/x-mate-saved-search.xml
 share/mime/packages/caja.xml
 share/pixmaps/caja/audio.svg
@@ -228,15 +231,6 @@ share/pixmaps/caja/erase.png
 share/pixmaps/caja/knob.png
 share/pixmaps/caja/thumbnail_frame.png
 @dirrm share/pixmaps/caja
-@dirrmtry share/mate-file-manager/icons/hicolor/48x48/emblems
-@dirrmtry share/mate-file-manager/icons/hicolor/48x48
-@dirrmtry share/mate-file-manager/icons/hicolor/24x24/emblems
-@dirrmtry share/mate-file-manager/icons/hicolor/24x24
-@dirrmtry share/mate-file-manager/icons/hicolor/16x16/emblems
-@dirrmtry share/mate-file-manager/icons/hicolor/16x16
-@dirrmtry share/mate-file-manager/icons/hicolor
-@dirrmtry share/mate-file-manager/icons
-@dirrmtry share/mate-file-manager
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
@@ -249,6 +243,8 @@ share/pixmaps/caja/thumbnail_frame.png
 @dirrmtry share/locale/xh
 @dirrmtry share/locale/uz@cyrillic/LC_MESSAGES
 @dirrmtry share/locale/uz@cyrillic
+@dirrmtry share/locale/ur/LC_MESSAGES
+@dirrmtry share/locale/ur
 @dirrmtry share/locale/ug/LC_MESSAGES
 @dirrmtry share/locale/ug
 @dirrmtry share/locale/te/LC_MESSAGES
@@ -305,6 +301,8 @@ share/pixmaps/caja/thumbnail_frame.png
 @dirrmtry share/locale/dz
 @dirrmtry share/locale/crh/LC_MESSAGES
 @dirrmtry share/locale/crh
+@dirrmtry share/locale/cmn/LC_MESSAGES
+@dirrmtry share/locale/cmn
 @dirrmtry share/locale/ca@valencia/LC_MESSAGES
 @dirrmtry share/locale/ca@valencia
 @dirrmtry share/locale/bn_IN/LC_MESSAGES

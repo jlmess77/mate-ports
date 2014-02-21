@@ -1,8 +1,8 @@
 # Created by: ade, archie
 # $FreeBSD$
 
-PORTNAME=	mate-file-manager
-PORTVERSION=	1.6.2
+PORTNAME=	caja
+PORTVERSION=	1.7.90
 CATEGORIES=	x11-fm mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -18,19 +18,17 @@ RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
+USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
 		shared-mime-info
 USE_XZ=		yes
 USE_MATE=	desktop icontheme:run
 USE_XORG=	ice x11 xrender
 USE_GNOME=	glib20 gnomehier gtk20 intlhack introspection:build \
-		libxml2 ltasneededhack ltverhack pango
+		libxml2 pango
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	libtool
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LIBPNG="-L${LOCALBASE}/lib -lpng -lz"
-CONFIGURE_ARGS=	--enable-static \
-		--disable-packagekit \
+#CONFIGURE_ENV=	LIBPNG="-L${LOCALBASE}/lib -lpng -lz"
+CONFIGURE_ARGS=	--disable-packagekit \
 		--with-gtk=2.0 \
 		--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc
