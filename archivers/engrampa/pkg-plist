@@ -1,9 +1,9 @@
 bin/engrampa
-lib/caja/extensions-2.0/libcaja-engrampa.a
 lib/caja/extensions-2.0/libcaja-engrampa.la
 lib/caja/extensions-2.0/libcaja-engrampa.so
 libexec/engrampa/isoinfo.sh
 libexec/engrampa/rpm2cpio
+man/man1/engrampa.1.gz
 share/MateConf/gsettings/engrampa.convert
 share/applications/engrampa.desktop
 share/engrampa/icons/hicolor/16x16/actions/add-files-to-archive.png
@@ -22,6 +22,139 @@ share/engrampa/ui/open-with.ui
 share/engrampa/ui/password.ui
 share/engrampa/ui/properties.ui
 share/engrampa/ui/update.ui
+share/help/C/engrampa/figures/engrampa_home.png
+share/help/C/engrampa/figures/engrampa_leftarrow.png
+share/help/C/engrampa/figures/engrampa_main_window.png
+share/help/C/engrampa/figures/engrampa_rightarrow.png
+share/help/C/engrampa/figures/engrampa_uparrow.png
+share/help/C/engrampa/index.docbook
+share/help/C/engrampa/legal.xml
+share/help/bg/engrampa/figures/engrampa_home.png
+share/help/bg/engrampa/figures/engrampa_leftarrow.png
+share/help/bg/engrampa/figures/engrampa_main_window.png
+share/help/bg/engrampa/figures/engrampa_rightarrow.png
+share/help/bg/engrampa/figures/engrampa_uparrow.png
+share/help/bg/engrampa/index.docbook
+share/help/bg/engrampa/legal.xml
+share/help/ca/engrampa/figures/engrampa_home.png
+share/help/ca/engrampa/figures/engrampa_leftarrow.png
+share/help/ca/engrampa/figures/engrampa_main_window.png
+share/help/ca/engrampa/figures/engrampa_rightarrow.png
+share/help/ca/engrampa/figures/engrampa_uparrow.png
+share/help/ca/engrampa/index.docbook
+share/help/ca/engrampa/legal.xml
+share/help/cs/engrampa/figures/engrampa_home.png
+share/help/cs/engrampa/figures/engrampa_leftarrow.png
+share/help/cs/engrampa/figures/engrampa_main_window.png
+share/help/cs/engrampa/figures/engrampa_rightarrow.png
+share/help/cs/engrampa/figures/engrampa_uparrow.png
+share/help/cs/engrampa/index.docbook
+share/help/cs/engrampa/legal.xml
+share/help/de/engrampa/figures/engrampa_home.png
+share/help/de/engrampa/figures/engrampa_leftarrow.png
+share/help/de/engrampa/figures/engrampa_main_window.png
+share/help/de/engrampa/figures/engrampa_rightarrow.png
+share/help/de/engrampa/figures/engrampa_uparrow.png
+share/help/de/engrampa/index.docbook
+share/help/de/engrampa/legal.xml
+share/help/el/engrampa/figures/engrampa_home.png
+share/help/el/engrampa/figures/engrampa_leftarrow.png
+share/help/el/engrampa/figures/engrampa_main_window.png
+share/help/el/engrampa/figures/engrampa_rightarrow.png
+share/help/el/engrampa/figures/engrampa_uparrow.png
+share/help/el/engrampa/index.docbook
+share/help/el/engrampa/legal.xml
+share/help/en_GB/engrampa/figures/engrampa_home.png
+share/help/en_GB/engrampa/figures/engrampa_leftarrow.png
+share/help/en_GB/engrampa/figures/engrampa_main_window.png
+share/help/en_GB/engrampa/figures/engrampa_rightarrow.png
+share/help/en_GB/engrampa/figures/engrampa_uparrow.png
+share/help/en_GB/engrampa/index.docbook
+share/help/en_GB/engrampa/legal.xml
+share/help/es/engrampa/figures/engrampa_home.png
+share/help/es/engrampa/figures/engrampa_leftarrow.png
+share/help/es/engrampa/figures/engrampa_main_window.png
+share/help/es/engrampa/figures/engrampa_rightarrow.png
+share/help/es/engrampa/figures/engrampa_uparrow.png
+share/help/es/engrampa/index.docbook
+share/help/es/engrampa/legal.xml
+share/help/fi/engrampa/figures/engrampa_home.png
+share/help/fi/engrampa/figures/engrampa_leftarrow.png
+share/help/fi/engrampa/figures/engrampa_main_window.png
+share/help/fi/engrampa/figures/engrampa_rightarrow.png
+share/help/fi/engrampa/figures/engrampa_uparrow.png
+share/help/fi/engrampa/index.docbook
+share/help/fi/engrampa/legal.xml
+share/help/fr/engrampa/figures/engrampa_home.png
+share/help/fr/engrampa/figures/engrampa_leftarrow.png
+share/help/fr/engrampa/figures/engrampa_main_window.png
+share/help/fr/engrampa/figures/engrampa_rightarrow.png
+share/help/fr/engrampa/figures/engrampa_uparrow.png
+share/help/fr/engrampa/index.docbook
+share/help/fr/engrampa/legal.xml
+share/help/it/engrampa/figures/engrampa_home.png
+share/help/it/engrampa/figures/engrampa_leftarrow.png
+share/help/it/engrampa/figures/engrampa_main_window.png
+share/help/it/engrampa/figures/engrampa_rightarrow.png
+share/help/it/engrampa/figures/engrampa_uparrow.png
+share/help/it/engrampa/index.docbook
+share/help/it/engrampa/legal.xml
+share/help/ja/engrampa/figures/engrampa_home.png
+share/help/ja/engrampa/figures/engrampa_leftarrow.png
+share/help/ja/engrampa/figures/engrampa_main_window.png
+share/help/ja/engrampa/figures/engrampa_rightarrow.png
+share/help/ja/engrampa/figures/engrampa_uparrow.png
+share/help/ja/engrampa/index.docbook
+share/help/ja/engrampa/legal.xml
+share/help/nl/engrampa/figures/engrampa_home.png
+share/help/nl/engrampa/figures/engrampa_leftarrow.png
+share/help/nl/engrampa/figures/engrampa_main_window.png
+share/help/nl/engrampa/figures/engrampa_rightarrow.png
+share/help/nl/engrampa/figures/engrampa_uparrow.png
+share/help/nl/engrampa/index.docbook
+share/help/nl/engrampa/legal.xml
+share/help/oc/engrampa/figures/engrampa_home.png
+share/help/oc/engrampa/figures/engrampa_leftarrow.png
+share/help/oc/engrampa/figures/engrampa_main_window.png
+share/help/oc/engrampa/figures/engrampa_rightarrow.png
+share/help/oc/engrampa/figures/engrampa_uparrow.png
+share/help/oc/engrampa/index.docbook
+share/help/oc/engrampa/legal.xml
+share/help/ru/engrampa/figures/engrampa_home.png
+share/help/ru/engrampa/figures/engrampa_leftarrow.png
+share/help/ru/engrampa/figures/engrampa_main_window.png
+share/help/ru/engrampa/figures/engrampa_rightarrow.png
+share/help/ru/engrampa/figures/engrampa_uparrow.png
+share/help/ru/engrampa/index.docbook
+share/help/ru/engrampa/legal.xml
+share/help/sv/engrampa/figures/engrampa_home.png
+share/help/sv/engrampa/figures/engrampa_leftarrow.png
+share/help/sv/engrampa/figures/engrampa_main_window.png
+share/help/sv/engrampa/figures/engrampa_rightarrow.png
+share/help/sv/engrampa/figures/engrampa_uparrow.png
+share/help/sv/engrampa/index.docbook
+share/help/sv/engrampa/legal.xml
+share/help/uk/engrampa/figures/engrampa_home.png
+share/help/uk/engrampa/figures/engrampa_leftarrow.png
+share/help/uk/engrampa/figures/engrampa_main_window.png
+share/help/uk/engrampa/figures/engrampa_rightarrow.png
+share/help/uk/engrampa/figures/engrampa_uparrow.png
+share/help/uk/engrampa/index.docbook
+share/help/uk/engrampa/legal.xml
+share/help/vi/engrampa/figures/engrampa_home.png
+share/help/vi/engrampa/figures/engrampa_leftarrow.png
+share/help/vi/engrampa/figures/engrampa_main_window.png
+share/help/vi/engrampa/figures/engrampa_rightarrow.png
+share/help/vi/engrampa/figures/engrampa_uparrow.png
+share/help/vi/engrampa/index.docbook
+share/help/vi/engrampa/legal.xml
+share/help/zh_CN/engrampa/figures/engrampa_home.png
+share/help/zh_CN/engrampa/figures/engrampa_leftarrow.png
+share/help/zh_CN/engrampa/figures/engrampa_main_window.png
+share/help/zh_CN/engrampa/figures/engrampa_rightarrow.png
+share/help/zh_CN/engrampa/figures/engrampa_uparrow.png
+share/help/zh_CN/engrampa/index.docbook
+share/help/zh_CN/engrampa/legal.xml
 share/icons/hicolor/16x16/apps/engrampa.png
 share/icons/hicolor/22x22/apps/engrampa.png
 share/icons/hicolor/24x24/apps/engrampa.png
@@ -42,6 +175,7 @@ share/locale/br/LC_MESSAGES/engrampa.mo
 share/locale/bs/LC_MESSAGES/engrampa.mo
 share/locale/ca/LC_MESSAGES/engrampa.mo
 share/locale/ca@valencia/LC_MESSAGES/engrampa.mo
+share/locale/cmn/LC_MESSAGES/engrampa.mo
 share/locale/cs/LC_MESSAGES/engrampa.mo
 share/locale/cy/LC_MESSAGES/engrampa.mo
 share/locale/da/LC_MESSAGES/engrampa.mo
@@ -49,6 +183,7 @@ share/locale/de/LC_MESSAGES/engrampa.mo
 share/locale/dz/LC_MESSAGES/engrampa.mo
 share/locale/el/LC_MESSAGES/engrampa.mo
 share/locale/en@shaw/LC_MESSAGES/engrampa.mo
+share/locale/en_AU/LC_MESSAGES/engrampa.mo
 share/locale/en_CA/LC_MESSAGES/engrampa.mo
 share/locale/en_GB/LC_MESSAGES/engrampa.mo
 share/locale/eo/LC_MESSAGES/engrampa.mo
@@ -77,6 +212,7 @@ share/locale/kk/LC_MESSAGES/engrampa.mo
 share/locale/kn/LC_MESSAGES/engrampa.mo
 share/locale/ko/LC_MESSAGES/engrampa.mo
 share/locale/ku/LC_MESSAGES/engrampa.mo
+share/locale/ky/LC_MESSAGES/engrampa.mo
 share/locale/lt/LC_MESSAGES/engrampa.mo
 share/locale/lv/LC_MESSAGES/engrampa.mo
 share/locale/mai/LC_MESSAGES/engrampa.mo
@@ -123,180 +259,6 @@ share/locale/xh/LC_MESSAGES/engrampa.mo
 share/locale/zh_CN/LC_MESSAGES/engrampa.mo
 share/locale/zh_HK/LC_MESSAGES/engrampa.mo
 share/locale/zh_TW/LC_MESSAGES/engrampa.mo
-share/mate/help/engrampa/C/engrampa.xml
-share/mate/help/engrampa/C/figures/engrampa_home.png
-share/mate/help/engrampa/C/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/C/figures/engrampa_main_window.png
-share/mate/help/engrampa/C/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/C/figures/engrampa_uparrow.png
-share/mate/help/engrampa/C/legal.xml
-share/mate/help/engrampa/bg/engrampa.xml
-share/mate/help/engrampa/bg/figures/engrampa_home.png
-share/mate/help/engrampa/bg/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/bg/figures/engrampa_main_window.png
-share/mate/help/engrampa/bg/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/bg/figures/engrampa_uparrow.png
-share/mate/help/engrampa/ca/engrampa.xml
-share/mate/help/engrampa/ca/figures/engrampa_home.png
-share/mate/help/engrampa/ca/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/ca/figures/engrampa_main_window.png
-share/mate/help/engrampa/ca/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/ca/figures/engrampa_uparrow.png
-share/mate/help/engrampa/cs/engrampa.xml
-share/mate/help/engrampa/cs/figures/engrampa_home.png
-share/mate/help/engrampa/cs/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/cs/figures/engrampa_main_window.png
-share/mate/help/engrampa/cs/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/cs/figures/engrampa_uparrow.png
-share/mate/help/engrampa/de/engrampa.xml
-share/mate/help/engrampa/de/figures/engrampa_home.png
-share/mate/help/engrampa/de/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/de/figures/engrampa_main_window.png
-share/mate/help/engrampa/de/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/de/figures/engrampa_uparrow.png
-share/mate/help/engrampa/el/engrampa.xml
-share/mate/help/engrampa/el/figures/engrampa_home.png
-share/mate/help/engrampa/el/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/el/figures/engrampa_main_window.png
-share/mate/help/engrampa/el/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/el/figures/engrampa_uparrow.png
-share/mate/help/engrampa/en_GB/engrampa.xml
-share/mate/help/engrampa/en_GB/figures/engrampa_home.png
-share/mate/help/engrampa/en_GB/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/en_GB/figures/engrampa_main_window.png
-share/mate/help/engrampa/en_GB/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/en_GB/figures/engrampa_uparrow.png
-share/mate/help/engrampa/es/engrampa.xml
-share/mate/help/engrampa/es/figures/engrampa_home.png
-share/mate/help/engrampa/es/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/es/figures/engrampa_main_window.png
-share/mate/help/engrampa/es/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/es/figures/engrampa_uparrow.png
-share/mate/help/engrampa/fi/engrampa.xml
-share/mate/help/engrampa/fi/figures/engrampa_home.png
-share/mate/help/engrampa/fi/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/fi/figures/engrampa_main_window.png
-share/mate/help/engrampa/fi/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/fi/figures/engrampa_uparrow.png
-share/mate/help/engrampa/fr/engrampa.xml
-share/mate/help/engrampa/fr/figures/engrampa_home.png
-share/mate/help/engrampa/fr/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/fr/figures/engrampa_main_window.png
-share/mate/help/engrampa/fr/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/fr/figures/engrampa_uparrow.png
-share/mate/help/engrampa/it/engrampa.xml
-share/mate/help/engrampa/it/figures/engrampa_home.png
-share/mate/help/engrampa/it/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/it/figures/engrampa_main_window.png
-share/mate/help/engrampa/it/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/it/figures/engrampa_uparrow.png
-share/mate/help/engrampa/ja/engrampa.xml
-share/mate/help/engrampa/ja/figures/engrampa_home.png
-share/mate/help/engrampa/ja/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/ja/figures/engrampa_main_window.png
-share/mate/help/engrampa/ja/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/ja/figures/engrampa_uparrow.png
-share/mate/help/engrampa/nl/engrampa.xml
-share/mate/help/engrampa/nl/figures/engrampa_home.png
-share/mate/help/engrampa/nl/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/nl/figures/engrampa_main_window.png
-share/mate/help/engrampa/nl/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/nl/figures/engrampa_uparrow.png
-share/mate/help/engrampa/oc/engrampa.xml
-share/mate/help/engrampa/oc/figures/engrampa_home.png
-share/mate/help/engrampa/oc/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/oc/figures/engrampa_main_window.png
-share/mate/help/engrampa/oc/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/oc/figures/engrampa_uparrow.png
-share/mate/help/engrampa/ru/engrampa.xml
-share/mate/help/engrampa/ru/figures/engrampa_home.png
-share/mate/help/engrampa/ru/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/ru/figures/engrampa_main_window.png
-share/mate/help/engrampa/ru/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/ru/figures/engrampa_uparrow.png
-share/mate/help/engrampa/sv/engrampa.xml
-share/mate/help/engrampa/sv/figures/engrampa_home.png
-share/mate/help/engrampa/sv/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/sv/figures/engrampa_main_window.png
-share/mate/help/engrampa/sv/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/sv/figures/engrampa_uparrow.png
-share/mate/help/engrampa/uk/engrampa.xml
-share/mate/help/engrampa/uk/figures/engrampa_home.png
-share/mate/help/engrampa/uk/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/uk/figures/engrampa_main_window.png
-share/mate/help/engrampa/uk/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/uk/figures/engrampa_uparrow.png
-share/mate/help/engrampa/vi/engrampa.xml
-share/mate/help/engrampa/vi/figures/engrampa_home.png
-share/mate/help/engrampa/vi/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/vi/figures/engrampa_main_window.png
-share/mate/help/engrampa/vi/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/vi/figures/engrampa_uparrow.png
-share/mate/help/engrampa/zh_CN/engrampa.xml
-share/mate/help/engrampa/zh_CN/figures/engrampa_home.png
-share/mate/help/engrampa/zh_CN/figures/engrampa_leftarrow.png
-share/mate/help/engrampa/zh_CN/figures/engrampa_main_window.png
-share/mate/help/engrampa/zh_CN/figures/engrampa_rightarrow.png
-share/mate/help/engrampa/zh_CN/figures/engrampa_uparrow.png
-share/omf/engrampa/engrampa-C.omf
-share/omf/engrampa/engrampa-bg.omf
-share/omf/engrampa/engrampa-ca.omf
-share/omf/engrampa/engrampa-cs.omf
-share/omf/engrampa/engrampa-de.omf
-share/omf/engrampa/engrampa-el.omf
-share/omf/engrampa/engrampa-en_GB.omf
-share/omf/engrampa/engrampa-es.omf
-share/omf/engrampa/engrampa-fi.omf
-share/omf/engrampa/engrampa-fr.omf
-share/omf/engrampa/engrampa-it.omf
-share/omf/engrampa/engrampa-ja.omf
-share/omf/engrampa/engrampa-nl.omf
-share/omf/engrampa/engrampa-oc.omf
-share/omf/engrampa/engrampa-ru.omf
-share/omf/engrampa/engrampa-sv.omf
-share/omf/engrampa/engrampa-uk.omf
-share/omf/engrampa/engrampa-vi.omf
-share/omf/engrampa/engrampa-zh_CN.omf
-@dirrm share/omf/engrampa
-@dirrm share/mate/help/engrampa/zh_CN/figures
-@dirrm share/mate/help/engrampa/zh_CN
-@dirrm share/mate/help/engrampa/vi/figures
-@dirrm share/mate/help/engrampa/vi
-@dirrm share/mate/help/engrampa/uk/figures
-@dirrm share/mate/help/engrampa/uk
-@dirrm share/mate/help/engrampa/sv/figures
-@dirrm share/mate/help/engrampa/sv
-@dirrm share/mate/help/engrampa/ru/figures
-@dirrm share/mate/help/engrampa/ru
-@dirrm share/mate/help/engrampa/oc/figures
-@dirrm share/mate/help/engrampa/oc
-@dirrm share/mate/help/engrampa/nl/figures
-@dirrm share/mate/help/engrampa/nl
-@dirrm share/mate/help/engrampa/ja/figures
-@dirrm share/mate/help/engrampa/ja
-@dirrm share/mate/help/engrampa/it/figures
-@dirrm share/mate/help/engrampa/it
-@dirrm share/mate/help/engrampa/fr/figures
-@dirrm share/mate/help/engrampa/fr
-@dirrm share/mate/help/engrampa/fi/figures
-@dirrm share/mate/help/engrampa/fi
-@dirrm share/mate/help/engrampa/es/figures
-@dirrm share/mate/help/engrampa/es
-@dirrm share/mate/help/engrampa/en_GB/figures
-@dirrm share/mate/help/engrampa/en_GB
-@dirrm share/mate/help/engrampa/el/figures
-@dirrm share/mate/help/engrampa/el
-@dirrm share/mate/help/engrampa/de/figures
-@dirrm share/mate/help/engrampa/de
-@dirrm share/mate/help/engrampa/cs/figures
-@dirrm share/mate/help/engrampa/cs
-@dirrm share/mate/help/engrampa/ca/figures
-@dirrm share/mate/help/engrampa/ca
-@dirrm share/mate/help/engrampa/bg/figures
-@dirrm share/mate/help/engrampa/bg
-@dirrm share/mate/help/engrampa/C/figures
-@dirrm share/mate/help/engrampa/C
-@dirrm share/mate/help/engrampa
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
 @dirrmtry share/locale/zh_HK
 @dirrmtry share/locale/xh/LC_MESSAGES
@@ -329,6 +291,8 @@ share/omf/engrampa/engrampa-zh_CN.omf
 @dirrmtry share/locale/mg
 @dirrmtry share/locale/mai/LC_MESSAGES
 @dirrmtry share/locale/mai
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
 @dirrmtry share/locale/kk/LC_MESSAGES
@@ -343,6 +307,8 @@ share/omf/engrampa/engrampa-zh_CN.omf
 @dirrmtry share/locale/en@shaw
 @dirrmtry share/locale/dz/LC_MESSAGES
 @dirrmtry share/locale/dz
+@dirrmtry share/locale/cmn/LC_MESSAGES
+@dirrmtry share/locale/cmn
 @dirrmtry share/locale/ca@valencia/LC_MESSAGES
 @dirrmtry share/locale/ca@valencia
 @dirrmtry share/locale/bn_IN/LC_MESSAGES
@@ -353,6 +319,64 @@ share/omf/engrampa/engrampa-zh_CN.omf
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/help/zh_CN/engrampa/figures
+@dirrmtry share/help/zh_CN/engrampa
+@dirrmtry share/help/zh_CN
+@dirrmtry share/help/vi/engrampa/figures
+@dirrmtry share/help/vi/engrampa
+@dirrmtry share/help/vi
+@dirrmtry share/help/uk/engrampa/figures
+@dirrmtry share/help/uk/engrampa
+@dirrmtry share/help/uk
+@dirrmtry share/help/sv/engrampa/figures
+@dirrmtry share/help/sv/engrampa
+@dirrmtry share/help/sv
+@dirrmtry share/help/ru/engrampa/figures
+@dirrmtry share/help/ru/engrampa
+@dirrmtry share/help/ru
+@dirrmtry share/help/oc/engrampa/figures
+@dirrmtry share/help/oc/engrampa
+@dirrmtry share/help/oc
+@dirrmtry share/help/nl/engrampa/figures
+@dirrmtry share/help/nl/engrampa
+@dirrmtry share/help/nl
+@dirrmtry share/help/ja/engrampa/figures
+@dirrmtry share/help/ja/engrampa
+@dirrmtry share/help/ja
+@dirrmtry share/help/it/engrampa/figures
+@dirrmtry share/help/it/engrampa
+@dirrmtry share/help/it
+@dirrmtry share/help/fr/engrampa/figures
+@dirrmtry share/help/fr/engrampa
+@dirrmtry share/help/fr
+@dirrmtry share/help/fi/engrampa/figures
+@dirrmtry share/help/fi/engrampa
+@dirrmtry share/help/fi
+@dirrmtry share/help/es/engrampa/figures
+@dirrmtry share/help/es/engrampa
+@dirrmtry share/help/es
+@dirrmtry share/help/en_GB/engrampa/figures
+@dirrmtry share/help/en_GB/engrampa
+@dirrmtry share/help/en_GB
+@dirrmtry share/help/el/engrampa/figures
+@dirrmtry share/help/el/engrampa
+@dirrmtry share/help/el
+@dirrmtry share/help/de/engrampa/figures
+@dirrmtry share/help/de/engrampa
+@dirrmtry share/help/de
+@dirrmtry share/help/cs/engrampa/figures
+@dirrmtry share/help/cs/engrampa
+@dirrmtry share/help/cs
+@dirrmtry share/help/ca/engrampa/figures
+@dirrmtry share/help/ca/engrampa
+@dirrmtry share/help/ca
+@dirrmtry share/help/bg/engrampa/figures
+@dirrmtry share/help/bg/engrampa
+@dirrmtry share/help/bg
+@dirrmtry share/help/C/engrampa/figures
+@dirrmtry share/help/C/engrampa
+@dirrmtry share/help/C
+@dirrmtry share/help
 @dirrm share/engrampa/ui
 @dirrm share/engrampa/icons/hicolor/24x24/actions
 @dirrm share/engrampa/icons/hicolor/24x24
