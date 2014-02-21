@@ -13,6 +13,7 @@ lib/libmarco-private.a
 lib/libmarco-private.la
 lib/libmarco-private.so
 lib/libmarco-private.so.0
+lib/libmarco-private.so.0.0.0
 libdata/pkgconfig/libmarco-private.pc
 man/man1/marco-message.1.gz
 man/man1/marco-theme-viewer.1.gz
@@ -20,6 +21,7 @@ man/man1/marco-window-demo.1.gz
 man/man1/marco.1.gz
 share/MateConf/gsettings/marco.convert
 share/applications/marco.desktop
+share/help/C/creating-marco-themes/index.docbook
 share/locale/am/LC_MESSAGES/marco.mo
 share/locale/ar/LC_MESSAGES/marco.mo
 share/locale/as/LC_MESSAGES/marco.mo
@@ -34,6 +36,7 @@ share/locale/br/LC_MESSAGES/marco.mo
 share/locale/bs/LC_MESSAGES/marco.mo
 share/locale/ca/LC_MESSAGES/marco.mo
 share/locale/ca@valencia/LC_MESSAGES/marco.mo
+share/locale/cmn/LC_MESSAGES/marco.mo
 share/locale/crh/LC_MESSAGES/marco.mo
 share/locale/cs/LC_MESSAGES/marco.mo
 share/locale/cy/LC_MESSAGES/marco.mo
@@ -67,6 +70,7 @@ share/locale/is/LC_MESSAGES/marco.mo
 share/locale/it/LC_MESSAGES/marco.mo
 share/locale/ja/LC_MESSAGES/marco.mo
 share/locale/ka/LC_MESSAGES/marco.mo
+share/locale/kk/LC_MESSAGES/marco.mo
 share/locale/kn/LC_MESSAGES/marco.mo
 share/locale/ko/LC_MESSAGES/marco.mo
 share/locale/ku/LC_MESSAGES/marco.mo
@@ -115,11 +119,10 @@ share/locale/yo/LC_MESSAGES/marco.mo
 share/locale/zh_CN/LC_MESSAGES/marco.mo
 share/locale/zh_HK/LC_MESSAGES/marco.mo
 share/locale/zh_TW/LC_MESSAGES/marco.mo
-share/mate-window-manager/icons/marco-window-demo.png
+%%DATADIR%%/icons/marco-window-demo.png
 share/mate-control-center/keybindings/50-marco-desktop-key.xml
 share/mate-control-center/keybindings/50-marco-global-key.xml
 share/mate-control-center/keybindings/50-marco-window-key.xml
-share/mate/help/creating-marco-themes/C/creating-marco-themes.xml
 share/mate/wm-properties/marco-wm.desktop
 share/themes/ClearlooksRe/metacity-1/metacity-theme-1.xml
 share/themes/Dopple-Left/metacity-1/metacity-theme-1.xml
@@ -196,10 +199,8 @@ share/themes/eOS/metacity-1/unmaximize_unfocused_over.png
 @dirrm share/themes/ClearlooksRe
 @dirrmtry share/themes
 @dirrm share/mate/wm-properties
-@dirrm share/mate/help/creating-marco-themes/C
-@dirrm share/mate/help/creating-marco-themes
-@dirrm share/mate-window-manager/icons
-@dirrm share/mate-window-manager
+@dirrmtry %%DATADIR%%/icons
+@dirrmtry %%DATADIR%%
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
 @dirrmtry share/locale/zh_HK
 @dirrmtry share/locale/yo/LC_MESSAGES
@@ -230,6 +231,8 @@ share/themes/eOS/metacity-1/unmaximize_unfocused_over.png
 @dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
+@dirrmtry share/locale/kk/LC_MESSAGES
+@dirrmtry share/locale/kk
 @dirrmtry share/locale/ig/LC_MESSAGES
 @dirrmtry share/locale/ig
 @dirrmtry share/locale/hy/LC_MESSAGES
@@ -242,6 +245,8 @@ share/themes/eOS/metacity-1/unmaximize_unfocused_over.png
 @dirrmtry share/locale/dz
 @dirrmtry share/locale/crh/LC_MESSAGES
 @dirrmtry share/locale/crh
+@dirrmtry share/locale/cmn/LC_MESSAGES
+@dirrmtry share/locale/cmn
 @dirrmtry share/locale/ca@valencia/LC_MESSAGES
 @dirrmtry share/locale/ca@valencia
 @dirrmtry share/locale/bn_IN/LC_MESSAGES
@@ -252,5 +257,9 @@ share/themes/eOS/metacity-1/unmaximize_unfocused_over.png
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/images
+@dirrmtry share/help/C/creating-marco-themes
+@dirrmtry share/help/C
+@dirrmtry share/help
 @dirrm include/marco-1/marco-private
 @dirrm include/marco-1
