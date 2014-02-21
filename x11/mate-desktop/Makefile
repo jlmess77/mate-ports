@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-desktop
-PORTVERSION=	1.7.5
+PORTVERSION=	1.7.90
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,15 +10,13 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Additional UI API for MATE
 
-BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
-		itstool:${PORTSDIR}/textproc/itstool
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification
 
 PORTSCOUT=	limitw:1,even
 
 USES=		bison gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-#USE_MATE=	docutils
 USE_XORG=	x11 xrandr
 USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20 intlhack
 USE_PYTHON=	yes
