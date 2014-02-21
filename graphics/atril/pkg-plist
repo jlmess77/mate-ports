@@ -51,35 +51,29 @@ include/atril/1.5.0/libview/ev-view.h
 %%COMICS%%lib/atril/3/backends/comicsdocument.atril-backend
 %%DJVU%%lib/atril/3/backends/djvudocument.atril-backend
 %%DVI%%lib/atril/3/backends/dvidocument.atril-backend
-%%COMICS%%lib/atril/3/backends/libcomicsdocument.a
 %%COMICS%%lib/atril/3/backends/libcomicsdocument.la
 %%COMICS%%lib/atril/3/backends/libcomicsdocument.so
-%%DJVU%%lib/atril/3/backends/libdjvudocument.a
 %%DJVU%%lib/atril/3/backends/libdjvudocument.la
 %%DJVU%%lib/atril/3/backends/libdjvudocument.so
-%%DVI%%lib/atril/3/backends/libdvidocument.a
 %%DVI%%lib/atril/3/backends/libdvidocument.la
 %%DVI%%lib/atril/3/backends/libdvidocument.so
-lib/atril/3/backends/libpdfdocument.a
 lib/atril/3/backends/libpdfdocument.la
 lib/atril/3/backends/libpdfdocument.so
-lib/atril/3/backends/libpsdocument.a
 lib/atril/3/backends/libpsdocument.la
 lib/atril/3/backends/libpsdocument.so
-lib/atril/3/backends/libtiffdocument.a
 lib/atril/3/backends/libtiffdocument.la
 lib/atril/3/backends/libtiffdocument.so
 lib/atril/3/backends/pdfdocument.atril-backend
 lib/atril/3/backends/psdocument.atril-backend
 lib/atril/3/backends/tiffdocument.atril-backend
-lib/libatrildocument.a
 lib/libatrildocument.la
 lib/libatrildocument.so
 lib/libatrildocument.so.3
-lib/libatrilview.a
+lib/libatrildocument.so.3.0.0
 lib/libatrilview.la
 lib/libatrilview.so
 lib/libatrilview.so.3
+lib/libatrilview.so.3.0.0
 %%CAJA%%lib/caja/extensions-2.0/libatril-properties-page.a
 %%CAJA%%lib/caja/extensions-2.0/libatril-properties-page.la
 %%CAJA%%lib/caja/extensions-2.0/libatril-properties-page.so
@@ -175,6 +169,7 @@ share/gtk-doc/html/libatrildocument-1.5.0/libatrildocument-ev-link-action.html
 share/gtk-doc/html/libatrildocument-1.5.0/libatrildocument-ev-link-dest.html
 share/gtk-doc/html/libatrildocument-1.5.0/libatrildocument-ev-link.html
 share/gtk-doc/html/libatrildocument-1.5.0/libatrildocument-ev-mapping.html
+share/gtk-doc/html/libatrildocument-1.5.0/libatrildocument-ev-transition-effect.html
 share/gtk-doc/html/libatrildocument-1.5.0/licence.html
 share/gtk-doc/html/libatrildocument-1.5.0/object-tree.html
 share/gtk-doc/html/libatrildocument-1.5.0/right.png
@@ -221,6 +216,7 @@ share/locale/bn_IN/LC_MESSAGES/atril.mo
 share/locale/br/LC_MESSAGES/atril.mo
 share/locale/ca/LC_MESSAGES/atril.mo
 share/locale/ca@valencia/LC_MESSAGES/atril.mo
+share/locale/cmn/LC_MESSAGES/atril.mo
 share/locale/cs/LC_MESSAGES/atril.mo
 share/locale/cy/LC_MESSAGES/atril.mo
 share/locale/da/LC_MESSAGES/atril.mo
@@ -243,6 +239,7 @@ share/locale/gl/LC_MESSAGES/atril.mo
 share/locale/gu/LC_MESSAGES/atril.mo
 share/locale/he/LC_MESSAGES/atril.mo
 share/locale/hi/LC_MESSAGES/atril.mo
+share/locale/hr/LC_MESSAGES/atril.mo
 share/locale/hu/LC_MESSAGES/atril.mo
 share/locale/id/LC_MESSAGES/atril.mo
 share/locale/it/LC_MESSAGES/atril.mo
@@ -295,53 +292,75 @@ share/locale/wa/LC_MESSAGES/atril.mo
 share/locale/zh_CN/LC_MESSAGES/atril.mo
 share/locale/zh_HK/LC_MESSAGES/atril.mo
 share/locale/zh_TW/LC_MESSAGES/atril.mo
-share/mate/help/atril/C/atril.xml
-share/mate/help/atril/C/figures/atril_start_window.png
-share/mate/help/atril/C/legal.xml
-share/mate/help/atril/bg/atril.xml
-share/mate/help/atril/bg/figures/atril_start_window.png
-share/mate/help/atril/ca/atril.xml
-share/mate/help/atril/ca/figures/atril_start_window.png
-share/mate/help/atril/cs/atril.xml
-share/mate/help/atril/cs/figures/atril_start_window.png
-share/mate/help/atril/de/atril.xml
-share/mate/help/atril/de/figures/atril_start_window.png
-share/mate/help/atril/el/atril.xml
-share/mate/help/atril/el/figures/atril_start_window.png
-share/mate/help/atril/en_GB/atril.xml
-share/mate/help/atril/en_GB/figures/atril_start_window.png
-share/mate/help/atril/es/atril.xml
-share/mate/help/atril/es/figures/atril_start_window.png
-share/mate/help/atril/eu/atril.xml
-share/mate/help/atril/eu/figures/atril_start_window.png
-share/mate/help/atril/fi/atril.xml
-share/mate/help/atril/fi/figures/atril_start_window.png
-share/mate/help/atril/fr/atril.xml
-share/mate/help/atril/fr/figures/atril_start_window.png
-share/mate/help/atril/it/atril.xml
-share/mate/help/atril/it/figures/atril_start_window.png
-share/mate/help/atril/ja/atril.xml
-share/mate/help/atril/ja/figures/atril_start_window.png
-share/mate/help/atril/nl/atril.xml
-share/mate/help/atril/nl/figures/atril_start_window.png
-share/mate/help/atril/oc/atril.xml
-share/mate/help/atril/oc/figures/atril_start_window.png
-share/mate/help/atril/pt_BR/atril.xml
-share/mate/help/atril/pt_BR/figures/atril_start_window.png
-share/mate/help/atril/ru/atril.xml
-share/mate/help/atril/ru/figures/atril_start_window.png
-share/mate/help/atril/sl/atril.xml
-share/mate/help/atril/sl/figures/atril_start_window.png
-share/mate/help/atril/sr/atril.xml
-share/mate/help/atril/sr/figures/atril_start_window.png
-share/mate/help/atril/sv/atril.xml
-share/mate/help/atril/sv/figures/atril_start_window.png
-share/mate/help/atril/uk/atril.xml
-share/mate/help/atril/uk/figures/atril_start_window.png
-share/mate/help/atril/vi/atril.xml
-share/mate/help/atril/vi/figures/atril_start_window.png
-share/mate/help/atril/zh_CN/atril.xml
-share/mate/help/atril/zh_CN/figures/atril_start_window.png
+share/help/C/atril/figures/atril_start_window.png
+share/help/C/atril/index.docbook
+share/help/C/atril/legal.xml
+share/help/bg/atril/figures/atril_start_window.png
+share/help/bg/atril/index.docbook
+share/help/bg/atril/legal.xml
+share/help/ca/atril/figures/atril_start_window.png
+share/help/ca/atril/index.docbook
+share/help/ca/atril/legal.xml
+share/help/cs/atril/figures/atril_start_window.png
+share/help/cs/atril/index.docbook
+share/help/cs/atril/legal.xml
+share/help/de/atril/figures/atril_start_window.png
+share/help/de/atril/index.docbook
+share/help/de/atril/legal.xml
+share/help/el/atril/figures/atril_start_window.png
+share/help/el/atril/index.docbook
+share/help/el/atril/legal.xml
+share/help/en_GB/atril/figures/atril_start_window.png
+share/help/en_GB/atril/index.docbook
+share/help/en_GB/atril/legal.xml
+share/help/es/atril/figures/atril_start_window.png
+share/help/es/atril/index.docbook
+share/help/es/atril/legal.xml
+share/help/eu/atril/figures/atril_start_window.png
+share/help/eu/atril/index.docbook
+share/help/eu/atril/legal.xml
+share/help/fi/atril/figures/atril_start_window.png
+share/help/fi/atril/index.docbook
+share/help/fi/atril/legal.xml
+share/help/fr/atril/figures/atril_start_window.png
+share/help/fr/atril/index.docbook
+share/help/fr/atril/legal.xml
+share/help/it/atril/figures/atril_start_window.png
+share/help/it/atril/index.docbook
+share/help/it/atril/legal.xml
+share/help/ja/atril/figures/atril_start_window.png
+share/help/ja/atril/index.docbook
+share/help/ja/atril/legal.xml
+share/help/nl/atril/figures/atril_start_window.png
+share/help/nl/atril/index.docbook
+share/help/nl/atril/legal.xml
+share/help/oc/atril/figures/atril_start_window.png
+share/help/oc/atril/index.docbook
+share/help/oc/atril/legal.xml
+share/help/pt_BR/atril/figures/atril_start_window.png
+share/help/pt_BR/atril/index.docbook
+share/help/pt_BR/atril/legal.xml
+share/help/ru/atril/figures/atril_start_window.png
+share/help/ru/atril/index.docbook
+share/help/ru/atril/legal.xml
+share/help/sl/atril/figures/atril_start_window.png
+share/help/sl/atril/index.docbook
+share/help/sl/atril/legal.xml
+share/help/sr/atril/figures/atril_start_window.png
+share/help/sr/atril/index.docbook
+share/help/sr/atril/legal.xml
+share/help/sv/atril/figures/atril_start_window.png
+share/help/sv/atril/index.docbook
+share/help/sv/atril/legal.xml
+share/help/uk/atril/figures/atril_start_window.png
+share/help/uk/atril/index.docbook
+share/help/uk/atril/legal.xml
+share/help/vi/atril/figures/atril_start_window.png
+share/help/vi/atril/index.docbook
+share/help/vi/atril/legal.xml
+share/help/zh_CN/atril/figures/atril_start_window.png
+share/help/zh_CN/atril/index.docbook
+share/help/zh_CN/atril/legal.xml
 %%DATADIR%%/atril-previewer-ui.xml
 %%DATADIR%%/atril-toolbar.xml
 %%DATADIR%%/atril-ui.xml
@@ -385,32 +404,8 @@ share/mate/help/atril/zh_CN/figures/atril_start_window.png
 %%DATADIR%%/icons/hicolor/scalable/actions/object-rotate-left.svg
 %%DATADIR%%/icons/hicolor/scalable/actions/object-rotate-right.svg
 %%DATADIR%%/icons/hicolor/scalable/mimetypes/x-office-presentation.svg
-share/omf/atril/atril-C.omf
-share/omf/atril/atril-bg.omf
-share/omf/atril/atril-ca.omf
-share/omf/atril/atril-cs.omf
-share/omf/atril/atril-de.omf
-share/omf/atril/atril-el.omf
-share/omf/atril/atril-en_GB.omf
-share/omf/atril/atril-es.omf
-share/omf/atril/atril-eu.omf
-share/omf/atril/atril-fi.omf
-share/omf/atril/atril-fr.omf
-share/omf/atril/atril-it.omf
-share/omf/atril/atril-ja.omf
-share/omf/atril/atril-nl.omf
-share/omf/atril/atril-oc.omf
-share/omf/atril/atril-pt_BR.omf
-share/omf/atril/atril-ru.omf
-share/omf/atril/atril-sl.omf
-share/omf/atril/atril-sr.omf
-share/omf/atril/atril-sv.omf
-share/omf/atril/atril-uk.omf
-share/omf/atril/atril-vi.omf
-share/omf/atril/atril-zh_CN.omf
 share/thumbnailers/atril.thumbnailer
 @dirrmtry share/thumbnailers
-@dirrm share/omf/atril
 @dirrmtry %%DATADIR%%/icons/hicolor/scalable/mimetypes
 @dirrmtry %%DATADIR%%/icons/hicolor/scalable/actions
 @dirrmtry %%DATADIR%%/icons/hicolor/scalable
@@ -431,53 +426,6 @@ share/thumbnailers/atril.thumbnailer
 @dirrmtry %%DATADIR%%/icons/hicolor
 @dirrmtry %%DATADIR%%/icons
 @dirrmtry %%DATADIR%%
-@dirrm share/mate/help/atril/zh_CN/figures
-@dirrm share/mate/help/atril/zh_CN
-@dirrm share/mate/help/atril/vi/figures
-@dirrm share/mate/help/atril/vi
-@dirrm share/mate/help/atril/uk/figures
-@dirrm share/mate/help/atril/uk
-@dirrm share/mate/help/atril/sv/figures
-@dirrm share/mate/help/atril/sv
-@dirrm share/mate/help/atril/sr/figures
-@dirrm share/mate/help/atril/sr
-@dirrm share/mate/help/atril/sl/figures
-@dirrm share/mate/help/atril/sl
-@dirrm share/mate/help/atril/ru/figures
-@dirrm share/mate/help/atril/ru
-@dirrm share/mate/help/atril/pt_BR/figures
-@dirrm share/mate/help/atril/pt_BR
-@dirrm share/mate/help/atril/oc/figures
-@dirrm share/mate/help/atril/oc
-@dirrm share/mate/help/atril/nl/figures
-@dirrm share/mate/help/atril/nl
-@dirrm share/mate/help/atril/ja/figures
-@dirrm share/mate/help/atril/ja
-@dirrm share/mate/help/atril/it/figures
-@dirrm share/mate/help/atril/it
-@dirrm share/mate/help/atril/fr/figures
-@dirrm share/mate/help/atril/fr
-@dirrm share/mate/help/atril/fi/figures
-@dirrm share/mate/help/atril/fi
-@dirrm share/mate/help/atril/eu/figures
-@dirrm share/mate/help/atril/eu
-@dirrm share/mate/help/atril/es/figures
-@dirrm share/mate/help/atril/es
-@dirrm share/mate/help/atril/en_GB/figures
-@dirrm share/mate/help/atril/en_GB
-@dirrm share/mate/help/atril/el/figures
-@dirrm share/mate/help/atril/el
-@dirrm share/mate/help/atril/de/figures
-@dirrm share/mate/help/atril/de
-@dirrm share/mate/help/atril/cs/figures
-@dirrm share/mate/help/atril/cs
-@dirrm share/mate/help/atril/ca/figures
-@dirrm share/mate/help/atril/ca
-@dirrm share/mate/help/atril/bg/figures
-@dirrm share/mate/help/atril/bg
-@dirrm share/mate/help/atril/C/figures
-@dirrm share/mate/help/atril/C
-@dirrm share/mate/help/atril
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
 @dirrmtry share/locale/zh_HK
 @dirrmtry share/locale/te/LC_MESSAGES
@@ -512,6 +460,8 @@ share/thumbnailers/atril.thumbnailer
 @dirrmtry share/locale/en@shaw
 @dirrmtry share/locale/dz/LC_MESSAGES
 @dirrmtry share/locale/dz
+@dirrmtry share/locale/cmn/LC_MESSAGES
+@dirrmtry share/locale/cmn
 @dirrmtry share/locale/ca@valencia/LC_MESSAGES
 @dirrmtry share/locale/ca@valencia
 @dirrmtry share/locale/bn_IN/LC_MESSAGES
@@ -522,6 +472,76 @@ share/thumbnailers/atril.thumbnailer
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/help/zh_CN/atril/figures
+@dirrmtry share/help/zh_CN/atril
+@dirrmtry share/help/zh_CN
+@dirrmtry share/help/vi/atril/figures
+@dirrmtry share/help/vi/atril
+@dirrmtry share/help/vi
+@dirrmtry share/help/uk/atril/figures
+@dirrmtry share/help/uk/atril
+@dirrmtry share/help/uk
+@dirrmtry share/help/sv/atril/figures
+@dirrmtry share/help/sv/atril
+@dirrmtry share/help/sv
+@dirrmtry share/help/sr/atril/figures
+@dirrmtry share/help/sr/atril
+@dirrmtry share/help/sr
+@dirrmtry share/help/sl/atril/figures
+@dirrmtry share/help/sl/atril
+@dirrmtry share/help/sl
+@dirrmtry share/help/ru/atril/figures
+@dirrmtry share/help/ru/atril
+@dirrmtry share/help/ru
+@dirrmtry share/help/pt_BR/atril/figures
+@dirrmtry share/help/pt_BR/atril
+@dirrmtry share/help/pt_BR
+@dirrmtry share/help/oc/atril/figures
+@dirrmtry share/help/oc/atril
+@dirrmtry share/help/oc
+@dirrmtry share/help/nl/atril/figures
+@dirrmtry share/help/nl/atril
+@dirrmtry share/help/nl
+@dirrmtry share/help/ja/atril/figures
+@dirrmtry share/help/ja/atril
+@dirrmtry share/help/ja
+@dirrmtry share/help/it/atril/figures
+@dirrmtry share/help/it/atril
+@dirrmtry share/help/it
+@dirrmtry share/help/fr/atril/figures
+@dirrmtry share/help/fr/atril
+@dirrmtry share/help/fr
+@dirrmtry share/help/fi/atril/figures
+@dirrmtry share/help/fi/atril
+@dirrmtry share/help/fi
+@dirrmtry share/help/eu/atril/figures
+@dirrmtry share/help/eu/atril
+@dirrmtry share/help/eu
+@dirrmtry share/help/es/atril/figures
+@dirrmtry share/help/es/atril
+@dirrmtry share/help/es
+@dirrmtry share/help/en_GB/atril/figures
+@dirrmtry share/help/en_GB/atril
+@dirrmtry share/help/en_GB
+@dirrmtry share/help/el/atril/figures
+@dirrmtry share/help/el/atril
+@dirrmtry share/help/el
+@dirrmtry share/help/de/atril/figures
+@dirrmtry share/help/de/atril
+@dirrmtry share/help/de
+@dirrmtry share/help/cs/atril/figures
+@dirrmtry share/help/cs/atril
+@dirrmtry share/help/cs
+@dirrmtry share/help/ca/atril/figures
+@dirrmtry share/help/ca/atril
+@dirrmtry share/help/ca
+@dirrmtry share/help/bg/atril/figures
+@dirrmtry share/help/bg/atril
+@dirrmtry share/help/bg
+@dirrmtry share/help/C/atril/figures
+@dirrmtry share/help/C/atril
+@dirrmtry share/help/C
+@dirrmtry share/help
 @dirrmtry share/gtk-doc/html/libatrilview-1.5.0
 @dirrmtry share/gtk-doc/html/libatrildocument-1.5.0
 @dirrmtry share/gtk-doc/html/atril

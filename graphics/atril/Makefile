@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
 # $FreeBSD$
 
-PORTNAME=	mate-document-viewer
-PORTVERSION=	1.6.1
+PORTNAME=	atril
+PORTVERSION=	1.7.90
 CATEGORIES=	graphics print mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,7 +10,7 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE multi-format document viewer
 
-BUILD_DEPENDS=	gtkdoc-scan:${PORTSDIR}/textproc/gtk-doc
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 LIB_DEPENDS=	libpoppler-glib.so:${PORTSDIR}/graphics/poppler-glib \
 		libspectre.so:${PORTSDIR}/print/libspectre \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
@@ -18,21 +18,18 @@ RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicol
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake pathfix pkgconfig
+USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils icontheme intlhack \
-		ltasneededhack ltverhack
+USE_MATE=	icontheme
 USE_XORG=	sm
-USE_GNOME=	cairo glib20 gnomehier gtk20 libxml2
+USE_GNOME=	cairo gnomehier gtk20 intlhack libxml2
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.Atril.gschema.xml
 
@@ -96,11 +93,6 @@ PLIST_SUB+=	COMICS=""
 CONFIGURE_ARGS+=--disable-comics
 PLIST_SUB+=	COMICS="@comment "
 .endif
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|AC_CHECK_HEADERS([execinfo.h])||g' \
-		-e 's|" == "|" = "|g' \
-			${WRKSRC}/configure.ac
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libatrildocument.so.3
