@@ -10,6 +10,7 @@ lib/libmateweather.a
 lib/libmateweather.la
 lib/libmateweather.so
 lib/libmateweather.so.1
+lib/libmateweather.so.1.6.9
 libdata/pkgconfig/mateweather.pc
 %%DOCSDIR%%/MateWeatherLocationEntry.html
 %%DOCSDIR%%/MateWeatherTimezoneMenu.html
@@ -480,6 +481,7 @@ share/locale/br/LC_MESSAGES/libmateweather.mo
 share/locale/bs/LC_MESSAGES/libmateweather.mo
 share/locale/ca/LC_MESSAGES/libmateweather.mo
 share/locale/ca@valencia/LC_MESSAGES/libmateweather.mo
+share/locale/cmn/LC_MESSAGES/libmateweather.mo
 share/locale/crh/LC_MESSAGES/libmateweather.mo
 share/locale/cs/LC_MESSAGES/libmateweather.mo
 share/locale/cy/LC_MESSAGES/libmateweather.mo
@@ -637,6 +639,8 @@ share/locale/zh_TW/LC_MESSAGES/libmateweather.mo
 @dirrmtry share/locale/dz
 @dirrmtry share/locale/crh/LC_MESSAGES
 @dirrmtry share/locale/crh
+@dirrmtry share/locale/cmn/LC_MESSAGES
+@dirrmtry share/locale/cmn
 @dirrmtry share/locale/ca@valencia/LC_MESSAGES
 @dirrmtry share/locale/ca@valencia
 @dirrmtry share/locale/bn_IN/LC_MESSAGES
