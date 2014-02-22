@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-polkit
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.90
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,21 +10,22 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE frontend to the PolicKit framework
 
-BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
-		g-ir-scanner:${PORTSDIR}/devel/gobject-introspection
-LIB_DEPENDS=	polkit-gobject-1:${PORTSDIR}/sysutils/polkit
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
+LIB_DEPENDS=	libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack matehack
-USE_GMAKE=	yes
-USE_GNOME=	gnomehier gtk20
+USE_GNOME=	gnomehier gtk20 intlhack introspection:build
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc \
 		--localstatedir=/var
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libpolkit-gtk-mate-1.so.0.0.0
 
 .include <bsd.port.mk>

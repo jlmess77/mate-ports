@@ -52,12 +52,15 @@ libdata/pkgconfig/libslab.pc
 libdata/pkgconfig/mate-default-applications.pc
 libdata/pkgconfig/mate-keybindings.pc
 libdata/pkgconfig/mate-window-settings-2.0.pc
+man/man1/mate-about-me.1.gz
+man/man1/mate-appearance-properties.1.gz
+man/man1/mate-default-applications-properties.1.gz
 sbin/mate-display-properties-install-systemwide
 share/MateConf/gsettings/mate-control-center.convert
-share/applications/at-properties.desktop
-share/applications/default-applications.desktop
-share/applications/display-properties.desktop
-share/applications/keyboard.desktop
+share/applications/mate-at-properties.desktop
+share/applications/mate-default-applications-properties.desktop
+share/applications/mate-display-properties.desktop
+share/applications/mate-keyboard.desktop
 share/applications/mate-about-me.desktop
 share/applications/mate-appearance-properties.desktop
 share/applications/mate-font-viewer.desktop
@@ -65,8 +68,8 @@ share/applications/mate-keybinding.desktop
 share/applications/mate-network-properties.desktop
 share/applications/mate-settings-mouse.desktop
 share/applications/mate-theme-installer.desktop
+share/applications/mate-window-properties.desktop
 share/applications/matecc.desktop
-share/applications/window-properties.desktop
 share/desktop-directories/matecc.directory
 share/icons/hicolor/16x16/apps/mate-network-properties.png
 share/icons/hicolor/16x16/apps/mate-preferences-desktop-display.png
@@ -305,6 +308,7 @@ share/omf/mate-control-center/mate-control-center-vi.omf
 share/omf/mate-control-center/mate-control-center-zh_CN.omf
 share/polkit-1/actions/org.mate.randr.policy
 share/thumbnailers/mate-font-viewer.thumbnailer
+share/mime/application/x-mate-theme-package.xml
 @dirrmtry share/thumbnailers
 @dirrmtry share/polkit-1/actions
 @dirrmtry share/polkit-1
@@ -336,6 +340,8 @@ share/thumbnailers/mate-font-viewer.thumbnailer
 @dirrm share/mate/cursor-fonts
 @dirrm %%DATADIR%%/ui
 @dirrm %%DATADIR%%/pixmaps
+@dirrm %%DATADIR%%/keybindings
+@dirrm %%DATADIR%%
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
@@ -386,10 +392,7 @@ share/thumbnailers/mate-font-viewer.thumbnailer
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
-@dirrmtry share/glib-2.0/schemas
-@dirrmtry share/glib-2.0
 @dirrmtry share/desktop-directories
-@dirrmtry share/applications
 @dirrm lib/window-manager-settings
 @dirrm include/mate-window-settings-2.0
 @dirrm include/libslab

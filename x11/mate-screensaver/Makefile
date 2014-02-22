@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-screensaver
-PORTVERSION=	1.6.0
-PORTREVISION=	1
+PORTVERSION=	1.6.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -11,21 +10,19 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE screen saver and locker
 
-LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		notify:${PORTSDIR}/devel/libnotify
-RUN_DEPENDS=	xscreensaver-gl-helper:${PORTSDIR}/x11/xscreensaver-gnome-hacks
+LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix pkgconfig
 USE_GL=		gl
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop intlhack libmatekbd \
-		matehack menus
-USE_XORG=	ice sm x11 xext xtst xxf86misc xxf86vm
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20
+USE_MATE=	desktop libmatekbd menus
+USE_XORG=	ice sm x11 xext xtst xxf86misc xxf86vm xscrnsaver
+USE_GNOME=	glib20 gnomehier gtk20 intlhack
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 CONFIGURE_ARGS=	--with-xscreensaverdir=${XSCREENSAVER_DIR} \
 		--with-xscreensaverhackdir=${LOCALBASE}/bin/xscreensaver-hacks \
 		--with-console-kit=yes \
@@ -34,8 +31,6 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.screensaver.gschema.xml
-MAN1=		mate-screensaver-command.1 mate-screensaver-preferences.1 \
-		mate-screensaver.1
 
 PLIST=		${WRKDIR}/pkg-plist
 SUB_FILES+=	mate-screensaver.pam
@@ -45,12 +40,16 @@ SCREENSAVER_DIR=	share/applications/screensavers
 
 XSCREENSAVER_EXCLUDE=	"(popsquares.xml)"
 
-OPTIONS_DEFINE=	PAM KEYRING
+OPTIONS_DEFINE=	PAM KEYRING XSCREENSAVER
 OPTIONS_DEFAULT=PAM KEYRING
 PAM_DESC=	Pluggable Authentication Module support
-KEYRING_DESC=	GnomeKeyring integration (needs PAM)
+KEYRING_DESC=	MateKeyring integration (needs PAM)
 
 .include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MXSCREENSAVER}
+RUN_DEPENDS=	xscreensaver-gnome-hacks>=0:${PORTSDIR}/x11/xscreensaver-gnome-hacks
+.endif
 
 .if ${PORT_OPTIONS:MPAM}
 RUN_DEPENDS+=	pam_helper:${PORTSDIR}/security/pam_helper
@@ -89,15 +88,13 @@ pre-install:
 	@${ECHO_CMD} @dirrm ${SCREENSAVER_DIR} >> ${PLIST}
 
 post-install:
-	${CHOWN} root ${PREFIX}/libexec/mate-screensaver-dialog
-	${CHMOD} +s ${PREFIX}/libexec/mate-screensaver-dialog
-	${MKDIR} ${PREFIX}/${SCREENSAVER_DIR}
-	cd ${PREFIX}/${SCREENSAVER_DIR} && \
+	${MKDIR} ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR}
+	cd ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR} && \
 		${FIND} -s ${XSCREENSAVER_DIR} -maxdepth 1 -type f -name "*.xml" | \
 			${GREP} -Ev ${XSCREENSAVER_EXCLUDE} | \
 			${XARGS} ${WRKSRC}/data/migrate-xscreensaver-config.sh
 .if ${PORT_OPTIONS:MPAM}
-	${INSTALL_DATA} ${WRKDIR}/mate-screensaver.pam ${PREFIX}/etc/pam.d/mate-screensaver
+	${INSTALL_DATA} ${WRKDIR}/mate-screensaver.pam ${STAGEDIR}${PREFIX}/etc/pam.d/mate-screensaver
 .endif
 
 .include <bsd.port.mk>

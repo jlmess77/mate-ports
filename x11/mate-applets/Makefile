@@ -10,25 +10,25 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Applets components for the MATE Desktop Environment
 
-BUILD_DEPENDS=	g-ir-scanner:${PORTSDIR}/devel/gobject-introspection
-LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
-		xklavier:${PORTSDIR}/x11/libxklavier \
-		dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
-		hal:${PORTSDIR}/sysutils/hal \
-		upower-glib:${PORTSDIR}/sysutils/upower \
-		notify:${PORTSDIR}/devel/libnotify
+LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
+		libxklavier.so:${PORTSDIR}/x11/libxklavier \
+		libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit \
+		libhal.so:${PORTSDIR}/sysutils/hal \
+		libupower-glib.so:${PORTSDIR}/sysutils/upower \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils icontheme intlhack \
-		libmateweather libmatewnck matehack mucharmap panel \
+		libmateweather libmatewnck mucharmap panel \
 		polkit settingsdaemon
 USE_XORG=	x11
-USE_GMAKE=	yes
-USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 libxml2 libxslt pygobject \
-		pygtk2
+USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection:build \
+		libxml2 libxslt pygobject pygtk2
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
@@ -40,11 +40,15 @@ CONFIGURE_ARGS=	--enable-mixer-applet \
 CONFIGURE_ENV=	OS_SYS="/usr/include"
 CPPFLAGS+=	-I${LOCALBASE}/include ${PTHREAD_CFLAGS}
 LDFLAGS+=	-L${LOCALBASE}/lib ${PTHREAD_LIBS}
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.panel.applet.charpick.gschema.xml \
 		org.mate.panel.applet.geyes.gschema.xml \
 		org.mate.panel.applet.multiload.gschema.xml \
 		org.mate.stickynotes.gschema.xml
+
+FIX_APPLETS=	accessx-status battstat charpick drivemount geyes \
+		invest-applet/data multiload stickynotes trashapplet
 
 .include <bsd.port.pre.mk>
 
@@ -66,5 +70,11 @@ GLIB_SCHEMAS+=	org.mate.panel.applet.cpufreq.gschema.xml
 post-patch:
 	@${FIND} ${WRKSRC} -name Makefile.am | ${XARGS} ${REINPLACE_CMD} -e \
 	    	's|" == "|" = "|g'
+	${MV} ${WRKSRC}/invest-applet/invest/invest-applet.py \
+		${WRKSRC}/invest-applet/invest/mate-invest-applet.py
+.for dir in ${FIX_APPLETS}
+	@${REINPLACE_CMD} -e 's|@LIBEXECDIR@/|@LIBEXECDIR@/mate-|g' \
+		${WRKSRC}/${dir}/org.mate.*
+.endfor
 
 .include <bsd.port.post.mk>

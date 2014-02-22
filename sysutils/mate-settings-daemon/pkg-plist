@@ -66,6 +66,7 @@ libdata/pkgconfig/mate-settings-daemon.pc
 libexec/mate-settings-daemon
 libexec/msd-datetime-mechanism
 libexec/msd-locate-pointer
+man/man1/mate-settings-daemon.1.gz
 share/MateConf/gsettings/mate-settings-daemon.convert
 share/dbus-1/services/org.mate.SettingsDaemon.service
 share/dbus-1/system-services/org.mate.SettingsDaemon.DateTimeMechanism.service
@@ -99,6 +100,7 @@ share/locale/br/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/bs/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/ca/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/ca@valencia/LC_MESSAGES/mate-settings-daemon.mo
+share/locale/cmn/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/crh/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/cs/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/cy/LC_MESSAGES/mate-settings-daemon.mo
@@ -128,6 +130,7 @@ share/locale/is/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/it/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/ja/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/ka/LC_MESSAGES/mate-settings-daemon.mo
+share/locale/kk/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/kn/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/ko/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/ku/LC_MESSAGES/mate-settings-daemon.mo
@@ -167,6 +170,7 @@ share/locale/te/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/th/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/tr/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/uk/LC_MESSAGES/mate-settings-daemon.mo
+share/locale/ur/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/vi/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/wa/LC_MESSAGES/mate-settings-daemon.mo
 share/locale/xh/LC_MESSAGES/mate-settings-daemon.mo
@@ -203,6 +207,8 @@ share/polkit-1/actions/org.mate.settingsdaemon.datetimemechanism.policy
 @dirrmtry share/locale/zh_HK
 @dirrmtry share/locale/xh/LC_MESSAGES
 @dirrmtry share/locale/xh
+@dirrmtry share/locale/ur/LC_MESSAGES
+@dirrmtry share/locale/ur
 @dirrmtry share/locale/te/LC_MESSAGES
 @dirrmtry share/locale/te
 @dirrmtry share/locale/sr@latin/LC_MESSAGES
@@ -225,12 +231,16 @@ share/polkit-1/actions/org.mate.settingsdaemon.datetimemechanism.policy
 @dirrmtry share/locale/mai
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
+@dirrmtry share/locale/kk/LC_MESSAGES
+@dirrmtry share/locale/kk
 @dirrmtry share/locale/en@shaw/LC_MESSAGES
 @dirrmtry share/locale/en@shaw
 @dirrmtry share/locale/dz/LC_MESSAGES
 @dirrmtry share/locale/dz
 @dirrmtry share/locale/crh/LC_MESSAGES
 @dirrmtry share/locale/crh
+@dirrmtry share/locale/cmn/LC_MESSAGES
+@dirrmtry share/locale/cmn
 @dirrmtry share/locale/ca@valencia/LC_MESSAGES
 @dirrmtry share/locale/ca@valencia
 @dirrmtry share/locale/bn_IN/LC_MESSAGES
@@ -258,11 +268,6 @@ share/polkit-1/actions/org.mate.settingsdaemon.datetimemechanism.policy
 @dirrmtry share/icons/mate/16x16
 @dirrmtry share/icons/mate
 @dirrmtry share/icons
-@dirrmtry share/glib-2.0/schemas
-@dirrmtry share/glib-2.0
-@dirrmtry share/dbus-1/system-services
-@dirrmtry share/dbus-1/services
-@dirrmtry share/dbus-1
 @dirrm lib/mate-settings-daemon
 @dirrm include/mate-settings-daemon
 @dirrm etc/mate-settings-daemon/xrandr

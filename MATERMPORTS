@@ -1,13 +1,7 @@
-devel/mate-corba||2013-03-28|No longer part of MATE packages.
-devel/mate-conf||2013-03-28|No longer part of MATE packages.
-devel/libmatecomponent||2013-03-28|No longer part of MATE packages.
-misc/mate-mime-data||2013-03-28|No longer part of MATE packages.
-devel/mate-vfs||2013-03-28|No longer part of MATE packages.
-x11/libmate||2013-03-28|No longer part of MATE packages.
-graphics/libmatecanvas||2013-03-28|No longer part of MATE packages.
-x11-toolkits/libmatecomponentui||2013-03-28|No longer part of MATE packages.
-x11-toolkits/libmateui||2013-03-28|No longer part of MATE packages.
-devel/libmatenotify||2013-03-28|No longer part of MATE packages.
-sysutils/mate-conf-editor||2013-03-28|No longer part of MATE packages.
-devel/python-corba||2013-03-28|No longer part of MATE packages.
-x11-toolkits/python-mate||2013-03-28|No longer part of MATE packages.
+archivers/mate-file-archiver|archivers/engrampa|2014-02-21|renamed
+deskutils/mate-menu-editor|deskutils/mozo|2014-02-22|renamed
+editors/mate-text-editor|editors/pluma|2014-02-22|renamed
+graphics/mate-document-viewer|graphics/atril|2014-02-21|renamed
+graphics/mate-image-viewer|graphics/eom|2014-02-22|renamed
+x11-fm/mate-file-manager|x11-fm/caja|2014-02-21|renamed
+x11-wm/mate-window-manager|x11-wm/marco|2014-02-22|renamed

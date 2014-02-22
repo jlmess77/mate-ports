@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-notification-daemon
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.90
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,21 +10,21 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Send small notifications to your desktop
 
-LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		canberra-gtk:${PORTSDIR}/audio/libcanberra \
-		notify:${PORTSDIR}/devel/libnotify
+LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack libmatewnck matehack
+USE_MATE=	libmatewnck
 USE_XORG=	x11
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20 librsvg2
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
+USE_GNOME=	glib20 gnomehier gtk20 librsvg2 intlhack
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
 		--with-gtk=2.0
@@ -33,5 +33,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.NotificationDaemon.gschema.xml
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/mate-notification-daemon/engines/lib*.so
 
 .include <bsd.port.mk>

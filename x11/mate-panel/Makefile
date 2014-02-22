@@ -2,7 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	mate-panel
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.90
+PORTREVISION=	1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,24 +11,21 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Panel component for the MATE Desktop
 
-BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
-		g-ir-scanner:${PORTSDIR}/devel/gobject-introspection
-LIB_DEPENDS=	dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		canberra-gtk:${PORTSDIR}/audio/libcanberra \
-		cairo:${PORTSDIR}/graphics/cairo \
-		dconf:${PORTSDIR}/devel/dconf
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
+LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop docutils intlhack \
-		libmateweather libmatewnck ltverhack matehack menus
+USE_MATE=	desktop docutils libmateweather libmatewnck menus
 USE_XORG=	ice sm x11 xau xrandr
-USE_GMAKE=	yes
-USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 librsvg2 pango
+USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
+		intlhack introspection:build librsvg2 pango
 USE_PYTHON=	yes
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-network-manager \
 		--disable-gtk-doc \
@@ -37,18 +35,18 @@ INSTALLS_ICONS=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib
 CPPFLAGS+=	-I${LOCALBASE}/include
 
-MAN1=		mate-panel.1
 GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 		org.mate.panel.applet.fish.gschema.xml \
 		org.mate.panel.applet.window-list.gschema.xml \
 		org.mate.panel.applet.workspace-switcher.gschema.xml \
 		org.mate.panel.enums.xml \
 		org.mate.panel.gschema.xml \
+		org.mate.panel.menubar.gschema.xml \
 		org.mate.panel.object.gschema.xml \
 		org.mate.panel.toplevel.gschema.xml
 
 post-install:
-	@${MKDIR} ${PREFIX}/lib/mate-panel/modules
-	-${LOCALBASE}/bin/gio-querymodules ${PREFIX}/lib/mate-panel/modules
+	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/mate-panel/modules
+	@${STRIP_CMD} ${STAGEDIR}/${PREFIX}/lib/libmate-panel-applet-4.so.1
 
 .include <bsd.port.mk>

@@ -23,6 +23,7 @@ USE_MATE=	caja:run controlcenter:run dialogs:run icontheme:run \
 		polkit:run
 
 NO_BUILD=	yes
+NO_MTREE=	yes
 
 do-install:	# empty
 

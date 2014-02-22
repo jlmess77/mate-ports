@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	libmateweather
-PORTVERSION=	1.6.1
+PORTVERSION=	1.7.90
 CATEGORIES=	net mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,16 +10,15 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Library to accessing online weather informations
 
-BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
-LIB_DEPENDS=	soup-2.4:${PORTSDIR}/devel/libsoup
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
+LIB_DEPENDS=	libsoup-2.4.so:${PORTSDIR}/devel/libsoup
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack matehack
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gtk20 libxml2
+USE_GNOME=	gtk20 libxml2 intlhack
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc
@@ -28,5 +27,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.weather.gschema.xml
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmateweather.so.1
 
 .include <bsd.port.mk>

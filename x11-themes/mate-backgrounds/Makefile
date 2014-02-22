@@ -2,20 +2,19 @@
 # $FreeBSD$
 
 PORTNAME=	mate-backgrounds
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.90
 CATEGORIES=	x11-themes graphics mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	A collection of backgrounds for MATE
+COMMENT=	Collection of backgrounds for MATE
 
-USES=		gettext
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack matehack
-USE_GNOME=	glib20
-USE_GMAKE=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
+USE_GNOME=	glib20 intlhack
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

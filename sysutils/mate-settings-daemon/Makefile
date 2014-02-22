@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-settings-daemon
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.90
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,24 +10,23 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE settings daemon
 
-LIB_DEPENDS=	dbus-1:${PORTSDIR}/devel/dbus \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib \
-		xklavier:${PORTSDIR}/x11/libxklavier \
-		nss3:${PORTSDIR}/security/nss \
-		fontconfig:${PORTSDIR}/x11-fonts/fontconfig \
-		polkit-gobject-1:${PORTSDIR}/sysutils/polkit \
-		notify:${PORTSDIR}/devel/libnotify \
-		dconf:${PORTSDIR}/devel/dconf
+LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
+		libxklavier.so:${PORTSDIR}/x11/libxklavier \
+		libnss3.so:${PORTSDIR}/security/nss \
+		libfontconfig.so:${PORTSDIR}/x11-fonts/fontconfig \
+		libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit \
+		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	xrdb:${PORTSDIR}/x11/xrdb
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop intlhack libmatekbd matehack
+USE_MATE=	desktop libmatekbd
 USE_XORG=	xxf86misc
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20
+USE_GNOME=	dconf gnomehier gtk20 intlhack
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 USE_GSTREAMER=	good
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
@@ -57,5 +56,8 @@ GLIB_SCHEMAS=	org.mate.SettingsDaemon.plugins.a11y-keyboard.gschema.xml \
 		org.mate.keybindings.gschema.xml \
 		org.mate.peripherals-smartcard.gschema.xml \
 		org.mate.peripherals-touchpad.gschema.xml
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/mate-settings-daemon/*.so
 
 .include <bsd.port.mk>

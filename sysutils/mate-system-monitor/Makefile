@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-system-monitor
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.90
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,22 +10,19 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE system monitor program
 
-LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
-		glibmm-2.4.1:${PORTSDIR}/devel/glibmm \
-		gtkmm-2.4:${PORTSDIR}/x11-toolkits/gtkmm24 \
-		dbus-glib-1:${PORTSDIR}/devel/dbus-glib
+LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils icontheme intlhack \
-		libmatewnck matehack
-USE_GMAKE=	yes
-USE_GNOME=	glib20 gnomehier gtk20 librsvg2 libxml2
-INSTALLS_OMF=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
+USE_MATE=	docutils icontheme libmatewnck
+USE_GNOME=	gnomehier gtk20 librsvg2 intlhack libxml2 gtkmm24
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib -lutil"
+CONFIGURE_ENV=	LIBS="-lutil"
 CPPFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.system-monitor.enums.xml \
 		org.mate.system-monitor.gschema.xml

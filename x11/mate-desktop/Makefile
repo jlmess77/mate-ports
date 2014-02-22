@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-desktop
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.90
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,27 +10,26 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Additional UI API for MATE
 
-BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
-LIB_DEPENDS=	startup-notification-1:${PORTSDIR}/x11/startup-notification
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
+LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification
 
-USES=		bison gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		bison gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack ltverhack matehack
 USE_XORG=	x11 xrandr
-USE_GMAKE=	yes
-USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20
+USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20 intlhack
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0 \
 		--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc \
+		--disable-user-guide \
 		--disable-desktop-docs
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-
-MAN1=		mate-about.1
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.accessibility-keyboard.gschema.xml \
 		org.mate.accessibility-startup.gschema.xml \

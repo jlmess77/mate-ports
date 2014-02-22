@@ -5,11 +5,18 @@ bin/mate-screensaver-preferences
 etc/xdg/autostart/mate-screensaver.desktop
 etc/xdg/menus/mate-screensavers.menu
 libdata/pkgconfig/mate-screensaver.pc
+@owner root
+@mode 6555
 libexec/mate-screensaver-dialog
+@owner
+@mode
 libexec/mate-screensaver-gl-helper
 libexec/mate-screensaver/floaters
 libexec/mate-screensaver/popsquares
 libexec/mate-screensaver/slideshow
+man/man1/mate-screensaver-command.1.gz
+man/man1/mate-screensaver-preferences.1.gz
+man/man1/mate-screensaver.1.gz
 share/MateConf/gsettings/org.mate.screensaver.gschema.migrate
 share/applications/mate-screensaver-preferences.desktop
 share/applications/screensavers/cosmos-slideshow.desktop
@@ -26,6 +33,7 @@ share/backgrounds/cosmos/helix-nebula.jpg
 share/backgrounds/cosmos/jupiter.jpg
 share/backgrounds/cosmos/sombrero.jpg
 share/backgrounds/cosmos/whirlpool.jpg
+share/dbus-1/services/org.mate.ScreenSaver.service
 share/desktop-directories/mate-screensaver.directory
 share/locale/am/LC_MESSAGES/mate-screensaver.mo
 share/locale/ar/LC_MESSAGES/mate-screensaver.mo
@@ -154,11 +162,8 @@ share/pixmaps/mate-logo-white.svg
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
-@dirrmtry share/glib-2.0/schemas
-@dirrmtry share/glib-2.0
 @dirrmtry share/desktop-directories
 @dirrmtry share/backgrounds/cosmos
 @dirrmtry share/backgrounds
-@dirrmtry share/applications
 @dirrm libexec/mate-screensaver
 @dirrmtry etc/xdg/menus

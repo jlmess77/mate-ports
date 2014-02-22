@@ -92,7 +92,6 @@ share/locale/zh_TW/LC_MESSAGES/mate-doc-utils.mo
 %%DATADIR%%/icons/hicolor/scalable/status/admon-note.svg
 %%DATADIR%%/icons/hicolor/scalable/status/admon-tip.svg
 %%DATADIR%%/icons/hicolor/scalable/status/admon-warning.svg
-%%DATADIR%%/mate-debian.sh
 %%DATADIR%%/mate-doc-utils.make
 %%DATADIR%%/template-document.xml
 %%DATADIR%%/template.make

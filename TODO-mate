@@ -1,7 +1,7 @@
-- When ports tree has been thawed from hard freeze. 1) Fix g-c-c build
-  (libslab) when m-c-c exists in the system. 2) Remove mate-panel from
-  gnome-panel's CONFLICT as both of them are no longer conflict.
-  3) Remove directories from gnomehier such as mateconf and etc.
+- When ports tree has been thawed from hard freeze. 
+  1) Remove mate-panel from gnome-panel's CONFLICT as both of them are no 
+	longer conflict.
+  2) Remove directories from gnomehier such as mateconf and etc.
 
 - MATE has been updated to 1.6.x, but keep update those ports when upstream
   update one of MATE packages.

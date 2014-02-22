@@ -1,3 +1,4 @@
+
 # Created by: FreeBSD GNOME Team
 # $FreeBSD$
 
@@ -8,12 +9,13 @@ MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	An editor for the freedesktop.org menu specification
+COMMENT=	Editor for the freedesktop.org menu specification
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack matehack menus
-USE_GMAKE=	yes
+USE_MATE=	autogen common:build intlhack menus
 USE_GNOME=	pygobject pygtk2
 USE_PYTHON=	yes
 USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
@@ -21,6 +23,7 @@ GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|' \

@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-dialogs
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.90
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,22 +10,17 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Display MATE dialogs from the command line
 
-BUILD_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
-RUN_DEPENDS=	rarian-sk-config:${PORTSDIR}/textproc/rarian
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack matehack
-USE_GMAKE=	yes
-USE_GNOME=	gnomehier glib20 gtk20
-INSTALLS_OMF=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env
+USE_GNOME=	gnomehier gtk20 intlhack
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
-CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}"
-CPPFLAGS+=	-I${LOCALBASE}/include ${PTHREAD_CFLAGS}
-
-MAN1=		matedialog.1
+CPPFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-I${LOCALBASE}/lib
 
 OPTIONS_DEFINE=	NOTIFY
 OPTIONS_DEFAULT=NOTIFY
@@ -33,14 +28,10 @@ OPTIONS_DEFAULT=NOTIFY
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MNOTIFY}
-LIB_DEPENDS+=	notify:${PORTSDIR}/devel/libnotify
+LIB_DEPENDS+=	libnotify.so:${PORTSDIR}/devel/libnotify
 CONFIGURE_ARGS+=--enable-libnotify
 .else
 CONFIGURE_ARGS+=--disable-libnotify
 .endif
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|bin_SCRIPTS = gdialog||g' \
-		${WRKSRC}/src/Makefile.am
 
 .include <bsd.port.mk>

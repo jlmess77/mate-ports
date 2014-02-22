@@ -12,15 +12,16 @@ COMMENT=	MATE support utilities
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc \
 		scrollkeeper-config:${PORTSDIR}/textproc/rarian
-LIB_DEPENDS=	gtop-2.0:${PORTSDIR}/devel/libgtop \
-		canberra-gtk:${PORTSDIR}/audio/libcanberra
+LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
+		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build docutils intlhack ltverhack \
-		matehack panel
+		panel
 USE_XORG=	x11 xext
-USE_GMAKE=	yes
 USE_GNOME=	glib20 gnomehier gtk20
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
@@ -31,9 +32,8 @@ CONFIGURE_ARGS=	--enable-maintainer-flags=no \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
-MAN1=		mate-dictionary.1 mate-disk-usage-analyzer.1 \
-		mate-screenshot.1 mate-search-tool.1 mate-system-log.1
 GLIB_SCHEMAS=	org.mate.dictionary.gschema.xml \
 		org.mate.disk-usage-analyzer.gschema.xml \
 		org.mate.screenshot.gschema.xml \

@@ -10,13 +10,14 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Multimedia applications for the MATE desktop
 
-LIB_DEPENDS=	canberra-gtk:${PORTSDIR}/audio/libcanberra
+LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-USES=		gettext pkgconfig
+PORTSCOUT=	limitw:1,even
+
+USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	autogen common:build desktop docutils intlhack ltverhack \
-		matehack panel
-USE_GMAKE=	yes
+		panel
 USE_GNOME=	gnomehier glib20 gnomehier gtk20 libxml2
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
@@ -28,8 +29,16 @@ CONFIGURE_ARGS=	--disable-pulseaudio \
 		--enable-gst-mixer-applet
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.panel.applet.mixer.gschema.xml \
 		org.mate.volume-control.gschema.xml
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|mixer_applet2|mate_mixer_applet2|g' \
+		${WRKSRC}/gst-mixer-applet/Makefile.am \
+		${WRKSRC}/gst-mixer-applet/load.c \
+		${WRKSRC}/gst-mixer-applet/org.mate.panel.applet.MixerAppletFactory.service.in \
+		${WRKSRC}/gst-mixer-applet/org.mate.applets.MixerApplet.mate-panel-applet.in.in
 
 .include <bsd.port.mk>

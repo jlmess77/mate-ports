@@ -1,6 +1,8 @@
 MATE ports for FreeBSD
 ======================
 
+MATE 1.6 was committed to FreeBSD ports on 23 November 2013. Get it there.
+
 Overview
 --------
 MATE is a fork of GNOME 2. More information can be found at http://mate-desktop.org/. This is a place where you can get MATE ports development for FreeBSD. When the MATE ports are stable and it will be merged into FreeBSD ports tree.

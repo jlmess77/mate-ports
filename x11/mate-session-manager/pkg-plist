@@ -2,6 +2,10 @@ bin/mate-session
 bin/mate-session-properties
 bin/mate-session-save
 bin/mate-wm
+man/man1/mate-session-properties.1.gz
+man/man1/mate-session-save.1.gz
+man/man1/mate-session.1.gz
+man/man1/mate-wm.1.gz
 share/MateConf/gsettings/mate-session.convert
 share/applications/mate-session-properties.desktop
 share/icons/hicolor/16x16/apps/mate-session-properties.png
@@ -25,6 +29,7 @@ share/locale/br/LC_MESSAGES/mate-session-manager.mo
 share/locale/bs/LC_MESSAGES/mate-session-manager.mo
 share/locale/ca/LC_MESSAGES/mate-session-manager.mo
 share/locale/ca@valencia/LC_MESSAGES/mate-session-manager.mo
+share/locale/cmn/LC_MESSAGES/mate-session-manager.mo
 share/locale/crh/LC_MESSAGES/mate-session-manager.mo
 share/locale/cs/LC_MESSAGES/mate-session-manager.mo
 share/locale/cy/LC_MESSAGES/mate-session-manager.mo
@@ -33,8 +38,10 @@ share/locale/de/LC_MESSAGES/mate-session-manager.mo
 share/locale/dz/LC_MESSAGES/mate-session-manager.mo
 share/locale/el/LC_MESSAGES/mate-session-manager.mo
 share/locale/en@shaw/LC_MESSAGES/mate-session-manager.mo
+share/locale/en_AU/LC_MESSAGES/mate-session-manager.mo
 share/locale/en_CA/LC_MESSAGES/mate-session-manager.mo
 share/locale/en_GB/LC_MESSAGES/mate-session-manager.mo
+share/locale/es_MX/LC_MESSAGES/mate-session-manager.mo
 share/locale/eo/LC_MESSAGES/mate-session-manager.mo
 share/locale/es/LC_MESSAGES/mate-session-manager.mo
 share/locale/et/LC_MESSAGES/mate-session-manager.mo
@@ -59,9 +66,11 @@ share/locale/is/LC_MESSAGES/mate-session-manager.mo
 share/locale/it/LC_MESSAGES/mate-session-manager.mo
 share/locale/ja/LC_MESSAGES/mate-session-manager.mo
 share/locale/ka/LC_MESSAGES/mate-session-manager.mo
+share/locale/kk/LC_MESSAGES/mate-session-manager.mo
 share/locale/kn/LC_MESSAGES/mate-session-manager.mo
 share/locale/ko/LC_MESSAGES/mate-session-manager.mo
 share/locale/ku/LC_MESSAGES/mate-session-manager.mo
+share/locale/ky/LC_MESSAGES/mate-session-manager.mo
 share/locale/lt/LC_MESSAGES/mate-session-manager.mo
 share/locale/lv/LC_MESSAGES/mate-session-manager.mo
 share/locale/mai/LC_MESSAGES/mate-session-manager.mo
@@ -102,6 +111,7 @@ share/locale/tk/LC_MESSAGES/mate-session-manager.mo
 share/locale/tr/LC_MESSAGES/mate-session-manager.mo
 share/locale/ug/LC_MESSAGES/mate-session-manager.mo
 share/locale/uk/LC_MESSAGES/mate-session-manager.mo
+share/locale/ur/LC_MESSAGES/mate-session-manager.mo
 share/locale/uz/LC_MESSAGES/mate-session-manager.mo
 share/locale/uz@cyrillic/LC_MESSAGES/mate-session-manager.mo
 share/locale/vi/LC_MESSAGES/mate-session-manager.mo
@@ -112,11 +122,11 @@ share/locale/zh_CN/LC_MESSAGES/mate-session-manager.mo
 share/locale/zh_HK/LC_MESSAGES/mate-session-manager.mo
 share/locale/zh_TW/LC_MESSAGES/mate-session-manager.mo
 share/locale/zu/LC_MESSAGES/mate-session-manager.mo
-share/mate-session/gsm-inhibit-dialog.ui
-share/mate-session/session-properties.ui
+share/mate-session-manager/gsm-inhibit-dialog.ui
+share/mate-session-manager/session-properties.ui
 share/xsessions/mate.desktop
 @dirrm share/xsessions
-@dirrm share/mate-session
+@dirrm share/mate-session-manager
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
@@ -127,6 +137,8 @@ share/xsessions/mate.desktop
 @dirrmtry share/locale/xh
 @dirrmtry share/locale/uz@cyrillic/LC_MESSAGES
 @dirrmtry share/locale/uz@cyrillic
+@dirrmtry share/locale/ur/LC_MESSAGES
+@dirrmtry share/locale/ur
 @dirrmtry share/locale/ug/LC_MESSAGES
 @dirrmtry share/locale/ug
 @dirrmtry share/locale/te/LC_MESSAGES
@@ -153,8 +165,12 @@ share/xsessions/mate.desktop
 @dirrmtry share/locale/mg
 @dirrmtry share/locale/mai/LC_MESSAGES
 @dirrmtry share/locale/mai
+@dirrmtry share/locale/ky/LC_MESSAGES
+@dirrmtry share/locale/ky
 @dirrmtry share/locale/ku/LC_MESSAGES
 @dirrmtry share/locale/ku
+@dirrmtry share/locale/kk/LC_MESSAGES
+@dirrmtry share/locale/kk
 @dirrmtry share/locale/ig/LC_MESSAGES
 @dirrmtry share/locale/ig
 @dirrmtry share/locale/hy/LC_MESSAGES
@@ -171,6 +187,8 @@ share/xsessions/mate.desktop
 @dirrmtry share/locale/dz
 @dirrmtry share/locale/crh/LC_MESSAGES
 @dirrmtry share/locale/crh
+@dirrmtry share/locale/cmn/LC_MESSAGES
+@dirrmtry share/locale/cmn
 @dirrmtry share/locale/ca@valencia/LC_MESSAGES
 @dirrmtry share/locale/ca@valencia
 @dirrmtry share/locale/bn_IN/LC_MESSAGES
@@ -181,6 +199,3 @@ share/xsessions/mate.desktop
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
-@dirrmtry share/glib-2.0/schemas
-@dirrmtry share/glib-2.0
-@dirrmtry share/applications
