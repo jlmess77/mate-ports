@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-terminal
-PORTVERSION=	1.7.2
+PORTVERSION=	1.7.90
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -15,7 +15,7 @@ PORTSCOUT=	limitw:1,even
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
 USE_XORG=	sm x11
-USE_GNOME=	dconf glib20 gnomehier gtk20 intlhack vte
+USE_GNOME=	dconf gnomehier gtk20 intlhack vte
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include
