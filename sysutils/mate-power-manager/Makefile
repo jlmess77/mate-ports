@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-power-manager
-PORTVERSION=	1.6.2
+PORTVERSION=	1.7.90
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -23,27 +23,26 @@ PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack libmatekeyring \
-		panel
+USE_MATE=	libmatekeyring panel
 USE_XORG=	x11 xext xproto xrandr xrender
-USE_GNOME=	cairo glib20 gnomehier gtk20
+USE_GNOME=	cairo glib20 gnomehier gtk20 intlhack
 INSTALLS_OMF=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
+CONFIGURE_ENV=	LIBS="-lexecinfo"
 CONFIGURE_ARGS=	--with-doc-dir=${PREFIX}/share/doc \
 		--disable-docbook-docs \
 		--with-gtk=2.0 \
 		--with-systemdinhibit=no
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 GLIB_SCHEMAS=	org.mate.power-manager.gschema.xml
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|docbook2man|docbook2man_disabled|g" \
-		${WRKSRC}/configure.ac
-	@${CHMOD} +x ${WRKSRC}/autogen.sh
+		${WRKSRC}/configure
+	@${TOUCH} ${WRKSRC}/aclocal.m4 ${WRKSRC}/Makefile.in \
+		${WRKSRC}/configure ${WRKSRC}/config.h.in
 
 .include <bsd.port.mk>
