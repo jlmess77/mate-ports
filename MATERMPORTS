@@ -1,4 +1,7 @@
-graphics/mate-document-viewer|graphics/atril|2014-02-21|renamed
-x11-fm/mate-file-manager|x11-fm/caja|2014-02-21|renamed
 archivers/mate-file-archiver|archivers/engrampa|2014-02-21|renamed
-
+deskutils/mate-menu-editor|deskutils/mozo|2014-02-22|renamed
+editors/mate-text-editor|editors/pluma|2014-02-22|renamed
+graphics/mate-document-viewer|graphics/atril|2014-02-21|renamed
+graphics/mate-image-viewer|graphics/eom|2014-02-22|renamed
+x11-fm/mate-file-manager|x11-fm/caja|2014-02-21|renamed
+x11-wm/mate-window-manager|x11-wm/marco|2014-02-22|renamed
