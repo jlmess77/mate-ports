@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-menus
-PORTVERSION=	1.6.0
-PORTREVISION=	1
+PORTVERSION=	1.7.90
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -13,17 +12,14 @@ COMMENT=	Implementation of the FreeDesktop Desktop Menu Spec
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig
+USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build intlhack ltverhack
-USE_GNOME=	glib20 gnomehier introspection:build
+USE_GNOME=	glib20 gnomehier intlhack introspection:build
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PATHFIX_MAKEFILEIN=	Makefile.*
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/share/mate|${LOCALBASE}/share/mate|g' \
@@ -37,5 +33,7 @@ post-patch:
 post-install:
 	@${INSTALL_DATA} ${WRKSRC}/*.directory \
 		${STAGEDIR}${PREFIX}/share/mate/desktop-directories/
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/lib*.so*
+	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/matemenu.so
 
 .include <bsd.port.mk>
