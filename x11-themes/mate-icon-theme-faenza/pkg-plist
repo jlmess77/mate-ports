@@ -4591,6 +4591,7 @@ share/icons/matefaenza/apps/22/mate-preferences-desktop-display.png
 share/icons/matefaenza/apps/22/mate-sensors-applet.png
 share/icons/matefaenza/apps/22/mate-session-properties.png
 share/icons/matefaenza/apps/22/mate-sticky-notes-applet.png
+share/icons/matefaenza/apps/22/mate.png
 share/icons/matefaenza/apps/22/mateconf-editor.png
 share/icons/matefaenza/apps/22/me-tv.png
 share/icons/matefaenza/apps/22/media-player-banshee.png
@@ -5456,6 +5457,7 @@ share/icons/matefaenza/apps/24/mate-preferences-desktop-display.png
 share/icons/matefaenza/apps/24/mate-sensors-applet.png
 share/icons/matefaenza/apps/24/mate-session-properties.png
 share/icons/matefaenza/apps/24/mate-sticky-notes-applet.png
+share/icons/matefaenza/apps/24/mate.png
 share/icons/matefaenza/apps/24/mateconf-editor.png
 share/icons/matefaenza/apps/24/me-tv.png
 share/icons/matefaenza/apps/24/media-player-banshee.png
@@ -6349,6 +6351,7 @@ share/icons/matefaenza/apps/32/mate-preferences-desktop-display.png
 share/icons/matefaenza/apps/32/mate-sensors-applet.png
 share/icons/matefaenza/apps/32/mate-session-properties.png
 share/icons/matefaenza/apps/32/mate-sticky-notes-applet.png
+share/icons/matefaenza/apps/32/mate.png
 share/icons/matefaenza/apps/32/mateconf-editor.png
 share/icons/matefaenza/apps/32/me-tv.png
 share/icons/matefaenza/apps/32/media-player-banshee.png
@@ -7220,6 +7223,7 @@ share/icons/matefaenza/apps/48/mate-preferences-desktop-display.png
 share/icons/matefaenza/apps/48/mate-sensors-applet.png
 share/icons/matefaenza/apps/48/mate-session-properties.png
 share/icons/matefaenza/apps/48/mate-sticky-notes-applet.png
+share/icons/matefaenza/apps/48/mate.png
 share/icons/matefaenza/apps/48/mateconf-editor.png
 share/icons/matefaenza/apps/48/me-tv.png
 share/icons/matefaenza/apps/48/media-player-banshee.png
@@ -8046,6 +8050,7 @@ share/icons/matefaenza/apps/64/mate-preferences-desktop-display.png
 share/icons/matefaenza/apps/64/mate-sensors-applet.png
 share/icons/matefaenza/apps/64/mate-session-properties.png
 share/icons/matefaenza/apps/64/mate-sticky-notes-applet.png
+share/icons/matefaenza/apps/64/mate.png
 share/icons/matefaenza/apps/64/mateconf-editor.png
 share/icons/matefaenza/apps/64/me-tv.png
 share/icons/matefaenza/apps/64/media-player-banshee.png
@@ -8806,6 +8811,7 @@ share/icons/matefaenza/apps/96/mate-preferences-desktop-display.png
 share/icons/matefaenza/apps/96/mate-sensors-applet.png
 share/icons/matefaenza/apps/96/mate-session-properties.png
 share/icons/matefaenza/apps/96/mate-sticky-notes-applet.png
+share/icons/matefaenza/apps/96/mate.png
 share/icons/matefaenza/apps/96/mateconf-editor.png
 share/icons/matefaenza/apps/96/me-tv.png
 share/icons/matefaenza/apps/96/media-player-banshee.png
@@ -9600,6 +9606,7 @@ share/icons/matefaenza/apps/scalable/mate-preferences-desktop-display.svg
 share/icons/matefaenza/apps/scalable/mate-sensors-applet.svg
 share/icons/matefaenza/apps/scalable/mate-session-properties.svg
 share/icons/matefaenza/apps/scalable/mate-sticky-notes-applet.svg
+share/icons/matefaenza/apps/scalable/mate.svg
 share/icons/matefaenza/apps/scalable/mateconf-editor.svg
 share/icons/matefaenza/apps/scalable/me-tv.svg
 share/icons/matefaenza/apps/scalable/media-player-banshee.svg
@@ -16011,6 +16018,7 @@ share/icons/matefaenza/status/16/audio-volume-off.png
 share/icons/matefaenza/status/16/audio-volume-zero-panel.png
 share/icons/matefaenza/status/16/avatar-default.png
 share/icons/matefaenza/status/16/banshee-panel.png
+share/icons/matefaenza/status/16/blueman-tray-disabled.png
 share/icons/matefaenza/status/16/blueman-tray.png
 share/icons/matefaenza/status/16/bluetooth-active.png
 share/icons/matefaenza/status/16/bluetooth-disabled.png
@@ -16268,6 +16276,7 @@ share/icons/matefaenza/status/22/battery_low.png
 share/icons/matefaenza/status/22/battery_plugged.png
 share/icons/matefaenza/status/22/battery_third_fouth.png
 share/icons/matefaenza/status/22/battery_two_thirds.png
+share/icons/matefaenza/status/22/blueman-tray-disabled.png
 share/icons/matefaenza/status/22/blueman-tray.png
 share/icons/matefaenza/status/22/bluetooth-active.png
 share/icons/matefaenza/status/22/bluetooth-disabled.png
@@ -16702,6 +16711,7 @@ share/icons/matefaenza/status/24/battery_low.png
 share/icons/matefaenza/status/24/battery_plugged.png
 share/icons/matefaenza/status/24/battery_third_fouth.png
 share/icons/matefaenza/status/24/battery_two_thirds.png
+share/icons/matefaenza/status/24/blueman-tray-disabled.png
 share/icons/matefaenza/status/24/blueman-tray.png
 share/icons/matefaenza/status/24/bluetooth-active.png
 share/icons/matefaenza/status/24/bluetooth-disabled.png
@@ -17132,6 +17142,7 @@ share/icons/matefaenza/status/32/battery_low.png
 share/icons/matefaenza/status/32/battery_plugged.png
 share/icons/matefaenza/status/32/battery_third_fouth.png
 share/icons/matefaenza/status/32/battery_two_thirds.png
+share/icons/matefaenza/status/32/blueman-tray-disabled.png
 share/icons/matefaenza/status/32/blueman-tray.png
 share/icons/matefaenza/status/32/bluetooth-active.png
 share/icons/matefaenza/status/32/bluetooth-disabled.png
@@ -17501,6 +17512,7 @@ share/icons/matefaenza/status/48/battery_low.png
 share/icons/matefaenza/status/48/battery_plugged.png
 share/icons/matefaenza/status/48/battery_third_fouth.png
 share/icons/matefaenza/status/48/battery_two_thirds.png
+share/icons/matefaenza/status/48/blueman-tray-disabled.png
 share/icons/matefaenza/status/48/blueman-tray.png
 share/icons/matefaenza/status/48/bluetooth-active.png
 share/icons/matefaenza/status/48/bluetooth-disabled.png
@@ -17870,6 +17882,7 @@ share/icons/matefaenza/status/64/battery_low.png
 share/icons/matefaenza/status/64/battery_plugged.png
 share/icons/matefaenza/status/64/battery_third_fouth.png
 share/icons/matefaenza/status/64/battery_two_thirds.png
+share/icons/matefaenza/status/64/blueman-tray-disabled.png
 share/icons/matefaenza/status/64/blueman-tray.png
 share/icons/matefaenza/status/64/bluetooth-active.png
 share/icons/matefaenza/status/64/bluetooth-disabled.png
@@ -18238,6 +18251,7 @@ share/icons/matefaenza/status/96/battery_low.png
 share/icons/matefaenza/status/96/battery_plugged.png
 share/icons/matefaenza/status/96/battery_third_fouth.png
 share/icons/matefaenza/status/96/battery_two_thirds.png
+share/icons/matefaenza/status/96/blueman-tray-disabled.png
 share/icons/matefaenza/status/96/blueman-tray.png
 share/icons/matefaenza/status/96/bluetooth-active.png
 share/icons/matefaenza/status/96/bluetooth-disabled.png
@@ -18623,6 +18637,7 @@ share/icons/matefaenza/status/scalable/battery_low.svg
 share/icons/matefaenza/status/scalable/battery_plugged.svg
 share/icons/matefaenza/status/scalable/battery_third_fouth.svg
 share/icons/matefaenza/status/scalable/battery_two_thirds.svg
+share/icons/matefaenza/status/scalable/blueman-tray-disabled.svg
 share/icons/matefaenza/status/scalable/blueman-tray.svg
 share/icons/matefaenza/status/scalable/bluetooth-active-symbolic.svg
 share/icons/matefaenza/status/scalable/bluetooth-active.svg
@@ -20576,6 +20591,7 @@ share/icons/matefaenzadark/status/22/battery_low.png
 share/icons/matefaenzadark/status/22/battery_plugged.png
 share/icons/matefaenzadark/status/22/battery_third_fouth.png
 share/icons/matefaenzadark/status/22/battery_two_thirds.png
+share/icons/matefaenzadark/status/22/blueman-tray-disabled.png
 share/icons/matefaenzadark/status/22/blueman-tray.png
 share/icons/matefaenzadark/status/22/bluetooth-active.png
 share/icons/matefaenzadark/status/22/bluetooth-disabled.png
@@ -20969,6 +20985,7 @@ share/icons/matefaenzadark/status/24/battery_low.png
 share/icons/matefaenzadark/status/24/battery_plugged.png
 share/icons/matefaenzadark/status/24/battery_third_fouth.png
 share/icons/matefaenzadark/status/24/battery_two_thirds.png
+share/icons/matefaenzadark/status/24/blueman-tray-disabled.png
 share/icons/matefaenzadark/status/24/blueman-tray.png
 share/icons/matefaenzadark/status/24/bluetooth-active.png
 share/icons/matefaenzadark/status/24/bluetooth-disabled.png
@@ -21364,6 +21381,7 @@ share/icons/matefaenzadark/status/32/battery_low.png
 share/icons/matefaenzadark/status/32/battery_plugged.png
 share/icons/matefaenzadark/status/32/battery_third_fouth.png
 share/icons/matefaenzadark/status/32/battery_two_thirds.png
+share/icons/matefaenzadark/status/32/blueman-tray-disabled.png
 share/icons/matefaenzadark/status/32/blueman-tray.png
 share/icons/matefaenzadark/status/32/bluetooth-active.png
 share/icons/matefaenzadark/status/32/bluetooth-disabled.png
@@ -21715,6 +21733,7 @@ share/icons/matefaenzadark/status/48/battery_low.png
 share/icons/matefaenzadark/status/48/battery_plugged.png
 share/icons/matefaenzadark/status/48/battery_third_fouth.png
 share/icons/matefaenzadark/status/48/battery_two_thirds.png
+share/icons/matefaenzadark/status/48/blueman-tray-disabled.png
 share/icons/matefaenzadark/status/48/blueman-tray.png
 share/icons/matefaenzadark/status/48/bluetooth-active.png
 share/icons/matefaenzadark/status/48/bluetooth-disabled.png
@@ -22066,6 +22085,7 @@ share/icons/matefaenzadark/status/64/battery_low.png
 share/icons/matefaenzadark/status/64/battery_plugged.png
 share/icons/matefaenzadark/status/64/battery_third_fouth.png
 share/icons/matefaenzadark/status/64/battery_two_thirds.png
+share/icons/matefaenzadark/status/64/blueman-tray-disabled.png
 share/icons/matefaenzadark/status/64/blueman-tray.png
 share/icons/matefaenzadark/status/64/bluetooth-active.png
 share/icons/matefaenzadark/status/64/bluetooth-disabled.png
@@ -22415,6 +22435,7 @@ share/icons/matefaenzadark/status/96/battery_low.png
 share/icons/matefaenzadark/status/96/battery_plugged.png
 share/icons/matefaenzadark/status/96/battery_third_fouth.png
 share/icons/matefaenzadark/status/96/battery_two_thirds.png
+share/icons/matefaenzadark/status/96/blueman-tray-disabled.png
 share/icons/matefaenzadark/status/96/blueman-tray.png
 share/icons/matefaenzadark/status/96/bluetooth-active.png
 share/icons/matefaenzadark/status/96/bluetooth-disabled.png
@@ -22781,6 +22802,7 @@ share/icons/matefaenzadark/status/scalable/battery_low.svg
 share/icons/matefaenzadark/status/scalable/battery_plugged.svg
 share/icons/matefaenzadark/status/scalable/battery_third_fouth.svg
 share/icons/matefaenzadark/status/scalable/battery_two_thirds.svg
+share/icons/matefaenzadark/status/scalable/blueman-tray-disabled.svg
 share/icons/matefaenzadark/status/scalable/blueman-tray.svg
 share/icons/matefaenzadark/status/scalable/bluetooth-active-symbolic.svg
 share/icons/matefaenzadark/status/scalable/bluetooth-active.svg
@@ -23625,6 +23647,7 @@ share/icons/matefaenzagray/status/22/battery_low.png
 share/icons/matefaenzagray/status/22/battery_plugged.png
 share/icons/matefaenzagray/status/22/battery_third_fouth.png
 share/icons/matefaenzagray/status/22/battery_two_thirds.png
+share/icons/matefaenzagray/status/22/blueman-tray-disabled.png
 share/icons/matefaenzagray/status/22/blueman-tray.png
 share/icons/matefaenzagray/status/22/bluetooth-active.png
 share/icons/matefaenzagray/status/22/bluetooth-disabled.png
@@ -24038,6 +24061,7 @@ share/icons/matefaenzagray/status/24/battery_low.png
 share/icons/matefaenzagray/status/24/battery_plugged.png
 share/icons/matefaenzagray/status/24/battery_third_fouth.png
 share/icons/matefaenzagray/status/24/battery_two_thirds.png
+share/icons/matefaenzagray/status/24/blueman-tray-disabled.png
 share/icons/matefaenzagray/status/24/blueman-tray.png
 share/icons/matefaenzagray/status/24/bluetooth-active.png
 share/icons/matefaenzagray/status/24/bluetooth-disabled.png
@@ -24453,6 +24477,7 @@ share/icons/matefaenzagray/status/32/battery_low.png
 share/icons/matefaenzagray/status/32/battery_plugged.png
 share/icons/matefaenzagray/status/32/battery_third_fouth.png
 share/icons/matefaenzagray/status/32/battery_two_thirds.png
+share/icons/matefaenzagray/status/32/blueman-tray-disabled.png
 share/icons/matefaenzagray/status/32/blueman-tray.png
 share/icons/matefaenzagray/status/32/bluetooth-active.png
 share/icons/matefaenzagray/status/32/bluetooth-disabled.png
@@ -24804,6 +24829,7 @@ share/icons/matefaenzagray/status/48/battery_low.png
 share/icons/matefaenzagray/status/48/battery_plugged.png
 share/icons/matefaenzagray/status/48/battery_third_fouth.png
 share/icons/matefaenzagray/status/48/battery_two_thirds.png
+share/icons/matefaenzagray/status/48/blueman-tray-disabled.png
 share/icons/matefaenzagray/status/48/blueman-tray.png
 share/icons/matefaenzagray/status/48/bluetooth-active.png
 share/icons/matefaenzagray/status/48/bluetooth-disabled.png
@@ -25155,6 +25181,7 @@ share/icons/matefaenzagray/status/64/battery_low.png
 share/icons/matefaenzagray/status/64/battery_plugged.png
 share/icons/matefaenzagray/status/64/battery_third_fouth.png
 share/icons/matefaenzagray/status/64/battery_two_thirds.png
+share/icons/matefaenzagray/status/64/blueman-tray-disabled.png
 share/icons/matefaenzagray/status/64/blueman-tray.png
 share/icons/matefaenzagray/status/64/bluetooth-active.png
 share/icons/matefaenzagray/status/64/bluetooth-disabled.png
@@ -25504,6 +25531,7 @@ share/icons/matefaenzagray/status/96/battery_low.png
 share/icons/matefaenzagray/status/96/battery_plugged.png
 share/icons/matefaenzagray/status/96/battery_third_fouth.png
 share/icons/matefaenzagray/status/96/battery_two_thirds.png
+share/icons/matefaenzagray/status/96/blueman-tray-disabled.png
 share/icons/matefaenzagray/status/96/blueman-tray.png
 share/icons/matefaenzagray/status/96/bluetooth-active.png
 share/icons/matefaenzagray/status/96/bluetooth-disabled.png
@@ -25870,6 +25898,7 @@ share/icons/matefaenzagray/status/scalable/battery_low.svg
 share/icons/matefaenzagray/status/scalable/battery_plugged.svg
 share/icons/matefaenzagray/status/scalable/battery_third_fouth.svg
 share/icons/matefaenzagray/status/scalable/battery_two_thirds.svg
+share/icons/matefaenzagray/status/scalable/blueman-tray-disabled.svg
 share/icons/matefaenzagray/status/scalable/blueman-tray.svg
 share/icons/matefaenzagray/status/scalable/bluetooth-active-symbolic.svg
 share/icons/matefaenzagray/status/scalable/bluetooth-active.svg

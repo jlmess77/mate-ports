@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-icon-theme-faenza
-PORTVERSION=	1.7.0
+PORTVERSION=	1.7.90
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -17,7 +17,7 @@ NO_BUILD=	yes
 INSTALLS_ICONS=	yes
 
 do-install:
-	@@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons
 	(cd ${WRKSRC} && ${FIND} matefaenza -name '*[^~]' | \
 		${CPIO} -pdu -R ${SHAREOWN}:${SHAREGRP} ${STAGEDIR}${PREFIX}/share/icons)
 	(cd ${WRKSRC} && ${FIND} matefaenzadark -name '*[^~]' | \
