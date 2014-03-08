@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	libmatewnck
-PORTVERSION=	1.6.1
+PORTVERSION=	1.8.0
 CATEGORIES=	x11-toolkits mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

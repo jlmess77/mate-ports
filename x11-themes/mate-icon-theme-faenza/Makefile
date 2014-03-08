@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-icon-theme-faenza
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
