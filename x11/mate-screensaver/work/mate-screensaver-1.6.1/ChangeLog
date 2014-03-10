@@ -1,0 +1,1170 @@
+commit 3166eb479b5f51216eb09637153bdbb063533594
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Fri Aug 2 14:42:20 2013 +0200
+
+    Fixes for make dist and make distcheck
+
+ Makefile.am      |    4 ++--
+ configure.ac     |    2 +-
+ data/Makefile.am |    2 +-
+ po/POTFILES.in   |    3 ++-
+ 4 files changed, 6 insertions(+), 5 deletions(-)
+
+commit 71f21726cb5d3c8c62bc36578958d4f3b9a79200
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon May 6 17:17:54 2013 +0200
+
+    Add xscrnsaver in configure
+
+ configure.ac |    1 +
+ 1 file changed, 1 insertion(+)
+
+commit 311a5fd6c2f9396f4af3085a0a1ac5a5b21e25f5
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon May 6 17:12:21 2013 +0200
+
+    Use idle-delay key in org.mate.session schema
+    
+    Remove it from screensaver schema
+    Closes #17 (https://github.com/mate-desktop/mate-screensaver/issues/17)
+
+ data/org.mate.screensaver.gschema.migrate |    1 -
+ data/org.mate.screensaver.gschema.xml.in  |    5 -
+ src/gs-prefs.c                            |   20 +++-
+ src/mate-screensaver-preferences.c        |  183 ++++++++++++-----------------
+ 4 files changed, 90 insertions(+), 119 deletions(-)
+
+commit ad6b8532ba50a2655dc34ee9ddf912a6bd943407
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Apr 27 20:05:46 2013 +0200
+
+    Use GDK to detect caps lock state
+    
+    Close #16 (https://github.com/mate-desktop/mate-screensaver/issues/16)
+    
+    Code adapted from:
+    https://git.gnome.org/browse/gnome-screensaver/commit/?id=d30694d542ebe7db6d254bdfd8c9ba77e4b54df2
+    https://git.gnome.org/browse/gnome-screensaver/commit/?id=372b4d024b367d2fa6a868a272fd994745f92fac
+
+ src/gs-lock-plug.c |   43 ++++++++++++++++++++++++++-----------------
+ 1 file changed, 26 insertions(+), 17 deletions(-)
+
+commit 68eb30a9f05541c3807f5c4f9dd06c8a3bc895a7
+Author: Scott Balneaves <sbalneav@mate-desktop.org>
+Date:   Thu Apr 25 11:31:12 2013 -0500
+
+    Fix for issue #4
+
+ configure.ac       |    2 +-
+ savers/Makefile.am |    1 +
+ src/gs-monitor.c   |    8 +++++++-
+ 3 files changed, 9 insertions(+), 2 deletions(-)
+
+commit a72f0972e46ffc35781eafa547825dc07831e524
+Merge: 523abce 2429676
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Tue Apr 23 03:27:28 2013 -0700
+
+    Merge pull request #15 from dmashal/master
+    
+    Update makefiles for automake 1.13
+
+commit 24296767098190f1404d889aa910a03fcbc70c62
+Author: Dan Mashal <dan.mashal@fedoraproject.org>
+Date:   Sun Apr 21 04:20:51 2013 -0700
+
+    Update makefiles for automake 1.13
+
+ savers/Makefile.am |    4 ++--
+ src/Makefile.am    |   14 +++++++-------
+ 2 files changed, 9 insertions(+), 9 deletions(-)
+
+commit 523abce71252bed89941901233911497d4df415c
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Apr 13 18:39:35 2013 +0200
+
+    Add support to switch user with LightDM
+
+ src/gs-lock-plug.c |  108 ++++++++++++++++++++++++++++++----------------------
+ 1 file changed, 63 insertions(+), 45 deletions(-)
+
+commit f99931df3e4a9af5d9aa98756ab5f73cd2bb8067
+Author: Scott Balneaves <sbalneav@mate-desktop.org>
+Date:   Tue Apr 2 14:47:10 2013 -0500
+
+    Move Changelog to ChangeLog
+
+ ChangeLog |    2 ++
+ 1 file changed, 2 insertions(+)
+
+commit beb522e62ffc77fd2e7144521de2fb3fc2f63a46
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sun Mar 31 18:24:08 2013 -0400
+
+    Preparing for 1.6.0 release.
+
+ configure.ac |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 731d364215e605e786b2a93fbeb5dad7af7c4ad6
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sun Mar 31 18:23:33 2013 -0400
+
+    Added empty ChangeLog.
+
+ 0 files changed
+
+commit 5b4e4298713607b6a12fc4841fdbdf8f8be78a89
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sun Mar 24 16:33:15 2013 -0400
+
+    "Removed ChangeLog"
+
+ ChangeLog |  561 -------------------------------------------------------------
+ 1 file changed, 561 deletions(-)
+
+commit 898d8414b54c0840163ba60154ba4d4c8d4ddbeb
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Mar 14 16:04:52 2013 +0100
+
+    Bump version to 1.5.2
+
+ configure.ac |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fcfe0d12e626a9e7ce88a68313fdd5f495841d09
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Mar 14 16:02:47 2013 +0100
+
+    Sync translations with transifex
+
+ po/LINGUAS  |    3 +
+ po/am.po    |  731 ++++++++++++++++++++++++++++++++++++++++++++
+ po/en_AU.po |  732 ++++++++++++++++++++++++++++++++++++++++++++
+ po/id.po    |  970 +++++++++++++++++++++++------------------------------------
+ po/ms.po    |  728 ++++++++++++++++++++++++++++++++++++++++++++
+ po/ru.po    |  580 +++++++++++++++++------------------
+ 6 files changed, 2845 insertions(+), 899 deletions(-)
+
+commit 8012193dc00a84ad194b702c6707836379901aeb
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Feb 28 10:04:47 2013 +0100
+
+    Add transifex configuration file
+
+ .tx/config |    7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit a5f06dc69e0696c0f64246ee2debaa5d504c1c10
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Feb 28 00:05:01 2013 +0100
+
+    Use libnotify instead of libmatenotify
+    Fix some things in leave message feature
+
+ configure.ac       |   20 ++++++++++----------
+ src/Makefile.am    |    4 ++--
+ src/gs-lock-plug.c |   22 +++++++++++-----------
+ 3 files changed, 23 insertions(+), 23 deletions(-)
+
+commit 6c92b95a3d4782471508d3a40cbfe4d6f50713a3
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Feb 28 00:04:18 2013 +0100
+
+    Remove obsolete distro folder
+
+ distro/archlinux/PKGBUILD                 |   44 -----------------------------
+ distro/archlinux/mate-screensaver.install |   18 ------------
+ distro/archlinux/mate-screensaver.pam     |    3 --
+ 3 files changed, 65 deletions(-)
+
+commit 3a93241e1a78dfeb959afac42052e938be388efa
+Merge: 56feede 6746504
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Tue Feb 5 14:13:05 2013 -0800
+
+    Merge pull request #13 from MDykstra/master
+    
+    AC_CONFIG_HEADERS to please automake 1.13
+
+commit 674650489225c9a752d2c68af09847cd23239441
+Author: Marcel Dijkstra <marcel.dykstra@gmail.com>
+Date:   Thu Jan 31 01:22:28 2013 +0100
+
+    AC_CONFIG_HEADERS to please automake 1.13
+
+ configure.ac |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 56feede13bb174845df74b328d0f6b5864f43463
+Merge: 97b9833 ea114cb
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Dec 6 07:03:26 2012 -0800
+
+    Merge pull request #12 from ketheriel/master
+    
+    only allow one instance of mate-screensaver per user
+
+commit ea114cb40c0ecd06ccc633d010b25d6101006645
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Wed Dec 5 16:48:53 2012 +0000
+
+    fix indentation
+
+ src/gs-listener-dbus.c |    4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit ca4b57cdd02c223763c9d60742630127340bbeee
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Wed Dec 5 16:12:28 2012 +0000
+
+    prevent mate-screensaver to launch a 2nd instance
+
+ src/gs-listener-dbus.c |   15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+
+commit 97b9833a9a50572798e97a47f4dfa69f3363f00a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Fri Nov 23 17:47:04 2012 +0100
+
+    bump version to 1.5.1
+
+ configure.ac |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e62023ad120276ed867a665bde5df9d5a2fd3589
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Sun Nov 18 20:45:13 2012 -0500
+
+    fixed incorrect fsf addresses
+
+ savers/floaters.c                  |    4 ++--
+ savers/gs-theme-engine.c           |    4 ++--
+ savers/gs-theme-engine.h           |    2 +-
+ savers/gs-theme-window.c           |    4 ++--
+ savers/gs-theme-window.h           |    4 ++--
+ savers/gste-popsquares.c           |    4 ++--
+ savers/gste-popsquares.h           |    2 +-
+ savers/gste-slideshow.c            |    4 ++--
+ savers/gste-slideshow.h            |    2 +-
+ savers/popsquares.c                |    4 ++--
+ savers/slideshow.c                 |    4 ++--
+ src/copy-theme-dialog.c            |    4 ++--
+ src/copy-theme-dialog.h            |    4 ++--
+ src/gs-auth-pam.c                  |    4 ++--
+ src/gs-auth-pwent.c                |    4 ++--
+ src/gs-auth.h                      |    4 ++--
+ src/gs-debug.c                     |    2 +-
+ src/gs-debug.h                     |    2 +-
+ src/gs-fade.c                      |    2 +-
+ src/gs-fade.h                      |    2 +-
+ src/gs-grab-x11.c                  |    4 ++--
+ src/gs-grab.h                      |    2 +-
+ src/gs-job.c                       |    2 +-
+ src/gs-job.h                       |    2 +-
+ src/gs-listener-dbus.c             |    2 +-
+ src/gs-listener-dbus.h             |    2 +-
+ src/gs-lock-plug.c                 |    2 +-
+ src/gs-lock-plug.h                 |    2 +-
+ src/gs-manager.c                   |    2 +-
+ src/gs-manager.h                   |    2 +-
+ src/gs-monitor.c                   |    2 +-
+ src/gs-monitor.h                   |    2 +-
+ src/gs-prefs.c                     |    2 +-
+ src/gs-prefs.h                     |    2 +-
+ src/gs-theme-manager.c             |    2 +-
+ src/gs-theme-manager.h             |    2 +-
+ src/gs-visual-gl.c                 |    4 ++--
+ src/gs-visual-gl.h                 |    2 +-
+ src/gs-watcher-x11.c               |    2 +-
+ src/gs-watcher.h                   |    2 +-
+ src/gs-window-x11.c                |    2 +-
+ src/gs-window.h                    |    2 +-
+ src/mate-screensaver-command.c     |    4 ++--
+ src/mate-screensaver-dialog.c      |    4 ++--
+ src/mate-screensaver-gl-helper.c   |    4 ++--
+ src/mate-screensaver-preferences.c |    4 ++--
+ src/mate-screensaver.c             |    4 ++--
+ src/mate-screensaver.h             |    2 +-
+ src/test-fade.c                    |    4 ++--
+ src/test-passwd.c                  |    4 ++--
+ src/test-watcher.c                 |    4 ++--
+ src/test-window.c                  |    4 ++--
+ 52 files changed, 76 insertions(+), 76 deletions(-)
+
+commit 71641f29f8847239e8ad3b940d859506caf68d70
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Tue Nov 13 00:06:22 2012 +0100
+
+    fix typo in configure.ac
+
+ configure.ac |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ed678dc9ee000372a6516c39f20dab70c45cfc20
+Merge: 49b028e 3b0bf40
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon Nov 12 11:41:21 2012 -0800
+
+    Merge pull request #11 from ketheriel/master
+    
+    Revert changes made previously in screensaver .desktop files
+
+commit 3b0bf409dcc2d8cb6384c0710afbfda84ddd91bf
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Mon Nov 12 16:31:21 2012 +0000
+
+    Update savers/popsquares.desktop.in.in
+
+ savers/popsquares.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2b2172aa8a0d3cc3cdbdd83470e92b076e78961a
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Mon Nov 12 16:30:59 2012 +0000
+
+    Update savers/personal-slideshow.desktop.in.in
+
+ savers/personal-slideshow.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1291d308bb108b5492c6bb2a33796592e0f99953
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Mon Nov 12 16:30:37 2012 +0000
+
+    Update savers/footlogo-floaters.desktop.in.in
+
+ savers/footlogo-floaters.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 62b322cea5e8c3b6dfc43633e03fd03b5618c380
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Mon Nov 12 16:30:17 2012 +0000
+
+    Update savers/cosmos-slideshow.desktop.in.in
+
+ savers/cosmos-slideshow.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 49b028e85839da7006b4857cf323a7cbee91316c
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon Nov 12 14:33:34 2012 +0100
+
+    add support for systemd-logind
+    http://git.gnome.org/browse/gnome-screensaver/commit/?id=6bb98e9acb9391d1aec8f7dcb44ef7d16b3dcb91
+    https://bugzilla.gnome.org/show_bug.cgi?id=669787
+
+ configure.ac           |   40 ++++++++-
+ src/Makefile.am        |    2 +
+ src/gs-listener-dbus.c |  221 +++++++++++++++++++++++++++++++++++++++++++++---
+ 3 files changed, 252 insertions(+), 11 deletions(-)
+
+commit 77ac5c607d0f0562aad4ab9573c4b85003216c0c
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon Nov 12 11:53:23 2012 +0100
+
+    remove daemonizing
+    it isn't needed and it breaks things like GSettings apparently.
+    http://git.gnome.org/browse/gnome-screensaver/commit/?id=c0ad16d66f3d547a9a45818bc193a34c428e977b
+    https://bugzilla.gnome.org/show_bug.cgi?id=644400
+
+ src/mate-screensaver.c |   10 ++--------
+ 1 file changed, 2 insertions(+), 8 deletions(-)
+
+commit 84cc7f6ebdb569b53decf944aa59108a68c75967
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon Nov 12 11:50:28 2012 +0100
+
+    fix some indentation
+
+ src/gs-prefs.c |    8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit c89b62d210646c8ceedc18ec601795f34d672e6e
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon Nov 12 11:38:17 2012 +0100
+
+    fix indentation
+
+ src/gs-prefs.c |  122 ++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 61 insertions(+), 61 deletions(-)
+
+commit 8fbe2e552847b4ec1d5f49f35a2c2565cf3afeba
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Tue Nov 6 14:44:39 2012 +0100
+
+    fix gschema path
+
+ data/org.mate.screensaver.gschema.xml.in |    3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 91e754cb2bd0f382b06bac24f489e5bd5781045a
+Merge: af7fe11 c462130
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Sat Nov 3 20:26:05 2012 -0700
+
+    Merge pull request #9 from ketheriel/master
+    
+    Add missing Main Category to screensaver desktop files
+
+commit c4621309e419aa0be33fb19ad4b408d504aa78b5
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Sun Nov 4 03:25:02 2012 +0000
+
+    Add 'System' as main category in desktop file
+
+ savers/popsquares.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2616913f88a180f245a730b64a5adb5ee2ded585
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Sun Nov 4 03:24:36 2012 +0000
+
+    Add 'System' as main category in desktop file
+
+ savers/personal-slideshow.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 106e6675e23f1baed84e1f3cc280610fd0b191c7
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Sun Nov 4 03:24:16 2012 +0000
+
+    Add 'System' as main category in desktop file
+
+ savers/footlogo-floaters.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d8ed382fda1d3d0e2ee95a43c4b591f314e999a8
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Sun Nov 4 03:23:49 2012 +0000
+
+    Add 'System' as main category in desktop file
+
+ savers/cosmos-slideshow.desktop.in.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit af7fe1153393f00b7180558e15864d4b411533ea
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Sun Nov 4 01:51:08 2012 +0000
+
+    update licenses (FSF address)
+     - COPYING - http://www.gnu.org/licenses/gpl-2.0.txt
+     - COPYING.LIB - http://www.gnu.org/licenses/lgpl-2.0.txt
+
+ COPYING     |   43 +++++++++++++++++++++----------------------
+ COPYING.LIB |   23 +++++++++++------------
+ 2 files changed, 32 insertions(+), 34 deletions(-)
+
+commit 9f40e783d1e56c4ad39efcfdddb81f31dbf8f37e
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:   Sun Nov 4 01:48:59 2012 +0000
+
+    remove 'MATE' from Categories in desktop files
+
+ data/mate-screensaver-preferences.desktop.in |    2 +-
+ savers/cosmos-slideshow.desktop.in.in        |    2 +-
+ savers/footlogo-floaters.desktop.in.in       |    2 +-
+ savers/personal-slideshow.desktop.in.in      |    2 +-
+ savers/popsquares.desktop.in.in              |    2 +-
+ 5 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 89da311b36aab8dbd39d33a4e49a62a32b594c97
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 20:48:45 2012 +0100
+
+    use background system settings from latest libmate-desktop
+
+ configure.ac     |    6 +++---
+ src/gs-manager.c |   61 +++++-------------------------------------------------
+ 2 files changed, 8 insertions(+), 59 deletions(-)
+
+commit 994009c15ad8198dc38964bf49823e90609d4029
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 14:48:27 2012 +0100
+
+    fix org.mate.background gschema name
+
+ src/gs-manager.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fa42fed10e2f092b8f61af8abc9194fae9d6dde4
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 12:43:14 2012 +0100
+
+    fix org.mate.lockdown schema name
+
+ src/gs-prefs.c                     |    2 +-
+ src/mate-screensaver-preferences.c |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit e2449d21e3e616558f65643c63710c7963ac578a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 12:40:18 2012 +0100
+
+    bump version to 1.5.0
+
+ configure.ac |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 5e636d108223b3caaa4ed30be24890092787a395
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 12:40:10 2012 +0100
+
+    fix string in gschema
+
+ data/org.mate.screensaver.gschema.xml.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 63da66a55db941f94b770a86f1e57374f05d8351
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 12:17:06 2012 +0100
+
+    fix mate_bg_load_from_preferences call
+
+ src/gs-manager.c |    6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+commit 56fc31b7cee8107ed5c02c747676a6dc3337c02b
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 12:07:48 2012 +0100
+
+    fix data/Makefile.am
+
+ data/Makefile.am |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 8a6f3e2f9e70cf0563c01be5e4381276be319e2f
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 12:07:36 2012 +0100
+
+    remove mateconf schema
+
+ data/mate-screensaver.schemas.in |  257 --------------------------------------
+ 1 file changed, 257 deletions(-)
+
+commit 152d09c4e586aa2417ea6e25b0dac278d3a113f3
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 12:06:08 2012 +0100
+
+    add missing lock-dialog-theme key in gschema
+
+ data/org.mate.screensaver.gschema.xml.in |    5 +++++
+ src/gs-lock-plug.c                       |    4 ++--
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+
+commit 2256a902e87b28697407c304bcb96ab1aeb3f669
+Merge: ce7da34 8d80642
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat Nov 3 03:52:31 2012 -0700
+
+    Merge pull request #8 from NiceandGently/master
+    
+    gsettings migration
+
+commit 8d80642d5cd6ce3522029525505abc991087f258
+Author: raveit <chat-to-me@raveit.de>
+Date:   Sat Nov 3 01:12:52 2012 +0100
+
+    Port MATE Screensaver to GSettings
+
+ configure.ac                              |   16 +-
+ data/Makefile.am                          |   34 +-
+ data/org.mate.screensaver.gschema.migrate |   16 +
+ data/org.mate.screensaver.gschema.xml.in  |   85 ++++
+ po/POTFILES.in                            |    3 +-
+ src/gs-lock-plug.c                        |   12 +-
+ src/gs-manager.c                          |  122 ++----
+ src/gs-prefs.c                            |  667 +++++++----------------------
+ src/mate-screensaver-preferences.c        |  340 +++++----------
+ 9 files changed, 433 insertions(+), 862 deletions(-)
+
+commit ce7da346624297407644a1be28f75de0856e1f49
+Merge: cfb5872 6f79f82
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Mon Jul 16 02:46:48 2012 -0700
+
+    Merge pull request #3 from MDykstra/master
+    
+    restoration of Hubble images from original source
+
+commit 6f79f82a0fdc9da23ccd608f2f40707a266e2108
+Author: Marcel Dijkstra <marcel.dykstra@gmail.com>
+Date:   Sun Jul 15 12:36:32 2012 +0200
+
+    restoration of Hubble images from original source
+
+ data/images/cosmos/cloud.jpg     |  Bin 1379759 -> 1314514 bytes
+ data/images/cosmos/whirlpool.jpg |  Bin 659143 -> 1059826 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit cfb5872d089b74cae64ef1de3c00fced7e3b4b85
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Thu Jul 12 14:48:37 2012 -0400
+
+    Preparing for 1.4 release.
+
+ ChangeLog    |  106 ++++++++++++++++++++++++++++++++++++++++++++++++----------
+ configure.ac |    2 +-
+ 2 files changed, 90 insertions(+), 18 deletions(-)
+
+commit c3ffeed1a2f6ca874d7659e60195d5682175d323
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Jul 12 15:20:16 2012 +0200
+
+    add po gnome copyrights file
+
+ po/gnome-copyrights.txt |  936 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 936 insertions(+)
+
+commit 16f130591e7aff07e31ea7f1aea7bf294591ef80
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Jul 12 15:19:52 2012 +0200
+
+    use mate logo instead of gnome one (thanks to Rowen_Stipe)
+
+ data/images/mate-logo-white.svg |  138 +++++++++++++++++++++++++++++++++++----
+ 1 file changed, 126 insertions(+), 12 deletions(-)
+
+commit 113e07aab983171b14e781d97ff385fcf48ca58f
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat May 26 13:02:08 2012 +0200
+
+    fix summary in configure.ac
+
+ configure.ac |   15 +++++++--------
+ 1 file changed, 7 insertions(+), 8 deletions(-)
+
+commit 2c5525c07a233d39d3bb50bf55aff3c611a84e3b
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Sat May 26 12:26:55 2012 +0200
+
+    move is_program_in_path() functon
+
+ src/gs-lock-plug.c |   30 +++++++++++++++---------------
+ 1 file changed, 15 insertions(+), 15 deletions(-)
+
+commit bd675919a09f0fc9c8dded090b746c3cec03fdf2
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Fri May 25 15:10:50 2012 +0200
+
+    removed distro/ubuntu folder
+
+ distro/ubuntu/build                |   38 ------------------------------------
+ distro/ubuntu/mate-screensaver.pam |    2 --
+ distro/ubuntu/postinst             |   11 -----------
+ distro/ubuntu/postrm               |    8 --------
+ distro/ubuntu/preinst              |    8 --------
+ distro/ubuntu/prerm                |   11 -----------
+ 6 files changed, 78 deletions(-)
+
+commit f51cc7168688b39495a55fa37a38d3a1a1fdce6b
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Fri May 25 14:49:24 2012 +0200
+
+    add GDM support for user switch
+
+ src/gs-lock-plug.c |   77 ++++++++++++++++++++++++++++++++++++++++++----------
+ 1 file changed, 63 insertions(+), 14 deletions(-)
+
+commit 7147ea499581b17738a31207bc0e3af36f675574
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Wed Mar 7 22:25:48 2012 +0100
+
+    update to 1.2
+
+ AUTHORS      |    7 +-
+ ChangeLog    |  490 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ README       |   21 +--
+ autogen.sh   |    4 +-
+ configure.ac |    2 +-
+ 5 files changed, 496 insertions(+), 28 deletions(-)
+
+commit 54177b5f8b76f05395ba760b7294a4ea2456adc8
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Tue Jan 10 14:32:07 2012 -0500
+
+    Changed mate.gr.jp to gnome.gr.jp as requested in issue #86
+
+ po/ChangeLog |   88 +++++++++++++++++++++++++++++-----------------------------
+ po/ja.po     |    4 +--
+ 2 files changed, 46 insertions(+), 46 deletions(-)
+
+commit 9d56c4253a096555c112bdbd1e0f115e207a13fe
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Thu Dec 15 11:55:51 2011 +0100
+
+    fixed pam for debian/ubuntu
+
+ distro/ubuntu/mate-screensaver.pam |    5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit f5c9e6aff100a5c740ffa85ab7154ca4a3f06dfe
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   Tue Dec 13 23:22:33 2011 +0100
+
+    updated version to 1.1.0
+
+ AUTHORS                   |    1 +
+ NEWS                      |    7 +++++++
+ configure.ac              |   12 ++++++------
+ distro/archlinux/PKGBUILD |    2 +-
+ distro/ubuntu/build       |    2 +-
+ 5 files changed, 16 insertions(+), 8 deletions(-)
+
+commit da245ed081b3da4052f8f4f3190b4310cd56eaac
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:   Fri Dec 2 21:16:05 2011 -0500
+
+    Changed version to 2011.12.01 and corrected url in configure.ac
+
+ configure.ac              |    4 ++--
+ distro/archlinux/PKGBUILD |    2 +-
+ distro/ubuntu/build       |    2 +-
+ 3 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 9ca3489532f60e0942f09582eef7e1cc5361b5df
+Author: Perberos <perberos@gmail.com>
+Date:   Mon Nov 14 18:47:21 2011 -0300
+
+    updating autogen.sh
+
+ autogen.sh |   15 ++++++++-------
+ 1 file changed, 8 insertions(+), 7 deletions(-)
+
+commit d02290be62508e6ec69e9dc87d6ce38c76af1f46
+Author: Perberos <perberos@gmail.com>
+Date:   Mon Nov 7 16:22:55 2011 -0300
+
+    removing mate-menus from depends array
+
+ distro/archlinux/PKGBUILD |    2 +-
+ distro/ubuntu/build       |    2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 2e08290789b8ec206aefd6b69b809369837b9dfb
+Author: Perberos <perberos@gmail.com>
+Date:   Sun Nov 6 12:53:37 2011 -0300
+
+    links to sourceforge.net
+
+ distro/archlinux/PKGBUILD |    8 ++++----
+ distro/ubuntu/build       |    5 +----
+ 2 files changed, 5 insertions(+), 8 deletions(-)
+
+commit d164249c38a547be375657762e1617ed40a0920e
+Author: Perberos <perberos@gmail.com>
+Date:   Sun Nov 6 11:13:28 2011 -0300
+
+    mate-menus no es necesario
+
+ distro/archlinux/PKGBUILD |    3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 99b77b6da47f2cf186616a5bdaabf4fb23ff9ebc
+Author: Perberos <perberos@gmail.com>
+Date:   Sun Nov 6 11:02:09 2011 -0300
+
+    actualizando archlinux script y ubuntu script
+
+ distro/archlinux/PKGBUILD |   14 ++++++++------
+ distro/ubuntu/build       |    9 ++++++---
+ 2 files changed, 14 insertions(+), 9 deletions(-)
+
+commit 8e617a6b7b9742e055148b0e8ebb5982fe64bf9b
+Author: Perberos <perberos@gmail.com>
+Date:   Sun Nov 6 10:21:31 2011 -0300
+
+    allman
+
+ src/gs-monitor.c              |  419 +++++++++++++----------------
+ src/mate-screensaver-dialog.c |  583 +++++++++++++++++++----------------------
+ src/mate-screensaver.c        |   91 +++----
+ src/mate-screensaver.h        |    2 +-
+ 4 files changed, 490 insertions(+), 605 deletions(-)
+
+commit 43cee15f735cfdf2615306209990a3cecae21724
+Author: Perberos <perberos@gmail.com>
+Date:   Sat Nov 5 11:22:38 2011 -0300
+
+    cambiando la posicion del boton vista previa, para que se vea equilibrado
+
+ data/mate-screensaver-preferences.ui |   46 +++++++++++-----------------------
+ 1 file changed, 15 insertions(+), 31 deletions(-)
+
+commit f60fe9a0e93e5a988f0025c94daf104a4e0d1055
+Author: Perberos <perberos@gmail.com>
+Date:   Sat Nov 5 10:59:33 2011 -0300
+
+    agregando pam a ubuntu script
+
+ distro/ubuntu/build                |    5 +++++
+ distro/ubuntu/mate-screensaver.pam |    3 +++
+ 2 files changed, 8 insertions(+)
+
+commit 3137f394f1c36916177dab7a4528cabe93b5fba3
+Author: Perberos <perberos@gmail.com>
+Date:   Sat Nov 5 10:42:01 2011 -0300
+
+    soporte para bloqueo de pantalla en archlinux
+
+ distro/archlinux/PKGBUILD             |   11 +++++++++--
+ distro/archlinux/mate-screensaver.pam |    3 +++
+ 2 files changed, 12 insertions(+), 2 deletions(-)
+
+commit 35febbbe2a6a9777f4f1462902fa8a0b3965e353
+Author: Perberos <perberos@gmail.com>
+Date:   Fri Nov 4 23:38:21 2011 -0300
+
+    hay un error al intentar bloquear la pantalla, voy a deshabilitar la opcion de bloquear por defecto
+
+ data/mate-screensaver.schemas.in |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1edf6684b4713b0848f425d474fc1a43b073942d
+Author: Perberos <perberos@gmail.com>
+Date:   Fri Nov 4 22:37:08 2011 -0300
+
+    quitando archivos generados por astyle
+
+ savers/floaters.c.orig                  | 1256 ---------------
+ savers/gs-theme-engine.c.orig           |  216 ---
+ savers/gs-theme-engine.h.orig           |   88 -
+ savers/gs-theme-window.c.orig           |  208 ---
+ savers/gs-theme-window.h.orig           |   72 -
+ savers/gste-popsquares.c.orig           |  563 -------
+ savers/gste-popsquares.h.orig           |   57 -
+ savers/gste-slideshow.c.orig            | 1001 ------------
+ savers/gste-slideshow.h.orig            |   69 -
+ savers/popsquares.c.orig                |   72 -
+ savers/slideshow.c.orig                 |  127 --
+ savers/xdg-user-dir-lookup.c.orig       |  168 --
+ src/copy-theme-dialog.c.orig            |  545 -------
+ src/copy-theme-dialog.h.orig            |   56 -
+ src/gs-auth-helper.c.orig               |  213 ---
+ src/gs-auth-pam.c.orig                  |  843 ----------
+ src/gs-auth-pwent.c.orig                |  291 ----
+ src/gs-auth.h.orig                      |   65 -
+ src/gs-debug.c.orig                     |  163 --
+ src/gs-fade.c.orig                      |  987 ------------
+ src/gs-fade.h.orig                      |   77 -
+ src/gs-grab-x11.c.orig                  |  672 --------
+ src/gs-grab.h.orig                      |   79 -
+ src/gs-job.c.orig                       |  567 -------
+ src/gs-job.h.orig                       |   69 -
+ src/gs-listener-dbus.c.orig             | 2272 --------------------------
+ src/gs-listener-dbus.h.orig             |   89 --
+ src/gs-lock-plug.c.orig                 | 2050 ------------------------
+ src/gs-lock-plug.h.orig                 |   82 -
+ src/gs-manager.c.orig                   | 2030 ------------------------
+ src/gs-manager.h.orig                   |  107 --
+ src/gs-monitor.c.orig                   |  528 ------
+ src/gs-monitor.h.orig                   |   57 -
+ src/gs-prefs.c.orig                     |  995 ------------
+ src/gs-prefs.h.orig                     |   85 -
+ src/gs-theme-manager.c.orig             |  453 ------
+ src/gs-theme-manager.h.orig             |   65 -
+ src/gs-visual-gl.c.orig                 |  116 --
+ src/gs-watcher-x11.c.orig               |  680 --------
+ src/gs-watcher.h.orig                   |   65 -
+ src/gs-window-x11.c.orig                | 2647 -------------------------------
+ src/gs-window.h.orig                    |  106 --
+ src/mate-screensaver-command.c.orig     |  551 -------
+ src/mate-screensaver-dialog.c.orig      |  665 --------
+ src/mate-screensaver-gl-helper.c.orig   |   83 -
+ src/mate-screensaver-preferences.c.orig | 1781 ---------------------
+ src/mate-screensaver.c.orig             |  132 --
+ src/setuid.c.orig                       |  247 ---
+ src/setuid.h.orig                       |   25 -
+ src/subprocs.c.orig                     |  166 --
+ src/subprocs.h.orig                     |   39 -
+ src/test-fade.c.orig                    |  134 --
+ src/test-passwd.c.orig                  |  288 ----
+ src/test-watcher.c.orig                 |  106 --
+ src/test-window.c.orig                  |  180 ---
+ 55 files changed, 25348 deletions(-)
+
+commit 497dc1c333aeb0c327f073317e3c55491687f4cd
+Author: Perberos <perberos@gmail.com>
+Date:   Fri Nov 4 22:31:11 2011 -0300
+
+    actualizando readme
+
+ README |    6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit 515c3ef7b02ccded0024402cacb6244f94a1eb02
+Author: Perberos <perberos@gmail.com>
+Date:   Fri Nov 4 22:26:05 2011 -0300
+
+    agregando ubuntu script
+
+ distro/archlinux/PKGBUILD |    9 ++++-----
+ distro/ubuntu/build       |   33 +++++++++++++++++++++++++++++++++
+ distro/ubuntu/postinst    |   11 +++++++++++
+ distro/ubuntu/postrm      |    8 ++++++++
+ distro/ubuntu/preinst     |    8 ++++++++
+ distro/ubuntu/prerm       |   11 +++++++++++
+ 6 files changed, 75 insertions(+), 5 deletions(-)
+
+commit fff4ecc82f2bcfa7427596e7ad9c3769fcab040b
+Author: Perberos <perberos@gmail.com>
+Date:   Fri Nov 4 22:16:15 2011 -0300
+
+    first commit
+
+ AUTHORS                                      |    1 +
+ COPYING                                      |  340 ++++
+ COPYING.LIB                                  |  482 +++++
+ ChangeLog                                    |    7 +
+ Makefile.am                                  |   56 +
+ NEWS                                         | 1576 +++++++++++++++
+ README                                       |   59 +
+ autogen.sh                                   |   23 +
+ configure.ac                                 | 1129 +++++++++++
+ data/Makefile.am                             |  116 ++
+ data/images/Makefile.am                      |   14 +
+ data/images/cosmos/CREDITS                   |   29 +
+ data/images/cosmos/Makefile.am               |   54 +
+ data/images/cosmos/background-1.xml.in       |   92 +
+ data/images/cosmos/blue-marble-west.jpg      |  Bin 0 -> 456110 bytes
+ data/images/cosmos/cloud.jpg                 |  Bin 0 -> 1379759 bytes
+ data/images/cosmos/comet.jpg                 |  Bin 0 -> 141297 bytes
+ data/images/cosmos/cosmos.xml.in.in          |   11 +
+ data/images/cosmos/earth-horizon.jpg         |  Bin 0 -> 210180 bytes
+ data/images/cosmos/galaxy-ngc3370.jpg        |  Bin 0 -> 460107 bytes
+ data/images/cosmos/helix-nebula.jpg          |  Bin 0 -> 138039 bytes
+ data/images/cosmos/jupiter.jpg               |  Bin 0 -> 44528 bytes
+ data/images/cosmos/sombrero.jpg              |  Bin 0 -> 552723 bytes
+ data/images/cosmos/whirlpool.jpg             |  Bin 0 -> 659143 bytes
+ data/images/mate-logo-white.svg              |   14 +
+ data/lock-dialog-default.ui                  |  505 +++++
+ data/mate-screensaver                        |   15 +
+ data/mate-screensaver-command.1              |   70 +
+ data/mate-screensaver-preferences.1          |   37 +
+ data/mate-screensaver-preferences.desktop.in |   13 +
+ data/mate-screensaver-preferences.ui         |  620 ++++++
+ data/mate-screensaver.1                      |   41 +
+ data/mate-screensaver.directory.in           |    8 +
+ data/mate-screensaver.pc.in                  |   17 +
+ data/mate-screensaver.schemas.in             |  257 +++
+ data/mate-screensavers.menu.in               |   20 +
+ data/migrate-xscreensaver-config.sh          |   34 +
+ data/org.mate.ScreenSaver.service.in         |    3 +
+ data/xscreensaver-config.xsl                 |   27 +
+ distro/archlinux/PKGBUILD                    |   35 +
+ distro/archlinux/mate-screensaver.install    |   18 +
+ doc/Makefile.am                              |   27 +
+ doc/config.xsl                               |    6 +
+ doc/dbus-interface.xml                       |  479 +++++
+ doc/docbook.css                              |   18 +
+ doc/mate-screensaver.xml.in                  |   23 +
+ po/ChangeLog                                 | 2622 +++++++++++++++++++++++++
+ po/LINGUAS                                   |   82 +
+ po/Makefile.in.in                            |  217 +++
+ po/POTFILES.in                               |   24 +
+ po/POTFILES.skip                             |    6 +
+ po/ar.po                                     |  766 ++++++++
+ po/as.po                                     |  739 +++++++
+ po/ast.po                                    |  764 ++++++++
+ po/be.po                                     |  742 ++++++++
+ po/be@latin.po                               | 1000 ++++++++++
+ po/bg.po                                     |  783 ++++++++
+ po/bn.po                                     |  774 ++++++++
+ po/bn_IN.po                                  |  767 ++++++++
+ po/br.po                                     |  694 +++++++
+ po/ca.po                                     | 1097 +++++++++++
+ po/ca@valencia.po                            | 1096 +++++++++++
+ po/crh.po                                    |  829 ++++++++
+ po/cs.po                                     |  772 ++++++++
+ po/cy.po                                     |  831 ++++++++
+ po/da.po                                     | 1056 ++++++++++
+ po/de.po                                     |  839 ++++++++
+ po/dz.po                                     |  859 +++++++++
+ po/el.po                                     |  786 ++++++++
+ po/en@shaw.po                                |  656 +++++++
+ po/en_CA.po                                  |  811 ++++++++
+ po/en_GB.po                                  | 1107 +++++++++++
+ po/es.po                                     |  787 ++++++++
+ po/et.po                                     |  600 ++++++
+ po/eu.po                                     |  762 ++++++++
+ po/fa.po                                     |  938 +++++++++
+ po/fi.po                                     | 1142 +++++++++++
+ po/fr.po                                     |  788 ++++++++
+ po/ga.po                                     |  721 +++++++
+ po/gl.po                                     |  788 ++++++++
+ po/gu.po                                     |  772 ++++++++
+ po/he.po                                     |  756 ++++++++
+ po/hi.po                                     |  754 ++++++++
+ po/hr.po                                     |  744 ++++++++
+ po/hu.po                                     |  772 ++++++++
+ po/id.po                                     |  933 +++++++++
+ po/is.po                                     |  729 +++++++
+ po/it.po                                     |  824 ++++++++
+ po/ja.po                                     |  769 ++++++++
+ po/ka.po                                     |  812 ++++++++
+ po/kn.po                                     |  759 ++++++++
+ po/ko.po                                     | 1031 ++++++++++
+ po/ku.po                                     |  978 ++++++++++
+ po/lt.po                                     |  778 ++++++++
+ po/lv.po                                     |  775 ++++++++
+ po/mai.po                                    |  728 +++++++
+ po/mg.po                                     |  866 +++++++++
+ po/mk.po                                     |  754 ++++++++
+ po/ml.po                                     |  758 ++++++++
+ po/mn.po                                     |  957 ++++++++++
+ po/mr.po                                     |  752 ++++++++
+ po/nb.po                                     |  759 ++++++++
+ po/nds.po                                    |  781 ++++++++
+ po/ne.po                                     |  762 ++++++++
+ po/nl.po                                     | 1458 ++++++++++++++
+ po/nn.po                                     |  955 ++++++++++
+ po/oc.po                                     |  710 +++++++
+ po/or.po                                     |  760 ++++++++
+ po/pa.po                                     |  796 ++++++++
+ po/pl.po                                     |  707 +++++++
+ po/ps.po                                     |  699 +++++++
+ po/pt.po                                     | 1046 ++++++++++
+ po/pt_BR.po                                  |  787 ++++++++
+ po/ro.po                                     |  774 ++++++++
+ po/ru.po                                     |  781 ++++++++
+ po/si.po                                     |  765 ++++++++
+ po/sk.po                                     |  776 ++++++++
+ po/sl.po                                     |  718 +++++++
+ po/sq.po                                     |  808 ++++++++
+ po/sr.po                                     |  846 ++++++++
+ po/sr@latin.po                               |  846 ++++++++
+ po/sv.po                                     |  887 +++++++++
+ po/ta.po                                     |  755 ++++++++
+ po/te.po                                     |  749 ++++++++
+ po/th.po                                     | 1039 ++++++++++
+ po/tr.po                                     |  994 ++++++++++
+ po/uk.po                                     |  771 ++++++++
+ po/vi.po                                     |  691 +++++++
+ po/zh_CN.po                                  |  790 ++++++++
+ po/zh_HK.po                                  |  959 ++++++++++
+ po/zh_TW.po                                  |  978 ++++++++++
+ savers/Makefile.am                           |  142 ++
+ savers/cosmos-slideshow.desktop.in.in        |   10 +
+ savers/floaters.c                            | 1269 ++++++++++++
+ savers/floaters.c.orig                       | 1256 ++++++++++++
+ savers/footlogo-floaters.desktop.in.in       |   10 +
+ savers/gs-theme-engine-marshal.list          |    1 +
+ savers/gs-theme-engine.c                     |  226 +++
+ savers/gs-theme-engine.c.orig                |  216 +++
+ savers/gs-theme-engine.h                     |   88 +
+ savers/gs-theme-engine.h.orig                |   88 +
+ savers/gs-theme-window.c                     |  214 +++
+ savers/gs-theme-window.c.orig                |  208 ++
+ savers/gs-theme-window.h                     |   72 +
+ savers/gs-theme-window.h.orig                |   72 +
+ savers/gste-popsquares.c                     |  622 ++++++
+ savers/gste-popsquares.c.orig                |  563 ++++++
+ savers/gste-popsquares.h                     |   57 +
+ savers/gste-popsquares.h.orig                |   57 +
+ savers/gste-slideshow.c                      | 1082 +++++++++++
+ savers/gste-slideshow.c.orig                 | 1001 ++++++++++
+ savers/gste-slideshow.h                      |   69 +
+ savers/gste-slideshow.h.orig                 |   69 +
+ savers/personal-slideshow.desktop.in.in      |   10 +
+ savers/popsquares.c                          |   73 +
+ savers/popsquares.c.orig                     |   72 +
+ savers/popsquares.desktop.in.in              |   10 +
+ savers/slideshow.c                           |  143 ++
+ savers/slideshow.c.orig                      |  127 ++
+ savers/xdg-user-dir-lookup.c                 |  168 ++
+ savers/xdg-user-dir-lookup.c.orig            |  168 ++
+ savers/xdg-user-dir-lookup.h                 |   28 +
+ src/Makefile.am                              |  268 +++
+ src/copy-theme-dialog.c                      |  545 ++++++
+ src/copy-theme-dialog.c.orig                 |  545 ++++++
+ src/copy-theme-dialog.h                      |   56 +
+ src/copy-theme-dialog.h.orig                 |   56 +
+ src/debug-screensaver.sh                     |   42 +
+ src/gs-auth-helper.c                         |  213 +++
+ src/gs-auth-helper.c.orig                    |  213 +++
+ src/gs-auth-pam.c                            |  843 ++++++++
+ src/gs-auth-pam.c.orig                       |  843 ++++++++
+ src/gs-auth-pwent.c                          |  291 +++
+ src/gs-auth-pwent.c.orig                     |  291 +++
+ src/gs-auth.h                                |   67 +
+ src/gs-auth.h.orig                           |   65 +
+ src/gs-debug.c                               |  163 ++
+ src/gs-debug.c.orig                          |  163 ++
+ src/gs-debug.h                               |   71 +
+ src/gs-fade.c                                |  987 ++++++++++
+ src/gs-fade.c.orig                           |  987 ++++++++++
+ src/gs-fade.h                                |   77 +
+ src/gs-fade.h.orig                           |   77 +
+ src/gs-grab-x11.c                            |  672 +++++++
+ src/gs-grab-x11.c.orig                       |  672 +++++++
+ src/gs-grab.h                                |   79 +
+ src/gs-grab.h.orig                           |   79 +
+ src/gs-job.c                                 |  567 ++++++
+ src/gs-job.c.orig                            |  567 ++++++
+ src/gs-job.h                                 |   69 +
+ src/gs-job.h.orig                            |   69 +
+ src/gs-listener-dbus.c                       | 2272 ++++++++++++++++++++++
+ src/gs-listener-dbus.c.orig                  | 2272 ++++++++++++++++++++++
+ src/gs-listener-dbus.h                       |   89 +
+ src/gs-listener-dbus.h.orig                  |   89 +
+ src/gs-lock-plug.c                           | 2050 ++++++++++++++++++++
+ src/gs-lock-plug.c.orig                      | 2050 ++++++++++++++++++++
+ src/gs-lock-plug.h                           |   82 +
+ src/gs-lock-plug.h.orig                      |   82 +
+ src/gs-manager.c                             | 2030 ++++++++++++++++++++
+ src/gs-manager.c.orig                        | 2030 ++++++++++++++++++++
+ src/gs-manager.h                             |  107 ++
+ src/gs-manager.h.orig                        |  107 ++
+ src/gs-marshal.list                          |    4 +
+ src/gs-monitor.c                             |  528 +++++
+ src/gs-monitor.c.orig                        |  528 +++++
+ src/gs-monitor.h                             |   57 +
+ src/gs-monitor.h.orig                        |   57 +
+ src/gs-prefs.c                               |  995 ++++++++++
+ src/gs-prefs.c.orig                          |  995 ++++++++++
+ src/gs-prefs.h                               |   85 +
+ src/gs-prefs.h.orig                          |   85 +
+ src/gs-theme-manager.c                       |  453 +++++
+ src/gs-theme-manager.c.orig                  |  453 +++++
+ src/gs-theme-manager.h                       |   65 +
+ src/gs-theme-manager.h.orig                  |   65 +
+ src/gs-visual-gl.c                           |  116 ++
+ src/gs-visual-gl.c.orig                      |  116 ++
+ src/gs-visual-gl.h                           |   32 +
+ src/gs-watcher-x11.c                         |  680 +++++++
+ src/gs-watcher-x11.c.orig                    |  680 +++++++
+ src/gs-watcher.h                             |   65 +
+ src/gs-watcher.h.orig                        |   65 +
+ src/gs-window-x11.c                          | 2647 ++++++++++++++++++++++++++
+ src/gs-window-x11.c.orig                     | 2647 ++++++++++++++++++++++++++
+ src/gs-window.h                              |  106 ++
+ src/gs-window.h.orig                         |  106 ++
+ src/mate-screensaver-command.c               |  551 ++++++
+ src/mate-screensaver-command.c.orig          |  551 ++++++
+ src/mate-screensaver-dialog.c                |  665 +++++++
+ src/mate-screensaver-dialog.c.orig           |  665 +++++++
+ src/mate-screensaver-gl-helper.c             |   83 +
+ src/mate-screensaver-gl-helper.c.orig        |   83 +
+ src/mate-screensaver-preferences.c           | 1781 +++++++++++++++++
+ src/mate-screensaver-preferences.c.orig      | 1781 +++++++++++++++++
+ src/mate-screensaver.c                       |  132 ++
+ src/mate-screensaver.c.orig                  |  132 ++
+ src/mate-screensaver.desktop.in.in           |   14 +
+ src/mate-screensaver.h                       |   32 +
+ src/setuid.c                                 |  247 +++
+ src/setuid.c.orig                            |  247 +++
+ src/setuid.h                                 |   25 +
+ src/setuid.h.orig                            |   25 +
+ src/subprocs.c                               |  166 ++
+ src/subprocs.c.orig                          |  166 ++
+ src/subprocs.h                               |   39 +
+ src/subprocs.h.orig                          |   39 +
+ src/test-fade.c                              |  134 ++
+ src/test-fade.c.orig                         |  134 ++
+ src/test-passwd.c                            |  288 +++
+ src/test-passwd.c.orig                       |  288 +++
+ src/test-watcher.c                           |  106 ++
+ src/test-watcher.c.orig                      |  106 ++
+ src/test-window.c                            |  180 ++
+ src/test-window.c.orig                       |  180 ++
+ 255 files changed, 127227 insertions(+)

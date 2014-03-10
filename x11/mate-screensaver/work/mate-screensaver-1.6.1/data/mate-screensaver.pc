@@ -1,0 +1,17 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+libexecdir=${exec_prefix}/libexec
+includedir=${prefix}/include
+datadir=${prefix}/share
+
+privlibexecdir=${libexecdir}/mate-screensaver
+privdatadir=${datadir}/mate-screensaver
+themesdir=${datadir}/applications/screensavers
+
+Name: mate-screensaver
+Description: mate screensaver
+Version: 1.6.1
+Requires:
+Libs:
+Cflags:

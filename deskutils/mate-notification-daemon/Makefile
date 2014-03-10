@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-notification-daemon
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -15,6 +15,8 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 
+RUN_DEPENDS=    libwnck:${PORTSDIR}/x11-toolkits/libwnck
+
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
@@ -22,7 +24,6 @@ PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	libmatewnck
 USE_XORG=	x11
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2 intlhack
 GNU_CONFIGURE=	yes

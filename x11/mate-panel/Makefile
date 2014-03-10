@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-panel
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 PORTREVISION=	1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
@@ -15,11 +15,13 @@ BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
+RUN_DEPENDS=    yelp-tools:${PORTSDIR}/textproc/yelp-tools
+                libwnck:${PORTSDIR}/x11-toolkits/libwnck
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	desktop docutils libmateweather libmatewnck menus
+USE_MATE=	desktop libmateweather  menus
 USE_XORG=	ice sm x11 xau xrandr
 USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
 		intlhack introspection:build librsvg2 pango
