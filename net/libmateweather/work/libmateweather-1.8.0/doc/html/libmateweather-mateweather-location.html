@@ -1,0 +1,935 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>libmateweather Reference Manual: mateweather-location</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libmateweather Reference Manual">
+<link rel="up" href="ch01.html" title="[Insert title here]">
+<link rel="prev" href="ch01.html" title="[Insert title here]">
+<link rel="next" href="MateWeatherLocationEntry.html" title="MateWeatherLocationEntry">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#libmateweather-mateweather-location.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#libmateweather-mateweather-location.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="MateWeatherLocationEntry.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libmateweather-mateweather-location"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libmateweather-mateweather-location.top_of_page"></a>mateweather-location</span></h2>
+<p>mateweather-location</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libmateweather-mateweather-location.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="returnvalue">MateWeatherLocation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-new-world" title="mateweather_location_new_world ()">mateweather_location_new_world</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="returnvalue">MateWeatherLocation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-ref" title="mateweather_location_ref ()">mateweather_location_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-unref" title="mateweather_location_unref ()">mateweather_location_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-name" title="mateweather_location_get_name ()">mateweather_location_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-sort-name" title="mateweather_location_get_sort_name ()">mateweather_location_get_sort_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocationLevel" title="enum MateWeatherLocationLevel"><span class="returnvalue">MateWeatherLocationLevel</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-level" title="mateweather_location_get_level ()">mateweather_location_get_level</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="returnvalue">MateWeatherLocation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-parent" title="mateweather_location_get_parent ()">mateweather_location_get_parent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="returnvalue">MateWeatherLocation</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-children" title="mateweather_location_get_children ()">mateweather_location_get_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-free-children" title="mateweather_location_free_children ()">mateweather_location_free_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-has-coords" title="mateweather_location_has_coords ()">mateweather_location_has_coords</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-coords" title="mateweather_location_get_coords ()">mateweather_location_get_coords</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-distance" title="mateweather_location_get_distance ()">mateweather_location_get_distance</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-country" title="mateweather_location_get_country ()">mateweather_location_get_country</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-mateweather-timezone.html#MateWeatherTimezone"><span class="returnvalue">MateWeatherTimezone</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-timezone" title="mateweather_location_get_timezone ()">mateweather_location_get_timezone</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-mateweather-timezone.html#MateWeatherTimezone"><span class="returnvalue">MateWeatherTimezone</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-timezones" title="mateweather_location_get_timezones ()">mateweather_location_get_timezones</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-free-timezones" title="mateweather_location_free_timezones ()">mateweather_location_free_timezones</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-code" title="mateweather_location_get_code ()">mateweather_location_get_code</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-city-name" title="mateweather_location_get_city_name ()">mateweather_location_get_city_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="returnvalue">WeatherInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-weather" title="mateweather_location_get_weather ()">mateweather_location_get_weather</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="MateWeatherLocation"></a><div class="refsect1">
+<a name="libmateweather-mateweather-location.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation-struct" title="MateWeatherLocation">MateWeatherLocation</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocationLevel" title="enum MateWeatherLocationLevel">MateWeatherLocationLevel</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libmateweather-mateweather-location.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GBoxed
+    <span class="lineart">╰──</span> MateWeatherLocation
+    GEnum
+    <span class="lineart">╰──</span> MateWeatherLocationLevel
+</pre>
+</div>
+<div class="refsect1">
+<a name="libmateweather-mateweather-location.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libmateweather-mateweather-location.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="mateweather-location-new-world"></a><h3>mateweather_location_new_world ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="returnvalue">MateWeatherLocation</span></a> *
+mateweather_location_new_world (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_regions</code></em>);</pre>
+<p>Creates a new <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> of type <a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WORLD:CAPS"><code class="literal">MATEWEATHER_LOCATION_WORLD</code></a>,
+representing a hierarchy containing all of the locations from
+Locations.xml.</p>
+<p>If <em class="parameter"><code>use_regions</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, the immediate children of the returned
+location will be <a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-REGION:CAPS"><code class="literal">MATEWEATHER_LOCATION_REGION</code></a> nodes, representing the
+top-level "regions" of Locations.xml (the continents and a few
+other divisions), and the country-level nodes will be the children
+of the regions. If <em class="parameter"><code>use_regions</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, the regions will be
+skipped, and the children of the returned location will be the
+<a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-COUNTRY:CAPS"><code class="literal">MATEWEATHER_LOCATION_COUNTRY</code></a> nodes.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>use_regions</p></td>
+<td class="parameter_description"><p>whether or not to divide the world into regions</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.2.7"></a><h4>Returns</h4>
+<p> a <a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WORLD:CAPS"><code class="literal">MATEWEATHER_LOCATION_WORLD</code></a> location, or
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if Locations.xml could not be found or could not be parsed. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-ref"></a><h3>mateweather_location_ref ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="returnvalue">MateWeatherLocation</span></a> *
+mateweather_location_ref (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Adds 1 to <em class="parameter"><code>loc</code></em>
+'s reference count.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.3.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-unref"></a><h3>mateweather_location_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mateweather_location_unref (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Subtracts 1 from <em class="parameter"><code>loc</code></em>
+'s reference count, and frees it if the
+reference count reaches 0.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-name"></a><h3>mateweather_location_get_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+mateweather_location_get_name (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets <em class="parameter"><code>loc</code></em>
+'s name, localized into the current language.</p>
+<p>Note that <a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WEATHER-STATION:CAPS"><code class="literal">MATEWEATHER_LOCATION_WEATHER_STATION</code></a> nodes are not
+localized, and so the name returned for those nodes will always be
+in English, and should therefore not be displayed to the user.
+(FIXME: should we just not return a name?)</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.5.7"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+'s name</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-sort-name"></a><h3>mateweather_location_get_sort_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+mateweather_location_get_sort_name (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets <em class="parameter"><code>loc</code></em>
+'s "sort name", which is the name after having
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Unicode-Manipulation.html#g-utf8-normalize"><code class="function">g_utf8_normalize()</code></a> (with <a href="http://library.gnome.org/devel/glib/unstable/glib-Unicode-Manipulation.html#G-NORMALIZE-ALL:CAPS"><code class="literal">G_NORMALIZE_ALL</code></a>) and <a href="http://library.gnome.org/devel/glib/unstable/glib-Unicode-Manipulation.html#g-utf8-casefold"><code class="function">g_utf8_casefold()</code></a>
+called on it. You can use this to sort locations, or to comparing
+user input against a location name.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.6.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+'s sort name</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-level"></a><h3>mateweather_location_get_level ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocationLevel" title="enum MateWeatherLocationLevel"><span class="returnvalue">MateWeatherLocationLevel</span></a>
+mateweather_location_get_level (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets <em class="parameter"><code>loc</code></em>
+'s level, from <a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WORLD:CAPS"><code class="literal">MATEWEATHER_LOCATION_WORLD</code></a>, to
+<a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WEATHER-STATION:CAPS"><code class="literal">MATEWEATHER_LOCATION_WEATHER_STATION</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.7.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+'s level</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-parent"></a><h3>mateweather_location_get_parent ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="returnvalue">MateWeatherLocation</span></a> *
+mateweather_location_get_parent (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets <em class="parameter"><code>loc</code></em>
+'s parent location.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.8.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+'s parent, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+if <em class="parameter"><code>loc</code></em>
+is a <a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WORLD:CAPS"><code class="literal">MATEWEATHER_LOCATION_WORLD</code></a> node. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-children"></a><h3>mateweather_location_get_children ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="returnvalue">MateWeatherLocation</span></a> **
+mateweather_location_get_children (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets an array of <em class="parameter"><code>loc</code></em>
+'s children; this is owned by <em class="parameter"><code>loc</code></em>
+ and will
+not remain valid if <em class="parameter"><code>loc</code></em>
+ is freed.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.9.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+'s
+children. (May be empty, but will not be <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.). </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-free-children"></a><h3>mateweather_location_free_children ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mateweather_location_free_children (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>,
+                                    <em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> **children</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">mateweather_location_free_children</code> is deprecated and should not be used in newly-written code.</p>
+<p>This is a no-op.</p>
+</div>
+<p>This is a no-op. Do not use it.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.10.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>children</p></td>
+<td class="parameter_description"><p>an array of <em class="parameter"><code>loc</code></em>
+'s children</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-has-coords"></a><h3>mateweather_location_has_coords ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+mateweather_location_has_coords (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Checks if <em class="parameter"><code>loc</code></em>
+ has valid latitude and longitude.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.11.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>loc</code></em>
+has valid latitude and longitude.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-coords"></a><h3>mateweather_location_get_coords ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mateweather_location_get_coords (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>,
+                                 <em class="parameter"><code><span class="type">double</span> *latitude</code></em>,
+                                 <em class="parameter"><code><span class="type">double</span> *longitude</code></em>);</pre>
+<p>Gets <em class="parameter"><code>loc</code></em>
+'s coordinates; you must check
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-has-coords" title="mateweather_location_has_coords ()"><code class="function">mateweather_location_has_coords()</code></a> before calling this.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>latitude</p></td>
+<td class="parameter_description"><p> on return will contain <em class="parameter"><code>loc</code></em>
+'s latitude. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>longitude</p></td>
+<td class="parameter_description"><p> on return will contain <em class="parameter"><code>loc</code></em>
+'s longitude. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/out"><span class="acronym">out</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-distance"></a><h3>mateweather_location_get_distance ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+mateweather_location_get_distance (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>,
+                                   <em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc2</code></em>);</pre>
+<p>Determines the distance in kilometers between <em class="parameter"><code>loc</code></em>
+ and <em class="parameter"><code>loc2</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>loc2</p></td>
+<td class="parameter_description"><p>a second <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.13.6"></a><h4>Returns</h4>
+<p> the distance between <em class="parameter"><code>loc</code></em>
+and <em class="parameter"><code>loc2</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-country"></a><h3>mateweather_location_get_country ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+mateweather_location_get_country (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets the ISO 3166 country code of <em class="parameter"><code>loc</code></em>
+ (or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>loc</code></em>
+ is a
+region- or world-level location)</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.14.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+'s country code (or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if <em class="parameter"><code>loc</code></em>
+is a region- or world-level location). </p>
+<p><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-timezone"></a><h3>mateweather_location_get_timezone ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-mateweather-timezone.html#MateWeatherTimezone"><span class="returnvalue">MateWeatherTimezone</span></a> *
+mateweather_location_get_timezone (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets the timezone associated with <em class="parameter"><code>loc</code></em>
+, if known.</p>
+<p>The timezone is owned either by <em class="parameter"><code>loc</code></em>
+ or by one of its parents.
+FIXME.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.15.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.15.7"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+'s timezone, or
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-timezones"></a><h3>mateweather_location_get_timezones ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-mateweather-timezone.html#MateWeatherTimezone"><span class="returnvalue">MateWeatherTimezone</span></a> **
+mateweather_location_get_timezones (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets an array of all timezones associated with any location under
+<em class="parameter"><code>loc</code></em>
+. You can use <a class="link" href="libmateweather-mateweather-location.html#mateweather-location-free-timezones" title="mateweather_location_free_timezones ()"><code class="function">mateweather_location_free_timezones()</code></a> to free this
+array.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.16.6"></a><h4>Returns</h4>
+<p> an array
+of timezones. May be empty but will not be <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>][<a href="http://foldoc.org/array"><span class="acronym">array</span></a> zero-terminated=1]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-free-timezones"></a><h3>mateweather_location_free_timezones ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+mateweather_location_free_timezones (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>,
+                                     <em class="parameter"><code><a class="link" href="libmateweather-mateweather-timezone.html#MateWeatherTimezone"><span class="type">MateWeatherTimezone</span></a> **zones</code></em>);</pre>
+<p>Frees the array of timezones returned by
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-timezones" title="mateweather_location_get_timezones ()"><code class="function">mateweather_location_get_timezones()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>zones</p></td>
+<td class="parameter_description"><p>an array returned from <a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-timezones" title="mateweather_location_get_timezones ()"><code class="function">mateweather_location_get_timezones()</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-code"></a><h3>mateweather_location_get_code ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+mateweather_location_get_code (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Gets the METAR station code associated with a
+<a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WEATHER-STATION:CAPS"><code class="literal">MATEWEATHER_LOCATION_WEATHER_STATION</code></a> location.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.18.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>loc</code></em>
+'s METAR station code, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-city-name"></a><h3>mateweather_location_get_city_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+mateweather_location_get_city_name (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>For a <a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-CITY:CAPS"><code class="literal">MATEWEATHER_LOCATION_CITY</code></a> location, this is equivalent to
+<a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-name" title="mateweather_location_get_name ()"><code class="function">mateweather_location_get_name()</code></a>. For a
+<a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WEATHER-STATION:CAPS"><code class="literal">MATEWEATHER_LOCATION_WEATHER_STATION</code></a> location, it is equivalent to
+calling <a class="link" href="libmateweather-mateweather-location.html#mateweather-location-get-name" title="mateweather_location_get_name ()"><code class="function">mateweather_location_get_name()</code></a> on the location's parent. For
+other locations it will return <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.19.6"></a><h4>Returns</h4>
+<p> (allow-none) <em class="parameter"><code>loc</code></em>
+'s city name, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="mateweather-location-get-weather"></a><h3>mateweather_location_get_weather ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="returnvalue">WeatherInfo</span></a> *
+mateweather_location_get_weather (<em class="parameter"><code><a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> *loc</code></em>);</pre>
+<p>Creates a <a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> corresponding to <em class="parameter"><code>loc</code></em>
+; you can use
+<a class="link" href="libmateweather-weather.html#weather-info-update" title="weather_info_update()"><code class="function">weather_info_update()</code></a> to fill it in.</p>
+<div class="refsect3">
+<a name="id-1.2.2.8.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><code class="literal">MateWeatherLocation</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.8.20.6"></a><h4>Returns</h4>
+<p> a <a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> corresponding to
+<em class="parameter"><code>loc</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libmateweather-mateweather-location.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="MateWeatherLocation-struct"></a><h3>MateWeatherLocation</h3>
+<pre class="programlisting">typedef struct _MateWeatherLocation MateWeatherLocation;</pre>
+<p>A <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a> represents a "location" of some type known to
+libmateweather; anything from a single weather station to the entire
+world. See <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocationLevel" title="enum MateWeatherLocationLevel"><span class="type">MateWeatherLocationLevel</span></a> for information about how the
+hierarchy of locations works.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="MateWeatherLocationLevel"></a><h3>enum MateWeatherLocationLevel</h3>
+<p>The size/scope of a particular <a class="link" href="libmateweather-mateweather-location.html#MateWeatherLocation"><span class="type">MateWeatherLocation</span></a>.</p>
+<p>Locations form a hierarchy, with a <a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-WORLD:CAPS"><code class="literal">MATEWEATHER_LOCATION_WORLD</code></a>
+location at the top, divided into regions or countries, and so on.
+Countries may or may not be divided into "adm1"s, and "adm1"s may
+or may not be divided into "adm2"s. A city will have at least one,
+and possibly several, weather stations inside it. Weather stations
+will never appear outside of cities.</p>
+<div class="refsect3">
+<a name="id-1.2.2.9.3.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="MATEWEATHER-LOCATION-WORLD:CAPS"></a>MATEWEATHER_LOCATION_WORLD</p></td>
+<td class="enum_member_description">
+<p>A location representing the entire world.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MATEWEATHER-LOCATION-REGION:CAPS"></a>MATEWEATHER_LOCATION_REGION</p></td>
+<td class="enum_member_description">
+<p>A location representing a continent or
+other top-level region.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MATEWEATHER-LOCATION-COUNTRY:CAPS"></a>MATEWEATHER_LOCATION_COUNTRY</p></td>
+<td class="enum_member_description">
+<p>A location representing a "country" (or
+other geographic unit that has an ISO-3166 country code)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MATEWEATHER-LOCATION-ADM1:CAPS"></a>MATEWEATHER_LOCATION_ADM1</p></td>
+<td class="enum_member_description">
+<p>A location representing a "first-level
+administrative division"; ie, a state, province, or similar
+division.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MATEWEATHER-LOCATION-ADM2:CAPS"></a>MATEWEATHER_LOCATION_ADM2</p></td>
+<td class="enum_member_description">
+<p>A location representing a subdivision of a
+<a class="link" href="libmateweather-mateweather-location.html#MATEWEATHER-LOCATION-ADM1:CAPS"><code class="literal">MATEWEATHER_LOCATION_ADM1</code></a> location. (Not currently used.)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MATEWEATHER-LOCATION-CITY:CAPS"></a>MATEWEATHER_LOCATION_CITY</p></td>
+<td class="enum_member_description">
+<p>A location representing a city</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="MATEWEATHER-LOCATION-WEATHER-STATION:CAPS"></a>MATEWEATHER_LOCATION_WEATHER_STATION</p></td>
+<td class="enum_member_description">
+<p>A location representing a
+weather station.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- ##### SECTION Title ##### -->
+mateweather-xml
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION mateweather_xml_load_locations ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+

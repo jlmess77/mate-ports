@@ -1,0 +1,1805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>libmateweather Reference Manual: weather</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libmateweather Reference Manual">
+<link rel="up" href="ch01.html" title="[Insert title here]">
+<link rel="prev" href="MateWeatherTimezoneMenu.html" title="MateWeatherTimezoneMenu">
+<link rel="next" href="libmateweather-mateweather-xml.html" title="mateweather-xml">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#libmateweather-weather.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#libmateweather-weather.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="MateWeatherTimezoneMenu.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libmateweather-mateweather-xml.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libmateweather-weather"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libmateweather-weather.top_of_page"></a>weather</span></h2>
+<p>weather</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libmateweather-weather.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="returnvalue">WeatherLocation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-location-new" title="weather_location_new ()">weather_location_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="returnvalue">WeatherLocation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-location-clone" title="weather_location_clone ()">weather_location_clone</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-location-free" title="weather_location_free ()">weather_location_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-location-equal" title="weather_location_equal ()">weather_location_equal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libmateweather-weather.html#WeatherInfoFunc" title="WeatherInfoFunc ()">*WeatherInfoFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-new" title="weather_info_new()">weather_info_new</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-update" title="weather_info_update()">weather_info_update</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-abort" title="weather_info_abort ()">weather_info_abort</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="returnvalue">WeatherInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-clone" title="weather_info_clone ()">weather_info_clone</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-free" title="weather_info_free ()">weather_info_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-is-valid" title="weather_info_is_valid ()">weather_info_is_valid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-network-error" title="weather_info_network_error ()">weather_info_network_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-to-metric" title="weather_info_to_metric ()">weather_info_to_metric</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-to-imperial" title="weather_info_to_imperial ()">weather_info_to_imperial</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="returnvalue">WeatherLocation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-location" title="weather_info_get_location ()">weather_info_get_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-location-name" title="weather_info_get_location_name ()">weather_info_get_location_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-update" title="weather_info_get_update ()">weather_info_get_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-sky" title="weather_info_get_sky ()">weather_info_get_sky</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-conditions" title="weather_info_get_conditions ()">weather_info_get_conditions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-temp" title="weather_info_get_temp ()">weather_info_get_temp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-temp-min" title="weather_info_get_temp_min ()">weather_info_get_temp_min</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-temp-max" title="weather_info_get_temp_max ()">weather_info_get_temp_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-dew" title="weather_info_get_dew ()">weather_info_get_dew</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-humidity" title="weather_info_get_humidity ()">weather_info_get_humidity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-wind" title="weather_info_get_wind ()">weather_info_get_wind</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-pressure" title="weather_info_get_pressure ()">weather_info_get_pressure</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-visibility" title="weather_info_get_visibility ()">weather_info_get_visibility</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-apparent" title="weather_info_get_apparent ()">weather_info_get_apparent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-sunrise" title="weather_info_get_sunrise ()">weather_info_get_sunrise</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-sunset" title="weather_info_get_sunset ()">weather_info_get_sunset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-forecast" title="weather_info_get_forecast ()">weather_info_get_forecast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-forecast-list" title="weather_info_get_forecast_list ()">weather_info_get_forecast_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Animations.html#GdkPixbufAnimation"><span class="returnvalue">GdkPixbufAnimation</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-radar" title="weather_info_get_radar ()">weather_info_get_radar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-temp-summary" title="weather_info_get_temp_summary ()">weather_info_get_temp_summary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-weather-summary" title="weather_info_get_weather_summary ()">weather_info_get_weather_summary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-icon-name" title="weather_info_get_icon_name ()">weather_info_get_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-next-sun-event" title="weather_info_next_sun_event ()">weather_info_next_sun_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-update" title="weather_info_get_value_update ()">weather_info_get_value_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-sky" title="weather_info_get_value_sky ()">weather_info_get_value_sky</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-conditions" title="weather_info_get_value_conditions ()">weather_info_get_value_conditions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-temp" title="weather_info_get_value_temp ()">weather_info_get_value_temp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-temp-min" title="weather_info_get_value_temp_min ()">weather_info_get_value_temp_min</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-temp-max" title="weather_info_get_value_temp_max ()">weather_info_get_value_temp_max</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-dew" title="weather_info_get_value_dew ()">weather_info_get_value_dew</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-apparent" title="weather_info_get_value_apparent ()">weather_info_get_value_apparent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-wind" title="weather_info_get_value_wind ()">weather_info_get_value_wind</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-pressure" title="weather_info_get_value_pressure ()">weather_info_get_value_pressure</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-visibility" title="weather_info_get_value_visibility ()">weather_info_get_value_visibility</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-sunrise" title="weather_info_get_value_sunrise ()">weather_info_get_value_sunrise</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libmateweather-weather.html#weather-info-get-value-sunset" title="weather_info_get_value_sunset ()">weather_info_get_value_sunset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libmateweather-weather.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation">WeatherLocation</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#WeatherForecastType" title="enum WeatherForecastType">WeatherForecastType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#TempUnit" title="enum TempUnit">TempUnit</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#SpeedUnit" title="enum SpeedUnit">SpeedUnit</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#PressureUnit" title="enum PressureUnit">PressureUnit</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#DistanceUnit" title="enum DistanceUnit">DistanceUnit</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#WeatherPrefs" title="WeatherPrefs">WeatherPrefs</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo">WeatherInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#WeatherWindDirection" title="enum WeatherWindDirection">WeatherWindDirection</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#WeatherSky" title="enum WeatherSky">WeatherSky</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#WeatherConditionPhenomenon" title="enum WeatherConditionPhenomenon">WeatherConditionPhenomenon</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libmateweather-weather.html#WeatherConditionQualifier" title="enum WeatherConditionQualifier">WeatherConditionQualifier</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libmateweather-weather.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="libmateweather-weather.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libmateweather-weather.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="weather-location-new"></a><h3>weather_location_new ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="returnvalue">WeatherLocation</span></a> *
+weather_location_new (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *trans_name</code></em>,
+                      <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *code</code></em>,
+                      <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *zone</code></em>,
+                      <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *radar</code></em>,
+                      <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *coordinates</code></em>,
+                      <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *country_code</code></em>,
+                      <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tz_hint</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-location-clone"></a><h3>weather_location_clone ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="returnvalue">WeatherLocation</span></a> *
+weather_location_clone (<em class="parameter"><code>const <a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="type">WeatherLocation</span></a> *location</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-location-free"></a><h3>weather_location_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+weather_location_free (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="type">WeatherLocation</span></a> *location</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-location-equal"></a><h3>weather_location_equal ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_location_equal (<em class="parameter"><code>const <a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="type">WeatherLocation</span></a> *location1</code></em>,
+                        <em class="parameter"><code>const <a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="type">WeatherLocation</span></a> *location2</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.5.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="WeatherInfoFunc"></a><h3>WeatherInfoFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*WeatherInfoFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                    <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-new"></a><h3>weather_info_new()</h3>
+<pre class="programlisting">#define weather_info_new(location, prefs, cb, data) _weather_info_fill (NULL, (location), (prefs), (cb), (data))
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-update"></a><h3>weather_info_update()</h3>
+<pre class="programlisting">#define weather_info_update(info, prefs, cb, data) _weather_info_fill ((info), NULL, (prefs), (cb), (data))
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-abort"></a><h3>weather_info_abort ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+weather_info_abort (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-clone"></a><h3>weather_info_clone ()</h3>
+<pre class="programlisting"><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="returnvalue">WeatherInfo</span></a> *
+weather_info_clone (<em class="parameter"><code>const <a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.10.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-free"></a><h3>weather_info_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+weather_info_free (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-is-valid"></a><h3>weather_info_is_valid ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_is_valid (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.12.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-network-error"></a><h3>weather_info_network_error ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_network_error (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.13.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-to-metric"></a><h3>weather_info_to_metric ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+weather_info_to_metric (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-to-imperial"></a><h3>weather_info_to_imperial ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+weather_info_to_imperial (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-location"></a><h3>weather_info_get_location ()</h3>
+<pre class="programlisting">const <a class="link" href="libmateweather-weather.html#WeatherLocation" title="WeatherLocation"><span class="returnvalue">WeatherLocation</span></a> *
+weather_info_get_location (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.16.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-location-name"></a><h3>weather_info_get_location_name ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_location_name (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.17.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-update"></a><h3>weather_info_get_update ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_update (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.18.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-sky"></a><h3>weather_info_get_sky ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_sky (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.19.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-conditions"></a><h3>weather_info_get_conditions ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_conditions (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.20.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-temp"></a><h3>weather_info_get_temp ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_temp (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.21.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-temp-min"></a><h3>weather_info_get_temp_min ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_temp_min (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.22.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-temp-max"></a><h3>weather_info_get_temp_max ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_temp_max (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.23.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-dew"></a><h3>weather_info_get_dew ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_dew (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.24.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-humidity"></a><h3>weather_info_get_humidity ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_humidity (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.25.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-wind"></a><h3>weather_info_get_wind ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_wind (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.26.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-pressure"></a><h3>weather_info_get_pressure ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_pressure (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.27.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-visibility"></a><h3>weather_info_get_visibility ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_visibility (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.28.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-apparent"></a><h3>weather_info_get_apparent ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_apparent (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.29.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-sunrise"></a><h3>weather_info_get_sunrise ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_sunrise (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.30.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-sunset"></a><h3>weather_info_get_sunset ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_sunset (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.31.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-forecast"></a><h3>weather_info_get_forecast ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_forecast (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.32.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-forecast-list"></a><h3>weather_info_get_forecast_list ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+weather_info_get_forecast_list (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.6.7.33.4"></a><h4>Returns</h4>
+<p>list of WeatherInfo* objects for the forecast.
+The list is owned by the 'info' object thus is alive as long
+as the 'info'. This list is filled only when requested with
+type FORECAST_LIST and if available for given location.
+The 'update' property is the date/time when the forecast info
+is used for.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-radar"></a><h3>weather_info_get_radar ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Animations.html#GdkPixbufAnimation"><span class="returnvalue">GdkPixbufAnimation</span></a> *
+weather_info_get_radar (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.34.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-temp-summary"></a><h3>weather_info_get_temp_summary ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_temp_summary (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.35.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-weather-summary"></a><h3>weather_info_get_weather_summary ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_weather_summary (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.36.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-icon-name"></a><h3>weather_info_get_icon_name ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+weather_info_get_icon_name (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.37.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-next-sun-event"></a><h3>weather_info_next_sun_event ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+weather_info_next_sun_event (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.6.7.38.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.6.7.38.5"></a><h4>Returns</h4>
+<p> the interval, in seconds, until the next "sun event":</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>local midnight, when rise and set times are recomputed</p></li>
+<li class="listitem"><p>next sunrise, when icon changes to daytime version</p></li>
+<li class="listitem"><p>next sunset, when icon changes to nighttime version</p></li>
+</ul></div>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-update"></a><h3>weather_info_get_value_update ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_update (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                               <em class="parameter"><code><span class="type">time_t</span> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.39.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-sky"></a><h3>weather_info_get_value_sky ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_sky (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                            <em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherSky" title="enum WeatherSky"><span class="type">WeatherSky</span></a> *sky</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.40.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-conditions"></a><h3>weather_info_get_value_conditions ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_conditions (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                                   <em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherConditionPhenomenon" title="enum WeatherConditionPhenomenon"><span class="type">WeatherConditionPhenomenon</span></a> *phenomenon</code></em>,
+                                   <em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherConditionQualifier" title="enum WeatherConditionQualifier"><span class="type">WeatherConditionQualifier</span></a> *qualifier</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.41.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-temp"></a><h3>weather_info_get_value_temp ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_temp (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                             <em class="parameter"><code><a class="link" href="libmateweather-weather.html#TempUnit" title="enum TempUnit"><span class="type">TempUnit</span></a> unit</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.42.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-temp-min"></a><h3>weather_info_get_value_temp_min ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_temp_min (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libmateweather-weather.html#TempUnit" title="enum TempUnit"><span class="type">TempUnit</span></a> unit</code></em>,
+                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.43.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-temp-max"></a><h3>weather_info_get_value_temp_max ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_temp_max (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libmateweather-weather.html#TempUnit" title="enum TempUnit"><span class="type">TempUnit</span></a> unit</code></em>,
+                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.44.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-dew"></a><h3>weather_info_get_value_dew ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_dew (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                            <em class="parameter"><code><a class="link" href="libmateweather-weather.html#TempUnit" title="enum TempUnit"><span class="type">TempUnit</span></a> unit</code></em>,
+                            <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.45.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-apparent"></a><h3>weather_info_get_value_apparent ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_apparent (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libmateweather-weather.html#TempUnit" title="enum TempUnit"><span class="type">TempUnit</span></a> unit</code></em>,
+                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.46.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-wind"></a><h3>weather_info_get_value_wind ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_wind (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                             <em class="parameter"><code><a class="link" href="libmateweather-weather.html#SpeedUnit" title="enum SpeedUnit"><span class="type">SpeedUnit</span></a> unit</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *speed</code></em>,
+                             <em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherWindDirection" title="enum WeatherWindDirection"><span class="type">WeatherWindDirection</span></a> *direction</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.47.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-pressure"></a><h3>weather_info_get_value_pressure ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_pressure (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libmateweather-weather.html#PressureUnit" title="enum PressureUnit"><span class="type">PressureUnit</span></a> unit</code></em>,
+                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.48.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-visibility"></a><h3>weather_info_get_value_visibility ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_visibility (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                                   <em class="parameter"><code><a class="link" href="libmateweather-weather.html#DistanceUnit" title="enum DistanceUnit"><span class="type">DistanceUnit</span></a> unit</code></em>,
+                                   <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.49.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-sunrise"></a><h3>weather_info_get_value_sunrise ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_sunrise (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                                <em class="parameter"><code><span class="type">time_t</span> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.50.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="weather-info-get-value-sunset"></a><h3>weather_info_get_value_sunset ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+weather_info_get_value_sunset (<em class="parameter"><code><a class="link" href="libmateweather-weather.html#WeatherInfo" title="WeatherInfo"><span class="type">WeatherInfo</span></a> *info</code></em>,
+                               <em class="parameter"><code><span class="type">time_t</span> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.7.51.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libmateweather-weather.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="WeatherLocation"></a><h3>WeatherLocation</h3>
+<pre class="programlisting">typedef struct {
+    gchar *name;
+    gchar *code;
+    gchar *zone;
+    gchar *radar;
+    gboolean zone_valid;
+    gchar *coordinates;
+    gdouble  latitude;
+    gdouble  longitude;
+    gboolean latlon_valid;
+    gchar *country_code;
+    gchar *tz_hint;
+} WeatherLocation;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="WeatherForecastType"></a><h3>enum WeatherForecastType</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="FORECAST-STATE:CAPS"></a>FORECAST_STATE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="FORECAST-ZONE:CAPS"></a>FORECAST_ZONE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="FORECAST-LIST:CAPS"></a>FORECAST_LIST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TempUnit"></a><h3>enum TempUnit</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.4.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="TEMP-UNIT-INVALID:CAPS"></a>TEMP_UNIT_INVALID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TEMP-UNIT-DEFAULT:CAPS"></a>TEMP_UNIT_DEFAULT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TEMP-UNIT-KELVIN:CAPS"></a>TEMP_UNIT_KELVIN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TEMP-UNIT-CENTIGRADE:CAPS"></a>TEMP_UNIT_CENTIGRADE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TEMP-UNIT-FAHRENHEIT:CAPS"></a>TEMP_UNIT_FAHRENHEIT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="SpeedUnit"></a><h3>enum SpeedUnit</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.5.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="SPEED-UNIT-INVALID:CAPS"></a>SPEED_UNIT_INVALID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SPEED-UNIT-DEFAULT:CAPS"></a>SPEED_UNIT_DEFAULT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SPEED-UNIT-MS:CAPS"></a>SPEED_UNIT_MS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SPEED-UNIT-KPH:CAPS"></a>SPEED_UNIT_KPH</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SPEED-UNIT-MPH:CAPS"></a>SPEED_UNIT_MPH</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SPEED-UNIT-KNOTS:CAPS"></a>SPEED_UNIT_KNOTS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SPEED-UNIT-BFT:CAPS"></a>SPEED_UNIT_BFT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PressureUnit"></a><h3>enum PressureUnit</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.6.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="PRESSURE-UNIT-INVALID:CAPS"></a>PRESSURE_UNIT_INVALID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRESSURE-UNIT-DEFAULT:CAPS"></a>PRESSURE_UNIT_DEFAULT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRESSURE-UNIT-KPA:CAPS"></a>PRESSURE_UNIT_KPA</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRESSURE-UNIT-HPA:CAPS"></a>PRESSURE_UNIT_HPA</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRESSURE-UNIT-MB:CAPS"></a>PRESSURE_UNIT_MB</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRESSURE-UNIT-MM-HG:CAPS"></a>PRESSURE_UNIT_MM_HG</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRESSURE-UNIT-INCH-HG:CAPS"></a>PRESSURE_UNIT_INCH_HG</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PRESSURE-UNIT-ATM:CAPS"></a>PRESSURE_UNIT_ATM</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="DistanceUnit"></a><h3>enum DistanceUnit</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.7.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="DISTANCE-UNIT-INVALID:CAPS"></a>DISTANCE_UNIT_INVALID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="DISTANCE-UNIT-DEFAULT:CAPS"></a>DISTANCE_UNIT_DEFAULT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="DISTANCE-UNIT-METERS:CAPS"></a>DISTANCE_UNIT_METERS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="DISTANCE-UNIT-KM:CAPS"></a>DISTANCE_UNIT_KM</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="DISTANCE-UNIT-MILES:CAPS"></a>DISTANCE_UNIT_MILES</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="WeatherPrefs"></a><h3>WeatherPrefs</h3>
+<pre class="programlisting">typedef struct {
+    WeatherForecastType type;
+
+    gboolean radar;
+    const char *radar_custom_url;
+
+    TempUnit temperature_unit;
+    SpeedUnit speed_unit;
+    PressureUnit pressure_unit;
+    DistanceUnit distance_unit;
+} WeatherPrefs;
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="WeatherInfo"></a><h3>WeatherInfo</h3>
+<pre class="programlisting">typedef struct _WeatherInfo WeatherInfo;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="WeatherWindDirection"></a><h3>enum WeatherWindDirection</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.10.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-INVALID:CAPS"></a>WIND_INVALID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-VARIABLE:CAPS"></a>WIND_VARIABLE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-N:CAPS"></a>WIND_N</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-NNE:CAPS"></a>WIND_NNE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-NE:CAPS"></a>WIND_NE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-ENE:CAPS"></a>WIND_ENE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-E:CAPS"></a>WIND_E</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-ESE:CAPS"></a>WIND_ESE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-SE:CAPS"></a>WIND_SE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-SSE:CAPS"></a>WIND_SSE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-S:CAPS"></a>WIND_S</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-SSW:CAPS"></a>WIND_SSW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-SW:CAPS"></a>WIND_SW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-WSW:CAPS"></a>WIND_WSW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-W:CAPS"></a>WIND_W</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-WNW:CAPS"></a>WIND_WNW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-NW:CAPS"></a>WIND_NW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-NNW:CAPS"></a>WIND_NNW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="WIND-LAST:CAPS"></a>WIND_LAST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="WeatherSky"></a><h3>enum WeatherSky</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.11.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="SKY-INVALID:CAPS"></a>SKY_INVALID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SKY-CLEAR:CAPS"></a>SKY_CLEAR</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SKY-BROKEN:CAPS"></a>SKY_BROKEN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SKY-SCATTERED:CAPS"></a>SKY_SCATTERED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SKY-FEW:CAPS"></a>SKY_FEW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SKY-OVERCAST:CAPS"></a>SKY_OVERCAST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="SKY-LAST:CAPS"></a>SKY_LAST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="WeatherConditionPhenomenon"></a><h3>enum WeatherConditionPhenomenon</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.12.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-INVALID:CAPS"></a>PHENOMENON_INVALID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-NONE:CAPS"></a>PHENOMENON_NONE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-DRIZZLE:CAPS"></a>PHENOMENON_DRIZZLE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-RAIN:CAPS"></a>PHENOMENON_RAIN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-SNOW:CAPS"></a>PHENOMENON_SNOW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-SNOW-GRAINS:CAPS"></a>PHENOMENON_SNOW_GRAINS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-ICE-CRYSTALS:CAPS"></a>PHENOMENON_ICE_CRYSTALS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-ICE-PELLETS:CAPS"></a>PHENOMENON_ICE_PELLETS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-HAIL:CAPS"></a>PHENOMENON_HAIL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-SMALL-HAIL:CAPS"></a>PHENOMENON_SMALL_HAIL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-UNKNOWN-PRECIPITATION:CAPS"></a>PHENOMENON_UNKNOWN_PRECIPITATION</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-MIST:CAPS"></a>PHENOMENON_MIST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-FOG:CAPS"></a>PHENOMENON_FOG</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-SMOKE:CAPS"></a>PHENOMENON_SMOKE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-VOLCANIC-ASH:CAPS"></a>PHENOMENON_VOLCANIC_ASH</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-SAND:CAPS"></a>PHENOMENON_SAND</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-HAZE:CAPS"></a>PHENOMENON_HAZE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-SPRAY:CAPS"></a>PHENOMENON_SPRAY</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-DUST:CAPS"></a>PHENOMENON_DUST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-SQUALL:CAPS"></a>PHENOMENON_SQUALL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-SANDSTORM:CAPS"></a>PHENOMENON_SANDSTORM</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-DUSTSTORM:CAPS"></a>PHENOMENON_DUSTSTORM</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-FUNNEL-CLOUD:CAPS"></a>PHENOMENON_FUNNEL_CLOUD</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-TORNADO:CAPS"></a>PHENOMENON_TORNADO</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-DUST-WHIRLS:CAPS"></a>PHENOMENON_DUST_WHIRLS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PHENOMENON-LAST:CAPS"></a>PHENOMENON_LAST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="WeatherConditionQualifier"></a><h3>enum WeatherConditionQualifier</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.6.8.13.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-INVALID:CAPS"></a>QUALIFIER_INVALID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-NONE:CAPS"></a>QUALIFIER_NONE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-VICINITY:CAPS"></a>QUALIFIER_VICINITY</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-LIGHT:CAPS"></a>QUALIFIER_LIGHT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-MODERATE:CAPS"></a>QUALIFIER_MODERATE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-HEAVY:CAPS"></a>QUALIFIER_HEAVY</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-SHALLOW:CAPS"></a>QUALIFIER_SHALLOW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-PATCHES:CAPS"></a>QUALIFIER_PATCHES</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-PARTIAL:CAPS"></a>QUALIFIER_PARTIAL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-THUNDERSTORM:CAPS"></a>QUALIFIER_THUNDERSTORM</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-BLOWING:CAPS"></a>QUALIFIER_BLOWING</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-SHOWERS:CAPS"></a>QUALIFIER_SHOWERS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-DRIFTING:CAPS"></a>QUALIFIER_DRIFTING</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-FREEZING:CAPS"></a>QUALIFIER_FREEZING</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="QUALIFIER-LAST:CAPS"></a>QUALIFIER_LAST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

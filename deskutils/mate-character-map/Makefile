@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-character-map
-PORTVERSION=	1.6.0
+PORTVERSION=	1.8.0
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -12,11 +12,13 @@ COMMENT=	Unicode/ISO10646 character map and font viewer
 
 BUILD_DEPENDS=	gtkdoc-check:${PORTSDIR}/textproc/gtk-doc
 
+RUN_DEPENDS=    yelp-tools:${PORTSDIR}/textproc/yelp-tools
+
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build docutils intlhack ltverhack
+USE_MATE=	autogen common:build intlhack ltverhack
 USE_GNOME=	glib20 gnomehier gtk20 gnomedocutils
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes
