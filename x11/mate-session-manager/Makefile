@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-session-manager
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -11,10 +11,10 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Session component for the MATE desktop
 
 LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
-		libupower-glib.so:${PORTSDIR}/sysutils/upower \
-		libexecinfo.so:${PORTSDIR}/devel/libexecinfo
+				libupower-glib.so:${PORTSDIR}/sysutils/upower \
+				libexecinfo.so:${PORTSDIR}/devel/libexecinfo
 RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:${PORTSDIR}/sysutils/consolekit \
-		${LOCALBASE}/bin/xdpyinfo:${PORTSDIR}/x11/xdpyinfo
+				${LOCALBASE}/bin/xdpyinfo:${PORTSDIR}/x11/xdpyinfo
 
 PORTSCOUT=	limitw:1,even
 
