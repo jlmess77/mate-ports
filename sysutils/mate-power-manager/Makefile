@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-power-manager
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -17,13 +17,16 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
 		libexecinfo.so:${PORTSDIR}/devel/libexecinfo \
 		libnotify.so:${PORTSDIR}/devel/libnotify
-RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
+
+RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit \
+				libsecret-1.pc:${PORTSDIR}security/libsecret \
+				gnome-keyring-1.pc:${PORTSDIR}security/nome-keyring
 
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	libmatekeyring panel
+USE_MATE=	panel
 USE_XORG=	x11 xext xproto xrandr xrender
 USE_GNOME=	cairo glib20 gnomehier gtk20 intlhack
 INSTALLS_OMF=	yes

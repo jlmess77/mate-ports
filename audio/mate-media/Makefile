@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-media
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 CATEGORIES=	audio mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -12,11 +12,13 @@ COMMENT=	Multimedia applications for the MATE desktop
 
 LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
+RUN_DEPENDS=    ${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools
+
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	desktop docutils panel
+USE_MATE=	desktop panel
 USE_GNOME=	gnomehier glib20 gnomehier gtk20 intlhack libxml2 
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
