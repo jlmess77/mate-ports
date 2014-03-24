@@ -13,11 +13,13 @@ COMMENT=	MATE system monitor program
 LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 				libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 
+RUN_DEPENDS=    ${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools
+
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	docutils icontheme libmatewnck
+USE_MATE=	icontheme libmatewnck
 USE_GNOME=	gnomehier gtk20 librsvg2 intlhack libxml2 gtkmm24
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="-lutil"

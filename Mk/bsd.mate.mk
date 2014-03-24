@@ -61,9 +61,9 @@ lthack_PRE_PATCH=	${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINP
 				'/^LIBTOOL_DEPS="$$ac_aux_dir\/ltmain.sh"$$/s|$$|; $$ac_aux_dir/ltconfig $$LIBTOOL_DEPS;|'
 
 caja_DETECT=		${LOCALBASE}/libdata/pkgconfig/libcaja-extension.pc
-caja_BUILD_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
-caja_LIB_DEPENDS=	libcaja-extension.so:${PORTSDIR}/x11-fm/mate-file-manager
-caja_RUN_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/mate-file-manager
+caja_BUILD_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/caja
+caja_LIB_DEPENDS=	libcaja-extension.so:${PORTSDIR}/x11-fm/caja
+caja_RUN_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/caja
 
 mucharmap_DETECT=		${LOCALBASE}/libdata/pkgconfig/mucharmap-2.pc
 mucharmap_BUILD_DEPENDS=${mucharmap_DETECT}:${PORTSDIR}/deskutils/mate-character-map

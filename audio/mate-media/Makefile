@@ -12,7 +12,7 @@ COMMENT=	Multimedia applications for the MATE desktop
 
 LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-RUN_DEPENDS=    yelp-tools:${PORTSDIR}/textproc/yelp-tools
+RUN_DEPENDS=    ${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools
 
 PORTSCOUT=	limitw:1,even
 
