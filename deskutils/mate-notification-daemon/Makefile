@@ -1,4 +1,4 @@
-# Createdy by: Andreas Kohn <andreas@syndrom23.de>
+# Created by: Andreas Kohn <andreas@syndrom23.de>
 # $FreeBSD$
 
 PORTNAME=	mate-notification-daemon
@@ -10,13 +10,13 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Send small notifications to your desktop
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libnotify.so:${PORTSDIR}/devel/libnotify
-
-LICENSE=	GPLv2
-LICENSE_FILE=	${WRKSRC}/COPYING
 
 PORTSCOUT=	limitw:1,even
 

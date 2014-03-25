@@ -9,12 +9,14 @@ DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Caja extension which allows you to open a terminal
+
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gupnp-1.0.pc:${PORTSDIR}/net/gupnp
+
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen caja common:build desktop intlhack 
+USE_MATE=	autogen caja common:build desktop intlhack
 USE_GNOME=	glib20 gnomehier
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
