@@ -10,16 +10,15 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Multimedia applications for the MATE desktop
 
+RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools
 LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
-
-RUN_DEPENDS=    ${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools
 
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
 USE_MATE=	desktop panel
-USE_GNOME=	gnomehier glib20 gnomehier gtk20 intlhack libxml2 
+USE_GNOME=	gnomehier glib20 gnomehier gtk20 intlhack libxml2
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_GSTREAMER=	good

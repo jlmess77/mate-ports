@@ -12,7 +12,7 @@ COMMENT=	Archive manager for zip files, tar, etc
 
 BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
-    		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
+		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 
 PORTSCOUT=	limitw:1,even
 

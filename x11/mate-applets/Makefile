@@ -19,8 +19,8 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 
-RUN_DEPENDS=    gucharmap:${PORTSDIR}/deskutils/gucharmap \
-                yelp-tools:${PORTSDIR}/textproc/yelp-tools              
+RUN_DEPENDS=	gucharmap:${PORTSDIR}/deskutils/gucharmap \
+		yelp-tools:${PORTSDIR}/textproc/yelp-tools
 
 PORTSCOUT=	limitw:1,even
 
@@ -80,3 +80,4 @@ post-patch:
 .endfor
 
 .include <bsd.port.post.mk>
+
