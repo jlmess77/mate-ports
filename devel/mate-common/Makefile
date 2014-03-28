@@ -1,4 +1,4 @@
-#Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
+# Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
 
 PORTNAME=	mate-common
