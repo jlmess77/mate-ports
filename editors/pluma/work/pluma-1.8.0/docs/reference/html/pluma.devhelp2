@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="pluma Reference Manual" link="index.html" author="" name="pluma" version="2" language="c">
+  <chapters>
+    <sub name="pluma" link="ch01.html">
+      <sub name="PlumaApp" link="pluma-pluma-app.html"/>
+      <sub name="PlumaDocument" link="pluma-pluma-document.html"/>
+      <sub name="PlumaEncodingsOptionMenu" link="pluma-pluma-encodings-option-menu.html"/>
+      <sub name="PlumaFileChooserDialog" link="pluma-pluma-file-chooser-dialog.html"/>
+      <sub name="PlumaMessageBus" link="PlumaMessageBus.html"/>
+      <sub name="PlumaMessageType" link="PlumaMessageType.html"/>
+      <sub name="PlumaMessage" link="PlumaMessage.html"/>
+      <sub name="PlumaNotebook" link="pluma-pluma-notebook.html"/>
+      <sub name="PlumaPanel" link="pluma-pluma-panel.html"/>
+      <sub name="PlumaPlugin" link="PlumaPlugin.html"/>
+      <sub name="PlumaPrintJobPreview" link="pluma-pluma-print-job-preview.html"/>
+      <sub name="PlumaPrintJob" link="pluma-PlumaPrintJob.html"/>
+      <sub name="PlumaProgressMessageArea" link="pluma-pluma-progress-message-area.html"/>
+      <sub name="PlumaStatusbar" link="pluma-pluma-statusbar.html"/>
+      <sub name="PlumaTab" link="pluma-pluma-tab.html"/>
+      <sub name="PlumaView" link="pluma-pluma-view.html"/>
+      <sub name="PlumaWindow" link="pluma-pluma-window.html"/>
+      <sub name="pluma-convert" link="pluma-pluma-convert.html"/>
+      <sub name="pluma-debug" link="pluma-pluma-debug.html"/>
+      <sub name="pluma-encodings" link="pluma-pluma-encodings.html"/>
+      <sub name="pluma-help" link="pluma-pluma-help.html"/>
+      <sub name="pluma-metadata-manager" link="pluma-pluma-metadata-manager.html"/>
+      <sub name="pluma-prefs-manager-app" link="pluma-pluma-prefs-manager-app.html"/>
+      <sub name="pluma-prefs-manager" link="pluma-pluma-prefs-manager.html"/>
+      <sub name="pluma-utils" link="pluma-pluma-utils.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="pluma_app_get_default ()" link="pluma-pluma-app.html#pluma-app-get-default"/>
+    <keyword type="function" name="pluma_app_create_window ()" link="pluma-pluma-app.html#pluma-app-create-window"/>
+    <keyword type="function" name="pluma_app_get_windows ()" link="pluma-pluma-app.html#pluma-app-get-windows"/>
+    <keyword type="function" name="pluma_app_get_active_window ()" link="pluma-pluma-app.html#pluma-app-get-active-window"/>
+    <keyword type="function" name="pluma_app_get_documents ()" link="pluma-pluma-app.html#pluma-app-get-documents"/>
+    <keyword type="function" name="pluma_app_get_views ()" link="pluma-pluma-app.html#pluma-app-get-views"/>
+    <keyword type="function" name="pluma_app_get_lockdown ()" link="pluma-pluma-app.html#pluma-app-get-lockdown"/>
+    <keyword type="struct" name="PlumaAppPrivate" link="pluma-pluma-app.html#PlumaAppPrivate"/>
+    <keyword type="struct" name="struct PlumaApp" link="pluma-pluma-app.html#PlumaApp-struct"/>
+    <keyword type="enum" name="enum PlumaLockdownMask" link="pluma-pluma-app.html#PlumaLockdownMask"/>
+    <keyword type="property" name="The “lockdown” property" link="pluma-pluma-app.html#PlumaApp--lockdown"/>
+    <keyword type="function" name="pluma_document_error_quark ()" link="pluma-pluma-document.html#pluma-document-error-quark"/>
+    <keyword type="function" name="pluma_document_new ()" link="pluma-pluma-document.html#pluma-document-new"/>
+    <keyword type="function" name="pluma_document_get_uri ()" link="pluma-pluma-document.html#pluma-document-get-uri"/>
+    <keyword type="function" name="pluma_document_get_uri_for_display ()" link="pluma-pluma-document.html#pluma-document-get-uri-for-display"/>
+    <keyword type="function" name="pluma_document_get_short_name_for_display ()" link="pluma-pluma-document.html#pluma-document-get-short-name-for-display"/>
+    <keyword type="function" name="pluma_document_get_mime_type ()" link="pluma-pluma-document.html#pluma-document-get-mime-type"/>
+    <keyword type="function" name="pluma_document_get_readonly ()" link="pluma-pluma-document.html#pluma-document-get-readonly"/>
+    <keyword type="function" name="pluma_document_load ()" link="pluma-pluma-document.html#pluma-document-load"/>
+    <keyword type="function" name="pluma_document_insert_file ()" link="pluma-pluma-document.html#pluma-document-insert-file"/>
+    <keyword type="function" name="pluma_document_load_cancel ()" link="pluma-pluma-document.html#pluma-document-load-cancel"/>
+    <keyword type="function" name="pluma_document_save ()" link="pluma-pluma-document.html#pluma-document-save"/>
+    <keyword type="function" name="pluma_document_save_as ()" link="pluma-pluma-document.html#pluma-document-save-as"/>
+    <keyword type="function" name="pluma_document_is_untouched ()" link="pluma-pluma-document.html#pluma-document-is-untouched"/>
+    <keyword type="function" name="pluma_document_is_untitled ()" link="pluma-pluma-document.html#pluma-document-is-untitled"/>
+    <keyword type="function" name="pluma_document_get_deleted ()" link="pluma-pluma-document.html#pluma-document-get-deleted"/>
+    <keyword type="function" name="pluma_document_goto_line ()" link="pluma-pluma-document.html#pluma-document-goto-line"/>
+    <keyword type="function" name="pluma_document_set_search_text ()" link="pluma-pluma-document.html#pluma-document-set-search-text"/>
+    <keyword type="function" name="pluma_document_get_search_text ()" link="pluma-pluma-document.html#pluma-document-get-search-text"/>
+    <keyword type="function" name="pluma_document_get_can_search_again ()" link="pluma-pluma-document.html#pluma-document-get-can-search-again"/>
+    <keyword type="function" name="pluma_document_search_forward ()" link="pluma-pluma-document.html#pluma-document-search-forward"/>
+    <keyword type="function" name="pluma_document_search_backward ()" link="pluma-pluma-document.html#pluma-document-search-backward"/>
+    <keyword type="function" name="pluma_document_replace_all ()" link="pluma-pluma-document.html#pluma-document-replace-all"/>
+    <keyword type="function" name="pluma_document_set_language ()" link="pluma-pluma-document.html#pluma-document-set-language"/>
+    <keyword type="function" name="pluma_document_set_enable_search_highlighting ()" link="pluma-pluma-document.html#pluma-document-set-enable-search-highlighting"/>
+    <keyword type="function" name="pluma_document_get_enable_search_highlighting ()" link="pluma-pluma-document.html#pluma-document-get-enable-search-highlighting"/>
+    <keyword type="macro" name="PLUMA_SEARCH_IS_DONT_SET_FLAGS()" link="pluma-pluma-document.html#PLUMA-SEARCH-IS-DONT-SET-FLAGS:CAPS"/>
+    <keyword type="macro" name="PLUMA_SEARCH_SET_DONT_SET_FLAGS()" link="pluma-pluma-document.html#PLUMA-SEARCH-SET-DONT-SET-FLAGS:CAPS"/>
+    <keyword type="macro" name="PLUMA_SEARCH_IS_ENTIRE_WORD()" link="pluma-pluma-document.html#PLUMA-SEARCH-IS-ENTIRE-WORD:CAPS"/>
+    <keyword type="macro" name="PLUMA_SEARCH_SET_ENTIRE_WORD()" link="pluma-pluma-document.html#PLUMA-SEARCH-SET-ENTIRE-WORD:CAPS"/>
+    <keyword type="macro" name="PLUMA_SEARCH_IS_CASE_SENSITIVE()" link="pluma-pluma-document.html#PLUMA-SEARCH-IS-CASE-SENSITIVE:CAPS"/>
+    <keyword type="macro" name="PLUMA_SEARCH_SET_CASE_SENSITIVE()" link="pluma-pluma-document.html#PLUMA-SEARCH-SET-CASE-SENSITIVE:CAPS"/>
+    <keyword type="enum" name="enum PlumaSearchFlags" link="pluma-pluma-document.html#PlumaSearchFlags"/>
+    <keyword type="struct" name="PlumaDocumentPrivate" link="pluma-pluma-document.html#PlumaDocumentPrivate"/>
+    <keyword type="struct" name="struct PlumaDocument" link="pluma-pluma-document.html#PlumaDocument-struct"/>
+    <keyword type="enum" name="enum PlumaDocumentSaveFlags" link="pluma-pluma-document.html#PlumaDocumentSaveFlags"/>
+    <keyword type="macro" name="PLUMA_DOCUMENT_ERROR" link="pluma-pluma-document.html#PLUMA-DOCUMENT-ERROR:CAPS"/>
+    <keyword type="property" name="The “can-search-again” property" link="pluma-pluma-document.html#PlumaDocument--can-search-again"/>
+    <keyword type="property" name="The “content-type” property" link="pluma-pluma-document.html#PlumaDocument--content-type"/>
+    <keyword type="property" name="The “enable-search-highlighting” property" link="pluma-pluma-document.html#PlumaDocument--enable-search-highlighting"/>
+    <keyword type="property" name="The “encoding” property" link="pluma-pluma-document.html#PlumaDocument--encoding"/>
+    <keyword type="property" name="The “mime-type” property" link="pluma-pluma-document.html#PlumaDocument--mime-type"/>
+    <keyword type="property" name="The “newline-type” property" link="pluma-pluma-document.html#PlumaDocument--newline-type"/>
+    <keyword type="property" name="The “read-only” property" link="pluma-pluma-document.html#PlumaDocument--read-only"/>
+    <keyword type="property" name="The “shortname” property" link="pluma-pluma-document.html#PlumaDocument--shortname"/>
+    <keyword type="property" name="The “uri” property" link="pluma-pluma-document.html#PlumaDocument--uri"/>
+    <keyword type="signal" name="The “cursor-moved” signal" link="pluma-pluma-document.html#PlumaDocument-cursor-moved"/>
+    <keyword type="signal" name="The “load” signal" link="pluma-pluma-document.html#PlumaDocument-load"/>
+    <keyword type="signal" name="The “loaded” signal" link="pluma-pluma-document.html#PlumaDocument-loaded"/>
+    <keyword type="signal" name="The “loading” signal" link="pluma-pluma-document.html#PlumaDocument-loading"/>
+    <keyword type="signal" name="The “save” signal" link="pluma-pluma-document.html#PlumaDocument-save"/>
+    <keyword type="signal" name="The “saved” signal" link="pluma-pluma-document.html#PlumaDocument-saved"/>
+    <keyword type="signal" name="The “saving” signal" link="pluma-pluma-document.html#PlumaDocument-saving"/>
+    <keyword type="signal" name="The “search-highlight-updated” signal" link="pluma-pluma-document.html#PlumaDocument-search-highlight-updated"/>
+    <keyword type="function" name="pluma_file_chooser_dialog_new ()" link="pluma-pluma-file-chooser-dialog.html#pluma-file-chooser-dialog-new"/>
+    <keyword type="function" name="pluma_file_chooser_dialog_set_encoding ()" link="pluma-pluma-file-chooser-dialog.html#pluma-file-chooser-dialog-set-encoding"/>
+    <keyword type="struct" name="PlumaFileChooserDialogPrivate" link="pluma-pluma-file-chooser-dialog.html#PlumaFileChooserDialogPrivate"/>
+    <keyword type="struct" name="struct PlumaFileChooserDialog" link="pluma-pluma-file-chooser-dialog.html#PlumaFileChooserDialog-struct"/>
+    <keyword type="function" name="PlumaMessageCallback ()" link="PlumaMessageBus.html#PlumaMessageCallback"/>
+    <keyword type="function" name="pluma_message_bus_get_default ()" link="PlumaMessageBus.html#pluma-message-bus-get-default"/>
+    <keyword type="function" name="pluma_message_bus_new ()" link="PlumaMessageBus.html#pluma-message-bus-new"/>
+    <keyword type="function" name="pluma_message_bus_lookup ()" link="PlumaMessageBus.html#pluma-message-bus-lookup"/>
+    <keyword type="function" name="pluma_message_bus_register ()" link="PlumaMessageBus.html#pluma-message-bus-register"/>
+    <keyword type="function" name="pluma_message_bus_unregister ()" link="PlumaMessageBus.html#pluma-message-bus-unregister"/>
+    <keyword type="function" name="pluma_message_bus_unregister_all ()" link="PlumaMessageBus.html#pluma-message-bus-unregister-all"/>
+    <keyword type="function" name="pluma_message_bus_is_registered ()" link="PlumaMessageBus.html#pluma-message-bus-is-registered"/>
+    <keyword type="function" name="pluma_message_bus_foreach ()" link="PlumaMessageBus.html#pluma-message-bus-foreach"/>
+    <keyword type="function" name="pluma_message_bus_connect ()" link="PlumaMessageBus.html#pluma-message-bus-connect"/>
+    <keyword type="function" name="pluma_message_bus_disconnect ()" link="PlumaMessageBus.html#pluma-message-bus-disconnect"/>
+    <keyword type="function" name="pluma_message_bus_disconnect_by_func ()" link="PlumaMessageBus.html#pluma-message-bus-disconnect-by-func"/>
+    <keyword type="function" name="pluma_message_bus_block ()" link="PlumaMessageBus.html#pluma-message-bus-block"/>
+    <keyword type="function" name="pluma_message_bus_block_by_func ()" link="PlumaMessageBus.html#pluma-message-bus-block-by-func"/>
+    <keyword type="function" name="pluma_message_bus_unblock ()" link="PlumaMessageBus.html#pluma-message-bus-unblock"/>
+    <keyword type="function" name="pluma_message_bus_unblock_by_func ()" link="PlumaMessageBus.html#pluma-message-bus-unblock-by-func"/>
+    <keyword type="function" name="pluma_message_bus_send_message ()" link="PlumaMessageBus.html#pluma-message-bus-send-message"/>
+    <keyword type="function" name="pluma_message_bus_send_message_sync ()" link="PlumaMessageBus.html#pluma-message-bus-send-message-sync"/>
+    <keyword type="function" name="pluma_message_bus_send ()" link="PlumaMessageBus.html#pluma-message-bus-send"/>
+    <keyword type="function" name="pluma_message_bus_send_sync ()" link="PlumaMessageBus.html#pluma-message-bus-send-sync"/>
+    <keyword type="struct" name="struct PlumaMessageBus" link="PlumaMessageBus.html#PlumaMessageBus-struct"/>
+    <keyword type="signal" name="The “dispatch” signal" link="PlumaMessageBus.html#PlumaMessageBus-dispatch"/>
+    <keyword type="signal" name="The “registered” signal" link="PlumaMessageBus.html#PlumaMessageBus-registered"/>
+    <keyword type="signal" name="The “unregistered” signal" link="PlumaMessageBus.html#PlumaMessageBus-unregistered"/>
+    <keyword type="function" name="pluma_message_type_get_type ()" link="PlumaMessageType.html#pluma-message-type-get-type"/>
+    <keyword type="function" name="pluma_message_type_is_supported ()" link="PlumaMessageType.html#pluma-message-type-is-supported"/>
+    <keyword type="function" name="pluma_message_type_identifier ()" link="PlumaMessageType.html#pluma-message-type-identifier"/>
+    <keyword type="function" name="pluma_message_type_is_valid_object_path ()" link="PlumaMessageType.html#pluma-message-type-is-valid-object-path"/>
+    <keyword type="function" name="pluma_message_type_new ()" link="PlumaMessageType.html#pluma-message-type-new"/>
+    <keyword type="function" name="pluma_message_type_new_valist ()" link="PlumaMessageType.html#pluma-message-type-new-valist"/>
+    <keyword type="function" name="pluma_message_type_ref ()" link="PlumaMessageType.html#pluma-message-type-ref"/>
+    <keyword type="function" name="pluma_message_type_unref ()" link="PlumaMessageType.html#pluma-message-type-unref"/>
+    <keyword type="function" name="pluma_message_type_set ()" link="PlumaMessageType.html#pluma-message-type-set"/>
+    <keyword type="function" name="pluma_message_type_set_valist ()" link="PlumaMessageType.html#pluma-message-type-set-valist"/>
+    <keyword type="function" name="pluma_message_type_instantiate ()" link="PlumaMessageType.html#pluma-message-type-instantiate"/>
+    <keyword type="function" name="pluma_message_type_instantiate_valist ()" link="PlumaMessageType.html#pluma-message-type-instantiate-valist"/>
+    <keyword type="function" name="pluma_message_type_get_object_path ()" link="PlumaMessageType.html#pluma-message-type-get-object-path"/>
+    <keyword type="function" name="pluma_message_type_get_method ()" link="PlumaMessageType.html#pluma-message-type-get-method"/>
+    <keyword type="function" name="pluma_message_type_lookup ()" link="PlumaMessageType.html#pluma-message-type-lookup"/>
+    <keyword type="function" name="pluma_message_type_foreach ()" link="PlumaMessageType.html#pluma-message-type-foreach"/>
+    <keyword type="struct" name="PlumaMessageType" link="PlumaMessageType.html#PlumaMessageType-struct"/>
+    <keyword type="function" name="pluma_message_get ()" link="PlumaMessage.html#pluma-message-get"/>
+    <keyword type="function" name="pluma_message_get_valist ()" link="PlumaMessage.html#pluma-message-get-valist"/>
+    <keyword type="function" name="pluma_message_get_value ()" link="PlumaMessage.html#pluma-message-get-value"/>
+    <keyword type="function" name="pluma_message_set ()" link="PlumaMessage.html#pluma-message-set"/>
+    <keyword type="function" name="pluma_message_set_valist ()" link="PlumaMessage.html#pluma-message-set-valist"/>
+    <keyword type="function" name="pluma_message_set_value ()" link="PlumaMessage.html#pluma-message-set-value"/>
+    <keyword type="function" name="pluma_message_set_valuesv ()" link="PlumaMessage.html#pluma-message-set-valuesv"/>
+    <keyword type="function" name="pluma_message_get_object_path ()" link="PlumaMessage.html#pluma-message-get-object-path"/>
+    <keyword type="function" name="pluma_message_get_method ()" link="PlumaMessage.html#pluma-message-get-method"/>
+    <keyword type="function" name="pluma_message_has_key ()" link="PlumaMessage.html#pluma-message-has-key"/>
+    <keyword type="function" name="pluma_message_get_key_type ()" link="PlumaMessage.html#pluma-message-get-key-type"/>
+    <keyword type="function" name="pluma_message_validate ()" link="PlumaMessage.html#pluma-message-validate"/>
+    <keyword type="struct" name="struct PlumaMessage" link="PlumaMessage.html#PlumaMessage-struct"/>
+    <keyword type="property" name="The “method” property" link="PlumaMessage.html#PlumaMessage--method"/>
+    <keyword type="property" name="The “object-path” property" link="PlumaMessage.html#PlumaMessage--object-path"/>
+    <keyword type="property" name="The “type” property" link="PlumaMessage.html#PlumaMessage--type"/>
+    <keyword type="function" name="pluma_notebook_new ()" link="pluma-pluma-notebook.html#pluma-notebook-new"/>
+    <keyword type="function" name="pluma_notebook_add_tab ()" link="pluma-pluma-notebook.html#pluma-notebook-add-tab"/>
+    <keyword type="function" name="pluma_notebook_remove_tab ()" link="pluma-pluma-notebook.html#pluma-notebook-remove-tab"/>
+    <keyword type="function" name="pluma_notebook_remove_all_tabs ()" link="pluma-pluma-notebook.html#pluma-notebook-remove-all-tabs"/>
+    <keyword type="function" name="pluma_notebook_reorder_tab ()" link="pluma-pluma-notebook.html#pluma-notebook-reorder-tab"/>
+    <keyword type="function" name="pluma_notebook_move_tab ()" link="pluma-pluma-notebook.html#pluma-notebook-move-tab"/>
+    <keyword type="function" name="pluma_notebook_set_always_show_tabs ()" link="pluma-pluma-notebook.html#pluma-notebook-set-always-show-tabs"/>
+    <keyword type="function" name="pluma_notebook_set_close_buttons_sensitive ()" link="pluma-pluma-notebook.html#pluma-notebook-set-close-buttons-sensitive"/>
+    <keyword type="function" name="pluma_notebook_get_close_buttons_sensitive ()" link="pluma-pluma-notebook.html#pluma-notebook-get-close-buttons-sensitive"/>
+    <keyword type="function" name="pluma_notebook_set_tab_drag_and_drop_enabled ()" link="pluma-pluma-notebook.html#pluma-notebook-set-tab-drag-and-drop-enabled"/>
+    <keyword type="function" name="pluma_notebook_get_tab_drag_and_drop_enabled ()" link="pluma-pluma-notebook.html#pluma-notebook-get-tab-drag-and-drop-enabled"/>
+    <keyword type="struct" name="PlumaNotebookPrivate" link="pluma-pluma-notebook.html#PlumaNotebookPrivate"/>
+    <keyword type="struct" name="struct PlumaNotebook" link="pluma-pluma-notebook.html#PlumaNotebook-struct"/>
+    <keyword type="signal" name="The “tab-added” signal" link="pluma-pluma-notebook.html#PlumaNotebook-tab-added"/>
+    <keyword type="signal" name="The “tab-close-request” signal" link="pluma-pluma-notebook.html#PlumaNotebook-tab-close-request"/>
+    <keyword type="signal" name="The “tab-detached” signal" link="pluma-pluma-notebook.html#PlumaNotebook-tab-detached"/>
+    <keyword type="signal" name="The “tab-removed” signal" link="pluma-pluma-notebook.html#PlumaNotebook-tab-removed"/>
+    <keyword type="signal" name="The “tabs-reordered” signal" link="pluma-pluma-notebook.html#PlumaNotebook-tabs-reordered"/>
+    <keyword type="function" name="pluma_panel_new ()" link="pluma-pluma-panel.html#pluma-panel-new"/>
+    <keyword type="function" name="pluma_panel_add_item ()" link="pluma-pluma-panel.html#pluma-panel-add-item"/>
+    <keyword type="function" name="pluma_panel_add_item_with_stock_icon ()" link="pluma-pluma-panel.html#pluma-panel-add-item-with-stock-icon"/>
+    <keyword type="function" name="pluma_panel_remove_item ()" link="pluma-pluma-panel.html#pluma-panel-remove-item"/>
+    <keyword type="function" name="pluma_panel_activate_item ()" link="pluma-pluma-panel.html#pluma-panel-activate-item"/>
+    <keyword type="function" name="pluma_panel_item_is_active ()" link="pluma-pluma-panel.html#pluma-panel-item-is-active"/>
+    <keyword type="function" name="pluma_panel_get_orientation ()" link="pluma-pluma-panel.html#pluma-panel-get-orientation"/>
+    <keyword type="function" name="pluma_panel_get_n_items ()" link="pluma-pluma-panel.html#pluma-panel-get-n-items"/>
+    <keyword type="struct" name="PlumaPanelPrivate" link="pluma-pluma-panel.html#PlumaPanelPrivate"/>
+    <keyword type="struct" name="struct PlumaPanel" link="pluma-pluma-panel.html#PlumaPanel-struct"/>
+    <keyword type="property" name="The “orientation” property" link="pluma-pluma-panel.html#PlumaPanel--orientation"/>
+    <keyword type="signal" name="The “close” signal" link="pluma-pluma-panel.html#PlumaPanel-close"/>
+    <keyword type="signal" name="The “focus-document” signal" link="pluma-pluma-panel.html#PlumaPanel-focus-document"/>
+    <keyword type="signal" name="The “item-added” signal" link="pluma-pluma-panel.html#PlumaPanel-item-added"/>
+    <keyword type="signal" name="The “item-removed” signal" link="pluma-pluma-panel.html#PlumaPanel-item-removed"/>
+    <keyword type="function" name="pluma_plugin_activate ()" link="PlumaPlugin.html#pluma-plugin-activate"/>
+    <keyword type="function" name="pluma_plugin_deactivate ()" link="PlumaPlugin.html#pluma-plugin-deactivate"/>
+    <keyword type="function" name="pluma_plugin_update_ui ()" link="PlumaPlugin.html#pluma-plugin-update-ui"/>
+    <keyword type="function" name="pluma_plugin_is_configurable ()" link="PlumaPlugin.html#pluma-plugin-is-configurable"/>
+    <keyword type="function" name="pluma_plugin_create_configure_dialog ()" link="PlumaPlugin.html#pluma-plugin-create-configure-dialog"/>
+    <keyword type="macro" name="PLUMA_PLUGIN_REGISTER_TYPE()" link="PlumaPlugin.html#PLUMA-PLUGIN-REGISTER-TYPE:CAPS"/>
+    <keyword type="struct" name="struct PlumaPlugin" link="PlumaPlugin.html#PlumaPlugin-struct"/>
+    <keyword type="property" name="The “data-dir” property" link="PlumaPlugin.html#PlumaPlugin--data-dir"/>
+    <keyword type="property" name="The “data-dir-name” property" link="PlumaPlugin.html#PlumaPlugin--data-dir-name"/>
+    <keyword type="property" name="The “install-dir” property" link="PlumaPlugin.html#PlumaPlugin--install-dir"/>
+    <keyword type="function" name="pluma_print_job_new ()" link="pluma-PlumaPrintJob.html#pluma-print-job-new"/>
+    <keyword type="struct" name="struct PlumaPrintJob" link="pluma-PlumaPrintJob.html#PlumaPrintJob"/>
+    <keyword type="function" name="pluma_progress_message_area_new ()" link="pluma-pluma-progress-message-area.html#pluma-progress-message-area-new"/>
+    <keyword type="function" name="pluma_progress_message_area_set_stock_image ()" link="pluma-pluma-progress-message-area.html#pluma-progress-message-area-set-stock-image"/>
+    <keyword type="function" name="pluma_progress_message_area_set_markup ()" link="pluma-pluma-progress-message-area.html#pluma-progress-message-area-set-markup"/>
+    <keyword type="function" name="pluma_progress_message_area_set_text ()" link="pluma-pluma-progress-message-area.html#pluma-progress-message-area-set-text"/>
+    <keyword type="function" name="pluma_progress_message_area_set_fraction ()" link="pluma-pluma-progress-message-area.html#pluma-progress-message-area-set-fraction"/>
+    <keyword type="function" name="pluma_progress_message_area_pulse ()" link="pluma-pluma-progress-message-area.html#pluma-progress-message-area-pulse"/>
+    <keyword type="struct" name="PlumaProgressMessageAreaPrivate" link="pluma-pluma-progress-message-area.html#PlumaProgressMessageAreaPrivate"/>
+    <keyword type="struct" name="struct PlumaProgressMessageArea" link="pluma-pluma-progress-message-area.html#PlumaProgressMessageArea-struct"/>
+    <keyword type="property" name="The “has-cancel-button” property" link="pluma-pluma-progress-message-area.html#PlumaProgressMessageArea--has-cancel-button"/>
+    <keyword type="function" name="pluma_statusbar_new ()" link="pluma-pluma-statusbar.html#pluma-statusbar-new"/>
+    <keyword type="function" name="pluma_statusbar_set_window_state ()" link="pluma-pluma-statusbar.html#pluma-statusbar-set-window-state"/>
+    <keyword type="function" name="pluma_statusbar_set_overwrite ()" link="pluma-pluma-statusbar.html#pluma-statusbar-set-overwrite"/>
+    <keyword type="function" name="pluma_statusbar_set_cursor_position ()" link="pluma-pluma-statusbar.html#pluma-statusbar-set-cursor-position"/>
+    <keyword type="function" name="pluma_statusbar_clear_overwrite ()" link="pluma-pluma-statusbar.html#pluma-statusbar-clear-overwrite"/>
+    <keyword type="function" name="pluma_statusbar_flash_message ()" link="pluma-pluma-statusbar.html#pluma-statusbar-flash-message"/>
+    <keyword type="struct" name="PlumaStatusbarPrivate" link="pluma-pluma-statusbar.html#PlumaStatusbarPrivate"/>
+    <keyword type="struct" name="struct PlumaStatusbar" link="pluma-pluma-statusbar.html#PlumaStatusbar-struct"/>
+    <keyword type="macro" name="PlumaStatus" link="pluma-pluma-statusbar.html#PlumaStatus"/>
+    <keyword type="function" name="pluma_tab_get_view ()" link="pluma-pluma-tab.html#pluma-tab-get-view"/>
+    <keyword type="function" name="pluma_tab_get_document ()" link="pluma-pluma-tab.html#pluma-tab-get-document"/>
+    <keyword type="function" name="pluma_tab_get_from_document ()" link="pluma-pluma-tab.html#pluma-tab-get-from-document"/>
+    <keyword type="function" name="pluma_tab_get_state ()" link="pluma-pluma-tab.html#pluma-tab-get-state"/>
+    <keyword type="function" name="pluma_tab_get_auto_save_enabled ()" link="pluma-pluma-tab.html#pluma-tab-get-auto-save-enabled"/>
+    <keyword type="function" name="pluma_tab_set_auto_save_enabled ()" link="pluma-pluma-tab.html#pluma-tab-set-auto-save-enabled"/>
+    <keyword type="function" name="pluma_tab_get_auto_save_interval ()" link="pluma-pluma-tab.html#pluma-tab-get-auto-save-interval"/>
+    <keyword type="function" name="pluma_tab_set_auto_save_interval ()" link="pluma-pluma-tab.html#pluma-tab-set-auto-save-interval"/>
+    <keyword type="enum" name="enum PlumaTabState" link="pluma-pluma-tab.html#PlumaTabState"/>
+    <keyword type="struct" name="PlumaTabPrivate" link="pluma-pluma-tab.html#PlumaTabPrivate"/>
+    <keyword type="struct" name="struct PlumaTab" link="pluma-pluma-tab.html#PlumaTab-struct"/>
+    <keyword type="property" name="The “autosave” property" link="pluma-pluma-tab.html#PlumaTab--autosave"/>
+    <keyword type="property" name="The “autosave-interval” property" link="pluma-pluma-tab.html#PlumaTab--autosave-interval"/>
+    <keyword type="property" name="The “name” property" link="pluma-pluma-tab.html#PlumaTab--name"/>
+    <keyword type="property" name="The “state” property" link="pluma-pluma-tab.html#PlumaTab--state"/>
+    <keyword type="function" name="pluma_view_new ()" link="pluma-pluma-view.html#pluma-view-new"/>
+    <keyword type="function" name="pluma_view_cut_clipboard ()" link="pluma-pluma-view.html#pluma-view-cut-clipboard"/>
+    <keyword type="function" name="pluma_view_copy_clipboard ()" link="pluma-pluma-view.html#pluma-view-copy-clipboard"/>
+    <keyword type="function" name="pluma_view_paste_clipboard ()" link="pluma-pluma-view.html#pluma-view-paste-clipboard"/>
+    <keyword type="function" name="pluma_view_delete_selection ()" link="pluma-pluma-view.html#pluma-view-delete-selection"/>
+    <keyword type="function" name="pluma_view_select_all ()" link="pluma-pluma-view.html#pluma-view-select-all"/>
+    <keyword type="function" name="pluma_view_scroll_to_cursor ()" link="pluma-pluma-view.html#pluma-view-scroll-to-cursor"/>
+    <keyword type="function" name="pluma_view_set_font ()" link="pluma-pluma-view.html#pluma-view-set-font"/>
+    <keyword type="struct" name="PlumaViewPrivate" link="pluma-pluma-view.html#PlumaViewPrivate"/>
+    <keyword type="struct" name="struct PlumaView" link="pluma-pluma-view.html#PlumaView-struct"/>
+    <keyword type="signal" name="The “drop-uris” signal" link="pluma-pluma-view.html#PlumaView-drop-uris"/>
+    <keyword type="signal" name="The “reset-searched-text” signal" link="pluma-pluma-view.html#PlumaView-reset-searched-text"/>
+    <keyword type="signal" name="The “start-interactive-goto-line” signal" link="pluma-pluma-view.html#PlumaView-start-interactive-goto-line"/>
+    <keyword type="signal" name="The “start-interactive-search” signal" link="pluma-pluma-view.html#PlumaView-start-interactive-search"/>
+    <keyword type="function" name="pluma_window_create_tab ()" link="pluma-pluma-window.html#pluma-window-create-tab"/>
+    <keyword type="function" name="pluma_window_create_tab_from_uri ()" link="pluma-pluma-window.html#pluma-window-create-tab-from-uri"/>
+    <keyword type="function" name="pluma_window_close_tab ()" link="pluma-pluma-window.html#pluma-window-close-tab"/>
+    <keyword type="function" name="pluma_window_close_all_tabs ()" link="pluma-pluma-window.html#pluma-window-close-all-tabs"/>
+    <keyword type="function" name="pluma_window_close_tabs ()" link="pluma-pluma-window.html#pluma-window-close-tabs"/>
+    <keyword type="function" name="pluma_window_get_active_tab ()" link="pluma-pluma-window.html#pluma-window-get-active-tab"/>
+    <keyword type="function" name="pluma_window_set_active_tab ()" link="pluma-pluma-window.html#pluma-window-set-active-tab"/>
+    <keyword type="function" name="pluma_window_get_active_view ()" link="pluma-pluma-window.html#pluma-window-get-active-view"/>
+    <keyword type="function" name="pluma_window_get_active_document ()" link="pluma-pluma-window.html#pluma-window-get-active-document"/>
+    <keyword type="function" name="pluma_window_get_documents ()" link="pluma-pluma-window.html#pluma-window-get-documents"/>
+    <keyword type="function" name="pluma_window_get_unsaved_documents ()" link="pluma-pluma-window.html#pluma-window-get-unsaved-documents"/>
+    <keyword type="function" name="pluma_window_get_views ()" link="pluma-pluma-window.html#pluma-window-get-views"/>
+    <keyword type="function" name="pluma_window_get_group ()" link="pluma-pluma-window.html#pluma-window-get-group"/>
+    <keyword type="function" name="pluma_window_get_side_panel ()" link="pluma-pluma-window.html#pluma-window-get-side-panel"/>
+    <keyword type="function" name="pluma_window_get_bottom_panel ()" link="pluma-pluma-window.html#pluma-window-get-bottom-panel"/>
+    <keyword type="function" name="pluma_window_get_statusbar ()" link="pluma-pluma-window.html#pluma-window-get-statusbar"/>
+    <keyword type="function" name="pluma_window_get_ui_manager ()" link="pluma-pluma-window.html#pluma-window-get-ui-manager"/>
+    <keyword type="function" name="pluma_window_get_state ()" link="pluma-pluma-window.html#pluma-window-get-state"/>
+    <keyword type="function" name="pluma_window_get_tab_from_location ()" link="pluma-pluma-window.html#pluma-window-get-tab-from-location"/>
+    <keyword type="function" name="pluma_window_get_tab_from_uri ()" link="pluma-pluma-window.html#pluma-window-get-tab-from-uri" deprecated="2.24: Use pluma_window_get_tab_from_location() instead."/>
+    <keyword type="function" name="pluma_window_get_message_bus ()" link="pluma-pluma-window.html#pluma-window-get-message-bus"/>
+    <keyword type="enum" name="enum PlumaWindowState" link="pluma-pluma-window.html#PlumaWindowState"/>
+    <keyword type="struct" name="PlumaWindowPrivate" link="pluma-pluma-window.html#PlumaWindowPrivate"/>
+    <keyword type="struct" name="struct PlumaWindow" link="pluma-pluma-window.html#PlumaWindow-struct"/>
+    <keyword type="property" name="The “state” property" link="pluma-pluma-window.html#PlumaWindow--state"/>
+    <keyword type="signal" name="The “active-tab-changed” signal" link="pluma-pluma-window.html#PlumaWindow-active-tab-changed"/>
+    <keyword type="signal" name="The “active-tab-state-changed” signal" link="pluma-pluma-window.html#PlumaWindow-active-tab-state-changed"/>
+    <keyword type="signal" name="The “tab-added” signal" link="pluma-pluma-window.html#PlumaWindow-tab-added"/>
+    <keyword type="signal" name="The “tab-removed” signal" link="pluma-pluma-window.html#PlumaWindow-tab-removed"/>
+    <keyword type="signal" name="The “tabs-reordered” signal" link="pluma-pluma-window.html#PlumaWindow-tabs-reordered"/>
+    <keyword type="function" name="pluma_debug_init ()" link="pluma-pluma-debug.html#pluma-debug-init"/>
+    <keyword type="function" name="pluma_debug ()" link="pluma-pluma-debug.html#pluma-debug"/>
+    <keyword type="function" name="pluma_debug_message ()" link="pluma-pluma-debug.html#pluma-debug-message"/>
+    <keyword type="enum" name="enum PlumaDebugSection" link="pluma-pluma-debug.html#PlumaDebugSection"/>
+    <keyword type="macro" name="DEBUG_VIEW" link="pluma-pluma-debug.html#DEBUG-VIEW:CAPS"/>
+    <keyword type="macro" name="DEBUG_SEARCH" link="pluma-pluma-debug.html#DEBUG-SEARCH:CAPS"/>
+    <keyword type="macro" name="DEBUG_PRINT" link="pluma-pluma-debug.html#DEBUG-PRINT:CAPS"/>
+    <keyword type="macro" name="DEBUG_PREFS" link="pluma-pluma-debug.html#DEBUG-PREFS:CAPS"/>
+    <keyword type="macro" name="DEBUG_PLUGINS" link="pluma-pluma-debug.html#DEBUG-PLUGINS:CAPS"/>
+    <keyword type="macro" name="DEBUG_TAB" link="pluma-pluma-debug.html#DEBUG-TAB:CAPS"/>
+    <keyword type="macro" name="DEBUG_DOCUMENT" link="pluma-pluma-debug.html#DEBUG-DOCUMENT:CAPS"/>
+    <keyword type="macro" name="DEBUG_COMMANDS" link="pluma-pluma-debug.html#DEBUG-COMMANDS:CAPS"/>
+    <keyword type="macro" name="DEBUG_APP" link="pluma-pluma-debug.html#DEBUG-APP:CAPS"/>
+    <keyword type="macro" name="DEBUG_SESSION" link="pluma-pluma-debug.html#DEBUG-SESSION:CAPS"/>
+    <keyword type="macro" name="DEBUG_UTILS" link="pluma-pluma-debug.html#DEBUG-UTILS:CAPS"/>
+    <keyword type="macro" name="DEBUG_METADATA" link="pluma-pluma-debug.html#DEBUG-METADATA:CAPS"/>
+    <keyword type="macro" name="DEBUG_WINDOW" link="pluma-pluma-debug.html#DEBUG-WINDOW:CAPS"/>
+    <keyword type="macro" name="DEBUG_LOADER" link="pluma-pluma-debug.html#DEBUG-LOADER:CAPS"/>
+    <keyword type="macro" name="DEBUG_SAVER" link="pluma-pluma-debug.html#DEBUG-SAVER:CAPS"/>
+    <keyword type="macro" name="PLUMA_TYPE_ENCODING" link="pluma-pluma-encodings.html#PLUMA-TYPE-ENCODING:CAPS"/>
+    <keyword type="function" name="pluma_encoding_get_type ()" link="pluma-pluma-encodings.html#pluma-encoding-get-type"/>
+    <keyword type="function" name="pluma_encoding_copy ()" link="pluma-pluma-encodings.html#pluma-encoding-copy"/>
+    <keyword type="function" name="pluma_encoding_free ()" link="pluma-pluma-encodings.html#pluma-encoding-free"/>
+    <keyword type="function" name="pluma_encoding_get_from_charset ()" link="pluma-pluma-encodings.html#pluma-encoding-get-from-charset"/>
+    <keyword type="function" name="pluma_encoding_get_from_index ()" link="pluma-pluma-encodings.html#pluma-encoding-get-from-index"/>
+    <keyword type="function" name="pluma_encoding_to_string ()" link="pluma-pluma-encodings.html#pluma-encoding-to-string"/>
+    <keyword type="function" name="pluma_encoding_get_name ()" link="pluma-pluma-encodings.html#pluma-encoding-get-name"/>
+    <keyword type="function" name="pluma_encoding_get_charset ()" link="pluma-pluma-encodings.html#pluma-encoding-get-charset"/>
+    <keyword type="function" name="pluma_encoding_get_utf8 ()" link="pluma-pluma-encodings.html#pluma-encoding-get-utf8"/>
+    <keyword type="function" name="pluma_encoding_get_current ()" link="pluma-pluma-encodings.html#pluma-encoding-get-current"/>
+    <keyword type="struct" name="PlumaEncoding" link="pluma-pluma-encodings.html#PlumaEncoding-struct"/>
+    <keyword type="function" name="pluma_help_display ()" link="pluma-pluma-help.html#pluma-help-display"/>
+    <keyword type="function" name="pluma_metadata_manager_shutdown ()" link="pluma-pluma-metadata-manager.html#pluma-metadata-manager-shutdown"/>
+    <keyword type="function" name="pluma_metadata_manager_get ()" link="pluma-pluma-metadata-manager.html#pluma-metadata-manager-get"/>
+    <keyword type="function" name="pluma_metadata_manager_set ()" link="pluma-pluma-metadata-manager.html#pluma-metadata-manager-set"/>
+    <keyword type="function" name="pluma_prefs_manager_app_init ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-app-init"/>
+    <keyword type="function" name="pluma_prefs_manager_app_shutdown ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-app-shutdown"/>
+    <keyword type="function" name="pluma_prefs_manager_get_window_state ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-get-window-state"/>
+    <keyword type="function" name="pluma_prefs_manager_set_window_state ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-set-window-state"/>
+    <keyword type="function" name="pluma_prefs_manager_window_state_can_set ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-window-state-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_window_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-get-window-size"/>
+    <keyword type="function" name="pluma_prefs_manager_get_default_window_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-get-default-window-size"/>
+    <keyword type="function" name="pluma_prefs_manager_set_window_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-set-window-size"/>
+    <keyword type="function" name="pluma_prefs_manager_window_size_can_set ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-window-size-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_side_panel_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-get-side-panel-size"/>
+    <keyword type="function" name="pluma_prefs_manager_get_default_side_panel_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-get-default-side-panel-size"/>
+    <keyword type="function" name="pluma_prefs_manager_set_side_panel_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-set-side-panel-size"/>
+    <keyword type="function" name="pluma_prefs_manager_side_panel_size_can_set ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-side-panel-size-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_bottom_panel_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-get-bottom-panel-size"/>
+    <keyword type="function" name="pluma_prefs_manager_get_default_bottom_panel_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-get-default-bottom-panel-size"/>
+    <keyword type="function" name="pluma_prefs_manager_set_bottom_panel_size ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-set-bottom-panel-size"/>
+    <keyword type="function" name="pluma_prefs_manager_bottom_panel_size_can_set ()" link="pluma-pluma-prefs-manager-app.html#pluma-prefs-manager-bottom-panel-size-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_init ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-init"/>
+    <keyword type="function" name="pluma_prefs_manager_shutdown ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-shutdown"/>
+    <keyword type="function" name="pluma_prefs_manager_get_use_default_font ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-use-default-font"/>
+    <keyword type="function" name="pluma_prefs_manager_set_use_default_font ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-use-default-font"/>
+    <keyword type="function" name="pluma_prefs_manager_use_default_font_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-use-default-font-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_editor_font ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-editor-font"/>
+    <keyword type="function" name="pluma_prefs_manager_set_editor_font ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-editor-font"/>
+    <keyword type="function" name="pluma_prefs_manager_editor_font_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-editor-font-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_create_backup_copy ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-create-backup-copy"/>
+    <keyword type="function" name="pluma_prefs_manager_set_create_backup_copy ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-create-backup-copy"/>
+    <keyword type="function" name="pluma_prefs_manager_create_backup_copy_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-create-backup-copy-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_auto_save ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-auto-save"/>
+    <keyword type="function" name="pluma_prefs_manager_set_auto_save ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-auto-save"/>
+    <keyword type="function" name="pluma_prefs_manager_auto_save_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-auto-save-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_auto_save_interval ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-auto-save-interval"/>
+    <keyword type="function" name="pluma_prefs_manager_set_auto_save_interval ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-auto-save-interval"/>
+    <keyword type="function" name="pluma_prefs_manager_auto_save_interval_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-auto-save-interval-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_undo_actions_limit ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-undo-actions-limit"/>
+    <keyword type="function" name="pluma_prefs_manager_set_undo_actions_limit ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-undo-actions-limit"/>
+    <keyword type="function" name="pluma_prefs_manager_undo_actions_limit_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-undo-actions-limit-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_wrap_mode ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-wrap-mode"/>
+    <keyword type="function" name="pluma_prefs_manager_set_wrap_mode ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-wrap-mode"/>
+    <keyword type="function" name="pluma_prefs_manager_wrap_mode_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-wrap-mode-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_tabs_size ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-tabs-size"/>
+    <keyword type="function" name="pluma_prefs_manager_set_tabs_size ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-tabs-size"/>
+    <keyword type="function" name="pluma_prefs_manager_tabs_size_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-tabs-size-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_insert_spaces ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-insert-spaces"/>
+    <keyword type="function" name="pluma_prefs_manager_set_insert_spaces ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-insert-spaces"/>
+    <keyword type="function" name="pluma_prefs_manager_insert_spaces_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-insert-spaces-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_auto_indent ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-auto-indent"/>
+    <keyword type="function" name="pluma_prefs_manager_set_auto_indent ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-auto-indent"/>
+    <keyword type="function" name="pluma_prefs_manager_auto_indent_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-auto-indent-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_display_line_numbers ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-display-line-numbers"/>
+    <keyword type="function" name="pluma_prefs_manager_set_display_line_numbers ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-display-line-numbers"/>
+    <keyword type="function" name="pluma_prefs_manager_display_line_numbers_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-display-line-numbers-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_toolbar_visible ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-toolbar-visible"/>
+    <keyword type="function" name="pluma_prefs_manager_set_toolbar_visible ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-toolbar-visible"/>
+    <keyword type="function" name="pluma_prefs_manager_toolbar_visible_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-toolbar-visible-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_toolbar_buttons_style ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-toolbar-buttons-style"/>
+    <keyword type="function" name="pluma_prefs_manager_set_toolbar_buttons_style ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-toolbar-buttons-style"/>
+    <keyword type="function" name="pluma_prefs_manager_toolbar_buttons_style_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-toolbar-buttons-style-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_statusbar_visible ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-statusbar-visible"/>
+    <keyword type="function" name="pluma_prefs_manager_set_statusbar_visible ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-statusbar-visible"/>
+    <keyword type="function" name="pluma_prefs_manager_statusbar_visible_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-statusbar-visible-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_side_pane_visible ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-side-pane-visible"/>
+    <keyword type="function" name="pluma_prefs_manager_set_side_pane_visible ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-side-pane-visible"/>
+    <keyword type="function" name="pluma_prefs_manager_side_pane_visible_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-side-pane-visible-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_bottom_panel_visible ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-bottom-panel-visible"/>
+    <keyword type="function" name="pluma_prefs_manager_set_bottom_panel_visible ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-bottom-panel-visible"/>
+    <keyword type="function" name="pluma_prefs_manager_bottom_panel_visible_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-bottom-panel-visible-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_print_syntax_hl ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-print-syntax-hl"/>
+    <keyword type="function" name="pluma_prefs_manager_set_print_syntax_hl ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-print-syntax-hl"/>
+    <keyword type="function" name="pluma_prefs_manager_print_syntax_hl_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-print-syntax-hl-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_print_header ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-print-header"/>
+    <keyword type="function" name="pluma_prefs_manager_set_print_header ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-print-header"/>
+    <keyword type="function" name="pluma_prefs_manager_print_header_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-print-header-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_print_wrap_mode ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-print-wrap-mode"/>
+    <keyword type="function" name="pluma_prefs_manager_set_print_wrap_mode ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-print-wrap-mode"/>
+    <keyword type="function" name="pluma_prefs_manager_print_wrap_mode_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-print-wrap-mode-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_print_line_numbers ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-print-line-numbers"/>
+    <keyword type="function" name="pluma_prefs_manager_set_print_line_numbers ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-print-line-numbers"/>
+    <keyword type="function" name="pluma_prefs_manager_print_line_numbers_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-print-line-numbers-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_print_font_body ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-print-font-body"/>
+    <keyword type="function" name="pluma_prefs_manager_set_print_font_body ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-print-font-body"/>
+    <keyword type="function" name="pluma_prefs_manager_print_font_body_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-print-font-body-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_default_print_font_body ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-default-print-font-body"/>
+    <keyword type="function" name="pluma_prefs_manager_get_print_font_header ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-print-font-header"/>
+    <keyword type="function" name="pluma_prefs_manager_set_print_font_header ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-print-font-header"/>
+    <keyword type="function" name="pluma_prefs_manager_print_font_header_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-print-font-header-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_default_print_font_header ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-default-print-font-header"/>
+    <keyword type="function" name="pluma_prefs_manager_get_print_font_numbers ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-print-font-numbers"/>
+    <keyword type="function" name="pluma_prefs_manager_set_print_font_numbers ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-print-font-numbers"/>
+    <keyword type="function" name="pluma_prefs_manager_print_font_numbers_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-print-font-numbers-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_default_print_font_numbers ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-default-print-font-numbers"/>
+    <keyword type="function" name="pluma_prefs_manager_get_max_recents ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-max-recents"/>
+    <keyword type="function" name="pluma_prefs_manager_get_auto_detected_encodings ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-auto-detected-encodings"/>
+    <keyword type="function" name="pluma_prefs_manager_get_shown_in_menu_encodings ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-shown-in-menu-encodings"/>
+    <keyword type="function" name="pluma_prefs_manager_set_shown_in_menu_encodings ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-shown-in-menu-encodings"/>
+    <keyword type="function" name="pluma_prefs_manager_shown_in_menu_encodings_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-shown-in-menu-encodings-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_highlight_current_line ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-highlight-current-line"/>
+    <keyword type="function" name="pluma_prefs_manager_set_highlight_current_line ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-highlight-current-line"/>
+    <keyword type="function" name="pluma_prefs_manager_highlight_current_line_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-highlight-current-line-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_bracket_matching ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-bracket-matching"/>
+    <keyword type="function" name="pluma_prefs_manager_set_bracket_matching ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-bracket-matching"/>
+    <keyword type="function" name="pluma_prefs_manager_bracket_matching_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-bracket-matching-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_display_right_margin ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-display-right-margin"/>
+    <keyword type="function" name="pluma_prefs_manager_set_display_right_margin ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-display-right-margin"/>
+    <keyword type="function" name="pluma_prefs_manager_display_right_margin_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-display-right-margin-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_right_margin_position ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-right-margin-position"/>
+    <keyword type="function" name="pluma_prefs_manager_set_right_margin_position ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-right-margin-position"/>
+    <keyword type="function" name="pluma_prefs_manager_right_margin_position_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-right-margin-position-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_enable_syntax_highlighting ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-enable-syntax-highlighting"/>
+    <keyword type="function" name="pluma_prefs_manager_set_enable_syntax_highlighting ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-enable-syntax-highlighting"/>
+    <keyword type="function" name="pluma_prefs_manager_enable_syntax_highlighting_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-enable-syntax-highlighting-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_writable_vfs_schemes ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-writable-vfs-schemes"/>
+    <keyword type="function" name="pluma_prefs_manager_get_restore_cursor_position ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-restore-cursor-position"/>
+    <keyword type="function" name="pluma_prefs_manager_get_enable_search_highlighting ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-enable-search-highlighting"/>
+    <keyword type="function" name="pluma_prefs_manager_set_enable_search_highlighting ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-set-enable-search-highlighting"/>
+    <keyword type="function" name="pluma_prefs_manager_enable_search_highlighting_can_set ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-enable-search-highlighting-can-set"/>
+    <keyword type="function" name="pluma_prefs_manager_get_lockdown ()" link="pluma-pluma-prefs-manager.html#pluma-prefs-manager-get-lockdown"/>
+    <keyword type="macro" name="GPM_USE_DEFAULT_FONT" link="pluma-pluma-prefs-manager.html#GPM-USE-DEFAULT-FONT:CAPS"/>
+    <keyword type="macro" name="GPM_EDITOR_FONT" link="pluma-pluma-prefs-manager.html#GPM-EDITOR-FONT:CAPS"/>
+    <keyword type="macro" name="GPM_CREATE_BACKUP_COPY" link="pluma-pluma-prefs-manager.html#GPM-CREATE-BACKUP-COPY:CAPS"/>
+    <keyword type="macro" name="GPM_AUTO_SAVE" link="pluma-pluma-prefs-manager.html#GPM-AUTO-SAVE:CAPS"/>
+    <keyword type="macro" name="GPM_AUTO_SAVE_INTERVAL" link="pluma-pluma-prefs-manager.html#GPM-AUTO-SAVE-INTERVAL:CAPS"/>
+    <keyword type="macro" name="GPM_UNDO_ACTIONS_LIMIT" link="pluma-pluma-prefs-manager.html#GPM-UNDO-ACTIONS-LIMIT:CAPS"/>
+    <keyword type="macro" name="GPM_WRAP_MODE" link="pluma-pluma-prefs-manager.html#GPM-WRAP-MODE:CAPS"/>
+    <keyword type="macro" name="GPM_TABS_SIZE" link="pluma-pluma-prefs-manager.html#GPM-TABS-SIZE:CAPS"/>
+    <keyword type="macro" name="GPM_INSERT_SPACES" link="pluma-pluma-prefs-manager.html#GPM-INSERT-SPACES:CAPS"/>
+    <keyword type="macro" name="GPM_AUTO_INDENT" link="pluma-pluma-prefs-manager.html#GPM-AUTO-INDENT:CAPS"/>
+    <keyword type="macro" name="GPM_DISPLAY_LINE_NUMBERS" link="pluma-pluma-prefs-manager.html#GPM-DISPLAY-LINE-NUMBERS:CAPS"/>
+    <keyword type="macro" name="GPM_HIGHLIGHT_CURRENT_LINE" link="pluma-pluma-prefs-manager.html#GPM-HIGHLIGHT-CURRENT-LINE:CAPS"/>
+    <keyword type="macro" name="GPM_BRACKET_MATCHING" link="pluma-pluma-prefs-manager.html#GPM-BRACKET-MATCHING:CAPS"/>
+    <keyword type="macro" name="GPM_DISPLAY_RIGHT_MARGIN" link="pluma-pluma-prefs-manager.html#GPM-DISPLAY-RIGHT-MARGIN:CAPS"/>
+    <keyword type="macro" name="GPM_RIGHT_MARGIN_POSITION" link="pluma-pluma-prefs-manager.html#GPM-RIGHT-MARGIN-POSITION:CAPS"/>
+    <keyword type="macro" name="GPM_RESTORE_CURSOR_POSITION" link="pluma-pluma-prefs-manager.html#GPM-RESTORE-CURSOR-POSITION:CAPS"/>
+    <keyword type="macro" name="GPM_SEARCH_HIGHLIGHTING_ENABLE" link="pluma-pluma-prefs-manager.html#GPM-SEARCH-HIGHLIGHTING-ENABLE:CAPS"/>
+    <keyword type="macro" name="GPM_TOOLBAR_VISIBLE" link="pluma-pluma-prefs-manager.html#GPM-TOOLBAR-VISIBLE:CAPS"/>
+    <keyword type="macro" name="GPM_TOOLBAR_BUTTONS_STYLE" link="pluma-pluma-prefs-manager.html#GPM-TOOLBAR-BUTTONS-STYLE:CAPS"/>
+    <keyword type="macro" name="GPM_STATUSBAR_VISIBLE" link="pluma-pluma-prefs-manager.html#GPM-STATUSBAR-VISIBLE:CAPS"/>
+    <keyword type="macro" name="GPM_SIDE_PANE_VISIBLE" link="pluma-pluma-prefs-manager.html#GPM-SIDE-PANE-VISIBLE:CAPS"/>
+    <keyword type="macro" name="GPM_BOTTOM_PANEL_VISIBLE" link="pluma-pluma-prefs-manager.html#GPM-BOTTOM-PANEL-VISIBLE:CAPS"/>
+    <keyword type="macro" name="GPM_MAX_RECENTS" link="pluma-pluma-prefs-manager.html#GPM-MAX-RECENTS:CAPS"/>
+    <keyword type="macro" name="GPM_PRINT_SYNTAX" link="pluma-pluma-prefs-manager.html#GPM-PRINT-SYNTAX:CAPS"/>
+    <keyword type="macro" name="GPM_PRINT_HEADER" link="pluma-pluma-prefs-manager.html#GPM-PRINT-HEADER:CAPS"/>
+    <keyword type="macro" name="GPM_PRINT_WRAP_MODE" link="pluma-pluma-prefs-manager.html#GPM-PRINT-WRAP-MODE:CAPS"/>
+    <keyword type="macro" name="GPM_PRINT_LINE_NUMBERS" link="pluma-pluma-prefs-manager.html#GPM-PRINT-LINE-NUMBERS:CAPS"/>
+    <keyword type="macro" name="GPM_PRINT_FONT_BODY" link="pluma-pluma-prefs-manager.html#GPM-PRINT-FONT-BODY:CAPS"/>
+    <keyword type="macro" name="GPM_PRINT_FONT_HEADER" link="pluma-pluma-prefs-manager.html#GPM-PRINT-FONT-HEADER:CAPS"/>
+    <keyword type="macro" name="GPM_PRINT_FONT_NUMBERS" link="pluma-pluma-prefs-manager.html#GPM-PRINT-FONT-NUMBERS:CAPS"/>
+    <keyword type="macro" name="GPM_AUTO_DETECTED_ENCODINGS" link="pluma-pluma-prefs-manager.html#GPM-AUTO-DETECTED-ENCODINGS:CAPS"/>
+    <keyword type="macro" name="GPM_SHOWN_IN_MENU_ENCODINGS" link="pluma-pluma-prefs-manager.html#GPM-SHOWN-IN-MENU-ENCODINGS:CAPS"/>
+    <keyword type="macro" name="GPM_SYNTAX_HL_ENABLE" link="pluma-pluma-prefs-manager.html#GPM-SYNTAX-HL-ENABLE:CAPS"/>
+    <keyword type="macro" name="GPM_WRITABLE_VFS_SCHEMES" link="pluma-pluma-prefs-manager.html#GPM-WRITABLE-VFS-SCHEMES:CAPS"/>
+    <keyword type="macro" name="GPM_LOCKDOWN_COMMAND_LINE" link="pluma-pluma-prefs-manager.html#GPM-LOCKDOWN-COMMAND-LINE:CAPS"/>
+    <keyword type="macro" name="GPM_LOCKDOWN_PRINTING" link="pluma-pluma-prefs-manager.html#GPM-LOCKDOWN-PRINTING:CAPS"/>
+    <keyword type="macro" name="GPM_LOCKDOWN_PRINT_SETUP" link="pluma-pluma-prefs-manager.html#GPM-LOCKDOWN-PRINT-SETUP:CAPS"/>
+    <keyword type="macro" name="GPM_LOCKDOWN_SAVE_TO_DISK" link="pluma-pluma-prefs-manager.html#GPM-LOCKDOWN-SAVE-TO-DISK:CAPS"/>
+    <keyword type="macro" name="GPM_DEFAULT_AUTO_SAVE_INTERVAL" link="pluma-pluma-prefs-manager.html#GPM-DEFAULT-AUTO-SAVE-INTERVAL:CAPS"/>
+    <keyword type="macro" name="GPM_DEFAULT_MAX_RECENTS" link="pluma-pluma-prefs-manager.html#GPM-DEFAULT-MAX-RECENTS:CAPS"/>
+    <keyword type="enum" name="enum PlumaToolbarSetting" link="pluma-pluma-prefs-manager.html#PlumaToolbarSetting"/>
+    <keyword type="macro" name="GBOOLEAN_TO_POINTER()" link="pluma-pluma-utils.html#GBOOLEAN-TO-POINTER:CAPS"/>
+    <keyword type="macro" name="GPOINTER_TO_BOOLEAN()" link="pluma-pluma-utils.html#GPOINTER-TO-BOOLEAN:CAPS"/>
+    <keyword type="macro" name="IS_VALID_BOOLEAN()" link="pluma-pluma-utils.html#IS-VALID-BOOLEAN:CAPS"/>
+    <keyword type="function" name="pluma_utils_uri_has_writable_scheme ()" link="pluma-pluma-utils.html#pluma-utils-uri-has-writable-scheme"/>
+    <keyword type="function" name="pluma_utils_uri_has_file_scheme ()" link="pluma-pluma-utils.html#pluma-utils-uri-has-file-scheme"/>
+    <keyword type="function" name="pluma_utils_menu_position_under_widget ()" link="pluma-pluma-utils.html#pluma-utils-menu-position-under-widget"/>
+    <keyword type="function" name="pluma_utils_menu_position_under_tree_view ()" link="pluma-pluma-utils.html#pluma-utils-menu-position-under-tree-view"/>
+    <keyword type="function" name="pluma_gtk_button_new_with_stock_icon ()" link="pluma-pluma-utils.html#pluma-gtk-button-new-with-stock-icon"/>
+    <keyword type="function" name="pluma_dialog_add_button ()" link="pluma-pluma-utils.html#pluma-dialog-add-button"/>
+    <keyword type="function" name="pluma_utils_escape_underscores ()" link="pluma-pluma-utils.html#pluma-utils-escape-underscores"/>
+    <keyword type="function" name="pluma_utils_str_middle_truncate ()" link="pluma-pluma-utils.html#pluma-utils-str-middle-truncate"/>
+    <keyword type="function" name="g_utf8_caselessnmatch ()" link="pluma-pluma-utils.html#g-utf8-caselessnmatch"/>
+    <keyword type="function" name="pluma_utils_set_atk_name_description ()" link="pluma-pluma-utils.html#pluma-utils-set-atk-name-description"/>
+    <keyword type="function" name="pluma_utils_set_atk_relation ()" link="pluma-pluma-utils.html#pluma-utils-set-atk-relation"/>
+    <keyword type="function" name="pluma_utils_uri_exists ()" link="pluma-pluma-utils.html#pluma-utils-uri-exists"/>
+    <keyword type="function" name="pluma_utils_escape_search_text ()" link="pluma-pluma-utils.html#pluma-utils-escape-search-text"/>
+    <keyword type="function" name="pluma_utils_unescape_search_text ()" link="pluma-pluma-utils.html#pluma-utils-unescape-search-text"/>
+    <keyword type="function" name="pluma_warning ()" link="pluma-pluma-utils.html#pluma-warning"/>
+    <keyword type="function" name="pluma_utils_make_valid_utf8 ()" link="pluma-pluma-utils.html#pluma-utils-make-valid-utf8"/>
+    <keyword type="function" name="pluma_utils_uri_get_dirname ()" link="pluma-pluma-utils.html#pluma-utils-uri-get-dirname"/>
+    <keyword type="function" name="pluma_utils_replace_home_dir_with_tilde ()" link="pluma-pluma-utils.html#pluma-utils-replace-home-dir-with-tilde"/>
+    <keyword type="function" name="pluma_utils_get_current_workspace ()" link="pluma-pluma-utils.html#pluma-utils-get-current-workspace"/>
+    <keyword type="function" name="pluma_utils_get_window_workspace ()" link="pluma-pluma-utils.html#pluma-utils-get-window-workspace"/>
+    <keyword type="function" name="pluma_utils_activate_url ()" link="pluma-pluma-utils.html#pluma-utils-activate-url"/>
+    <keyword type="function" name="pluma_utils_is_valid_uri ()" link="pluma-pluma-utils.html#pluma-utils-is-valid-uri"/>
+    <keyword type="function" name="pluma_utils_make_canonical_uri_from_shell_arg ()" link="pluma-pluma-utils.html#pluma-utils-make-canonical-uri-from-shell-arg"/>
+  </functions>
+</book>

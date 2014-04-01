@@ -1,0 +1,4982 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# alexandros_ <alexandros.venn@gmail.com>, 2014
+# frerisp <petrosfreris@gmail.com>, 2013
+# thunk <thunk77@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-04 12:56+0100\n"
+"PO-Revision-Date: 2014-02-18 13:35+0000\n"
+"Last-Translator: thunk <thunk77@gmail.com>\n"
+"Language-Team: Greek (http://www.transifex.com/projects/p/MATE/language/el/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:1
+msgid "Use Default Font"
+msgstr "Χρήση προεπιλεγμένης γραμματοσειράς"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:2
+msgid ""
+"Whether to use the system's default fixed width font for editing text "
+"instead of a font specific to pluma. If this option is turned off, then the "
+"font named in the \"Editor Font\" option will be used instead of the system "
+"font."
+msgstr "Αν θα χρησιμοποιούνται οι προεπιλεγμένη γραμματοσειρά σταθερού πλάτους του συστήματος για την επεξεργασία κειμένου αντί για μια συγκεκριμένη γραμματοσειρά. Αν αυτή η επιλογή απενεργοποιηθεί τότε θα χρησιμοποιηθεί η γραμματοσειρά που ορίζεται στην επιλογή \"Γραμματοσειρά Επεξεργαστή\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:3
+msgid "Editor Font"
+msgstr "Γραμματοσειρά επεξεργαστή"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:4
+msgid ""
+"A custom font that will be used for the editing area. This will only take "
+"effect if the \"Use Default Font\" option is turned off."
+msgstr "Μια προσαρμοσμένη γραμματοσειρά για χρήση στην περιοχή επεξεργασίας. Αυτό πραγματοποιείται μόνο όταν είναι απενεργοποιημένη η \"Χρήση προεπιλεγμένης γραμματοσειράς\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:5
+msgid "Style Scheme"
+msgstr "Στυλ σχήματος"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:6
+msgid "The ID of a GtkSourceView Style Scheme used to color the text."
+msgstr "Το ID ενός Σχήματος στυλ GtkSourceView που χρησιμοποιείται για χρωματίζει το κείμενο."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:7
+msgid "Create Backup Copies"
+msgstr "Δημιουργία αντιγράφων ασφαλείας"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:8
+msgid ""
+"Whether pluma should create backup copies for the files it saves. You can "
+"set the backup file extension with the \"Backup Copy Extension\" option."
+msgstr "Αν η εφαρμογή θα δημιουργεί αντίγραφα ασφαλείας για τα αρχεία που αποθηκεύει. Μπορείτε να ορίσετε την επέκταση των αρχείων ασφαλείας στην επιλογή \"Επέκταση Αρχείου Ασφαλείας\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:9
+msgid "Autosave"
+msgstr "Αυτόματη αποθήκευση"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:10
+msgid ""
+"Whether pluma should automatically save modified files after a time "
+"interval. You can set the time interval with the \"Autosave Interval\" "
+"option."
+msgstr "Κατά πόσο το pluma θα αποθηκεύει αυτόματα τα τροποποιημένα αρχεία μετά από κάποιο χρονικό διάστημα. Μπορείτε να ορίσετε αυτό το διάστημα στην επιλογή «Μεσοδιάστημα αυτόματης αποθήκευσης»."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:11
+msgid "Autosave Interval"
+msgstr "Μεσοδιάστημα αυτόματης αποθήκευσης"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:12
+msgid ""
+"Number of minutes after which pluma will automatically save modified files. "
+"This will only take effect if the \"Autosave\" option is turned on."
+msgstr "Αριθμός λεπτών που θα μεσολαβεί μέχρι το pluma να αποθηκεύει αυτόματα τροποποιημένα αρχεία. Αυτό πραγματοποιείται μόνο όταν είναι ενεργοποιημένη η «Αυτόματη αποθήκευση»."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:13
+msgid "Writable VFS schemes"
+msgstr "Εγγράψιμα σχήματα VFS"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:14
+msgid ""
+"List of VFS schemes pluma supports in write mode. The 'file' scheme is "
+"writable by default."
+msgstr "Μια λίστα από σχήματα VFS που υποστηρίζει το pluma σε λειτουργία εγγραφής. Το σχήμα 'αρχείο' είναι προεπιλεγμένα εγγράψιμο."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:15
+msgid "Maximum Number of Undo Actions"
+msgstr "Μέγιστος αριθμός ενεργειών αναίρεσης"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:16
+msgid ""
+"Maximum number of actions that pluma will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions."
+msgstr "Μέγιστος αριθμός ενεργειών για αναίρεση ή ακύρωση αναίρεσης. Χρησιμοποιήστε το \"-1\" για απεριόριστο αριθμό ενεργειών."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:17
+msgid "Line Wrapping Mode"
+msgstr "Κατάσταση αναδίπλωσης γραμμών"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:18
+msgid ""
+"Specifies how to wrap long lines in the editing area. Use \"GTK_WRAP_NONE\" "
+"for no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
+"\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note that"
+" the values are case-sensitive, so make sure they appear exactly as "
+"mentioned here."
+msgstr "Καθορίζει τον τρόπο αναδίπλωσης των γραμμών στην περιοχή επεξεργασίας. Χρησιμοποιήστε το \"GTK_WRAP_NONE\" για μη αναδίπλωση, το \"GTK_WRAP_WORD\"  στα όρια λέξεων και \"GTK_WRAP_CHAR\" για αναδίπλωση σε όρια ανεξάρτητων χαρακτήρων. Σημειώστε ότι στις τιμές υπάρχει διάκριση πεζών-κεφαλαίων και πρέπει να εμφανιστούν όπως ακριβώς αναφέρονται εδώ."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:19
+msgid "Tab Size"
+msgstr "Μέγεθος στηλοθέτη"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:20
+msgid ""
+"Specifies the number of spaces that should be displayed instead of Tab "
+"characters."
+msgstr "Καθορίζει τον αριθμό των διαστημάτων που θα πρέπει να εμφανίζονται αντί για χαρακτήρες Tab."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:21
+msgid "Insert spaces"
+msgstr "Εισαγωγή διαστημάτων"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:22
+msgid "Whether pluma should insert spaces instead of tabs."
+msgstr "Αν το pluma θα εισάγει διαστήματα αντί για στηλοθέτες."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:23
+msgid "Automatic indent"
+msgstr "Αυτόματη εσοχή"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:24
+msgid "Whether pluma should enable automatic indentation."
+msgstr "Αν η εφαρμογή θα ενεργοποιεί αυτόματη εσοχή."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:25
+msgid "Display Line Numbers"
+msgstr "Προβολή αριθμών γραμμής"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:26
+msgid "Whether pluma should display line numbers in the editing area."
+msgstr "Αν η εφαρμογή θα προβάλλει τους αριθμούς γραμμών στην περιοχή επεξεργασίας."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:27
+msgid "Highlight Current Line"
+msgstr "Επισήμανση τρέχουσας γραμμής"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:28
+msgid "Whether pluma should highlight the current line."
+msgstr "Αν η εφαρμογή θα επισημαίνει την τρέχουσα γραμμή."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:29
+msgid "Highlight Matching Bracket"
+msgstr "Επισήμανση αγκύλης ταιριάσματος"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:30
+msgid "Whether pluma should highlight the bracket matching the selected one."
+msgstr "Αν η εφαρμογή θα επισημαίνει την αγκύλη που ταιριάζει με την επιλεγμένη."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:31
+msgid "Display Right Margin"
+msgstr "Προβολή δεξιού περιθωρίου"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:32
+msgid "Whether pluma should display the right margin in the editing area."
+msgstr "Αν η εφαρμογή θα προβάλλει το δεξιό περιθώριο στην περιοχή επεξεργασίας."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:33
+msgid "Right Margin Position"
+msgstr "Θέση δεξιού περιθωρίου"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:34
+msgid "Specifies the position of the right margin."
+msgstr "Καθορίζει την θέση του δεξιού περιθωρίου."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:35
+msgid "Smart Home End"
+msgstr "Έξυπνα Home End"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:36
+msgid ""
+"Specifies how the cursor moves when the HOME and END keys are pressed. Use "
+"\"DISABLED\" to always move at the start/end of the line, \"AFTER\" to move "
+"to the start/end of the line the first time the keys are pressed and to the "
+"start/end of the text ignoring whitespaces the second time the keys are "
+"pressed, \"BEFORE\" to move to the start/end of the text before moving to "
+"the start/end of the line and \"ALWAYS\" to always move to the start/end of "
+"the text instead of the start/end of the line."
+msgstr "Specifies how the cursor moves when the HOME and END keys are pressed. Use \"DISABLED\" to always move at the start/end of the line, \"AFTER\" to move to the start/end of the line the first time the keys are pressed and to the start/end of the text ignoring whitespaces the second time the keys are pressed, \"BEFORE\" to move to the start/end of the text before moving to the start/end of the line and \"ALWAYS\" to always move to the start/end of the text instead of the start/end of the line."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:37
+msgid "Restore Previous Cursor Position"
+msgstr "Επαναφορά προηγούμενης θέσης δρομέα"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:38
+msgid ""
+"Whether pluma should restore the previous cursor position when a file is "
+"loaded."
+msgstr "Αν το pluma θα επαναφέρει τη προηγούμενη θέση του δρομέα κατά τη φόρτωση ενός αρχείου."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:39
+msgid "Enable Search Highlighting"
+msgstr "Ενεργοποίηση επισήμανσης αναζήτησης"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:40
+msgid ""
+"Whether pluma should highlight all the occurrences of the searched text."
+msgstr "Αν η εφαρμογή θα επισημαίνει όλες τις επαναλήψεις του κειμένου αναζήτησης."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:41
+msgid "Enable Syntax Highlighting"
+msgstr "Ενεργοποίηση επισήμανσης σύνταξης"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:42
+msgid "Whether pluma should enable syntax highlighting."
+msgstr "Αν η εφαρμογή θα ενεργοποιεί την επισήμανση σύνταξης."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:43
+msgid "Toolbar is Visible"
+msgstr "Η εργαλειοθήκη είναι ορατή"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:44
+msgid "Whether the toolbar should be visible in editing windows."
+msgstr "Αν η εργαλειοθήκη θα είναι ορατή στα παράθυρα επεξεργασίας."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:45
+msgid "Toolbar Buttons Style"
+msgstr "Στυλ κουμπιών εργαλειοθήκης"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:46
+msgid ""
+"Style for the toolbar buttons. Possible values are \"PLUMA_TOOLBAR_SYSTEM\" "
+"to use the system's default style, \"PLUMA_TOOLBAR_ICONS\" to display icons "
+"only, \"PLUMA_TOOLBAR_ICONS_AND_TEXT\" to display both icons and text, and "
+"\"PLUMA_TOOLBAR_ICONS_BOTH_HORIZ\" to display prioritized text beside icons."
+" Note that the values are case-sensitive, so make sure they appear exactly "
+"as mentioned here."
+msgstr "Στυλ για κουμπιά εργαλειοθήκης. Οι πιθανές τιμές είναι \"PLUMA_TOOLBAR_SYSTEM\"  για χρήση του προεπιλεγμένου στυλ του συστήματος, \"PLUMA_TOOLBAR_ICONS\" για την προβολή μόνο των εικονιδίων, και \"PLUMA_TOOLBAR_ICONS_AND_TEXT\" για προβολή εικονιδίων και κειμένου και \"PLUMA_TOOLBAR_ICONS_BOTH_HORIZ\" για προβολή κειμένου προτεραιότητας δίπλα σε εικόνες. Σημειώστε ότι στις τιμές υπάρχει διάκριση πεζών-κεφαλαίων και πρέπει να εμφανιστούν όπως ακριβώς αναφέρονται εδώ."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:47
+msgid "Status Bar is Visible"
+msgstr "Η γραμμή κατάστασης είναι ορατή"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:48
+msgid ""
+"Whether the status bar at the bottom of editing windows should be visible."
+msgstr "Αν η γραμμή κατάστασης στο κάτω μέρος του ενεργού παραθύρου θα είναι ορατή."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:49
+msgid "Side Pane is Visible"
+msgstr "Η πλευρική εργαλειοθήκη είναι ορατή"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:50
+msgid ""
+"Whether the side pane at the left of editing windows should be visible."
+msgstr "Αν η πλευρική εργαλειοθήκη στα αριστερά του παραθύρων επεξεργασίας θα είναι ορατή."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:51
+msgid "Bottom Panel is Visible"
+msgstr "Η κάτω εργαλειοθήκη είναι ορατή"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:52
+msgid ""
+"Whether the bottom panel at the bottom of editing windows should be visible."
+msgstr "Αν η κάτω εργαλειοθήκη στο κάτω μέρος του ενεργού παραθύρου θα είναι ορατή."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:53
+msgid "Maximum Recent Files"
+msgstr "Μέγιστος αριθμός πρόσφατων αρχείων"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:54
+msgid ""
+"Specifies the maximum number of recently opened files that will be displayed"
+" in the \"Recent Files\" submenu."
+msgstr "Καθορίζει το μέγιστο αριθμό των πρόσφατα ανοιγμένων εγγράφων που θα εμφανίζονται στο υπομενού \"Πρόσφατα Έγγραφα\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:55
+msgid "Print Syntax Highlighting"
+msgstr "Εκτύπωση επισήμανσης σύνταξης"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:56
+msgid ""
+"Whether pluma should print syntax highlighting when printing documents."
+msgstr "Αν η εφαρμογή θα εκτυπώνει την επισήμανση σύνταξης κατά την εκτύπωση."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:57
+msgid "Print Header"
+msgstr "Εκτύπωση κεφαλίδας"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:58
+msgid ""
+"Whether pluma should include a document header when printing documents."
+msgstr "Αν η εφαρμογή θα περιλαμβάνει μια κεφαλίδα εγγράφου κατά την εκτύπωση."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:59
+msgid "Printing Line Wrapping Mode"
+msgstr "Κατάσταση αναδίπλωσης γραμμής εκτύπωσης"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:60
+msgid ""
+"Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for no "
+"wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
+"\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note that"
+" the values are case-sensitive, so make sure they appear exactly as "
+"mentioned here."
+msgstr "Καθορίζει τον τρόπο αναδίπλωσης των γραμμών για εκτύπωση. Χρησιμοποιήστε το \"GTK_WRAP_NONE\" για μη αναδίπλωση, το \"GTK_WRAP_WORD\" στα όρια λέξεων και \"GTK_WRAP_CHAR\"  για αναδίπλωση σε όρια ανεξάρτητων χαρακτήρων. Σημειώστε ότι στις τιμές υπάρχει διάκριση πεζών-κεφαλαίων και πρέπει να εμφανιστούν όπως ακριβώς αναφέρονται εδώ."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:61
+msgid "Print Line Numbers"
+msgstr "Εκτύπωση αριθμών γραμμής"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:62
+msgid ""
+"If this value is 0, then no line numbers will be inserted when printing a "
+"document. Otherwise, pluma will print line numbers every such number of "
+"lines."
+msgstr "Αν η τιμή είναι 0, δεν θα εισαχθούν αριθμοί γραμμών κατά την εκτύπωση ενός εγγράφου. Στην αντίθετη περίπτωση, το pluma θα εκτυπώνει αριθμούς γραμμών για κάθε τέτοια γραμμή."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:63
+msgid "Body Font for Printing"
+msgstr "Χρώμα κυρίως κειμένου για εκτύπωση"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:64
+msgid ""
+"Specifies the font to use for a document's body when printing documents."
+msgstr "Καθορίζει τη χρήση της γραμματοσειράς στο σώμα του εγγράφου κατά την εκτύπωση."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:65
+msgid "Header Font for Printing"
+msgstr "Γραμματοσειρά κεφαλίδας για εκτύπωση"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:66
+msgid ""
+"Specifies the font to use for page headers when printing a document. This "
+"will only take effect if the \"Print Header\" option is turned on."
+msgstr "Καθορίζει τη χρήσης της γραμματοσειράς στις κεφαλίδες σελίδας κατά την εκτύπωση. Αυτό πραγματοποιείται μόνο αν είναι ενεργοποιημένη η \"Εκτύπωση Κεφαλίδας\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:67
+msgid "Line Number Font for Printing"
+msgstr "Γραμματοσειρά αριθμού γραμμής για εκτύπωση"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:68
+msgid ""
+"Specifies the font to use for line numbers when printing. This will only "
+"take effect if the \"Print Line Numbers\" option is non-zero."
+msgstr "Καθορίζει τον τρόπο χρήσης της γραμματοσειράς στους αριθμούς γραμμών κατά την εκτύπωση. Αυτό πραγματοποιείται μόνο αν δεν είναι μηδενική η τιμή στην \"Εκτύπωση Αριθμών Γραμμών\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:69
+msgid "Automatically Detected Encodings"
+msgstr "Αυτόματα εντοπιζόμενες κωδικοποιήσεις"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:70
+msgid ""
+"Sorted list of encodings used by pluma for automatically detecting the "
+"encoding of a file. \"CURRENT\" represents the current locale encoding. Only"
+" recognized encodings are used."
+msgstr "Ταξινομημένη λίστα από κωδικοποιήσεις που χρησιμοποιεί το pluma για την αυτόματη αναγνώριση της κωδικοποίησης ενός αρχείου. «CURRENT» είναι η τρέχουσα κωδικοποίηση του locale. Χρησιμοποιούνται μόνο αναγνωρισμένες κωδικοποιήσεις."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:71
+msgid "Encodings shown in menu"
+msgstr "Κωδικοποιήσεις που εμφανίζονται στο μενού"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:72
+msgid ""
+"List of encodings shown in the Character Encoding menu in open/save file "
+"selector. Only recognized encodings are used."
+msgstr "Μια λίστα από κωδικοποιήσεις που εμφανίζονται στο μενού Κωδικοποίησης Χαρακτήρων στον επιλογέα άνοιγμα/αποθήκευση. Μόνο αναγνωρισμένες κωδικοποιήσεις χρησιμοποιούνται."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:73
+msgid "History for \"search for\" entries"
+msgstr "Ιστορικό για καταχωρήσεις \"Εύρεση του\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:74
+msgid "List of entries in \"search for\" textbox."
+msgstr "Λίστα των καταχωρήσεων με κείμενο \"Εύρεση\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:75
+msgid "History for \"replace with\" entries"
+msgstr "Ιστορικό για καταχωρήσεις \"Αντικατάσταση με\""
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:76
+msgid "List of entries in \"replace with\" textbox."
+msgstr "Λίστα των καταχωρήσεων με \"Αντικατάσταση με\" κείμενο."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:77
+msgid "Active plugins"
+msgstr "Ενεργές πρόσθετες λειτουργίες"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:78
+msgid ""
+"List of active plugins. It contains the \"Location\" of the active plugins. "
+"See the .pluma-plugin file for obtaining the \"Location\" of a given plugin."
+msgstr "Λίστα των ενεργών πρόσθετων λειτουργιών. Περιέχει την \"Τοποθεσία\" των ενεργών πρόσθετων λειτουργιών. Δείτε το αρχείο .pluma-plugin για να μάθετε την \"Τοποθεσία\" μιας πρόσθετης λειτουργίας."
+
+#: ../data/pluma.desktop.in.in.h:1
+msgid "Pluma"
+msgstr "Pluma"
+
+#: ../data/pluma.desktop.in.in.h:2 ../pluma/pluma-print-job.c:769
+msgid "Text Editor"
+msgstr "Επεξεργαστής κειμένου"
+
+#: ../data/pluma.desktop.in.in.h:3
+msgid "Edit text files"
+msgstr "Επεξεργασία αρχείων κειμένου"
+
+#: ../data/pluma.desktop.in.in.h:4
+msgid "pluma Text Editor"
+msgstr "Επεξεργαστής κειμένου pluma"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:140
+msgid "Log Out _without Saving"
+msgstr "Κλείσιμο _χωρίς αποθήκευση"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:144
+msgid "_Cancel Logout"
+msgstr "Α_κύρωση αποσύνδεσης"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:151
+msgid "Close _without Saving"
+msgstr "Κλείσιμο _χωρίς αποθήκευση"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:214
+msgid "Question"
+msgstr "Ερώτηση"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:414
+#, c-format
+msgid ""
+"If you don't save, changes from the last %ld second will be permanently "
+"lost."
+msgid_plural ""
+"If you don't save, changes from the last %ld seconds will be permanently "
+"lost."
+msgstr[0] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο το τελευταίο %ld δευτερόλεπτο θα χαθούν οριστικά."
+msgstr[1] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο τα τελευταία %ld δευτερόλεπτα θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:423
+msgid ""
+"If you don't save, changes from the last minute will be permanently lost."
+msgstr "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο το τελευταίο λεπτό θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:429
+#, c-format
+msgid ""
+"If you don't save, changes from the last minute and %ld second will be "
+"permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last minute and %ld seconds will be "
+"permanently lost."
+msgstr[0] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο το τελευταίο λεπτό και %ld δευτερόλεπτο θα χαθούν οριστικά."
+msgstr[1] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο το τελευταίο λεπτό και %ld δευτερόλεπτα θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:439
+#, c-format
+msgid ""
+"If you don't save, changes from the last %ld minute will be permanently "
+"lost."
+msgid_plural ""
+"If you don't save, changes from the last %ld minutes will be permanently "
+"lost."
+msgstr[0] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο το τελευταίο %ld λεπτό θα χαθούν οριστικά."
+msgstr[1] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο τα τελευταία %ld λεπτά θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:454
+msgid ""
+"If you don't save, changes from the last hour will be permanently lost."
+msgstr "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο την τελευταία ώρα θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:460
+#, c-format
+msgid ""
+"If you don't save, changes from the last hour and %d minute will be "
+"permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last hour and %d minutes will be "
+"permanently lost."
+msgstr[0] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο την τελευταία ώρα και %d λεπτό θα χαθούν οριστικά."
+msgstr[1] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο την τελευταία ώρα και %d λεπτά θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:475
+#, c-format
+msgid ""
+"If you don't save, changes from the last %d hour will be permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last %d hours will be permanently lost."
+msgstr[0] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο την τελευταία %d ώρα θα χαθούν οριστικά."
+msgstr[1] "Αν δεν αποθηκεύσετε, οι αλλαγές που έγιναν στο έγγραφο τις τελευταίες %d ώρες θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:518
+#, c-format
+msgid "Changes to document \"%s\" will be permanently lost."
+msgstr "Οι αλλαγές στο έγγραφο \"%s\" θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:523
+#, c-format
+msgid "Save changes to document \"%s\" before closing?"
+msgstr "Αποθήκευση των αλλαγών στο έγγραφο \"%s\" πριν το κλείσιμο;"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:537
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:748
+msgid "Saving has been disabled by the system administrator."
+msgstr "Η αποθήκευση έχει απενεργοποιηθεί από το διαχειριστή συστήματος."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:703
+#, c-format
+msgid "Changes to %d document will be permanently lost."
+msgid_plural "Changes to %d documents will be permanently lost."
+msgstr[0] "Οι αλλαγές σε %d έγγραφο θα χαθούν οριστικά."
+msgstr[1] "Οι αλλαγές σε %d έγγραφα θα χαθούν οριστικά."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:709
+#, c-format
+msgid ""
+"There is %d document with unsaved changes. Save changes before closing?"
+msgid_plural ""
+"There are %d documents with unsaved changes. Save changes before closing?"
+msgstr[0] "Υπάρχει %d έγγραφο με μη αποθηκευμένες αλλαγές. Να αποθηκευτούν οι αλλαγές πριν το κλείσιμο;"
+msgstr[1] "Υπάρχουν %d έγγραφα με μη αποθηκευμένες αλλαγές. Να αποθηκευτούν οι αλλαγές πριν το κλείσιμο;"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:727
+msgid "Docum_ents with unsaved changes:"
+msgstr "Έ_γγραφα με μη-αποθηκευμένες αλλαγές:"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:729
+msgid "S_elect the documents you want to save:"
+msgstr "Επι_λέξτε τα έγγραφα που θέλετε να αποθηκεύσετε:"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:750
+msgid "If you don't save, all your changes will be permanently lost."
+msgstr "Αν δεν αποθηκεύσετε, όλες οι αλλαγές θα χαθούν."
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:321
+msgid "Character Encodings"
+msgstr "Κωδικοποιήσεις χαρακτήρων"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:387
+#: ../pluma/dialogs/pluma-encodings-dialog.c:448
+msgid "_Description"
+msgstr "_Περιγραφή"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:396
+#: ../pluma/dialogs/pluma-encodings-dialog.c:457
+msgid "_Encoding"
+msgstr "Κω_δικοποίηση"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:1
+msgid "Character encodings"
+msgstr "Κωδικοποιήσεις χαρακτήρων"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "Δια_θέσιμες κωδικοποιήσεις:"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "Κω_δικοποιήσεις που εμφανίζονται στο μενού:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:574
+msgid "Click on this button to select the font to be used by the editor"
+msgstr "Πατήστε αυτό το κουμπί για να επιλέξετε τη γραμματοσειρά που θα χρησιμοποιείται από τον επεξεργαστή"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:584
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "_Χρήση της προκαθορισμένης σταθερού πλάτους γραμματοσειράς συστήματος (%s)"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:787
+msgid "The selected color scheme cannot be installed."
+msgstr "Ρο επιλεγμένο σχήμα χρώματος δεν μπορεί να μετακινηθεί στα απορρίμματα."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:812
+msgid "Add Scheme"
+msgstr "Προσθήκη σχήματος"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:819
+msgid "A_dd Scheme"
+msgstr "Προ_σθήκη σχήματος"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:827
+msgid "Color Scheme Files"
+msgstr "Αρχεία σχήματος χρώματος"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:834
+#: ../pluma/pluma-file-chooser-dialog.c:55
+msgid "All Files"
+msgstr "Όλα τα Αρχεία"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:879
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "Αδυναμία απομάκρυνσης σχήματος χρώματος \"%s\"."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:1090
+msgid "pluma Preferences"
+msgstr "Προτιμήσεις pluma"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:1
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:2
+#: ../pluma/pluma-print-preferences.ui.h:9
+msgid "Text Wrapping"
+msgstr "Αναδίπλωση κειμένου"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:3
+#: ../plugins/docinfo/docinfo.ui.h:4
+#: ../plugins/externaltools/tools/tools.ui.h:21
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/time/pluma-time-dialog.ui.h:4
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:3
+msgid "    "
+msgstr "    "
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:4
+#: ../pluma/pluma-print-preferences.ui.h:10
+msgid "Enable text _wrapping"
+msgstr "Ενεργοποίηση ανα_δίπλωσης κειμένου"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:5
+#: ../pluma/pluma-print-preferences.ui.h:11
+msgid "Do not _split words over two lines"
+msgstr "Να μην _χωρίζονται λέξεις σε πάνω από δύο γραμμές"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:6
+#: ../pluma/pluma-print-preferences.ui.h:3
+msgid "Line Numbers"
+msgstr "Αριθμοί γραμμής"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:7 ../pluma/pluma-view.c:2070
+msgid "_Display line numbers"
+msgstr "_Προβολή αριθμών γραμμής"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:8
+msgid "Current Line"
+msgstr "Τρέχουσα γραμμή"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:9
+msgid "Highlight current _line"
+msgstr "Επι_σήμανση τρέχουσας γραμμής"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:10
+msgid "Right Margin"
+msgstr "Δεξιό περιθώριο"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:11
+msgid "Display right _margin"
+msgstr "Προ_βολή δεξιού περιθωρίου"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:12
+msgid "_Right margin at column:"
+msgstr "_Δεξιό περιθώριο στη στήλη:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:13
+msgid "Bracket Matching"
+msgstr "Ταίριασμα αγκυλών"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:14
+msgid "Highlight matching _bracket"
+msgstr "Επισήμανση παρέν_θεσης που ταιριάζει"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:15
+msgid "View"
+msgstr "Προβολή"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:16
+msgid "Tab Stops"
+msgstr "Η στήλη σταματάει"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:17
+msgid "_Tab width:"
+msgstr "Πλάτος _Tab:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:18
+msgid "Insert _spaces instead of tabs"
+msgstr "Εισαγωγή _διαστημάτων αντί για στηλοθέτες"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:19
+msgid "Automatic Indentation"
+msgstr "Αυτόματη εσοχή"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:20
+msgid "_Enable automatic indentation"
+msgstr "_Ενεργοποίηση αυτόματης εσοχής"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:21
+msgid "File Saving"
+msgstr "Αποθήκευση αρχείου"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:22
+msgid "Create a _backup copy of files before saving"
+msgstr "Δημιουργία α_ντιγράφου ασφαλείας πριν την αποθήκευση"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:23
+msgid "_Autosave files every"
+msgstr "Αυτόματη απο_θήκευση αρχείων κάθε"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:24
+msgid "_minutes"
+msgstr "_λεπτά"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:25
+msgid "Editor"
+msgstr "Επεξεργαστής"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:26
+msgid "Font"
+msgstr "Γραμματοσειρά"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:27
+msgid "Editor _font: "
+msgstr "Γ_ραμματοσειρά επεξεργαστή: "
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:28
+msgid "Pick the editor font"
+msgstr "Επιλογή γραμματοσειράς επεξεργαστή"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:29
+msgid "Color Scheme"
+msgstr "Χρωματικό σχήμα"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:30
+msgid "_Add..."
+msgstr "_Προσθήκη..."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:31
+msgid "Font & Colors"
+msgstr "Γραμματοσειρές & Χρώματα"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:32
+msgid "Plugins"
+msgstr "Πρόσθετες λειτουργίες"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:305
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:1 ../pluma/pluma-window.c:1530
+msgid "Replace"
+msgstr "Αντικατάσταση"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:316 ../pluma/pluma-window.c:1528
+msgid "Find"
+msgstr "Εύρεση"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:423
+msgid "Replace _All"
+msgstr "Αντικατάσταση ό_λων"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:424
+#: ../pluma/pluma-commands-file.c:577
+msgid "_Replace"
+msgstr "_Αντικατάσταση"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:2
+msgid "Replace All"
+msgstr "Αντικατάσταση όλων"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:3
+msgid "_Search for: "
+msgstr "Α_ναζήτηση για: "
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:4
+msgid "Replace _with: "
+msgstr "Αντικατάσταση _με: "
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:5
+msgid "_Match case"
+msgstr "_Διάκριση πεζών από κεφαλαία"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:6
+msgid "Match _entire word only"
+msgstr "Ταίριασμα ο_λόκληρης λέξης μόνο"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:7
+msgid "Search _backwards"
+msgstr "Αναζήτηση προς τα _πίσω"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:8
+msgid "_Wrap around"
+msgstr "Αναδίπλ_ωση γύρω"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:9
+msgid "_Parse escape sequences (e.g. \\n)"
+msgstr "_Επεξεργασία ακολουθιών διαφυγής (π.χ. \\n)"
+
+#: ../pluma/pluma.c:126
+msgid "Show the application's version"
+msgstr "Εμφάνιση του αριθμού έκδοσης της εφαρμογής"
+
+#: ../pluma/pluma.c:129
+msgid ""
+"Set the character encoding to be used to open the files listed on the "
+"command line"
+msgstr "Ορισμός της κωδικοποίησης χαρακτήρων που θα χρησιμοποιείται για το άνοιγμα αρχείων από τη γραμμή εντολών"
+
+#: ../pluma/pluma.c:129
+msgid "ENCODING"
+msgstr "ΚΩΔΙΚΟΠΟΙΗΣΗ"
+
+#: ../pluma/pluma.c:132
+msgid "Display list of possible values for the encoding option"
+msgstr "Εμφάνιση λίστα με τις πιθανές τιμές για την επιλογή κωδικοποίησης"
+
+#: ../pluma/pluma.c:135
+msgid "Create a new top-level window in an existing instance of pluma"
+msgstr "Δημιουργία νέου παραθύρου σε υπάρχουσα εκτέλεση του pluma"
+
+#: ../pluma/pluma.c:138
+msgid "Create a new document in an existing instance of pluma"
+msgstr "Δημιουργία νέου εγγράφου σε υπάρχουσα εκτέλεση του pluma"
+
+#: ../pluma/pluma.c:141
+msgid "[FILE...]"
+msgstr "[ΑΡΧΕΙΟ...]"
+
+#: ../pluma/pluma.c:196
+#, c-format
+msgid "%s: invalid encoding.\n"
+msgstr "%s: μη έγκυρη κωδικοποίηση.\n"
+
+#. Setup command line options
+#: ../pluma/pluma.c:583
+msgid "- Edit text files"
+msgstr "- Επεξεργασία αρχείων κειμένου"
+
+#: ../pluma/pluma.c:619
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr "%s\nΕκτελέστε '%s --help' για να δείτε μια πλήρη λίστα των διαθέσιμων επιλογών γραμμής εντολών.\n"
+
+#: ../pluma/pluma-commands-file.c:250
+#, c-format
+msgid "Loading file '%s'…"
+msgstr "Φόρτωση αρχείου '%s'…"
+
+#: ../pluma/pluma-commands-file.c:259
+#, c-format
+msgid "Loading %d file…"
+msgid_plural "Loading %d files…"
+msgstr[0] "Φόρτωση %d αρχείου…"
+msgstr[1] "Φόρτωση %d αρχείων…"
+
+#. Translators: "Open Files" is the title of the file chooser window
+#: ../pluma/pluma-commands-file.c:453
+msgid "Open Files"
+msgstr "Άνοιγμα αρχείων"
+
+#: ../pluma/pluma-commands-file.c:564
+#, c-format
+msgid "The file \"%s\" is read-only."
+msgstr "Το αρχείο \"%s\" είναι μόνο για ανάγνωση."
+
+#: ../pluma/pluma-commands-file.c:569
+msgid "Do you want to try to replace it with the one you are saving?"
+msgstr "Θέλετε να γίνει προσπάθεια να το αντικαταστήσετε με αυτό που αποθηκεύετε;"
+
+#: ../pluma/pluma-commands-file.c:638 ../pluma/pluma-commands-file.c:861
+#, c-format
+msgid "Saving file '%s'…"
+msgstr "Αποθήκευση αρχείου '%s'…"
+
+#: ../pluma/pluma-commands-file.c:746
+msgid "Save As…"
+msgstr "Αποθήκευση ως…"
+
+#: ../pluma/pluma-commands-file.c:1075
+#, c-format
+msgid "Reverting the document '%s'…"
+msgstr "Γίνεται επαναφορά του εγγράφου '%s'…"
+
+#: ../pluma/pluma-commands-file.c:1120
+#, c-format
+msgid "Revert unsaved changes to document '%s'?"
+msgstr "Επαναφορά μη αποθηκευμένων αλλαγών στο έγγραφο '%s';"
+
+#: ../pluma/pluma-commands-file.c:1129
+#, c-format
+msgid ""
+"Changes made to the document in the last %ld second will be permanently "
+"lost."
+msgid_plural ""
+"Changes made to the document in the last %ld seconds will be permanently "
+"lost."
+msgstr[0] "Οι αλλαγές που έγιναν στο έγγραφο το τελευταίο %ld δευτερόλεπτο θα χαθούν οριστικά."
+msgstr[1] "Οι αλλαγές που έγιναν στο έγγραφο τα τελευταία %ld δευτερόλεπτα θα χαθούν οριστικά."
+
+#: ../pluma/pluma-commands-file.c:1138
+msgid ""
+"Changes made to the document in the last minute will be permanently lost."
+msgstr "Οι αλλαγές που έγιναν στο έγγραφο το τελευταίο λεπτό θα χαθούν οριστικά."
+
+#: ../pluma/pluma-commands-file.c:1144
+#, c-format
+msgid ""
+"Changes made to the document in the last minute and %ld second will be "
+"permanently lost."
+msgid_plural ""
+"Changes made to the document in the last minute and %ld seconds will be "
+"permanently lost."
+msgstr[0] "Οι αλλαγές που έγιναν στο έγγραφο το τελευταίο λεπτό και %ld δευτερόλεπτο θα χαθούν οριστικά."
+msgstr[1] "Οι αλλαγές που έγιναν στο έγγραφο το τελευταίο λεπτό και %ld δευτερόλεπτα θα χαθούν οριστικά."
+
+#: ../pluma/pluma-commands-file.c:1154
+#, c-format
+msgid ""
+"Changes made to the document in the last %ld minute will be permanently "
+"lost."
+msgid_plural ""
+"Changes made to the document in the last %ld minutes will be permanently "
+"lost."
+msgstr[0] "Οι αλλαγές που έγιναν στο έγγραφο το τελευταίο %ld λεπτό θα χαθούν οριστικά."
+msgstr[1] "Οι αλλαγές που έγιναν στο έγγραφο τα τελευταία %ld λεπτά θα χαθούν οριστικά."
+
+#: ../pluma/pluma-commands-file.c:1169
+msgid ""
+"Changes made to the document in the last hour will be permanently lost."
+msgstr "Οι αλλαγές που έγιναν στο έγγραφο την τελευταία ώρα θα χαθούν οριστικά."
+
+#: ../pluma/pluma-commands-file.c:1175
+#, c-format
+msgid ""
+"Changes made to the document in the last hour and %d minute will be "
+"permanently lost."
+msgid_plural ""
+"Changes made to the document in the last hour and %d minutes will be "
+"permanently lost."
+msgstr[0] "Οι αλλαγές που έγιναν στο έγγραφο την τελευταία ώρα και %d λεπτό θα χαθούν οριστικά."
+msgstr[1] "Οι αλλαγές που έγιναν στο έγγραφο την τελευταία ώρα και %d λεπτά θα χαθούν οριστικά."
+
+#: ../pluma/pluma-commands-file.c:1190
+#, c-format
+msgid ""
+"Changes made to the document in the last %d hour will be permanently lost."
+msgid_plural ""
+"Changes made to the document in the last %d hours will be permanently lost."
+msgstr[0] "Οι αλλαγές που έγιναν στο έγγραφο την τελευταία %d ώρα θα χαθούν οριστικά."
+msgstr[1] "Οι αλλαγές που έγιναν στο έγγραφο τις τελευταίες %d ώρες θα χαθούν οριστικά."
+
+#: ../pluma/pluma-commands-file.c:1216
+msgid "_Revert"
+msgstr "Επανα_φορά"
+
+#: ../pluma/pluma-commands-help.c:82
+msgid "pluma is a small and lightweight text editor for the MATE Desktop"
+msgstr "Το pluma είναι ένας μικρός και ελαφρύς διορθωτής κειμένου για το MATE"
+
+#: ../pluma/pluma-commands-help.c:93
+msgid "translator-credits"
+msgstr "Ελληνική μεταφραστική ομάδα MATE\n Σπύρος Παπαδημητρίου <spapadim+@cs.cmu.edu>\n Σίμος Ξενιτέλλης <simos@gnome.org>\n Κώστας Παπαδήμας <pkst@gnome.org>\n Δημήτρης Γλέζος <dimitris@glezos.com>\n Κωνσταντίνος Κουράτορας <kouratoras@gmail.com>\n Θάνος Λευτέρης <alefteris@gmail.com>\n\nΓια περισσότερες πληροφορίες, επισκεφθείτε την σελίδα http://www.mate.gr/"
+
+#: ../pluma/pluma-commands-search.c:116
+#, c-format
+msgid "Found and replaced %d occurrence"
+msgid_plural "Found and replaced %d occurrences"
+msgstr[0] "Βρέθηκε και αντικαταστάθηκε %d επανάληψη"
+msgstr[1] "Βρέθηκαν και αντικαταστάθηκαν %d επαναλήψεις"
+
+#: ../pluma/pluma-commands-search.c:126
+msgid "Found and replaced one occurrence"
+msgstr "Βρέθηκε και αντικαταστάθηκε μια επανάληψη"
+
+#. Translators: %s is replaced by the text
+#. entered by the user in the search box
+#: ../pluma/pluma-commands-search.c:147
+#, c-format
+msgid "\"%s\" not found"
+msgstr "Το «%s» δε βρέθηκε"
+
+#: ../pluma/pluma-document.c:1080 ../pluma/pluma-document.c:1095
+#, c-format
+msgid "Unsaved Document %d"
+msgstr "Μη αποθηκευμένο έγγραφο %d"
+
+#: ../pluma/pluma-documents-panel.c:97 ../pluma/pluma-documents-panel.c:111
+#: ../pluma/pluma-window.c:2279 ../pluma/pluma-window.c:2284
+msgid "Read-Only"
+msgstr "Μόνο για ανάγνωση"
+
+#: ../pluma/pluma-documents-panel.c:791 ../pluma/pluma-window.c:3689
+msgid "Documents"
+msgstr "Έγγραφα"
+
+#: ../pluma/pluma-encodings.c:138 ../pluma/pluma-encodings.c:180
+#: ../pluma/pluma-encodings.c:182 ../pluma/pluma-encodings.c:184
+#: ../pluma/pluma-encodings.c:186 ../pluma/pluma-encodings.c:188
+#: ../pluma/pluma-encodings.c:190 ../pluma/pluma-encodings.c:192
+msgid "Unicode"
+msgstr "Unicode"
+
+#: ../pluma/pluma-encodings.c:151 ../pluma/pluma-encodings.c:175
+#: ../pluma/pluma-encodings.c:225 ../pluma/pluma-encodings.c:268
+msgid "Western"
+msgstr "Δυτική"
+
+#: ../pluma/pluma-encodings.c:153 ../pluma/pluma-encodings.c:227
+#: ../pluma/pluma-encodings.c:264
+msgid "Central European"
+msgstr "Κεντρικής Ευρώπης"
+
+#: ../pluma/pluma-encodings.c:155
+msgid "South European"
+msgstr "Νότιας Ευρώπης"
+
+#: ../pluma/pluma-encodings.c:157 ../pluma/pluma-encodings.c:171
+#: ../pluma/pluma-encodings.c:278
+msgid "Baltic"
+msgstr "Βαλτική"
+
+#: ../pluma/pluma-encodings.c:159 ../pluma/pluma-encodings.c:229
+#: ../pluma/pluma-encodings.c:242 ../pluma/pluma-encodings.c:246
+#: ../pluma/pluma-encodings.c:248 ../pluma/pluma-encodings.c:266
+msgid "Cyrillic"
+msgstr "Κυριλλική"
+
+#: ../pluma/pluma-encodings.c:161 ../pluma/pluma-encodings.c:235
+#: ../pluma/pluma-encodings.c:276
+msgid "Arabic"
+msgstr "Αραβική"
+
+#: ../pluma/pluma-encodings.c:163 ../pluma/pluma-encodings.c:270
+msgid "Greek"
+msgstr "Ελληνική"
+
+#: ../pluma/pluma-encodings.c:165
+msgid "Hebrew Visual"
+msgstr "Εβραϊκή Visual"
+
+#: ../pluma/pluma-encodings.c:167 ../pluma/pluma-encodings.c:231
+#: ../pluma/pluma-encodings.c:272
+msgid "Turkish"
+msgstr "Τουρκική"
+
+#: ../pluma/pluma-encodings.c:169
+msgid "Nordic"
+msgstr "Nordic"
+
+#: ../pluma/pluma-encodings.c:173
+msgid "Celtic"
+msgstr "Κελτική"
+
+#: ../pluma/pluma-encodings.c:177
+msgid "Romanian"
+msgstr "Ρουμανική"
+
+#: ../pluma/pluma-encodings.c:195
+msgid "Armenian"
+msgstr "Αρμενική"
+
+#: ../pluma/pluma-encodings.c:197 ../pluma/pluma-encodings.c:199
+#: ../pluma/pluma-encodings.c:213
+msgid "Chinese Traditional"
+msgstr "Παραδοσιακή Κινεζική"
+
+#: ../pluma/pluma-encodings.c:201
+msgid "Cyrillic/Russian"
+msgstr "Κυριλλική/Ρωσική"
+
+#: ../pluma/pluma-encodings.c:204 ../pluma/pluma-encodings.c:206
+#: ../pluma/pluma-encodings.c:208 ../pluma/pluma-encodings.c:238
+#: ../pluma/pluma-encodings.c:253
+msgid "Japanese"
+msgstr "Ιαπωνική"
+
+#: ../pluma/pluma-encodings.c:211 ../pluma/pluma-encodings.c:240
+#: ../pluma/pluma-encodings.c:244 ../pluma/pluma-encodings.c:259
+msgid "Korean"
+msgstr "Κορεάτικη"
+
+#: ../pluma/pluma-encodings.c:216 ../pluma/pluma-encodings.c:218
+#: ../pluma/pluma-encodings.c:220
+msgid "Chinese Simplified"
+msgstr "Απλοποιημένη Κινεζική"
+
+#: ../pluma/pluma-encodings.c:222
+msgid "Georgian"
+msgstr "Γεωργιανή"
+
+#: ../pluma/pluma-encodings.c:233 ../pluma/pluma-encodings.c:274
+msgid "Hebrew"
+msgstr "Εβραϊκή"
+
+#: ../pluma/pluma-encodings.c:250
+msgid "Cyrillic/Ukrainian"
+msgstr "Κυριλλική/Ουκρανική"
+
+#: ../pluma/pluma-encodings.c:255 ../pluma/pluma-encodings.c:261
+#: ../pluma/pluma-encodings.c:280
+msgid "Vietnamese"
+msgstr "Βιετναμέζικη"
+
+#: ../pluma/pluma-encodings.c:257
+msgid "Thai"
+msgstr "Ταϊλανδέζικη"
+
+#: ../pluma/pluma-encodings.c:431
+msgid "Unknown"
+msgstr "Άγνωστο"
+
+#: ../pluma/pluma-encodings-combo-box.c:280
+msgid "Automatically Detected"
+msgstr "Αυτόματος εντοπισμός"
+
+#: ../pluma/pluma-encodings-combo-box.c:296
+#: ../pluma/pluma-encodings-combo-box.c:311
+#, c-format
+msgid "Current Locale (%s)"
+msgstr "Τρέχον Locale (%s)"
+
+#: ../pluma/pluma-encodings-combo-box.c:361
+msgid "Add or Remove..."
+msgstr "Προσθήκη ή Αφαίρεση..."
+
+#: ../pluma/pluma-file-chooser-dialog.c:56
+msgid "All Text Files"
+msgstr "Όλα τα αρχεία κειμένου"
+
+#: ../pluma/pluma-file-chooser-dialog.c:84
+msgid "C_haracter Encoding:"
+msgstr "Κωδικοποίηση χαρακτήρων:"
+
+#: ../pluma/pluma-file-chooser-dialog.c:149
+msgid "L_ine Ending:"
+msgstr "Τέ_λος γραμμής:"
+
+#: ../pluma/pluma-file-chooser-dialog.c:168
+msgid "Unix/Linux"
+msgstr "Unix/Linux"
+
+#: ../pluma/pluma-file-chooser-dialog.c:174
+msgid "Mac OS Classic"
+msgstr "Mac OS Classic"
+
+#: ../pluma/pluma-file-chooser-dialog.c:180
+msgid "Windows"
+msgstr "Windows"
+
+#: ../pluma/pluma-help.c:104
+msgid "There was an error displaying the help."
+msgstr "Υπήρξε σφάλμα κατά την εμφάνιση της βοήθειας."
+
+#: ../pluma/pluma-io-error-message-area.c:204
+#: ../pluma/pluma-io-error-message-area.c:209
+#: ../pluma/pluma-io-error-message-area.c:513
+#: ../pluma/pluma-io-error-message-area.c:536
+msgid "_Retry"
+msgstr "Προσπάθεια _ξανά"
+
+#: ../pluma/pluma-io-error-message-area.c:231
+#, c-format
+msgid "Could not find the file %s."
+msgstr "Αδυναμία εύρεσης του αρχείου %s."
+
+#: ../pluma/pluma-io-error-message-area.c:233
+#: ../pluma/pluma-io-error-message-area.c:272
+#: ../pluma/pluma-io-error-message-area.c:279
+msgid "Please check that you typed the location correctly and try again."
+msgstr "Βεβαιωθείτε ότι έχετε πληκτρολογήσει σωστά την τοποθεσία και δοκιμάστε ξανά."
+
+#. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
+#: ../pluma/pluma-io-error-message-area.c:248
+#, c-format
+msgid "pluma cannot handle %s locations."
+msgstr "Το pluma δεν μπορεί να χειριστεί τοποθεσίες %s."
+
+#: ../pluma/pluma-io-error-message-area.c:254
+msgid "pluma cannot handle this location."
+msgstr "Η εφαρμογή δεν μπορεί να χειριστεί αυτή την τοποθεσία."
+
+#: ../pluma/pluma-io-error-message-area.c:262
+msgid "The location of the file cannot be mounted."
+msgstr "Δεν είναι δυνατή η προσάρτηση του αρχείου."
+
+#: ../pluma/pluma-io-error-message-area.c:266
+msgid "The location of the file cannot be accessed because it is not mounted."
+msgstr "Η τοποθεσία του αρχείου δε μπορεί να προσπελαστεί επειδή δεν έχει προσαρτηθεί."
+
+#: ../pluma/pluma-io-error-message-area.c:270
+#, c-format
+msgid "%s is a directory."
+msgstr "Το %s είναι ένας κατάλογος"
+
+#: ../pluma/pluma-io-error-message-area.c:277
+#, c-format
+msgid "%s is not a valid location."
+msgstr "Το %s δεν είναι έγκυρη τοποθεσία"
+
+#: ../pluma/pluma-io-error-message-area.c:307
+#, c-format
+msgid ""
+"Host %s could not be found. Please check that your proxy settings are "
+"correct and try again."
+msgstr "Δεν μπορεί να βρεθεί το σύστημα %s. Βεβαιωθείτε ότι οι ρυθμίσεις διαμεσολαβητή είναι σωστές και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:320
+#, c-format
+msgid ""
+"Hostname was invalid. Please check that you typed the location correctly and"
+" try again."
+msgstr "Το όνομα συστήματος δεν ήταν έγκυρο. Βεβαιωθείτε ότι έχετε πληκτρολογήσει σωστά την τοποθεσία και ξαναδοκιμάστε."
+
+#: ../pluma/pluma-io-error-message-area.c:328
+#, c-format
+msgid "%s is not a regular file."
+msgstr "Το %s δεν είναι κανονικό αρχείο."
+
+#: ../pluma/pluma-io-error-message-area.c:333
+msgid "Connection timed out. Please try again."
+msgstr "Η σύνδεση έληξε. Προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:356
+msgid "The file is too big."
+msgstr "Το αρχείο είναι πολύ μεγάλο."
+
+#: ../pluma/pluma-io-error-message-area.c:397
+#, c-format
+msgid "Unexpected error: %s"
+msgstr "Απρόσμενο σφάλμα: %s"
+
+#: ../pluma/pluma-io-error-message-area.c:433
+msgid "pluma cannot find the file. Perhaps it has recently been deleted."
+msgstr "Το αρχείο δεν μπορεί να βρεθεί από την εφαρμογή. Ίσως να έχει διαγραφεί πρόσφατα."
+
+#: ../pluma/pluma-io-error-message-area.c:443
+#, c-format
+msgid "Could not revert the file %s."
+msgstr "Αδυναμία επαναφοράς του αρχείου %s."
+
+#: ../pluma/pluma-io-error-message-area.c:469
+msgid "Ch_aracter Encoding:"
+msgstr "Κωδικοποίηση χ_αρακτήρων:"
+
+#. Translators: the access key chosen for this string should be
+#. different from other main menu access keys (Open, Edit, View...)
+#: ../pluma/pluma-io-error-message-area.c:520
+#: ../pluma/pluma-io-error-message-area.c:545
+#: ../pluma/pluma-io-error-message-area.c:831
+#: ../pluma/pluma-io-error-message-area.c:841
+msgid "Edit Any_way"
+msgstr "Επεξεργασία _οπωσδήποτε"
+
+#. Translators: the access key chosen for this string should be
+#. different from other main menu access keys (Open, Edit, View...)
+#: ../pluma/pluma-io-error-message-area.c:523
+#: ../pluma/pluma-io-error-message-area.c:550
+#: ../pluma/pluma-io-error-message-area.c:834
+#: ../pluma/pluma-io-error-message-area.c:846
+msgid "D_on't Edit"
+msgstr "Να _μην γίνει επεξεργασία"
+
+#: ../pluma/pluma-io-error-message-area.c:654
+msgid ""
+"The number of followed links is limited and the actual file could not be "
+"found within this limit."
+msgstr "Το πλήθος των ακόλουθων συνδέσμων είναι περιορισμένο και το πραγματικό αρχείο δε μπορεί να βρεθεί στα όρια αυτά."
+
+#: ../pluma/pluma-io-error-message-area.c:658
+msgid "You do not have the permissions necessary to open the file."
+msgstr "Δεν έχετε τα απαραίτητα δικαιώματα για το άνοιγμα του αρχείου."
+
+#: ../pluma/pluma-io-error-message-area.c:664
+msgid "pluma has not been able to detect the character encoding."
+msgstr "Το pluma δεν μπόρεσε να εντοπίσει την κωδικοποίηση χαρακτήρων."
+
+#: ../pluma/pluma-io-error-message-area.c:666
+#: ../pluma/pluma-io-error-message-area.c:688
+msgid "Please check that you are not trying to open a binary file."
+msgstr "Παρακαλώ βεβαιωθείτε ότι δεν προσπαθείτε να ανοίξετε ένα αρχείο binary."
+
+#: ../pluma/pluma-io-error-message-area.c:667
+msgid "Select a character encoding from the menu and try again."
+msgstr "Επιλέξτε μια κωδικοποίηση χαρακτήρων από το μενού και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:673
+#, c-format
+msgid "There was a problem opening the file %s."
+msgstr "Υπήρξε σφάλμα κατά το άνοιγμα του αρχείου %s."
+
+#: ../pluma/pluma-io-error-message-area.c:675
+msgid ""
+"The file you opened has some invalid characters. If you continue editing "
+"this file you could make this document useless."
+msgstr "Το αρχείο που ανοίξατε περιέχει μερικούς μη έγκυρους χαρακτήρες. Αν συνεχίσετε να επεξεργάζεστε αυτό το αρχείο μπορεί να αχρηστέψετε το έγγραφο."
+
+#: ../pluma/pluma-io-error-message-area.c:678
+msgid "You can also choose another character encoding and try again."
+msgstr "Μπορείτε επίσης να επιλέξετε μια άλλη κωδικοποίηση χαρακτήρων και να ξαναπροσπαθήσετε."
+
+#: ../pluma/pluma-io-error-message-area.c:685
+#, c-format
+msgid "Could not open the file %s using the %s character encoding."
+msgstr "Δεν είναι δυνατό το άνοιγμα του αρχείου %s με τη χρήση της κωδικοποίησης χαρακτήρων %s."
+
+#: ../pluma/pluma-io-error-message-area.c:689
+#: ../pluma/pluma-io-error-message-area.c:764
+msgid "Select a different character encoding from the menu and try again."
+msgstr "Επιλέξτε μια διαφορετική κωδικοποίηση χαρακτήρων από το μενού και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:699
+#, c-format
+msgid "Could not open the file %s."
+msgstr "Αδυναμία ανοίγματος του αρχείου %s."
+
+#: ../pluma/pluma-io-error-message-area.c:759
+#, c-format
+msgid "Could not save the file %s using the %s character encoding."
+msgstr "Δεν είναι δυνατή η αποθήκευση του αρχείου %s με τη χρήση της κωδικοποίησης χαρακτήρων %s."
+
+#: ../pluma/pluma-io-error-message-area.c:762
+msgid ""
+"The document contains one or more characters that cannot be encoded using "
+"the specified character encoding."
+msgstr "Το έγγραφο περιέχει έναν ή περισσότερους χαρακτήρες που δεν μπορούν να κωδικοποιηθούν με τη χρήση της καθορισμένης κωδικοποίησης χαρακτήρων."
+
+#: ../pluma/pluma-io-error-message-area.c:861
+#, c-format
+msgid "This file (%s) is already open in another pluma window."
+msgstr "Αυτό το αρχείο (%s) είναι ήδη ανοικτό από ένα άλλο παράθυρο του pluma."
+
+#: ../pluma/pluma-io-error-message-area.c:879
+msgid ""
+"pluma opened this instance of the file in a non-editable way. Do you want to"
+" edit it anyway?"
+msgstr "Το pluma άνοιξε αυτό το αρχείο σε λειτουργία χωρίς επεξεργασία. Θέλετε να το επεξεργαστείτε οπωσδήποτε;"
+
+#: ../pluma/pluma-io-error-message-area.c:942
+#: ../pluma/pluma-io-error-message-area.c:952
+#: ../pluma/pluma-io-error-message-area.c:1056
+#: ../pluma/pluma-io-error-message-area.c:1066
+msgid "S_ave Anyway"
+msgstr "_Αποθήκευση οπωσδήποτε"
+
+#: ../pluma/pluma-io-error-message-area.c:946
+#: ../pluma/pluma-io-error-message-area.c:956
+#: ../pluma/pluma-io-error-message-area.c:1060
+#: ../pluma/pluma-io-error-message-area.c:1070
+msgid "D_on't Save"
+msgstr "Να μη _γίνει αποθήκευση"
+
+#. FIXME: review this message, it's not clear since for the user the
+#. "modification"
+#. could be interpreted as the changes he made in the document. beside
+#. "reading" is
+#. not accurate (since last load/save)
+#: ../pluma/pluma-io-error-message-area.c:974
+#, c-format
+msgid "The file %s has been modified since reading it."
+msgstr "Το αρχείο %s έχει τροποποιηθεί από τότε που το ανοίξατε."
+
+#: ../pluma/pluma-io-error-message-area.c:993
+msgid ""
+"If you save it, all the external changes could be lost. Save it anyway?"
+msgstr "Αν το αποθηκεύσετε, όλες οι εξωτερικές αλλαγές που έγιναν στο έγγραφο θα χαθούν. Να αποθηκευτεί οπωσδήποτε;"
+
+#: ../pluma/pluma-io-error-message-area.c:1088
+#, c-format
+msgid "Could not create a backup file while saving %s"
+msgstr "Αδυναμία δημιουργίας αντιγράφου ασφαλείας κατά την αποθήκευση του %s"
+
+#: ../pluma/pluma-io-error-message-area.c:1091
+#, c-format
+msgid "Could not create a temporary backup file while saving %s"
+msgstr "Αδυναμία δημιουργίας ενός προσωρινού αντιγράφου ασφαλείας κατά την αποθήκευση του %s"
+
+#: ../pluma/pluma-io-error-message-area.c:1111
+msgid ""
+"pluma could not back up the old copy of the file before saving the new one. "
+"You can ignore this warning and save the file anyway, but if an error occurs"
+" while saving, you could lose the old copy of the file. Save anyway?"
+msgstr "Το pluma δεν μπορεί να πάρει αντίγραφο ασφαλείας του παλαιού αντίγραφου πριν να αποθηκεύσει το νέο. Μπορείτε να αγνοήσετε αυτή την προειδοποίηση και να αποθηκεύσετε το αρχείο οπωσδήποτε, αλλά αν δημιουργηθεί κάποιο σφάλμα κατά την αποθήκευση, θα χάσετε το παλαιό αντίγραφο του αρχείου. Θέλετε να το αποθηκεύσετε οπωσδήποτε;"
+
+#. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
+#: ../pluma/pluma-io-error-message-area.c:1175
+#, c-format
+msgid ""
+"pluma cannot handle %s locations in write mode. Please check that you typed "
+"the location correctly and try again."
+msgstr "Το pluma δεν μπορεί να χειριστεί τοποθεσίες %s σε λειτουργία εγγραφής. Βεβαιωθείτε ότι έχετε πληκτρολογήσει σωστά την τοποθεσία και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:1183
+msgid ""
+"pluma cannot handle this location in write mode. Please check that you typed"
+" the location correctly and try again."
+msgstr "Το pluma δεν μπορεί να χειριστεί αυτή την τοποθεσία σε λειτουργία εγγραφής. Βεβαιωθείτε ότι έχετε πληκτρολογήσει σωστά την τοποθεσία και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:1192
+#, c-format
+msgid ""
+"%s is not a valid location. Please check that you typed the location "
+"correctly and try again."
+msgstr "Το %s δεν είναι έγκυρη τοποθεσία. Βεβαιωθείτε ότι έχετε πληκτρολογήσει σωστά την τοποθεσία και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:1198
+msgid ""
+"You do not have the permissions necessary to save the file. Please check "
+"that you typed the location correctly and try again."
+msgstr "Δεν έχετε τα απαραίτητα δικαιώματα για την αποθήκευση του αρχείου. Βεβαιωθείτε ότι έχετε πληκτρολογήσει σωστά την τοποθεσία και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:1204
+msgid ""
+"There is not enough disk space to save the file. Please free some disk space"
+" and try again."
+msgstr "Δεν υπάρχει αρκετός χώρος στο δίσκο για την αποθήκευση του αρχείου. Ελευθερώστε κάποιο χώρο στο δίσκο και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:1209
+msgid ""
+"You are trying to save the file on a read-only disk. Please check that you "
+"typed the location correctly and try again."
+msgstr "Προσπαθείτε ένα αποθηκεύσετε ένα αρχείο σε δίσκο μόνο για ανάγνωση. Βεβαιωθείτε ότι έχετε πληκτρολογήσει σωστά την τοποθεσία και προσπαθήστε ξανά."
+
+#: ../pluma/pluma-io-error-message-area.c:1215
+msgid "A file with the same name already exists. Please use a different name."
+msgstr "Ένα αρχείο με το ίδιο όνομα υπάρχει ήδη. Παρακαλώ χρησιμοποιήστε ένα διαφορετικό όνομα."
+
+#: ../pluma/pluma-io-error-message-area.c:1220
+msgid ""
+"The disk where you are trying to save the file has a limitation on length of"
+" the file names. Please use a shorter name."
+msgstr "Ο δίσκος στον οποίο προσπαθείτε να αποθηκεύσετε το αρχείο έχει περιορισμό στα μεγέθη του ονόματος αρχείων. Χρησιμοποιήστε ένα πιο σύντομο όνομα αρχείου."
+
+#: ../pluma/pluma-io-error-message-area.c:1227
+msgid ""
+"The disk where you are trying to save the file has a limitation on file "
+"sizes. Please try saving a smaller file or saving it to a disk that does not"
+" have this limitation."
+msgstr "Ο δίσκος στον οποίο προσπαθείτε να αποθηκεύσετε το αρχείο έχει περιορισμό στα μεγέθη αρχείων. Προσπαθήστε να αποθηκεύσετε ένα μικρότερο αρχείο ή διαλέξτε ένα δίσκο χωρίς περιορισμούς."
+
+#: ../pluma/pluma-io-error-message-area.c:1243
+#, c-format
+msgid "Could not save the file %s."
+msgstr "Αδυναμία αποθήκευσης του αρχείου %s."
+
+#. FIXME: review this message, it's not clear since for the user the
+#. "modification"
+#. could be interpreted as the changes he made in the document. beside
+#. "reading" is
+#. not accurate (since last load/save)
+#: ../pluma/pluma-io-error-message-area.c:1287
+#, c-format
+msgid "The file %s changed on disk."
+msgstr "Το αρχείο %s έχει τροποποιηθεί στο δίσκο."
+
+#: ../pluma/pluma-io-error-message-area.c:1292
+msgid "Do you want to drop your changes and reload the file?"
+msgstr "Θέλετε να παρατήσετε τις αλλαγές σας και να φορτώσετε εκ νέου το αρχείο;"
+
+#: ../pluma/pluma-io-error-message-area.c:1294
+msgid "Do you want to reload the file?"
+msgstr "Θέλετε να φορτώσετε εκ νέου το αρχείο;"
+
+#: ../pluma/pluma-io-error-message-area.c:1300
+#: ../pluma/pluma-io-error-message-area.c:1311
+msgid "_Reload"
+msgstr "_Επαναφόρτωση"
+
+#: ../pluma/pluma-panel.c:365 ../pluma/pluma-panel.c:541
+msgid "Empty"
+msgstr "Κενή"
+
+#: ../pluma/pluma-panel.c:431
+msgid "Hide panel"
+msgstr "Απόκρυψη εργαλειοθήκης"
+
+#: ../pluma/pluma-plugin-manager.c:54
+msgid "Plugin"
+msgstr "Πρόσθετη λειτουργία"
+
+#: ../pluma/pluma-plugin-manager.c:55
+msgid "Enabled"
+msgstr "Ενεργοποιημένο"
+
+#: ../pluma/pluma-plugin-manager.c:504
+msgid "_About"
+msgstr "_Περί"
+
+#: ../pluma/pluma-plugin-manager.c:512
+msgid "C_onfigure"
+msgstr "_Ρύθμιση"
+
+#: ../pluma/pluma-plugin-manager.c:521
+msgid "A_ctivate"
+msgstr "Ενεργο_ποίηση"
+
+#: ../pluma/pluma-plugin-manager.c:532
+msgid "Ac_tivate All"
+msgstr "Ενεργοποίηση ό_λων"
+
+#: ../pluma/pluma-plugin-manager.c:537
+msgid "_Deactivate All"
+msgstr "_Απενεργοποίηση όλων"
+
+#: ../pluma/pluma-plugin-manager.c:800
+msgid "Active _Plugins:"
+msgstr "Ενεργές _πρόσθετες λειτουργίες:"
+
+#: ../pluma/pluma-plugin-manager.c:825
+msgid "_About Plugin"
+msgstr "_Περί πρόσθετης λειτουργίας"
+
+#: ../pluma/pluma-plugin-manager.c:829
+msgid "C_onfigure Plugin"
+msgstr "_Ρύθμιση πρόσθετης λειτουργίας"
+
+#: ../pluma/pluma-print-job.c:551
+#, c-format
+msgid "File: %s"
+msgstr "Αρχείο: %s"
+
+#: ../pluma/pluma-print-job.c:560
+msgid "Page %N of %Q"
+msgstr "Σελίδα %N από %Q"
+
+#: ../pluma/pluma-print-job.c:819
+msgid "Preparing..."
+msgstr "Προετοιμασία..."
+
+#: ../pluma/pluma-print-preferences.ui.h:1
+msgid "Syntax Highlighting"
+msgstr "Επισήμανσης σύνταξης"
+
+#: ../pluma/pluma-print-preferences.ui.h:2
+msgid "Print synta_x highlighting"
+msgstr "Εκτύπωση επισήμανσης _σύνταξης"
+
+#: ../pluma/pluma-print-preferences.ui.h:4
+msgid "Print line nu_mbers"
+msgstr "Εκτύπωση αρι_θμών γραμμής"
+
+#. 'Number every' from 'Number every 3 lines' in the 'Text Editor' tab of the
+#. print preferences.
+#: ../pluma/pluma-print-preferences.ui.h:6
+msgid "_Number every"
+msgstr "Α_ριθμός γραμμής κάθε"
+
+#. 'lines' from 'Number every 3 lines' in the 'Text Editor' tab of the print
+#. preferences.
+#: ../pluma/pluma-print-preferences.ui.h:8
+msgid "lines"
+msgstr "γραμμές"
+
+#: ../pluma/pluma-print-preferences.ui.h:12
+msgid "Page header"
+msgstr "Κεφαλίδα σελίδας"
+
+#: ../pluma/pluma-print-preferences.ui.h:13
+msgid "Print page _headers"
+msgstr "Εκτύπωση _κεφαλίδων σελίδας"
+
+#: ../pluma/pluma-print-preferences.ui.h:14
+msgid "Fonts"
+msgstr "Γραμματοσειρές"
+
+#: ../pluma/pluma-print-preferences.ui.h:15
+msgid "_Body:"
+msgstr "_Σώμα κειμένου:"
+
+#: ../pluma/pluma-print-preferences.ui.h:16
+msgid "_Line numbers:"
+msgstr "Αρι_θμοί γραμμής:"
+
+#: ../pluma/pluma-print-preferences.ui.h:17
+msgid "He_aders and footers:"
+msgstr "Κεφα_λίδες και υποσέλιδα:"
+
+#: ../pluma/pluma-print-preferences.ui.h:18
+msgid "_Restore Default Fonts"
+msgstr "Επαναφο_ρά προεπιλεγμένων γραμματοσειρών"
+
+#: ../pluma/pluma-print-preview.c:568
+msgid "Show the previous page"
+msgstr "Προβολή της προηγούμενης σελίδας"
+
+#: ../pluma/pluma-print-preview.c:580
+msgid "Show the next page"
+msgstr "Προβολή της επόμενης σελίδας"
+
+#: ../pluma/pluma-print-preview.c:596
+msgid "Current page (Alt+P)"
+msgstr "Τρέχουσα σελίδα (Alt+P)"
+
+#. Translators: the "of" from "1 of 19" in print preview.
+#: ../pluma/pluma-print-preview.c:619
+msgid "of"
+msgstr "από"
+
+#: ../pluma/pluma-print-preview.c:627
+msgid "Page total"
+msgstr "Σύνολο σελίδων"
+
+#: ../pluma/pluma-print-preview.c:628
+msgid "The total number of pages in the document"
+msgstr "Ο συνολικός αριθμός σελίδων στο έγγραφο"
+
+#: ../pluma/pluma-print-preview.c:645
+msgid "Show multiple pages"
+msgstr "Προβολή πολλαπλών σελίδων"
+
+#: ../pluma/pluma-print-preview.c:658
+msgid "Zoom 1:1"
+msgstr "Εστίαση 1:1"
+
+#: ../pluma/pluma-print-preview.c:667
+msgid "Zoom to fit the whole page"
+msgstr "Προσαρμογή εστίασης σε όλη τη σελίδα"
+
+#: ../pluma/pluma-print-preview.c:676
+msgid "Zoom the page in"
+msgstr "Εστίαση στη σελίδα"
+
+#: ../pluma/pluma-print-preview.c:685
+msgid "Zoom the page out"
+msgstr "Άρση εστίασης στη σελίδα"
+
+#: ../pluma/pluma-print-preview.c:697
+msgid "_Close Preview"
+msgstr "_Κλείσιμο προεπισκόπησης"
+
+#: ../pluma/pluma-print-preview.c:700
+msgid "Close print preview"
+msgstr "Κλείσιμο προεπισκόπησης εκτύπωσης"
+
+#: ../pluma/pluma-print-preview.c:770
+#, c-format
+msgid "Page %d of %d"
+msgstr "Σελίδα %d από %d"
+
+#: ../pluma/pluma-print-preview.c:954
+msgid "Page Preview"
+msgstr "Προεπισκόπηση σελίδας"
+
+#: ../pluma/pluma-print-preview.c:955
+msgid "The preview of a page in the document to be printed"
+msgstr "Η προεπισκόπηση της σελίδας του εγγράφου που θα εκτυπωθεί"
+
+#: ../pluma/pluma-smart-charset-converter.c:319
+msgid "It is not possible to detect the encoding automatically"
+msgstr "Είναι αδύνατος ο αυτόματος εντοπισμός της κωδικοποίησης χαρακτήρων."
+
+#: ../pluma/pluma-statusbar.c:70 ../pluma/pluma-statusbar.c:76
+msgid "OVR"
+msgstr "ΑΝΤ"
+
+#: ../pluma/pluma-statusbar.c:70 ../pluma/pluma-statusbar.c:76
+msgid "INS"
+msgstr "ΕΙΣ"
+
+#. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for
+#. "Column". Please,
+#. use abbreviations if possible to avoid space problems.
+#: ../pluma/pluma-statusbar.c:341
+#, c-format
+msgid "  Ln %d, Col %d"
+msgstr "  Γρ %d, Στηλ. %d"
+
+#: ../pluma/pluma-statusbar.c:444
+#, c-format
+msgid "There is a tab with errors"
+msgid_plural "There are %d tabs with errors"
+msgstr[0] "Υπάρχει μια καρτέλα με σφάλματα"
+msgstr[1] "Υπάρχουν %d καρτέλες με σφάλματα"
+
+#: ../pluma/pluma-style-scheme-manager.c:215
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr "Δεν είναι δυνατή η δημιουργία του καταλόγου '%s': g_mkdir_with_parents() απέτυχε: %s"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:660
+#, c-format
+msgid "Reverting %s from %s"
+msgstr "Γίνεται επαναφορά %s από %s"
+
+#: ../pluma/pluma-tab.c:667
+#, c-format
+msgid "Reverting %s"
+msgstr "Γίνεται επαναφορά %s"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:683
+#, c-format
+msgid "Loading %s from %s"
+msgstr "Φόρτωση %s από %s"
+
+#: ../pluma/pluma-tab.c:690
+#, c-format
+msgid "Loading %s"
+msgstr "Φόρτωση %s"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:773
+#, c-format
+msgid "Saving %s to %s"
+msgstr "Αποθήκευση %s σε %s"
+
+#: ../pluma/pluma-tab.c:780
+#, c-format
+msgid "Saving %s"
+msgstr "Αποθήκευση %s"
+
+#. Read only
+#: ../pluma/pluma-tab.c:1673
+msgid "RO"
+msgstr "RO"
+
+#: ../pluma/pluma-tab.c:1720
+#, c-format
+msgid "Error opening file %s"
+msgstr "Σφάλμα ανοίγματος αρχείου %s"
+
+#: ../pluma/pluma-tab.c:1725
+#, c-format
+msgid "Error reverting file %s"
+msgstr "Σφάλμα επαναφοράς του αρχείου %s"
+
+#: ../pluma/pluma-tab.c:1730
+#, c-format
+msgid "Error saving file %s"
+msgstr "Σφάλμα αποθήκευσης αρχείου %s"
+
+#: ../pluma/pluma-tab.c:1751
+msgid "Unicode (UTF-8)"
+msgstr "Unicode (UTF-8)"
+
+#: ../pluma/pluma-tab.c:1758
+msgid "Name:"
+msgstr "Όνομα:"
+
+#: ../pluma/pluma-tab.c:1759
+msgid "MIME Type:"
+msgstr "Τύπος MIME:"
+
+#: ../pluma/pluma-tab.c:1760
+msgid "Encoding:"
+msgstr "Κωδικοποίηση:"
+
+#: ../pluma/pluma-tab-label.c:285
+msgid "Close document"
+msgstr "Κλείσιμο εγγράφου"
+
+#. Toplevel
+#: ../pluma/pluma-ui.h:47
+msgid "_File"
+msgstr "_Αρχείο"
+
+#: ../pluma/pluma-ui.h:48
+msgid "_Edit"
+msgstr "_Επεξεργασία"
+
+#: ../pluma/pluma-ui.h:49
+msgid "_View"
+msgstr "_Προβολή"
+
+#: ../pluma/pluma-ui.h:50
+msgid "_Search"
+msgstr "Α_ναζήτηση"
+
+#: ../pluma/pluma-ui.h:51
+msgid "_Tools"
+msgstr "Ε_ργαλεία"
+
+#: ../pluma/pluma-ui.h:52
+msgid "_Documents"
+msgstr "Έ_γγραφα"
+
+#: ../pluma/pluma-ui.h:53
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: ../pluma/pluma-ui.h:57
+msgid "Create a new document"
+msgstr "Δημιουργία νέου εγγράφου"
+
+#: ../pluma/pluma-ui.h:58
+msgid "_Open..."
+msgstr "Άν_οιγμα..."
+
+#: ../pluma/pluma-ui.h:59 ../pluma/pluma-window.c:1458
+msgid "Open a file"
+msgstr "Άνοιγμα ενός αρχείου"
+
+#. Edit menu
+#: ../pluma/pluma-ui.h:62
+msgid "Pr_eferences"
+msgstr "_Προτιμήσεις"
+
+#: ../pluma/pluma-ui.h:63
+msgid "Configure the application"
+msgstr "Ρύθμιση της εφαρμογής"
+
+#. Help menu
+#: ../pluma/pluma-ui.h:66
+msgid "_Contents"
+msgstr "_Περιεχόμενα"
+
+#: ../pluma/pluma-ui.h:67
+msgid "Open the pluma manual"
+msgstr "Άνοιγμα του εγχειριδίου του pluma"
+
+#: ../pluma/pluma-ui.h:69
+msgid "About this application"
+msgstr "Περί της εφαρμογής"
+
+#: ../pluma/pluma-ui.h:73
+msgid "Leave fullscreen mode"
+msgstr "Έξοδος από την πλήρη οθόνη"
+
+#: ../pluma/pluma-ui.h:81
+msgid "Save the current file"
+msgstr "Αποθήκευση του τρέχοντος αρχείου"
+
+#: ../pluma/pluma-ui.h:82
+msgid "Save _As..."
+msgstr "Αποθήκευση _ως..."
+
+#: ../pluma/pluma-ui.h:83
+msgid "Save the current file with a different name"
+msgstr "Αποθήκευση του τρέχοντος αρχείου με διαφορετικό όνομα"
+
+#: ../pluma/pluma-ui.h:85
+msgid "Revert to a saved version of the file"
+msgstr "Επαναφορά σε μια αποθηκευμένη έκδοση του αρχείου"
+
+#: ../pluma/pluma-ui.h:87
+msgid "Page Set_up..."
+msgstr "_Διαμόρφωση σελίδας..."
+
+#: ../pluma/pluma-ui.h:88
+msgid "Set up the page settings"
+msgstr "Διαμόρφωση ρυθμίσεων σελίδας"
+
+#: ../pluma/pluma-ui.h:90
+msgid "Print Previe_w"
+msgstr "Προε_πισκόπηση εκτύπωσης"
+
+#: ../pluma/pluma-ui.h:91
+msgid "Print preview"
+msgstr "Προεπισκόπηση εκτύπωσης"
+
+#: ../pluma/pluma-ui.h:92
+msgid "_Print..."
+msgstr "_Εκτύπωση..."
+
+#: ../pluma/pluma-ui.h:93
+msgid "Print the current page"
+msgstr "Εκτύπωση της τρέχουσας σελίδας"
+
+#: ../pluma/pluma-ui.h:97
+msgid "Undo the last action"
+msgstr "Αναίρεση της τελευταίας ενέργειας"
+
+#: ../pluma/pluma-ui.h:99
+msgid "Redo the last undone action"
+msgstr "Ακύρωση της τελευταίας ανηρημένης ενέργειας"
+
+#: ../pluma/pluma-ui.h:101
+msgid "Cut the selection"
+msgstr "Αποκοπή της επιλογής"
+
+#: ../pluma/pluma-ui.h:103
+msgid "Copy the selection"
+msgstr "Αντιγραφή της επιλογής"
+
+#: ../pluma/pluma-ui.h:105
+msgid "Paste the clipboard"
+msgstr "Επικόλληση του προχείρου"
+
+#: ../pluma/pluma-ui.h:107
+msgid "Delete the selected text"
+msgstr "Διαγραφή επιλεγμένου κειμένου"
+
+#: ../pluma/pluma-ui.h:108
+msgid "Select _All"
+msgstr "Επιλογή ό_λων"
+
+#: ../pluma/pluma-ui.h:109
+msgid "Select the entire document"
+msgstr "Επιλογή ολόκληρου του εγγράφου"
+
+#. View menu
+#: ../pluma/pluma-ui.h:112
+msgid "_Highlight Mode"
+msgstr "Λειτουργία _επισήμανσης"
+
+#. Search menu
+#: ../pluma/pluma-ui.h:115
+msgid "_Find..."
+msgstr "_Εύρεση..."
+
+#: ../pluma/pluma-ui.h:116
+msgid "Search for text"
+msgstr "Αναζήτηση για κείμενο"
+
+#: ../pluma/pluma-ui.h:117
+msgid "Find Ne_xt"
+msgstr "Εύρεση επομέ_νου"
+
+#: ../pluma/pluma-ui.h:118
+msgid "Search forwards for the same text"
+msgstr "Αναζήτηση προς τα πίσω για το ίδιο κείμενο"
+
+#: ../pluma/pluma-ui.h:119
+msgid "Find Pre_vious"
+msgstr "Εύρεση προη_γουμένου"
+
+#: ../pluma/pluma-ui.h:120
+msgid "Search backwards for the same text"
+msgstr "Αναζήτηση προς τα πίσω για το ίδιο κείμενο"
+
+#: ../pluma/pluma-ui.h:122 ../pluma/pluma-ui.h:125
+msgid "_Replace..."
+msgstr "_Αντικατάσταση..."
+
+#: ../pluma/pluma-ui.h:123 ../pluma/pluma-ui.h:126
+msgid "Search for and replace text"
+msgstr "Εύρεση και αντικατάσταση κειμένου"
+
+#: ../pluma/pluma-ui.h:128
+msgid "_Clear Highlight"
+msgstr "Εκκα_θάριση επισήμανσης"
+
+#: ../pluma/pluma-ui.h:129
+msgid "Clear highlighting of search matches"
+msgstr "Εκκαθάριση επισήμανσης ταιριασμάτων αναζήτησης"
+
+#: ../pluma/pluma-ui.h:130
+msgid "Go to _Line..."
+msgstr "Μετάβαση σε γρα_μμή..."
+
+#: ../pluma/pluma-ui.h:131
+msgid "Go to a specific line"
+msgstr "Μετάβαση σε συγκεκριμένη γραμμή"
+
+#: ../pluma/pluma-ui.h:132
+msgid "_Incremental Search..."
+msgstr "Αυ_ξητική αναζήτηση..."
+
+#: ../pluma/pluma-ui.h:133
+msgid "Incrementally search for text"
+msgstr "Διαδραστική αναζήτηση κειμένου"
+
+#. Documents menu
+#: ../pluma/pluma-ui.h:136
+msgid "_Save All"
+msgstr "_Αποθήκευση όλων"
+
+#: ../pluma/pluma-ui.h:137
+msgid "Save all open files"
+msgstr "Αποθήκευση όλων των ανοιχτών εγγράφων"
+
+#: ../pluma/pluma-ui.h:138
+msgid "_Close All"
+msgstr "_Κλείσιμο όλων"
+
+#: ../pluma/pluma-ui.h:139
+msgid "Close all open files"
+msgstr "Κλείσιμο όλων των ανοιχτών εγγράφων"
+
+#: ../pluma/pluma-ui.h:140
+msgid "_Previous Document"
+msgstr "_Προηγούμενα έγγραφα"
+
+#: ../pluma/pluma-ui.h:141
+msgid "Activate previous document"
+msgstr "Ενεργοποίηση προηγούμενου εγγράφου"
+
+#: ../pluma/pluma-ui.h:142
+msgid "_Next Document"
+msgstr "Ε_πόμενο έγγραφο"
+
+#: ../pluma/pluma-ui.h:143
+msgid "Activate next document"
+msgstr "Ενεργοποίηση επόμενου εγγράφου"
+
+#: ../pluma/pluma-ui.h:144
+msgid "_Move to New Window"
+msgstr "_Μετακίνηση σε νέο παράθυρο"
+
+#: ../pluma/pluma-ui.h:145
+msgid "Move the current document to a new window"
+msgstr "Μετακίνηση του τρέχοντος εγγράφου σε νέο παράθυρο"
+
+#: ../pluma/pluma-ui.h:152
+msgid "Close the current file"
+msgstr "Κλείσιμο του τρέχοντος αρχείου"
+
+#: ../pluma/pluma-ui.h:159
+msgid "Quit the program"
+msgstr "Έξοδος από το πρόγραμμα"
+
+#: ../pluma/pluma-ui.h:164
+msgid "_Toolbar"
+msgstr "_Εργαλειοθήκη"
+
+#: ../pluma/pluma-ui.h:165
+msgid "Show or hide the toolbar in the current window"
+msgstr "Αλλαγή της ορατότητας της εργαλειοθήκης στο τρέχον παράθυρο"
+
+#: ../pluma/pluma-ui.h:167
+msgid "_Statusbar"
+msgstr "_Γραμμή κατάστασης"
+
+#: ../pluma/pluma-ui.h:168
+msgid "Show or hide the statusbar in the current window"
+msgstr "Αλλαγή της ορατότητας της γραμμής κατάστασης στο τρέχον παράθυρο"
+
+#: ../pluma/pluma-ui.h:171
+msgid "Edit text in fullscreen"
+msgstr "Επεξεργασία κειμένου σε πλήρη οθόνη"
+
+#: ../pluma/pluma-ui.h:178
+msgid "Side _Pane"
+msgstr "Πλευρική ερ_γαλειοθήκη"
+
+#: ../pluma/pluma-ui.h:179
+msgid "Show or hide the side pane in the current window"
+msgstr "Αλλαγή της ορατότητας της πλευρικής εργαλειοθήκης στο τρέχον παράθυρο"
+
+#: ../pluma/pluma-ui.h:181
+msgid "_Bottom Pane"
+msgstr "_Κάτω εργαλειοθήκη"
+
+#: ../pluma/pluma-ui.h:182
+msgid "Show or hide the bottom pane in the current window"
+msgstr "Αλλαγή της ορατότητας της κάτω εργαλειοθήκης στο τρέχον παράθυρο"
+
+#: ../pluma/pluma-utils.c:1090
+msgid "Please check your installation."
+msgstr "Παρακαλώ ελέγξτε την εγκατάσταση σας."
+
+#: ../pluma/pluma-utils.c:1159
+#, c-format
+msgid "Unable to open UI file %s. Error: %s"
+msgstr "Αδύνατο το άνοιγμα αρχείου διεπαφής χρήστη %s. Σφάλμα: %s"
+
+#: ../pluma/pluma-utils.c:1179
+#, c-format
+msgid "Unable to find the object '%s' inside file %s."
+msgstr "Αδυναμία εύρεσης του αντικειμένου '%s' μέσα στο αρχείο %s."
+
+#. Translators: '/ on <remote-share>'
+#: ../pluma/pluma-utils.c:1339
+#, c-format
+msgid "/ on %s"
+msgstr "/ στο %s"
+
+#. create "Wrap Around" menu item.
+#: ../pluma/pluma-view.c:1274
+msgid "_Wrap Around"
+msgstr "Αναδίπλ_ωση γύρω"
+
+#. create "Match Entire Word Only" menu item.
+#: ../pluma/pluma-view.c:1284
+msgid "Match _Entire Word Only"
+msgstr "Ταίριασμα ο_λόκληρης λέξης μόνο"
+
+#. create "Match Case" menu item.
+#: ../pluma/pluma-view.c:1294
+msgid "_Match Case"
+msgstr "_Διάκριση πεζών από κεφαλαία"
+
+#. create "Parse escapes" menu item.
+#: ../pluma/pluma-view.c:1304
+msgid ""
+"_Parse escape sequences (e.g. \n"
+")"
+msgstr "_Επεξεργασία ακολουθιών διαφυγής (π.χ. \n)"
+
+#: ../pluma/pluma-view.c:1418
+msgid "String you want to search for"
+msgstr "Αλφαριθμητικό προς αναζήτηση"
+
+#: ../pluma/pluma-view.c:1427
+msgid "Line you want to move the cursor to"
+msgstr "Η γραμμή στην οποία θέλετε μετακινηθεί ο δρομέας"
+
+#: ../pluma/pluma-window.c:1011
+#, c-format
+msgid "Use %s highlight mode"
+msgstr "Χρήση %s λειτουργίας επισήμανσης"
+
+#. add the "Plain Text" item before all the others
+#. Translators: "Plain Text" means that no highlight mode is selected in the
+#. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
+#: ../pluma/pluma-window.c:1068 ../pluma/pluma-window.c:1980
+#: ../plugins/externaltools/tools/manager.py:121
+#: ../plugins/externaltools/tools/manager.py:419
+#: ../plugins/externaltools/tools/manager.py:529
+#: ../plugins/externaltools/tools/manager.py:844
+msgid "Plain Text"
+msgstr "Απλό κείμενο"
+
+#: ../pluma/pluma-window.c:1069
+msgid "Disable syntax highlighting"
+msgstr "Απενεργοποίηση επισήμανσης σύνταξης"
+
+#. Translators: %s is a URI
+#: ../pluma/pluma-window.c:1355
+#, c-format
+msgid "Open '%s'"
+msgstr "Άνοιγμα '%s'"
+
+#: ../pluma/pluma-window.c:1460
+msgid "Open a recently used file"
+msgstr "Άνοιγμα ενός πρόσφατου αρχείου"
+
+#: ../pluma/pluma-window.c:1466
+msgid "Open"
+msgstr "Άνοιγμα"
+
+#: ../pluma/pluma-window.c:1524
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: ../pluma/pluma-window.c:1526
+msgid "Print"
+msgstr "Εκτύπωση"
+
+#. Translators: %s is a URI
+#: ../pluma/pluma-window.c:1705
+#, c-format
+msgid "Activate '%s'"
+msgstr "Ενεργοποίηση '%s'"
+
+#: ../pluma/pluma-window.c:1958
+msgid "Use Spaces"
+msgstr "Χρήση διαστημάτων"
+
+#: ../pluma/pluma-window.c:2029
+msgid "Tab Width"
+msgstr "Πλάτος Tab"
+
+#: ../pluma/pluma-window.c:3893
+msgid "About pluma"
+msgstr "Περί pluma"
+
+#: ../plugins/changecase/changecase.pluma-plugin.desktop.in.h:1
+msgid "Change Case"
+msgstr "Αλλαγή τύπου"
+
+#: ../plugins/changecase/changecase.pluma-plugin.desktop.in.h:2
+msgid "Changes the case of selected text."
+msgstr "Αλλάζει τον τύπο του επιλεγμένου κειμένου."
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:222
+msgid "C_hange Case"
+msgstr "Αλλα_γή τύπου"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:223
+msgid "All _Upper Case"
+msgstr "Όλα κε_φαλαία"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:224
+msgid "Change selected text to upper case"
+msgstr "Μετατροπή του επιλεγμένου κειμένου σε κεφαλαία"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:226
+msgid "All _Lower Case"
+msgstr "Όλα πε_ζά"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:227
+msgid "Change selected text to lower case"
+msgstr "Μετατροπή του επιλεγμένου κειμένου σε πεζά"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:229
+msgid "_Invert Case"
+msgstr "Εν_αλλαγή πεζών κεφαλαίων"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:230
+msgid "Invert the case of selected text"
+msgstr "Εναλλαγή πεζών-κεφαλαίων στο επιλεγμένο κείμενο"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:232
+msgid "_Title Case"
+msgstr "Γράμματα _τίτλου"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:233
+msgid "Capitalize the first letter of each selected word"
+msgstr "Κεφαλαίο το πρώτο γράμμα κάθε επιλεγμένης λέξης"
+
+#: ../plugins/checkupdate/checkupdate.pluma-plugin.desktop.in.h:1
+msgid "Check update"
+msgstr "Έλεγχος νέας έκδοσης"
+
+#: ../plugins/checkupdate/checkupdate.pluma-plugin.desktop.in.h:2
+msgid "Check for latest version of pluma"
+msgstr "Έλεγχος για την τελευταία έκδοση του pluma"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:239
+msgid "There was an error displaying the URI."
+msgstr "Υπήρξε σφάλμα κατά την εμφάνιση του URI."
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:285
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:300
+msgid "_Download"
+msgstr "_Λήψη"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:289
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:308
+msgid "_Ignore Version"
+msgstr "Α_γνόηση έκδοσης"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:324
+msgid "There is a new version of pluma"
+msgstr "Υπάρχει μια νέα έκδοση του pluma"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:328
+msgid ""
+"You can download the new version of pluma by clicking on the download button"
+" or ignore that version and wait for a new one"
+msgstr "Μπορείτε να κατεβάσετε την νέα έκδοση του pluma πατώντας το κουμπί για τη λήψη, ή να την αγνοήσετε και να περιμένετε για μια νεότερη"
+
+#: ../plugins/checkupdate/org.mate.pluma.plugins.checkupdate.gschema.xml.in.in.h:1
+msgid "Version to ignore until the next version is released"
+msgstr "Έκδοση που θα αγνοηθεί μέχρι την κυκλοφορία της επόμενης"
+
+#: ../plugins/docinfo/docinfo.pluma-plugin.desktop.in.h:1
+#: ../plugins/docinfo/docinfo.ui.h:1
+msgid "Document Statistics"
+msgstr "Στατιστικά εγγράφου"
+
+#: ../plugins/docinfo/docinfo.pluma-plugin.desktop.in.h:2
+msgid ""
+"Analyzes the current document and reports the number of words, lines, "
+"characters and non-space characters in it."
+msgstr "Καταμέτρηση λέξεων, γραμμών, χαρακτήρων και χαρακτήρων χωρίς κενά."
+
+#: ../plugins/docinfo/docinfo.ui.h:2
+msgid "_Update"
+msgstr "_Ενημέρωση"
+
+#: ../plugins/docinfo/docinfo.ui.h:3
+msgid "File Name"
+msgstr "Όνομα αρχείου"
+
+#: ../plugins/docinfo/docinfo.ui.h:5
+msgid "Bytes"
+msgstr "Bytes"
+
+#: ../plugins/docinfo/docinfo.ui.h:6
+msgid "Characters (no spaces)"
+msgstr "Χαρακτήρες (χωρίς κενά)"
+
+#: ../plugins/docinfo/docinfo.ui.h:7
+msgid "Characters (with spaces)"
+msgstr "Χαρακτήρες (με κενά)"
+
+#: ../plugins/docinfo/docinfo.ui.h:8
+msgid "Words"
+msgstr "Λέξεις"
+
+#: ../plugins/docinfo/docinfo.ui.h:9
+msgid "Lines"
+msgstr "Γραμμές"
+
+#: ../plugins/docinfo/docinfo.ui.h:10
+msgid "Document"
+msgstr "Έγγραφο"
+
+#: ../plugins/docinfo/docinfo.ui.h:11
+msgid "Selection"
+msgstr "Επιλογή"
+
+#: ../plugins/docinfo/pluma-docinfo-plugin.c:431
+msgid "_Document Statistics"
+msgstr "_Στατιστικά εγγράφου"
+
+#: ../plugins/docinfo/pluma-docinfo-plugin.c:433
+msgid "Get statistical information on the current document"
+msgstr "Λήψη στατιστικών πληροφοριών για το τρέχον έγγραφο"
+
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
+#: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
+msgid "Open terminal here"
+msgstr "Άνοιγμα τερματικού εδώ"
+
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
+#: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:2
+msgid "Open a terminal in the document location"
+msgstr "Άνοιγμα ενός τερματικού στην τοποθεσία του εγγράφου"
+
+#: ../plugins/externaltools/externaltools.pluma-plugin.desktop.in.h:1
+msgid "External Tools"
+msgstr "Εξωτερικά εργαλεία"
+
+#: ../plugins/externaltools/externaltools.pluma-plugin.desktop.in.h:2
+msgid "Execute external commands and shell scripts."
+msgstr "Εκτέλεση εξωτερικών εντολών και δεσμών ενεργειών κελύφους."
+
+#: ../plugins/externaltools/tools/__init__.py:172
+msgid "Manage _External Tools..."
+msgstr "Διαχείριση _εξωτερικών εργαλείων..."
+
+#: ../plugins/externaltools/tools/__init__.py:174
+msgid "Opens the External Tools Manager"
+msgstr "Ανοίγει την διαχείριση εξωτερικών εργαλείων"
+
+#: ../plugins/externaltools/tools/__init__.py:178
+msgid "External _Tools"
+msgstr "Εξωτερικά _εργαλεία"
+
+#: ../plugins/externaltools/tools/__init__.py:180
+msgid "External tools"
+msgstr "Εξωτερικά εργαλεία"
+
+#: ../plugins/externaltools/tools/__init__.py:212
+msgid "Shell Output"
+msgstr "Αποτέλεσμα κελύφους"
+
+#: ../plugins/externaltools/tools/capture.py:93
+#, python-format
+msgid "Could not execute command: %s"
+msgstr "Αδύνατη η εκτέλεση της εντολής: %s"
+
+#: ../plugins/externaltools/tools/functions.py:162
+msgid "You must be inside a word to run this command"
+msgstr "Θα πρέπει να βρίσκεστε μέσα σε μια λέξη για να εκτελέσετε αυτή την εντολή"
+
+#: ../plugins/externaltools/tools/functions.py:267
+msgid "Running tool:"
+msgstr "Εργαλείο σε εκτέλεση:"
+
+#: ../plugins/externaltools/tools/functions.py:292
+msgid "Done."
+msgstr "Ολοκληρώθηκε."
+
+#: ../plugins/externaltools/tools/functions.py:294
+msgid "Exited"
+msgstr "Τερματίστηκε"
+
+#: ../plugins/externaltools/tools/manager.py:119
+msgid "All languages"
+msgstr "Όλες οι γλώσσες"
+
+#: ../plugins/externaltools/tools/manager.py:518
+#: ../plugins/externaltools/tools/manager.py:522
+#: ../plugins/externaltools/tools/manager.py:842
+#: ../plugins/externaltools/tools/tools.ui.h:22
+msgid "All Languages"
+msgstr "Όλες οι γλώσσες"
+
+#: ../plugins/externaltools/tools/manager.py:628
+msgid "New tool"
+msgstr "Νέο εργαλείο"
+
+#: ../plugins/externaltools/tools/manager.py:759
+#, python-format
+msgid "This accelerator is already bound to %s"
+msgstr "Αυτή η συντόμευση είναι ήδη αντιστοιχισμένη με %s"
+
+#: ../plugins/externaltools/tools/manager.py:810
+msgid "Type a new accelerator, or press Backspace to clear"
+msgstr "Πληκτρολογήστε μια νέα συντόμευση, ή πατήστε Backspace για εκκαθάριση"
+
+#: ../plugins/externaltools/tools/manager.py:812
+msgid "Type a new accelerator"
+msgstr "Πληκτρολογήστε μια νέα συντόμευση"
+
+#: ../plugins/externaltools/tools/outputpanel.py:105
+msgid "Stopped."
+msgstr "Διακόπηκε."
+
+#. ex:ts=4:et:
+#: ../plugins/externaltools/tools/tools.ui.h:1
+msgid "Nothing"
+msgstr "Τίποτα"
+
+#: ../plugins/externaltools/tools/tools.ui.h:2
+msgid "Current document"
+msgstr "Τρέχον έγγραφο"
+
+#: ../plugins/externaltools/tools/tools.ui.h:3
+msgid "All documents"
+msgstr "Όλα τα έγγραφα"
+
+#: ../plugins/externaltools/tools/tools.ui.h:4
+msgid "Current selection"
+msgstr "Τρέχουσα επιλογή"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
+msgid "Current selection (default to document)"
+msgstr "Τρέχουσα επιλογή (προεπιλογή στο έγγραφο)"
+
+#: ../plugins/externaltools/tools/tools.ui.h:6
+msgid "Current line"
+msgstr "Τρέχουσα γραμμή"
+
+#: ../plugins/externaltools/tools/tools.ui.h:7
+msgid "Current word"
+msgstr "Τρέχουσα λέξη"
+
+#: ../plugins/externaltools/tools/tools.ui.h:8
+msgid "Display in bottom pane"
+msgstr "Προβολή στο κάτω ταμπλώ"
+
+#: ../plugins/externaltools/tools/tools.ui.h:9
+msgid "Create new document"
+msgstr "Δημιουργία νέου εγγράφου"
+
+#: ../plugins/externaltools/tools/tools.ui.h:10
+msgid "Append to current document"
+msgstr "Προσθήκη στο τρέχον έγγραφο"
+
+#: ../plugins/externaltools/tools/tools.ui.h:11
+msgid "Replace current document"
+msgstr "Αντικατάσταση τρέχοντος εγγράφου"
+
+#: ../plugins/externaltools/tools/tools.ui.h:12
+msgid "Replace current selection"
+msgstr "Αντικατάσταση τρέχουσας επιλογής"
+
+#: ../plugins/externaltools/tools/tools.ui.h:13
+msgid "Insert at cursor position"
+msgstr "Εισαγωγή στη θέση δρομέα"
+
+#: ../plugins/externaltools/tools/tools.ui.h:14
+msgid "All documents except untitled ones"
+msgstr "Όλα τα έγγραφα εκτός από τα ανώνυμα"
+
+#: ../plugins/externaltools/tools/tools.ui.h:15
+msgid "Local files only"
+msgstr "Μόνο τοπικά αρχεία"
+
+#: ../plugins/externaltools/tools/tools.ui.h:16
+msgid "Remote files only"
+msgstr "Μόνο απομακρυσμένα αρχεία"
+
+#: ../plugins/externaltools/tools/tools.ui.h:17
+msgid "Untitled documents only"
+msgstr "Μόνο έγγραφα χωρίς όνομα"
+
+#: ../plugins/externaltools/tools/tools.ui.h:18
+msgid "External Tools Manager"
+msgstr "Διαχείριση εξωτερικών εργαλείων"
+
+#: ../plugins/externaltools/tools/tools.ui.h:19
+msgid "_Tools:"
+msgstr "Ε_ργαλεία:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:20
+#: ../plugins/snippets/snippets/snippets.ui.h:7
+msgid "_Edit:"
+msgstr "_Επεξεργασία:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:23
+msgid "_Applicability:"
+msgstr "_Δυνατότητα εφαρμογής:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:24
+msgid "_Output:"
+msgstr "Απο_τέλεσμα:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:25
+msgid "_Input:"
+msgstr "_Input:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:26
+msgid "_Save:"
+msgstr "Αποθήκευ_ση:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:27
+msgid "_Shortcut Key:"
+msgstr "Πλήκτρο σ_υντόμευσης:"
+
+#: ../plugins/externaltools/data/build.desktop.in.h:1
+msgid "Build"
+msgstr "Χτίσιμο"
+
+#: ../plugins/externaltools/data/build.desktop.in.h:2
+msgid "Run \"make\" in the document directory"
+msgstr "Εκτέλεση \"make\" στον κατάλογο εγγράφου"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
+msgid "Remove trailing spaces"
+msgstr "Απομάκρυνση κενών που περισσεύουν"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
+msgid "Remove useless trailing spaces in your file"
+msgstr "Απομάκρυνση άχρηστων trailing spaces από το αρχείο σας"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:1
+msgid "Run command"
+msgstr "Εκτέλεση εντολής"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:2
+msgid "Execute a custom command and put its output in a new document"
+msgstr "Εκτέλεση μιας προσαρμοσμένης εντολής και τοποθέτηση του αποτελέσματος της σε ένα νέο έγγραφο"
+
+#: ../plugins/externaltools/data/search-recursive.desktop.in.h:1
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: ../plugins/externaltools/data/switch-c.desktop.in.h:1
+msgid "Switch onto a file .c and .h"
+msgstr "Αλλαγή σε ένα αρχείο .c και .h"
+
+#: ../plugins/filebrowser/filebrowser.pluma-plugin.desktop.in.h:1
+msgid "File Browser Pane"
+msgstr "Στήλη περιήγησης αρχείων"
+
+#: ../plugins/filebrowser/filebrowser.pluma-plugin.desktop.in.h:2
+msgid "Easy file access from the side pane"
+msgstr "Εύκολη πρόσβαση σε αρχείο από τη πλευρική στήλη"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:1
+msgid "Set Location to First Document"
+msgstr "Ορισμός τοποθεσίας στο πρώτο έγγραφο"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:2
+msgid ""
+"If TRUE the file browser plugin will view the directory of the first opened "
+"document given that the file browser hasn't been used yet. (Thus this "
+"generally applies to opening a document from the command line or opening it "
+"with Caja, etc.)"
+msgstr "Αν TRUE η πρόσθετη λειτουργία περιηγητή αρχείων θα προβάλλει τον κατάλογο που βρίσκεται το πρώτο ανοιγμένο έγγραφο αν δεν έχει χρησιμοποιηθεί ακόμα ο περιηγητής αρχείων. (Αυτό ισχύει γενικά στο άνοιγμα ενός εγγράφου από τη γραμμή εντολών, στο άνοιγμα με το ναυτίλο κτλ)"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:3
+msgid "File Browser Filter Mode"
+msgstr "Λειτουργία φίλτρου περιηγητή αρχείων"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:4
+msgid ""
+"This value determines what files get filtered from the file browser. Valid "
+"values are: none (filter nothing), hidden (filter hidden files), binary "
+"(filter binary files) and hidden_and_binary (filter both hidden and binary "
+"files)."
+msgstr "Αυτή η τιμή καθορίζει το ποιά αρχεία θα φιλτράρονται από το περιηγητή αρχείων. Οι έγκυρες τιμές είναι: none (filter nothing), hidden (filter hidden files), binary (filter binary files) and hidden_and_binary (filter both hidden and binary files)."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:5
+msgid "File Browser Filter Pattern"
+msgstr "Μοτίβο φίλτρου περιηγητή αρχείων"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:6
+msgid ""
+"The filter pattern to filter the file browser with. This filter works on top"
+" of the filter_mode."
+msgstr "Το μοτίβο φίλτρου για το φίλτρο του περιηγητή αρχείων. Αυτό το φίλτρο λειτουργεί πάνω από το filter_mode."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:7
+msgid "Open With Tree View"
+msgstr "Άνοιγμα με προβολή δένδρου"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:8
+msgid ""
+"Open the tree view when the file browser plugin gets loaded instead of the "
+"bookmarks view"
+msgstr "Άνοιγμα της προβολής δένδρου όταν η πρόσθετη λειτουργία περιηγητή αρχείων φορτώνεται αντί για την προβολή σελιδοδεικτών"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:9
+msgid "File Browser Root Directory"
+msgstr "Ριζικός κατάλογος περιηγητή αρχείων"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:10
+msgid ""
+"The file browser root directory to use when loading the file browser plugin "
+"and onload/tree_view is TRUE."
+msgstr "Ο ριζικός κατάλογος που θα χρησιμοποιείται όταν φορτώνεται η πρόσθετη λειτουργία περιηγητή αρχείων και το onload/tree_view είναι TRUE."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:11
+msgid "File Browser Virtual Root Directory"
+msgstr "Εικονικός ριζικός κατάλογος περιηγητή αρχείων"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:12
+msgid ""
+"The file browser virtual root directory to use when loading the file browser"
+" plugin when onload/tree_view is TRUE. The virtual root must always be below"
+" the actual root."
+msgstr "Ο εικονικός ριζικός κατάλογος που θα χρησιμοποιείται όταν φορτώνεται η πρόσθετη λειτουργία περιηγητή αρχείων και το onload/tree_view είναι TRUE. Ο ριζικός κατάλογος πρέπει να είναι κάτω από τον πραγματικό ριζικό."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:13
+msgid "Enable Restore of Remote Locations"
+msgstr "Ενεργοποίηση επαναφοράς απομακρυσμένων τοποθεσιών"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:14
+msgid "Sets whether to enable restoring of remote locations."
+msgstr "Καθορίζει το αν θα ενεργοποιείται η επαναφορά των απομακρυσμένων τοποθεσιών."
+
+#: ../plugins/filebrowser/pluma-file-bookmarks-store.c:235
+msgid "File System"
+msgstr "Σύστημα αρχείων"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:531
+msgid "_Set root to active document"
+msgstr "Ορισμός του ρι_ζικού καταλόγου στο ενεργό έγγραφο"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:533
+msgid "Set the root to the active document location"
+msgstr "Ορισμός του ριζικού καταλόγου στην ενεργή τοποθεσία του εγγράφου"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:538
+msgid "_Open terminal here"
+msgstr "Άν_οιγμα τερματικού εδώ"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:540
+msgid "Open a terminal at the currently opened directory"
+msgstr "Άνοιγμα ενός τερματικού στον τρέχοντα κατάλογο"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:681
+msgid "File Browser"
+msgstr "Περιηγητής αρχείων"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:803
+msgid "An error occurred while creating a new directory"
+msgstr "Σφάλμα κατά την δημιουργία ενός νέου καταλόγου"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:806
+msgid "An error occurred while creating a new file"
+msgstr "Σφάλμα κατά την δημιουργία ενός νέου αρχείου"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:811
+msgid "An error occurred while renaming a file or directory"
+msgstr "Σφάλμα κατά τη μετονομασία ενός νέου αρχείου ή καταλόγου"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:816
+msgid "An error occurred while deleting a file or directory"
+msgstr "Σφάλμα κατά την διαγραφή ενός νέου αρχείου ή καταλόγου"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:821
+msgid "An error occurred while opening a directory in the file manager"
+msgstr "Σφάλμα κατά το άνοιγμα ενός καταλόγου στο περιηγητή αρχείων"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:825
+msgid "An error occurred while setting a root directory"
+msgstr "Σφάλμα κατά τον καθορισμό ενός ριζικού καταλόγου"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:829
+msgid "An error occurred while loading a directory"
+msgstr "Σφάλμα κατά την φόρτωση ενός καταλόγου"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:832
+msgid "An error occurred"
+msgstr "Δημιουργήθηκε ένα σφάλμα"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1063
+msgid ""
+"Cannot move file to trash, do you\n"
+"want to delete permanently?"
+msgstr "Αδυναμία μετακίνησης αρχείου στα απορρίμματα,\nθέλετε να γίνει άμεση διαγραφή του;"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1067
+#, c-format
+msgid "The file \"%s\" cannot be moved to the trash."
+msgstr "Το αρχείο \"%s\" δεν μπορεί να μετακινηθεί στα απορρίμματα."
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1070
+msgid "The selected files cannot be moved to the trash."
+msgstr "Τα επιλεγμένα αρχεία δεν μπορούν να μετακινηθούν στα απορρίμματα."
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1103
+#, c-format
+msgid "Are you sure you want to permanently delete \"%s\"?"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε μόνιμα το \"%s\";"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1106
+msgid "Are you sure you want to permanently delete the selected files?"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε μόνιμα τα επιλεγμένα αρχεία;"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1109
+msgid "If you delete an item, it is permanently lost."
+msgstr "Αν διαγράψετε ένα αντικείμενο αυτό θα χαθεί οριστικά."
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:1667
+msgid "(Empty)"
+msgstr "(Κενό)"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3307
+msgid ""
+"The renamed file is currently filtered out. You need to adjust your filter "
+"settings to make the file visible"
+msgstr "Το μετονομασμένο αρχείο είναι αυτή τη στιγμή φιλτραρισμένο. Θα χρειαστεί να προσαρμόσετε τις ρυθμίσεις του φίλτρου σας για να κάνετε το αρχείο ορατό"
+
+#. Translators: This is the default name of new files created by the file
+#. browser pane.
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3546
+msgid "file"
+msgstr "αρχείο"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3570
+msgid ""
+"The new file is currently filtered out. You need to adjust your filter "
+"settings to make the file visible"
+msgstr "Το νέο αρχείο είναι αυτή τη στιγμή φιλτραρισμένο. Θα χρειαστεί να προσαρμόσετε τις ρυθμίσεις του φίλτρου σας για να κάνετε το αρχείο ορατό"
+
+#. Translators: This is the default name of new directories created by the
+#. file browser pane.
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3599
+msgid "directory"
+msgstr "κατάλογος"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3619
+msgid ""
+"The new directory is currently filtered out. You need to adjust your filter "
+"settings to make the directory visible"
+msgstr "Ο νέος φάκελος είναι αυτή τη στιγμή φιλτραρισμένος. Θα χρειαστεί να προσαρμόσετε τις ρυθμίσεις του φίλτρου σας για να κάνετε το φάκελο ορατό"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:713
+msgid "Bookmarks"
+msgstr "Σελιδοδείκτες"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:794
+msgid "_Filter"
+msgstr "_Φίλτρο"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:799
+msgid "_Move to Trash"
+msgstr "_Μετακίνηση στα απορρίμματα"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:800
+msgid "Move selected file or folder to trash"
+msgstr "Μετακίνηση του επιλεγμένου αρχείου ή φακέλου στα απορρίμματα"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:802
+msgid "_Delete"
+msgstr "_Διαγραφή"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:803
+msgid "Delete selected file or folder"
+msgstr "Διαγραφή επιλεγμένου αρχείου ή φακέλου"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:810
+msgid "Open selected file"
+msgstr "Άνοιγμα επιλεγμένου αρχείου"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:816
+msgid "Up"
+msgstr "Πάνω"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:817
+msgid "Open the parent folder"
+msgstr "Άνοιγμα του μητρικού φακέλου"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:822
+msgid "_New Folder"
+msgstr "_Νέος φάκελος"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:823
+msgid "Add new empty folder"
+msgstr "Προσθήκη ενός νέου κενού φακέλου"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:825
+msgid "New F_ile"
+msgstr "Νέο αρ_χείο"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:826
+msgid "Add new empty file"
+msgstr "Προσθήκη ενός νέου κενού αρχείου"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:831
+msgid "_Rename"
+msgstr "_Μετονομασία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:832
+msgid "Rename selected file or folder"
+msgstr "Μετονομασία του επιλεγμένου αρχείου ή φακέλου"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:838
+msgid "_Previous Location"
+msgstr "_Προηγούμενη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:840
+msgid "Go to the previous visited location"
+msgstr "Μετάβαση στη προηγούμενη αναγνωσμένη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:842
+msgid "_Next Location"
+msgstr "Επόμε_νη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:843
+msgid "Go to the next visited location"
+msgstr "Μετάβαση στην επόμενη αναγνωσμένη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:844
+msgid "Re_fresh View"
+msgstr "Ανα_νέωση προβολής"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:845
+msgid "Refresh the view"
+msgstr "Ανανέωση της προβολής"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:846
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:864
+msgid "_View Folder"
+msgstr "Προ_βολή φακέλου"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:847
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:865
+msgid "View folder in file manager"
+msgstr "Προβολή καταλόγου στο περιηγητή αρχείων"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:854
+msgid "Show _Hidden"
+msgstr "Προβολή κρυ_φών"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:855
+msgid "Show hidden files and folders"
+msgstr "Προβολή κρυφών αρχείων και φακέλων"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:857
+msgid "Show _Binary"
+msgstr "Προβολή _Binary"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:858
+msgid "Show binary files"
+msgstr "Προβολή αρχείων binary"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:990
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:999
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1024
+msgid "Previous location"
+msgstr "Προηγούμενη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:992
+msgid "Go to previous location"
+msgstr "Μετάβαση σε προηγούμενη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:994
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1019
+msgid "Go to a previously opened location"
+msgstr "Μετάβαση σε προηγούμενη ανοιγμένη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1015
+msgid "Next location"
+msgstr "Επόμενη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1017
+msgid "Go to next location"
+msgstr "Μετάβαση στην επόμενη τοποθεσία"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1233
+msgid "_Match Filename"
+msgstr "Ταί_ριασμα ονόματος αρχείου"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2137
+#, c-format
+msgid "No mount object for mounted volume: %s"
+msgstr "Κανένα αντικείμενο προσάρτησης για τον προσαρτημένο τόμο: %s"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2217
+#, c-format
+msgid "Could not open media: %s"
+msgstr "Αδυναμία ανοίγματος μέσου: %s"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2264
+#, c-format
+msgid "Could not mount volume: %s"
+msgstr "Αδυναμία προσάρτησης τόμου: %s"
+
+#. ex:ts=8:noet:
+#: ../plugins/modelines/modelines.pluma-plugin.desktop.in.h:1
+msgid "Modelines"
+msgstr "Modelines"
+
+#: ../plugins/modelines/modelines.pluma-plugin.desktop.in.h:2
+msgid "Emacs, Kate and Vim-style modelines support for pluma."
+msgstr "Υποστήριξη του pluma για modelines τύπου Emacs, Kate και Vim."
+
+#: ../plugins/pythonconsole/pythonconsole.pluma-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole/__init__.py:50
+msgid "Python Console"
+msgstr "Κονσόλα Python"
+
+#: ../plugins/pythonconsole/pythonconsole.pluma-plugin.desktop.in.h:2
+msgid "Interactive Python console standing in the bottom panel"
+msgstr "Διαδραστική κονσόλα Python στην κάτω εργαλειοθήκη"
+
+#. ex:et:ts=4:
+#: ../plugins/pythonconsole/pythonconsole/config.ui.h:1
+msgid "C_ommand color:"
+msgstr "Χρώμα εντο_λών:"
+
+#: ../plugins/pythonconsole/pythonconsole/config.ui.h:2
+msgid "_Error color:"
+msgstr "Χρώμα σ_φαλμάτων:"
+
+#. ex:ts=8:et:
+#: ../plugins/quickopen/quickopen/popup.py:35
+#: ../plugins/quickopen/quickopen.pluma-plugin.desktop.in.h:1
+msgid "Quick Open"
+msgstr "Γρήγορο άνοιγμα"
+
+#: ../plugins/quickopen/quickopen/windowhelper.py:69
+msgid "Quick open"
+msgstr "Γρήγορο άνοιγμα"
+
+#: ../plugins/quickopen/quickopen/windowhelper.py:70
+msgid "Quickly open documents"
+msgstr "Γρήγορο άνοιγμα εγγράφων"
+
+#: ../plugins/quickopen/quickopen.pluma-plugin.desktop.in.h:2
+msgid "Quickly open files"
+msgstr "Γρήγορο άνοιγμα αρχείων"
+
+#: ../plugins/snippets/snippets.pluma-plugin.desktop.in.h:1
+#: ../plugins/snippets/snippets/Document.py:58
+msgid "Snippets"
+msgstr "Snippets"
+
+#: ../plugins/snippets/snippets.pluma-plugin.desktop.in.h:2
+msgid "Insert often-used pieces of text in a fast way"
+msgstr "Εισάγετε συχνά χρησιμοποιούμενα κομμάτια κειμένου με ένα γρήγορο τρόπο"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:1
+msgid "Snippets Manager"
+msgstr "Διαχειριστής Snippets"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:2
+msgid "_Snippets:"
+msgstr "_Snippets:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Create new snippet"
+msgstr "Δημιουργία νέου snippet"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
+#: ../plugins/snippets/snippets/Manager.py:800
+msgid "Import snippets"
+msgstr "Εισαγωγή snippets"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+msgid "Export selected snippets"
+msgstr "Εξαγωγή επιλεγμένων snippets"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+#: ../plugins/snippets/snippets/Manager.py:412
+msgid "Delete selected snippet"
+msgstr "Διαγραφή επιλεγμένου snippet"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Activation"
+msgstr "Ενεργοποίηση"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "_Tab trigger:"
+msgstr "_Tab trigger:"
+
+#. self['hbox_tab_trigger'].set_spacing(0)
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/snippets/snippets/Manager.py:689
+msgid "Single word the snippet is activated with after pressing Tab"
+msgstr "Μονή λέξη για την ενεργοποίηση του snippet μετά το πάτημα του πλήκτρου tab"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
+msgid "Shortcut key with which the snippet is activated"
+msgstr "Πλήκτρο συντόμευσης για την ενεργοποίηση του snippet"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:13
+msgid "S_hortcut key:"
+msgstr "Πλήκτρο σ_υντόμευσης:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+msgid "_Drop targets:"
+msgstr "Α_κύρωση στόχων:"
+
+#: ../plugins/snippets/snippets/WindowHelper.py:130
+msgid "Manage _Snippets..."
+msgstr "Διαχείριση _Snippets..."
+
+#: ../plugins/snippets/snippets/WindowHelper.py:131
+msgid "Manage snippets"
+msgstr "Διαχείριση snippets"
+
+#: ../plugins/snippets/snippets/Manager.py:46
+msgid "Snippets archive"
+msgstr "Αρχειοθήκη Snippets"
+
+#: ../plugins/snippets/snippets/Manager.py:71
+msgid "Add a new snippet..."
+msgstr "Προσθήκη νέου snippet..."
+
+#: ../plugins/snippets/snippets/Manager.py:121
+msgid "Global"
+msgstr "Global"
+
+#: ../plugins/snippets/snippets/Manager.py:409
+msgid "Revert selected snippet"
+msgstr "Επαναφορά επιλεγμένου snippet"
+
+#. self['hbox_tab_trigger'].set_spacing(3)
+#: ../plugins/snippets/snippets/Manager.py:682
+msgid ""
+"This is not a valid Tab trigger. Triggers can either contain letters or a "
+"single (non-alphanumeric) character like: {, [, etc."
+msgstr "Αυτή δεν είναι μια έγκυρη συντόμευση εκκίνησης καρτέλας. Οι συντομεύσεις μπορούν να περιέχουν είτε ένα μοναδικό, μη αλφαριθμητικό χαρακτήρα όπως: {, [, etc."
+
+#: ../plugins/snippets/snippets/Manager.py:779
+#, python-format
+msgid "The following error occurred while importing: %s"
+msgstr "Συνέβηκε το ακόλουθο σφάλμα κατά την εισαγωγή: %s"
+
+#: ../plugins/snippets/snippets/Manager.py:786
+msgid "Import successfully completed"
+msgstr "Η εισαγωγή ολοκληρώθηκε με επιτυχία"
+
+#: ../plugins/snippets/snippets/Manager.py:805
+#: ../plugins/snippets/snippets/Manager.py:891
+#: ../plugins/snippets/snippets/Manager.py:954
+msgid "All supported archives"
+msgstr "Όλα τα υποστηριζόμενα αρχεία"
+
+#: ../plugins/snippets/snippets/Manager.py:806
+#: ../plugins/snippets/snippets/Manager.py:892
+#: ../plugins/snippets/snippets/Manager.py:955
+msgid "Gzip compressed archive"
+msgstr "Συμπιεσμένο αρχείο Gzip"
+
+#: ../plugins/snippets/snippets/Manager.py:807
+#: ../plugins/snippets/snippets/Manager.py:893
+#: ../plugins/snippets/snippets/Manager.py:956
+msgid "Bzip2 compressed archive"
+msgstr "Συμπιεσμένο αρχείο Bzip2"
+
+#: ../plugins/snippets/snippets/Manager.py:808
+msgid "Single snippets file"
+msgstr "Μονό αρχείο snippets"
+
+#: ../plugins/snippets/snippets/Manager.py:809
+#: ../plugins/snippets/snippets/Manager.py:895
+#: ../plugins/snippets/snippets/Manager.py:958
+msgid "All files"
+msgstr "Όλα τα αρχεία"
+
+#: ../plugins/snippets/snippets/Manager.py:821
+#, python-format
+msgid "The following error occurred while exporting: %s"
+msgstr "Σφάλμα κατά την εξαγωγή : %s"
+
+#: ../plugins/snippets/snippets/Manager.py:825
+msgid "Export successfully completed"
+msgstr "Η εξαγωγή ολοκληρώθηκε με επιτυχία"
+
+#. Ask if system snippets should also be exported
+#: ../plugins/snippets/snippets/Manager.py:865
+#: ../plugins/snippets/snippets/Manager.py:932
+msgid "Do you want to include selected <b>system</b> snippets in your export?"
+msgstr "Θέλετε να περιληφθούν τα επιλεγμένα snippets <b>συστήματος</b> στην εξαγωγή σας;"
+
+#: ../plugins/snippets/snippets/Manager.py:880
+#: ../plugins/snippets/snippets/Manager.py:950
+msgid "There are no snippets selected to be exported"
+msgstr "Δεν υπάρχουν επιλεγμένα snippets για εξαγωγή"
+
+#: ../plugins/snippets/snippets/Manager.py:885
+#: ../plugins/snippets/snippets/Manager.py:923
+msgid "Export snippets"
+msgstr "Εξαγωγή snippets"
+
+#: ../plugins/snippets/snippets/Manager.py:1062
+msgid "Type a new shortcut, or press Backspace to clear"
+msgstr "Πληκτρολογήστε μια νέα συντόμευση, ή πατήστε Backspace για εκκαθάριση"
+
+#: ../plugins/snippets/snippets/Manager.py:1064
+msgid "Type a new shortcut"
+msgstr "Πληκτρολογήστε μια νέα συντόμευση"
+
+#: ../plugins/snippets/snippets/Exporter.py:65
+#, python-format
+msgid "The archive \"%s\" could not be created"
+msgstr "Δεν είναι δυνατή η δημιουργία της αρχειοθήκης  \"%s\""
+
+#: ../plugins/snippets/snippets/Exporter.py:82
+#, python-format
+msgid "Target directory \"%s\" does not exist"
+msgstr "Ο κατάλογος προορισμού \"%s\" δεν υπάρχει"
+
+#: ../plugins/snippets/snippets/Exporter.py:85
+#, python-format
+msgid "Target directory \"%s\" is not a valid directory"
+msgstr "Ο κατάλογος προορισμού  \"%s\"  δεν είναι ένας έγκυρος κατάλογος"
+
+#: ../plugins/snippets/snippets/Importer.py:29
+#: ../plugins/snippets/snippets/Importer.py:83
+#, python-format
+msgid "File \"%s\" does not exist"
+msgstr "Το αρχείο \"%s\" δεν υπάρχει"
+
+#: ../plugins/snippets/snippets/Importer.py:32
+#, python-format
+msgid "File \"%s\" is not a valid snippets file"
+msgstr "Το αρχείο \"%s\" δεν είναι έγκυρο αρχείο snippets"
+
+#: ../plugins/snippets/snippets/Importer.py:42
+#, python-format
+msgid "Imported file \"%s\" is not a valid snippets file"
+msgstr "Το εισηγμένο αρχείο \"%s\" δεν είναι ένα έγκυρο αρχείο snippets"
+
+#: ../plugins/snippets/snippets/Importer.py:52
+#, python-format
+msgid "The archive \"%s\" could not be extracted"
+msgstr "Αδυναμία αποσυμπίεσης της αρχειοθήκης \"%s\""
+
+#: ../plugins/snippets/snippets/Importer.py:70
+#, python-format
+msgid "The following files could not be imported: %s"
+msgstr "Δεν είναι δυνατή η εισαγωγή των παρακάτω αρχείων: %s"
+
+#: ../plugins/snippets/snippets/Importer.py:86
+#: ../plugins/snippets/snippets/Importer.py:99
+#, python-format
+msgid "File \"%s\" is not a valid snippets archive"
+msgstr "Το αρχείο \"%s\"δεν είναι μια έγκυρη αρχειοθήκη snippets"
+
+#: ../plugins/snippets/snippets/Placeholder.py:594
+#, python-format
+msgid ""
+"Execution of the Python command (%s) exceeds the maximum time, execution "
+"aborted."
+msgstr "Η εκτέλεση της εντολής python (%s) υπερβαίνει το μέγιστο χρόνο, ακύρωση εκτέλεσης."
+
+#: ../plugins/snippets/snippets/Placeholder.py:602
+#, python-format
+msgid "Execution of the Python command (%s) failed: %s"
+msgstr "Η εκτέλεση της εντολής python (%s) απέτυχε: %s"
+
+#: ../plugins/sort/pluma-sort-plugin.c:88
+msgid "S_ort..."
+msgstr "Τα_ξινόμηση..."
+
+#: ../plugins/sort/pluma-sort-plugin.c:90
+msgid "Sort the current document or selection"
+msgstr "Ταξινόμηση του τρέχοντος εγγράφου ή της επιλογής"
+
+#: ../plugins/sort/sort.pluma-plugin.desktop.in.h:1
+#: ../plugins/sort/sort.ui.h:1
+msgid "Sort"
+msgstr "Ταξινόμηση"
+
+#: ../plugins/sort/sort.pluma-plugin.desktop.in.h:2
+msgid "Sorts a document or selected text."
+msgstr "Ταξινόμηση του εγγράφου ή της επιλογής."
+
+#: ../plugins/sort/sort.ui.h:2
+msgid "_Sort"
+msgstr "_Ταξινόμηση"
+
+#: ../plugins/sort/sort.ui.h:3
+msgid "_Reverse order"
+msgstr "_Αναστροφή σειράς"
+
+#: ../plugins/sort/sort.ui.h:4
+msgid "R_emove duplicates"
+msgstr "Απο_μάκρυνση διπλοεγγραφών"
+
+#: ../plugins/sort/sort.ui.h:5
+msgid "_Ignore case"
+msgstr "Α_γνόηση χαρακτήρα"
+
+#: ../plugins/sort/sort.ui.h:6
+msgid "S_tart at column:"
+msgstr "Ένα_ρξη στη στήλη:"
+
+#: ../plugins/sort/sort.ui.h:7
+msgid "You cannot undo a sort operation"
+msgstr "Δεν θα μπορείτε να αναιρέσετε την ενέργεια ταξινόμησης"
+
+#. Translators: Displayed in the "Check Spelling" dialog if there are no
+#. suggestions for the current misspelled word
+#. Translators: Displayed in the "Check Spelling" dialog if there are no
+#. suggestions
+#. * for the current misspelled word
+#: ../plugins/spell/pluma-automatic-spell-checker.c:420
+#: ../plugins/spell/pluma-spell-checker-dialog.c:471
+msgid "(no suggested words)"
+msgstr "(όχι προτεινόμενες λέξεις)"
+
+#: ../plugins/spell/pluma-automatic-spell-checker.c:444
+msgid "_More..."
+msgstr "_Περισσότερα..."
+
+#. Ignore all
+#: ../plugins/spell/pluma-automatic-spell-checker.c:499
+msgid "_Ignore All"
+msgstr "_Αγνόηση όλων"
+
+#. + Add to Dictionary
+#: ../plugins/spell/pluma-automatic-spell-checker.c:514
+msgid "_Add"
+msgstr "_Προσθήκη"
+
+#: ../plugins/spell/pluma-automatic-spell-checker.c:553
+msgid "_Spelling Suggestions..."
+msgstr "_Συμβουλές ορθογραφίας..."
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:282
+msgid "Check Spelling"
+msgstr "Έλεγχος ορθογραφίας"
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:293
+msgid "Suggestions"
+msgstr "Συμβουλές"
+
+#. Translators: Displayed in the "Check Spelling" dialog if the current word
+#. isn't misspelled
+#: ../plugins/spell/pluma-spell-checker-dialog.c:578
+msgid "(correct spelling)"
+msgstr "(διόρθωση ορθογραφίας)"
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:721
+msgid "Completed spell checking"
+msgstr "Ο έλεγχος ορθογραφίας ολοκληρώθηκε"
+
+#. Translators: the first %s is the language name, and
+#. * the second %s is the locale name. Example:
+#. * "French (France)"
+#: ../plugins/spell/pluma-spell-checker-language.c:285
+#: ../plugins/spell/pluma-spell-checker-language.c:291
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: this refers to an unknown language code
+#. * (one which isn't in our built-in list).
+#: ../plugins/spell/pluma-spell-checker-language.c:300
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "Άγνωστο (%s)"
+
+#. Translators: this refers the Default language used by the
+#. * spell checker
+#: ../plugins/spell/pluma-spell-checker-language.c:406
+msgctxt "language"
+msgid "Default"
+msgstr "Προεπιλεγμένη"
+
+#: ../plugins/spell/pluma-spell-language-dialog.c:141
+#: ../plugins/spell/languages-dialog.ui.h:1
+msgid "Set language"
+msgstr "Ορισμός γλώσσας"
+
+#: ../plugins/spell/pluma-spell-language-dialog.c:198
+msgid "Languages"
+msgstr "Γλώσσες"
+
+#: ../plugins/spell/pluma-spell-plugin.c:86
+msgid "_Check Spelling..."
+msgstr "Έ_λεγχος ορθογραφίας..."
+
+#: ../plugins/spell/pluma-spell-plugin.c:88
+msgid "Check the current document for incorrect spelling"
+msgstr "Αναζητά στο τρέχον έγγραφο ορθογραφικά λάθη"
+
+#: ../plugins/spell/pluma-spell-plugin.c:94
+msgid "Set _Language..."
+msgstr "Ορισμός Γ_λώσσας..."
+
+#: ../plugins/spell/pluma-spell-plugin.c:96
+msgid "Set the language of the current document"
+msgstr "Ορισμός γλώσσας για το τρέχον έγγραφο"
+
+#: ../plugins/spell/pluma-spell-plugin.c:105
+msgid "_Autocheck Spelling"
+msgstr "_Αυτόματος Έλεγχος Ορθογραφίας"
+
+#: ../plugins/spell/pluma-spell-plugin.c:107
+msgid "Automatically spell-check the current document"
+msgstr "Αυτόματος έλεγχος ορθογραφίας στο τρέχον έγγραφο"
+
+#: ../plugins/spell/pluma-spell-plugin.c:752
+msgid "The document is empty."
+msgstr "Το έγγραφο είναι κενό."
+
+#: ../plugins/spell/pluma-spell-plugin.c:782
+msgid "No misspelled words"
+msgstr "Δεν υπάρχουν ανορθόγραφες λέξεις"
+
+#: ../plugins/spell/languages-dialog.ui.h:2
+msgid "Select the _language of the current document."
+msgstr "Επιλέξτε τη γ_λώσσα του τρέχοντος εγγράφου."
+
+#: ../plugins/spell/spell-checker.ui.h:1
+msgid "Check spelling"
+msgstr "Έλεγχος ορθογραφίας"
+
+#: ../plugins/spell/spell-checker.ui.h:2
+msgid "Misspelled word:"
+msgstr "Ανορθόγραφη λέξη:"
+
+#: ../plugins/spell/spell-checker.ui.h:3
+msgid "word"
+msgstr "λέξη"
+
+#: ../plugins/spell/spell-checker.ui.h:4
+msgid "Change _to:"
+msgstr "Αλλαγή _σε:"
+
+#: ../plugins/spell/spell-checker.ui.h:5
+msgid "Check _Word"
+msgstr "Έλεγχος _λέξης"
+
+#: ../plugins/spell/spell-checker.ui.h:6
+msgid "_Suggestions:"
+msgstr "_Συμβουλές:"
+
+#: ../plugins/spell/spell-checker.ui.h:7
+msgid "_Ignore"
+msgstr "Α_γνόηση"
+
+#: ../plugins/spell/spell-checker.ui.h:8
+msgid "Cha_nge"
+msgstr "Αλλα_γή"
+
+#: ../plugins/spell/spell-checker.ui.h:9
+msgid "Ignore _All"
+msgstr "Αγνόηση ό_λων"
+
+#: ../plugins/spell/spell-checker.ui.h:10
+msgid "Change A_ll"
+msgstr "Αλλαγή ό_λων"
+
+#: ../plugins/spell/spell-checker.ui.h:11
+msgid "User dictionary:"
+msgstr "Λεξικό χρήστη:"
+
+#: ../plugins/spell/spell-checker.ui.h:12
+msgid "Add w_ord"
+msgstr "Προσθήκη λέ_ξης"
+
+#: ../plugins/spell/spell-checker.ui.h:13
+msgid "Language:"
+msgstr "Γλώσσα:"
+
+#: ../plugins/spell/spell-checker.ui.h:14
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: ../plugins/spell/spell.pluma-plugin.desktop.in.h:1
+msgid "Spell Checker"
+msgstr "Ορθογραφικός έλεγχος"
+
+#: ../plugins/spell/spell.pluma-plugin.desktop.in.h:2
+msgid "Checks the spelling of the current document."
+msgstr "Ελέγχει την ορθογραφία του τρέχοντος εγγράφου."
+
+#: ../plugins/taglist/pluma-taglist-plugin.c:98
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:716
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:732
+msgid "Tags"
+msgstr "Tags"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:623
+msgid "Select the group of tags you want to use"
+msgstr "Επιλέξτε την ομάδα tags που επιθυμείτε να χρησιμοποιήσετε"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:642
+msgid "_Preview"
+msgstr "_Προεπισκόπηση"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:713
+msgid "Available Tag Lists"
+msgstr "Διαθέσιμες λίστες tag"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:1
+msgid "XHTML 1.0 - Tags"
+msgstr "XHTML 1.0 - Tags"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:2
+msgid "Abbreviated form"
+msgstr "Abbreviated form"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:3
+msgid "Abbreviation"
+msgstr "Σύντμηση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:4
+msgid "Accessibility key character"
+msgstr "Χαρακτήρας πλήκτρου προσιτότητας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:5
+msgid "Acronym"
+msgstr "Ακρώνυμο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:6
+msgid "Align"
+msgstr "Στοίχιση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:7
+msgid "Alignment character"
+msgstr "Στοίχιση χαρακτήρα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:8
+msgid "Alternative"
+msgstr "Εναλλακτικό"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:9
+msgid "Anchor URI"
+msgstr "Άγκυρα URI"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:10
+msgid "Anchor"
+msgstr "Άγκυρα"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:12
+msgid "Applet class file code (deprecated)"
+msgstr "Κώδικας αρχείου Applet class (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:13
+msgid "Associated information"
+msgstr "Συσχετιζόμενες πληροφορίες"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:14
+msgid "Author info"
+msgstr "Πληροφορίες συγγραφέα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:15
+msgid "Axis related headers"
+msgstr "Κεφαλίδες σχετικές με άξονα"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:17
+msgid "Background color (deprecated)"
+msgstr "Χρώμα παρασκηνίου (deprecated)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:19
+msgid "Background texture tile (deprecated)"
+msgstr "Πλακίδιο υφής παρασκηνίου (deprecated)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:21
+msgid "Base font (deprecated)"
+msgstr "Base font (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:22
+msgid "Base URI"
+msgstr "Base URI"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:23
+msgid "Bold"
+msgstr "Έντονα"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:25
+msgid "Border (deprecated)"
+msgstr "Border (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:26
+msgid "Cell rowspan"
+msgstr "Μέγεθος γραμμής κελιού"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:28
+msgid "Center (deprecated)"
+msgstr "Center (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:29
+msgid "Character encoding of linked resource"
+msgstr "Κωδικοποίηση χαρακτήρων του συνδεδεμένου πόρου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:30
+msgid "Checked state"
+msgstr "Επιλεγμένη κατάσταση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:31
+msgid "Citation"
+msgstr "Παράθεση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:32
+msgid "Cite reason for change"
+msgstr "Παραθέστε το λόγο της αλλαγής"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:33
+msgid "Class implementation ID"
+msgstr "Class implementation ID"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:34
+msgid "Class list"
+msgstr "Class list"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:35
+msgid "Clear text flow control"
+msgstr "Εκκαθάριση ελέγχου ροής κειμένου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:36
+msgid "Code content type"
+msgstr "Είδος περιεχομένου κώδικα"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:38
+msgid "Color of selected links (deprecated)"
+msgstr "Χρώμα επιλεγμένων δεσμών (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:39
+msgid "Column span"
+msgstr "Μέγεθος στήλης"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:40
+msgid "Columns"
+msgstr "Στήλες"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:41
+msgid "Comment"
+msgstr "Σχόλιο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:42
+msgid "Computer code fragment"
+msgstr "Κομμάτι κώδικα υπολογιστή"
+
+#. The "type" attribute is deprecated for the "ol" tag only,
+#. since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:45
+msgid "Content type (deprecated)"
+msgstr "Τύπος περιεχομένου (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:46
+msgid "Coordinates"
+msgstr "Συντεταγμένες"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:47
+msgid "Date and time of change"
+msgstr "Ημερομηνία και ώρα της αλλαγής"
+
+#. NOTE: used in "object" tag
+#: ../plugins/taglist/HTML.tags.xml.in.h:49
+msgid "Declare flag"
+msgstr "Declare flag"
+
+#. Translators: DEFER is an optional attribute of the <script> tag.
+#. It indicates that the script is not going to generate any document
+#. content. The browser can continue parsing and drawing the page.
+#: ../plugins/taglist/HTML.tags.xml.in.h:53
+msgid "Defer attribute"
+msgstr "Μετάθεση γνωρίσματος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:54
+msgid "Definition description"
+msgstr "Περιγραφή ορισμού"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:55
+msgid "Definition list"
+msgstr "Λίστα ορισμών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:56
+msgid "Definition term"
+msgstr "Όρος ορισμού"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:57
+msgid "Deleted text"
+msgstr "Διαγραμμένο κείμενο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:58
+msgid "Directionality"
+msgstr "Κατευθυντικότητα"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:60
+msgid "Directionality (deprecated)"
+msgstr "Κατευθυντικότητα (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:61
+msgid "Disabled"
+msgstr "Απενεργοποιημένο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:62
+msgid "DIV container"
+msgstr "DIV container"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:63
+msgid "DIV Style container"
+msgstr "DIV Style container"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:64
+msgid "Document base"
+msgstr "Βάση εγγράφου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:65
+msgid "Document body"
+msgstr "Σώμα εγγράφου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:66
+msgid "Document head"
+msgstr "Κεφαλίδα εγγράφου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:67
+msgid "Element ID"
+msgstr "Element ID"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:68
+msgid "Document title"
+msgstr "Τίτλος εγγράφου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:69
+msgid "Document type"
+msgstr "Τύπος εγγράφου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:70
+#: ../plugins/taglist/Latex.tags.xml.in.h:72
+msgid "Emphasis"
+msgstr "Έμφαση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:71
+msgid "Encode type"
+msgstr "Τύπος κωδικοποίησης"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:73
+msgid "Font face (deprecated)"
+msgstr "Font face (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:74
+msgid "For label"
+msgstr "Για ετικέτα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:75
+msgid "Forced line break"
+msgstr "Forced line break"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:76
+msgid "Form action handler"
+msgstr "Χειριστής ενέργειας φόρμας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:77
+msgid "Form control group"
+msgstr "Form control group"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:78
+msgid "Form field label text"
+msgstr "Ετικέτα κειμένου πεδίου φόρμας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:79
+msgid "Form input type"
+msgstr "Τύπος input φόρμας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:80
+msgid "Form input"
+msgstr "Form input"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:81
+msgid "Form method"
+msgstr "Μέθοδος φόρμας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:82
+msgid "Form"
+msgstr "Φόρμα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:83
+msgid "Forward link"
+msgstr "Δεσμός Μπροστά"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:84
+msgid "Frame render parts"
+msgstr "Frame render parts"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:85
+msgid "Frame source"
+msgstr "Πηγή πλαισίου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:86
+msgid "Frame target"
+msgstr "Στόχος πλαισίου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:87
+msgid "Frame"
+msgstr "Πλαίσιο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:88
+msgid "Frame border"
+msgstr "Περίγραμμα πλαισίου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:89
+msgid "Frameset columns"
+msgstr "Στήλες Frameset"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:90
+msgid "Frameset rows"
+msgstr "Γραμμές Frameset"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:91
+msgid "Frameset"
+msgstr "Frameset"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:92
+msgid "Frame spacing"
+msgstr "Απόσταση πλαισίου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:93
+msgid "Generic embedded object"
+msgstr "Γενικό ενσωματωμένο αντικείμενο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:94
+msgid "Generic metainformation"
+msgstr "Γενικές μεταπληροφορίες"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:95
+msgid "Generic span"
+msgstr "Γενικό μέγεθος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:96
+msgid "Header cell IDs"
+msgstr "ID's κελιού κεφαλίδας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:97
+msgid "Heading 1"
+msgstr "Επικεφαλίδα 1"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:98
+msgid "Heading 2"
+msgstr "Επικεφαλίδα 2"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:99
+msgid "Heading 3"
+msgstr "Επικεφαλίδα 3"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:100
+msgid "Heading 4"
+msgstr "Επικεφαλίδα 4"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:101
+msgid "Heading 5"
+msgstr "Επικεφαλίδα 5"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:102
+msgid "Heading 6"
+msgstr "Επικεφαλίδα 6"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:103
+msgid "Height"
+msgstr "Ύψος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:104
+msgid "Horizontal rule"
+msgstr "Οριζόντια γραμμή"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:106
+msgid "Horizontal space (deprecated)"
+msgstr "Οριζόντιο διάστημα (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:107
+msgid "HREF URI"
+msgstr "HREF URI"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:108
+msgid "HTML root element"
+msgstr "HTML root element"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:109
+msgid "HTTP header name"
+msgstr "Όνομα κεφαλίδας HTML"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:110
+msgid "I18N BiDi override"
+msgstr "I18N BiDi override"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:111
+msgid "Image map area"
+msgstr "Περιοχή χάρτη εικόνας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:112
+msgid "Image map name"
+msgstr "Όνομα χάρτη εικόνας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:113
+msgid "Image map"
+msgstr "Χάρτης εικόνας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:114
+msgid "Image"
+msgstr "Εικόνα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:115
+msgid "Inline frame"
+msgstr "Inline frame"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:116
+msgid "Inserted text"
+msgstr "Εισηγμένο κείμενο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:117
+msgid "Instance definition"
+msgstr "Περιγραφή Instance"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:118
+msgid "Italic text"
+msgstr "Πλάγιο κείμενο"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:120
+msgid "Java applet (deprecated)"
+msgstr "Εφαρμογίδιο Java (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:121
+msgid "Label"
+msgstr "Ετικέτα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:122
+msgid "Language code"
+msgstr "Κωδικός γλώσσας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:123
+msgid "Large text style"
+msgstr "Στυλ μεγάλου κειμένου"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:125
+msgid "Link color (deprecated)"
+msgstr "Χρώμα συνδέσμου (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:126
+msgid "List item"
+msgstr "Αντικείμενο λίστας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:127
+msgid "List of MIME types for file upload"
+msgstr "Λίστα από τύπους MIME για ανέβασμα αρχείων"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:128
+msgid "List of supported character sets"
+msgstr "Λίστα από υποστηριζόμενες κωδικοποιήσεις χαρακτήρων"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:129
+msgid "Local change to font"
+msgstr "Τοπική αλλαγή γραμματοσειράς"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:130
+msgid "Long description link"
+msgstr "Περιγραφή"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:131
+msgid "Long quotation"
+msgstr "Μεγάλη παράθεση"
+
+#. Supported in XHTML 1.0 Frameset DTD only.
+#: ../plugins/taglist/HTML.tags.xml.in.h:133
+msgid "Margin pixel height"
+msgstr "Ύψος εικονοστοιχείου περιθωρίου"
+
+#. Supported in XHTML 1.0 Frameset DTD only.
+#: ../plugins/taglist/HTML.tags.xml.in.h:135
+msgid "Margin pixel width"
+msgstr "Πλάτος εικονοστοιχείου περιθωρίου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:136
+msgid "Maximum length of text field"
+msgstr "Μέγιστο μάκρος πεδίου κειμένου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:137
+msgid "Output media"
+msgstr "Μέσα αποτελέσματος"
+
+#. Here I take some liberties: There's no mandatory attributes,
+#. but those are most common, and will likely be used.
+#: ../plugins/taglist/HTML.tags.xml.in.h:140
+msgid "Media-independent link"
+msgstr "Σύνδεσμος ανεξάρτητος από media"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:142
+msgid "Menu list (deprecated)"
+msgstr "Menu list (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:143
+msgid "Multi-line text field"
+msgstr "Πεδίο κειμένου πολλαπλών γραμμών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:144
+msgid "Multiple"
+msgstr "Πολλαπλή"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:145
+msgid "Name"
+msgstr "Όνομα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:146
+msgid "Named property value"
+msgstr "Τιμή ιδιότητας με όνομα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:147
+msgid "No frames"
+msgstr "Όχι πλαίσια"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:148
+msgid "No resize"
+msgstr "Όχι αλλαγή μεγέθους"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:149
+msgid "No script"
+msgstr "Όχι δέσμη ενεργειών"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:151
+msgid "No shade (deprecated)"
+msgstr "No shade (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:152
+msgid "No URI"
+msgstr "Όχι URI"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:154
+msgid "No word wrap (deprecated)"
+msgstr "Όχι αναδίπλωση γραμμής (deprecated)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:156
+msgid "Object applet file (deprecated)"
+msgstr "Αρχείο αντικειμένου εφαρμογιδίου (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:157
+msgid "Object data reference"
+msgstr "Object data reference"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:158
+msgid "Offset for alignment character"
+msgstr "Offset για χαρακτήρα στοίχισης"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:159
+msgid "OnBlur event"
+msgstr "γεγονός OnBlur"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:160
+msgid "OnChange event"
+msgstr "γεγονός OnChange"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:161
+msgid "OnClick event"
+msgstr "γεγονός OnClick"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:162
+msgid "OnDblClick event"
+msgstr "γεγονός OnDblClick"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:163
+msgid "OnFocus event"
+msgstr "γεγονός OnFocus"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:164
+msgid "OnKeyDown event"
+msgstr "γεγονός OnKeyDown"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:165
+msgid "OnKeyPress event"
+msgstr "γεγονός OnKeyPress"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:166
+msgid "OnKeyUp event"
+msgstr "γεγονός OnKeyUp"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:167
+msgid "OnLoad event"
+msgstr "γεγονός OnLoad"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:168
+msgid "OnMouseDown event"
+msgstr "γεγονός OnMouseDown"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:169
+msgid "OnMouseMove event"
+msgstr "γεγονός OnMouseMove"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:170
+msgid "OnMouseOut event"
+msgstr "γεγονός OnMouseOut"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:171
+msgid "OnMouseOver event"
+msgstr "γεγονός OnMouseOver"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:172
+msgid "OnMouseUp event"
+msgstr "γεγονός OnMouseUp"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:173
+msgid "OnReset event"
+msgstr "γεγονός OnReset"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:174
+msgid "OnSelect event"
+msgstr "γεγονός OnSelect"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:175
+msgid "OnSubmit event"
+msgstr "γεγονός OnSubmit"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:176
+msgid "OnUnload event"
+msgstr "γεγονός OnUnload"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:177
+msgid "Option group"
+msgstr "Ομάδα επιλογών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:178
+msgid "Option selector"
+msgstr "Επιλογέας επιλογών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:179
+msgid "Ordered list"
+msgstr "Ταξινομημένη λίστα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:180
+msgid "Paragraph class"
+msgstr "Paragraph class"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:181
+msgid "Paragraph style"
+msgstr "Στυλ παραγράφου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:182
+msgid "Paragraph"
+msgstr "Παράγραφος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:183
+msgid "Preformatted text"
+msgstr "Προμορφοποιημένο κείμενο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:184
+msgid "Profile metainfo dictionary"
+msgstr "Profile metainfo dictionary"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:185
+msgid "Push button"
+msgstr "Κουμπί push"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:186
+msgid "ReadOnly text and password"
+msgstr "Κείμενο μόνο για ανάγνωση και κωδικός"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:188
+msgid "Reduced spacing (deprecated)"
+msgstr "Μειωμένο διάστιχο (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:189
+msgid "Reverse link"
+msgstr "Αναστροφή δεσμού"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:190
+msgid "Rows"
+msgstr "Γραμμές"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:191
+msgid "Rulings between rows and columns"
+msgstr "Χάρακες μεταξύ γραμμών και στηλών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:192
+msgid "Sample program output, scripts"
+msgstr "Δείγμα αποτελέσματος προγράμματος, δέσμες ενεργειών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:193
+msgid "Scope covered by header cells"
+msgstr "Σκοπός που καλύπτεται από κελιά κεφαλίδας"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:195
+msgid "Script language name"
+msgstr "Όνομα γλώσσας δέσμης ενεργειών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:196
+msgid "Script statements"
+msgstr "Ορισμοί δέσμης ενεργειών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:197
+msgid "Scrollbar"
+msgstr "Γραμμή κύλισης"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:198
+msgid "Selectable option"
+msgstr "Επιλογή"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:199
+msgid "Selected"
+msgstr "Επιλεγμένο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:200
+msgid "Server-side image map"
+msgstr "Χάρτης εικόνας στη μεριά του εξυπηρετητή"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:201
+msgid "Shape"
+msgstr "Σχήμα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:202
+msgid "Short inline quotation"
+msgstr "Short inline quotation"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:204
+msgid "Size (deprecated)"
+msgstr "Size (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:205
+msgid "Small text style"
+msgstr "Στυλ μικρού κειμένου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:206
+msgid "Source"
+msgstr "Πηγή"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:207
+msgid "Space-separated archive list"
+msgstr "Λίστα αρχείου διαχωρισμένη με κενά"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:208
+msgid "Spacing between cells"
+msgstr "Διάστιχο μεταξύ κελιών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:209
+msgid "Spacing within cells"
+msgstr "Διάστιχο μεταξύ κελιών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:210
+msgid "Span"
+msgstr "Span"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:211
+msgid "Standby load message"
+msgstr "Standby load message"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:213
+msgid "Starting sequence number (deprecated)"
+msgstr "Starting sequence number (deprecated)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:215
+msgid "Strike-through text style (deprecated)"
+msgstr "Στυλ διακριτής γραφής κειμένου (deprecated)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:217
+msgid "Strike-through text (deprecated)"
+msgstr "Στυλ διακριτής γραφής κειμένου (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:218
+msgid "Strong emphasis"
+msgstr "Ισχυρή έμφαση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:219
+msgid "Style info"
+msgstr "Πληροφορίες στυλ"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:220
+msgid "Subscript"
+msgstr "Subscript"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:221
+msgid "Superscript"
+msgstr "Superscript"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:222
+msgid "Table body"
+msgstr "Σώμα πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:223
+msgid "Table caption"
+msgstr "Λεζάντα πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:224
+msgid "Table column group properties"
+msgstr "Ιδιότητες ομάδας στηλών πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:225
+msgid "Table column properties"
+msgstr "Ιδιότητα στήλης πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:226
+msgid "Table data cell"
+msgstr "Κελί δεδομένων πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:227
+msgid "Table footer"
+msgstr "Υποσέλιδο πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:228
+msgid "Table header cell"
+msgstr "Κελί κεφαλίδας πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:229
+msgid "Table header"
+msgstr "Κεφαλίδα πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:230
+msgid "Table row"
+msgstr "Γραμμή πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:231
+msgid "Table summary"
+msgstr "Περίληψη πίνακα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:232
+msgid "Table"
+msgstr "Πίνακας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:233
+msgid "Target - Blank"
+msgstr "Στόχος - Κενή"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:234
+msgid "Target - Parent"
+msgstr "Στόχος - Μητρική"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:235
+msgid "Target - Self"
+msgstr "Στόχος - ιδία"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:236
+msgid "Target - Top"
+msgstr "Στόχος - Πάνω"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:237
+msgid "Teletype or monospace text style"
+msgstr "Στυλ κειμένου Teletype ή monospace"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:239
+msgid "Text color (deprecated)"
+msgstr "Χρώμα κειμένου (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:240
+msgid "Text entered by user"
+msgstr "Κείμενο εισηγμένο από χρήστη"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:241
+msgid "Title"
+msgstr "Τίτλος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:242
+msgid "Underlined text style"
+msgstr "Στυλ υπογράμμισης κειμένου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:243
+msgid "Unordered list"
+msgstr "Λίστα χωρίς ταξινόμηση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:244
+msgid "Use image map"
+msgstr "Χρήση χάρτη εικόνας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:245
+msgid "Value interpretation"
+msgstr "Ερμηνεία τιμής"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:246
+msgid "Value"
+msgstr "Τιμή"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:247
+msgid "Variable or program argument"
+msgstr "Μεταβλητή ή εντολή προγράμματος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:248
+msgid "Vertical cell alignment"
+msgstr "Κάθετη στοίχιση κελιού"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:250
+msgid "Vertical space (deprecated)"
+msgstr "Κάθετο διάστημα (deprecated)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:252
+msgid "Visited link color (deprecated)"
+msgstr "Visited link color (deprecated)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:253
+msgid "Width"
+msgstr "Πλάτος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:254
+msgid "HTML - Tags"
+msgstr "HTML - Tags"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:255
+msgid "Above"
+msgstr "Πάνω"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:256
+msgid "Applet class file code"
+msgstr "Κώδικας αρχείου Applet class"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:257
+msgid "Array"
+msgstr "Διάταξη"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:258
+msgid "Background color"
+msgstr "Χρώμα παρασκηνίου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:259
+msgid "Background texture tile"
+msgstr "Πλακίδιο υφής παρασκηνίου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:260
+msgid "Base font"
+msgstr "Base font"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:261
+msgid "Border color"
+msgstr "Χρώμα περιγράμματος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:262
+msgid "Border"
+msgstr "Περίγραμμα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:263
+msgid "Center"
+msgstr "Κέντρο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:264
+msgid "Checked (state)"
+msgstr "Ελεγμένο (κατάσταση)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:265
+msgid "Color of selected links"
+msgstr "Χρώμα επιλεγμένων δεσμών"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:266
+msgid "Content scheme"
+msgstr "Σχήμα περιεχομένου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:267
+msgid "Content type"
+msgstr "Τύπος περιεχομένου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:268
+msgid "Direction"
+msgstr "Κατεύθυνση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:269
+msgid "Directory list"
+msgstr "Λίστα καταλόγου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:270
+msgid "HTML version"
+msgstr "Έκδοση HTML"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:271
+msgid "Embedded object"
+msgstr "Ενσωματωμένο αντικείμενο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:272
+msgid "Figure"
+msgstr "Figure"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:273
+msgid "Font face"
+msgstr "Στοιχείο γραμματοσειράς"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:274
+msgid "Frameborder"
+msgstr "Frameborder"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:275
+msgid "Framespacing"
+msgstr "Framespacing"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:276
+msgid "Heading"
+msgstr "Κεφαλίδα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:277
+msgid "Horizontal space"
+msgstr "Οριζόντιο διάστημα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:278
+msgid "Image source"
+msgstr "Πηγή εικόνας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:279
+msgid "Inline layer"
+msgstr "Inline layer"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:280
+msgid "Java applet"
+msgstr "Εφαρμογίδιο Java"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:281
+msgid "Layer"
+msgstr "Layer"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:282
+msgid "Link color"
+msgstr "Χρώμα συνδέσμου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:283
+msgid "Listing"
+msgstr "Λίστα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:284
+msgid "Mail link"
+msgstr "Σύνδεσμος αλληλογραφίας"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:285
+msgid "Marquee"
+msgstr "Marquee"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:286
+msgid "Menu list"
+msgstr "Λίστα μενού"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:287
+msgid "Multicolumn"
+msgstr "Πολλαπλής στήλης"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:288
+msgid "Next ID"
+msgstr "Next ID"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:289
+msgid "No embedded objects"
+msgstr "Δεν υπάρχουν ενσωματωμένα αντικείμενα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:290
+msgid "No layers"
+msgstr "Όχι layers"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:291
+msgid "No line break"
+msgstr "Όχι αλλαγή γραμμής"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:292
+msgid "No shade"
+msgstr "Όχι σκίαση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:293
+msgid "No word wrap"
+msgstr "Όχι αναδίπλωση γραμμής"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:294
+msgid "Note"
+msgstr "Σημείωση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:295
+msgid "Object applet file"
+msgstr "Αρχείο αντικειμένου εφαρμογιδίου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:296
+msgid "Preformatted listing"
+msgstr "Προμορφοποιημένη λίστα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:297
+msgid "Prompt message"
+msgstr "Μήνυμα ειδοποίησης"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:298
+msgid "Quote"
+msgstr "Παράθεση"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:299
+msgid "Range"
+msgstr "Εύρος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:300
+msgid "Reduced spacing"
+msgstr "Μειωμένο διάστιχο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:301
+msgid "Root"
+msgstr "Root"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:302
+msgid "Single line prompt"
+msgstr "Ειδοποίηση μιας γραμμής"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:303
+msgid "Size"
+msgstr "Μέγεθος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:304
+msgid "Soft line break"
+msgstr "Soft line break"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:305
+msgid "Sound"
+msgstr "Ήχος"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:306
+msgid "Spacer"
+msgstr "Spacer"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:307
+msgid "Square root"
+msgstr "Τετραγωνική ρίζα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:308
+msgid "Starting sequence number"
+msgstr "Starting sequence number"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:309
+msgid "Strike-through text style"
+msgstr "Στυλ διακριτής γραφής κειμένου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:310
+msgid "Strike-through text"
+msgstr "Κείμενο διακριτής γραφής"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:311
+msgid "Tab order position"
+msgstr "Θέση σειράς Tab"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:312
+msgid "Text color"
+msgstr "Χρώμα κειμένου"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:313
+msgid "Text"
+msgstr "Κείμενο"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:314
+msgid "Top margin in pixels"
+msgstr "Άνω περιθώριο σε εικονοστοιχεία"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:315
+msgid "URL"
+msgstr "URL"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:316
+msgid "Vertical space"
+msgstr "Κάθετο διάστημα"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:317
+msgid "Visited link color"
+msgstr "Χρώμα αναγνωσμένης διασύνδεσης"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:318
+msgid "HTML - Special Characters"
+msgstr "HTML - Ειδικοί Χαρακτήρες"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:319
+msgid "Non-breaking space"
+msgstr "Διάστημα χωρίς αλλαγή"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:1
+msgid "Latex - Tags"
+msgstr "Latex - Tags"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:2
+msgid "Bibliography (cite)"
+msgstr "Παράθεση βιβλιογραφίας"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:3
+msgid "Bibliography (item)"
+msgstr "Αντικείμενο βιβλιογραφίας"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:4
+msgid "Bibliography (shortcite)"
+msgstr "Σύντμ. παράθεσης βιβλιογραφίας"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:5
+msgid "Bibliography (thebibliography)"
+msgstr "Βιβλιογραφία"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:6
+msgid "Brackets ()"
+msgstr "Brackets ()"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:7
+msgid "Brackets []"
+msgstr "Brackets []"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:8
+msgid "Brackets {}"
+msgstr "Brackets {}"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:9
+msgid "Brackets <>"
+msgstr "Αγκύλες <>"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:10
+msgid "File input"
+msgstr "File input"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:11
+msgid "Function cosine"
+msgstr "Function cosine"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:12
+msgid "Function e^"
+msgstr "Function e^"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:13
+msgid "Function exp"
+msgstr "Function exp"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:14
+msgid "Function log"
+msgstr "Function log"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:15
+msgid "Function log10"
+msgstr "Function log10"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:16
+msgid "Function sine"
+msgstr "Function sine"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:17
+msgid "Greek alpha"
+msgstr "Ελληνικό άλφα"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:18
+msgid "Greek beta"
+msgstr "Ελληνικό βήτα"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:19
+msgid "Greek epsilon"
+msgstr "Ελληνικό έψιλον"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:20
+msgid "Greek gamma"
+msgstr "Ελληνικό γάμμα"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:21
+msgid "Greek lambda"
+msgstr "Ελληνικό λάμδα"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:22
+msgid "Greek rho"
+msgstr "Ελληνικό ρο"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:23
+msgid "Greek tau"
+msgstr "Ελληνικό ταφ"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:24
+msgid "Header 0 (chapter)"
+msgstr "Κεφαλίδα 0 (κεφάλαιο)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:25
+msgid "Header 0 (chapter*)"
+msgstr "Κεφαλίδα 0 (κεφάλαιο*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:26
+msgid "Header 1 (section)"
+msgstr "Κεφαλίδα 1 (ενότητα)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:27
+msgid "Header 1 (section*)"
+msgstr "Κεφαλίδα 1 (ενότητα*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:28
+msgid "Header 2 (subsection)"
+msgstr "Κεφαλίδα 2 (υποενότητα)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:29
+msgid "Header 2 (subsection*)"
+msgstr "Κεφαλίδα 2 (υποενότητα*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:30
+msgid "Header 3 (subsubsection)"
+msgstr "Κεφαλίδα 3 (υπο-υποενότητα)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:31
+msgid "Header 3 (subsubsection*)"
+msgstr "Κεφαλίδα 3 (υπο-υποενότητα*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:32
+msgid "Header 4 (paragraph)"
+msgstr "Κεφαλίδα 4 (παράγραφος)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:33
+msgid "Header appendix"
+msgstr "Header appendix"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:34
+msgid "List description"
+msgstr "Περιγραφή λίστας"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:35
+msgid "List enumerate"
+msgstr "List enumerate"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:36
+msgid "List itemize"
+msgstr "List itemize"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:37
+msgid "Item with label"
+msgstr "Αντικείμενο με ετικέτα"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:38
+msgid "Item"
+msgstr "Αντικείμενο"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:39
+msgid "Maths (display)"
+msgstr "Maths (display)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:40
+msgid "Maths (inline)"
+msgstr "Maths (inline)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:41
+msgid "Operator fraction"
+msgstr "Operator fraction"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:42
+msgid "Operator integral (display)"
+msgstr "Operator integral (display)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:43
+msgid "Operator integral (inline)"
+msgstr "Operator integral (inline)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:44
+msgid "Operator sum (display)"
+msgstr "Operator sum (display)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:45
+msgid "Operator sum (inline)"
+msgstr "Operator sum (inline)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:46
+msgid "Reference label"
+msgstr "Ετικέτα αναφοράς"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:47
+msgid "Reference ref"
+msgstr "Reference ref"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:48
+msgid "Symbol <<"
+msgstr "Σύμβολο <<"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:49
+msgid "Symbol <="
+msgstr "Σύμβολο <="
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:50
+msgid "Symbol >="
+msgstr "Σύμβολο >="
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:51
+msgid "Symbol >>"
+msgstr "Σύμβολο >>"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:52
+msgid "Symbol and"
+msgstr "Σύμβολο and"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:53
+msgid "Symbol const"
+msgstr "Symbol const"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:54
+msgid "Symbol d2-by-dt2-partial"
+msgstr "Symbol d2-by-dt2-partial"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:55
+msgid "Symbol dagger"
+msgstr "Symbol dagger"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:56
+msgid "Symbol d-by-dt"
+msgstr "Symbol d-by-dt"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:57
+msgid "Symbol d-by-dt-partial"
+msgstr "Symbol d-by-dt-partial"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:58
+msgid "Symbol equiv"
+msgstr "Σύμβολο ισότητας"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:59
+msgid "Symbol en-dash --"
+msgstr "Symbol en-dash --"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:60
+msgid "Symbol em-dash ---"
+msgstr "Symbol em-dash ---"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:61
+msgid "Symbol infinity"
+msgstr "Σύμβολο απείρου"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:62
+msgid "Symbol mathspace ,"
+msgstr "Symbol mathspace ,"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:63
+msgid "Symbol mathspace ."
+msgstr "Symbol mathspace ."
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:64
+msgid "Symbol mathspace _"
+msgstr "Symbol mathspace _"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:65
+msgid "Symbol mathspace __"
+msgstr "Symbol mathspace __"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:66
+msgid "Symbol simeq"
+msgstr "Symbol simeq"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:67
+msgid "Symbol star"
+msgstr "Symbol star"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:68
+msgid "Typeface bold"
+msgstr "Έντονη στοιχειοθέτηση"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:69
+msgid "Typeface type"
+msgstr "Τύπος στοιχειοθέτησης"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:70
+msgid "Typeface italic"
+msgstr "Πλάγια στοιχειοθέτηση"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:71
+msgid "Typeface slanted"
+msgstr "Typeface slanted"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:73
+msgid "Unbreakable text"
+msgstr "Unbreakable text"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:74
+msgid "Footnote"
+msgstr "Υποσημείωση"
+
+#: ../plugins/taglist/taglist.pluma-plugin.desktop.in.h:1
+msgid "Tag list"
+msgstr "Λίστα ετικετών"
+
+#: ../plugins/taglist/taglist.pluma-plugin.desktop.in.h:2
+msgid ""
+"Provides a method to easily insert commonly used tags/strings into a "
+"document without having to type them."
+msgstr "Εύκολη εισαγωγή συχνά χρησιμοποιημένων ετικετών/συμβολοσειρών χωρίς πληκτρολόγηση."
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:1
+msgid "XSLT - Elements"
+msgstr "XSLT - Στοιχεία"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:2
+msgid "XSLT - Functions"
+msgstr "XSLT - Λειτουργίες"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:3
+msgid "XSLT - Axes"
+msgstr "XSLT - Axes"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:4
+msgid "ancestor"
+msgstr "ancestor"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:5
+msgid "ancestor-or-self"
+msgstr "ancestor-or-self"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:6
+msgid "attribute"
+msgstr "γνώρισμα"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:7
+msgid "child"
+msgstr "θυγατρική"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:8
+msgid "descendant"
+msgstr "descendant"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:9
+msgid "descendant-or-self"
+msgstr "descendant-or-self"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:10
+msgid "following"
+msgstr "following"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:11
+msgid "following-sibling"
+msgstr "following-sibling"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:12
+msgid "namespace"
+msgstr "namespace"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:13
+msgid "parent"
+msgstr "γονικό"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:14
+msgid "preceding"
+msgstr "preceding"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:15
+msgid "preceding-sibling"
+msgstr "preceding-sibling"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:16
+msgid "self"
+msgstr "self"
+
+#: ../plugins/taglist/XUL.tags.xml.in.h:1
+msgid "XUL - Tags"
+msgstr "XUL - Tags"
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:1
+msgid "Prompt type"
+msgstr "Τύπος εγγράφου"
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:2
+msgid "Selected format"
+msgstr "Επιλογή Τύπου"
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:3
+msgid "Custom format"
+msgstr "Προσαρμοσμένη μορφή"
+
+#: ../plugins/time/pluma-time-plugin.c:181
+msgid "In_sert Date and Time..."
+msgstr "Ει_σαγωγή ώρας και ημερομηνίας..."
+
+#: ../plugins/time/pluma-time-plugin.c:183
+msgid "Insert current date and time at the cursor position"
+msgstr "Εισαγωγή τρέχουσας ημ/νίας και ώρας στη θέση του δρομέα"
+
+#: ../plugins/time/pluma-time-plugin.c:568
+msgid "Available formats"
+msgstr "Διαθέσιμοι τύποι"
+
+#: ../plugins/time/pluma-time-plugin.c:721
+msgid "Configure insert date/time plugin..."
+msgstr "Ρύθμιση πρόσθετης λειτουργίας εισαγωγής ημερομηνίας/ώρας..."
+
+#: ../plugins/time/time.pluma-plugin.desktop.in.h:1
+msgid "Insert Date/Time"
+msgstr "Εισαγωγή ημερομηνίας/ώρας"
+
+#: ../plugins/time/time.pluma-plugin.desktop.in.h:2
+msgid "Inserts current date and time at the cursor position."
+msgstr "Εισαγωγή τρέχουσας ημ/νίας και ώρας στη θέση του δρομέα."
+
+#: ../plugins/time/pluma-time-dialog.ui.h:1
+msgid "Insert Date and Time"
+msgstr "Εισαγωγή Ημερομηνίας και ώρας"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:2
+msgid "_Insert"
+msgstr "_Εισαγωγή"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:3
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:5
+msgid "Use the _selected format"
+msgstr "Χρήση του επι_λεγμένου τύπου"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:5
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:6
+msgid "_Use custom format"
+msgstr "_Χρήση προσαρμοσμένου τύπου"
+
+#. Translators: Use the more common date format in your locale
+#: ../plugins/time/pluma-time-dialog.ui.h:7
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:9
+#, no-c-format
+msgid "%d/%m/%Y %H:%M:%S"
+msgstr "%d/%m/%Y %H:%M:%S"
+
+#. Translators: This example should follow the date format defined in the
+#. entry above
+#: ../plugins/time/pluma-time-dialog.ui.h:8
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:11
+msgid "01/11/2009 17:52:00"
+msgstr "01/11/2009 17:52:00"
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:1
+msgid "Configure date/time plugin"
+msgstr "Ρύθμιση πρόσθετης λειτουργίας ημερομηνίας/ώρας"
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:2
+msgid "When inserting date/time..."
+msgstr "Κατά την εισαγωγή ημερομηνίας/ώρας..."
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:4
+msgid "_Prompt for a format"
+msgstr "_Ερώτηση για τύπο"

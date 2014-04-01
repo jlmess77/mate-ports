@@ -1,0 +1,4965 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# abuyop <abuyop@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-04 12:56+0100\n"
+"PO-Revision-Date: 2013-11-21 16:30+0000\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
+"Language-Team: Malay (http://www.transifex.com/projects/p/MATE/language/ms/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ms\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:1
+msgid "Use Default Font"
+msgstr "Guna Fon Lalai"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:2
+msgid ""
+"Whether to use the system's default fixed width font for editing text "
+"instead of a font specific to pluma. If this option is turned off, then the "
+"font named in the \"Editor Font\" option will be used instead of the system "
+"font."
+msgstr "Sama ada hendak guna fon lebar tetap lalai sistem untuk menyunting teks selain dari fon khusus untuk pluma. Jika pilihan ini dihidupkan, maka fon bernama dalam pilihan \"Fon Penyunting\" akan diguna selain dari fon sistem."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:3
+msgid "Editor Font"
+msgstr "Penyunting Fon"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:4
+msgid ""
+"A custom font that will be used for the editing area. This will only take "
+"effect if the \"Use Default Font\" option is turned off."
+msgstr "Fon suai akan digunakan untuk kawasan penyuntingan. Ia hanya berkesan jika pilihan \"Guna Fon Lalai\" dilumpuhkan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:5
+msgid "Style Scheme"
+msgstr "Skema Gaya"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:6
+msgid "The ID of a GtkSourceView Style Scheme used to color the text."
+msgstr "ID bagi Skema Gaya GtkSourceView yang diguna untuk warnakan teks."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:7
+msgid "Create Backup Copies"
+msgstr "Cipta Salinan Sandar"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:8
+msgid ""
+"Whether pluma should create backup copies for the files it saves. You can "
+"set the backup file extension with the \"Backup Copy Extension\" option."
+msgstr "Sama ada pluma patut cipta salinan fail sandar bagi fail yang disimpan. Anda boleh tetapkan sambungan fail sandar dengan pilihan \"Sambungan Salinan Sandar\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:9
+msgid "Autosave"
+msgstr "Simpan-sendiri"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:10
+msgid ""
+"Whether pluma should automatically save modified files after a time "
+"interval. You can set the time interval with the \"Autosave Interval\" "
+"option."
+msgstr "Sama ada pluma patut simpan fail diubahsuai secara automatik selepas sela masa. Anda boleh tetapkan sela masa dengan pilihan \"Sela Simpan-sendiri\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:11
+msgid "Autosave Interval"
+msgstr "Sela Simpan-sendiri"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:12
+msgid ""
+"Number of minutes after which pluma will automatically save modified files. "
+"This will only take effect if the \"Autosave\" option is turned on."
+msgstr "Bilangan minit selepas pluma simpan fail diubahsuai secara automatik. Ia hanya berkesan jika pilihan \"Simpan-sendiri\" dihidupkan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:13
+msgid "Writable VFS schemes"
+msgstr "Skema VFS boleh tulis"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:14
+msgid ""
+"List of VFS schemes pluma supports in write mode. The 'file' scheme is "
+"writable by default."
+msgstr "Senarai skema VFS plum yang disokong dalam mod tulis. Skema 'fail' boleh ditulis secara lalai."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:15
+msgid "Maximum Number of Undo Actions"
+msgstr "Bilangan Maksimum Tindakan Buat Asal"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:16
+msgid ""
+"Maximum number of actions that pluma will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions."
+msgstr "Bilangan maksimum tindakan yang mana pluma boleh buat asal atau buat semula. Guna \"-1\" untuk bilangan tindakan tanpa had."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:17
+msgid "Line Wrapping Mode"
+msgstr "Mod Pelilitan Baris"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:18
+msgid ""
+"Specifies how to wrap long lines in the editing area. Use \"GTK_WRAP_NONE\" "
+"for no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
+"\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note that"
+" the values are case-sensitive, so make sure they appear exactly as "
+"mentioned here."
+msgstr "Nyatakan bagaimana hendak lilit baris panjang dalam kawasan penyuntingan. Guna \"GTK_WRAP_NONE\" untuk tiada pelilitan, \"GTK_WRAP_WORD\" untuk melilit pada sempadan perkataan, dan \"GTK_WRAP_CHAR\" untuk melilit pada sempadan aksara individu. perhatian nilai adalah sensitif-kata, jadi pastikan ia muncul sepertimana dinyatakan disini."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:19
+msgid "Tab Size"
+msgstr "Saiz Tab"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:20
+msgid ""
+"Specifies the number of spaces that should be displayed instead of Tab "
+"characters."
+msgstr "Nyatakan bilangan jarak yang patut dipaparkan selain aksara Tab."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:21
+msgid "Insert spaces"
+msgstr "Sisip jarak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:22
+msgid "Whether pluma should insert spaces instead of tabs."
+msgstr "Sama ada pluma patut sisipkan jarak selain dari tab."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:23
+msgid "Automatic indent"
+msgstr "Inden automatik"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:24
+msgid "Whether pluma should enable automatic indentation."
+msgstr "Sama ada pluma patut benarkan identasi berautomatik."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:25
+msgid "Display Line Numbers"
+msgstr "Papar Nombor Baris"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:26
+msgid "Whether pluma should display line numbers in the editing area."
+msgstr "Sama ada pluma patut papar bilangan baris pada kawasan penyuntingan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:27
+msgid "Highlight Current Line"
+msgstr "Sorot Baris Semasa"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:28
+msgid "Whether pluma should highlight the current line."
+msgstr "Sama ada pluma patut sorot baris semasa."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:29
+msgid "Highlight Matching Bracket"
+msgstr "Sorot Kurungan Sepadan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:30
+msgid "Whether pluma should highlight the bracket matching the selected one."
+msgstr "Sama ada pluma patut sorot kurungan sepadan dengan yang dipilih."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:31
+msgid "Display Right Margin"
+msgstr "Papar Margin Kanan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:32
+msgid "Whether pluma should display the right margin in the editing area."
+msgstr "Sama ada pluma patut papar margin kanan pada kawasan penyuntingan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:33
+msgid "Right Margin Position"
+msgstr "Kedudukan Margin Kanan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:34
+msgid "Specifies the position of the right margin."
+msgstr "Nyatakan kedudukan margin kanan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:35
+msgid "Smart Home End"
+msgstr "Home End Pintar"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:36
+msgid ""
+"Specifies how the cursor moves when the HOME and END keys are pressed. Use "
+"\"DISABLED\" to always move at the start/end of the line, \"AFTER\" to move "
+"to the start/end of the line the first time the keys are pressed and to the "
+"start/end of the text ignoring whitespaces the second time the keys are "
+"pressed, \"BEFORE\" to move to the start/end of the text before moving to "
+"the start/end of the line and \"ALWAYS\" to always move to the start/end of "
+"the text instead of the start/end of the line."
+msgstr "Nyatakan bagaimana kursor bergerak bila kekunci HOME dan END ditekan. Guna \"DISABLED\" untuk senatiasa bergerak pada mula/hujung baris, \"AFTER\" untuk bergerak pada mula/hujung baris kali pertama kekunci ditekan dan pada mula/hujung teks mengabaikan ruang putih kali kedua kekunci ditekan, \"BEFORE\" untuk bergerak ke mula/hujung teks sebelum bergerak ke mula/hujung baris dan \"ALWAYS\" untuk bergerak pada mula/hujung teks selain dari mula/hujung baris."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:37
+msgid "Restore Previous Cursor Position"
+msgstr "Pulih Kedudukan Kursor Terdahulu"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:38
+msgid ""
+"Whether pluma should restore the previous cursor position when a file is "
+"loaded."
+msgstr "Sama ada pluma patut pulihkan kedudukan kursor terdahulu bila fail dimuatkan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:39
+msgid "Enable Search Highlighting"
+msgstr "Benarkan Penyorotan Gelintar"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:40
+msgid ""
+"Whether pluma should highlight all the occurrences of the searched text."
+msgstr "Sama ada pluma patut sorot semua kemunculan teks digelintar."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:41
+msgid "Enable Syntax Highlighting"
+msgstr "Benarkan Penyorotan Sintaks"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:42
+msgid "Whether pluma should enable syntax highlighting."
+msgstr "Sama ada pluma patut benarkan penyorotan sintaks."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:43
+msgid "Toolbar is Visible"
+msgstr "Palang Alat adalah Tampak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:44
+msgid "Whether the toolbar should be visible in editing windows."
+msgstr "Sama ada palang alat patut kelihatan pada tetingkap penyuntingan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:45
+msgid "Toolbar Buttons Style"
+msgstr "Gaya Butang Palang Alat"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:46
+msgid ""
+"Style for the toolbar buttons. Possible values are \"PLUMA_TOOLBAR_SYSTEM\" "
+"to use the system's default style, \"PLUMA_TOOLBAR_ICONS\" to display icons "
+"only, \"PLUMA_TOOLBAR_ICONS_AND_TEXT\" to display both icons and text, and "
+"\"PLUMA_TOOLBAR_ICONS_BOTH_HORIZ\" to display prioritized text beside icons."
+" Note that the values are case-sensitive, so make sure they appear exactly "
+"as mentioned here."
+msgstr "Gaya untuk butang palang alat. Nilai yang mungkin adalah \"PLUMA_TOOLBAR_SYSTEM\" untuk guna gaya lalai sistem, \"PLUMA_TOOLBAR_ICONS\" untuk papar ikon sahaja, \"PLUMA_TOOLBAR_ICONS_AND_TEXT\" untuk papar kedua-dua ikon dan teks, dan \"PLUMA_TOOLBAR_ICONS_BOTH_HORIZ\" untuk papar teks disebelah ikon. Perhatian nilai adalah sensitif-kata, jadi pastikan ia muncul sepertimana yang dinyatakan disini."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:47
+msgid "Status Bar is Visible"
+msgstr "Palang Status adalah Tampak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:48
+msgid ""
+"Whether the status bar at the bottom of editing windows should be visible."
+msgstr "Sama ada palang status dibahagian bawah tetingkap penyuntingan patut tampak."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:49
+msgid "Side Pane is Visible"
+msgstr "Anak Tetingkap Sisi Kelihatan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:50
+msgid ""
+"Whether the side pane at the left of editing windows should be visible."
+msgstr "Sama ada anak tetingkap sisi pada kiri tetingkap penyuntingan patut tampak."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:51
+msgid "Bottom Panel is Visible"
+msgstr "Panel Bawah Kelihatan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:52
+msgid ""
+"Whether the bottom panel at the bottom of editing windows should be visible."
+msgstr "Sama ada panel bawah dibahagian bawah tetingkap penyuntingan patut tampak."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:53
+msgid "Maximum Recent Files"
+msgstr "Fail Baru-baru Ini Maksimum"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:54
+msgid ""
+"Specifies the maximum number of recently opened files that will be displayed"
+" in the \"Recent Files\" submenu."
+msgstr "Nyatakan bilangan maksimum fail dibuka baru-baru ini yang dipaparkan pada sub menu \"Fail Baru-baru Ini\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:55
+msgid "Print Syntax Highlighting"
+msgstr "Cetak Penyorotan Sintaks"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:56
+msgid ""
+"Whether pluma should print syntax highlighting when printing documents."
+msgstr "Sama ada pluma patut mencetak penyorotan teks bila mencetak dokumen."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:57
+msgid "Print Header"
+msgstr "Cetak Pengepala"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:58
+msgid ""
+"Whether pluma should include a document header when printing documents."
+msgstr "Sama ada pluma patut sertakan pengepala dokumen bila mencetak dokumen."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:59
+msgid "Printing Line Wrapping Mode"
+msgstr "Mod Pelilitan Baris Cetakan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:60
+msgid ""
+"Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for no "
+"wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
+"\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note that"
+" the values are case-sensitive, so make sure they appear exactly as "
+"mentioned here."
+msgstr "Nyatakan bagaimana hendak lilit baris panjang untuk percetakan. Guna \"GTK_WRAP_NONE\" untuk tiada pelilitan, \"GTK_WRAP_WORD\" untuk melilit pada sempadan perkataan, dan \"GTK_WRAP_CHAR\" untuk melilit pada sempadan aksara individu. perhatian nilai adalah sensitif-kata, jadi pastikan ia muncul sepertimana dinyatakan disini."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:61
+msgid "Print Line Numbers"
+msgstr "Cetak Nombor Baris"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:62
+msgid ""
+"If this value is 0, then no line numbers will be inserted when printing a "
+"document. Otherwise, pluma will print line numbers every such number of "
+"lines."
+msgstr "Jika nilai ini ialah 0, maka tiada nombor baris akan disisip bila mencetak dokumen. Jika tidak, pluma akan cetak nombor baris setiap nombor baris tersebut."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:63
+msgid "Body Font for Printing"
+msgstr "Fon Badan untuk Cetakan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:64
+msgid ""
+"Specifies the font to use for a document's body when printing documents."
+msgstr "Nyatakan fon digunakan pada badan dokumen bila mencetak dokumen."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:65
+msgid "Header Font for Printing"
+msgstr "Fon Pengepala untuk Cetakan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:66
+msgid ""
+"Specifies the font to use for page headers when printing a document. This "
+"will only take effect if the \"Print Header\" option is turned on."
+msgstr "Nyatakan fon digunakan bagi pengepala halaman bila mencetak dokumen. Ia hanya berkesan jika pilihan \"Cetak Pengepala\" dihidupkan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:67
+msgid "Line Number Font for Printing"
+msgstr "Fon Bilangan Baris bagi Cetakan"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:68
+msgid ""
+"Specifies the font to use for line numbers when printing. This will only "
+"take effect if the \"Print Line Numbers\" option is non-zero."
+msgstr "Nyatakan fon digunakan bagi nombor baris bila mencetak. Ia hanya berkesan jika pilihan \"Cetak Nombor Baris\" adalah bukan-sifar."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:69
+msgid "Automatically Detected Encodings"
+msgstr "Pengekodan Dikesan Automatik"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:70
+msgid ""
+"Sorted list of encodings used by pluma for automatically detecting the "
+"encoding of a file. \"CURRENT\" represents the current locale encoding. Only"
+" recognized encodings are used."
+msgstr "Senarai terisih pengekodan yang diguna oleh pluma untuk pengesanan automatik bagi pengekodan fail. \"CURRENT\" mewakili pengekodan setempat. Hanya pengekodan yang dikenali akan digunakan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:71
+msgid "Encodings shown in menu"
+msgstr "Pengenkodan ditunjukkan dalam menu"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:72
+msgid ""
+"List of encodings shown in the Character Encoding menu in open/save file "
+"selector. Only recognized encodings are used."
+msgstr "Senarai pengekodan yang ditunjukkan dalam menu Pengekodan Aksara dalam pemilih fail buka/simpan. Hanya pengekodan yang dikenalpasti digunakan."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:73
+msgid "History for \"search for\" entries"
+msgstr "Sejarah untuk masukan \"gelintar untuk\""
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:74
+msgid "List of entries in \"search for\" textbox."
+msgstr "Senarai masukan dalam kotak teks \"gelintar untuk\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:75
+msgid "History for \"replace with\" entries"
+msgstr "Sejarah untuk masukan \"ganti dengan\""
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:76
+msgid "List of entries in \"replace with\" textbox."
+msgstr "Senarai masukan dalam kotak teks \"ganti dengan\"."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:77
+msgid "Active plugins"
+msgstr "Pemalam aktif"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:78
+msgid ""
+"List of active plugins. It contains the \"Location\" of the active plugins. "
+"See the .pluma-plugin file for obtaining the \"Location\" of a given plugin."
+msgstr "Senarai pemalam aktif. Ia mengandungi \"Lokasi\" bagi pemalam aktif. Rujuk fail .pluma-plugin untuk mendapatkan \"Lokasi\" pemalam yang diberi."
+
+#: ../data/pluma.desktop.in.in.h:1
+msgid "Pluma"
+msgstr "Pluma"
+
+#: ../data/pluma.desktop.in.in.h:2 ../pluma/pluma-print-job.c:769
+msgid "Text Editor"
+msgstr "Penyunting Teks"
+
+#: ../data/pluma.desktop.in.in.h:3
+msgid "Edit text files"
+msgstr "Sunting fail teks"
+
+#: ../data/pluma.desktop.in.in.h:4
+msgid "pluma Text Editor"
+msgstr "Penyunting Teks pluma"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:140
+msgid "Log Out _without Saving"
+msgstr "Daftar Keluar _tanpa Menyimpan"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:144
+msgid "_Cancel Logout"
+msgstr "_Batal Daftar Keluar"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:151
+msgid "Close _without Saving"
+msgstr "Tutup t_anpa Menyimpan"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:214
+msgid "Question"
+msgstr "Soalan"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:414
+#, c-format
+msgid ""
+"If you don't save, changes from the last %ld second will be permanently "
+"lost."
+msgid_plural ""
+"If you don't save, changes from the last %ld seconds will be permanently "
+"lost."
+msgstr[0] "Jika anda tidak simpan, perubahan %ld saat terakhir akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:423
+msgid ""
+"If you don't save, changes from the last minute will be permanently lost."
+msgstr "Jika anda tidak simpan, perubahan pada beberapa minit terakhir akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:429
+#, c-format
+msgid ""
+"If you don't save, changes from the last minute and %ld second will be "
+"permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last minute and %ld seconds will be "
+"permanently lost."
+msgstr[0] "Jika anda tidak simpan, perubahan pada minit dan %ld saat terakhir akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:439
+#, c-format
+msgid ""
+"If you don't save, changes from the last %ld minute will be permanently "
+"lost."
+msgid_plural ""
+"If you don't save, changes from the last %ld minutes will be permanently "
+"lost."
+msgstr[0] "Jika anda tidak simpan, perubahan pada %ld minit terakhir akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:454
+msgid ""
+"If you don't save, changes from the last hour will be permanently lost."
+msgstr "Jika anda tidak simpan, perubahan pada jam terakhir akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:460
+#, c-format
+msgid ""
+"If you don't save, changes from the last hour and %d minute will be "
+"permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last hour and %d minutes will be "
+"permanently lost."
+msgstr[0] "Jika anda tidak simpan, perubahan pada jam dan %d minit terakhir akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:475
+#, c-format
+msgid ""
+"If you don't save, changes from the last %d hour will be permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last %d hours will be permanently lost."
+msgstr[0] "Jika anda tidak simpan, perubahan pada %d jam terakhir akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:518
+#, c-format
+msgid "Changes to document \"%s\" will be permanently lost."
+msgstr "Perubahan pada dokumen \"%s\" akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:523
+#, c-format
+msgid "Save changes to document \"%s\" before closing?"
+msgstr "Simpan perubahan ke dokumen \"%s\" sebelum ditutup?"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:537
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:748
+msgid "Saving has been disabled by the system administrator."
+msgstr "Penyimpanan telah dilumpuhkan oleh pentadbir sistem."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:703
+#, c-format
+msgid "Changes to %d document will be permanently lost."
+msgid_plural "Changes to %d documents will be permanently lost."
+msgstr[0] "Perubahan ke %d dokumen akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:709
+#, c-format
+msgid ""
+"There is %d document with unsaved changes. Save changes before closing?"
+msgid_plural ""
+"There are %d documents with unsaved changes. Save changes before closing?"
+msgstr[0] "Terdapat %d dokumen dengan perubahan tanpa simpan. Simpan perubahan sebelum tutup?"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:727
+msgid "Docum_ents with unsaved changes:"
+msgstr "Dokum_en dengan perubahan tidak disimpan:"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:729
+msgid "S_elect the documents you want to save:"
+msgstr "P_ilih dokumen yang anda ingin simpan:"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:750
+msgid "If you don't save, all your changes will be permanently lost."
+msgstr "Jika anda tidak simpan, semua perubahan akan kekal hilang."
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:321
+msgid "Character Encodings"
+msgstr "Pengekodan Aksara"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:387
+#: ../pluma/dialogs/pluma-encodings-dialog.c:448
+msgid "_Description"
+msgstr "_Keterangan:"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:396
+#: ../pluma/dialogs/pluma-encodings-dialog.c:457
+msgid "_Encoding"
+msgstr "Peng_ekodan"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:1
+msgid "Character encodings"
+msgstr "Pengekodan aksara"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "Pengekodan tersedi_a:"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "_Pengekodan ditunjuk dalam menu:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:574
+msgid "Click on this button to select the font to be used by the editor"
+msgstr "Klik pada butang ini untuk pilih fon yang diguna oleh penyunting"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:584
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "G_una fon lebar tetap sistem (%s)"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:787
+msgid "The selected color scheme cannot be installed."
+msgstr "Skema warna terpilih tidak dapat dipasang."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:812
+msgid "Add Scheme"
+msgstr "Tambah Skema"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:819
+msgid "A_dd Scheme"
+msgstr "Ta_mbah Skema"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:827
+msgid "Color Scheme Files"
+msgstr "Fail Skema Warna"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:834
+#: ../pluma/pluma-file-chooser-dialog.c:55
+msgid "All Files"
+msgstr "Semua Fail"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:879
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "Tidak dapat buang skema warna \"%s\"."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:1090
+msgid "pluma Preferences"
+msgstr "Keutamaan pluma"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:1
+msgid "Preferences"
+msgstr "Keutamaan"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:2
+#: ../pluma/pluma-print-preferences.ui.h:9
+msgid "Text Wrapping"
+msgstr "Pelilitan Teks"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:3
+#: ../plugins/docinfo/docinfo.ui.h:4
+#: ../plugins/externaltools/tools/tools.ui.h:21
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/time/pluma-time-dialog.ui.h:4
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:3
+msgid "    "
+msgstr "    "
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:4
+#: ../pluma/pluma-print-preferences.ui.h:10
+msgid "Enable text _wrapping"
+msgstr "Benarkan pelilitan teks"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:5
+#: ../pluma/pluma-print-preferences.ui.h:11
+msgid "Do not _split words over two lines"
+msgstr "Jangan _pisahkan perkataan kepada 2 baris"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:6
+#: ../pluma/pluma-print-preferences.ui.h:3
+msgid "Line Numbers"
+msgstr "Nombor Baris"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:7 ../pluma/pluma-view.c:2070
+msgid "_Display line numbers"
+msgstr "_Papar nombor Baris"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:8
+msgid "Current Line"
+msgstr "Baris Semasa"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:9
+msgid "Highlight current _line"
+msgstr "Sorot _baris semasa"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:10
+msgid "Right Margin"
+msgstr "Margin Kanan"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:11
+msgid "Display right _margin"
+msgstr "Papar _margin kanan"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:12
+msgid "_Right margin at column:"
+msgstr "Margin ka_nan pada lajur:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:13
+msgid "Bracket Matching"
+msgstr "Pemadanan Kurungan"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:14
+msgid "Highlight matching _bracket"
+msgstr "Sorot _kurungan sepadan"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:15
+msgid "View"
+msgstr "Lihat"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:16
+msgid "Tab Stops"
+msgstr "Hentian Tab"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:17
+msgid "_Tab width:"
+msgstr "Lebar _tab:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:18
+msgid "Insert _spaces instead of tabs"
+msgstr "Sisip _jarak selain tab"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:19
+msgid "Automatic Indentation"
+msgstr "Indentasi Automatik"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:20
+msgid "_Enable automatic indentation"
+msgstr "B_enarkan indentasi automatik"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:21
+msgid "File Saving"
+msgstr "Fail Disimpan"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:22
+msgid "Create a _backup copy of files before saving"
+msgstr "Cipta salinan sandar fail sebelum disimpan"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:23
+msgid "_Autosave files every"
+msgstr "Simpan-send_iri fail setiap"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:24
+msgid "_minutes"
+msgstr "_minit"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:25
+msgid "Editor"
+msgstr "Penyunting"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:26
+msgid "Font"
+msgstr "Fon"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:27
+msgid "Editor _font: "
+msgstr "_Fon penyunting:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:28
+msgid "Pick the editor font"
+msgstr "Pilih fon penyunting"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:29
+msgid "Color Scheme"
+msgstr "Skema Warna"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:30
+msgid "_Add..."
+msgstr "T_ambah..."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:31
+msgid "Font & Colors"
+msgstr "Fon & Warna"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:32
+msgid "Plugins"
+msgstr "Pemalam"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:305
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:1 ../pluma/pluma-window.c:1530
+msgid "Replace"
+msgstr "Ganti"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:316 ../pluma/pluma-window.c:1528
+msgid "Find"
+msgstr "Cari"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:423
+msgid "Replace _All"
+msgstr "Ganti Semu_a"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:424
+#: ../pluma/pluma-commands-file.c:577
+msgid "_Replace"
+msgstr "_Ganti"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:2
+msgid "Replace All"
+msgstr "Ganti Semua"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:3
+msgid "_Search for: "
+msgstr "_Gelintar untuk: "
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:4
+msgid "Replace _with: "
+msgstr "Ganti _dengan:"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:5
+msgid "_Match case"
+msgstr "_Padan kata"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:6
+msgid "Match _entire word only"
+msgstr "Padan ke_seluruhan perkataan sahaja"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:7
+msgid "Search _backwards"
+msgstr "Gelintari meng_undur"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:8
+msgid "_Wrap around"
+msgstr "_Lilit sekeliling"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:9
+msgid "_Parse escape sequences (e.g. \\n)"
+msgstr "_Hurai jujukan escape (cth. \\n)"
+
+#: ../pluma/pluma.c:126
+msgid "Show the application's version"
+msgstr "Tunjuk versi aplikasi"
+
+#: ../pluma/pluma.c:129
+msgid ""
+"Set the character encoding to be used to open the files listed on the "
+"command line"
+msgstr "Tetapkan pengekodan aksara yang digunakan untuk membuka fail tersenarai pada baris perintah"
+
+#: ../pluma/pluma.c:129
+msgid "ENCODING"
+msgstr "PENGEKODAN"
+
+#: ../pluma/pluma.c:132
+msgid "Display list of possible values for the encoding option"
+msgstr "Papar senarai nilai yang mungkin untuk pilihan pengekodan"
+
+#: ../pluma/pluma.c:135
+msgid "Create a new top-level window in an existing instance of pluma"
+msgstr "Cipta tetingkap aras-tertinggi dalam kejadian sedia ada pluma"
+
+#: ../pluma/pluma.c:138
+msgid "Create a new document in an existing instance of pluma"
+msgstr "Cipta dokumen baru pada kejadian pluma sedia ada"
+
+#: ../pluma/pluma.c:141
+msgid "[FILE...]"
+msgstr "[FAIL...]"
+
+#: ../pluma/pluma.c:196
+#, c-format
+msgid "%s: invalid encoding.\n"
+msgstr "%s: pengekodan tidak sah.⏎\n"
+
+#. Setup command line options
+#: ../pluma/pluma.c:583
+msgid "- Edit text files"
+msgstr "-Sunting fail teks"
+
+#: ../pluma/pluma.c:619
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr "%s⏎\nJalankan '%s --help' untuk lihat senarai penuh pilihan baris perintah yang tersedia.⏎\n"
+
+#: ../pluma/pluma-commands-file.c:250
+#, c-format
+msgid "Loading file '%s'…"
+msgstr "Memuatkan fail '%s'..."
+
+#: ../pluma/pluma-commands-file.c:259
+#, c-format
+msgid "Loading %d file…"
+msgid_plural "Loading %d files…"
+msgstr[0] "Memuatkan %d fail..."
+
+#. Translators: "Open Files" is the title of the file chooser window
+#: ../pluma/pluma-commands-file.c:453
+msgid "Open Files"
+msgstr "Buka Fail"
+
+#: ../pluma/pluma-commands-file.c:564
+#, c-format
+msgid "The file \"%s\" is read-only."
+msgstr "Fail \"%s\" adalah baca-sahaja."
+
+#: ../pluma/pluma-commands-file.c:569
+msgid "Do you want to try to replace it with the one you are saving?"
+msgstr "Anda ingin gantikannya dengan apa yang anda hendak simpan?"
+
+#: ../pluma/pluma-commands-file.c:638 ../pluma/pluma-commands-file.c:861
+#, c-format
+msgid "Saving file '%s'…"
+msgstr "Menyimpan fail '%s'..."
+
+#: ../pluma/pluma-commands-file.c:746
+msgid "Save As…"
+msgstr "Simpan Sebagai..."
+
+#: ../pluma/pluma-commands-file.c:1075
+#, c-format
+msgid "Reverting the document '%s'…"
+msgstr "Mendapatkan kembali dokumen '%s'..."
+
+#: ../pluma/pluma-commands-file.c:1120
+#, c-format
+msgid "Revert unsaved changes to document '%s'?"
+msgstr "Kembalikan perubahan tidak disimpan pada dokumen '%s'?"
+
+#: ../pluma/pluma-commands-file.c:1129
+#, c-format
+msgid ""
+"Changes made to the document in the last %ld second will be permanently "
+"lost."
+msgid_plural ""
+"Changes made to the document in the last %ld seconds will be permanently "
+"lost."
+msgstr[0] "Perubahan dibuat pada dokumen dalam %ld saat terakhir akan kekal hilang."
+
+#: ../pluma/pluma-commands-file.c:1138
+msgid ""
+"Changes made to the document in the last minute will be permanently lost."
+msgstr "Perubahan dibuat pada dokumen pada beberapa minit terakhir akan kekal hilang."
+
+#: ../pluma/pluma-commands-file.c:1144
+#, c-format
+msgid ""
+"Changes made to the document in the last minute and %ld second will be "
+"permanently lost."
+msgid_plural ""
+"Changes made to the document in the last minute and %ld seconds will be "
+"permanently lost."
+msgstr[0] "Perubahan yang dibuat pada dokumen dalam minit dan %ld saat terakhir akan kekal hilang."
+
+#: ../pluma/pluma-commands-file.c:1154
+#, c-format
+msgid ""
+"Changes made to the document in the last %ld minute will be permanently "
+"lost."
+msgid_plural ""
+"Changes made to the document in the last %ld minutes will be permanently "
+"lost."
+msgstr[0] "Perubahan yang dibuat pada dokumen dalam %ld minit terakhir akan kekal hilang."
+
+#: ../pluma/pluma-commands-file.c:1169
+msgid ""
+"Changes made to the document in the last hour will be permanently lost."
+msgstr "Perubahan yang dibuat pada dokumen dalam jam terakhir akan kekal hilang."
+
+#: ../pluma/pluma-commands-file.c:1175
+#, c-format
+msgid ""
+"Changes made to the document in the last hour and %d minute will be "
+"permanently lost."
+msgid_plural ""
+"Changes made to the document in the last hour and %d minutes will be "
+"permanently lost."
+msgstr[0] "Perubahan yang dibuat pada dokumen dalam jam dan %d minit terakhir akan kekal hilang."
+
+#: ../pluma/pluma-commands-file.c:1190
+#, c-format
+msgid ""
+"Changes made to the document in the last %d hour will be permanently lost."
+msgid_plural ""
+"Changes made to the document in the last %d hours will be permanently lost."
+msgstr[0] "Perubahan yang dibuat pada dokumen dalam %d jam terakhir akan kekal hilang."
+
+#: ../pluma/pluma-commands-file.c:1216
+msgid "_Revert"
+msgstr "Ke_mbali"
+
+#: ../pluma/pluma-commands-help.c:82
+msgid "pluma is a small and lightweight text editor for the MATE Desktop"
+msgstr "pluma adalah penyunting teks kecil dan ringan untuk Desktop MATE"
+
+#: ../pluma/pluma-commands-help.c:93
+msgid "translator-credits"
+msgstr "abuyop <abuyop@gmail.com>"
+
+#: ../pluma/pluma-commands-search.c:116
+#, c-format
+msgid "Found and replaced %d occurrence"
+msgid_plural "Found and replaced %d occurrences"
+msgstr[0] "Temui dan gantikan %d kemunculan"
+
+#: ../pluma/pluma-commands-search.c:126
+msgid "Found and replaced one occurrence"
+msgstr "Temui dan gantikan satu kemunculan"
+
+#. Translators: %s is replaced by the text
+#. entered by the user in the search box
+#: ../pluma/pluma-commands-search.c:147
+#, c-format
+msgid "\"%s\" not found"
+msgstr "\"%s\" tidak ditemui"
+
+#: ../pluma/pluma-document.c:1080 ../pluma/pluma-document.c:1095
+#, c-format
+msgid "Unsaved Document %d"
+msgstr "Dokumen Tidak Disimpan %d"
+
+#: ../pluma/pluma-documents-panel.c:97 ../pluma/pluma-documents-panel.c:111
+#: ../pluma/pluma-window.c:2279 ../pluma/pluma-window.c:2284
+msgid "Read-Only"
+msgstr "Baca-Sahaja"
+
+#: ../pluma/pluma-documents-panel.c:791 ../pluma/pluma-window.c:3689
+msgid "Documents"
+msgstr "Dokumen"
+
+#: ../pluma/pluma-encodings.c:138 ../pluma/pluma-encodings.c:180
+#: ../pluma/pluma-encodings.c:182 ../pluma/pluma-encodings.c:184
+#: ../pluma/pluma-encodings.c:186 ../pluma/pluma-encodings.c:188
+#: ../pluma/pluma-encodings.c:190 ../pluma/pluma-encodings.c:192
+msgid "Unicode"
+msgstr "Unikod"
+
+#: ../pluma/pluma-encodings.c:151 ../pluma/pluma-encodings.c:175
+#: ../pluma/pluma-encodings.c:225 ../pluma/pluma-encodings.c:268
+msgid "Western"
+msgstr "Barat"
+
+#: ../pluma/pluma-encodings.c:153 ../pluma/pluma-encodings.c:227
+#: ../pluma/pluma-encodings.c:264
+msgid "Central European"
+msgstr "Eropah Tengah"
+
+#: ../pluma/pluma-encodings.c:155
+msgid "South European"
+msgstr "Eropah Selatan"
+
+#: ../pluma/pluma-encodings.c:157 ../pluma/pluma-encodings.c:171
+#: ../pluma/pluma-encodings.c:278
+msgid "Baltic"
+msgstr "Baltik"
+
+#: ../pluma/pluma-encodings.c:159 ../pluma/pluma-encodings.c:229
+#: ../pluma/pluma-encodings.c:242 ../pluma/pluma-encodings.c:246
+#: ../pluma/pluma-encodings.c:248 ../pluma/pluma-encodings.c:266
+msgid "Cyrillic"
+msgstr "Cyril"
+
+#: ../pluma/pluma-encodings.c:161 ../pluma/pluma-encodings.c:235
+#: ../pluma/pluma-encodings.c:276
+msgid "Arabic"
+msgstr "Arab"
+
+#: ../pluma/pluma-encodings.c:163 ../pluma/pluma-encodings.c:270
+msgid "Greek"
+msgstr "Yunani"
+
+#: ../pluma/pluma-encodings.c:165
+msgid "Hebrew Visual"
+msgstr "Ibrani Visual"
+
+#: ../pluma/pluma-encodings.c:167 ../pluma/pluma-encodings.c:231
+#: ../pluma/pluma-encodings.c:272
+msgid "Turkish"
+msgstr "Turki"
+
+#: ../pluma/pluma-encodings.c:169
+msgid "Nordic"
+msgstr "Nordik"
+
+#: ../pluma/pluma-encodings.c:173
+msgid "Celtic"
+msgstr "Celtik"
+
+#: ../pluma/pluma-encodings.c:177
+msgid "Romanian"
+msgstr "Romania"
+
+#: ../pluma/pluma-encodings.c:195
+msgid "Armenian"
+msgstr "Armenia"
+
+#: ../pluma/pluma-encodings.c:197 ../pluma/pluma-encodings.c:199
+#: ../pluma/pluma-encodings.c:213
+msgid "Chinese Traditional"
+msgstr "Cina Tradisional"
+
+#: ../pluma/pluma-encodings.c:201
+msgid "Cyrillic/Russian"
+msgstr "Cyril/Rusia"
+
+#: ../pluma/pluma-encodings.c:204 ../pluma/pluma-encodings.c:206
+#: ../pluma/pluma-encodings.c:208 ../pluma/pluma-encodings.c:238
+#: ../pluma/pluma-encodings.c:253
+msgid "Japanese"
+msgstr "Jepun"
+
+#: ../pluma/pluma-encodings.c:211 ../pluma/pluma-encodings.c:240
+#: ../pluma/pluma-encodings.c:244 ../pluma/pluma-encodings.c:259
+msgid "Korean"
+msgstr "Korea"
+
+#: ../pluma/pluma-encodings.c:216 ../pluma/pluma-encodings.c:218
+#: ../pluma/pluma-encodings.c:220
+msgid "Chinese Simplified"
+msgstr "Cina Dipermudah"
+
+#: ../pluma/pluma-encodings.c:222
+msgid "Georgian"
+msgstr "Georgia"
+
+#: ../pluma/pluma-encodings.c:233 ../pluma/pluma-encodings.c:274
+msgid "Hebrew"
+msgstr "Ibrani"
+
+#: ../pluma/pluma-encodings.c:250
+msgid "Cyrillic/Ukrainian"
+msgstr "Cyril/Ukraine"
+
+#: ../pluma/pluma-encodings.c:255 ../pluma/pluma-encodings.c:261
+#: ../pluma/pluma-encodings.c:280
+msgid "Vietnamese"
+msgstr "Vietnam"
+
+#: ../pluma/pluma-encodings.c:257
+msgid "Thai"
+msgstr "Siam"
+
+#: ../pluma/pluma-encodings.c:431
+msgid "Unknown"
+msgstr "Tidak Diketahui"
+
+#: ../pluma/pluma-encodings-combo-box.c:280
+msgid "Automatically Detected"
+msgstr "Dikesan Secara Automatik"
+
+#: ../pluma/pluma-encodings-combo-box.c:296
+#: ../pluma/pluma-encodings-combo-box.c:311
+#, c-format
+msgid "Current Locale (%s)"
+msgstr "Lokaliti Semasa (%s)"
+
+#: ../pluma/pluma-encodings-combo-box.c:361
+msgid "Add or Remove..."
+msgstr "Tambah atau Buang..."
+
+#: ../pluma/pluma-file-chooser-dialog.c:56
+msgid "All Text Files"
+msgstr "Semua Fail teks"
+
+#: ../pluma/pluma-file-chooser-dialog.c:84
+msgid "C_haracter Encoding:"
+msgstr "Pengekodan A_ksara:"
+
+#: ../pluma/pluma-file-chooser-dialog.c:149
+msgid "L_ine Ending:"
+msgstr "Penghujung Ba_ris:"
+
+#: ../pluma/pluma-file-chooser-dialog.c:168
+msgid "Unix/Linux"
+msgstr "Unix/Linux"
+
+#: ../pluma/pluma-file-chooser-dialog.c:174
+msgid "Mac OS Classic"
+msgstr "OS Mac Klasik"
+
+#: ../pluma/pluma-file-chooser-dialog.c:180
+msgid "Windows"
+msgstr "Windows"
+
+#: ../pluma/pluma-help.c:104
+msgid "There was an error displaying the help."
+msgstr "Terdapat ralat memapar bantuan."
+
+#: ../pluma/pluma-io-error-message-area.c:204
+#: ../pluma/pluma-io-error-message-area.c:209
+#: ../pluma/pluma-io-error-message-area.c:513
+#: ../pluma/pluma-io-error-message-area.c:536
+msgid "_Retry"
+msgstr "_Cuba Lagi"
+
+#: ../pluma/pluma-io-error-message-area.c:231
+#, c-format
+msgid "Could not find the file %s."
+msgstr "Tidak dapat cari fail %s."
+
+#: ../pluma/pluma-io-error-message-area.c:233
+#: ../pluma/pluma-io-error-message-area.c:272
+#: ../pluma/pluma-io-error-message-area.c:279
+msgid "Please check that you typed the location correctly and try again."
+msgstr "Sila semak sama ada anda menaip lokasi yang betul dan cuba lagi."
+
+#. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
+#: ../pluma/pluma-io-error-message-area.c:248
+#, c-format
+msgid "pluma cannot handle %s locations."
+msgstr "pluma tidak dapat kendali %s lokasi."
+
+#: ../pluma/pluma-io-error-message-area.c:254
+msgid "pluma cannot handle this location."
+msgstr "pluma tidak dapat mengendali lokasi ini."
+
+#: ../pluma/pluma-io-error-message-area.c:262
+msgid "The location of the file cannot be mounted."
+msgstr "Lokasi fail tidak dapat dilekap."
+
+#: ../pluma/pluma-io-error-message-area.c:266
+msgid "The location of the file cannot be accessed because it is not mounted."
+msgstr "Lokasi fail tidak dapat dicapai kerana ia tidak dilekap."
+
+#: ../pluma/pluma-io-error-message-area.c:270
+#, c-format
+msgid "%s is a directory."
+msgstr "%s adalah direktori."
+
+#: ../pluma/pluma-io-error-message-area.c:277
+#, c-format
+msgid "%s is not a valid location."
+msgstr "%s bukanlah lokasi yang sah."
+
+#: ../pluma/pluma-io-error-message-area.c:307
+#, c-format
+msgid ""
+"Host %s could not be found. Please check that your proxy settings are "
+"correct and try again."
+msgstr "Hos %s tidak dapat ditemui. Sila semak sama ada tetapan proksi anda adalah betul dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:320
+#, c-format
+msgid ""
+"Hostname was invalid. Please check that you typed the location correctly and"
+" try again."
+msgstr "Nama hos tidak sah. Sila semak sama ada lokasi yang anda taip adalah betul dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:328
+#, c-format
+msgid "%s is not a regular file."
+msgstr "%s bukanlah fail nalar."
+
+#: ../pluma/pluma-io-error-message-area.c:333
+msgid "Connection timed out. Please try again."
+msgstr "Sambungan telah tamat masa. Sila cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:356
+msgid "The file is too big."
+msgstr "Fail terlalu besar."
+
+#: ../pluma/pluma-io-error-message-area.c:397
+#, c-format
+msgid "Unexpected error: %s"
+msgstr "Ralat tidak dijangka: %s"
+
+#: ../pluma/pluma-io-error-message-area.c:433
+msgid "pluma cannot find the file. Perhaps it has recently been deleted."
+msgstr "pluma tidak dapat cari fail. Mungkin ia telah dipadam baru-baru ini."
+
+#: ../pluma/pluma-io-error-message-area.c:443
+#, c-format
+msgid "Could not revert the file %s."
+msgstr "Tidak dapat kembalikan fail %s."
+
+#: ../pluma/pluma-io-error-message-area.c:469
+msgid "Ch_aracter Encoding:"
+msgstr "Pengekodan _Aksara:"
+
+#. Translators: the access key chosen for this string should be
+#. different from other main menu access keys (Open, Edit, View...)
+#: ../pluma/pluma-io-error-message-area.c:520
+#: ../pluma/pluma-io-error-message-area.c:545
+#: ../pluma/pluma-io-error-message-area.c:831
+#: ../pluma/pluma-io-error-message-area.c:841
+msgid "Edit Any_way"
+msgstr "Sunting _Jua"
+
+#. Translators: the access key chosen for this string should be
+#. different from other main menu access keys (Open, Edit, View...)
+#: ../pluma/pluma-io-error-message-area.c:523
+#: ../pluma/pluma-io-error-message-area.c:550
+#: ../pluma/pluma-io-error-message-area.c:834
+#: ../pluma/pluma-io-error-message-area.c:846
+msgid "D_on't Edit"
+msgstr "Jan_gan Sunting"
+
+#: ../pluma/pluma-io-error-message-area.c:654
+msgid ""
+"The number of followed links is limited and the actual file could not be "
+"found within this limit."
+msgstr "Bilangan pautan diikuti adalah terhad dan fail sebenar tidak dapat ditemui dalam had ini."
+
+#: ../pluma/pluma-io-error-message-area.c:658
+msgid "You do not have the permissions necessary to open the file."
+msgstr "Anda tidak mempunyai keizinan diperlukan untuk membuka fail."
+
+#: ../pluma/pluma-io-error-message-area.c:664
+msgid "pluma has not been able to detect the character encoding."
+msgstr "pluma tidak dapat kesan pengekodan aksara."
+
+#: ../pluma/pluma-io-error-message-area.c:666
+#: ../pluma/pluma-io-error-message-area.c:688
+msgid "Please check that you are not trying to open a binary file."
+msgstr "Sila semak sama ada anda tidak cuba membuka fail binari."
+
+#: ../pluma/pluma-io-error-message-area.c:667
+msgid "Select a character encoding from the menu and try again."
+msgstr "Pilih pengekodan aksara dari menu dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:673
+#, c-format
+msgid "There was a problem opening the file %s."
+msgstr "Terdapat masalah membuka fail %s."
+
+#: ../pluma/pluma-io-error-message-area.c:675
+msgid ""
+"The file you opened has some invalid characters. If you continue editing "
+"this file you could make this document useless."
+msgstr "Fail yang anda buka mempunyai beberapa aksara tidak sah. Jika anda terus menyunting fail ini anda menyebabkan dokumen ini tidak dapat diguna lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:678
+msgid "You can also choose another character encoding and try again."
+msgstr "Anda juga boleh memilih pengekodan aksara lain dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:685
+#, c-format
+msgid "Could not open the file %s using the %s character encoding."
+msgstr "Tidak dapat buka fail %s menggunakan pengekodan aksara %s."
+
+#: ../pluma/pluma-io-error-message-area.c:689
+#: ../pluma/pluma-io-error-message-area.c:764
+msgid "Select a different character encoding from the menu and try again."
+msgstr "Pilih pengekodan aksara berbeza dari menu dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:699
+#, c-format
+msgid "Could not open the file %s."
+msgstr "Tidak dapat buka fail %s."
+
+#: ../pluma/pluma-io-error-message-area.c:759
+#, c-format
+msgid "Could not save the file %s using the %s character encoding."
+msgstr "Tidak dapat simpan fail %s menggunakan pengekodan aksara %s."
+
+#: ../pluma/pluma-io-error-message-area.c:762
+msgid ""
+"The document contains one or more characters that cannot be encoded using "
+"the specified character encoding."
+msgstr "Dokumen mengandungi satu atau lebih aksara yang mana tidak dapat dienkodkan menggunakan pengekodan aksara tertentu."
+
+#: ../pluma/pluma-io-error-message-area.c:861
+#, c-format
+msgid "This file (%s) is already open in another pluma window."
+msgstr "Fail ini (%s) sudah dibuka dalam tetingkap pluma yang lain."
+
+#: ../pluma/pluma-io-error-message-area.c:879
+msgid ""
+"pluma opened this instance of the file in a non-editable way. Do you want to"
+" edit it anyway?"
+msgstr "plum membuka kejadian fail ini dalam cara tidak-boleh-disunting. Anda hendak sunting ia jua?"
+
+#: ../pluma/pluma-io-error-message-area.c:942
+#: ../pluma/pluma-io-error-message-area.c:952
+#: ../pluma/pluma-io-error-message-area.c:1056
+#: ../pluma/pluma-io-error-message-area.c:1066
+msgid "S_ave Anyway"
+msgstr "S_impan Jua"
+
+#: ../pluma/pluma-io-error-message-area.c:946
+#: ../pluma/pluma-io-error-message-area.c:956
+#: ../pluma/pluma-io-error-message-area.c:1060
+#: ../pluma/pluma-io-error-message-area.c:1070
+msgid "D_on't Save"
+msgstr "Ja_ngan Simpan"
+
+#. FIXME: review this message, it's not clear since for the user the
+#. "modification"
+#. could be interpreted as the changes he made in the document. beside
+#. "reading" is
+#. not accurate (since last load/save)
+#: ../pluma/pluma-io-error-message-area.c:974
+#, c-format
+msgid "The file %s has been modified since reading it."
+msgstr "Fail %s telah diubahsuai semenjak membacanya."
+
+#: ../pluma/pluma-io-error-message-area.c:993
+msgid ""
+"If you save it, all the external changes could be lost. Save it anyway?"
+msgstr "Jika anda simpan ia, semua perubahan luar akan hilang, Simpan ia jua?"
+
+#: ../pluma/pluma-io-error-message-area.c:1088
+#, c-format
+msgid "Could not create a backup file while saving %s"
+msgstr "Tidak dapat cipta fail sandar semasa menyimpan %s"
+
+#: ../pluma/pluma-io-error-message-area.c:1091
+#, c-format
+msgid "Could not create a temporary backup file while saving %s"
+msgstr "Tidak dapat cipta fail sandar sementara semasa menyimpan %s"
+
+#: ../pluma/pluma-io-error-message-area.c:1111
+msgid ""
+"pluma could not back up the old copy of the file before saving the new one. "
+"You can ignore this warning and save the file anyway, but if an error occurs"
+" while saving, you could lose the old copy of the file. Save anyway?"
+msgstr "pluma tidak akan sandar fail salinan lama sebelum menyimpan yang baharu. Anda boleh abai amaran ini dan simpan fail jua, tetapi jika ralat berlaku semasa menyimpan, anda akan kehilangan fail salinan lama. Simpan juga?"
+
+#. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
+#: ../pluma/pluma-io-error-message-area.c:1175
+#, c-format
+msgid ""
+"pluma cannot handle %s locations in write mode. Please check that you typed "
+"the location correctly and try again."
+msgstr "pluma tidak dapat kendali %s lokasi dalam mod tulis. Sila semak sama ada lokasi yang anda taip adalah betul dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:1183
+msgid ""
+"pluma cannot handle this location in write mode. Please check that you typed"
+" the location correctly and try again."
+msgstr "pluma tidak dapat kendali lokasi ini dalam mod tulis. Sila semak sama ada lokasi yang anda taip adalah betul dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:1192
+#, c-format
+msgid ""
+"%s is not a valid location. Please check that you typed the location "
+"correctly and try again."
+msgstr "%s bukanlah lokasi yang sah. Sila semak sama ada lokasi yang anda taip adalah betul dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:1198
+msgid ""
+"You do not have the permissions necessary to save the file. Please check "
+"that you typed the location correctly and try again."
+msgstr "Anda tidak mempunyai keizinan yang diperlukan untuk menyimpan fail. Sila semak sama ada lokasi yang anda taip adalah betul dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:1204
+msgid ""
+"There is not enough disk space to save the file. Please free some disk space"
+" and try again."
+msgstr "Ruang cakera tidak mencukupi untuk menyimpan fail. Sila bebaskan sedikit ruang cakera dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:1209
+msgid ""
+"You are trying to save the file on a read-only disk. Please check that you "
+"typed the location correctly and try again."
+msgstr "Anda cuba menyimpan fail dalam cakera baca-sahaja. Sila semak sama ada lokasi yang anda taip adalah betul dan cuba lagi."
+
+#: ../pluma/pluma-io-error-message-area.c:1215
+msgid "A file with the same name already exists. Please use a different name."
+msgstr "Satu fail dengan nama yang sama sudah wujud. Sila guna nama lain."
+
+#: ../pluma/pluma-io-error-message-area.c:1220
+msgid ""
+"The disk where you are trying to save the file has a limitation on length of"
+" the file names. Please use a shorter name."
+msgstr "Cakera yang mana anda cuba simpan fail mempunyai had terhadap panjang nama fail. Sila gunakan nama lebih pendek."
+
+#: ../pluma/pluma-io-error-message-area.c:1227
+msgid ""
+"The disk where you are trying to save the file has a limitation on file "
+"sizes. Please try saving a smaller file or saving it to a disk that does not"
+" have this limitation."
+msgstr "Cakera yang mana anda cuba simpan fail mempunyai had terhadap saiz fail. Sila simpan fail lebih kecil atau menyimpannya pada cakera yang tiada sekatan ini."
+
+#: ../pluma/pluma-io-error-message-area.c:1243
+#, c-format
+msgid "Could not save the file %s."
+msgstr "Tidak dapat simpan fail %s."
+
+#. FIXME: review this message, it's not clear since for the user the
+#. "modification"
+#. could be interpreted as the changes he made in the document. beside
+#. "reading" is
+#. not accurate (since last load/save)
+#: ../pluma/pluma-io-error-message-area.c:1287
+#, c-format
+msgid "The file %s changed on disk."
+msgstr "Fail %s berubah dalam cakera."
+
+#: ../pluma/pluma-io-error-message-area.c:1292
+msgid "Do you want to drop your changes and reload the file?"
+msgstr "Anda ingin lepaskan perubahan yang anda buat dan muat semula fail?"
+
+#: ../pluma/pluma-io-error-message-area.c:1294
+msgid "Do you want to reload the file?"
+msgstr "Anda hendak muat semula fail?"
+
+#: ../pluma/pluma-io-error-message-area.c:1300
+#: ../pluma/pluma-io-error-message-area.c:1311
+msgid "_Reload"
+msgstr "_Muat Semula"
+
+#: ../pluma/pluma-panel.c:365 ../pluma/pluma-panel.c:541
+msgid "Empty"
+msgstr "Kosong"
+
+#: ../pluma/pluma-panel.c:431
+msgid "Hide panel"
+msgstr "Sembunyi panel"
+
+#: ../pluma/pluma-plugin-manager.c:54
+msgid "Plugin"
+msgstr "Pemalam"
+
+#: ../pluma/pluma-plugin-manager.c:55
+msgid "Enabled"
+msgstr "Dibenarkan"
+
+#: ../pluma/pluma-plugin-manager.c:504
+msgid "_About"
+msgstr "_Perihal"
+
+#: ../pluma/pluma-plugin-manager.c:512
+msgid "C_onfigure"
+msgstr "K_onfigur"
+
+#: ../pluma/pluma-plugin-manager.c:521
+msgid "A_ctivate"
+msgstr "A_ktifkan"
+
+#: ../pluma/pluma-plugin-manager.c:532
+msgid "Ac_tivate All"
+msgstr "Ak_tifkan Semua"
+
+#: ../pluma/pluma-plugin-manager.c:537
+msgid "_Deactivate All"
+msgstr "_Nyahaktif Semua"
+
+#: ../pluma/pluma-plugin-manager.c:800
+msgid "Active _Plugins:"
+msgstr "_Pemalam Aktif:"
+
+#: ../pluma/pluma-plugin-manager.c:825
+msgid "_About Plugin"
+msgstr "P_erihal Pemalam"
+
+#: ../pluma/pluma-plugin-manager.c:829
+msgid "C_onfigure Plugin"
+msgstr "K_onfigur Pemalam"
+
+#: ../pluma/pluma-print-job.c:551
+#, c-format
+msgid "File: %s"
+msgstr "Fail: %s"
+
+#: ../pluma/pluma-print-job.c:560
+msgid "Page %N of %Q"
+msgstr "Halaman %N dari %Q"
+
+#: ../pluma/pluma-print-job.c:819
+msgid "Preparing..."
+msgstr "Menyediakan..."
+
+#: ../pluma/pluma-print-preferences.ui.h:1
+msgid "Syntax Highlighting"
+msgstr "Penyorotan Sintaks"
+
+#: ../pluma/pluma-print-preferences.ui.h:2
+msgid "Print synta_x highlighting"
+msgstr "Cetak penyorotan sin_taks"
+
+#: ../pluma/pluma-print-preferences.ui.h:4
+msgid "Print line nu_mbers"
+msgstr "Cetak no_mbor baris"
+
+#. 'Number every' from 'Number every 3 lines' in the 'Text Editor' tab of the
+#. print preferences.
+#: ../pluma/pluma-print-preferences.ui.h:6
+msgid "_Number every"
+msgstr "_Nombor setiap"
+
+#. 'lines' from 'Number every 3 lines' in the 'Text Editor' tab of the print
+#. preferences.
+#: ../pluma/pluma-print-preferences.ui.h:8
+msgid "lines"
+msgstr "baris"
+
+#: ../pluma/pluma-print-preferences.ui.h:12
+msgid "Page header"
+msgstr "Pengepala halaman"
+
+#: ../pluma/pluma-print-preferences.ui.h:13
+msgid "Print page _headers"
+msgstr "Cetak pen_gepala halaman"
+
+#: ../pluma/pluma-print-preferences.ui.h:14
+msgid "Fonts"
+msgstr "Fon"
+
+#: ../pluma/pluma-print-preferences.ui.h:15
+msgid "_Body:"
+msgstr "_Badan:"
+
+#: ../pluma/pluma-print-preferences.ui.h:16
+msgid "_Line numbers:"
+msgstr "Nombor _baris:"
+
+#: ../pluma/pluma-print-preferences.ui.h:17
+msgid "He_aders and footers:"
+msgstr "Pengep_ala dan pengaki:"
+
+#: ../pluma/pluma-print-preferences.ui.h:18
+msgid "_Restore Default Fonts"
+msgstr "_Pulih Fon Lalai"
+
+#: ../pluma/pluma-print-preview.c:568
+msgid "Show the previous page"
+msgstr "Tunjuk halaman terdahulu"
+
+#: ../pluma/pluma-print-preview.c:580
+msgid "Show the next page"
+msgstr "Tunjuk halaman berikutnya"
+
+#: ../pluma/pluma-print-preview.c:596
+msgid "Current page (Alt+P)"
+msgstr "Halaman semasa (Alt+P)"
+
+#. Translators: the "of" from "1 of 19" in print preview.
+#: ../pluma/pluma-print-preview.c:619
+msgid "of"
+msgstr "dari"
+
+#: ../pluma/pluma-print-preview.c:627
+msgid "Page total"
+msgstr "Jumlah halaman"
+
+#: ../pluma/pluma-print-preview.c:628
+msgid "The total number of pages in the document"
+msgstr "Jumlah bilangan halaman dalam dokumen"
+
+#: ../pluma/pluma-print-preview.c:645
+msgid "Show multiple pages"
+msgstr "Tunjuk halaman berbilang"
+
+#: ../pluma/pluma-print-preview.c:658
+msgid "Zoom 1:1"
+msgstr "Zum 1:1"
+
+#: ../pluma/pluma-print-preview.c:667
+msgid "Zoom to fit the whole page"
+msgstr "Zum untuk suai muat keseluruhan halaman"
+
+#: ../pluma/pluma-print-preview.c:676
+msgid "Zoom the page in"
+msgstr "Zum masuk halaman"
+
+#: ../pluma/pluma-print-preview.c:685
+msgid "Zoom the page out"
+msgstr "Zum keluar halaman"
+
+#: ../pluma/pluma-print-preview.c:697
+msgid "_Close Preview"
+msgstr "_Tutup Pratonton"
+
+#: ../pluma/pluma-print-preview.c:700
+msgid "Close print preview"
+msgstr "Tutup pratonton cetakan"
+
+#: ../pluma/pluma-print-preview.c:770
+#, c-format
+msgid "Page %d of %d"
+msgstr "Halaman %d dari %d"
+
+#: ../pluma/pluma-print-preview.c:954
+msgid "Page Preview"
+msgstr "Pratonton Halaman"
+
+#: ../pluma/pluma-print-preview.c:955
+msgid "The preview of a page in the document to be printed"
+msgstr "Pratonton halaman dalam dokumen yang dicetak"
+
+#: ../pluma/pluma-smart-charset-converter.c:319
+msgid "It is not possible to detect the encoding automatically"
+msgstr "Adakah mungkin mengesan pengekodan secara automatik"
+
+#: ../pluma/pluma-statusbar.c:70 ../pluma/pluma-statusbar.c:76
+msgid "OVR"
+msgstr "OVR"
+
+#: ../pluma/pluma-statusbar.c:70 ../pluma/pluma-statusbar.c:76
+msgid "INS"
+msgstr "INS"
+
+#. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for
+#. "Column". Please,
+#. use abbreviations if possible to avoid space problems.
+#: ../pluma/pluma-statusbar.c:341
+#, c-format
+msgid "  Ln %d, Col %d"
+msgstr " brs %d, Laj %d"
+
+#: ../pluma/pluma-statusbar.c:444
+#, c-format
+msgid "There is a tab with errors"
+msgid_plural "There are %d tabs with errors"
+msgstr[0] "Terdapat %d tab dengan ralat"
+
+#: ../pluma/pluma-style-scheme-manager.c:215
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr "Direktori '%s' tidak dapat dicipta: g_mkdir_with_parents() gagal: %s"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:660
+#, c-format
+msgid "Reverting %s from %s"
+msgstr "Mengembalikan %s dari %s"
+
+#: ../pluma/pluma-tab.c:667
+#, c-format
+msgid "Reverting %s"
+msgstr "Mengembalikan %s"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:683
+#, c-format
+msgid "Loading %s from %s"
+msgstr "Memuatkan %s dari %s"
+
+#: ../pluma/pluma-tab.c:690
+#, c-format
+msgid "Loading %s"
+msgstr "Memuatkan %s"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:773
+#, c-format
+msgid "Saving %s to %s"
+msgstr "Menyimpan %s ke %s"
+
+#: ../pluma/pluma-tab.c:780
+#, c-format
+msgid "Saving %s"
+msgstr "Menyimpan %s"
+
+#. Read only
+#: ../pluma/pluma-tab.c:1673
+msgid "RO"
+msgstr "RO"
+
+#: ../pluma/pluma-tab.c:1720
+#, c-format
+msgid "Error opening file %s"
+msgstr "Ralat membuka fail %s"
+
+#: ../pluma/pluma-tab.c:1725
+#, c-format
+msgid "Error reverting file %s"
+msgstr "Ralat mengembalikan fail %s"
+
+#: ../pluma/pluma-tab.c:1730
+#, c-format
+msgid "Error saving file %s"
+msgstr "Ralat menyimpan fail %s"
+
+#: ../pluma/pluma-tab.c:1751
+msgid "Unicode (UTF-8)"
+msgstr "Unikod (UTF-8)"
+
+#: ../pluma/pluma-tab.c:1758
+msgid "Name:"
+msgstr "Nama:"
+
+#: ../pluma/pluma-tab.c:1759
+msgid "MIME Type:"
+msgstr "Jenis MIME:"
+
+#: ../pluma/pluma-tab.c:1760
+msgid "Encoding:"
+msgstr "Pengekodan:"
+
+#: ../pluma/pluma-tab-label.c:285
+msgid "Close document"
+msgstr "Tutup dokumen"
+
+#. Toplevel
+#: ../pluma/pluma-ui.h:47
+msgid "_File"
+msgstr "_Fail"
+
+#: ../pluma/pluma-ui.h:48
+msgid "_Edit"
+msgstr "_Sunting"
+
+#: ../pluma/pluma-ui.h:49
+msgid "_View"
+msgstr "_Lihat"
+
+#: ../pluma/pluma-ui.h:50
+msgid "_Search"
+msgstr "_Gelintar"
+
+#: ../pluma/pluma-ui.h:51
+msgid "_Tools"
+msgstr "_Alat"
+
+#: ../pluma/pluma-ui.h:52
+msgid "_Documents"
+msgstr "_Dokumen"
+
+#: ../pluma/pluma-ui.h:53
+msgid "_Help"
+msgstr "_Bantuan"
+
+#: ../pluma/pluma-ui.h:57
+msgid "Create a new document"
+msgstr "Cipta dokumen baru"
+
+#: ../pluma/pluma-ui.h:58
+msgid "_Open..."
+msgstr "_Buka..."
+
+#: ../pluma/pluma-ui.h:59 ../pluma/pluma-window.c:1458
+msgid "Open a file"
+msgstr "Buka fail"
+
+#. Edit menu
+#: ../pluma/pluma-ui.h:62
+msgid "Pr_eferences"
+msgstr "Ke_utamaan"
+
+#: ../pluma/pluma-ui.h:63
+msgid "Configure the application"
+msgstr "Konfigur aplikasi"
+
+#. Help menu
+#: ../pluma/pluma-ui.h:66
+msgid "_Contents"
+msgstr "_Kandungan"
+
+#: ../pluma/pluma-ui.h:67
+msgid "Open the pluma manual"
+msgstr "Buka panduan pluma"
+
+#: ../pluma/pluma-ui.h:69
+msgid "About this application"
+msgstr "Perihal aplikasi ini"
+
+#: ../pluma/pluma-ui.h:73
+msgid "Leave fullscreen mode"
+msgstr "Tinggalkan mod skrin penuh"
+
+#: ../pluma/pluma-ui.h:81
+msgid "Save the current file"
+msgstr "Simpan fail semasa"
+
+#: ../pluma/pluma-ui.h:82
+msgid "Save _As..."
+msgstr "Simpan Seb_agai..."
+
+#: ../pluma/pluma-ui.h:83
+msgid "Save the current file with a different name"
+msgstr "Simpan fail semasa dengan nama lain"
+
+#: ../pluma/pluma-ui.h:85
+msgid "Revert to a saved version of the file"
+msgstr "Kembali ke versi tersimpan fail"
+
+#: ../pluma/pluma-ui.h:87
+msgid "Page Set_up..."
+msgstr "Pers_ediaan Halaman..."
+
+#: ../pluma/pluma-ui.h:88
+msgid "Set up the page settings"
+msgstr "Sediakan tetapan halaman"
+
+#: ../pluma/pluma-ui.h:90
+msgid "Print Previe_w"
+msgstr "Prat_onton cetakan"
+
+#: ../pluma/pluma-ui.h:91
+msgid "Print preview"
+msgstr "Pratonton cetakan"
+
+#: ../pluma/pluma-ui.h:92
+msgid "_Print..."
+msgstr "_Cetak..."
+
+#: ../pluma/pluma-ui.h:93
+msgid "Print the current page"
+msgstr "Cetak halaman semasa"
+
+#: ../pluma/pluma-ui.h:97
+msgid "Undo the last action"
+msgstr "Buat asal tindakan terakhir"
+
+#: ../pluma/pluma-ui.h:99
+msgid "Redo the last undone action"
+msgstr "Buat semula tindakan terakhir yang belum dibuat"
+
+#: ../pluma/pluma-ui.h:101
+msgid "Cut the selection"
+msgstr "Potong pemilihan"
+
+#: ../pluma/pluma-ui.h:103
+msgid "Copy the selection"
+msgstr "Salin pemilihan"
+
+#: ../pluma/pluma-ui.h:105
+msgid "Paste the clipboard"
+msgstr "Tampal papan keratan"
+
+#: ../pluma/pluma-ui.h:107
+msgid "Delete the selected text"
+msgstr "Padam teks terpilih"
+
+#: ../pluma/pluma-ui.h:108
+msgid "Select _All"
+msgstr "Pilih Semu_a"
+
+#: ../pluma/pluma-ui.h:109
+msgid "Select the entire document"
+msgstr "Pilih keseluruhan dokumen"
+
+#. View menu
+#: ../pluma/pluma-ui.h:112
+msgid "_Highlight Mode"
+msgstr "Mod _Sorot"
+
+#. Search menu
+#: ../pluma/pluma-ui.h:115
+msgid "_Find..."
+msgstr "_Cari..."
+
+#: ../pluma/pluma-ui.h:116
+msgid "Search for text"
+msgstr "Gelintar teks"
+
+#: ../pluma/pluma-ui.h:117
+msgid "Find Ne_xt"
+msgstr "Cari _Berikutnya"
+
+#: ../pluma/pluma-ui.h:118
+msgid "Search forwards for the same text"
+msgstr "Gelintar mengundur bagi teks yang sama"
+
+#: ../pluma/pluma-ui.h:119
+msgid "Find Pre_vious"
+msgstr "Cari Ter_dahulu"
+
+#: ../pluma/pluma-ui.h:120
+msgid "Search backwards for the same text"
+msgstr "Gelintar mengundur bagi teks yang sama"
+
+#: ../pluma/pluma-ui.h:122 ../pluma/pluma-ui.h:125
+msgid "_Replace..."
+msgstr "_Ganti..."
+
+#: ../pluma/pluma-ui.h:123 ../pluma/pluma-ui.h:126
+msgid "Search for and replace text"
+msgstr "Gelintar dan ganti teks"
+
+#: ../pluma/pluma-ui.h:128
+msgid "_Clear Highlight"
+msgstr "K_osongkan Sorot"
+
+#: ../pluma/pluma-ui.h:129
+msgid "Clear highlighting of search matches"
+msgstr "Kosongkan penyorotan padanan gelintar"
+
+#: ../pluma/pluma-ui.h:130
+msgid "Go to _Line..."
+msgstr "Pergi ke _Baris..."
+
+#: ../pluma/pluma-ui.h:131
+msgid "Go to a specific line"
+msgstr "Pergi ke baris dinyatakan"
+
+#: ../pluma/pluma-ui.h:132
+msgid "_Incremental Search..."
+msgstr "Gelintar Ber_tokokan..."
+
+#: ../pluma/pluma-ui.h:133
+msgid "Incrementally search for text"
+msgstr "Gelintar teks secara bertokokan"
+
+#. Documents menu
+#: ../pluma/pluma-ui.h:136
+msgid "_Save All"
+msgstr "_Simpan Semua"
+
+#: ../pluma/pluma-ui.h:137
+msgid "Save all open files"
+msgstr "Simpan semua fail dibuka"
+
+#: ../pluma/pluma-ui.h:138
+msgid "_Close All"
+msgstr "_Tutup Semua"
+
+#: ../pluma/pluma-ui.h:139
+msgid "Close all open files"
+msgstr "Tutup semua fail dibuka"
+
+#: ../pluma/pluma-ui.h:140
+msgid "_Previous Document"
+msgstr "Dokumen _Terdahulu"
+
+#: ../pluma/pluma-ui.h:141
+msgid "Activate previous document"
+msgstr "Aktifkan dokumen terdahulu"
+
+#: ../pluma/pluma-ui.h:142
+msgid "_Next Document"
+msgstr "Dokumen _Berikutnya"
+
+#: ../pluma/pluma-ui.h:143
+msgid "Activate next document"
+msgstr "Aktifkan dokumen berikutnya"
+
+#: ../pluma/pluma-ui.h:144
+msgid "_Move to New Window"
+msgstr "_Alih ke Tetingkap Baru"
+
+#: ../pluma/pluma-ui.h:145
+msgid "Move the current document to a new window"
+msgstr "Alih dokumen semasa ke tetingkap baru"
+
+#: ../pluma/pluma-ui.h:152
+msgid "Close the current file"
+msgstr "Tutup fail semasa"
+
+#: ../pluma/pluma-ui.h:159
+msgid "Quit the program"
+msgstr "Keluar program"
+
+#: ../pluma/pluma-ui.h:164
+msgid "_Toolbar"
+msgstr "Palang Ala_t"
+
+#: ../pluma/pluma-ui.h:165
+msgid "Show or hide the toolbar in the current window"
+msgstr "Tunjuk atau sembunyikan palang alat pada tetingkap semasa"
+
+#: ../pluma/pluma-ui.h:167
+msgid "_Statusbar"
+msgstr "Palang _status"
+
+#: ../pluma/pluma-ui.h:168
+msgid "Show or hide the statusbar in the current window"
+msgstr "Tunjuk atau sembunyikan palang status pada tetingkap semasa"
+
+#: ../pluma/pluma-ui.h:171
+msgid "Edit text in fullscreen"
+msgstr "Sunting teks dalam skrin penuh"
+
+#: ../pluma/pluma-ui.h:178
+msgid "Side _Pane"
+msgstr "Anak Teti_ngkap Sisi"
+
+#: ../pluma/pluma-ui.h:179
+msgid "Show or hide the side pane in the current window"
+msgstr "Tunjuk atau sembunyikan anak tetingkap sisi pada tetingkap semasa"
+
+#: ../pluma/pluma-ui.h:181
+msgid "_Bottom Pane"
+msgstr "Anak Tetingkap _Bawah"
+
+#: ../pluma/pluma-ui.h:182
+msgid "Show or hide the bottom pane in the current window"
+msgstr "Tunjuk atau sembunyikan anak tetingkap bawah pada tetingkap semasa"
+
+#: ../pluma/pluma-utils.c:1090
+msgid "Please check your installation."
+msgstr "Sila semak pemasangan anda."
+
+#: ../pluma/pluma-utils.c:1159
+#, c-format
+msgid "Unable to open UI file %s. Error: %s"
+msgstr "Tidak boleh buka fail UI %s. Ralat: %s"
+
+#: ../pluma/pluma-utils.c:1179
+#, c-format
+msgid "Unable to find the object '%s' inside file %s."
+msgstr "Tidak dapat cari objek '%s' didalam fail %s."
+
+#. Translators: '/ on <remote-share>'
+#: ../pluma/pluma-utils.c:1339
+#, c-format
+msgid "/ on %s"
+msgstr "/ pada %s"
+
+#. create "Wrap Around" menu item.
+#: ../pluma/pluma-view.c:1274
+msgid "_Wrap Around"
+msgstr "_Lilit Sekeliling"
+
+#. create "Match Entire Word Only" menu item.
+#: ../pluma/pluma-view.c:1284
+msgid "Match _Entire Word Only"
+msgstr "Padan _Keseluruhan Perkataan Sahaja"
+
+#. create "Match Case" menu item.
+#: ../pluma/pluma-view.c:1294
+msgid "_Match Case"
+msgstr "Pa_dan Kata"
+
+#. create "Parse escapes" menu item.
+#: ../pluma/pluma-view.c:1304
+msgid ""
+"_Parse escape sequences (e.g. \n"
+")"
+msgstr "_Hurai jujukan escape (cth.\n)"
+
+#: ../pluma/pluma-view.c:1418
+msgid "String you want to search for"
+msgstr "Rentetan yang anda hendak gelintar"
+
+#: ../pluma/pluma-view.c:1427
+msgid "Line you want to move the cursor to"
+msgstr "Baris yang anda hendak alihkan kursor"
+
+#: ../pluma/pluma-window.c:1011
+#, c-format
+msgid "Use %s highlight mode"
+msgstr "Guna mod sorot %s"
+
+#. add the "Plain Text" item before all the others
+#. Translators: "Plain Text" means that no highlight mode is selected in the
+#. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
+#: ../pluma/pluma-window.c:1068 ../pluma/pluma-window.c:1980
+#: ../plugins/externaltools/tools/manager.py:121
+#: ../plugins/externaltools/tools/manager.py:419
+#: ../plugins/externaltools/tools/manager.py:529
+#: ../plugins/externaltools/tools/manager.py:844
+msgid "Plain Text"
+msgstr "Teks Biasa"
+
+#: ../pluma/pluma-window.c:1069
+msgid "Disable syntax highlighting"
+msgstr "Lumpuhkan penyorotan sintaks"
+
+#. Translators: %s is a URI
+#: ../pluma/pluma-window.c:1355
+#, c-format
+msgid "Open '%s'"
+msgstr "Buka '%s'"
+
+#: ../pluma/pluma-window.c:1460
+msgid "Open a recently used file"
+msgstr "Buka fail diguna baru-baru ini"
+
+#: ../pluma/pluma-window.c:1466
+msgid "Open"
+msgstr "Buka"
+
+#: ../pluma/pluma-window.c:1524
+msgid "Save"
+msgstr "Simpan"
+
+#: ../pluma/pluma-window.c:1526
+msgid "Print"
+msgstr "Cetak"
+
+#. Translators: %s is a URI
+#: ../pluma/pluma-window.c:1705
+#, c-format
+msgid "Activate '%s'"
+msgstr "Aktifkan '%s'"
+
+#: ../pluma/pluma-window.c:1958
+msgid "Use Spaces"
+msgstr "Guna Jarak"
+
+#: ../pluma/pluma-window.c:2029
+msgid "Tab Width"
+msgstr "Lebar Tab"
+
+#: ../pluma/pluma-window.c:3893
+msgid "About pluma"
+msgstr "Perihal pluma"
+
+#: ../plugins/changecase/changecase.pluma-plugin.desktop.in.h:1
+msgid "Change Case"
+msgstr "Ubah Kata"
+
+#: ../plugins/changecase/changecase.pluma-plugin.desktop.in.h:2
+msgid "Changes the case of selected text."
+msgstr "Ubah kata bagi teks terpilih."
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:222
+msgid "C_hange Case"
+msgstr "_Ubah Kata"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:223
+msgid "All _Upper Case"
+msgstr "Semua Huruf _Besar"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:224
+msgid "Change selected text to upper case"
+msgstr "Tukar teks terpilih ke huruf besar"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:226
+msgid "All _Lower Case"
+msgstr "Semua Huruf _Kecil"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:227
+msgid "Change selected text to lower case"
+msgstr "Ubah teks terpilih ke huruf kecil"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:229
+msgid "_Invert Case"
+msgstr "_Songsangkan Kata"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:230
+msgid "Invert the case of selected text"
+msgstr "Songsangkan kata bagi teks terpilih"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:232
+msgid "_Title Case"
+msgstr "Kata _Tajuk"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:233
+msgid "Capitalize the first letter of each selected word"
+msgstr "Besarkan huruf pertama bagi setiap perkataan"
+
+#: ../plugins/checkupdate/checkupdate.pluma-plugin.desktop.in.h:1
+msgid "Check update"
+msgstr "Semak kemaskini"
+
+#: ../plugins/checkupdate/checkupdate.pluma-plugin.desktop.in.h:2
+msgid "Check for latest version of pluma"
+msgstr "Semak versi terkini pluma"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:239
+msgid "There was an error displaying the URI."
+msgstr "Terdapat ralat memaparkan URI."
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:285
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:300
+msgid "_Download"
+msgstr "_Muat Turun"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:289
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:308
+msgid "_Ignore Version"
+msgstr "Aba_i Versi"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:324
+msgid "There is a new version of pluma"
+msgstr "Terdapat versi baharu pluma"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:328
+msgid ""
+"You can download the new version of pluma by clicking on the download button"
+" or ignore that version and wait for a new one"
+msgstr "Anda boleh muat turun versi baharu pluma dengan mengklik pada butang muat turun atau abai versi tersebut dan tunggu yang lebih baharu"
+
+#: ../plugins/checkupdate/org.mate.pluma.plugins.checkupdate.gschema.xml.in.in.h:1
+msgid "Version to ignore until the next version is released"
+msgstr "Versi diabaikan sehingga versi berikutnya dilepaskan"
+
+#: ../plugins/docinfo/docinfo.pluma-plugin.desktop.in.h:1
+#: ../plugins/docinfo/docinfo.ui.h:1
+msgid "Document Statistics"
+msgstr "Statistik Dokumen"
+
+#: ../plugins/docinfo/docinfo.pluma-plugin.desktop.in.h:2
+msgid ""
+"Analyzes the current document and reports the number of words, lines, "
+"characters and non-space characters in it."
+msgstr "Analisis dokumen dan lapor bilangan perkataan, baris, aksara dan aksara bukan-jarak di dalamnya."
+
+#: ../plugins/docinfo/docinfo.ui.h:2
+msgid "_Update"
+msgstr "_Kemaskini"
+
+#: ../plugins/docinfo/docinfo.ui.h:3
+msgid "File Name"
+msgstr "Nama Fail"
+
+#: ../plugins/docinfo/docinfo.ui.h:5
+msgid "Bytes"
+msgstr "Bait"
+
+#: ../plugins/docinfo/docinfo.ui.h:6
+msgid "Characters (no spaces)"
+msgstr "Aksara (tanpa jarak)"
+
+#: ../plugins/docinfo/docinfo.ui.h:7
+msgid "Characters (with spaces)"
+msgstr "Aksara (dengan jarak)"
+
+#: ../plugins/docinfo/docinfo.ui.h:8
+msgid "Words"
+msgstr "Perkataan"
+
+#: ../plugins/docinfo/docinfo.ui.h:9
+msgid "Lines"
+msgstr "Baris"
+
+#: ../plugins/docinfo/docinfo.ui.h:10
+msgid "Document"
+msgstr "Dokumen"
+
+#: ../plugins/docinfo/docinfo.ui.h:11
+msgid "Selection"
+msgstr "Pemilihan"
+
+#: ../plugins/docinfo/pluma-docinfo-plugin.c:431
+msgid "_Document Statistics"
+msgstr "Statistik _Dokumen"
+
+#: ../plugins/docinfo/pluma-docinfo-plugin.c:433
+msgid "Get statistical information on the current document"
+msgstr "Dapatkan maklumat statistik pada dokumen semasa"
+
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
+#: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
+msgid "Open terminal here"
+msgstr "Buka terminal disini"
+
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
+#: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:2
+msgid "Open a terminal in the document location"
+msgstr "Buka terminal dalam lokasi dokumen"
+
+#: ../plugins/externaltools/externaltools.pluma-plugin.desktop.in.h:1
+msgid "External Tools"
+msgstr "Alatan Luar"
+
+#: ../plugins/externaltools/externaltools.pluma-plugin.desktop.in.h:2
+msgid "Execute external commands and shell scripts."
+msgstr "Lakukan perintah dan skrip shell luar."
+
+#: ../plugins/externaltools/tools/__init__.py:172
+msgid "Manage _External Tools..."
+msgstr "Urus Alatan _Luar..."
+
+#: ../plugins/externaltools/tools/__init__.py:174
+msgid "Opens the External Tools Manager"
+msgstr "Buka Pengurus Alatan Luar"
+
+#: ../plugins/externaltools/tools/__init__.py:178
+msgid "External _Tools"
+msgstr "Ala_tan Luar"
+
+#: ../plugins/externaltools/tools/__init__.py:180
+msgid "External tools"
+msgstr "Alatan luar"
+
+#: ../plugins/externaltools/tools/__init__.py:212
+msgid "Shell Output"
+msgstr "Output Shell"
+
+#: ../plugins/externaltools/tools/capture.py:93
+#, python-format
+msgid "Could not execute command: %s"
+msgstr "Tidak dapat lakukan perintah: %s"
+
+#: ../plugins/externaltools/tools/functions.py:162
+msgid "You must be inside a word to run this command"
+msgstr "Anda mesti ada dalam perkataan untuk jalankan perintah ini"
+
+#: ../plugins/externaltools/tools/functions.py:267
+msgid "Running tool:"
+msgstr "Alat berjalan:"
+
+#: ../plugins/externaltools/tools/functions.py:292
+msgid "Done."
+msgstr "Selesai."
+
+#: ../plugins/externaltools/tools/functions.py:294
+msgid "Exited"
+msgstr "Keluar"
+
+#: ../plugins/externaltools/tools/manager.py:119
+msgid "All languages"
+msgstr "Semua bahasa"
+
+#: ../plugins/externaltools/tools/manager.py:518
+#: ../plugins/externaltools/tools/manager.py:522
+#: ../plugins/externaltools/tools/manager.py:842
+#: ../plugins/externaltools/tools/tools.ui.h:22
+msgid "All Languages"
+msgstr "Semua Bahasa"
+
+#: ../plugins/externaltools/tools/manager.py:628
+msgid "New tool"
+msgstr "Alat baru"
+
+#: ../plugins/externaltools/tools/manager.py:759
+#, python-format
+msgid "This accelerator is already bound to %s"
+msgstr "Pemecut ini sudah diikat dengan %s"
+
+#: ../plugins/externaltools/tools/manager.py:810
+msgid "Type a new accelerator, or press Backspace to clear"
+msgstr "Taip pemecut baru, atau tekan Backspace untuk kosongkan"
+
+#: ../plugins/externaltools/tools/manager.py:812
+msgid "Type a new accelerator"
+msgstr "Taip pemecu baru"
+
+#: ../plugins/externaltools/tools/outputpanel.py:105
+msgid "Stopped."
+msgstr "Dihentikan."
+
+#. ex:ts=4:et:
+#: ../plugins/externaltools/tools/tools.ui.h:1
+msgid "Nothing"
+msgstr "Tiada apa-apa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:2
+msgid "Current document"
+msgstr "Dokumen semasa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:3
+msgid "All documents"
+msgstr "Semua dokumen"
+
+#: ../plugins/externaltools/tools/tools.ui.h:4
+msgid "Current selection"
+msgstr "Pemilihan semasa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
+msgid "Current selection (default to document)"
+msgstr "Pemilihan semasa (lalai pada dokumen)"
+
+#: ../plugins/externaltools/tools/tools.ui.h:6
+msgid "Current line"
+msgstr "Baris semasa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:7
+msgid "Current word"
+msgstr "Perkataan semasa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:8
+msgid "Display in bottom pane"
+msgstr "Papar dalam anak tetingkap bawah"
+
+#: ../plugins/externaltools/tools/tools.ui.h:9
+msgid "Create new document"
+msgstr "Cipta dokumen baru"
+
+#: ../plugins/externaltools/tools/tools.ui.h:10
+msgid "Append to current document"
+msgstr "Tambah ke dokumen semasa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:11
+msgid "Replace current document"
+msgstr "Ganti dokumen semasa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:12
+msgid "Replace current selection"
+msgstr "Ganti pemilihan semasa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:13
+msgid "Insert at cursor position"
+msgstr "Sisip pada kedudukan kursor"
+
+#: ../plugins/externaltools/tools/tools.ui.h:14
+msgid "All documents except untitled ones"
+msgstr "Semua dokumen kecuali yang tiada tajuk"
+
+#: ../plugins/externaltools/tools/tools.ui.h:15
+msgid "Local files only"
+msgstr "Fail setempat sahaja"
+
+#: ../plugins/externaltools/tools/tools.ui.h:16
+msgid "Remote files only"
+msgstr "Fail jauh sahaja"
+
+#: ../plugins/externaltools/tools/tools.ui.h:17
+msgid "Untitled documents only"
+msgstr "Dokumen tanpa tajuk sahaja"
+
+#: ../plugins/externaltools/tools/tools.ui.h:18
+msgid "External Tools Manager"
+msgstr "Pengurus Alatan Luar"
+
+#: ../plugins/externaltools/tools/tools.ui.h:19
+msgid "_Tools:"
+msgstr "Ala_tan:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:20
+#: ../plugins/snippets/snippets/snippets.ui.h:7
+msgid "_Edit:"
+msgstr "_Sunting:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:23
+msgid "_Applicability:"
+msgstr "_Boleh Laksana:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:24
+msgid "_Output:"
+msgstr "_Output:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:25
+msgid "_Input:"
+msgstr "_Input:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:26
+msgid "_Save:"
+msgstr "_Simpan:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:27
+msgid "_Shortcut Key:"
+msgstr "_Kekunci Pintasan:"
+
+#: ../plugins/externaltools/data/build.desktop.in.h:1
+msgid "Build"
+msgstr "Binaan"
+
+#: ../plugins/externaltools/data/build.desktop.in.h:2
+msgid "Run \"make\" in the document directory"
+msgstr "Jalankan \"make\" dalam direktori dokumen"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
+msgid "Remove trailing spaces"
+msgstr "Buang jarak mengekor"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
+msgid "Remove useless trailing spaces in your file"
+msgstr "Buang jarak mengekor tidak berguna dalam fail anda"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:1
+msgid "Run command"
+msgstr "Jalankan perintah"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:2
+msgid "Execute a custom command and put its output in a new document"
+msgstr "Lakukan perintah suai dan letak outputnya dalam dokumen baru"
+
+#: ../plugins/externaltools/data/search-recursive.desktop.in.h:1
+msgid "Search"
+msgstr "Gelintar"
+
+#: ../plugins/externaltools/data/switch-c.desktop.in.h:1
+msgid "Switch onto a file .c and .h"
+msgstr "Tukar ke fail .c dan .h"
+
+#: ../plugins/filebrowser/filebrowser.pluma-plugin.desktop.in.h:1
+msgid "File Browser Pane"
+msgstr "Anak Tetingkap Pelayar Fail"
+
+#: ../plugins/filebrowser/filebrowser.pluma-plugin.desktop.in.h:2
+msgid "Easy file access from the side pane"
+msgstr "Capai fail dengan mudah dari anak tetingkap sisi"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:1
+msgid "Set Location to First Document"
+msgstr "Tetapkan Lokasi ke Dokumen Pertama"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:2
+msgid ""
+"If TRUE the file browser plugin will view the directory of the first opened "
+"document given that the file browser hasn't been used yet. (Thus this "
+"generally applies to opening a document from the command line or opening it "
+"with Caja, etc.)"
+msgstr "Jika BENAR pemalam pelayar fail akan lihat direktori dokumen yang pertama dibuka yang mana pelayar fail belum lagi digunakan. (Maka ia amnya dilaksana untuk membuka dokumen dari baris perintah atau membukanya dengan Caja, dll.)"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:3
+msgid "File Browser Filter Mode"
+msgstr "Mod Penapis Pelayar Fail"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:4
+msgid ""
+"This value determines what files get filtered from the file browser. Valid "
+"values are: none (filter nothing), hidden (filter hidden files), binary "
+"(filter binary files) and hidden_and_binary (filter both hidden and binary "
+"files)."
+msgstr "Nilai ini menentukan apakah fail yang ditapis dari pelayar fail. Nilai yang sah adalah: none (tidak menapis), hidden (tapis fail tersembunyi), binary (tapis fail binari) dan hidden_and_binary (tapis kedua-dua fail tersembunyi dan binari)."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:5
+msgid "File Browser Filter Pattern"
+msgstr "Corak Penapis Pelayar Fail"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:6
+msgid ""
+"The filter pattern to filter the file browser with. This filter works on top"
+" of the filter_mode."
+msgstr "Corak penapis untuk menapis pelayar fail. Penapis ini berfungsi diatas filter_mode."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:7
+msgid "Open With Tree View"
+msgstr "Buka Dengan Paparan Pepohon"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:8
+msgid ""
+"Open the tree view when the file browser plugin gets loaded instead of the "
+"bookmarks view"
+msgstr "Buka paparan pepohon bila pemalam pelayar fail dimuatkan selain dari paparan tanda buku"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:9
+msgid "File Browser Root Directory"
+msgstr "Direktori Root Pelayar Fail"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:10
+msgid ""
+"The file browser root directory to use when loading the file browser plugin "
+"and onload/tree_view is TRUE."
+msgstr "Direktori root pelayar fail digunakan untuk membuatkan pemalam pelayar fail dan onload/tree_view adalah BENAR."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:11
+msgid "File Browser Virtual Root Directory"
+msgstr "Direktori Root Maya Pelayar Fail"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:12
+msgid ""
+"The file browser virtual root directory to use when loading the file browser"
+" plugin when onload/tree_view is TRUE. The virtual root must always be below"
+" the actual root."
+msgstr "Direktori root pelayar fail digunakan untuk membuatkan pemalam pelayar fail dan onload/tree_view adalah BENAR. Root maya mestilah sentiasa dibawah root sebenar."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:13
+msgid "Enable Restore of Remote Locations"
+msgstr "Benarkan Pemulihan Lokasi Jauh"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:14
+msgid "Sets whether to enable restoring of remote locations."
+msgstr "Tetapkan sama ada hendak benarkan pemulihan lokasi jauh."
+
+#: ../plugins/filebrowser/pluma-file-bookmarks-store.c:235
+msgid "File System"
+msgstr "Sistem Fail"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:531
+msgid "_Set root to active document"
+msgstr "_Tetapkan root untuk dokumen aktif"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:533
+msgid "Set the root to the active document location"
+msgstr "Tetapkan root pada lokasi dokumen aktif"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:538
+msgid "_Open terminal here"
+msgstr "_Buka terminal disini"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:540
+msgid "Open a terminal at the currently opened directory"
+msgstr "Buka terminal dalam direktori dibuka semasa"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:681
+msgid "File Browser"
+msgstr "Pelayar Fail"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:803
+msgid "An error occurred while creating a new directory"
+msgstr "Ralat berlaku semasa mencipta direktori baru"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:806
+msgid "An error occurred while creating a new file"
+msgstr "Ralat berlaku semasa mencipta fail baru"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:811
+msgid "An error occurred while renaming a file or directory"
+msgstr "Ralat berlaku semasa menamakan semula fail atau direktori"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:816
+msgid "An error occurred while deleting a file or directory"
+msgstr "Ralat berlaku semasa memadam fail atau direktori"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:821
+msgid "An error occurred while opening a directory in the file manager"
+msgstr "Ralat berlaku semasa membuka direktori dalam pengurus fail"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:825
+msgid "An error occurred while setting a root directory"
+msgstr "Ralat berlaku semasa menetapkan direktori root"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:829
+msgid "An error occurred while loading a directory"
+msgstr "Ralat berlaku semasa memuatkan direktori"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:832
+msgid "An error occurred"
+msgstr "Ralat berlaku"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1063
+msgid ""
+"Cannot move file to trash, do you\n"
+"want to delete permanently?"
+msgstr "Tidak dapat alih fail ke tong sampah,⏎\n anda ingin memadamnya secara kekal?"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1067
+#, c-format
+msgid "The file \"%s\" cannot be moved to the trash."
+msgstr "Fail \"%s\" tidak dapat dialih ke tong sampah."
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1070
+msgid "The selected files cannot be moved to the trash."
+msgstr "Fail terpilih tidak dapat dialih ke tong sampah."
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1103
+#, c-format
+msgid "Are you sure you want to permanently delete \"%s\"?"
+msgstr "Anda pasti hendak memadam \"%s\" secara kekal?"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1106
+msgid "Are you sure you want to permanently delete the selected files?"
+msgstr "Anda pasti hendak memadam fail terpilih secara kekal?"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1109
+msgid "If you delete an item, it is permanently lost."
+msgstr "Jika anda padam item, ia akan kekal hilang."
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:1667
+msgid "(Empty)"
+msgstr "(Kosong)"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3307
+msgid ""
+"The renamed file is currently filtered out. You need to adjust your filter "
+"settings to make the file visible"
+msgstr "Fail dinamakan semula buat masa ini telah ditapis. Anda perlu laras tetapan penapis anda untuk menjadikan fail tampak"
+
+#. Translators: This is the default name of new files created by the file
+#. browser pane.
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3546
+msgid "file"
+msgstr "fail"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3570
+msgid ""
+"The new file is currently filtered out. You need to adjust your filter "
+"settings to make the file visible"
+msgstr "Fail baru buat masa ini telah ditapis. Anda perlu laras tetapan penapis anda untuk menjadikan fail tampak"
+
+#. Translators: This is the default name of new directories created by the
+#. file browser pane.
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3599
+msgid "directory"
+msgstr "direktori"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3619
+msgid ""
+"The new directory is currently filtered out. You need to adjust your filter "
+"settings to make the directory visible"
+msgstr "Direktori baru buat masa ini telah ditapis. Anda perlu laras tetapan penapis anda untuk menjadikan direktori tampak"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:713
+msgid "Bookmarks"
+msgstr "Tanda Buku"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:794
+msgid "_Filter"
+msgstr "_Penapis"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:799
+msgid "_Move to Trash"
+msgstr "_Alih ke Tong Sampah"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:800
+msgid "Move selected file or folder to trash"
+msgstr "Alih fail atau folder terpilih ke tong sampah"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:802
+msgid "_Delete"
+msgstr "Pa_dam"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:803
+msgid "Delete selected file or folder"
+msgstr "Padam fail atau folder terpilih"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:810
+msgid "Open selected file"
+msgstr "Buka fail terpilih"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:816
+msgid "Up"
+msgstr "Naik"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:817
+msgid "Open the parent folder"
+msgstr "Buka folder induk"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:822
+msgid "_New Folder"
+msgstr "Folder _Baru"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:823
+msgid "Add new empty folder"
+msgstr "Tambah folder kosong baru"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:825
+msgid "New F_ile"
+msgstr "Fa_il Baru"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:826
+msgid "Add new empty file"
+msgstr "Tambah fail kosong baru"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:831
+msgid "_Rename"
+msgstr "_Nama Semula"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:832
+msgid "Rename selected file or folder"
+msgstr "Namakan semula fail atau folder terpilih"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:838
+msgid "_Previous Location"
+msgstr "Lokasi _Terdahulu"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:840
+msgid "Go to the previous visited location"
+msgstr "Pergi ke lokasi dilawati terdahulu"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:842
+msgid "_Next Location"
+msgstr "Lokasi _Berikutnya"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:843
+msgid "Go to the next visited location"
+msgstr "Pergi ke lokasi dilawati berikutnya"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:844
+msgid "Re_fresh View"
+msgstr "Se_gar Semula Paparan"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:845
+msgid "Refresh the view"
+msgstr "Segarkan semula paparan"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:846
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:864
+msgid "_View Folder"
+msgstr "_Lihat Folder"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:847
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:865
+msgid "View folder in file manager"
+msgstr "Lihat folder dalam pengurus fail"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:854
+msgid "Show _Hidden"
+msgstr "Tunjuk Tersembun_yi"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:855
+msgid "Show hidden files and folders"
+msgstr "Tunjuk fail dan folder tersembunyi"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:857
+msgid "Show _Binary"
+msgstr "Tunjuk _Binari"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:858
+msgid "Show binary files"
+msgstr "Tunjuk fail binari"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:990
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:999
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1024
+msgid "Previous location"
+msgstr "Lokasi terdahulu"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:992
+msgid "Go to previous location"
+msgstr "Pergi ke lokasi terdahulu"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:994
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1019
+msgid "Go to a previously opened location"
+msgstr "Pergi ke lokasi dibuka sebelum ini"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1015
+msgid "Next location"
+msgstr "Lokasi berikutnya"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1017
+msgid "Go to next location"
+msgstr "Pergi ke lokasi berikutnya"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1233
+msgid "_Match Filename"
+msgstr "Pa_dan Nama Fail"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2137
+#, c-format
+msgid "No mount object for mounted volume: %s"
+msgstr "Tiada objek lekap untuk volum terlekap: %s"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2217
+#, c-format
+msgid "Could not open media: %s"
+msgstr "Tidak dapat buka media: %s"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2264
+#, c-format
+msgid "Could not mount volume: %s"
+msgstr "Tidak dapat lekap volum: %s"
+
+#. ex:ts=8:noet:
+#: ../plugins/modelines/modelines.pluma-plugin.desktop.in.h:1
+msgid "Modelines"
+msgstr "Modeline"
+
+#: ../plugins/modelines/modelines.pluma-plugin.desktop.in.h:2
+msgid "Emacs, Kate and Vim-style modelines support for pluma."
+msgstr "Sokongan modeline gaya-Emacs, Kate and Vim untuk pluma."
+
+#: ../plugins/pythonconsole/pythonconsole.pluma-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole/__init__.py:50
+msgid "Python Console"
+msgstr "Konsol Python"
+
+#: ../plugins/pythonconsole/pythonconsole.pluma-plugin.desktop.in.h:2
+msgid "Interactive Python console standing in the bottom panel"
+msgstr "Konsol Python interaktif berada dibahagian bawah panel"
+
+#. ex:et:ts=4:
+#: ../plugins/pythonconsole/pythonconsole/config.ui.h:1
+msgid "C_ommand color:"
+msgstr "Warna pe_rintah:"
+
+#: ../plugins/pythonconsole/pythonconsole/config.ui.h:2
+msgid "_Error color:"
+msgstr "Warna _ralat:"
+
+#. ex:ts=8:et:
+#: ../plugins/quickopen/quickopen/popup.py:35
+#: ../plugins/quickopen/quickopen.pluma-plugin.desktop.in.h:1
+msgid "Quick Open"
+msgstr "Buka Pantas"
+
+#: ../plugins/quickopen/quickopen/windowhelper.py:69
+msgid "Quick open"
+msgstr "Buka pantas"
+
+#: ../plugins/quickopen/quickopen/windowhelper.py:70
+msgid "Quickly open documents"
+msgstr "Buka dokumen dengan pantas"
+
+#: ../plugins/quickopen/quickopen.pluma-plugin.desktop.in.h:2
+msgid "Quickly open files"
+msgstr "Buka fail dengan pantas"
+
+#: ../plugins/snippets/snippets.pluma-plugin.desktop.in.h:1
+#: ../plugins/snippets/snippets/Document.py:58
+msgid "Snippets"
+msgstr "Cebisan"
+
+#: ../plugins/snippets/snippets.pluma-plugin.desktop.in.h:2
+msgid "Insert often-used pieces of text in a fast way"
+msgstr "Sisip cebisan teks yang selalu-diguna dengan cara pantas"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:1
+msgid "Snippets Manager"
+msgstr "Pengurus Cebisan"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:2
+msgid "_Snippets:"
+msgstr "_Cebisan:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Create new snippet"
+msgstr "Cipta cebisan baru"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
+#: ../plugins/snippets/snippets/Manager.py:800
+msgid "Import snippets"
+msgstr "Import cebisan"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+msgid "Export selected snippets"
+msgstr "Eksport cebisan terpilih"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+#: ../plugins/snippets/snippets/Manager.py:412
+msgid "Delete selected snippet"
+msgstr "Padam cebisan terpilih"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Activation"
+msgstr "Pengaktifan"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "_Tab trigger:"
+msgstr "Pemicu _tab:"
+
+#. self['hbox_tab_trigger'].set_spacing(0)
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/snippets/snippets/Manager.py:689
+msgid "Single word the snippet is activated with after pressing Tab"
+msgstr "Perkataan tunggal cebisan diaktifkan selepas menekan Tab"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
+msgid "Shortcut key with which the snippet is activated"
+msgstr "Kekunci pintasan yang mana cebisan diaktifkan"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:13
+msgid "S_hortcut key:"
+msgstr "Kekunci p_intasan:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+msgid "_Drop targets:"
+msgstr "Sasaran _lepas:"
+
+#: ../plugins/snippets/snippets/WindowHelper.py:130
+msgid "Manage _Snippets..."
+msgstr "Urus _cebisan..."
+
+#: ../plugins/snippets/snippets/WindowHelper.py:131
+msgid "Manage snippets"
+msgstr "Urus cebisan"
+
+#: ../plugins/snippets/snippets/Manager.py:46
+msgid "Snippets archive"
+msgstr "Arkib cebisan"
+
+#: ../plugins/snippets/snippets/Manager.py:71
+msgid "Add a new snippet..."
+msgstr "Tambah cebisan baru..."
+
+#: ../plugins/snippets/snippets/Manager.py:121
+msgid "Global"
+msgstr "Sejagat"
+
+#: ../plugins/snippets/snippets/Manager.py:409
+msgid "Revert selected snippet"
+msgstr "Kembalikan cebisan terpilih"
+
+#. self['hbox_tab_trigger'].set_spacing(3)
+#: ../plugins/snippets/snippets/Manager.py:682
+msgid ""
+"This is not a valid Tab trigger. Triggers can either contain letters or a "
+"single (non-alphanumeric) character like: {, [, etc."
+msgstr "Ia bukanlah pemicu Tab yang sah. Pemicu boleh jadi mengandungi huruf atau aksara tunggal (bukan-alfanumerik) seperti: {, [, dll."
+
+#: ../plugins/snippets/snippets/Manager.py:779
+#, python-format
+msgid "The following error occurred while importing: %s"
+msgstr "Ralat berikut berlaku semasa mengimport: %s"
+
+#: ../plugins/snippets/snippets/Manager.py:786
+msgid "Import successfully completed"
+msgstr "Import berjaya diselesaikan"
+
+#: ../plugins/snippets/snippets/Manager.py:805
+#: ../plugins/snippets/snippets/Manager.py:891
+#: ../plugins/snippets/snippets/Manager.py:954
+msgid "All supported archives"
+msgstr "Semua arkib disokong"
+
+#: ../plugins/snippets/snippets/Manager.py:806
+#: ../plugins/snippets/snippets/Manager.py:892
+#: ../plugins/snippets/snippets/Manager.py:955
+msgid "Gzip compressed archive"
+msgstr "Arkib termampat Gzip"
+
+#: ../plugins/snippets/snippets/Manager.py:807
+#: ../plugins/snippets/snippets/Manager.py:893
+#: ../plugins/snippets/snippets/Manager.py:956
+msgid "Bzip2 compressed archive"
+msgstr "Arkib termampat Bzip2"
+
+#: ../plugins/snippets/snippets/Manager.py:808
+msgid "Single snippets file"
+msgstr "Fail cebisan tunggal"
+
+#: ../plugins/snippets/snippets/Manager.py:809
+#: ../plugins/snippets/snippets/Manager.py:895
+#: ../plugins/snippets/snippets/Manager.py:958
+msgid "All files"
+msgstr "Semua fail"
+
+#: ../plugins/snippets/snippets/Manager.py:821
+#, python-format
+msgid "The following error occurred while exporting: %s"
+msgstr "Ralat berikut berlaku semasa mengeksport: %s"
+
+#: ../plugins/snippets/snippets/Manager.py:825
+msgid "Export successfully completed"
+msgstr "Eksport berjaya diselesaikan"
+
+#. Ask if system snippets should also be exported
+#: ../plugins/snippets/snippets/Manager.py:865
+#: ../plugins/snippets/snippets/Manager.py:932
+msgid "Do you want to include selected <b>system</b> snippets in your export?"
+msgstr "Anda hendak sertakan cebisan <b>sistem</b> terpilih dalam eksport anda?"
+
+#: ../plugins/snippets/snippets/Manager.py:880
+#: ../plugins/snippets/snippets/Manager.py:950
+msgid "There are no snippets selected to be exported"
+msgstr "Tiada cebisan dipilih untuk dieksport"
+
+#: ../plugins/snippets/snippets/Manager.py:885
+#: ../plugins/snippets/snippets/Manager.py:923
+msgid "Export snippets"
+msgstr "Eksport cebisan"
+
+#: ../plugins/snippets/snippets/Manager.py:1062
+msgid "Type a new shortcut, or press Backspace to clear"
+msgstr "Taip pintasan baru, atau tekan Backspace untuk kosongkan"
+
+#: ../plugins/snippets/snippets/Manager.py:1064
+msgid "Type a new shortcut"
+msgstr "Taip pintasan baru"
+
+#: ../plugins/snippets/snippets/Exporter.py:65
+#, python-format
+msgid "The archive \"%s\" could not be created"
+msgstr "Arkib \"%s\" tidak dapat dicipta"
+
+#: ../plugins/snippets/snippets/Exporter.py:82
+#, python-format
+msgid "Target directory \"%s\" does not exist"
+msgstr "Direktori sasaran \"%s\" tidak wujud"
+
+#: ../plugins/snippets/snippets/Exporter.py:85
+#, python-format
+msgid "Target directory \"%s\" is not a valid directory"
+msgstr "Direktori sasaran \"%s\" bukanlah direktori yang sah"
+
+#: ../plugins/snippets/snippets/Importer.py:29
+#: ../plugins/snippets/snippets/Importer.py:83
+#, python-format
+msgid "File \"%s\" does not exist"
+msgstr "Fail \"%s\" tidak wujud"
+
+#: ../plugins/snippets/snippets/Importer.py:32
+#, python-format
+msgid "File \"%s\" is not a valid snippets file"
+msgstr "Fail \"%s\" bukan fail cebisan yang sah"
+
+#: ../plugins/snippets/snippets/Importer.py:42
+#, python-format
+msgid "Imported file \"%s\" is not a valid snippets file"
+msgstr "Fail terimport \"%s\" bukanlah fail cebisan yang sah"
+
+#: ../plugins/snippets/snippets/Importer.py:52
+#, python-format
+msgid "The archive \"%s\" could not be extracted"
+msgstr "Arkib \"%s\" tidak dapat diekstrak"
+
+#: ../plugins/snippets/snippets/Importer.py:70
+#, python-format
+msgid "The following files could not be imported: %s"
+msgstr "Fail berikut tidak dapat diimport: %s"
+
+#: ../plugins/snippets/snippets/Importer.py:86
+#: ../plugins/snippets/snippets/Importer.py:99
+#, python-format
+msgid "File \"%s\" is not a valid snippets archive"
+msgstr "Fail \"%s\" bukan arkib cebisan yang sah"
+
+#: ../plugins/snippets/snippets/Placeholder.py:594
+#, python-format
+msgid ""
+"Execution of the Python command (%s) exceeds the maximum time, execution "
+"aborted."
+msgstr "Pelakuan perintah Python (%s) melebihi masa maksimum, pelakuan dihenti paksa."
+
+#: ../plugins/snippets/snippets/Placeholder.py:602
+#, python-format
+msgid "Execution of the Python command (%s) failed: %s"
+msgstr "Pelakuan perintah Python (%s) gagal: %s"
+
+#: ../plugins/sort/pluma-sort-plugin.c:88
+msgid "S_ort..."
+msgstr "I_sih...."
+
+#: ../plugins/sort/pluma-sort-plugin.c:90
+msgid "Sort the current document or selection"
+msgstr "Isih dokumen atau pilihan semasa"
+
+#: ../plugins/sort/sort.pluma-plugin.desktop.in.h:1
+#: ../plugins/sort/sort.ui.h:1
+msgid "Sort"
+msgstr "Isih"
+
+#: ../plugins/sort/sort.pluma-plugin.desktop.in.h:2
+msgid "Sorts a document or selected text."
+msgstr "Isih dokumen atau teks terpilih."
+
+#: ../plugins/sort/sort.ui.h:2
+msgid "_Sort"
+msgstr "_Isih"
+
+#: ../plugins/sort/sort.ui.h:3
+msgid "_Reverse order"
+msgstr "Tertib _songsang"
+
+#: ../plugins/sort/sort.ui.h:4
+msgid "R_emove duplicates"
+msgstr "B_uang pendua"
+
+#: ../plugins/sort/sort.ui.h:5
+msgid "_Ignore case"
+msgstr "_Abai kata"
+
+#: ../plugins/sort/sort.ui.h:6
+msgid "S_tart at column:"
+msgstr "_Mula pada lajur:"
+
+#: ../plugins/sort/sort.ui.h:7
+msgid "You cannot undo a sort operation"
+msgstr "Anda tidak boleh buat asal operasi isih"
+
+#. Translators: Displayed in the "Check Spelling" dialog if there are no
+#. suggestions for the current misspelled word
+#. Translators: Displayed in the "Check Spelling" dialog if there are no
+#. suggestions
+#. * for the current misspelled word
+#: ../plugins/spell/pluma-automatic-spell-checker.c:420
+#: ../plugins/spell/pluma-spell-checker-dialog.c:471
+msgid "(no suggested words)"
+msgstr "(tiada perkataan cadangan)"
+
+#: ../plugins/spell/pluma-automatic-spell-checker.c:444
+msgid "_More..."
+msgstr "_Lagi..."
+
+#. Ignore all
+#: ../plugins/spell/pluma-automatic-spell-checker.c:499
+msgid "_Ignore All"
+msgstr "_Abai Semua"
+
+#. + Add to Dictionary
+#: ../plugins/spell/pluma-automatic-spell-checker.c:514
+msgid "_Add"
+msgstr "_Tambah"
+
+#: ../plugins/spell/pluma-automatic-spell-checker.c:553
+msgid "_Spelling Suggestions..."
+msgstr "Cadangan _Ejaan..."
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:282
+msgid "Check Spelling"
+msgstr "Semak Ejaan"
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:293
+msgid "Suggestions"
+msgstr "Cadangan"
+
+#. Translators: Displayed in the "Check Spelling" dialog if the current word
+#. isn't misspelled
+#: ../plugins/spell/pluma-spell-checker-dialog.c:578
+msgid "(correct spelling)"
+msgstr "(ejaan betul)"
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:721
+msgid "Completed spell checking"
+msgstr "Selesai menyemak ejaan"
+
+#. Translators: the first %s is the language name, and
+#. * the second %s is the locale name. Example:
+#. * "French (France)"
+#: ../plugins/spell/pluma-spell-checker-language.c:285
+#: ../plugins/spell/pluma-spell-checker-language.c:291
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: this refers to an unknown language code
+#. * (one which isn't in our built-in list).
+#: ../plugins/spell/pluma-spell-checker-language.c:300
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "Tidak diketahui (%s)"
+
+#. Translators: this refers the Default language used by the
+#. * spell checker
+#: ../plugins/spell/pluma-spell-checker-language.c:406
+msgctxt "language"
+msgid "Default"
+msgstr "Lalai"
+
+#: ../plugins/spell/pluma-spell-language-dialog.c:141
+#: ../plugins/spell/languages-dialog.ui.h:1
+msgid "Set language"
+msgstr "Tetapkan Bahasa"
+
+#: ../plugins/spell/pluma-spell-language-dialog.c:198
+msgid "Languages"
+msgstr "Bahasa"
+
+#: ../plugins/spell/pluma-spell-plugin.c:86
+msgid "_Check Spelling..."
+msgstr "_Semak Ejaan..."
+
+#: ../plugins/spell/pluma-spell-plugin.c:88
+msgid "Check the current document for incorrect spelling"
+msgstr "Semak kesalahan ejaan dokumen semasa"
+
+#: ../plugins/spell/pluma-spell-plugin.c:94
+msgid "Set _Language..."
+msgstr "Tetapkan _Bahasa..."
+
+#: ../plugins/spell/pluma-spell-plugin.c:96
+msgid "Set the language of the current document"
+msgstr "Tetapkan bahasa bagi dokumen semasa."
+
+#: ../plugins/spell/pluma-spell-plugin.c:105
+msgid "_Autocheck Spelling"
+msgstr "Semak-sendiri Ejaan"
+
+#: ../plugins/spell/pluma-spell-plugin.c:107
+msgid "Automatically spell-check the current document"
+msgstr "Semak-ejaan dokumen semasa secara automatik"
+
+#: ../plugins/spell/pluma-spell-plugin.c:752
+msgid "The document is empty."
+msgstr "Dokumen adalah kosong."
+
+#: ../plugins/spell/pluma-spell-plugin.c:782
+msgid "No misspelled words"
+msgstr "Tiada perkataan salah eja"
+
+#: ../plugins/spell/languages-dialog.ui.h:2
+msgid "Select the _language of the current document."
+msgstr "Pilih _bahasa bagi dokumen semasa."
+
+#: ../plugins/spell/spell-checker.ui.h:1
+msgid "Check spelling"
+msgstr "Semak ejaan"
+
+#: ../plugins/spell/spell-checker.ui.h:2
+msgid "Misspelled word:"
+msgstr "Perkataan salah eja:"
+
+#: ../plugins/spell/spell-checker.ui.h:3
+msgid "word"
+msgstr "perkataan"
+
+#: ../plugins/spell/spell-checker.ui.h:4
+msgid "Change _to:"
+msgstr "Ubah _ke:"
+
+#: ../plugins/spell/spell-checker.ui.h:5
+msgid "Check _Word"
+msgstr "Semak _Perkataan"
+
+#: ../plugins/spell/spell-checker.ui.h:6
+msgid "_Suggestions:"
+msgstr "_Cadangan:"
+
+#: ../plugins/spell/spell-checker.ui.h:7
+msgid "_Ignore"
+msgstr "_Abai"
+
+#: ../plugins/spell/spell-checker.ui.h:8
+msgid "Cha_nge"
+msgstr "_Ubah"
+
+#: ../plugins/spell/spell-checker.ui.h:9
+msgid "Ignore _All"
+msgstr "Abai _Semua"
+
+#: ../plugins/spell/spell-checker.ui.h:10
+msgid "Change A_ll"
+msgstr "Ubah _Semua"
+
+#: ../plugins/spell/spell-checker.ui.h:11
+msgid "User dictionary:"
+msgstr "Kamus pengguna:"
+
+#: ../plugins/spell/spell-checker.ui.h:12
+msgid "Add w_ord"
+msgstr "Tambah per_kataan"
+
+#: ../plugins/spell/spell-checker.ui.h:13
+msgid "Language:"
+msgstr "Bahasa:"
+
+#: ../plugins/spell/spell-checker.ui.h:14
+msgid "Language"
+msgstr "Bahasa"
+
+#: ../plugins/spell/spell.pluma-plugin.desktop.in.h:1
+msgid "Spell Checker"
+msgstr "Pemeriksa Ejaan"
+
+#: ../plugins/spell/spell.pluma-plugin.desktop.in.h:2
+msgid "Checks the spelling of the current document."
+msgstr "Semak ejaan bagi dokumen semasa."
+
+#: ../plugins/taglist/pluma-taglist-plugin.c:98
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:716
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:732
+msgid "Tags"
+msgstr "Tag"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:623
+msgid "Select the group of tags you want to use"
+msgstr "Pilih kumpulan tag yang anda ingin gunakan"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:642
+msgid "_Preview"
+msgstr "_Pratonton"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:713
+msgid "Available Tag Lists"
+msgstr "Senarai Tag tersedia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:1
+msgid "XHTML 1.0 - Tags"
+msgstr "XHTML 1.0 - Tag"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:2
+msgid "Abbreviated form"
+msgstr "Bentuk singkatan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:3
+msgid "Abbreviation"
+msgstr "Singkatan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:4
+msgid "Accessibility key character"
+msgstr "Aksara kekunci kebolehcapaian"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:5
+msgid "Acronym"
+msgstr "Akronim"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:6
+msgid "Align"
+msgstr "Jajar"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:7
+msgid "Alignment character"
+msgstr "Jajaran aksara"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:8
+msgid "Alternative"
+msgstr "Alternatif"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:9
+msgid "Anchor URI"
+msgstr "URI penambat"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:10
+msgid "Anchor"
+msgstr "Penambat"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:12
+msgid "Applet class file code (deprecated)"
+msgstr "Kod fail kelas aplet (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:13
+msgid "Associated information"
+msgstr "Maklumat berkaitan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:14
+msgid "Author info"
+msgstr "Maklumat pengarang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:15
+msgid "Axis related headers"
+msgstr "Pengepala berkenaan paksi"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:17
+msgid "Background color (deprecated)"
+msgstr "Warna latar belakang (lapuk)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:19
+msgid "Background texture tile (deprecated)"
+msgstr "Jubin tekstur latar belakang (lapuk)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:21
+msgid "Base font (deprecated)"
+msgstr "Fon tapak (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:22
+msgid "Base URI"
+msgstr "URI Tapak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:23
+msgid "Bold"
+msgstr "Tebal"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:25
+msgid "Border (deprecated)"
+msgstr "Sempadan (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:26
+msgid "Cell rowspan"
+msgstr "regang baris sel"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:28
+msgid "Center (deprecated)"
+msgstr "Tengah (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:29
+msgid "Character encoding of linked resource"
+msgstr "Pengekodan aksara bagi sumber terpaut"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:30
+msgid "Checked state"
+msgstr "Keadaan diperiksa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:31
+msgid "Citation"
+msgstr "Petikan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:32
+msgid "Cite reason for change"
+msgstr "Petik sebab untuk perubahan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:33
+msgid "Class implementation ID"
+msgstr "ID perlaksanaan kelas"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:34
+msgid "Class list"
+msgstr "Senarai kelas"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:35
+msgid "Clear text flow control"
+msgstr "Kosongkan kawalan aliran teks"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:36
+msgid "Code content type"
+msgstr "Jenis kandungan kod"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:38
+msgid "Color of selected links (deprecated)"
+msgstr "Warna pautan terpilih (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:39
+msgid "Column span"
+msgstr "Rentang lajur"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:40
+msgid "Columns"
+msgstr "Lajur"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:41
+msgid "Comment"
+msgstr "Ulasan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:42
+msgid "Computer code fragment"
+msgstr "Cebisan kod komputer"
+
+#. The "type" attribute is deprecated for the "ol" tag only,
+#. since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:45
+msgid "Content type (deprecated)"
+msgstr "Jenis kandungan (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:46
+msgid "Coordinates"
+msgstr "Koordinat"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:47
+msgid "Date and time of change"
+msgstr "Perubahan tarikh dan masa"
+
+#. NOTE: used in "object" tag
+#: ../plugins/taglist/HTML.tags.xml.in.h:49
+msgid "Declare flag"
+msgstr "Bendera isytihar"
+
+#. Translators: DEFER is an optional attribute of the <script> tag.
+#. It indicates that the script is not going to generate any document
+#. content. The browser can continue parsing and drawing the page.
+#: ../plugins/taglist/HTML.tags.xml.in.h:53
+msgid "Defer attribute"
+msgstr "Atribut defer"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:54
+msgid "Definition description"
+msgstr "Keterangan takrifan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:55
+msgid "Definition list"
+msgstr "Senarai takrifan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:56
+msgid "Definition term"
+msgstr "Terma takrifan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:57
+msgid "Deleted text"
+msgstr "Teks dipadam"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:58
+msgid "Directionality"
+msgstr "Kearahan"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:60
+msgid "Directionality (deprecated)"
+msgstr "Kearahan (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:61
+msgid "Disabled"
+msgstr "Dilumpuhkan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:62
+msgid "DIV container"
+msgstr "Bekas DIV"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:63
+msgid "DIV Style container"
+msgstr "Bekas gaya DIV"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:64
+msgid "Document base"
+msgstr "Tapak dokumen"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:65
+msgid "Document body"
+msgstr "Badan dokumen"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:66
+msgid "Document head"
+msgstr "Kepala dokumen"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:67
+msgid "Element ID"
+msgstr "ID unsur"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:68
+msgid "Document title"
+msgstr "Tajuk dokumen"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:69
+msgid "Document type"
+msgstr "Jenis dokumen"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:70
+#: ../plugins/taglist/Latex.tags.xml.in.h:72
+msgid "Emphasis"
+msgstr "Penegasan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:71
+msgid "Encode type"
+msgstr "Jenis enkod"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:73
+msgid "Font face (deprecated)"
+msgstr "Rupa fon (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:74
+msgid "For label"
+msgstr "Untuk label"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:75
+msgid "Forced line break"
+msgstr "Hentian baris dipaksa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:76
+msgid "Form action handler"
+msgstr "Pemegang tindakan bentuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:77
+msgid "Form control group"
+msgstr "Kumpulan kawalan bentuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:78
+msgid "Form field label text"
+msgstr "Teks label medan bentuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:79
+msgid "Form input type"
+msgstr "Jenis input bentuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:80
+msgid "Form input"
+msgstr "Input bentuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:81
+msgid "Form method"
+msgstr "Kaedah bentuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:82
+msgid "Form"
+msgstr "Bentuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:83
+msgid "Forward link"
+msgstr "Pautan maju"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:84
+msgid "Frame render parts"
+msgstr "Bahagian terap bingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:85
+msgid "Frame source"
+msgstr "Sumber bingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:86
+msgid "Frame target"
+msgstr "Sasaran bingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:87
+msgid "Frame"
+msgstr "Bingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:88
+msgid "Frame border"
+msgstr "Sempadan bingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:89
+msgid "Frameset columns"
+msgstr "Lajur setbingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:90
+msgid "Frameset rows"
+msgstr "Baris setbingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:91
+msgid "Frameset"
+msgstr "Setbingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:92
+msgid "Frame spacing"
+msgstr "Penjarakan bingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:93
+msgid "Generic embedded object"
+msgstr "Objek terbenam generik"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:94
+msgid "Generic metainformation"
+msgstr "maklumat meta generik"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:95
+msgid "Generic span"
+msgstr "Retang generik"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:96
+msgid "Header cell IDs"
+msgstr "ID sel pengepala"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:97
+msgid "Heading 1"
+msgstr "Kepala 1"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:98
+msgid "Heading 2"
+msgstr "Kepala 2"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:99
+msgid "Heading 3"
+msgstr "Kepala 3"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:100
+msgid "Heading 4"
+msgstr "Kepala 4"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:101
+msgid "Heading 5"
+msgstr "Kepala 5"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:102
+msgid "Heading 6"
+msgstr "Kepala 6"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:103
+msgid "Height"
+msgstr "Tinggi"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:104
+msgid "Horizontal rule"
+msgstr "Pembaris mengufuk"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:106
+msgid "Horizontal space (deprecated)"
+msgstr "Jarak mengufuk (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:107
+msgid "HREF URI"
+msgstr "URI HREF"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:108
+msgid "HTML root element"
+msgstr "Unsur root HTML"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:109
+msgid "HTTP header name"
+msgstr "Nama pengepala HTML"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:110
+msgid "I18N BiDi override"
+msgstr "Pembatal I18N BiDi"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:111
+msgid "Image map area"
+msgstr "Kawasan peta imej"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:112
+msgid "Image map name"
+msgstr "Nama peta imej"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:113
+msgid "Image map"
+msgstr "Peta imej"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:114
+msgid "Image"
+msgstr "Imej"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:115
+msgid "Inline frame"
+msgstr "Bingkai dalam-talian"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:116
+msgid "Inserted text"
+msgstr "Teks tersisip"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:117
+msgid "Instance definition"
+msgstr "Takrifan kejadian"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:118
+msgid "Italic text"
+msgstr "Teks condong"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:120
+msgid "Java applet (deprecated)"
+msgstr "Aplet Java (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:121
+msgid "Label"
+msgstr "Label"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:122
+msgid "Language code"
+msgstr "Kod bahasa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:123
+msgid "Large text style"
+msgstr "Gaya teks besar"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:125
+msgid "Link color (deprecated)"
+msgstr "Warna pautan (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:126
+msgid "List item"
+msgstr "Item senarai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:127
+msgid "List of MIME types for file upload"
+msgstr "Senarai jenis MIME untuk muat naik fail"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:128
+msgid "List of supported character sets"
+msgstr "Senarai set aksara disokong"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:129
+msgid "Local change to font"
+msgstr "Perubahan lokal ke fon"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:130
+msgid "Long description link"
+msgstr "Pautan keterangan panjang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:131
+msgid "Long quotation"
+msgstr "Petikan panjang"
+
+#. Supported in XHTML 1.0 Frameset DTD only.
+#: ../plugins/taglist/HTML.tags.xml.in.h:133
+msgid "Margin pixel height"
+msgstr "Tinggi piksel margin"
+
+#. Supported in XHTML 1.0 Frameset DTD only.
+#: ../plugins/taglist/HTML.tags.xml.in.h:135
+msgid "Margin pixel width"
+msgstr "Lebar piksel margin"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:136
+msgid "Maximum length of text field"
+msgstr "Panjang maksimum medan teks"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:137
+msgid "Output media"
+msgstr "Media output"
+
+#. Here I take some liberties: There's no mandatory attributes,
+#. but those are most common, and will likely be used.
+#: ../plugins/taglist/HTML.tags.xml.in.h:140
+msgid "Media-independent link"
+msgstr "Pautan bebas-media"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:142
+msgid "Menu list (deprecated)"
+msgstr "Senarai menu (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:143
+msgid "Multi-line text field"
+msgstr "Medan teks baris-berbilang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:144
+msgid "Multiple"
+msgstr "Berbilang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:145
+msgid "Name"
+msgstr "Nama"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:146
+msgid "Named property value"
+msgstr "Nilai sifat bernama"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:147
+msgid "No frames"
+msgstr "Tiada bingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:148
+msgid "No resize"
+msgstr "Tiada saiz semula"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:149
+msgid "No script"
+msgstr "Tiada skrip"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:151
+msgid "No shade (deprecated)"
+msgstr "Tiada lorek (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:152
+msgid "No URI"
+msgstr "Tiada URI"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:154
+msgid "No word wrap (deprecated)"
+msgstr "Tiada lilit perkataan (lapuk)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:156
+msgid "Object applet file (deprecated)"
+msgstr "Fail aplet objek (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:157
+msgid "Object data reference"
+msgstr "Rujukan data objek"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:158
+msgid "Offset for alignment character"
+msgstr "Ofset untuk aksara jajaran"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:159
+msgid "OnBlur event"
+msgstr "Peristiwa OnBlur"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:160
+msgid "OnChange event"
+msgstr "Peristiwa OnChange"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:161
+msgid "OnClick event"
+msgstr "Peristiwa OnClick"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:162
+msgid "OnDblClick event"
+msgstr "Peristiwa "
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:163
+msgid "OnFocus event"
+msgstr "Peristiwa OnFocus"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:164
+msgid "OnKeyDown event"
+msgstr "Peristiwa OnKeyDown"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:165
+msgid "OnKeyPress event"
+msgstr "Peristiwa OnKeyPress"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:166
+msgid "OnKeyUp event"
+msgstr "Peristiwa OnKeyUp"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:167
+msgid "OnLoad event"
+msgstr "Peristiwa OnLoad"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:168
+msgid "OnMouseDown event"
+msgstr "Peristiwa OnMouseDown"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:169
+msgid "OnMouseMove event"
+msgstr "Peristiwa OnMouseMove"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:170
+msgid "OnMouseOut event"
+msgstr "Peristiwa OnMouseOut"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:171
+msgid "OnMouseOver event"
+msgstr "Peristiwa OnMouseOver"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:172
+msgid "OnMouseUp event"
+msgstr "Peristiwa OnMouseUp"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:173
+msgid "OnReset event"
+msgstr "Peristiwa OnReset"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:174
+msgid "OnSelect event"
+msgstr "Peristiwa OnSelect"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:175
+msgid "OnSubmit event"
+msgstr "Peristiwa OnSubmit"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:176
+msgid "OnUnload event"
+msgstr "Peristiwa OnUnload"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:177
+msgid "Option group"
+msgstr "Kumpulan pilihan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:178
+msgid "Option selector"
+msgstr "Pemilih pilihan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:179
+msgid "Ordered list"
+msgstr "Senarai tertertib"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:180
+msgid "Paragraph class"
+msgstr "Kelas perenggan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:181
+msgid "Paragraph style"
+msgstr "Gaya perenggan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:182
+msgid "Paragraph"
+msgstr "Perenggan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:183
+msgid "Preformatted text"
+msgstr "Teks pra-format"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:184
+msgid "Profile metainfo dictionary"
+msgstr "Kamus metainfo profil"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:185
+msgid "Push button"
+msgstr "Butang tolak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:186
+msgid "ReadOnly text and password"
+msgstr "Teks dan kata laluan baca sahaja"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:188
+msgid "Reduced spacing (deprecated)"
+msgstr "Penjarakan terkurang (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:189
+msgid "Reverse link"
+msgstr "Pautan songsang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:190
+msgid "Rows"
+msgstr "Baris"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:191
+msgid "Rulings between rows and columns"
+msgstr "Pembaris diantara baris dan lajur"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:192
+msgid "Sample program output, scripts"
+msgstr "Output, skrip program sampel"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:193
+msgid "Scope covered by header cells"
+msgstr "Skop diliputi oleh sel pengepala"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:195
+msgid "Script language name"
+msgstr "Nama bahasa skrip"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:196
+msgid "Script statements"
+msgstr "Penyataan skrip"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:197
+msgid "Scrollbar"
+msgstr "Palang tatal"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:198
+msgid "Selectable option"
+msgstr "Pilihan boleh pilih"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:199
+msgid "Selected"
+msgstr "Terpilih"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:200
+msgid "Server-side image map"
+msgstr "Peta imej sisi-pelayan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:201
+msgid "Shape"
+msgstr "Bentuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:202
+msgid "Short inline quotation"
+msgstr "Petikan dalam-baris pendek"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:204
+msgid "Size (deprecated)"
+msgstr "Saiz (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:205
+msgid "Small text style"
+msgstr "Gaya teks kecil"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:206
+msgid "Source"
+msgstr "Sumber"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:207
+msgid "Space-separated archive list"
+msgstr "Senarai arkib terpisah-jarak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:208
+msgid "Spacing between cells"
+msgstr "Penjarakan diantara sel"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:209
+msgid "Spacing within cells"
+msgstr "Penjarakan di dalam sel"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:210
+msgid "Span"
+msgstr "Retang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:211
+msgid "Standby load message"
+msgstr "Mesej muat sedia"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:213
+msgid "Starting sequence number (deprecated)"
+msgstr "Memulakan bilangan jujukan (lapuk)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:215
+msgid "Strike-through text style (deprecated)"
+msgstr "Gaya teks coret-tembus (lapuk)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:217
+msgid "Strike-through text (deprecated)"
+msgstr "Teks coret-tembus (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:218
+msgid "Strong emphasis"
+msgstr "Penegasan kuat"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:219
+msgid "Style info"
+msgstr "Maklumat gaya"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:220
+msgid "Subscript"
+msgstr "Subskrip"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:221
+msgid "Superscript"
+msgstr "Superskrip"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:222
+msgid "Table body"
+msgstr "Badan jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:223
+msgid "Table caption"
+msgstr "Kapsyen jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:224
+msgid "Table column group properties"
+msgstr "Sifat kumpulan lajur jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:225
+msgid "Table column properties"
+msgstr "Sifat lajur jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:226
+msgid "Table data cell"
+msgstr "Sel data jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:227
+msgid "Table footer"
+msgstr "Pengaki jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:228
+msgid "Table header cell"
+msgstr "Sel pengepala jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:229
+msgid "Table header"
+msgstr "Pengepala jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:230
+msgid "Table row"
+msgstr "Baris jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:231
+msgid "Table summary"
+msgstr "Ringkasan jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:232
+msgid "Table"
+msgstr "Jadual"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:233
+msgid "Target - Blank"
+msgstr "Sasaran - Kosong"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:234
+msgid "Target - Parent"
+msgstr "Sasaran - Induk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:235
+msgid "Target - Self"
+msgstr "Sasaran - Diri"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:236
+msgid "Target - Top"
+msgstr "Sasaran - Atas"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:237
+msgid "Teletype or monospace text style"
+msgstr "Gaya teks teletype atau monospace"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:239
+msgid "Text color (deprecated)"
+msgstr "Warna teks (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:240
+msgid "Text entered by user"
+msgstr "Teks dimasukkan oleh pengguna"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:241
+msgid "Title"
+msgstr "Tajuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:242
+msgid "Underlined text style"
+msgstr "Gaya teks bergaris bawah"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:243
+msgid "Unordered list"
+msgstr "Senarai tidak tertertib"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:244
+msgid "Use image map"
+msgstr "Guna peta imej"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:245
+msgid "Value interpretation"
+msgstr "Pentafsiran nilai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:246
+msgid "Value"
+msgstr "Nilai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:247
+msgid "Variable or program argument"
+msgstr "Argumen program atau pembolehubah"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:248
+msgid "Vertical cell alignment"
+msgstr "Jajaran sel menegak"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:250
+msgid "Vertical space (deprecated)"
+msgstr "Jarak menegak (lapuk)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:252
+msgid "Visited link color (deprecated)"
+msgstr "Warna pautan dilawati (lapuk)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:253
+msgid "Width"
+msgstr "Lebar"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:254
+msgid "HTML - Tags"
+msgstr "HTML - Tag"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:255
+msgid "Above"
+msgstr "Atas"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:256
+msgid "Applet class file code"
+msgstr "Kod fail kelas aplet"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:257
+msgid "Array"
+msgstr "Tatasusunan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:258
+msgid "Background color"
+msgstr "Warna latar belakang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:259
+msgid "Background texture tile"
+msgstr "Jubin tekstur latar belakang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:260
+msgid "Base font"
+msgstr "Fon tapak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:261
+msgid "Border color"
+msgstr "Warna sempadan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:262
+msgid "Border"
+msgstr "Sempadan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:263
+msgid "Center"
+msgstr "Tengah"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:264
+msgid "Checked (state)"
+msgstr "Diperiksa (keadaan)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:265
+msgid "Color of selected links"
+msgstr "Warna pautan terpilih"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:266
+msgid "Content scheme"
+msgstr "Skema kandungan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:267
+msgid "Content type"
+msgstr "Jenis kandungan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:268
+msgid "Direction"
+msgstr "Arah"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:269
+msgid "Directory list"
+msgstr "Senarai direktori"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:270
+msgid "HTML version"
+msgstr "Versi HTML"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:271
+msgid "Embedded object"
+msgstr "Objek terbenam"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:272
+msgid "Figure"
+msgstr "Rajah"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:273
+msgid "Font face"
+msgstr "Rupa fon"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:274
+msgid "Frameborder"
+msgstr "Sempadanbingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:275
+msgid "Framespacing"
+msgstr "Penjarakanbingkai"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:276
+msgid "Heading"
+msgstr "Kepala"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:277
+msgid "Horizontal space"
+msgstr "Jarak mengufuk"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:278
+msgid "Image source"
+msgstr "Sumber imej"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:279
+msgid "Inline layer"
+msgstr "Lapisan dalam-talian"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:280
+msgid "Java applet"
+msgstr "Aplet Java"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:281
+msgid "Layer"
+msgstr "Lapisan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:282
+msgid "Link color"
+msgstr "Warna pautan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:283
+msgid "Listing"
+msgstr "Penyenaraian"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:284
+msgid "Mail link"
+msgstr "Pautan mel"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:285
+msgid "Marquee"
+msgstr "Marquee"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:286
+msgid "Menu list"
+msgstr "Senarai menu"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:287
+msgid "Multicolumn"
+msgstr "Lajurberbilang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:288
+msgid "Next ID"
+msgstr "ID berikutnya"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:289
+msgid "No embedded objects"
+msgstr "Tiada objek terbenam"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:290
+msgid "No layers"
+msgstr "Tiada lapisan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:291
+msgid "No line break"
+msgstr "Tiada hentian baris"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:292
+msgid "No shade"
+msgstr "Tiada lorek"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:293
+msgid "No word wrap"
+msgstr "Tiada lilit perkataan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:294
+msgid "Note"
+msgstr "Nota"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:295
+msgid "Object applet file"
+msgstr "Fail aplet objek"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:296
+msgid "Preformatted listing"
+msgstr "Penyenaraian pra-format"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:297
+msgid "Prompt message"
+msgstr "Mesej makluman"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:298
+msgid "Quote"
+msgstr "Petikan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:299
+msgid "Range"
+msgstr "Julat"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:300
+msgid "Reduced spacing"
+msgstr "Penjarakan terkurang"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:301
+msgid "Root"
+msgstr "Root"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:302
+msgid "Single line prompt"
+msgstr "Makluman baris tunggal"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:303
+msgid "Size"
+msgstr "Saiz"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:304
+msgid "Soft line break"
+msgstr "Hentian baris lembut"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:305
+msgid "Sound"
+msgstr "Bunyi"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:306
+msgid "Spacer"
+msgstr "Penjarak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:307
+msgid "Square root"
+msgstr "Punca kuasa dua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:308
+msgid "Starting sequence number"
+msgstr "Memulakan bilangan jujukan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:309
+msgid "Strike-through text style"
+msgstr "Gaya teks coret-tembus"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:310
+msgid "Strike-through text"
+msgstr "Teks coret-tembus"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:311
+msgid "Tab order position"
+msgstr "Kedudukan tertib tab"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:312
+msgid "Text color"
+msgstr "Warna teks"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:313
+msgid "Text"
+msgstr "Teks"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:314
+msgid "Top margin in pixels"
+msgstr "Margin atas dalam piksel"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:315
+msgid "URL"
+msgstr "URL"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:316
+msgid "Vertical space"
+msgstr "Jarak menegak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:317
+msgid "Visited link color"
+msgstr "Warna pautan dilawati"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:318
+msgid "HTML - Special Characters"
+msgstr "HTML - Aksara Khas"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:319
+msgid "Non-breaking space"
+msgstr "Jarak tanpa-hentian"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:1
+msgid "Latex - Tags"
+msgstr "Latex - Tag"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:2
+msgid "Bibliography (cite)"
+msgstr "Bibliografi (petikan)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:3
+msgid "Bibliography (item)"
+msgstr "Bibliografi (item)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:4
+msgid "Bibliography (shortcite)"
+msgstr "Bibliografi (petikan pendek)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:5
+msgid "Bibliography (thebibliography)"
+msgstr "Biblografi (thebibliography)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:6
+msgid "Brackets ()"
+msgstr "Kurungan ()"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:7
+msgid "Brackets []"
+msgstr "Kurungan []"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:8
+msgid "Brackets {}"
+msgstr "Kurungan {}"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:9
+msgid "Brackets <>"
+msgstr "Kurungan <>"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:10
+msgid "File input"
+msgstr "Input fail"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:11
+msgid "Function cosine"
+msgstr "Fungsi kosinus"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:12
+msgid "Function e^"
+msgstr "Fungsi e"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:13
+msgid "Function exp"
+msgstr "Fungsi exp"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:14
+msgid "Function log"
+msgstr "Fungsi log"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:15
+msgid "Function log10"
+msgstr "Fungsi log10"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:16
+msgid "Function sine"
+msgstr "Fungsi sinus"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:17
+msgid "Greek alpha"
+msgstr "Alfa Yunani"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:18
+msgid "Greek beta"
+msgstr "Beta Yunani"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:19
+msgid "Greek epsilon"
+msgstr "Epsilon Yunani"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:20
+msgid "Greek gamma"
+msgstr "Gamma Yunani"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:21
+msgid "Greek lambda"
+msgstr "Lambda Yunani"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:22
+msgid "Greek rho"
+msgstr "Rho Yunani"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:23
+msgid "Greek tau"
+msgstr "Tau Yunani"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:24
+msgid "Header 0 (chapter)"
+msgstr "Pengepala 0 (bab)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:25
+msgid "Header 0 (chapter*)"
+msgstr "Pengepala 0 (bab*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:26
+msgid "Header 1 (section)"
+msgstr " Pengepala 1 (seksyen)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:27
+msgid "Header 1 (section*)"
+msgstr " Pengepala 1 (seksyen*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:28
+msgid "Header 2 (subsection)"
+msgstr " Pengepala 2 (subseksyen)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:29
+msgid "Header 2 (subsection*)"
+msgstr " Pengepala 2 (subseksyen*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:30
+msgid "Header 3 (subsubsection)"
+msgstr " Pengepala 3 (subseksyen)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:31
+msgid "Header 3 (subsubsection*)"
+msgstr " Pengepala 3 (subseksyen*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:32
+msgid "Header 4 (paragraph)"
+msgstr " Pengepala 4 (perenggan)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:33
+msgid "Header appendix"
+msgstr "Apendiks pengepala"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:34
+msgid "List description"
+msgstr "Keterangan senarai"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:35
+msgid "List enumerate"
+msgstr "Enumerasi senarai"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:36
+msgid "List itemize"
+msgstr "Saizitem senarai"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:37
+msgid "Item with label"
+msgstr "Item dengan label"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:38
+msgid "Item"
+msgstr "Item"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:39
+msgid "Maths (display)"
+msgstr "Matematik (paparan)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:40
+msgid "Maths (inline)"
+msgstr "Matematik (dalam-baris)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:41
+msgid "Operator fraction"
+msgstr "Operator pecahan"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:42
+msgid "Operator integral (display)"
+msgstr "Operator kamiran (paparan)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:43
+msgid "Operator integral (inline)"
+msgstr "Operator kamiran (dalam-talian)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:44
+msgid "Operator sum (display)"
+msgstr "Operator tambah (paparan)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:45
+msgid "Operator sum (inline)"
+msgstr "Operator tambah (dalam-baris)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:46
+msgid "Reference label"
+msgstr "Rujukan label"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:47
+msgid "Reference ref"
+msgstr "Rujukan ref"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:48
+msgid "Symbol <<"
+msgstr "Simbol <<"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:49
+msgid "Symbol <="
+msgstr "Simbol <="
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:50
+msgid "Symbol >="
+msgstr "Simbol >="
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:51
+msgid "Symbol >>"
+msgstr "Simbol >>"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:52
+msgid "Symbol and"
+msgstr "Simbol and"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:53
+msgid "Symbol const"
+msgstr "Simbol const"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:54
+msgid "Symbol d2-by-dt2-partial"
+msgstr "Simbol d2-by-dt2-partial"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:55
+msgid "Symbol dagger"
+msgstr "Simbol dagger"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:56
+msgid "Symbol d-by-dt"
+msgstr "Simbol d-by-dt"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:57
+msgid "Symbol d-by-dt-partial"
+msgstr "Simbol d-by-dt-partial"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:58
+msgid "Symbol equiv"
+msgstr "Simbol equiv"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:59
+msgid "Symbol en-dash --"
+msgstr "Simbol en-dash --"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:60
+msgid "Symbol em-dash ---"
+msgstr "Simbol "
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:61
+msgid "Symbol infinity"
+msgstr "Simbol infiniti"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:62
+msgid "Symbol mathspace ,"
+msgstr "Simbol mathspace ,"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:63
+msgid "Symbol mathspace ."
+msgstr "Simbol mathspace ."
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:64
+msgid "Symbol mathspace _"
+msgstr "Simbol mathspace _"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:65
+msgid "Symbol mathspace __"
+msgstr "Simbol mathspace __"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:66
+msgid "Symbol simeq"
+msgstr "Simbol simeq"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:67
+msgid "Symbol star"
+msgstr "Simbol bintang"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:68
+msgid "Typeface bold"
+msgstr "Rupa taip tebal"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:69
+msgid "Typeface type"
+msgstr "Rupa taip jenis"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:70
+msgid "Typeface italic"
+msgstr "Rupa taip condong"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:71
+msgid "Typeface slanted"
+msgstr "Rupa taip menurun"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:73
+msgid "Unbreakable text"
+msgstr "Teks tidakboleh henti"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:74
+msgid "Footnote"
+msgstr "Nota kaki"
+
+#: ../plugins/taglist/taglist.pluma-plugin.desktop.in.h:1
+msgid "Tag list"
+msgstr "Senarai tag"
+
+#: ../plugins/taglist/taglist.pluma-plugin.desktop.in.h:2
+msgid ""
+"Provides a method to easily insert commonly used tags/strings into a "
+"document without having to type them."
+msgstr "Menyediakan kaedah untuk sisip dengan mudah tag/rentetan umum ke dalam dokumen tanpa menaipnya."
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:1
+msgid "XSLT - Elements"
+msgstr "XSLT - Unsur"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:2
+msgid "XSLT - Functions"
+msgstr "XSLT - Fungsi"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:3
+msgid "XSLT - Axes"
+msgstr "XSLT - Paksi"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:4
+msgid "ancestor"
+msgstr "moyang"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:5
+msgid "ancestor-or-self"
+msgstr "moyang-atau-diri"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:6
+msgid "attribute"
+msgstr "atribut"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:7
+msgid "child"
+msgstr "anak"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:8
+msgid "descendant"
+msgstr "keturunan"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:9
+msgid "descendant-or-self"
+msgstr "keturunan-atau-diri"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:10
+msgid "following"
+msgstr "following"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:11
+msgid "following-sibling"
+msgstr "following-sibling"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:12
+msgid "namespace"
+msgstr "jaraknama"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:13
+msgid "parent"
+msgstr "induk"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:14
+msgid "preceding"
+msgstr "preceding"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:15
+msgid "preceding-sibling"
+msgstr "preceding-sibling"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:16
+msgid "self"
+msgstr "diri"
+
+#: ../plugins/taglist/XUL.tags.xml.in.h:1
+msgid "XUL - Tags"
+msgstr "XUL - Tag"
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:1
+msgid "Prompt type"
+msgstr "Jenis makluman"
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:2
+msgid "Selected format"
+msgstr "Format terpilih"
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:3
+msgid "Custom format"
+msgstr "Format suai"
+
+#: ../plugins/time/pluma-time-plugin.c:181
+msgid "In_sert Date and Time..."
+msgstr "_Sisip Tarikh/Masa..."
+
+#: ../plugins/time/pluma-time-plugin.c:183
+msgid "Insert current date and time at the cursor position"
+msgstr "Sisipkan tarikh dan masa semasa pada kedudukan kursor"
+
+#: ../plugins/time/pluma-time-plugin.c:568
+msgid "Available formats"
+msgstr "Format tersedia"
+
+#: ../plugins/time/pluma-time-plugin.c:721
+msgid "Configure insert date/time plugin..."
+msgstr "Konfigur pemalam sisip tarikh/masa..."
+
+#: ../plugins/time/time.pluma-plugin.desktop.in.h:1
+msgid "Insert Date/Time"
+msgstr "Sisip Tarikh/Masa"
+
+#: ../plugins/time/time.pluma-plugin.desktop.in.h:2
+msgid "Inserts current date and time at the cursor position."
+msgstr "Sisip tarikh dan masa semasa pada kedudukan kursor."
+
+#: ../plugins/time/pluma-time-dialog.ui.h:1
+msgid "Insert Date and Time"
+msgstr "Sisip Tarikh dan Masa"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:2
+msgid "_Insert"
+msgstr "S_isip"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:3
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:5
+msgid "Use the _selected format"
+msgstr "Guna format _terpilih"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:5
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:6
+msgid "_Use custom format"
+msgstr "_Guna format suai"
+
+#. Translators: Use the more common date format in your locale
+#: ../plugins/time/pluma-time-dialog.ui.h:7
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:9
+#, no-c-format
+msgid "%d/%m/%Y %H:%M:%S"
+msgstr "%d/%m/%Y %H:%M:%S"
+
+#. Translators: This example should follow the date format defined in the
+#. entry above
+#: ../plugins/time/pluma-time-dialog.ui.h:8
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:11
+msgid "01/11/2009 17:52:00"
+msgstr "01/11/2009 17:52:00"
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:1
+msgid "Configure date/time plugin"
+msgstr "Konfigur pemalam tarikh/masa"
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:2
+msgid "When inserting date/time..."
+msgstr "Bila menyisip tarikh/masa..."
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:4
+msgid "_Prompt for a format"
+msgstr "_Maklum satu format"

@@ -1,0 +1,1919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.16">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "July 2006">
+<!ENTITY app "pluma">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.MATE.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Manuale di pluma</title>
+	 <copyright lang="en">
+		<year>2007</year>
+		<holder>MATE Documentation Project</holder> </copyright>
+	 <copyright lang="en">
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright lang="en">
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher role="maintainer">
+		<publishername>Progetto documentazione di MATE</publishername>
+	 </publisher>
+
+	 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+	 <authorgroup>
+           <author lang="en">
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author lang="en">
+		  <firstname>MATE Documentation Project</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>MATE</orgname>
+		  </affiliation>
+		</author>
+		<author lang="en">
+			<firstname>Hal</firstname>
+			<surname>Canary</surname>
+			<contrib>Added the Shortcut Keys Table</contrib>
+		</author>
+		<author lang="en">
+		  <firstname>Sun Java Desktop System Documentation Team</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author lang="en">
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>MATE Documentation Project</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Baris</firstname>
+			<surname>Cicek provided information from earlier revisions of the pluma application.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Ajit</firstname>
+			<surname>George provided information about plugins.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision lang="en">
+		  <revnumber>pluma V1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author" lang="en">Eric Baudais <email>baudais@okstate.edu</email>
+				</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.0</revnumber>
+		  <date>March 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.1</revnumber>
+		  <date>June 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.2</revnumber>
+		  <date>August 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.3</revnumber>
+		  <date>September 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.4</revnumber>
+		  <date>January 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.5</revnumber>
+		  <date>March 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.6</revnumber>
+		  <date>September 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.7</revnumber>
+		  <date>March 2004</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   	<revision lang="en">
+		  <revnumber>pluma Manual V2.8</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun Java Desktop System Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   		<revision lang="en">
+		  <revnumber>pluma Manual V2.9</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">MATE Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo>Questo manuale descrive la versione 2.16 di pluma.</releaseinfo>
+	 <legalnotice>
+		<title>Commenti</title>
+		<para>Per segnalare un problema o inviare suggerimenti sull'applicazione <application>pluma</application> o su questo manuale, seguire le istruzioni presenti alla <ulink url="help:user-guide?feedback-bugs" type="help">pagina di commenti su MATE</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para>pluma è un editor di testo per lo MATE Desktop dotato di funzionalità basilari e avanzate come la stampa dei documenti, il controllo ortografico, la ricerca e sostituzione del testo e l'evidenziazione della sintassi. Ulteriori funzionalità avanzate sono disponibili come plugin.</para>
+    </abstract>
+  </articleinfo>
+  <indexterm lang="en"><primary>pluma</primary></indexterm>
+  <indexterm lang="en"><primary>text editor</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="pluma-intro">
+	 <title>Introduzione</title>
+
+   <!-- removed ids, here as anchors to prevent possible breakage -->
+	 <anchor id="pluma-customize-toolbar"/>
+
+	 <para>L'applicazione <application>pluma</application> consente di creare e modificare file di testo.</para>
+
+	 <para>Lo scopo di <application>pluma</application> è quello di essere un semplice editor di testo. Caratteristiche più avanzate possono essere abilitate attraverso l'uso di diversi <firstterm>plugin</firstterm>, che consentono lo svolgimento di diverse attività correlate alla modifica di file di testo.</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="pluma-getting-started">
+	 <title>Per iniziare</title>
+
+<!-- ============= To Start pluma ============================ -->
+	 <sect2 id="pluma-to-start">
+		<title>Avviare pluma</title>
+		<para>È possibile avviare <application>pluma</application> nei seguenti modi:</para>
+		<variablelist>
+    		<varlistentry>
+    		<term>Menù <guimenu>Applicazioni</guimenu></term>
+    		<listitem>
+    		<para>Scegliere <menuchoice><guimenu>Accessori</guimenu><guimenuitem>Editor di testo</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>Riga di comando</term>
+    		<listitem>
+    		<para>Eseguire il seguente comando: <command>pluma</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <para>In modo predefinito, aprendo un documento di testo dal file manager, pluma viene avviato mostrando il contenuto del documento.</para>
+	</sect2>
+
+	<sect2 id="pluma-when-you-start">
+
+		<title>La finestra di pluma</title>
+		<para>All'avvio di <application>pluma</application> viene visualizzata la seguente finestra:</para>
+
+		<figure id="pluma-window">
+		  <title>Finestra di pluma</title>
+		  <screenshot>
+			 <mediaobject lang="en">
+				<imageobject>
+				  <imagedata fileref="figures/pluma_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Shows pluma main window.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para>La finestra di <application>pluma</application> contiene i seguenti elementi:</para>
+		<variablelist>
+		  <varlistentry> <term>Barra dei menù</term>
+			 <listitem>
+				<para>I menù della barra dei menù contengono tutti i comandi necessari per le operazioni sui file in <application>pluma</application>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Barra degli strumenti</term>
+			 <listitem>
+				<para>La barra degli strumenti contiene un sottoinsieme dei comandi a cui è possibile accedere nella barra dei menù.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Area di visualizzazione</term>
+			 <listitem>
+				<para>L'area di visualizzazione contiene il testo del file che si sta modificando.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Barra di stato</term>
+			 <listitem>
+				<para>La barra di stato visualizza informazioni sulle attività di <application>pluma</application> attualmente in corso e altre indicazioni contestuali relative alle voci di menù.</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>Posizione del cursore: il numero di riga e di colonna in cui è posizionato il cursore.</para>
+		  </listitem>
+		  <listitem>
+		  <para>Modalità di modifica: se l'editor è in modalità di inserimento, la barra di stato contiene l'indicazione <guilabel>INS</guilabel>. Se l'editor è in modalità di sovrascrittura, la barra di stato contiene l'indicazione <guilabel>SSC</guilabel>. Premere <keycap>Ins</keycap> per cambiare la modalità di modifica.</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Riquadro laterale</term>
+			 <listitem>
+				<para>Il riquadro laterale visualizza l'elenco dei documenti aperti e altre informazioni in base ai plugin abilitati.</para>
+				<para>Il riquadro laterale, in modo predefinito, non è mostrato. Per visualizzarlo, scegliere <menuchoice><guimenu>Visualizza</guimenu><guimenuitem>Riquadro laterale</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Riquadro inferiore</term>
+			 <listitem>
+				<para>Il riquadro inferiore è utilizzato dagli strumenti di programmazione come il plugin <application>Console Python</application> per la visualizzazione dell'output.</para>
+				<para>Il riquadro inferiore, in modo predefinito, non è mostrato. Per visualizzarlo, scegliere <menuchoice><guimenu>Visualizza</guimenu><guimenuitem>Riquadro inferiore</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Facendo clic con il pulsante destro del mouse nella finestra di <application>pluma</application>, l'applicazione visualizza un menù pop-up. Questo menù contiene i comandi di uso più frequente per la modifica del testo.</para>
+
+		<para>Come in altre applicazioni di MATE, le azioni da svolgere in <application>pluma</application> possono essere svolte in diversi modi: attraverso i menù, dalla barra degli strumenti o con le scorciatoie da tastiera. Le scorciatoie da tastiera comuni a tutte le applicazioni sono elencate nella <ulink type="help" url="help:user-guide?shortcuts-apps">Guida utente</ulink>.</para>
+	 </sect2>
+
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="pluma-run-from-cmd-line">
+		<title>Eseguire pluma dalla riga di comando</title>
+		<para>È possibile eseguire <application>pluma</application> dalla riga di comando e aprire automaticamente uno o più file. Per aprire più file dalla riga di comando, digitare il comando seguente e premere <keycap>Invio</keycap>:</para>
+		<para lang="en"><command>pluma <replaceable>file1.txt file2.txt file3.txt</replaceable></command></para>
+		<para>In alternativa, è possibile specificare un URI invece del nome di un file.</para>
+    <para>Per maggiori informazioni sull'esecuzione di <application>pluma</application> dalla riga di comando, consultare la pagina di manuale Unix di pluma, <ulink url="man:pluma" type="man"><citerefentry><refentrytitle>pluma</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="pluma-usage">
+	 <title>Lavorare con i file</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="pluma-create-new-file">
+		<title>Creare un nuovo documento</title>
+		<para>Per creare un nuovo documento, scegliere <menuchoice><guimenu>File</guimenu><guimenuitem>Nuovo</guimenuitem></menuchoice>. L'applicazione visualizza un nuovo file nella finestra di <application>pluma</application>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="pluma-open-file">
+		<title>Aprire un file</title>
+		<para>Per aprire un file, scegliere <menuchoice><guimenu>File</guimenu><guimenuitem>Apri</guimenuitem></menuchoice> per visualizzare il dialogo <guilabel>Apri file</guilabel>. Selezionare il file da aprire e fare clic su <guibutton>Apri</guibutton>. Il file viene visualizzato nella finestra di <application>pluma</application>.</para>
+
+		<para lang="en">The application records the paths and filenames of the five most recent files that you edited and displays the files as menu items on the <menuchoice><guimenu>File</guimenu></menuchoice> menu. You can also click on the <inlinemediaobject><imageobject><imagedata fileref="figures/pluma_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>Shows Recent Files menu icon.</phrase></textobject></inlinemediaobject>  icon on the toolbar to display the list of recent files.  </para>
+
+		<note><para>Con <application>pluma</application> è possibile aprire anche file multipli. L'applicazione aggiunge, nella finestra, una scheda per ogni file aperto. Per maggiori informazioni, consultare <xref linkend="pluma-tabs"/>.</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="pluma-save-file">
+		<title>Salvare un file</title>
+		<para>È possibile salvare un file nei seguenti modi:</para>
+		<itemizedlist>
+		  <listitem><para>Per salvare le modifiche a un file esistente, scegliere <menuchoice><guimenu>File</guimenu><guimenuitem>Salva</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To save a new file or to save an existing file under a new filename, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save As</guimenuitem> </menuchoice>. Enter a name for the file in the <guilabel>Save As</guilabel> dialog, then click <guibutton>Save</guibutton>. </para>
+		  </listitem>
+		  <listitem><para lang="en">To save all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Save All</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para lang="en">To close all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Close All</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="pluma-open-from-uri">
+		<title>Aprire un file da un URI</title>
+		<para>Per aprire un file usando un URI (Uniform Resource Identifier), procedere come segue:</para>
+		<orderedlist>
+		<listitem>
+		<para lang="en">Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Open Location</guimenuitem> </menuchoice> to display the <guilabel>Open Location</guilabel> dialog. </para>
+		</listitem>
+		<listitem>
+		<para>Inserire l'URI del file da aprire.</para>
+		</listitem>
+		<listitem>
+		<para>Usare l'elenco a discesa <guilabel>Codifiche dei caratteri</guilabel> per selezionare la codifica appropriata.</para>
+		</listitem>
+		<listitem>
+		<para>Fare clic su <guibutton>Apri</guibutton>.</para>
+		</listitem>
+		</orderedlist>
+		<para><replaceable>URI</replaceable> validi sono: <literal>http:</literal>, <literal>ftp:</literal>, <literal>file:</literal> e tutti i metodi supportati da <literal>mate-vfs</literal>.</para>
+		<para>I file da alcuni tipi di URI sono aperti in sola lettura e qualsiasi modifica apportata deve essere salvata in una posizione diversa. HTTP consente di leggere solamente i file, anche i file aperti attraverso FTP sono a sola lettura in quanto non tutti i server FTP sono in grado di gestire il salvataggio remoto di file.</para>
+		<warning><para>Il salvataggio di file su server FTP può essere abilitato attraverso l'<ulink type="help" url="help:mateconf-editor"><application>Editor della configurazione</application></ulink>, impostando la chiave <systemitem>/apps/pluma/preferences/editor/save/writable_vfs_schemes</systemitem>. Questo però, potrebbe causare degli errori.</para></warning>
+	 </sect2>
+
+<!-- ============= Working with tabs ======================== -->
+	 <sect2 id="pluma-tabs">
+	   <title>Lavorare con le schede</title>
+
+		 <para>Quando sono aperti più file, <application>pluma</application> mostra una <firstterm>scheda</firstterm> per ogni documento sopra l'area di visualizzazione. Per passare a un altro documento, fare clic sulla sua scheda.</para>
+		 <para>Per spostare un documento in un'altra finestra di <application>pluma</application>, trascinare la scheda corrispondente nella finestra in cui si vuole spostarlo.</para>
+		 <para lang="en">To move a document to a new <application> pluma</application> window, either drag its tab to the desktop, or choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Move to New Window</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>Lavorare con il testo</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="pluma-edit-text">
+		<title>Modificare il testo</title>
+		<para>È possibile modificare il testo di un file nei seguenti modi:</para>
+		<itemizedlist>
+		  <listitem><para>Inserire del nuovo testo attraverso l'uso della tastiera. Il <firstterm>cursore di inserimento</firstterm> lampeggiante indica il punto dove appare il testo. Per modificarlo, utilizzare le frecce direzionali o fare clic col mouse.</para>
+		  </listitem>
+		  <listitem><para lang="en">To copy the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To delete the selected text from the file and move the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To permanently delete the selected text from the file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Delete</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To insert the contents of the clipboard at the cursor position, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem> </menuchoice>. You must cut or copy text before you can paste text into the file, either from pluma or another application.</para>
+		  </listitem>
+		  <listitem><para lang="en">To select all of the text in a file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem> </menuchoice>. </para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="pluma-undo-redo-edits">
+		<title>Annullare e ripetere le modifiche</title>
+		<para lang="en">To undo a change you have made, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem> </menuchoice>. To reverse this action, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	</sect1>
+	<sect1 id="pluma-find">
+		<title>Trovare e sostituire del testo</title>
+
+		<para>In <application>pluma</application> ci sono due modi per cercare del testo. È possibile utilizzare il dialogo <guilabel>Trova</guilabel> per cercare un testo specifico, oppure la <guilabel>Ricerca incrementale</guilabel> per evidenziare le corrispondenze mentre viene digitato il testo.</para>
+
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="pluma-find-text">
+		<title>Trovare del testo</title>
+		<para>Per cercare una stringa all'interno di un file, procedere come segue:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice> to display the <guilabel>Find</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Digitare la stringa da trovare nel campo <guilabel>Cerca</guilabel>. È possibile utilizzare dei caratteri speciali come le tabulazioni o gli a capo: consultare <xref linkend="pluma-find-escapes"/>.</para>
+		  </listitem>
+		  <listitem><para>Fare clic su <guibutton>Trova</guibutton> per cercare la prima occorrenza della stringa nel file dopo la posizione del cursore. Se <application>pluma</application> trova la stringa, l'applicazione ne seleziona la prima occorrenza, le altre vengono solo evidenziate.</para>
+		  </listitem>
+		  <listitem><para lang="en">To find the next occurrence of the string, click <guibutton>Find</guibutton> or choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice>. To find the previous occurrence of the text, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</orderedlist>
+		<para lang="en">After you have closed the <guilabel>Find</guilabel> dialog, you can still move the selection to other occurrences of the text by choosing  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice> and  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		<para lang="en">To remove the highlighting from the text, choose  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Clear Highlight</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	 <sect2 id="pluma-find-incremental">
+	   <title>Ricerca incrementale</title>
+
+	   <para>La ricerca incrementale evidenzia le corrispondenze del testo nel documento durante la digitazione, lettera per lettera (simile alla ricerca in diversi browser web).</para>
+	   <para lang="en">To start an incremental search, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Incremental Search</guimenuitem> </menuchoice>. The search box appears at the top of the display area. </para>
+	   <para>Iniziando a digitare una parola, il testo corrispondente viene evidenziato nel documento e viene selezionata la prima istanza successiva alla posizione del cursore.</para>
+	   <para>Per spostare la selezione alla corrispondenza successiva mantenendo la casella di ricerca aperta, premere <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>. Premere <keycombo><keycap>Ctrl</keycap><keycap>Maiusc</keycap><keycap>G</keycap></keycombo> per spostare la selezione indietro.</para>
+	   <tip><para>È anche possibile utilizzare le frecce direzionali su e giù o la rotellina di scorrimento del mouse per spostare la selezione tra le varie corrispondenze.</para></tip>
+	 </sect2>
+
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="pluma-find-replace-text">
+		<title>Sostituire il testo</title>
+
+		<para>Per cercare una stringa all'interno di un file e sostituirla con un'altra, procedere come segue:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Replace</guimenuitem> </menuchoice> to display the <guilabel>Replace</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Digitare la stringa da trovare nel campo <guilabel>Cerca</guilabel>. È possibile utilizzare dei caratteri speciali come le tabulazioni o gli a capo: consultare <xref linkend="pluma-find-escapes"/>.</para></listitem>
+		  <listitem><para>Digitare la stringa con cui sostituire quella che si sta ricercando nel campo <guilabel>Sostituisci con</guilabel>.</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>Per controllare le occorrenze della stringa prima di sostituirla, fare clic su <guibutton>Trova</guibutton>. Se <application>pluma</application> trova la stringa, questa viene selezionata. Fare clic su <guibutton>Sostituisci</guibutton> per sostituire l'occorrenza selezionata della stringa. Per trovare l'occorrenza successiva, fare clic nuovamente su <guibutton>Trova</guibutton>.</para>
+		<para>Per sostituire tutte le occorrenze della stringa all'interno del documento, fare clic su <guibutton>Sostituisci tutti</guibutton>.</para>
+	 </sect2>
+
+<!-- ============= Find and Replace Options ============================ -->
+  <sect2 id="pluma-find-options">
+		<title>Opzioni di trova e sostituisci</title>
+		<para>Le finestre di dialogo <guilabel>Trova</guilabel> e <guilabel>Sostituisci</guilabel> presentano entrambe le seguenti opzioni:</para>
+		<itemizedlist>
+		  <listitem><para>Selezionare l'opzione <guilabel>Maiuscole/minuscole</guilabel> per individuare solo le occorrenze della stringa che corrispondono esattamente al testo digitato. Per esempio, con l'opzione <guilabel>Maiuscole/minuscole</guilabel> selezionata, «TESTO» non corrisponde a «testo».</para>
+		  </listitem>
+		  <listitem><para>Selezionare l'opzione <guilabel>Solo parole intere</guilabel> per individuare solo le occorrenze della stringa che corrispondono a parole intere del testo digitato. Per esempio, con l'opzione <guilabel>Solo parole intere</guilabel> selezionata, «testa» non corrisponde a «testamento».</para>
+		  </listitem>
+		  <listitem><para>Selezionare l'opzione <guilabel>Cercare all'indietro</guilabel> per eseguire la ricerca dalla fine del file al suo inizio.</para>
+		  </listitem>
+		  <listitem><para>Selezionare l'opzione <guilabel>Ricominciare dall'inizio</guilabel> per eseguire la ricerca fino alla fine del file e continuare dall'inizio del file.</para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+
+<!-- ============= Special Characters ============================ -->
+	 <sect2 id="pluma-find-escapes">
+	   <title>Caratteri speciali</title>
+	     <para>È possibile includere i seguenti caratteri speciali per eseguire ricerche o sostituzioni:</para>
+			 <variablelist>
+        <varlistentry>
+          <term lang="en"><literal>\n</literal></term>
+    				<listitem>
+              <para>Specifica un "new line".</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\t</literal></term>
+    				<listitem>
+              <para>Specifica un carattere di tabulazione.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\r</literal></term>
+    				<listitem>
+              <para>Specifica un "carriage return".</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\\</literal></term>
+    				<listitem>
+              <para>Affinché il carattere backslash possa essere cercato, è necessario usare una sequenza di escape. Per esempio, per cercare "<literal>\n</literal>", è necessario digitare "\\n" nel campo <guilabel>Cerca</guilabel>. Oppure, per cercare una sequenza di backslash, è necessario raddoppiare il numero di backslash da cercare.</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+    <sect2 id="pluma-goto-line">
+      <title>Posizionare il cursore su una riga specifica</title>
+
+      <para lang="en">To position the cursor on a specific line in the current file, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Go to Line</guimenuitem> </menuchoice>. The line number box appears at the top of the display area.</para>
+      <para>Digitare il numero della riga in cui si intende spostare il cursore e il documento scorrerà fino alla riga specificata.</para>
+      <para>Per rimuovere la casella di testo e spostare il cursore alla riga specificata, premere <keycap>Invio</keycap>.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-printing">
+    <title>Stampa</title>
+
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="pluma-page-setup">
+		<title>Impostare le opzioni della pagina</title>
+
+		<para lang="en">To set the page options, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Page Setup</guimenuitem> </menuchoice> to display the <guilabel>Page Setup</guilabel> dialog.</para>
+
+		<para>La finestra di dialogo <guilabel>Impostazioni pagina</guilabel> consente di specificare le seguenti opzioni di stampa:</para>
+
+		<sect3 id="pluma-page-setup-general">
+		<title>Scheda Generale</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Print syntax highlighting</guilabel> </term>
+			 <listitem>
+				<para>Selezionare questa opzione per stampare l'evidenziazione di sintassi. Per maggiori informazioni al riguardo, consultare <xref linkend="pluma-set-highlightmode"/>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Print page headers</guilabel> </term>
+			 <listitem>
+				<para>Selezionare questa opzione per includere un'intestazione in ogni pagina stampata. Non è possibile configurare l'intestazione.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line Numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Selezionare l'opzione <guilabel>Stampare numeri di riga</guilabel> per includere i numeri delle righe nella stampa di un file.</para>
+				<para>Usare il controllo di selezione <guilabel>Numeri ogni ... righe</guilabel> per specificare la frequenza con cui stampare i numeri, per esempio ogni 5 righe, ogni 10 righe e così via.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+			 <listitem>
+                            <para>Selezionare l'opzione <guilabel>Attivare a capo automatico</guilabel> per mandare a capo il testo automaticamente a livello di parola durante la stampa di un file. L'applicazione conteggia le righe mandate a capo come una singola riga ai fini della numerazione.</para>
+				<para>Selezionare l'opzione <guilabel>Non dividere le parole su due righe</guilabel> per impostare il ritorno a capo del testo a livello di parola durante la stampa di un file.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="pluma-page-setup-fonts">
+	 		<title>Caratteri</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Body</guilabel> </term>
+			 <listitem>
+				<para>Fare clic su questo pulsante per selezionare il tipo di carattere da usare per stampare il testo di un file.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Fare clic su questo pulsante per selezionare il tipo di carattere da usare per stampare i numeri di riga di un file.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Headers and footers</guilabel> </term>
+			 <listitem>
+				<para>Fare clic su questo pulsante per selezionare il tipo di carattere da usare per stampare le intestazioni e i piè di pagina di un file.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Per ripristinare i caratteri predefiniti per la stampa dei file da <application>pluma</application>, fare clic sul pulsante <guibutton>Ripristina caratteri predefiniti</guibutton>.</para>
+		</sect3>
+
+	 </sect2>
+
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="pluma-print-file">
+		<title>Stampare un documento</title>
+		<para><application>pluma</application> consente di eseguire le seguenti operazioni di stampa:</para>
+		<itemizedlist>
+		  <listitem><para>Stampare un documento su una stampante.</para>
+		  </listitem>
+		  <listitem><para>Inviare l'output di un comando di stampa in un file.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>Quando si stampa su un file, <application>pluma</application> invia l'output al file in un formato di prestampa. I formati di prestampa più diffusi sono PostScript e PDF (Portable Document Format).</para>
+
+		<para lang="en">To preview the pages that you want to print, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print Preview</guimenuitem> </menuchoice>.</para>
+
+		<para lang="en">To print the current file to a printer or a file, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice> to display the <guilabel>Print</guilabel> dialog.</para>
+
+		<para>La finestra di dialogo <guilabel>Stampa</guilabel> consente di specificare le seguenti opzioni di stampa:</para>
+
+		<sect3 id="print-dialog-job">
+		<title>Scheda Lavoro</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Print range</guilabel> </term>
+			 <listitem>
+				<para>Selezionare una delle opzioni seguenti per determinare quali pagine stampare:</para>
+				<itemizedlist>
+				<listitem>
+				<para lang="en"><guilabel>All</guilabel></para>
+				<para>Selezionare questa opzione per stampare tutte le pagine del file.</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Lines</guilabel></para>
+				<para>Selezionare questa opzione per stampare solamente le righe specificate. Usare i controlli di selezione <guilabel>Da:</guilabel> e <guilabel>A:</guilabel> per specificare un intervallo di righe.</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Selection</guilabel></para>
+				<para>Selezionare questa opzione per stampare solo il testo selezionato. L'opzione è abilitata solo quando è stata effettuata una selezione.</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Copies</guilabel> </term>
+			 <listitem>
+				<para>Usare il controllo di selezione <guilabel>Numero di copie</guilabel> per specificare il numero di copie da stampare.</para>
+				<para>Se si intendono stampare più copie del file, selezionare l'opzione <guilabel>Fascicola</guilabel> per fascicolare le copie stampate.</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>Scheda Stampante</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Printer</guilabel> </term>
+	    <listitem>
+	      <para>Usare questo elenco a discesa per selezionare la stampante con cui stampare il file.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Settings</guilabel> </term>
+	    <listitem>
+	      <para>Usare questa elenco a discesa per selezionare le impostazioni della pagina.</para>
+	      <para>Per configurare la stampante, fare clic su <guibutton>Configura</guibutton>. Per esempio, è possibile abilitare la stampa fronte retro o impostare una stampa ritardata, sempre che queste funzionalità siano supportate dalla stampante.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Location</guilabel> </term>
+	    <listitem>
+	      <para>Usare questo elenco a discesa per selezionare una delle seguenti opzioni:</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>Stampa il file su una stampante CUPS.</para>
+	            <note>
+	              <para>Se la stampante selezionata è una stampante CUPS, <guilabel>CUPS</guilabel> è l'unica voce di questo elenco a discesa.</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>Stampa il file su una stampante.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>Stampa su un file PostScript.</para>
+	            <para>Fare clic su <guibutton>Salva come</guibutton> per visualizzare la finestra di dialogo in cui specificare il nome e la posizione del file PostScript.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>Usa il comando specificato per stampare il file.</para>
+	            <para>Digitare il nome del comando nella casella di testo. Includere anche tutti gli argomenti a riga di comando.</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>State</guilabel> </term>
+	    <listitem>
+	      <para>Questa funzionalità non è supportata da questa versione di pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Type</guilabel> </term>
+	    <listitem>
+	      <para>Questa funzionalità non è supportata da questa versione di pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Comment</guilabel> </term>
+	    <listitem>
+	      <para>Questa funzionalità non è supportata da questa versione di pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>Scheda Carta</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Paper size</guilabel> </term>
+			 <listitem>
+				<para>Usare questo elenco a discesa per selezionare la dimensione della carta su cui stampare il file.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Width</guilabel> </term>
+			 <listitem>
+				<para>Usare questo controllo di selezione per specificare la larghezza della carta. Usare l'elenco a discesa adiacente per modificare l'unità di misura per la dimensione della carta.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Height</guilabel> </term>
+			 <listitem>
+				<para>Usare questo controllo di selezione per specificare l'altezza della carta.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Feed orientation</guilabel> </term>
+			 <listitem>
+				<para>Usare questo elenco a discesa per selezionare l'orientamento della carta nella stampante.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Page orientation</guilabel> </term>
+			 <listitem>
+				<para>Usare questo elenco a discesa per selezionare l'orientamento della pagina.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Layout</guilabel> </term>
+			 <listitem>
+				<para>Usare questo elenco a discesa per selezionare la disposizione della pagina. La disposizione prescelta viene visualizzata in anteprima nell'area <guilabel>Anteprima</guilabel>.</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term lang="en"><guilabel>Paper tray</guilabel> </term>
+            <listitem>
+              <para>Usare questo elenco a discesa per selezionare l'orientamento della pagina.</para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-programming-features">
+	  <title>Caratteristiche di programmazione</title>
+
+	  <para>Molte delle caratteristiche di programmazione di <application>pluma</application> vengono fornite attraverso plugin. Il plugin «Elenco dei tag», per esempio, fornisce un elenco dei tag più usati per i maggiori linguaggi di marcatura del testo: consultare <xref linkend="pluma-tag-list-plugin"/>.</para>
+
+<!-- ============= Syntax Highlighting =================== -->
+	 <sect2 id="pluma-set-highlightmode">
+	 <title>Evidenziazione sintassi</title>
+	 <para>L'evidenziazione della sintassi rende la lettura del codice sorgente più semplice visualizzando diverse parti del testo con colori differenti.</para>
+
+	 <para lang="en"><application>pluma</application> chooses an appropriate syntax highlighting mode based on a document's type. To override the syntax highlighting mode, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Highlight Mode</guimenuitem> </menuchoice>, then choose one of the following menu items:</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term lang="en"><guimenuitem>Normal</guimenuitem></term>
+		      <listitem>
+		        <para>Non visualizza alcuna evidenziazione.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Sources</guisubmenu></term>
+		      <listitem>
+		        <para>Visualizza l'evidenziazione della sintassi per il codice sorgente. Usare il sotto-menù <guisubmenu>Sorgenti</guisubmenu> per selezionare il tipo di codice sorgente.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Markup</guisubmenu></term>
+		      <listitem>
+		        <para>Visualizza l'evidenziazione della sintassi per il codice di marcatura. Usare il sotto-menù <guisubmenu>Markup</guisubmenu> per selezionare il tipo di marcatura.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Scripts</guisubmenu></term>
+		      <listitem>
+		        <para>Visualizza l'evidenziazione della sintassi per gli script. Usare il sotto-menù <guisubmenu>Script</guisubmenu> per selezionare il tipo di script.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Others</guisubmenu></term>
+		      <listitem>
+		        <para>Visualizza l'evidenziazione di sintassi per altri tipi di codice. Usare il sotto-menù <guisubmenu>Altri</guisubmenu> per selezionare il tipo.</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 </sect2>
+
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="pluma-pipe-output">
+		<title>Inviare l'output di un comando in pipe a un file</title>
+		<para>È possibile usare <application>pluma</application> per inviare con una pipe l'output di un comando a un file di testo. Per esempio, per inviare in pipe l'output del comando <command>ls</command> a un file di testo, digitare <command>ls | pluma</command>, quindi premere <keycap>Invio</keycap>.</para>
+		<para>L'output del comando <command>ls</command> viene visualizzato in un nuovo file di testo nella finestra di <application>pluma</application>.</para>
+		<para>In alternativa, è possibile usare il plugin <application>Strumenti esterni</application> per inviare in pipe l'output del comando al file aperto.</para>
+	 </sect2>
+  </sect1>
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="pluma-shortcutkeys">
+  <title>Scorciatoie da tastiera</title>
+  <para>È possibile usare le scorciatoie da tastiera per eseguire delle azioni comuni più velocemente rispetto all'utilizzo del mouse o dei menù. La seguente tabella elenca tutte le scorciatoie di <application>pluma</application>.</para>
+  <para>Per maggiori informazioni sulle scorciatoie da tastiera, consultare la <ulink type="help" url="help:user-guide?keyboard-skills">Guida all'ambiente grafico per l'utente</ulink>.</para>
+
+  <!-- ============= Tabs ======================== -->
+	<bridgehead>Tabulazioni</bridgehead>
+	<para>Scorciatoie per le tabulazioni:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Scorciatoia</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>Comando</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para>Ctrl + Alt + PagSu</para></entry>
+          <entry><para>Passa alla successiva scheda sulla sinistra.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Alt + PagGiù</para></entry>
+          <entry><para>Passa alla successiva scheda sulla destra.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>Chiude la scheda.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Maiusc + L</para></entry>
+          <entry><para>Salva tutte le schede.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Maiusc + W</para></entry>
+          <entry><para>Chiude tutte le schede.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Alt + n</para></entry>
+          <entry><para>Passa all'n-esima scheda.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>File</bridgehead>
+	<para>Scorciatoie per lavorare con i file:</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Scorciatoia</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Comando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>Creare un nuovo file.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>Apre un file.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + L</para></entry>
+                        <entry><para>Apre una posizione.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>Salva il file aperto sul disco.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Maiusc + S</para></entry>
+                        <entry><para>Salva il file aperto con un nuovo nome.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>Stampa il file corrente.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Maiusc + P</para></entry>
+                        <entry><para>Anteprima di stampa.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + W</para></entry>
+                        <entry><para>Chiude il file corrente.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>Esce da Pluma</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>Modifica</bridgehead>
+	<para>Scorciatoie per modificare i file:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Scorciatoia</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Comando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>Annulla l'ultima azione.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Maiusc + Z</para></entry>
+                        <entry><para>Ripete l'ultima azione annullata.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>Taglia il testo o la regione selezionata e la mette negli appunti.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>Copia il testo o la regione selezionata negli appunti.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>Incolla il contenuto degli appunti.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>Seleziona tutto.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + D</para></entry>
+                        <entry><para>Elimina la riga attuale.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Alt + Up</para></entry>
+                        <entry><para lang="en">Move the selected line up one line.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Alt + Down</para></entry>
+                        <entry><para lang="en">Move the selected line down one line.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+	<bridgehead>Riquadri</bridgehead>
+	<para>Scorciatoie per mostrare e nascondere i riquadri:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Scorciatoia</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Comando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>F9</para></entry>
+                        <entry><para>Mostra/Nasconde il riquadro laterale.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>Mostra/Nasconde il riquadro inferiore.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Search ======================= -->
+	<bridgehead>Cerca</bridgehead>
+	<para>Scorciatoie per eseguire ricerche:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Scorciatoia</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Comando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>Trova una stringa.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>Trova l'istanza successiva della stringa.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Maiusc + G</para></entry>
+                        <entry><para>Trova l'istanza precedente della stringa.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>Ricerca incrementale.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>Cerca e sostituisce.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Maiusc + K</para></entry>
+                        <entry><para>Azzera evidenziazione.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>Va alla riga.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Tools ======================= -->
+	<bridgehead>Strumenti</bridgehead>
+	<para>Scorciatoie per gli strumenti:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Scorciatoia</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Comando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Maiusc + F7</para></entry>
+                        <entry><para>Controllo ortografico (con plugin).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + F12</para></entry>
+                        <entry><para>Rimuove gli spazi di fine riga (con plugin).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + T</para></entry>
+                        <entry><para>Rientro (con plugin).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Maiusc + T</para></entry>
+                        <entry><para>Rimuove rientro (con plugin).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>F8</para></entry>
+                        <entry><para>Esegue "make" nella directory attuale (con plugin).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Maiusc + D</para></entry>
+                        <entry><para>Elenco directory (con plugin).</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Help ======================= -->
+	<bridgehead>Aiuto</bridgehead>
+	<para>Scorciatoie per l'aiuto:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Scorciatoia</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>Comando</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para>F1</para></entry>
+          <entry><para>Apre il manuale utente di <application>pluma</application>.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="pluma-prefs">
+    <title>Preferenze</title>
+
+    <para lang="en">To configure <application>pluma</application>, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. The <guilabel>Preferences</guilabel> dialog contains the following categories:</para>
+    <itemizedlist>
+      <listitem><para><xref linkend="pluma-prefs-view"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-editor"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-fontsandcolors"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-plugins"/></para></listitem>
+    </itemizedlist>
+
+    <sect2 id="pluma-prefs-view">
+      <title>Preferenze di visualizzazione</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+          <listitem>
+            <para>Selezionare l'opzione <guilabel>Attivare a capo automatico</guilabel> in modo che le righe di testo più lunghe non vadano oltre il bordo della finestra. In questo modo si evita lo scorrimento orizzontale.</para>
+            <para>Selezionare l'opzione <guilabel>Non dividere le parole su due righe</guilabel> in modo che l'opzione di a capo automatico preservi le parole a fine riga intere. Consente una lettura più facile del testo.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Line Numbers</guilabel></term>
+          <listitem>
+            <para>Selezionare l'opzione <guilabel>Mostrare i numeri di riga</guilabel> per visualizzare i numeri di riga nella parte sinistra della finestra di <application>pluma</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Current Line</guilabel></term>
+          <listitem>
+            <para>Selezionare l'opzione <guilabel>Evidenziare la riga corrente</guilabel> per evidenziare la riga a cui il cursore è posizionato.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Right Margin</guilabel></term>
+          <listitem>
+            <para>Selezionare l'opzione <guilabel>Mostrare il margine destro</guilabel> per visualizzare una riga verticale indicante il margine destro.</para>
+            <para>Usare il controllo di selezione <guilabel>Margine destro alla colonna</guilabel> per specificare la posizione della riga verticale.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Bracket Matching</guilabel></term>
+          <listitem>
+            <para>Selezionare l'opzione <guilabel>Evidenziare la parentesi corrispondente</guilabel> per evidenziare la parentesi corrispondente quando il cursore è posizionato su una parentesi.</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-editor">
+      <title>Preferenze dell'editor</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Tabs</guilabel> </term>
+          <listitem>
+            <para>Usare il controllo di selezione <guilabel>Ampiezza tabulazione</guilabel> per specificare la larghezza dello spazio che <application>pluma</application> deve inserire quando si preme il tasto <keycap>Tab</keycap>.</para>
+            <para>Selezionare l'opzione <guilabel>Inserire spazi invece di tabulazioni</guilabel> per specificare che <application>pluma</application> deve inserire una sequenza di spazi anziché un carattere di tabulazione quando si preme il tasto <keycap>Tab</keycap>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Auto Indentation</guilabel> </term>
+          <listitem>
+            <para>Selezionare l'opzione <guilabel>Attivare rientro automatico</guilabel> per specificare che la riga successiva deve iniziare al livello di rientro di quella attuale.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>File Saving</guilabel> </term>
+          <listitem>
+            <para>Selezionare l'opzione <guilabel>Creare una copia di backup dei file prima di salvare</guilabel> per creare una copia di backup di un file ogni volta che viene salvato. La copia di backup del file presenta una tilde (~) alla fine del nome.</para>
+            <para>Selezionare l'opzione <guilabel>Salvataggio automatico ogni ... minuti</guilabel> per impostare il salvataggio automatico del file a intervalli regolari. Usare il controllo di selezione per specificare l'intervallo per il salvataggio automatico del file.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-fontsandcolors">
+      <title>Caratteri &amp; colori</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Font</guilabel> </term>
+          <listitem>
+            <para>Selezionare l'opzione <guilabel>Usare il carattere predefinito del tema</guilabel> per usare il tipo di carattere predefinito del sistema nella finestra di testo di <application>pluma</application>.</para>
+            <para>Il campo <guilabel>Carattere dell'editor</guilabel> visualizza il tipo di carattere utilizzato da <application>pluma</application> per la visualizzazione del testo. Fare clic sul pulsante per specificare il tipo di carattere, lo stile e la dimensione da usare per il testo.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Color Scheme</guilabel></term>
+          <listitem>
+            <para>È possibile scegliere uno schema di colori dall'elenco di quelli installati. Quelli che seguono sono gli schemi di colori installati in modo predefinito:</para>
+            <variablelist>
+              <varlistentry>
+                <term lang="en"><guilabel>Classic</guilabel></term>
+                <listitem>
+                  <para>Schema colore classico basato su quello di gvim.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Cobalt</guilabel></term>
+                <listitem>
+                  <para>Schema colore basato sul blu.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Kate</guilabel></term>
+                <listitem>
+                  <para>Schema colore usato nell'editor di testo Kate.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Oblivion</guilabel></term>
+                <listitem>
+                  <para>Schema colore scuro che fa uso dei colori del progetto Tango.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Tango</guilabel></term>
+                <listitem>
+                  <para>Schema colore che fa uso dei colori del progetto Tango.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <para>È possibile aggiungere un nuovo schema di colori facendo clic su <guilabel>Aggiungi...</guilabel> e selezionando un file contenente lo schema di colori</para>
+            <para>È possibile rimuovere lo schema colore selezionato facendo clic su <guilabel>Rimuovi</guilabel></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-plugins">
+      <title>Plugin</title>
+      <para>I plugin aggiungono funzionalità a <application>pluma</application>. Per maggiori informazioni sull'utilizzo dei plugin integrati, consultare <xref linkend="pluma-plugins-overview"/>.</para>
+
+<!-- ============= To Load pluma Plugins ========================= -->
+	 <sect3 id="pluma-install-plugins">
+		<title>Abilitare un plugin</title>
+		<para>Per abilitare un plugin di <application>pluma</application>, procedere come segue:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Selezionare la scheda <guilabel>Plugin</guilabel>.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Selezionare la casella di spunta a fianco il nome del plugin da abilitare.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Fare clic su <guibutton>Chiudi</guibutton> per chiudere la finestra di dialogo <guilabel>Preferenze</guilabel>.</para>
+                  </listitem>
+                </orderedlist>
+	 </sect3>
+
+<!-- ============= To Remove pluma Plugins ========================= -->
+  	 <sect3 id="pluma-remove-plugins">
+  		<title>Disabilitare un plugin</title>
+  		<para>Quando si esce da <application>pluma</application>, i plugin rimangono abilitati.</para>
+  		<para>Per disabilitare un plugin di <application>pluma</application>, procedere come segue:</para>
+                  <orderedlist>
+                    <listitem>
+                      <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                    </listitem>
+                    <listitem>
+                      <para>Selezionare la scheda <guilabel>Plugin</guilabel>.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Deselezionare la casella di spunta a fianco del nome del plugin da disabilitare.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Fare clic su <guibutton>Chiudi</guibutton> per chiudere la finestra di dialogo <guilabel>Preferenze</guilabel>.</para>
+                    </listitem>
+                  </orderedlist>
+  	 </sect3>
+	 </sect2>
+
+ </sect1>
+<!-- ============= To Use the pluma Plugins ========================= -->
+	 <sect1 id="pluma-plugins">
+		<title>I plugin</title>
+		<sect2 id="pluma-plugins-overview">
+		  <title>Lavorare con i plugin</title>
+  		<para>È possibile aggiungere ulteriori caratteristiche a <application>pluma</application> attraverso l'uso dei plugin. Un plugin è un programma ausiliario che aumenta le funzionalità di un'applicazione. I plugin aggiungono nuovi oggetti ai menù di <application>pluma</application> in base alle funzionalità che forniscono.</para>
+  		<para>Diversi plugin sono integrati in <application>pluma</application> ed è possibile installarne altri. Il <ulink type="http" url="http://live.mate.org/Pluma/Plugins">sito wed di pluma</ulink> elenca ulteriori plugin.</para>
+  		<para>Per abilitare o disabilitare un plugin o per vedere quali plugin sono attualmente abilitati, consultare la sezione <link linkend="pluma-prefs-plugins">Plugin</link>.</para>
+  		<para>I seguenti plugin sono integrati in <application>pluma</application>:</para>
+  		<!-- Not yet documented:
+  		File browser
+  		-->
+  		<itemizedlist>
+  		  <listitem>
+  		    <para><link linkend="pluma-change-case-plugin"><application>Cambia maiuscole/minuscole</application></link> consente di cambiare il testo selezionato tra maiuscolo e minuscolo.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-document-statistics-plugin">Statistiche sul documento</link></application> mostra il numero di righe, parole e caratteri del documento.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-external-tools-plugin">Strumenti esterni</link></application> consente di eseguire comandi esterni da <application>pluma</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application>Pannello dell'esplorazione file</application> consente di esplorare i propri file e cartelle nel riquadro laterale.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-indent-lines-plugin">Applica un rientro alle righe</link></application> aggiunge o rimuove un rientro alle righe selezionate.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-insert-date-time-plugin">Inserisci date e ora</link></application> aggiunge al documento la data e l'ora correnti.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-modelines-plugin">Modeline</link></application> consente di impostare delle preferenze di modifica per alcuni documenti e supporta le modeline in stile <application>Emacs</application>, <application>Kate</application> e <application>Vim</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-python-console-plugin">Console python</link></application> consente di eseguire comandi attraverso il linguaggio di programmazione python.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-snippets-plugin">Snippet</link></application> consente di archiviare dei frammenti di testo usati frequentemente e di inserirli all'interno di un documento.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-sort-plugin">Ordina</link></application> organizza alfabeticamente le righe di testo selezionate.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-spell-checker-plugin">Correttore ortografico</link></application> controlla l'ortografia del testo selezionato o evidenzia automaticamente gli errori nel documento.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-tag-list-plugin">Elenco tag</link></application> consente di inserire i tag più usati per l'HTML e altri linguaggi da un elenco nel riquadro laterale.</para>
+  		  </listitem>
+  		</itemizedlist>
+
+	<note><para lang="en">For more information on creating plugins, see the <ulink type="http" url="http://live.gnome.org/Pluma/Plugins"><application>pluma</application> website</ulink>.</para></note>
+  	</sect2>
+
+<sect2 id="pluma-change-case-plugin">
+<title>Plugin «Cambia maiuscole/minuscole»</title>
+	<para>Il plugin <application>Cambia maiuscole/minuscole</application> cambia tra maiuscole e minuscole il testo selezionato.</para>
+	 <para>I seguenti elementi sono aggiunti al menù <guimenu>Modifica</guimenu> quando il plugin <application>Cambia maiuscole/minuscole</application> è abilitato:</para>
+
+  <informaltable frame="all">
+    <tgroup cols="3" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="33*"/>
+      <colspec colname="COLSPEC1" colwidth="33*"/>
+      <colspec colname="COLSPEC2" colwidth="33*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Voce di menù</para></entry>
+          <entry colname="COLSPEC1">
+            <para>Azione</para></entry>
+          <entry colname="COLSPEC2">
+            <para>Esempio</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Upper Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Modifica ogni carattere in maiuscolo.</para></entry>
+          <entry><para><literal>Questo testo</literal> diventa <literal>QUESTO TESTO</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Lower Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Modifica ogni carattere in minuscolo.</para></entry>
+          <entry><para><literal>Questo Testo</literal> diventa <literal>questo testo</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Invert Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Modifica ogni carattere minuscolo in maiuscolo e viceversa.</para></entry>
+          <entry><para><literal>Questo Testo</literal> diventa <literal>qUESTO tESTO</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Title Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Modifica il primo carattere di ogni parola in maiuscolo.</para></entry>
+          <entry><para><literal>questo testo</literal> diventa <literal>Questo Testo</literal></para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect2>
+
+<sect2 id="pluma-document-statistics-plugin">
+<title>Plugin «Statistiche sul documento»</title>
+	<para>Il plugin <application>Statistiche sul documento</application> conta il numero di righe, parole, caratteri, compresi ed esclusi gli spazi, e byte del file attivo. I risultati vengono visualizzati nella finestra di dialogo <guilabel>Statistiche sul documento</guilabel>. Per usare il plugin «Statistiche sul documento», procedere come segue:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Document Statistics</guimenuitem> </menuchoice> to display the <guilabel>Document Statistics</guilabel> dialog. The <guilabel>Document Statistics</guilabel> dialog displays the following information about the file:
+				</para>
+		      <itemizedlist>
+		      <listitem><para>Numero di righe del documento.</para>
+		      </listitem>
+		      <listitem><para>Numero di parole del documento.</para>
+		      </listitem>
+		      <listitem><para>Numero di caratteri, compresi gli spazi, del documento.</para>
+		      </listitem>
+		      <listitem><para>Numero di caratteri, esclusi gli spazi, del documento.</para>
+		      </listitem>
+		      <listitem><para>Numero di byte del documento.</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para>È possibile continuare ad aggiornare il file di <application>pluma</application> anche tenendo aperta la finestra di dialogo <guilabel>Statistiche sul documento</guilabel>. Per aggiornare il contenuto della finestra di dialogo <guilabel>Statistiche sul documento</guilabel>, fare clic su <guibutton>Aggiorna</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-external-tools-plugin">
+  <title>Plugin «Strumenti esterni»</title>
+  <para>Il plugin <application>Strumenti esterni</application> consente di eseguire dei comandi esterni all'interno di <application>pluma</application>. È possibile inviare in pipe dei contenuti a un comando e sfruttarne l'output (per esempio <application>sed</application>) o eseguire un comando predefinito (come <application>make</application>).</para>
+  <para>Usare <guilabel>Gestore strumenti esterni</guilabel> per creare e modificare i comandi. Per eseguire un comando esterno, sceglierlo dal menù <guimenu>Strumenti</guimenu>.</para>
+
+  <sect3 id="pluma-external-tools-plugin-builtin">
+    <title>Comandi integrati</title>
+    <para>I seguenti comandi sono forniti con il plugin <application>Strumenti esterni</application>:</para>
+    <variablelist>
+      <varlistentry><term>Crea</term>
+        <listitem>
+          <para>Esegue <application>make</application> nella directory del documento.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Directory Listing</term>
+        <listitem>
+          <para>Elenca i contenuti della cartella del documento in un nuovo documento.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Environment Variables</term>
+        <listitem>
+          <para>Visualizza l'elenco delle variabili d'ambiente nel riquadro inferiore.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Grep</term>
+        <listitem>
+          <para>Cerca un termine in tutti i file nella directory del documento attuale usando una ricerca per corrispondenza. I risultati sono mostrati nel riquadro inferiore.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Rimuovi gli spazi di fine riga</term>
+        <listitem>
+          <para>Rimuove tutti gli spazi alla fine di ogni riga del documento.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-define">
+    <title>Definire un comando</title>
+    <para>Per aggiungere un comando esterno, scegliere <menuchoice><guimenu>Strumenti</guimenu><guimenuitem>Strumenti esterni...</guimenuitem></menuchoice>.</para>
+    <para>Nella finestra di <guilabel>Gestore strumenti esterni</guilabel>, fare clic su <guibutton>Nuovo</guibutton>. È possibile specificare i seguenti dettagli per il nuovo comando:</para>
+    <variablelist>
+      <varlistentry><term>Descrizione</term>
+        <listitem>
+          <para>La descrizione è mostrata nella barra di stato quando viene scelto il comando.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Tasto scorciatoia</term>
+        <listitem>
+          <para>Inserire una scorciatoia da tastiera per il comando.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Comando/i</term>
+        <listitem>
+          <para>I comandi da eseguire. È possibile utilizzare diverse variabili d'ambiente di <application>pluma</application> per passare i contenuti a questi comandi: consultare <xref linkend="pluma-external-tools-plugin-variables"/>.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Input</term>
+        <listitem>
+          <para>Il contenuto da passare ai comandi (come <systemitem>stdin</systemitem>): l'intero documento, la selezione, una riga o una parola.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Output</term>
+        <listitem>
+          <para>Cosa fare con l'output dei comandi: visualizzarlo nel riquadro inferiore, in un nuovo documento o posizionarlo alla fine del documento attuale, alla posizione del cursore o sostituire la selezione o tutto il documento.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Applicabilità</term>
+        <listitem>
+          <para>Determina quali documenti sono interessati dal comando, per esempio i documenti salvati oppure no, i documenti locali o quelli remoti.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-edit">
+    <title>Modificare e rimuovere gli strumenti</title>
+    <para>Per modificare uno strumenti, selezionarlo dall'elenco e modificare le sue proprietà.</para>
+    <para>Per rinominare uno strumento, fare nuovamente clic su di esso nell'elenco.</para>
+    <para>Per ripristinare uno strumento integrato che è stato modificato, fare clic su <guilabel>Ripristina</guilabel>.</para>
+    <para>Per rimuovere uno strumento, selezionarlo dall'elenco e fare clic su <guibutton>Rimuovi</guibutton>. Non è possibile rimuovere gli strumenti integrati, solo quelli che vengono creati dall'utente.</para>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-variables">
+    <title>Variabili</title>
+    <para>È possibile utilizzare le seguenti variabili nel campo <guilabel>Comando/i</guilabel> della definizione del comando:</para>
+    <itemizedlist>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_NAME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_SCHEME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_PATH</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_DIR</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_PATH</para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>
+
+<sect2 id="pluma-file-browser-plugin">
+  <title>Plugin «Esplorazione file»</title>
+  <para>Il plugin <application>Esplorazione file</application> mostra i propri file e cartelle nel riquadro laterale, consentendo un'apertura veloce dei file.</para>
+  <para lang="en">To view the File Browser, choose <menuchoice><guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice> and then click on the tab showing the File Browser icon at the bottom of the side pane.</para>
+  <sect3 id="pluma-file-browser-plugin-browsing">
+    <title>Esplorare i propri file</title>
+    <para>La scheda dei file, inizialmente, mostra i segnalibri del gestore dei file. Per esplorare il contenuto di un oggetto, fare doppio clic su di esso.</para>
+    <para>Per mostrare una cartella superiore, sceglierla dall'elenco a discesa o premere la freccia verso l'alto nella barra degli strumenti del riquadro.</para>
+    <para>Per mostrare la cartella del documento a cui si sta lavorando, fare clic col tasto destro all'interno dell'elenco e scegliere <guimenuitem>Imposta il documento attivo come radice</guimenuitem>.</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-open">
+    <title>Aprire un file</title>
+    <para>Per aprire un file in <application>pluma</application>, fare doppio clic su di esso nell'elenco.</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-create">
+    <title>Creare file e cartelle</title>
+    <para>Per creare un nuovo file nella cartella attuale mostrata nel riquadro, fare clic col tasto destro del mouse nell'elenco dei file e scegliere <guimenuitem>Nuovo file</guimenuitem>.</para>
+    <para>Per creare una nuova cartella nella cartella attuale mostrata nel riquadro, fare clic col tasto destro del mouse nell'elenco e scegliere <guimenuitem>Nuova cartella</guimenuitem>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-indent-lines-plugin">
+<title>Plugin «Applica un rientro alle righe»</title>
+	<para>Il plugin <application>Applica un rientro alle righe</application> aggiunge o rimuove degli spazi all'inizio delle righe di testo.</para>
+	<para>Per applicare o rimuovere un rientro, procedere come segue:</para>
+  	<orderedlist>
+		  <listitem><para>Selezionare le righe a cui si desidera applicare il rientro. Per applicare o rimuovere un rientro su una singola riga, posizionare il cursore all'interno di quella riga.</para>
+		  </listitem>
+		  <listitem>
+		    <itemizedlist>
+		      <listitem>
+		        <para lang="en">To indent the text, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Indent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		      <listitem>
+		        <para lang="en">To remove the indentation, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Unindent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+	<para>La quantità di spazio usato, o l'uso di spazi o caratteri di tabulazione, dipende delle impostazione di <guilabel>Tabulazioni</guilabel> nelle preferenze: consultare <xref linkend="pluma-prefs-editor"/>.</para>
+
+</sect2>
+
+<sect2 id="pluma-insert-date-time-plugin">
+<title>Plugin «Inserisci data e ora»</title>
+	<para>Il plugin <application>Inserisci data e ora</application> permette di inserire la data e l'ora corrente in un documento. Per usare il plugin «Inserisci data e ora», procedere come segue:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>. </para>
+        <para>Se il plugin non è stato configurato per inserire automaticamente la data e l'ora senza richiedere il formato all'utente, <application>pluma</application> visualizza la finestra di dialogo <guilabel>Inserisci data e ora</guilabel>. Selezionare dall'elenco il formato appropriato per la data e l'ora. Fare clic su <guibutton>Inserisci</guibutton> per chiudere la finestra di dialogo <guilabel>Inserisci data e ora</guilabel>;<application>pluma</application> inserisce la data e l'ora nella posizione del cursore.</para>
+				<para>Se <application>pluma</application> è stato configurato per usare un determinato formato per la data e l'ora, la finestra di dialogo <guilabel>Inserisci data e ora</guilabel> non viene visualizzata; la data e l'ora vengono inserite automaticamente nella posizione del cursore.</para>
+		  </listitem>
+		</orderedlist>
+
+<sect3 id="pluma-date-time-configure">
+<title>Configurare il plugin «Inserisci data e ora»</title>
+<para>Per configurare il plugin «Inserisci data e ora», procedere come segue:</para>
+		<orderedlist>
+		  <listitem> <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>.
+                    </para>
+		  </listitem>
+		  <listitem> <para>Selezionare la scheda <guilabel>Plugin</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Selezionare il plugin <guilabel>Inserisci data e ora</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Fare clic su <guibutton>Configura plugin</guibutton> per aprire la finestra di dialogo <guilabel>Configura plugin «Inserisci data e ora»</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Selezionare una delle seguenti opzioni:</para>
+		      <itemizedlist>
+		      <listitem><para>Per specificare il formato da utilizzare ogni volta che si inseriscono la data e l'ora, selezionare l'opzione <guilabel>Chiedere il formato</guilabel>.</para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same <application>pluma</application>-provided date/time format each time you insert the date/time, select the <guilabel>Use the selected format</guilabel> option, then select the appropriate format from the list. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same customized date/time format each time you insert the date/time, select the <guilabel>Use custom format</guilabel> option, then enter the appropriate format in the text box. For more information about how to specify a custom format, see <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem> <para>Fare clic su <guibutton>OK</guibutton> per chiudere la finestra di dialogo <guilabel>Configura plugin «Inserisci data e ora»</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Per chiudere la finestra di dialogo <guilabel>Preferenze</guilabel>, fare clic su <guibutton>Chiudi</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect3>
+</sect2>
+
+<sect2 id="pluma-modelines-plugin">
+  <title>Plugin «Modeline»</title>
+    <para>Il plugin <application>Modeline</application> consente di impostare delle preferenze per ogni documento. Una <firstterm>modeline</firstterm> è una riga di testo all'inizio o alla fine del documento con delle impostazioni riconosciute da <application>pluma</application>.</para>
+    <para>Le preferenze impostate usando le modeline hanno la precedenza su quelle specificate nella finestra di dialogo delle preferenze.</para>
+    <para>È possibile impostare le seguenti preferenze con le modeline:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Larghezza tabulazioni</para>
+      </listitem>
+      <listitem>
+        <para>Larghezza rientro</para>
+      </listitem>
+      <listitem>
+        <para>Inserire spazi al posto di tabulazioni</para>
+      </listitem>
+      <listitem>
+        <para>A capo automatico</para>
+      </listitem>
+      <listitem>
+        <para>Larghezza margine destro</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Il plugin <application>Modeline</application> supporta un sottoinsieme delle opzioni usate da altri editor di testi come <application>Emacs</application>, <application>Kate</application> e <application>Vim</application>.</para>
+
+    <sect3 id="pluma-modelines-plugin-emacs">
+      <title>Modeline Emacs</title>
+      <para>Le prime due righe di un documento vengono analizzate per le modeline di <application>Emacs</application>.</para>
+      <para>Le opzioni di <application>Emacs</application> per la larghezza delle tabulazioni, la modalità di rientro attraverso il tasto tabulatore e l'a capo automatico sono supportate. Per maggiori informazioni, consultare <ulink type="http" url="http://www.delorie.com/gnu/docs/emacs/emacs_486.html">GNU Emacs Manual</ulink>.</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-kate">
+      <title>Modeline Kate</title>
+      <para>Le prime e le ultime dieci righe di un documento sono analizzate per le modeline di <application>Kate</application>.</para>
+      <para>Le opzioni di <application>Kate</application> per la larghezza delle tabulazioni, la larghezza del rientro, il rientro tramite la barra spaziatrice, l'a capo automatico e l'a capo a una colonna sono supportate. Per maggiori informazioni, consultare <ulink type="http" url="http://www.kate-editor.org/article/katepart_modelines">Kate website</ulink>.</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-vim">
+      <title>Modeline Vim</title>
+      <para>Le prime e le ultime tre righe di un documento sono analizzate per le modeline di <application>Vim</application>.</para>
+      <para>Le opzioni di <application>Vim</application> per et, expandtab, ts, tabstop, wrap e textwidth sono supportate. Per maggiori informazioni, consultare il <ulink type="http" url="http://vimdoc.sourceforge.net/htmldoc/options.html#modeline">sito web di Vim</ulink>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-python-console-plugin">
+  <title>Plugin «Console python»</title>
+  <para>Il plugin <application>Console python</application> consente di eseguire comandi con il linguaggio di programmazione Python all'interno di <application>pluma</application>. Abilitando il plugin, viene aggiunta una scheda nel riquadro inferiore. Questa mostra l'ultimo output e un prompt dei comandi.</para>
+  <caution><para>I comandi digitati all'interno della console python non vengono verificati prima dell'esecuzione. È possibile anche bloccare <application>pluma</application> eseguendo un ciclo infinito.</para></caution>
+</sect2>
+
+<sect2 id="pluma-snippets-plugin">
+<title>Plugin «Snippet»</title>
+  <para>Il plugin <application>Snippet</application> consente di memorizzare parti di testo molto usate, <firstterm>snippet</firstterm>, e di inserirle velocemente in un documento.</para>
+    <para>Le snippet sono specifiche del linguaggio del documento attuale. Per esempio, lavorando con un documento HTML, è possibile scegliere alcune snippet utili per l'HTML. Oltre a queste, alcune snippet sono globali e quindi disponibili in tutti i documenti.</para>
+    <para>Alcune snippet sono installate con <application>pluma</application> ed è possibile modificarle.</para>
+
+  <sect3 id="pluma-snippets-plugin-insert">
+    <title>Inserire snippet</title>
+    <para>Per inserire una snippet in un documento, digitare il suo <firstterm>tab trigger</firstterm> e premere <keycap>Tab</keycap>. Un tab trigger è composto solitamente dalle prime lettere della snippet o qualsiasi altra cosa corta e facile da ricordare.</para>
+    <para>In alternativa, premere <keycombo><keycap>Ctrl</keycap><keycap>Spazio</keycap></keycombo> per l'elenco degli snippet da poter inserire.</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-add">
+    <title>Aggiungere snippet</title>
+    <para>Per creare una nuova snippet, procedere come segue:</para>
+      <orderedlist>
+        <listitem>
+          <para>Scegliere <menuchoice><guimenu>Strumenti</guimenu><guimenuitem>Gestione snippet...</guimenuitem></menuchoice> per aprire la finestra <guilabel>Gestione snippet</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>L'elenco delle snippet è raggruppato per linguaggio. Selezionare il linguaggio per cui aggiungere una snippet o una snippet nel gruppo di linguaggi. Per aggiungere una snippet per tutti i linguaggi scegliere «Globale» in alto nell'elenco. Viene mostrata in modo predefinito la sintassi del documento attuale.</para>
+        </listitem>
+        <listitem>
+          <para>Fare clic su <guibutton>Nuovo</guibutton> per creare una nuova snippet nell'elenco.</para>
+        </listitem>
+        <listitem>
+          <para>Inserire le seguenti informazioni per la nuova snippet:</para>
+          <variablelist>
+            <varlistentry><term>Nome</term>
+              <listitem>
+                <para>Inserire un nome per la snippet nel campo di testo all'interno dell'elenco delle snippet. Il nome serve solo come promemoria per lo scopo della snippet. È possibile modificare il nome della snippet creata facendo clic su di esso.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Testo della snippet</term>
+              <listitem>
+                <para>Inserire il testo della snippet nella casella di testo <guilabel>Modifica snippet</guilabel>. Per i codici speciali da poter usare, consultare <xref linkend="pluma-snippets-plugin-syntax"/>.</para>
+                <tip><para>È possibile ritornare alla finestra del documento per copiare il testo senza chiudere la finestra <guilabel>Gestore snippet</guilabel>.</para></tip>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Tab trigger</term>
+              <listitem>
+                <para>Inserire il tab trigger per la snippet. Questo è il testo da digitare prima di premere il tasto <keycap>Tab</keycap> per inserire la snippet.</para>
+                <para>L'etichetta deve essere una sola parola composta di sole lettere o qualsiasi carattere singolo. Il <guilabel>Tab trigger</guilabel> si colora di rosso se viene inserito un tab trigger non valido.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Tasto scorciatoia</term>
+              <listitem>
+                <para>Digitare una scorciatoia per l'inserimento della snippet.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+        </listitem>
+      </orderedlist>
+  </sect3>
+  <sect3 id="pluma-snippets-plugin-edit">
+    <title>Modificare e rimuovere snippet</title>
+    <para>Per modificare una snippet, selezionarla dall'elenco e apportare le modifiche necessarie.</para>
+    <para>Per rinominare una snippet, fare nuovamente clic su di essa nell'elenco.</para>
+    <para>Per ripristinare una snippet integrata, modificata, fare clic su <guilabel>Ripristina</guilabel>.</para>
+    <para>Per rimuovere una snippet, selezionarla dall'elenco e fare clic su <guibutton>Rimuovi</guibutton>. Non è possibile rimuovere una snippet integrata, solamente quelle create personalmente.</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-syntax">
+    <title>Sostituire snippet</title>
+    <para>Oltre ad aggiungere del testo, una snippet può contenere del testo personalizzabile o segnalare degli spazi in cui è possibile inserire del testo una volta inserita la snippet nel documento.</para>
+
+    <para/>
+
+    <para>È possibile utilizzare i seguenti simboli per i segnaposti nel testo della snippet:</para>
+      <variablelist>
+        <varlistentry><term>Segnaposti di tabulazione</term>
+          <listitem>
+            <para><literal>$<replaceable>n</replaceable></literal> definisce un segnaposto di tabulazione, in cui <literal>n</literal> è un numero da 1 in su.</para>
+            <para><literal>${<replaceable>n</replaceable>:<replaceable>default</replaceable>}</literal> definisce un segnaposto di tabulazione con un valore predefinito.</para>
+            <para>Un segnaposto di tabulazione indica una posizione nel testo della snippet in cui è possibile aggiungere dell'altro testo una volta inserita la snippet.</para>
+            <para>Per usare un segnaposto di tabulazione, inserire la snippet normalmente. Il cursore è posizionato al primo segnaposto. Digitare il testo e premere <keycap>Tab</keycap> per avanzare al segnaposto successivo. Il numero nel codice del segnaposto indica l'ordine con cui il tasto tab avanza nel testo.</para>
+            <para>Premere <keycombo><keycap>Maiusc</keycap><keycap>Tab</keycap></keycombo> per tornare al segnaposto precedente. Premendo <keycap>Tab</keycap> quando non ci sono altri segnaposti di tabulazione, il cursore viene spostato alla fine del testo della snippet o, se esiste, al segnaposto di terminazione.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Segnaposti rispecchiati</term>
+          <listitem>
+            <para>Un segnaposto di tabulazione ripetuto, rispecchia (ripete) il segnaposto già definito. Questo consente di digitare il testo da far apparire più volte nella snippet una sola volta.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Segnaposto di terminazione</term>
+          <listitem>
+            <para><literal>$0</literal> definisce il segnaposto di terminazione. Questo consente di terminare il lavoro con la snippet con il cursore in una posizione diversa da quella della terminazione della snippet.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Variabili d'ambiente</term>
+          <listitem>
+            <para>Le variabili d'ambiente come <literal>$PATH</literal> e <literal>$HOME</literal> vengono sostituite all'interno del testo della snippet. Possono essere usate anche le seguenti variabili specifiche di <application>pluma</application>:</para>
+            <variablelist>
+              <varlistentry><term>$PLUMA_SELECTED_TEXT</term>
+                <listitem>
+                  <para>Il testo attualmente selezionato.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_FILENAME</term>
+                <listitem>
+                  <para>Il nome completo del file o una stringa vuota se il documento non è ancora stato salvato.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_BASENAME</term>
+                <listitem>
+                  <para>Il nome del file o una stringa vuota se il documento non è ancora stato salvato.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_CURRENT_WORD</term>
+                <listitem>
+                  <para>La parola alla posizione del cursore. Quando questa variabile è usata, la parola attuale è sostituita con il testo dello snippet.</para>
+                </listitem>
+              </varlistentry>
+
+            </variablelist>
+
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Segnaposti della shell</term>
+          <listitem>
+            <para><literal>$(<replaceable>cmd</replaceable>)</literal> è sostituito dal risultato dell'esecuzione di <replaceable>cmd</replaceable> nella shell.</para>
+            <para><literal>$(<replaceable>n</replaceable>:<replaceable>cmd</replaceable>)</literal> consente di impostare un riferimento a questo segnaposto, in cui <replaceable>n</replaceable> è un qualsiasi numero da 1 in su. Usare <literal>$<replaceable>n</replaceable></literal> per utilizzare l'output di un segnaposto della shell come input per un altro segnaposto.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Segnaposti di python</term>
+          <listitem>
+            <para><literal>$&lt;<replaceable>cmd</replaceable>&gt;</literal> è sostituito dal risultato della valutazione di <replaceable>cmd</replaceable> nell'interprete python.</para>
+            <para><literal>$&lt;<replaceable>a</replaceable>:<replaceable>cmd</replaceable>&gt;</literal> specifica un altro segnalibro python come una dipendenza, dove <replaceable>a</replaceable> indica l'ordine nella snippet. Questo consente di usare funzioni python definite in un'altra snippet. Per specificare molte dipendenze, separare i numeri con delle virgole: <literal>$&lt;<replaceable>a</replaceable>,<replaceable>b</replaceable>:<replaceable>cmd</replaceable>&gt;</literal></para>
+            <para>Per usare una variabile in tutte le altre snippet, dichiararla <literal>global</literal> (globale).</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+  </sect3>
+
+</sect2>
+
+<sect2 id="pluma-sort-plugin">
+<title>Plugin «Ordina»</title>
+	<para>Il plugin <application>Ordina</application> ordina alfabeticamente le righe selezionate in un file.</para>
+		  <caution><para lang="en">You cannot undo the Sort operation, so you should save the file before performing the sort. To revert to the saved version of the file after the sort operation, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Revert</guimenuitem> </menuchoice>.
+				</para>
+		  </caution>
+              <para>Per usare il plugin Ordina, procedere come segue:</para>
+		<orderedlist>
+		  <listitem>
+		    <para>Selezionare le righe di testo da ordinare.</para>
+		  </listitem>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Sort</guimenuitem> </menuchoice>. The <guilabel>Sort</guilabel> dialog opens.
+				</para>
+		  </listitem>
+		  <listitem><para>Scegliere le opzioni per l'ordinamento:</para>
+		    <itemizedlist>
+    		  <listitem>
+    		    <para>Per disporre il testo in ordine inverso, selezionare <guilabel>Ordine invertito</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Per eliminare le righe doppie, selezionare <guilabel>Rimuovere i duplicati</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Per ignorare le differenze tra maiuscole e minuscole, selezionare l'opzione <guilabel>Ignorare maiuscole/minuscole</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Affinché l'operazione di ordinamento ignori il primo carattere della riga, impostare il numero del primo carattere da ordinare attraverso il controllo di selezione <guilabel>Incomincia dalla colonna</guilabel>.</para>
+    		  </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>Per iniziare l'ordinamento, fare clic su <guibutton>Ordina</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-spell-checker-plugin">
+<title>Plugin «Correttore ortografico»</title>
+	<para>Il plugin <application>Correttore ortografico</application> controlla l'ortografia nel testo selezionato. È possibile configurare <application>pluma</application> per il controllo automatico, o manuale, nella lingua specificata. L'impostazione della lingua e le proprietà del controllo automatico, si applicano al singolo documento. Per usare il plugin «Correttore ortografico» procedere come segue:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Set Language</guimenuitem> </menuchoice> to display the <guilabel>Set language</guilabel> dialog. Select the appropriate language from the list. Click <guibutton>OK</guibutton> to close the <guilabel>Set language</guilabel> dialog.
+				</para>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling automatically, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice>. To unset the automatic spell check, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice> again. When automatic spell checking is set, an icon is displayed beside the <guimenuitem>Autocheck Spelling</guimenuitem> menu item. Automatic spell checking is unset by default, each time <application>pluma</application> starts.</para>
+                            <para>Le parole sconosciute sono mostrare in un colore diverso e sottolineate. Fare clic col tasto destro del mouse su una parola sconosciuta, quindi selezionare <guimenu>Suggerimenti ortografici</guimenu> dal menù a comparsa:</para>
+		    <itemizedlist>
+		      <listitem><para>Per sostituire una parola sconosciuta con un'altra presente nell'elenco, selezionare la parola dal menù a comparsa <guimenu>Suggerimenti ortografici</guimenu>.</para>
+		      </listitem>
+		      <listitem><para lang="en">To add the unknown spelling to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Add</guimenuitem> </menuchoice>.
+				</para>
+		      </listitem>
+		      <listitem><para lang="en">To ignore all occurrences of the unknown spelling, so that they are no longer flagged as unknown but are not added to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Ignore All</guimenuitem> </menuchoice>. The unknown word is ignored in the current <application>pluma</application> session only.
+				</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling manually, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Check Spelling</guimenuitem> </menuchoice>.
+				</para>
+				<para>Se non ci sono errori, una finestra di dialogo <guilabel>Informazioni</guilabel> visualizza un messaggio indicante l'assenza di errori. Fare clic su <guibutton>OK</guibutton> per chiudere la finestra di dialogo <guilabel>Informazioni</guilabel>.</para>
+				<para>In caso di errori ortografici, viene mostrata la finestra di dialogo <guilabel>Controllo ortografico</guilabel>:</para>
+		    <itemizedlist>
+		      <listitem><para>La <guilabel>Parola errata</guilabel> è mostrata nella parte alta della finestra di dialogo.</para>
+		      </listitem>
+		      <listitem><para>Una parola conosciuta è mostrata nella casella di testo <guilabel>Sostituisci con</guilabel>. È possibile sostituire questa parola con un'altra selezionandola dall'elenco <guilabel>Suggerimenti</guilabel> oppure è possibile digitare del testo direttamente nella casella di testo <guilabel>Sostituisci con</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Per controllare l'ortografia del testo nella casella di testo <guilabel>Sostituisci con</guilabel>, fare clic su <guibutton>Controlla parola</guibutton>. Se è una parola conosciuta, l'elenco <guilabel>Suggerimenti</guilabel> è sostituito con la scritta <literal>(ortografia corretta)</literal>. Se la parola non è conosciuta, vengono visualizzate delle nuove voci sotto <guilabel>Suggerimenti</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Per ignorare l'occorrenza attuale della parola sconosciuta, fare clic su <guibutton>Ignora</guibutton>. Per ignorare tutte le occorrenze, fare clic su <guibutton>Ignora tutto</guibutton>. La parola sconosciuta viene ignorata nella sessione attuale di <application>pluma</application>.</para>
+		      </listitem>
+		      <listitem><para>Per cambiare l'occorrenza della parola sconosciuta con il testo presente nella casella di testo <guilabel>Sostituisci con</guilabel>, fare clic su <guibutton>Modifica</guibutton>. Per cambiare tutte le occorrenze della parola sconosciuta, fare clic su <guibutton>Modifica tutto</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Per aggiungere la parola sconosciuta al proprio dizionario, fare clic su <guibutton>Aggiungi parola</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Per chiudere la finestra di dialogo <guilabel>Controllo ortografico</guilabel>, fare clic su <guibutton>Chiudi</guibutton>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-tag-list-plugin">
+<title>Plugin «Elenco tag»</title>
+	<para>Il plugin <application>Elenco tag</application> consente di inserire, da un elenco nel riquadro laterale, dei tag comuni.</para>
+  <para>Per usare il plugin «Elenco tag», procedere come segue:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice>.
+				</para>
+		  </listitem>
+		  <listitem>
+		    <para>In modo predefinito, il riquadro laterale mostra una scheda contenente un elenco di documenti aperti. Per visualizzare la scheda dell'elenco dei tag, fare clic sulla scheda indicante il segno più («+») in basso nel riquadro laterale.</para>
+		  </listitem>
+		  <listitem><para>Selezionare la categoria di tag appropriata dall'elenco a discesa; per esempio <literal>HTML - Tag</literal>.</para>
+		  </listitem>
+		  <listitem><para>Se necessario, scorrere l'elenco per cercare il tag richiesto.</para>
+		  </listitem>
+		  <listitem><para>Per inserire un tag nella posizione del cursore nel file corrente, fare doppio clic sul tag nell'elenco. È anche possibile procedere come segue:</para>
+		    <itemizedlist>
+		      <listitem><para>Per inserire un tag nel file corrente e spostare il focus dal riquadro laterale all'area di visualizzazione, premere <keycap>Invio</keycap>.</para>
+		      </listitem>
+		      <listitem><para>Per inserire un tag nel file corrente e mantenere il punto attivo nella finestra <guilabel>Plugin Elenco tag</guilabel>, premere <keycombo><keycap>Maiusc</keycap><keycap>Invio</keycap></keycombo>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

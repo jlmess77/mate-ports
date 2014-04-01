@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>pluma Reference Manual: PlumaPlugin</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="pluma Reference Manual">
+<link rel="up" href="ch01.html" title="pluma">
+<link rel="prev" href="pluma-pluma-panel.html" title="PlumaPanel">
+<link rel="next" href="pluma-pluma-print-job-preview.html" title="PlumaPrintJobPreview">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#PlumaPlugin.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#PlumaPlugin.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties"> <span class="dim">|</span> 
+                  <a href="#PlumaPlugin.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="pluma-pluma-panel.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="pluma-pluma-print-job-preview.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="PlumaPlugin"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="PlumaPlugin.top_of_page"></a>PlumaPlugin</span></h2>
+<p>PlumaPlugin</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="PlumaPlugin.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaPlugin.html#pluma-plugin-activate" title="pluma_plugin_activate ()">pluma_plugin_activate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaPlugin.html#pluma-plugin-deactivate" title="pluma_plugin_deactivate ()">pluma_plugin_deactivate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaPlugin.html#pluma-plugin-update-ui" title="pluma_plugin_update_ui ()">pluma_plugin_update_ui</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaPlugin.html#pluma-plugin-is-configurable" title="pluma_plugin_is_configurable ()">pluma_plugin_is_configurable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaPlugin.html#pluma-plugin-create-configure-dialog" title="pluma_plugin_create_configure_dialog ()">pluma_plugin_create_configure_dialog</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="PlumaPlugin.html#PLUMA-PLUGIN-REGISTER-TYPE:CAPS" title="PLUMA_PLUGIN_REGISTER_TYPE()">PLUMA_PLUGIN_REGISTER_TYPE</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PlumaPlugin.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="PlumaPlugin.html#PlumaPlugin--data-dir" title="The “data-dir” property">data-dir</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="PlumaPlugin.html#PlumaPlugin--data-dir-name" title="The “data-dir-name” property">data-dir-name</a></td>
+<td class="property_flags">Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="PlumaPlugin.html#PlumaPlugin--install-dir" title="The “install-dir” property">install-dir</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PlumaPlugin.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="PlumaPlugin.html#PlumaPlugin-struct" title="struct PlumaPlugin">PlumaPlugin</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PlumaPlugin.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> PlumaPlugin
+</pre>
+</div>
+<div class="refsect1">
+<a name="PlumaPlugin.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="PlumaPlugin.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="pluma-plugin-activate"></a><h3>pluma_plugin_activate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_plugin_activate (<em class="parameter"><code><a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a> *plugin</code></em>,
+                       <em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Activates the plugin.</p>
+<div class="refsect3">
+<a name="id-1.2.11.8.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>a <a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-plugin-deactivate"></a><h3>pluma_plugin_deactivate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_plugin_deactivate (<em class="parameter"><code><a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a> *plugin</code></em>,
+                         <em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Deactivates the plugin.</p>
+<div class="refsect3">
+<a name="id-1.2.11.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>a <a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-plugin-update-ui"></a><h3>pluma_plugin_update_ui ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_plugin_update_ui (<em class="parameter"><code><a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a> *plugin</code></em>,
+                        <em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Triggers an update of the user interface to take into account state changes
+caused by the plugin.</p>
+<div class="refsect3">
+<a name="id-1.2.11.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>a <a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-plugin-is-configurable"></a><h3>pluma_plugin_is_configurable ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+pluma_plugin_is_configurable (<em class="parameter"><code><a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a> *plugin</code></em>);</pre>
+<p>Whether the plugin is configurable.</p>
+<div class="refsect3">
+<a name="id-1.2.11.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>a <a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.11.8.5.6"></a><h4>Returns</h4>
+<p> TRUE if the plugin is configurable:</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-plugin-create-configure-dialog"></a><h3>pluma_plugin_create_configure_dialog ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+pluma_plugin_create_configure_dialog (<em class="parameter"><code><a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a> *plugin</code></em>);</pre>
+<p>Creates the configure dialog widget for the plugin.</p>
+<div class="refsect3">
+<a name="id-1.2.11.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plugin</p></td>
+<td class="parameter_description"><p>a <a class="link" href="PlumaPlugin.html" title="PlumaPlugin"><span class="type">PlumaPlugin</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.11.8.6.6"></a><h4>Returns</h4>
+<p> the configure dialog widget for the plugin.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PLUMA-PLUGIN-REGISTER-TYPE:CAPS"></a><h3>PLUMA_PLUGIN_REGISTER_TYPE()</h3>
+<pre class="programlisting">#define             PLUMA_PLUGIN_REGISTER_TYPE(PluginName, plugin_name)</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="PlumaPlugin.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="PlumaPlugin-struct"></a><h3>struct PlumaPlugin</h3>
+<pre class="programlisting">struct PlumaPlugin;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="PlumaPlugin.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="PlumaPlugin--data-dir"></a><h3>The <code class="literal">“data-dir”</code> property</h3>
+<pre class="programlisting">  “data-dir”                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The full path of the directory where the plugin should look for its data files.</p>
+<p>Flags: Read</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PlumaPlugin--data-dir-name"></a><h3>The <code class="literal">“data-dir-name”</code> property</h3>
+<pre class="programlisting">  “data-dir-name”            <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The basename of the directory where the plugin should look for its data files.</p>
+<p>Flags: Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PlumaPlugin--install-dir"></a><h3>The <code class="literal">“install-dir”</code> property</h3>
+<pre class="programlisting">  “install-dir”              <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The directory where the plugin is installed.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

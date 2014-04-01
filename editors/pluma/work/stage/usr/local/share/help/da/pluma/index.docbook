@@ -1,0 +1,1919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.16">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "July 2006">
+<!ENTITY app "pluma">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.MATE.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Manual til pluma</title>
+	 <copyright lang="en">
+		<year>2007</year>
+		<holder>MATE Documentation Project</holder> </copyright>
+	 <copyright lang="en">
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright lang="en">
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher role="maintainer">
+		<publishername>MATE-dokumentationsprojektet</publishername>
+	 </publisher>
+
+	 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+	 <authorgroup>
+           <author lang="en">
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author lang="en">
+		  <firstname>MATE Documentation Project</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>MATE</orgname>
+		  </affiliation>
+		</author>
+		<author lang="en">
+			<firstname>Hal</firstname>
+			<surname>Canary</surname>
+			<contrib>Added the Shortcut Keys Table</contrib>
+		</author>
+		<author lang="en">
+		  <firstname>Sun Java Desktop System Documentation Team</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author lang="en">
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>MATE Documentation Project</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Baris</firstname>
+			<surname>Cicek provided information from earlier revisions of the pluma application.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Ajit</firstname>
+			<surname>George provided information about plugins.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision lang="en">
+		  <revnumber>pluma V1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author" lang="en">Eric Baudais <email>baudais@okstate.edu</email>
+				</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.0</revnumber>
+		  <date>March 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.1</revnumber>
+		  <date>June 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.2</revnumber>
+		  <date>August 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.3</revnumber>
+		  <date>September 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.4</revnumber>
+		  <date>January 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.5</revnumber>
+		  <date>March 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.6</revnumber>
+		  <date>September 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.7</revnumber>
+		  <date>March 2004</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   	<revision lang="en">
+		  <revnumber>pluma Manual V2.8</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun Java Desktop System Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   		<revision lang="en">
+		  <revnumber>pluma Manual V2.9</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">MATE Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo>Denne manual beskriver version 2.16 af pluma.</releaseinfo>
+	 <legalnotice>
+		<title>Feedback</title>
+		<para>For at rapportere fejl eller foreslå forbedringer vedrørende programmet <application>pluma</application> eller denne manual, bør du følge instruktionerne på <ulink url="help:user-guide?feedback-bugs" type="help">MATE-Feedbacksiden</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para>pluma er et tekstredigeringsprogram for MATE-skrivebordet med basal men robust funktionalitet såsom udskrivning, stavekontrol, søg og erstat og synteksfremhævning. Mere avanceret funktionalitet er tilgængelig i form af udvidelsesmoduler.</para>
+    </abstract>
+  </articleinfo>
+  <indexterm lang="en"><primary>pluma</primary></indexterm>
+  <indexterm lang="en"><primary>text editor</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="pluma-intro">
+	 <title>Introduktion</title>
+
+   <!-- removed ids, here as anchors to prevent possible breakage -->
+	 <anchor id="pluma-customize-toolbar"/>
+
+	 <para>Programmet <application>pluma</application> gør dig i stand til at oprette og redigere i tekstfiler.</para>
+
+	 <para>Målet med <application>pluma</application> er, at det skal være et simpelt tekstredigeringsprogram, som er let at bruge. Mere avancerede funktioner kan aktiveres ved hjælp af diverse <firstterm>udvidelsesmoduler</firstterm>, som kan give programmet mange nye tekstredigeringsrelaterede funktioner.</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="pluma-getting-started">
+	 <title>Kom godt i gang</title>
+
+<!-- ============= To Start pluma ============================ -->
+	 <sect2 id="pluma-to-start">
+		<title>Opstart af pluma</title>
+		<para>Du kan starte <application>pluma</application> på følgende måder:</para>
+		<variablelist>
+    		<varlistentry>
+    		<term>Menuen <guimenu>Programmer</guimenu></term>
+    		<listitem>
+    		<para>Vælg <menuchoice><guisubmenu>Tilbehør</guisubmenu><guimenuitem>Tekstredigering</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>Kommandolinje</term>
+    		<listitem>
+    		<para>Udfør den følgende kommando: <command>pluma</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <para>Som standard, når du åbner et tekstdokument, vil pluma starte op og vise dokumentets indhold.</para>
+	</sect2>
+
+	<sect2 id="pluma-when-you-start">
+
+		<title>pluma-vinduet</title>
+		<para>Når du starter <application>pluma</application>, vil det følgende vindue blive vist:</para>
+
+		<figure id="pluma-window">
+		  <title>pluma-vindue</title>
+		  <screenshot>
+			 <mediaobject lang="en">
+				<imageobject>
+				  <imagedata fileref="figures/pluma_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Shows pluma main window.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para><application>pluma</application>-vinduet indeholder følgende elementer:</para>
+		<variablelist>
+		  <varlistentry> <term>Menulinje</term>
+			 <listitem>
+				<para>Menuerne på menulinjen indeholder alle de kommandoer du behøver for at kunne arbejde med filer i <application>pluma</application>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Værktøjslinje</term>
+			 <listitem>
+				<para>Værktøjslinjen indeholder et udvalg af de kommandoer du kan finde i menulinjen.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Visningsområde</term>
+			 <listitem>
+				<para>Visningsområdet indeholder teksten fra den fil, som du redigerer.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Statuslinje</term>
+			 <listitem>
+				<para>Statuslinjen viser information om nuværende aktivitet i <application>pluma</application> samt kontekstuel information om menuobjekterne. Statuslinjen viser også den følgende information:</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>Markørplacering: linje- og kolonnenummeret hvor markøren i øjeblikket befinder sig.</para>
+		  </listitem>
+		  <listitem>
+		  <para>Redigeringstilstand: Hvis programmet er i indsæt-tilstand (skubber bogstaver til højre for markøren hvis du indtaster nye bogstaver), indeholder statuslinjen teksten <guilabel>INS</guilabel>. Hvis programmet er i overskriv-tilstand (overskriver bogstaver til højre for markøren hvis du indtaster nye bogstaver), indeholder statuslinjen teksten <guilabel>OVR</guilabel>. Tryk på <keycap>Insert</keycap> på dit tastatur for at ændre redigeringstilstand.</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Sidepanel</term>
+			 <listitem>
+				<para>Sidepanelet viser en liste over åbne dokumenter samt anden information afhængigt af hvilke udvidelsesmoduler der er aktiveret.</para>
+				<para>Sidepanelet vises ikke som standard. For at vise det skal du vælge <menuchoice><guimenu>Vis</guimenu><guimenuitem>Sidepanel</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Bundpanel</term>
+			 <listitem>
+				<para>Bundpanelet bruges af programmeringsværktøjer, som f.eks. udvidelsesmodulet <application>Python-konsol</application> til at vise output.</para>
+				<para>Bundpanelet vises ikke som standard. For at vise det skal du vælge <menuchoice><guimenu>Vis</guimenu><guimenuitem>Bundpanel</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Når du højreklikker i <application>pluma</application>-vinduet, viser programmet en popup-menu. Popup-menuen indeholder de oftest brugte tekstredigeringskommandoer.</para>
+
+		<para>Ligesom i andre MATE-programmer kan handlinger i <application>pluma</application> udføres på flere forskellige måder: med menuen, med værktøjslinjen eller med genvejstasterne. Genvejstaster, som er generelle for alle programmer, er vist i <ulink type="help" url="help:user-guide?shortcuts-apps">brugervejledningen</ulink>.</para>
+	 </sect2>
+
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="pluma-run-from-cmd-line">
+		<title>Opstart af pluma fra en kommandolinje</title>
+		<para>Du kan køre <application>pluma</application> fra en kommandolinje og åbne en enkelt eller flere filer. For at åbne flere filer fra en kommandolinje skal du skrive den følgende kommando og afslutte med et tryk på <keycap>Enter</keycap>:</para>
+		<para lang="en"><command>pluma <replaceable>file1.txt file2.txt file3.txt</replaceable></command></para>
+		<para>Alternativt kan du angive en URI i stedet for et filnavn.</para>
+    <para>For yderligere information om hvordan du kører <application>pluma</application> fra en kommandolinje, se programmets unix-manual, <ulink url="man:pluma" type="man"><citerefentry><refentrytitle>pluma</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="pluma-usage">
+	 <title>Arbejde med filer</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="pluma-create-new-file">
+		<title>Opret et nyt dokument</title>
+		<para>For at oprette et nyt dokument skal du vælge <menuchoice><guimenu>Fil</guimenu><guimenuitem>Ny</guimenuitem></menuchoice>. Programmet viser et nyt, tomt dokument i <application>pluma</application>-vinduet.</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="pluma-open-file">
+		<title>Åbn en fil</title>
+		<para>Hvis du vil åbne en eksisterende fil skal du vælge <menuchoice><guimenu>Fil</guimenu><guimenuitem>Åbn...</guimenuitem></menuchoice> for at vise dialogen <guilabel>Åbn filer</guilabel>. Vælg den fil som du ønsker at åbne og klik derefter på <guibutton>Åbn</guibutton>. Filen vises herefter i <application>pluma</application>-vinduet.</para>
+
+		<para lang="en">The application records the paths and filenames of the five most recent files that you edited and displays the files as menu items on the <menuchoice><guimenu>File</guimenu></menuchoice> menu. You can also click on the <inlinemediaobject><imageobject><imagedata fileref="figures/pluma_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>Shows Recent Files menu icon.</phrase></textobject></inlinemediaobject>  icon on the toolbar to display the list of recent files.  </para>
+
+		<note><para>Du kan åbne flere filer i <application>pluma</application>. Programmet tilføjer et ekstra faneblad i vinduet for hver åben fil. Se <xref linkend="pluma-tabs"/> for yderligere information.</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="pluma-save-file">
+		<title>Gem en fil</title>
+		<para>Du kan gemme filer på følgende måder:</para>
+		<itemizedlist>
+		  <listitem><para>For at gemme ændringer i en eksisterende fil skal du vælge <menuchoice><guimenu>Fil</guimenu><guimenuitem>Gem</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To save a new file or to save an existing file under a new filename, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save As</guimenuitem> </menuchoice>. Enter a name for the file in the <guilabel>Save As</guilabel> dialog, then click <guibutton>Save</guibutton>. </para>
+		  </listitem>
+		  <listitem><para lang="en">To save all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Save All</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para lang="en">To close all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Close All</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="pluma-open-from-uri">
+		<title>Åbn en fil fra en URI</title>
+		<para>For at åbne en fil fra en Uniform Resource Identifier (URI) skal du gøre følgende:</para>
+		<orderedlist>
+		<listitem>
+		<para lang="en">Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Open Location</guimenuitem> </menuchoice> to display the <guilabel>Open Location</guilabel> dialog. </para>
+		</listitem>
+		<listitem>
+		<para>Skriv URI'en på den fil som du vil åbne.</para>
+		</listitem>
+		<listitem>
+		<para>Brug rullemenuen <guilabel>Tegnkodning</guilabel> til at vælge den korrekte tegnkodning.</para>
+		</listitem>
+		<listitem>
+		<para>Klik <guibutton>Åbn</guibutton>.</para>
+		</listitem>
+		</orderedlist>
+		<para>Gyldige typer af <replaceable>URI</replaceable> omfatter <literal>http:</literal>, <literal>ftp:</literal>, <literal>file:</literal>, samt alle metoder som understøttes af <literal>mate-vfs</literal>.</para>
+		<para>Filer fra visse typer af URI åbnes som skrivebeskyttede, og alle ændringer du foretager skal gemmes i en anden placering. HTTP tillader dig kun at læse filer. Filer åbnet fra FTP kan også kun læses, fordi ikke alle FTP-servere kan gemme fjernfiler.</para>
+		<warning><para>At gemme til FTP-servere kan aktiveres med <ulink type="help" url="help:mateconf-editor"><application>Konfigurationsredigering</application></ulink> ved at sætte nøglen <systemitem>/apps/pluma/preferences/editor/save/writable_vfs_schemes</systemitem>, men dette kan give fejlmeddelelser.</para></warning>
+	 </sect2>
+
+<!-- ============= Working with tabs ======================== -->
+	 <sect2 id="pluma-tabs">
+	   <title>Arbejde med faneblade</title>
+
+		 <para>Når du har mere end en fil åben, viser <application>pluma</application> et <firstterm>faneblad</firstterm> for hvert dokument over visningsområdet. For at skifte til et andet dokument skal du blot klikke på dets faneblad.</para>
+		 <para>For at flytte et dokument til et andet <application>pluma</application>-vindue skal du trække filens faneblad til det vindue du vil flytte den til.</para>
+		 <para lang="en">To move a document to a new <application> pluma</application> window, either drag its tab to the desktop, or choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Move to New Window</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>Arbejd med tekst</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="pluma-edit-text">
+		<title>Redigér i tekst</title>
+		<para>Du kan redigere teksten i en fil på følgende måder:</para>
+		<itemizedlist>
+		  <listitem><para>Skriv ny tekst fra tastaturet. Den blinkende <firstterm>indsætningsmarkør</firstterm> markerer det punkt hvor den nye tekst vil fremkomme. Brug piletasterne på tastaturet, eller klik med musen, for at ændre dette.</para>
+		  </listitem>
+		  <listitem><para lang="en">To copy the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To delete the selected text from the file and move the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To permanently delete the selected text from the file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Delete</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To insert the contents of the clipboard at the cursor position, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem> </menuchoice>. You must cut or copy text before you can paste text into the file, either from pluma or another application.</para>
+		  </listitem>
+		  <listitem><para lang="en">To select all of the text in a file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem> </menuchoice>. </para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="pluma-undo-redo-edits">
+		<title>Fortryd og gentag ændringer</title>
+		<para lang="en">To undo a change you have made, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem> </menuchoice>. To reverse this action, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	</sect1>
+	<sect1 id="pluma-find">
+		<title>Find og erstat</title>
+
+		<para>I <application>pluma</application> er der to måder at kunne søge efter tekst på. Du kan bruge dialogen <guilabel>Find</guilabel> til at søge efter et specifikt stykke tekst, eller <guilabel>Løbende søgning...</guilabel> til at fremhæve matchende tekst efterhånden som du skriver den.</para>
+
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="pluma-find-text">
+		<title>Find specifik tekst</title>
+		<para>For at søge i en fil efter et specifikt stykke tekst skal du gøre følgende:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice> to display the <guilabel>Find</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Skriv det tekststykke, som du ønsker at finde, i <guilabel>Søg efter</guilabel>-feltet. Din søgning kan godt indeholde specielle tegn såsom en ny linje eller indryk: se <xref linkend="pluma-find-escapes"/>.</para>
+		  </listitem>
+		  <listitem><para>Klik <guibutton>Find</guibutton> for at søge i filen efter første sted efter den nuværende markørposition hvor den ønskede tekst figurerer. Hvis <application>pluma</application> finder teksten, vælger programmet det første sted hvor teksten forekommer. Andre forekomster af teksten fremhæves.</para>
+		  </listitem>
+		  <listitem><para lang="en">To find the next occurrence of the string, click <guibutton>Find</guibutton> or choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice>. To find the previous occurrence of the text, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</orderedlist>
+		<para lang="en">After you have closed the <guilabel>Find</guilabel> dialog, you can still move the selection to other occurrences of the text by choosing  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice> and  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		<para lang="en">To remove the highlighting from the text, choose  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Clear Highlight</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	 <sect2 id="pluma-find-incremental">
+	   <title>Løbende søgning</title>
+
+	   <para>Løbende søgning fremhæver løbende matchende tekst i dokumentet samtidigt med at du skriver teksten ind bogstav for bogstav. (Dette ligner meget søgefunktionen i flere webbrowsere.)</para>
+	   <para lang="en">To start an incremental search, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Incremental Search</guimenuitem> </menuchoice>. The search box appears at the top of the display area. </para>
+	   <para>Begynd at skrive, og teksten som matcher vil blive fremhævet i dokumentet. Den første forekomst efter markørens placering markeres også.</para>
+	   <para>For at lade markeringen gå videre til næste match, samtidig med at du holder søgeboksen åben, skal du trykke <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>. Tryk <keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>G</keycap></keycombo> for at gå tilbage til den forrige match.</para>
+	   <tip><para>Du kan også bruge piletasterne op og ned, eller musehjulet, til at flytte markeringen mellem fundne tekststrenge der matcher.</para></tip>
+	 </sect2>
+
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="pluma-find-replace-text">
+		<title>Erstat tekst</title>
+
+		<para>For at søge i en fil efter en tekststreng, og erstatte denne streng med en alternativ streng, skal du gøre følgende:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Replace</guimenuitem> </menuchoice> to display the <guilabel>Replace</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Indtast den tekststreng, som du ønsker at finde, i <guilabel>Søg efter</guilabel>-feltet. Du kan godt bruge specielle tegn såsom ny linje eller indryk: se <xref linkend="pluma-find-escapes"/>.</para></listitem>
+		  <listitem><para>Skriv den tekststreng, som du ønsker at erstatte den gamle tekststreng med, i <guilabel>Erstat med</guilabel>-feltet.</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>For at undersøge hver enkelt forekomst af tekststrengen før du erstatter den skal du klikke på <guibutton>Find</guibutton>. Hvis <application>pluma</application> finder teksten markerer programmet den automatisk. Klik på <guibutton>Erstat</guibutton> for at erstatte den markerede forekomst af tekststrengen. For at finde den næste forekomst klikker du blot <guibutton>Find</guibutton> igen.</para>
+		<para>Hvis du vil erstatte alle forekomster af tekststrengen i hele dokumentet, skal du klikke på <guibutton>Erstat alle</guibutton>.</para>
+	 </sect2>
+
+<!-- ============= Find and Replace Options ============================ -->
+  <sect2 id="pluma-find-options">
+		<title>Indstillinger for Find og Erstat</title>
+		<para>Dialogen <guilabel>Find</guilabel> og dialogen <guilabel>Erstat</guilabel> har begge følgende indstillingsmuligheder:</para>
+		<itemizedlist>
+		  <listitem><para>Vælg <guilabel>Forskel på små/store bogstaver</guilabel> for kun at finde forekomster af tekststrengen, som har de korrekte små/store bogstaver. For eksempel vil "TEKST" ikke være det samme som "tekst", hvis du har valgt <guilabel>Forskel på små/store bogstaver</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Vælg <guilabel>Søg kun efter hele ord</guilabel> for kun at finde forekomster af strengen, som passer til de fuldstændige ord i den tekst du skriver. For eksempel vil "tekst" ikke matche "tekstiler" hvis du har valgt <guilabel>Søg kun efter hele ord</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Vælg <guilabel>Søg bagud</guilabel> for at søge baglæns mod begyndelsen af dokumentet.</para>
+		  </listitem>
+		  <listitem><para>Vælg <guilabel>Begynd forfra ved slut</guilabel> for at søge frem til slutningen af dokumentet, og derefter fortsætte søgningen fra den anden ende af filen.</para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+
+<!-- ============= Special Characters ============================ -->
+	 <sect2 id="pluma-find-escapes">
+	   <title>Specielle tegn</title>
+	     <para>Du kan inkludere de følgende sekvenser i teksten, der skal findes eller erstattes, til at repræsentere specielle tegn:</para>
+			 <variablelist>
+        <varlistentry>
+          <term lang="en"><literal>\n</literal></term>
+    				<listitem>
+              <para>Indikerer en ny linje (line feed).</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\t</literal></term>
+    				<listitem>
+              <para>Indikerer et indtryk.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\r</literal></term>
+    				<listitem>
+              <para>Indikerer en ny linje (carriage return).</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\\</literal></term>
+    				<listitem>
+              <para>Tegnet omvendt skråstreg skal anvendes i sammenhæng med en undvigesekvens, hvis der skal søges efter det. Hvis du for eksempel søger efter strengen "<literal>\n</literal>", skal du skrive "\\n" i <guilabel>Søg efter</guilabel>-feltet. Hvis du søger efter en følge af omvendte skråstreger, skal antallet af disse fordobles i søgestrengen.</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+    <sect2 id="pluma-goto-line">
+      <title>Placering af markøren på en bestemt linje</title>
+
+      <para lang="en">To position the cursor on a specific line in the current file, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Go to Line</guimenuitem> </menuchoice>. The line number box appears at the top of the display area.</para>
+      <para>Begynd at skrive nummeret på den linje som du ønsker at flytte markøren til, og dokumentet vil rulle op/ned til den angivne linje.</para>
+      <para>For at fjerne boksen og flytte markøren til den angivne linje, skal du trykke på <keycap>Enter</keycap>.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-printing">
+    <title>Udskrivning</title>
+
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="pluma-page-setup">
+		<title>Indstilling af sideopsætning</title>
+
+		<para lang="en">To set the page options, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Page Setup</guimenuitem> </menuchoice> to display the <guilabel>Page Setup</guilabel> dialog.</para>
+
+		<para>Dialogen <guilabel>Sideopsætning</guilabel> giver dig mulighed for at angive de følgende udskriftsindstillinger:</para>
+
+		<sect3 id="pluma-page-setup-general">
+		<title>Fanebladet Generelt</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Print syntax highlighting</guilabel> </term>
+			 <listitem>
+				<para>Vælg denne mulighed for at udskrive syntaksfremhævning. Se <xref linkend="pluma-set-highlightmode"/> for yderligere information.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Print page headers</guilabel> </term>
+			 <listitem>
+				<para>Vælg denne mulighed for at inkludere et sidehoved på hver side, som du udskriver. Du kan ikke konfigurere sidehovedet.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line Numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Vælg <guilabel>Udskriv linjenumre</guilabel> for at inkludere linjenumre når du udskriver en fil.</para>
+				<para>Brug <guilabel>Nummerér hver ... linjer </guilabel>-boksen til at angive hvor ofte linjenumrene skal udskrives, for eksempel hver 5. linje, hver 10. linje osv.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+			 <listitem>
+                            <para>Vælg <guilabel>Aktivér tekstombrydning</guilabel> for at ombryde tekst til næste linje, bogstav-for-bogstav, når du udskriver en fil. Hvis dette er aktiveret vil ord, når de ikke kan være på en linje, blive delt mellem linjen og den næste linje. Programmet opfatter ombrudte linjer som en linje i forbindelse med linjenummerering.</para>
+				<para>Vælg <guilabel>Del ikke ord over to linjer</guilabel> for at ombryde tekst mellem linjer ord-for-ord, når du udskriver en fil. Hvis dette er aktiveret, vil et ord ikke blive delt mellem to linjer - i stedet vil hele ordet blive flyttet til den næste linje.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="pluma-page-setup-fonts">
+	 		<title>Skrifttyper</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Body</guilabel> </term>
+			 <listitem>
+				<para>Klik på denne knap for at vælge skrifttype til udskrift af brødteksten i en fil.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Klik på denne knap for at vælge skrifttype til udskrift af linjenumre.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Headers and footers</guilabel> </term>
+			 <listitem>
+				<para>Klik på denne knap for at vælge skrifttype til udskrift af sidehoveder og sidefødder i en fil.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>For at gendanne standardskrifttyperne for udskrifter i <application>pluma</application> skal du klikke på <guibutton>Gendan standardskrifttyper</guibutton>.</para>
+		</sect3>
+
+	 </sect2>
+
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="pluma-print-file">
+		<title>Udskriv et dokument</title>
+		<para>Du kan bruge <application>pluma</application> til at udføre følgende udskrivningsfunktioner:</para>
+		<itemizedlist>
+		  <listitem><para>Udskriv et dokument til en printer.</para>
+		  </listitem>
+		  <listitem><para>Udskriv output fra udskrivningskommandoen til en fil.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>Hvis du udskriver til en fil vil <application>pluma</application> sende filens output til en præ-pres-formatfil. De mest brugte præ-pres-formater er PostScript og Portable Document Format (PDF).</para>
+
+		<para lang="en">To preview the pages that you want to print, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print Preview</guimenuitem> </menuchoice>.</para>
+
+		<para lang="en">To print the current file to a printer or a file, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice> to display the <guilabel>Print</guilabel> dialog.</para>
+
+		<para>Dialogen <guilabel>Udskriv</guilabel> gør dig i stand til at angive følgende udskrivningsindstillinger:</para>
+
+		<sect3 id="print-dialog-job">
+		<title>Fanebladet Job</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Print range</guilabel> </term>
+			 <listitem>
+				<para>Vælg en af de følgende muligheder for at bestemme, hvor mange sider der skal udskrives:</para>
+				<itemizedlist>
+				<listitem>
+				<para lang="en"><guilabel>All</guilabel></para>
+				<para>Vælg denne mulighed for at udskrive alle filens sider.</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Lines</guilabel></para>
+				<para>Vælg denne mulighed for kun at udskrive de angivne linjer. Brug rulleknapperne <guilabel>Fra</guilabel> og <guilabel>Til</guilabel> for at angive, hvilket område der skal udskrives.</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Selection</guilabel></para>
+				<para>Vælg denne mulighed for kun at udskrive den markerede tekst. Denne mulighed er kun tilgængelig hvis du har markeret tekst.</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Copies</guilabel> </term>
+			 <listitem>
+				<para>Brug rulleknappen <guilabel>Antal kopier</guilabel> til at angive antallet af kopier du ønsker af udskriften af filen.</para>
+				<para>Hvis du udskriver flere kopier af filen, kan du vælge <guilabel>Ordn</guilabel> for at ordne de udskrevne kopier.</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>Fanebladet Printer</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Printer</guilabel> </term>
+	    <listitem>
+	      <para>Brug denne rullegardinsliste til at vælge den printer, som du ønsker skal udskrive filen.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Settings</guilabel> </term>
+	    <listitem>
+	      <para>Brug denne rullegardinsliste til at vælge printerindstillinger.</para>
+	      <para>For at konfigurere printeren skal du klikke på <guibutton>Konfigurér</guibutton>. For eksempel kan du aktivere eller deaktivere duplex-udskrift, eller planlægge forsinket udskrift, hvis denne funktionalitet understøttes af printeren.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Location</guilabel> </term>
+	    <listitem>
+	      <para>Brug denne rullegardinsliste til at vælge en af de følgende udskrivningsdestinationer:</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>Udskriv filen til en CUPS-printer.</para>
+	            <note>
+	              <para>Hvis den valgte printer er en CUPS-printer, er <guilabel>CUPS</guilabel> den eneste mulighed i denne rullegardinsliste.</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>Udskriv filen til en printer.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>Udskriv filen til en PostScript-fil.</para>
+	            <para>Klik på <guibutton>Gem som</guibutton> for at vise en dialog, hvor du angiver navn og placering til PostScript-filen.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>Brug den angivne kommando til at udskrive filen.</para>
+	            <para>Indtast navnet på kommandoen i tekstboksen. Inkludér alle kommandolinjeargumenter.</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>State</guilabel> </term>
+	    <listitem>
+	      <para>Denne funktionalitet understøttes ikke i denne version af pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Type</guilabel> </term>
+	    <listitem>
+	      <para>Denne funktionalitet understøttes ikke i denne version af pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Comment</guilabel> </term>
+	    <listitem>
+	      <para>Denne funktionalitet understøttes ikke i denne version af pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>Fanebladet Papir</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Paper size</guilabel> </term>
+			 <listitem>
+				<para>Brug denne rullegardinsliste til at vælge størrelse på det papir, som du ønsker filen udskrevet på.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Width</guilabel> </term>
+			 <listitem>
+				<para>Brug denne rulleknap til at angive papirbredden. Brug rullegardinslisten ved siden af til at ændre måleenhed.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Height</guilabel> </term>
+			 <listitem>
+				<para>Brug denne rulleknap til at angive papirhøjden.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Feed orientation</guilabel> </term>
+			 <listitem>
+				<para>Brug denne rullegardinsmenu til at vælge orienteringen af det papir som er i printeren.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Page orientation</guilabel> </term>
+			 <listitem>
+				<para>Brug denne rullegardinsliste til at vælge sideorientering.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Layout</guilabel> </term>
+			 <listitem>
+				<para>Brug denne rullegardinsliste til at vælge sidelayout. En forhåndsvisning af hvert layout, du vælger, vises i <guilabel>Eksempel</guilabel>-området.</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term lang="en"><guilabel>Paper tray</guilabel> </term>
+            <listitem>
+              <para>Brug denne rullegardinsliste til at vælge papirbakken.</para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-programming-features">
+	  <title>Programmeringsfaciliteter</title>
+
+	  <para>Flere af <application>pluma</application>s programmeringsfaciliteter ydes via udvidelsesmoduler. For eksempel giver Mærkeliste-modulet en liste over de oftest brugte mærker for diverse opmærkningssprog: se <xref linkend="pluma-tag-list-plugin"/>.</para>
+
+<!-- ============= Syntax Highlighting =================== -->
+	 <sect2 id="pluma-set-highlightmode">
+	 <title>Syntaksfremhævning</title>
+	 <para>Syntaksfremhævning gør kildekode nemmere at læse ved at vise forskellige dele af teksten i forskellige farver.</para>
+
+	 <para lang="en"><application>pluma</application> chooses an appropriate syntax highlighting mode based on a document's type. To override the syntax highlighting mode, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Highlight Mode</guimenuitem> </menuchoice>, then choose one of the following menu items:</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term lang="en"><guimenuitem>Normal</guimenuitem></term>
+		      <listitem>
+		        <para>Vis ikke syntaksfremhævning.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Sources</guisubmenu></term>
+		      <listitem>
+		        <para>Vis syntaksfremhævning til at redigere kildekode. Brug undermenuen <guisubmenu>Kilder</guisubmenu> til at vælge kildekodetype.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Markup</guisubmenu></term>
+		      <listitem>
+		        <para>Vis syntaksfremhævning til at redigere opmærkningskode. Brug undermenuen <guisubmenu>Markup</guisubmenu> til at vælge markupkode-type.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Scripts</guisubmenu></term>
+		      <listitem>
+		        <para>Vis syntaksfremhævning til at redigere scriptkode. Brug undermenuen <guisubmenu>Scripts</guisubmenu> til at vælge scriptkode-type.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Others</guisubmenu></term>
+		      <listitem>
+		        <para>Vis syntaksfremhævning til at redigere andre kodetyper. Brug undermenuen <guisubmenu>Andre</guisubmenu> til at vælge kodetype.</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 </sect2>
+
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="pluma-pipe-output">
+		<title>Videreled et kommandooutput til en fil</title>
+		<para>Du kan bruge <application>pluma</application> til at viderelede en kommandos output til en tekstfil. Hvis du for eksempel vil viderelede output af en <command>ls</command>-kommando til en tekstfil skal du skrive <command>ls | pluma</command>, og derefter trykke <keycap>Enter</keycap>.</para>
+		<para>Output af kommandoen <command>ls</command> vises i en ny tekstfil i <application>pluma</application>-vinduet.</para>
+		<para>Alternativt kan du bruge udvidelsesmodulet <application>Eksterne værktøjer</application> til at viderelede kommandooutput til den nuværende fil.</para>
+	 </sect2>
+  </sect1>
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="pluma-shortcutkeys">
+  <title>Genvejstaster</title>
+  <para>Brug genvejstaster til at udføre almindelige opgaver hurtigere end med musen og menuerne. De følgende tabeller viser alle tastekombinationerne i <application>pluma</application>.</para>
+  <para>Se <ulink type="help" url="help:user-guide?keyboard-skills">Desktop-brugervejledningen</ulink> for yderligere info om genvejstaster.</para>
+
+  <!-- ============= Tabs ======================== -->
+	<bridgehead>Faneblade</bridgehead>
+	<para>Genveje til faneblade:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Genvejstast</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>Kommando</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para>Ctrl + Alt + PageUp</para></entry>
+          <entry><para>Skifter til det næste faneblad til venstre.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Alt + PageDown</para></entry>
+          <entry><para>Skifter til det næste faneblad til højre.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>Luk faneblad.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Shift + L</para></entry>
+          <entry><para>Gem alle faneblade.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Shift + W</para></entry>
+          <entry><para>Luk alle faneblade.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Alt + n</para></entry>
+          <entry><para>Spring til n. tab.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>Filer</bridgehead>
+	<para>Genveje til arbejde med filer:</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Genvejstast</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Kommando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>Opret et nyt dokument.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>Åbn et dokument.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + L</para></entry>
+                        <entry><para>Åbn en placering.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>Gem det nuværende dokument til disken.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + S</para></entry>
+                        <entry><para>Gem det nuværende dokument med et nyt filnavn.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>Udskriv det nuværende dokument.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + P</para></entry>
+                        <entry><para>Vis udskrift.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + W</para></entry>
+                        <entry><para>Luk det nuværende dokument.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>Luk pluma.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>Redigér</bridgehead>
+	<para>Genveje til at redigere i dokumenter:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Genvejstast</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Kommando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>Fortryd den seneste handling.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + Z</para></entry>
+                        <entry><para>Omgør den senest fortrudte handling.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>Klip den valgte tekst og placer den i udklipsholderen.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>Kopier den valgte tekst til udklipsholderen.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>Indsæt indholdet af udklipsholderen.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>Markér alt.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + D</para></entry>
+                        <entry><para>Fjern aktuelle linje.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Alt + Up</para></entry>
+                        <entry><para lang="en">Move the selected line up one line.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Alt + Down</para></entry>
+                        <entry><para lang="en">Move the selected line down one line.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+	<bridgehead>Paneler</bridgehead>
+	<para>Genveje til at vise og skjule paneler:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Genvejstast</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Kommando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>F9</para></entry>
+                        <entry><para>Vis/skjul sidepanelet.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>Vis/skjul bundpanelet.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Search ======================= -->
+	<bridgehead>Søg</bridgehead>
+	<para>Genveje til søgning:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Genvejstast</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Kommando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>Find en streng.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>Find den næste forekomst af strengen.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + G</para></entry>
+                        <entry><para>Find den forrige forekomst af strengen.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>Interaktiv søgning.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>Søg og erstat.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + K</para></entry>
+                        <entry><para>Ryd fremhævning.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>Gå til linje.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Tools ======================= -->
+	<bridgehead>Værktøjer</bridgehead>
+	<para>Genveje til værktøjer:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Genvejstast</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Kommando</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Shift + F7</para></entry>
+                        <entry><para>Tjek stavning (med udvidelsesmodul).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + F12</para></entry>
+                        <entry><para>Fjern efterfølgende mellemrum (med udvidelsesmodul).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + T</para></entry>
+                        <entry><para>Ryk ind (med udvidelsesmodul).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + T</para></entry>
+                        <entry><para>Fjern indryk (med udvidelsesmodul).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>F8</para></entry>
+                        <entry><para>Kør "make" i det nuværende katalog (med udvidelsesmodul).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + D</para></entry>
+                        <entry><para>Vis katalogliste (med udvidelsesmodul).</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Help ======================= -->
+	<bridgehead>Hjælp</bridgehead>
+	<para>Genveje til hjælp:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Genvejstast</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>Kommando</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para>F1</para></entry>
+          <entry><para>Åbn <application>pluma</application>s brugermanual.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="pluma-prefs">
+    <title>Indstillinger</title>
+
+    <para lang="en">To configure <application>pluma</application>, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. The <guilabel>Preferences</guilabel> dialog contains the following categories:</para>
+    <itemizedlist>
+      <listitem><para><xref linkend="pluma-prefs-view"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-editor"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-fontsandcolors"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-plugins"/></para></listitem>
+    </itemizedlist>
+
+    <sect2 id="pluma-prefs-view">
+      <title>Visning</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+          <listitem>
+            <para>Vælg <guilabel>Aktivér tekstombrydning</guilabel> for at få lange linjer til at glide ned i afsnit i stedet for at de fortsætter ud af vinduet. Dette gør at du ikke behøver rulle horisontalt gennem vinduet</para>
+            <para>Vælg <guilabel>Del ikke ord over to linjer</guilabel> for at få tekstombrydningen til at bevare hele ord når teksten ombrydes over flere linjer. Dette gør teksten nemmere at læse.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Line Numbers</guilabel></term>
+          <listitem>
+            <para>Vælg <guilabel>Vis linjenumre</guilabel> for at få vist linjenumre i venstre side af <application>pluma</application>-vinduet.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Current Line</guilabel></term>
+          <listitem>
+            <para>Vælg <guilabel>Fremhæv aktuel linje</guilabel> for at fremhæve den linje hvor markøren er placeret.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Right Margin</guilabel></term>
+          <listitem>
+            <para>Vælg <guilabel>Vis højre margen</guilabel> for at få vist en lodret linje, som indikerer den højre margen.</para>
+            <para>Brug rulleboksen <guilabel>Højre margen ved kolonne</guilabel> til at angive placeringen af den lodrette linje.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Bracket Matching</guilabel></term>
+          <listitem>
+            <para>Vælg <guilabel>Fremhæv modsvarende parantes</guilabel> til at fremhæve den modsvarende parantes når markøren er placeret på en parantes.</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-editor">
+      <title>Redigering</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Tabs</guilabel> </term>
+          <listitem>
+            <para>Brug rulleboksen <guilabel>Tabulatorbredde</guilabel> til at angive bredde på det mellemrum, som <application>pluma</application> indsætter når du trykker på <keycap>Tab</keycap>-tasten.</para>
+            <para>Vælg <guilabel>Indsæt mellemrum i stedet for tabulatorer</guilabel> for at angive at <application>pluma</application> skal indsætte mellemrumstegn i stedet for et enkelt tabulatortegn når du trykker på <keycap>Tab</keycap>-knappen.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Auto Indentation</guilabel> </term>
+          <listitem>
+            <para>Vælg <guilabel>Aktivér automatisk indrykning</guilabel> for at angive at den næste linje starter på samme indrykningsniveau som den nuværende linje.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>File Saving</guilabel> </term>
+          <listitem>
+            <para>Vælg <guilabel>Opret en sikkerhedskopi af filer før gemning</guilabel> for at oprette en sikkerhedskopi af en fil hver gang du gemmer filen. Sikkerhedskopien indeholder et ~ i slutningen af filnavnet.</para>
+            <para>Vælg <guilabel>Gem automatisk filer hver ... minutter</guilabel> for automatisk at gemme den aktuelle fil med regelmæssige intervaller. Brug rulleboksen til at angive hvor ofte du vil gemme filen.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-fontsandcolors">
+      <title>Skrifttyper og farver</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Font</guilabel> </term>
+          <listitem>
+            <para>Vælg <guilabel>Benyt standardskrifttype</guilabel> for at bruge systemets standardskrifttype til teksten i <application>pluma</application>s tekstvindue.</para>
+            <para>Feltet <guilabel>Skrifttype for tekst</guilabel> viser den skrifttype som <application>pluma</application> bruger til at vise tekst. Klik på knappen for at angive skrifttype, stil og størrelse til brug på tekst.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Color Scheme</guilabel></term>
+          <listitem>
+            <para>Du kan vælge et farveskema fra listen af farveskemaer: Som standard vil følgende farveskemaer være installeret:</para>
+            <variablelist>
+              <varlistentry>
+                <term lang="en"><guilabel>Classic</guilabel></term>
+                <listitem>
+                  <para>Klassisk farveskema baseret på gvim-farveskemaet.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Cobalt</guilabel></term>
+                <listitem>
+                  <para>Blåligt farveskema.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Kate</guilabel></term>
+                <listitem>
+                  <para>Farveskemaet, der bruges i tekstredigeringsprogrammet Kate.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Oblivion</guilabel></term>
+                <listitem>
+                  <para>Mørkt farveskema der bruger Tango-farvepaletten.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Tango</guilabel></term>
+                <listitem>
+                  <para>Farveskema der bruger Tango-farvepaletten.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <para>Du kan tilføje et nyt farveskema ved at klikke på <guilabel>Tilføj...</guilabel>, og vælge en farveskemafil</para>
+            <para>Du kan fjerne det valgte farveskema ved at klikke på <guilabel>Fjern</guilabel></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-plugins">
+      <title>Udvidelsesmoduler</title>
+      <para>Udvidelsesmoduler tilføjer ekstra funktioner til <application>pluma</application>. For yderligere information om udvidelsesmoduler og hvordan man bruger de indbyggede udvidelsesmoduler kan du læse <xref linkend="pluma-plugins-overview"/>.</para>
+
+<!-- ============= To Load pluma Plugins ========================= -->
+	 <sect3 id="pluma-install-plugins">
+		<title>Aktivér et udvidelsesmodul</title>
+		<para>For at aktivere et udvidelsesmodul til <application>pluma</application> skal du gøre følgende:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Vælg fanebladet <guilabel>Udvidelsesmoduler</guilabel>.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Sæt flueben i feltet ved siden af navnet på det udvidelsesmodul som du ønsker at aktivere.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Klik <guibutton>Luk</guibutton> for at lukke dialogen <guilabel>Indstillinger</guilabel>.</para>
+                  </listitem>
+                </orderedlist>
+	 </sect3>
+
+<!-- ============= To Remove pluma Plugins ========================= -->
+  	 <sect3 id="pluma-remove-plugins">
+  		<title>Deaktivér et udvidelsesmodul</title>
+  		<para>Et udvidelsesmodul forbliver aktiveret når du lukker <application>pluma</application>.</para>
+  		<para>For at deaktivere et udvidelsesmodul til <application>pluma</application> skal du gøre følgende:</para>
+                  <orderedlist>
+                    <listitem>
+                      <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                    </listitem>
+                    <listitem>
+                      <para>Vælg fanebladet <guilabel>Udvidelsesmoduler</guilabel>.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Fjern flueben i feltet ved siden af navnet på det udvidelsesmodul som du ønsker at deaktivere.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Klik <guibutton>Luk</guibutton> for at lukke dialogen <guilabel>Indstillinger</guilabel>.</para>
+                    </listitem>
+                  </orderedlist>
+  	 </sect3>
+	 </sect2>
+
+ </sect1>
+<!-- ============= To Use the pluma Plugins ========================= -->
+	 <sect1 id="pluma-plugins">
+		<title>Udvidelsesmoduler</title>
+		<sect2 id="pluma-plugins-overview">
+		  <title>Arbejde med udvidelsesmoduler</title>
+  		<para>Du kan tilføje ekstra funktioner til <application>pluma</application> ved at aktivere <firstterm>udvidelsesmoduler</firstterm>. Et udvidelsesmodul kan ses som et supplementprogram som forbedrer et programs funktionalitet. Udvidelsesmoduler tilføjer nye elementer til menuerne i <application>pluma</application> for de nye funktioner som de yder.</para>
+  		<para>Flere udvidelsesmoduler kommer indbygget i <application>pluma</application>, og du kan installere flere. <ulink type="http" url="http://live.gnome.org/Pluma/Plugins">plumas hjemmeside</ulink> har en liste over udvidelsesmoduler fra tredjepart.</para>
+  		<para>For at aktivere og deaktivere udvidelsesmoduler, eller se hvilke udvidelsesmoduler der aktuelt er aktiverede, kan du bruge <link linkend="pluma-prefs-plugins">indstillingerne for udvidelsesmoduler</link>.</para>
+  		<para>De følgende udvidelsesmoduler er indbygget i <application>pluma</application>:</para>
+  		<!-- Not yet documented:
+  		File browser
+  		-->
+  		<itemizedlist>
+  		  <listitem>
+  		    <para><link linkend="pluma-change-case-plugin"><application>Skift bogstaver</application></link> lader dig skifte mellem store/små bogstaver i den markerede tekst.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-document-statistics-plugin">Dokumentstatistik</link></application> viser antallet af linjer, ord og tegn i dokumentet.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-external-tools-plugin">Eksterne værktøjer</link></application> lader dig udføre eksterne kommandoer fra <application>pluma</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application>Filvælger-panel</application> lader dig gennemse dine filer og kataloger i sidepanelet.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-indent-lines-plugin">Indryk linjer</link></application> tilføjer eller fjerner indrykning af markerede linjer.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-insert-date-time-plugin">Indsæt dato/tid</link></application> tilføjer den aktuelle dato og tid til et dokument.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-modelines-plugin">Tilstandslinjer</link></application> lader dig sætte redigeringsindstillinger for individuelle dokumenter, og understøtter tilstandslinjer i stil med <application>Emacs</application>, <application>Kate</application> og <application>Vim</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-python-console-plugin">Python-konsol</link></application> lader dig køre kommandoer i programmeringssproget python.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-snippets-plugin">Tekststumper</link></application> lader dig opbevare ofte-brugte stykker af tekst og indsætte dem nemt og hurtigt i et dokument.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-sort-plugin">Sortér</link></application> arrangerer markerede tekstlinjer i alfabetisk orden.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-spell-checker-plugin">Stavekontrol</link></application> retter stavningen i den markerede tekst, eller markerer automatisk fejl i dokumentet.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-tag-list-plugin">Mærkeliste</link></application> lader dig indsætte ofte-brugte mærker for HTML og andre sprog fra en liste i sidepanelet.</para>
+  		  </listitem>
+  		</itemizedlist>
+
+	<note><para>Mere information om oprettelse af udvidelsesmoduler kan findes på <ulink type="http" url="http://live.gnome.org/Pluma/Plugins">hjemmesiden for <application>pluma</application></ulink>.</para></note>
+  	</sect2>
+
+<sect2 id="pluma-change-case-plugin">
+<title>Udvidelsesmodulet Skift bogstaver</title>
+	<para>Udvidelsesmodulet <application>Skift bogstaver</application> skifter mellem store/små bogstaver i den markerede tekst.</para>
+	 <para>De følgende elementer føjes til menuen <guimenu>Redigér</guimenu> når udvidelsesmodulet <application>Skift bogstaver</application> er aktiveret:</para>
+
+  <informaltable frame="all">
+    <tgroup cols="3" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="33*"/>
+      <colspec colname="COLSPEC1" colwidth="33*"/>
+      <colspec colname="COLSPEC2" colwidth="33*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Menuelement</para></entry>
+          <entry colname="COLSPEC1">
+            <para>Handling</para></entry>
+          <entry colname="COLSPEC2">
+            <para>Eksempel</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Upper Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Skifter alle bogstaver til store bogstaver.</para></entry>
+          <entry><para><literal>Denne tekst</literal> bliver til <literal>DENNE TEKST</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Lower Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Skifter alle bogstaver til små bogstaver.</para></entry>
+          <entry><para><literal>Denne Tekst</literal> bliver til <literal>denne tekst</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Invert Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Skifter alle små bogstaver til store, og alle store bogstaver til små.</para></entry>
+          <entry><para><literal>Denne Tekst</literal> bliver til <literal>dENNE tEKST</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Title Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Ændrer det første bogstav i hvert ord til store bogstaver.</para></entry>
+          <entry><para><literal>denne tekst</literal> bliver til <literal>Denne Tekst</literal></para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect2>
+
+<sect2 id="pluma-document-statistics-plugin">
+<title>Udvidelsesmodulet Dokumentstatistik</title>
+	<para>Udvidelsesmodulet <application>Dokumentstatistik</application> optæller antallet af linjer, ord, tegn med mellemrum, tegn uden mellemrum og bytes i den aktuelle fil. Udvidelsesmodulet viser resultatet i en <guilabel>Dokumentstatistik</guilabel>-dialog. For at bruge udvidelsesmodulet Dokumentstatistik skal du gøre følgende:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Document Statistics</guimenuitem> </menuchoice> to display the <guilabel>Document Statistics</guilabel> dialog. The <guilabel>Document Statistics</guilabel> dialog displays the following information about the file:
+				</para>
+		      <itemizedlist>
+		      <listitem><para>Antal linjer i det aktuelle dokument.</para>
+		      </listitem>
+		      <listitem><para>Antal ord i det aktuelle dokument.</para>
+		      </listitem>
+		      <listitem><para>Antal tegn, inklusive mellemrum, i det aktuelle dokument.</para>
+		      </listitem>
+		      <listitem><para>Antal tegn, ikke medregnende mellemrum, i det aktuelle dokument.</para>
+		      </listitem>
+		      <listitem><para>Antal bytes i det aktuelle dokument.</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para>Du kan fortsætte med at opdatere den aktuelle tekstfil i <application>pluma</application> samtidig med at dialogen <guilabel>Dokumentstatistik</guilabel> er åben. For at opdatere indholdet i dialogen <guilabel>Dokumentstatistik</guilabel> skal du klikke på<guibutton>Opdatér</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-external-tools-plugin">
+  <title>Udvidelsesmodulet Eksterne værktøjer</title>
+  <para>Udvidelsesmodulet <application>Eksterne værktøjer</application> lader dig køre eksterne kommandoer fra <application>pluma</application>. Du kan viderelede noget indhold i en kommando og benytte dig af dens output (for eksempel, <application>sed</application>), eller køre en foruddefineret kommando (for eksempel, <application>make</application>).</para>
+  <para>Brug <guilabel>Eksterne værktøjer</guilabel> til at oprette og redigere i kommandoer. For at køre en ekstern kommando skal du vælge den fra menuen <guimenu>Værktøjer</guimenu>.</para>
+
+  <sect3 id="pluma-external-tools-plugin-builtin">
+    <title>Indbyggede kommandoer</title>
+    <para>De følgende kommandoer følger i forvejen med udvidelsesmodulet <application>Eksterne værktøjer</application>:</para>
+    <variablelist>
+      <varlistentry><term>Byg</term>
+        <listitem>
+          <para>Kører <application>make</application> i det aktuelle dokuments katalog.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Mappeoversigt</term>
+        <listitem>
+          <para>Viser indholdet af det aktuelle dokuments mappe i et nyt dokument.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Miljøvariable</term>
+        <listitem>
+          <para>Viser listen over miljøvariable i bundpanelet.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Grep</term>
+        <listitem>
+          <para>Søger efter en streng i alle filer i den aktuelle dokumentmappe ved hjælp af mønstersammenligning. Resultater vises i bundpanelet.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Fjern efterfølgende mellemrum</term>
+        <listitem>
+          <para>Fjerner alle mellemrum fra linjeslutningerne i dokumentet.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-define">
+    <title>Definér en kommando</title>
+    <para>For at tilføje en ekstern kommando skal du vælge <menuchoice><guimenu>Værktøjer</guimenu><guimenuitem>Eksterne værktøjer...</guimenuitem></menuchoice>.</para>
+    <para>I vinduet <guilabel>Eksterne værktøjer</guilabel> skal du klikke på <guibutton>Ny</guibutton>. Du kan angive de følgende detaljer for den nye kommando:</para>
+    <variablelist>
+      <varlistentry><term>Beskrivelse</term>
+        <listitem>
+          <para>Denne beskrivelse bliver vist i statuslinjen når kommandoen vælges i menuen.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Genvejstast</term>
+        <listitem>
+          <para>Vælg en tastaturgenvej til kommandoen.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Kommandoer</term>
+        <listitem>
+          <para>De faktiske kommandoer som skal køres. Flere miljøvariabler i <application>pluma</application> kan bruges til at videresende data til disse kommandoer: se <xref linkend="pluma-external-tools-plugin-variables"/>.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Input</term>
+        <listitem>
+          <para>Data som skal gives til kommandoerne (som <systemitem>stdin</systemitem>): hele teksten i det aktuelle dokument, den aktuelle markering, linje eller ord.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Output</term>
+        <listitem>
+          <para>Hvad der skal gøres med output fra kommandoerne: vis det i bundpanelet, læg det i et nyt dokument eller placer det i det aktuelle dokument, i bunden, ved markørens placering eller som erstatning for den aktuelle markering eller hele dokumentet.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Anvendelsesområde</term>
+        <listitem>
+          <para>Afgør hvilken slags dokumenter der kan berøres af kommandoen, for eksempel om filen skal være gemt eller ej, og om den skal være lokal eller ekstern.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-edit">
+    <title>Redigér og fjern værktøjer</title>
+    <para>For at redigere et værktøj skal du vælge det i listen og ændre dets egenskaber.</para>
+    <para>For at omdøbe et værktøj skal du klikke på det igen i listen.</para>
+    <para>For at gendanne et indbygget værktøj som du har ændret skal du trykke på <guilabel>Forkast</guilabel>.</para>
+    <para>For at fjerne et værktøj skal du vælge det i listen og trykke på <guibutton>Fjern</guibutton>. Du kan ikke fjerne indbyggede værktøjer, kun de som du selv har oprettet.</para>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-variables">
+    <title>Variabler</title>
+    <para>Du kan bruge følgende variabler i  <guilabel>Kommando</guilabel>-feltet i definitionen af kommandoen:</para>
+    <itemizedlist>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_NAME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_SCHEME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_PATH</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_DIR</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_PATH</para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>
+
+<sect2 id="pluma-file-browser-plugin">
+  <title>Udvidelsesmodulet Filvælger</title>
+  <para>Udvidelsesmodulet <application>Filvælger</application> viser dine filer og mapper i sidepanelet, hvilket gør at du hurtigt og nemt kan åbne filer.</para>
+  <para lang="en">To view the File Browser, choose <menuchoice><guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice> and then click on the tab showing the File Browser icon at the bottom of the side pane.</para>
+  <sect3 id="pluma-file-browser-plugin-browsing">
+    <title>Gennemse dine filer</title>
+    <para>Filvælger-fanebladet viser dine bogmærker fra filhåndtering. For at gennemse indholdet af et element skal du dobbeltklikke på det.</para>
+    <para>For at få vist en forældermappe skal du vælge fra rullegardinslisten eller trykke på op-pilen i filvælgerens værktøjslinje.</para>
+    <para>For at få vist mappen som indeholder det dokument som du aktuelt arbejder på, skal du højreklikke på filen i listen og vælge <guimenuitem>Sæt rod til aktive dokument</guimenuitem>.</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-open">
+    <title>Åbn en fil</title>
+    <para>For at åbne en fil i <application>pluma</application> skal du dobbeltklikke på den i fillisten.</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-create">
+    <title>Opret filer og mapper</title>
+    <para>For at oprette en ny, tom tekstfil i den aktuelle mappe vist i filvælgeren skal du højreklikke i fillisten og vælge <guimenuitem>Ny fil</guimenuitem>.</para>
+    <para>For at oprette en ny mappe i den aktuelle mappe vist i filvælgeren skal du højreklikke i fillisten og vælge <guimenuitem>Ny mappe</guimenuitem>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-indent-lines-plugin">
+<title>Udvidelsesmodulet Indryk linjer</title>
+	<para>Udvidelsesmodulet <application>Indryk linjer</application> tilføjer eller fjerner mellemrum fra begyndelsen af tekstens linjer.</para>
+	<para>Udfør følgende skridt for at indrykke eller fjerne indrykning af tekst:</para>
+  	<orderedlist>
+		  <listitem><para>Vælg linjerne som du ønsker at indrykke. Ønsker du kun at indrykke eller fjerne indrykning for en enkelt linje, kan du placere markøren et sted på denne linje.</para>
+		  </listitem>
+		  <listitem>
+		    <itemizedlist>
+		      <listitem>
+		        <para lang="en">To indent the text, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Indent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		      <listitem>
+		        <para lang="en">To remove the indentation, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Unindent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+	<para>Mængden af mellemrum der bruges, og hvorvidt der anvendes tabulatortegn eller mellemrumstegn, afhænger af indstillingerne <guilabel>Tabulatorstop</guilabel> i indstillingerne: se <xref linkend="pluma-prefs-editor"/>.</para>
+
+</sect2>
+
+<sect2 id="pluma-insert-date-time-plugin">
+<title>Udvidelsesmodulet Indsæt dato/tid</title>
+	<para>Udvidelsesmodulet <application>Indsæt dato/tid</application> indsætter den nuværende dato og tidspunkt i et dokument. For at bruge udvidelsesmodulet Indsæt dato/tid skal du gøre følgende:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>. </para>
+        <para>Hvis du ikke har konfigureret Indsæt dato/tid til automatisk at indsætte dato/tid uden at spørge dig om format, vil <application>pluma</application> vise dialogen <guilabel>Indsæt dato og tid</guilabel>. Vælg det passende dato/tid-format fra listen. Klik på <guibutton>Indsæt</guibutton> for at lukke dialogen <guilabel>Indsæt dato og tid</guilabel>. <application>pluma</application> indsætter dato/tid ved markørens placering i den aktuelle fil.</para>
+				<para>Hvis du har konfigureret <application>pluma</application> til at bruge et bestemt dato/tid-format, vises dialogen <guilabel>Indsæt dato og tid</guilabel> ikke. Dato/tid indsættes automatisk ved markørens placering i den aktuelle fil.</para>
+		  </listitem>
+		</orderedlist>
+
+<sect3 id="pluma-date-time-configure">
+<title>Konfiguration af udvidelsesmodulet Indsæt dato/tid</title>
+<para>For at konfigurere udvidelsesmodulet Indsæt dato/tid skal du gøre følgende:</para>
+		<orderedlist>
+		  <listitem> <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>.
+                    </para>
+		  </listitem>
+		  <listitem> <para>Vælg fanebladet <guilabel>Udvidelsesmoduler</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Vælg udvidelsesmodulet <guilabel>Indsæt dato/tid</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Klik på <guibutton>Konfigurér udvidelsesmodul</guibutton> for at få vist dialogen <guilabel>Konfigurér indsætning af dato/tid</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Vælg en af følgende muligheder:</para>
+		      <itemizedlist>
+		      <listitem><para>For at angive dato/tid-formatet hver gang du indsætter dato/tid skal du vælge <guilabel>Spørg efter et format</guilabel>.</para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same <application>pluma</application>-provided date/time format each time you insert the date/time, select the <guilabel>Use the selected format</guilabel> option, then select the appropriate format from the list. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same customized date/time format each time you insert the date/time, select the <guilabel>Use custom format</guilabel> option, then enter the appropriate format in the text box. For more information about how to specify a custom format, see <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem> <para>Klik <guibutton>O.k.</guibutton> for at lukke dialogen <guilabel>Konfigurér indsætning af dato/tid</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>For at lukke dialogen <guilabel>Indstillinger for pluma</guilabel> skal du klikke på <guibutton>Luk</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect3>
+</sect2>
+
+<sect2 id="pluma-modelines-plugin">
+  <title>Udvidelsesmodulet Tilstandslinjer</title>
+    <para>Udvidelsesmodulet <application>Tilstandslinjer</application> lader dig redigere indstillinger for enkelte dokumenter. En <firstterm>tilstandslinje</firstterm> er en linje af tekst i begyndelsen af dokumentet med indstillinger, som <application>pluma</application> genkender.</para>
+    <para>Indstillinger, der angives ved hjælp af tilstandslinjer, har præcedens over dem, der angives i indstillingsdialogen.</para>
+    <para>Du kan angive følgende indstillinger med tilstandslinjer:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Tabulatorbredde</para>
+      </listitem>
+      <listitem>
+        <para>Indrykningsbredde</para>
+      </listitem>
+      <listitem>
+        <para>Indsæt mellemrumstegn frem for tabulartortegn</para>
+      </listitem>
+      <listitem>
+        <para>Tekstombrydning</para>
+      </listitem>
+      <listitem>
+        <para>Bredde af højre margen</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Udvidelsesmodulet <application>Tilstandslinjer</application> understøtter en delmængde af de indstillinger, der bruges af tekstredigeringsprogrammerne <application>Emacs</application>, <application>Kate</application> og <application>Vim</application>.</para>
+
+    <sect3 id="pluma-modelines-plugin-emacs">
+      <title>Emacs-tilstandslinjer</title>
+      <para>De første to linjer af et dokument undersøges for <application>Emacs</application>-tilstandslinjer.</para>
+      <para><application>Emacs</application>-indstillingerne for tabulatorbredde (tab-width), indrykningsafstand (indent-offset), tabulatorindrykningstilstand (indent-tabs-mode) og autoombrydning (autowrap) understøttes. Mere information findes i <ulink type="http" url="http://www.delorie.com/gnu/docs/emacs/emacs_486.html">manualen til GNU Emacs</ulink>.</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-kate">
+      <title>Kate-tilstandslinjer</title>
+      <para>De første og sidste to linjer i et dokument undersøges efter <application>Kate</application>-tilstandslinjer.</para>
+      <para><application>Kate</application>-indstillingerne for tabulatorbredde (tab-width), indrykningsbredde (indent-width), mellemrumsindrykning (space-indent), ordombrydning (word-wrap) og ordombrydning ved kolonner (word-wrap-column) understøttes. Mere information findes på <ulink type="http" url="http://www.kate-editor.org/article/katepart_modelines\">websiden for Kate</ulink>.</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-vim">
+      <title>Vim-tilstandslinjer</title>
+      <para>De første og sidste tre linjer af et dokument undersøges for <application>Vim</application>-tilstandslinjer.</para>
+      <para><application>Vim</application>-indstillingerne for et, expandtab, ts, tabstop, sw, shiftwidth, wrap, and textwidth understøttes. Yderligere information kan findes på <ulink type="http" url="http://vimdoc.sourceforge.net/htmldoc/options.html#modeline">websiden for Vim</ulink>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-python-console-plugin">
+  <title>Udvidelsesmodulet Python-konsol</title>
+  <para>Udvidelsesmodulet <application>Python-konsol</application> lader dig køre kommandoer i programmeringssproget Python fra <application>pluma</application>. Når dette udvidelsesmodul aktiveres, føjes et faneblad til bundpanelet. Dette viser den seneste udskrift og et kommandoindtastningsfelt.</para>
+  <caution><para>Kommandoer som indtastes i Python-konsollen kontrolleres ikke før de køres. Det er derfor muligt at få <application>pluma</application> til at gå i stå ved, for eksempel, at indtaste en uendelig løkke.</para></caution>
+</sect2>
+
+<sect2 id="pluma-snippets-plugin">
+<title>Udvidelsesmodulet Tekststumper</title>
+  <para>Udvidelsesmodulet <application>Tekststumper</application> lader dig lagre ofte brugte bidder af tekst, kaldet <firstterm>tekststumper</firstterm>, og indsætte dem hurtigt i et dokument.</para>
+    <para>Tekststumper er specifikke for det aktuelle dokuments sprogsyntaks. Hvis du for eksempel arbejder med et HTML-dokument, kan du vælge fra en liste af tekststumper, som er nyttige til HTML. Ydermere er visse tekststumper globale, således at de er tilgængelige i alle dokumenter.</para>
+    <para>En samling af indbyggede tekststumper installeres sammen med <application>pluma</application>, og kan redigeres.</para>
+
+  <sect3 id="pluma-snippets-plugin-insert">
+    <title>Indsættelse af tekststumper</title>
+    <para>For at indsætte en tekststump i et dokument, skal du skrive dens <firstterm>tabulator-udløser</firstterm> og trykke på <keycap>Tabulatortast</keycap>. En tekststumps tabulator-udløser består sædvanligvis af de første bogstaver i tekststumpen, eller noget tilsvarende som er kort og nemt at huske.</para>
+    <para>Alternativt kan du trykke <keycombo><keycap>Ctrl</keycap><keycap>Mellemrumstast</keycap></keycombo> for at se en liste af tekststumper, som kan indsættes.</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-add">
+    <title>Tilføjelse af tekststumper</title>
+    <para>Gør følgende for at oprette en ny tekststump:</para>
+      <orderedlist>
+        <listitem>
+          <para>Vælg <menuchoice><guimenu>Værktøjer</guimenu><guimenuitem>Konfigurér tekststumper</guimenuitem></menuchoice>. Vinduet <guilabel>Tekststumper</guilabel> åbnes.</para>
+        </listitem>
+        <listitem>
+          <para>Listen af tekststumper er grupperet efter sprog. Vælg det sprog, du vil tilføje en tekststump for, eller en tekststump i denne sproggruppe. Vil du tilføje en tekststump for alle sprog, så vælg Global øverst på listen. Syntaksen for dokumentet, du i øjeblikket arbejder med, vises som standard.</para>
+        </listitem>
+        <listitem>
+          <para>Klik på <guibutton>Ny</guibutton>. En ny tekststump vil dukke op i listen.</para>
+        </listitem>
+        <listitem>
+          <para>Indtast følgende information for den nye tekststump:</para>
+          <variablelist>
+            <varlistentry><term>Navn</term>
+              <listitem>
+                <para>Indtast et navn for tekststumpen i tekstfeltet inden i listen over tekststumper. Navnet på en tekststump tjener kun som påmindelse for stumpens formål. Du kan ændre navnet på en tekststump som du opretter, ved at klikke på det i listen.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Tekststump</term>
+              <listitem>
+                <para>Indtast selve stumpen af tekst i <guilabel>Redigér</guilabel>-tekstfeltet. Du kan her anvende specielle koder - se <xref linkend="pluma-snippets-plugin-syntax"/>.</para>
+                <tip><para>Du kan skifte tilbage til dokumentvinduet og kopiere teksten uden at lukke <guilabel>Tekststumper</guilabel>-vinduet.</para></tip>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Tabulator-udløser</term>
+              <listitem>
+                <para>Indtast tabulator-udløseren for tekststumpen. Dette er teksten som du skal skrive før du trykker <keycap>Tabulatortest</keycap> for at indsætte tekststumpen.</para>
+                <para>Mærket skal være enten et enkelt ord bestående kun af bogstaver, eller et enkelt tegn. <guilabel>Tabulator-udløser</guilabel> vil blive fremhævet med rødt hvis en ugyldig tabulator-udløser anføres.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Genvejstast</term>
+              <listitem>
+                <para>Tryk på en genvejstast der skal bruges til at indsætte tekststumpen.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+        </listitem>
+      </orderedlist>
+  </sect3>
+  <sect3 id="pluma-snippets-plugin-edit">
+    <title>Redigér og fjern tekststumper</title>
+    <para>Ønsker du at redigere en tekststump, så vælg den i listen og foretag ændringer i dens tekst og aktiveringsegenskaber.</para>
+    <para>Klik på tekststumpen igen i listen for at omdøbe den.</para>
+    <para>Du kan trykke <guilabel>Gendan den markerede tekststump</guilabel> for at gendanne en indbygget tekststump, du har redigeret.</para>
+    <para>Vil du fjerne en tekststump, så vælg den i listen og tryk <guibutton>Fjern</guibutton>. Du kan ikke fjerne indbyggede tekststumper, men kun dem som du selv har oprettet.</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-syntax">
+    <title>Substitution i tekststumper</title>
+    <para>Ud over at indsætte forhåndslagret tekst, kan en tekstbid inkludere dynamisk redigerbar tekst, eller markere steder hvor du kan tilføje tekst når først tekstbidden er indsat i dit dokument.</para>
+
+    <para/>
+
+    <para>Du kan anvende følgende substitutionskoder i tekststumpen:</para>
+      <variablelist>
+        <varlistentry><term>Tabulatorsubstitutioner</term>
+          <listitem>
+            <para><literal>$<replaceable>n</replaceable></literal> definerer en tabulatorsubstitution, hvor <literal>n</literal> er et tal større end eller lig med 1.</para>
+            <para><literal>${<replaceable>n</replaceable>:<replaceable>standardværdi</replaceable>}</literal> definerer en tabulatorsubstitution med en standardværdi.</para>
+            <para>En tabulatorsubstitution markerer et sted i tekststumpen hvor du kan tilføje ekstra tekst efter at stumpen er indsat.</para>
+            <para>For at bruge tabulatorsubstitutioner, skal du indsætte tekststumpen som normalt. Markøren vil så blive placeret ved første tabulatorsubstitution. Tallet i substitutionskoden angiver rækkefølgen hvori der med tabulatortast navigeres mellem hver af substitutionsstederne i teksten.</para>
+            <para>Tryk <keycombo><keycap>Skift</keycap><keycap>Tabulatortast</keycap></keycombo> for at vende tilbage til forrige substitutionssted. Trykker du <keycap>Tabulatortast</keycap> når der ikke er flere substitutionssteder, flyttes markøren til slutningen af tekststumpen, eller til sidste substitutionssted, hvis det findes.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Klonsubstitutioner</term>
+          <listitem>
+            <para>En gentagen tabulatorsubstitution vil klone substitutionen der allerede er defineret. Dette tillader dig, kun at skrive et stykke tekst en enkelt gang, selvom du vil have den inkluderet flere gange i tekststumpen.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Slutsubstitution</term>
+          <listitem>
+            <para><literal>$0</literal> definerer en slutsubstitution. Dette tillader dig at afslutte behandlingen af en tekststump således at markøren vil være på et andet punkt end slutningen af tekststumpen.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Miljøvariable</term>
+          <listitem>
+            <para>Miljøvariable såsom <literal>$PATH</literal> og <literal>$HOME</literal> substitueres i tekststumpen. Specielt kan der i <application>pluma</application> også anvendes følgende variable:</para>
+            <variablelist>
+              <varlistentry><term>$PLUMA_SELECTED_TEXT</term>
+                <listitem>
+                  <para>Den aktuelt markerede tekst.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_FILENAME</term>
+                <listitem>
+                  <para>Det fulde filnavn på dokumentet, eller en tom streng hvis dokumentet endnu ikke er blevet gemt.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_BASENAME</term>
+                <listitem>
+                  <para>Filnavnets basenavn, eller en tom streng hvis dokumentet endnu ikke blevet gemt.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_CURRENT_WORD</term>
+                <listitem>
+                  <para>Ordet ved markørens placering i dokumentet. Når denne variabel bruges, erstattes det aktuelle ord med tekststumpen.</para>
+                </listitem>
+              </varlistentry>
+
+            </variablelist>
+
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Skalsubstitutioner</term>
+          <listitem>
+            <para><literal>$(<replaceable>kmd</replaceable>)</literal> erstattes med resultatet af udførelsen af kommandoen <replaceable>kmd</replaceable> i en skal.</para>
+            <para><literal>$(<replaceable>n</replaceable>:<replaceable>kmd</replaceable>)</literal> tillader dig at give denne substitution en reference, hvor <replaceable>n</replaceable> er et tal større end eller lig med 1. Brug <literal>$<replaceable>n</replaceable></literal> for at anvende uddata fra en skalsubstitution som inddata til en anden.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Pythonsubstitutioner</term>
+          <listitem>
+            <para><literal>$&lt;<replaceable>cmd</replaceable>&gt;</literal> bliver erstattet af resultatet af evaluering af <replaceable>cmd</replaceable> i python-fortolkeren.</para>
+            <para><literal>$&lt;<replaceable>a</replaceable>:<replaceable>kmd</replaceable>&gt;</literal> angiver en anden Python-substitution som afhængighed, hvor <replaceable>a</replaceable> angiver dens orden i tekststumpen. Dette lader dig bruge Python-funktioner defineret i en anden tekststump. Du kan angive flere afhængigheder ved at adskille numrene med kommaer således: <literal>$&lt;<replaceable>a</replaceable>,<replaceable>b</replaceable>:<replaceable>kmd</replaceable>&gt;</literal></para>
+            <para>Erklær en variabel som <literal>global</literal> for at bruge den i alle andre Python-tekststumper.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+  </sect3>
+
+</sect2>
+
+<sect2 id="pluma-sort-plugin">
+<title>Udvidelsesmodulet Sortering</title>
+	<para>Udvidelsesmodulet <application>Sortering</application> sorterer markerede linjer af tekst i alfabetisk orden.</para>
+		  <caution><para lang="en">You cannot undo the Sort operation, so you should save the file before performing the sort. To revert to the saved version of the file after the sort operation, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Revert</guimenuitem> </menuchoice>.
+				</para>
+		  </caution>
+              <para>Udfør følgende trin for at anvende udvidelsesmodulet Sortering:</para>
+		<orderedlist>
+		  <listitem>
+		    <para>Vælg linjerne som du ønsker at sortere.</para>
+		  </listitem>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Sort</guimenuitem> </menuchoice>. The <guilabel>Sort</guilabel> dialog opens.
+				</para>
+		  </listitem>
+		  <listitem><para>Vælg indstillinger for sorteringen:</para>
+		    <itemizedlist>
+    		  <listitem>
+    		    <para>Vælg <guilabel>Omvendt orden</guilabel> for at sortere teksten i omvendt rækkefølge.</para>
+    		  </listitem>
+    		  <listitem><para>Vælg <guilabel>Fjern dupletter</guilabel> for at fjerne linjer, der forekommer mere end en gang.</para>
+    		  </listitem>
+    		  <listitem><para>Du kan eventuelt vælge <guilabel>Ignorér store/små bogstaver</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Du kan få sorteringen til at ignorere de indledende tegn i hver linje. Dette gøres ved at angive kolonnenummeret på det første tegn der skal indgå i sorteringen i <guilabel>Begynd ved kolonne</guilabel>-rulleknappen.</para>
+    		  </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>Klik på <guibutton>Sortér</guibutton> for at udføre sorteringsoperationen.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-spell-checker-plugin">
+<title>Udvidelsesmodulet Stavekontrol</title>
+	<para>Udvidelsesmodulet <application>Stavekontrol</application> kontrollerer stavningen i den valgte tekst. Du kan konfigurere <application>pluma</application> til at kontrollere stavningen automatisk, eller du kan køre stavekontrol manuelt på det angivne sprog. Sprogindstillingen og autokontrolegenskaberne gælder dokumentvis. For at bruge udvidelsesmodulet Stavekontrol, skal du gøre følgende:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Set Language</guimenuitem> </menuchoice> to display the <guilabel>Set language</guilabel> dialog. Select the appropriate language from the list. Click <guibutton>OK</guibutton> to close the <guilabel>Set language</guilabel> dialog.
+				</para>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling automatically, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice>. To unset the automatic spell check, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice> again. When automatic spell checking is set, an icon is displayed beside the <guimenuitem>Autocheck Spelling</guimenuitem> menu item. Automatic spell checking is unset by default, each time <application>pluma</application> starts.</para>
+                            <para>Ukendte stavemåder vises i en anden farve og understreges. Højreklik på en ukendt stavemåde, og vælg så <guimenu>Stavningsforslag</guimenu> fra popup-menuen:</para>
+		    <itemizedlist>
+		      <listitem><para>For at erstatte den ukendte stavemåde med en anden stavemåde i listen, skal du vælge stavemåden i popup-menuen <guimenu>Stavningsforslag</guimenu>.</para>
+		      </listitem>
+		      <listitem><para lang="en">To add the unknown spelling to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Add</guimenuitem> </menuchoice>.
+				</para>
+		      </listitem>
+		      <listitem><para lang="en">To ignore all occurrences of the unknown spelling, so that they are no longer flagged as unknown but are not added to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Ignore All</guimenuitem> </menuchoice>. The unknown word is ignored in the current <application>pluma</application> session only.
+				</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling manually, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Check Spelling</guimenuitem> </menuchoice>.
+				</para>
+				<para>Hvis der ikke er nogen stavefejl, vil dialogen <guilabel>Information</guilabel> vise en meddelelse om at dokumentet ikke indeholder nogen forkert stavede ord. Klik <guibutton>O.k.</guibutton> for at lukke <guilabel>Information</guilabel>-dialogen.</para>
+				<para>Hvis der er stavefejl, vil dialogen <guilabel>Kontrollér stavning</guilabel> blive vist:</para>
+		    <itemizedlist>
+		      <listitem><para><guilabel>Forkert stavet ord</guilabel> vises øverst i dialogen.</para>
+		      </listitem>
+		      <listitem><para>Et forslag til en kendt stavemåde vises i <guilabel>Ret til</guilabel>-tekstfeltet. Du kan erstatte dette med en anden kendt stavemåde ved at vælge stavemåden fra listen <guilabel>Forslag</guilabel>, eller du kan indtaste teksten direkte i <guilabel>Ret til</guilabel>-tekstfeltet.</para>
+		      </listitem>
+		      <listitem><para>Klik på <guibutton>Kontrollér ord</guibutton> for at kontrollere stavemåden af teksten i <guilabel>Ret til</guilabel>-tekstfeltet. Hvis dette ord kendes, vil <guilabel>Forslag</guilabel>-listen blive erstattet med teksten <literal>(korrekt stavning)</literal>. Hvis ordet ikke kendes, vil nye ord dukke op i <guilabel>Forslag</guilabel>-listen.</para>
+		      </listitem>
+		      <listitem><para>Klik på <guibutton>Ignorér</guibutton> for at ignorere den aktuelle forekomst af det ukendte ord. Klik på <guibutton>Ignorér alle</guibutton> for at ignorere alle forekomster af det ukendte ord. Det ukendte ord vil så blive ignoreret i den aktuelle <application>pluma</application>-session.</para>
+		      </listitem>
+		      <listitem><para>Klik på <guibutton>Ret</guibutton> for at ændre den aktuelle forekomst af det ukendte ord til teksten i <guilabel>Ret til</guilabel>-tekstfeltet. Klik på <guibutton>Ret alle</guibutton> for at ændre alle forekomster af det ukendte ord til teksten i <guilabel>Ret til</guilabel>-tekstfeltet.</para>
+		      </listitem>
+		      <listitem><para>Klik på <guibutton>Tilføj ord</guibutton> for at føje det ukendte ord til din personlige ordbog.</para>
+		      </listitem>
+		      <listitem><para>Klik på <guibutton>Luk</guibutton> for at lukke dialogen <guilabel>Kontrollér stavning</guilabel>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-tag-list-plugin">
+<title>Udvidelsesmodulet Mærkelister</title>
+	<para>Udvidelsesmodulet <application>Mærkeliste</application> lader dig indsætte almindelige mærker fra en liste i sidepanelet.</para>
+  <para>For at bruge udvidelsesmodulet Mærkeliste, skal du gøre som følger:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice>.
+				</para>
+		  </listitem>
+		  <listitem>
+		    <para>I standardkonfigurationen viser sidepanelet et faneblade med en liste af åbne dokumenter. Klik på fanebladet, der viser symbolet + i bunden af sidepanelet for at vise fanebladet for mærkelister.</para>
+		  </listitem>
+		  <listitem><para>Vælg den relevante mærkekategori fra rullegardinslisten, for eksempel <guilabel>HTML - mærker</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Rul gennem mærkelisten for at finde det påkrævede mærke.</para>
+		  </listitem>
+		  <listitem><para>Dobbeltklik på mærket i mærkelisten for at indsætte et mærke ved markørpositionen i den aktuelle fil. Du kan også indsætte et mærke som følger:</para>
+		    <itemizedlist>
+		      <listitem><para>Tryk <keycap>Retur</keycap> for at indsætte et mærke i den aktuelle fil og ændre fokus fra sidepanelet til visningsområdet.</para>
+		      </listitem>
+		      <listitem><para>Tryk <keycombo><keycap>Skift</keycap><keycap>Retur</keycap></keycombo> for at indsætte et mærke i den aktuelle fil og vedligeholde fokus på mærkelistevinduet.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

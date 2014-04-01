@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.16">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "July 2006">
+<!ENTITY app "pluma">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.MATE.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="uk">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Посібник з pluma</title>
+	 <copyright lang="en">
+		<year>2007</year>
+		<holder>MATE Documentation Project</holder> </copyright>
+	 <copyright lang="en">
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright lang="en">
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher role="maintainer">
+		<publishername>Проект документування MATE</publishername>
+	 </publisher>
+
+	 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+	 <authorgroup>
+           <author lang="en">
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author lang="en">
+		  <firstname>MATE Documentation Project</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>MATE</orgname>
+		  </affiliation>
+		</author>
+		<author lang="en">
+			<firstname>Hal</firstname>
+			<surname>Canary</surname>
+			<contrib>Added the Shortcut Keys Table</contrib>
+		</author>
+		<author lang="en">
+		  <firstname>Sun Java Desktop System Documentation Team</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author lang="en">
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>MATE Documentation Project</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Baris</firstname>
+			<surname>Cicek provided information from earlier revisions of the pluma application.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Ajit</firstname>
+			<surname>George provided information about plugins.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision lang="en">
+		  <revnumber>pluma V1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author" lang="en">Eric Baudais <email>baudais@okstate.edu</email>
+				</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.0</revnumber>
+		  <date>March 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.1</revnumber>
+		  <date>June 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.2</revnumber>
+		  <date>August 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.3</revnumber>
+		  <date>September 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.4</revnumber>
+		  <date>January 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.5</revnumber>
+		  <date>March 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.6</revnumber>
+		  <date>September 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.7</revnumber>
+		  <date>March 2004</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   	<revision lang="en">
+		  <revnumber>pluma Manual V2.8</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun Java Desktop System Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   		<revision lang="en">
+		  <revnumber>pluma Manual V2.9</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">MATE Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo>У довідці описується програма Pluma версії 2.16</releaseinfo>
+	 <legalnotice>
+		<title>Зворотній зв'язок</title>
+		<para lang="en">To report a bug or make a suggestion regarding the <application>pluma</application> application or this manual, follow the directions in the <ulink url="help:user-guide?feedback-bugs" type="help">MATE Feedback Page</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para lang="en">pluma is a text editor for the MATE Desktop featuring basic yet
+      robust capabilities such as printing, spell checking, find and replace,
+      and syntax highlighting. More advanced features are available as plugins.</para>
+    </abstract>
+  </articleinfo>
+  <indexterm lang="en"><primary>pluma</primary></indexterm>
+  <indexterm lang="en"><primary>text editor</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="pluma-intro">
+	 <title>Вступ</title>
+
+   <!-- removed ids, here as anchors to prevent possible breakage -->
+	 <anchor id="pluma-customize-toolbar"/>
+
+	 <para>Програма <application>pluma</application> дозволяє створювати та редагувати текстові файли.</para>
+
+	 <para><application>pluma</application> — має бути простим та легким у використанні текстовим редактором. Багато можливостей можуть бути включені <firstterm>модулями</firstterm>, що вирішують ряд завдань з редагування тексту.</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="pluma-getting-started">
+	 <title>Початок роботи</title>
+
+<!-- ============= To Start pluma ============================ -->
+	 <sect2 id="pluma-to-start">
+		<title>Запуск pluma</title>
+		<para><application>pluma</application> можна запустити наступними способами:</para>
+		<variablelist>
+    		<varlistentry>
+    		<term>Меню <guimenu>Програми</guimenu></term>
+    		<listitem>
+    		<para>Виберіть <menuchoice><guisubmenu>Стандартні</guisubmenu><guimenuitem>Текстовий редактор</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>Командний рядок</term>
+    		<listitem>
+    		<para>Виконайте команду: <command>pluma</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <para>Якщо ви відкриваєте текстовий документ у файловому менеджері, pluma запускається автоматично та відображає файл, що відкривається.</para>
+	</sect2>
+
+	<sect2 id="pluma-when-you-start">
+
+		<title>Вікно pluma</title>
+		<para>Після запуску програми <application>pluma</application> відкривається наступне вікно:</para>
+
+		<figure id="pluma-window">
+		  <title>Вікно pluma</title>
+		  <screenshot>
+			 <mediaobject lang="en">
+				<imageobject>
+				  <imagedata fileref="figures/pluma_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Shows pluma main window.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para>Вікно <application>pluma</application> містить наступні елементи:</para>
+		<variablelist>
+		  <varlistentry> <term>Панель меню</term>
+			 <listitem>
+				<para>Меню містить усі необхідні команди для роботи з файлами у <application>pluma</application>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Панель інструментів</term>
+			 <listitem>
+				<para>Панель меню містить деякі команди, доступні у меню.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Область відображення</term>
+			 <listitem>
+				<para>У області перегляду відображається текст, що редагується.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Рядок стану</term>
+			 <listitem>
+				<para>Рядок стану показує поточний стан <application>pluma</application>, а також контекстну інформацію про пункти меню. Інформація про стан може бути такою:</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>Позиція курсору: номер рядка та номер стовпчика, де знаходиться курсор.</para>
+		  </listitem>
+		  <listitem>
+		  <para>Режим редагування: Якщо редактор знаходиться у режимі вставки, у рядку статусу відображається <guilabel>ВСТ</guilabel>. Якщо редактор у режимі заміни, рядок відображає <guilabel>ЗАМ</guilabel>. Натискання клавіші <keycap>Insert</keycap> змінює режим редагування.</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Бічна панель</term>
+			 <listitem>
+				<para>У бічній панелі відображається список відкритих документів та інша інформація, що залежить від завантажених модулів.</para>
+				<para>Типово бічна панель не відображається. Щоб її побачити, виберіть <menuchoice><guimenu>Вигляд</guimenu><guimenuitem>Бічна панель</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Нижня панель</term>
+			 <listitem>
+				<para lang="en">The bottom pane is used by programming tools such as the <application>Python Console</application> plugin to display output.</para>
+				<para lang="en">By default the bottom pane is not shown. To show it, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Bottom Pane</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>При клацанні правою кнопкою миші у вікні <application>pluma</application>, з'являється контекстне меню. Воно містить загальні команди редагування тексту.</para>
+
+		<para>Подібно до інших програм MATE, більшість дій у <application>pluma</application> можна виконати кількома способами: через меню, через панель інструментів або за допомогою гарячих клавіш. Спільні для усіх програм гарячі клавіші перелічені у <ulink type="help" url="help:user-guide?shortcuts-apps">Посібнику користувача</ulink>.</para>
+	 </sect2>
+
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="pluma-run-from-cmd-line">
+		<title>Запуск pluma з командного рядка</title>
+		<para>Можна запустить pluma з командного рядка з одним або кількома файлами. Для відкривання кількох файлів введіть наступну команду та натисніть клавішу <keycap>Enter</keycap>:</para>
+		<para lang="en"><command>pluma <replaceable>file1.txt file2.txt file3.txt</replaceable></command></para>
+		<para>Або ж замість назви файлу можна вказати URI.</para>
+    <para>Додаткову інформацію про запуск <application>pluma</application> з командного рядка дивіться man-сторінці для pluma, <ulink url="man:pluma" type="man"><citerefentry><refentrytitle>pluma</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="pluma-usage">
+	 <title>Робота с файлами</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="pluma-create-new-file">
+		<title>Створення нового документу</title>
+		<para>Щоб створити новий документ виберіть <menuchoice><guimenu>Файл</guimenu><guimenuitem>Створити</guimenuitem></menuchoice>. У вікні <application>pluma</application> з'явиться новий порожній документ.</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="pluma-open-file">
+		<title>Відкриття файлу</title>
+		<para>Щоб відкрити файл виберіть <menuchoice><guimenu>Файл</guimenu><guimenuitem>Відкрити</guimenuitem></menuchoice>. У діалозі вибору файлів знайдіть потрібний файл та натисніть кнопку <guibutton>Відкрити</guibutton>. Файл відобразиться у вікні <application>pluma</application>.</para>
+
+		<para lang="en">The application records the paths and filenames of the five most recent files that you edited and displays the files as menu items on the <menuchoice><guimenu>File</guimenu></menuchoice> menu. You can also click on the <inlinemediaobject><imageobject><imagedata fileref="figures/pluma_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>Shows Recent Files menu icon.</phrase></textobject></inlinemediaobject>  icon on the toolbar to display the list of recent files.  </para>
+
+		<note><para>У <application>pluma</application> можна відкривати декілька файлів. Програма додає вкладку для кожного відкритого файлу у вікно. Також дивіться <xref linkend="pluma-tabs"/>.</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="pluma-save-file">
+		<title>Збереження файлу</title>
+		<para>Зберігати файли можна кількома способами:</para>
+		<itemizedlist>
+		  <listitem><para>Щоб зберегти зміни у існуючому файлі, виберіть <menuchoice><guimenu>Файл</guimenu><guimenuitem>Зберегти</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To save a new file or to save an existing file under a new filename, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save As</guimenuitem> </menuchoice>. Enter a name for the file in the <guilabel>Save As</guilabel> dialog, then click <guibutton>Save</guibutton>. </para>
+		  </listitem>
+		  <listitem><para lang="en">To save all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Save All</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para lang="en">To close all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Close All</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="pluma-open-from-uri">
+		<title>Відкриття файлу через URI</title>
+		<para>Щоб відкрити файл через Uniform Resource Identifier (URI), виконайте наступне:</para>
+		<orderedlist>
+		<listitem>
+		<para lang="en">Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Open Location</guimenuitem> </menuchoice> to display the <guilabel>Open Location</guilabel> dialog. </para>
+		</listitem>
+		<listitem>
+		<para>Введіть URI файлу, який хочете відкрити.</para>
+		</listitem>
+		<listitem>
+		<para>Виберіть відповідне кодування у розкривному списку <guilabel>Кодування символів</guilabel>.</para>
+		</listitem>
+		<listitem>
+		<para>Натисніть кнопку <guibutton>Відкрити</guibutton>.</para>
+		</listitem>
+		</orderedlist>
+		<para>Інший спосіб - ввести у командному рядку: <command>pluma <replaceable>URI</replaceable></command>, де <replaceable>URI</replaceable> — URI файлу, що відкривається, а потім натиснути клавішу <keycap>Enter</keycap>. <replaceable>URI</replaceable> може містити <literal>http:</literal>, <literal>ftp:</literal>, <literal>file:</literal> та усі протоколи, що підтримуються <literal>mate-vfs</literal>.</para>
+		<para>Файли з деякими типами URI відкриваються лише для читання, для внесення будь-яких змін треба зберегти їх у інше місце. Протокол HTTP дозволяє лише читати файли. Файли відкриті через протокол FTP доступні лише для читання, оскільки не усі сервери FTP можуть коректно підтримують збереження віддалених файлів.</para>
+		<warning><para>Збереження файлів на сервер FTP можна увімкнути у <ulink type="help" url="help:mateconf-editor"><application>Редакторі конфігурації</application></ulink>, встановивши ключ <systemitem>/apps/pluma/preferences/editor/save/writable_vfs_schemes</systemitem>. Але подібний режим використання може призводити до помилок.</para></warning>
+	 </sect2>
+
+<!-- ============= Working with tabs ======================== -->
+	 <sect2 id="pluma-tabs">
+	   <title>Робота з вкладками</title>
+
+		 <para>Коли відкрито більше одного файлу, <application>pluma</application> відображає у верхній частині області перегляду <firstterm>вкладки</firstterm> для кожного документу. Перейти до іншого документу можна натиснувши на відповідній вкладці.</para>
+		 <para>Для переміщення документу в інше вікно <application>pluma</application>, перетягніть відповідну вкладку.</para>
+		 <para lang="en">To move a document to a new <application> pluma</application> window, either drag its tab to the desktop, or choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Move to New Window</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>Робота с текстом</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="pluma-edit-text">
+		<title>Редагування тексту</title>
+		<para>При редагуванні тексту можна використовувати наступні прийоми:</para>
+		<itemizedlist>
+		  <listitem><para>Ввести новий текст з клавіатури. <firstterm>Курсор</firstterm> показує місце вводу тексту, змінити яке можна за допомогою клавіш керування курсором або клацання мишею.</para>
+		  </listitem>
+		  <listitem><para lang="en">To copy the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To delete the selected text from the file and move the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To permanently delete the selected text from the file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Delete</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To insert the contents of the clipboard at the cursor position, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem> </menuchoice>. You must cut or copy text before you can paste text into the file, either from pluma or another application.</para>
+		  </listitem>
+		  <listitem><para lang="en">To select all of the text in a file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem> </menuchoice>. </para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="pluma-undo-redo-edits">
+		<title>Повернення та повтор змін</title>
+		<para lang="en">To undo a change you have made, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem> </menuchoice>. To reverse this action, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	</sect1>
+	<sect1 id="pluma-find">
+		<title>Пошук та заміна</title>
+
+		<para>У <application>pluma</application> є два способи пошуку тексту. Для пошуку текстового блоку можна використовувати діалог <guilabel>Знайти</guilabel>, або блока скористатись <guilabel>Інтерактивним пошуком</guilabel> для виділення кольором тексту під час вводу.</para>
+
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="pluma-find-text">
+		<title>Пошук тексту</title>
+		<para>Щоб знайти у файлі рядок тексту, виконайте наступні дії:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice> to display the <guilabel>Find</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>У полі <guilabel>Знайти</guilabel> введіть рядок, що шукається. Можна використовувати спеціальні символи, такі як, символ нового рядка чи табуляції: дивіться <xref linkend="pluma-find-escapes"/>.</para>
+		  </listitem>
+		  <listitem><para>Для пошуку першого збігу після поточної позиції курсору натисніть <guibutton>Знайти</guibutton>. Якщо рядок знайдений, програма виділяє перший збіг. Інші рядки, що збігаються, будуть виділені кольором.</para>
+		  </listitem>
+		  <listitem><para lang="en">To find the next occurrence of the string, click <guibutton>Find</guibutton> or choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice>. To find the previous occurrence of the text, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</orderedlist>
+		<para lang="en">After you have closed the <guilabel>Find</guilabel> dialog, you can still move the selection to other occurrences of the text by choosing  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice> and  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		<para lang="en">To remove the highlighting from the text, choose  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Clear Highlight</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	 <sect2 id="pluma-find-incremental">
+	   <title>Інтерактивний пошук</title>
+
+	   <para>Інтерактивний пошук виділяє кольором текст під час вводу, буква за буквою. (Подібну функцію підтримують деякі веб-переглядачі.)</para>
+	   <para lang="en">To start an incremental search, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Incremental Search</guimenuitem> </menuchoice>. The search box appears at the top of the display area. </para>
+	   <para>Почніть ввід, та текст у документі буде виділений кольором. Виділиться перший збіг від позиції курсору.</para>
+	   <para>Щоб подовжити виділення до наступного збігу не закриваючи вікно інтерактивного пошуку, натисніть <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>. Щоб перетйти до попереднього збігу натисніть <keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>G</keycap></keycombo>.</para>
+	   <tip><para>Також для переходу між місцями збігу можна використовувати клавіші зі стрілками вгору та вниз, або колесо миші.</para></tip>
+	 </sect2>
+
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="pluma-find-replace-text">
+		<title>Заміна тексту</title>
+
+		<para>Для пошуку та заміни рядка у файлі іншим рядком, виконайте наступні дії:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Replace</guimenuitem> </menuchoice> to display the <guilabel>Replace</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Введіть рядок, що замінюється у полі <guilabel>Знайти</guilabel>. Можна використовувати та спеціальні символи, як наприклад, символ нового рядка чи символ табуляції: дивіться <xref linkend="pluma-find-escapes"/>.</para></listitem>
+		  <listitem><para>У полі <guilabel>Замінити на</guilabel> введіть рядок на який треба замінити.</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>Для перегляду кожного збігу рядка перед його заміною, натисніть <guibutton>Знайти</guibutton>. Якщо збіг є, <application>pluma</application> виділить його. Для заміни натисніть <guibutton>Замінити</guibutton>. Щоб перейти до наступного збігу, ще раз натисніть <guibutton>Знайти</guibutton>.</para>
+		<para>Для негайної заміни збігів, натисніть <guibutton>Замінити все</guibutton>.</para>
+	 </sect2>
+
+<!-- ============= Find and Replace Options ============================ -->
+  <sect2 id="pluma-find-options">
+		<title>Параметри пошуку та заміни</title>
+		<para>Діалог <guilabel>Знайти</guilabel>, як і діалог <guilabel>Замінити</guilabel>, мають наступні параметри:</para>
+		<itemizedlist>
+		  <listitem><para>Виберіть <guilabel>Збігається регістр</guilabel>, щоб шукати текст у тому регістрі, у якому ви його ввели. Наприклад, у цьому випадку «ТЕКСТ» не те ж саме, що й «текст».</para>
+		  </listitem>
+		  <listitem><para>Виберіть <guilabel>Збігається ціле слово</guilabel>, щоб ввести пошук лише за повними словами. Так, наприклад, «текст» не те ж саме що й «текстура».</para>
+		  </listitem>
+		  <listitem><para>Виберіть <guilabel>Шукати назад</guilabel>, для пошуку у зворотному напрямку, до початку документу.</para>
+		  </listitem>
+		  <listitem><para>При увімкненому <guilabel>Досягнувши кінця, починати спочатку</guilabel>, пошук йде від поточної позиції курсору до кінця, потім, від початку документу до поточної позиції.</para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+
+<!-- ============= Special Characters ============================ -->
+	 <sect2 id="pluma-find-escapes">
+	   <title>Спеціальні символи</title>
+	     <para>У текст для пошуку можна включати наступні escape-послідовності, що замінюють спеціальні символи:</para>
+			 <variablelist>
+        <varlistentry>
+          <term lang="en"><literal>\n</literal></term>
+    				<listitem>
+              <para>Символ нового рядка.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\t</literal></term>
+    				<listitem>
+              <para>Символ табуляції.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\r</literal></term>
+    				<listitem>
+              <para>Символ переведення каретки.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\\</literal></term>
+    				<listitem>
+              <para lang="en">The backslash character itself must be escaped if it is being searched for.
+                    For example, if you are looking for the "<literal>\n</literal>" literal, you will
+                    have to type "\\n" in the <guilabel>Search for</guilabel> field. Or if you are
+                    looking for a sequence of backslashes, you will have to double the number of
+                    searched backslashes.</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+    <sect2 id="pluma-goto-line">
+      <title>Встановлення курсору на певний рядок</title>
+
+      <para lang="en">To position the cursor on a specific line in the current file, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Go to Line</guimenuitem> </menuchoice>. The line number box appears at the top of the display area.</para>
+      <para lang="en">Begin typing the number of the line that you want to move the cursor to and the document will scroll to the specified line.</para>
+      <para lang="en">To dismiss the box and move the cursor to the specified line, press <keycap>Return</keycap>.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-printing">
+    <title>Друк</title>
+
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="pluma-page-setup">
+		<title>Встановлення параметрів сторінки</title>
+
+		<para lang="en">To set the page options, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Page Setup</guimenuitem> </menuchoice> to display the <guilabel>Page Setup</guilabel> dialog.</para>
+
+		<para>Це діалогове вікно дозволяє налаштувати наступні параметри друку:</para>
+
+		<sect3 id="pluma-page-setup-general">
+		<title>Вкладка «Загальне»</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Print syntax highlighting</guilabel> </term>
+			 <listitem>
+				<para>Відмітьте цей параметр, для друку з виділенням синтаксису кольором. Також дивіться <xref linkend="pluma-set-highlightmode"/>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Print page headers</guilabel> </term>
+			 <listitem>
+				<para>Параметр вмикає заголовок для кожної сторінки. Заголовок не налаштовується.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line Numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Параметр <guilabel>Друкувати номери рядків</guilabel> вмикає друк номерів рядків.</para>
+				<para>Використовуючи поле <guilabel>Нумерувати кожен ... рядок</guilabel>, можна вказати як часто будуть друкуватись номери. Наприклад, кожні 5 чи кожні 10 рядків.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+			 <listitem>
+                            <para>Параметр <guilabel>Увімкнути перенос тексту</guilabel> дозволяє переносити довгі рядки на інший рядок. Не впливає на нумерацію рядків.</para>
+				<para>Параметр <guilabel>Не розривати слово між рядками</guilabel> дозволяє переносити текст цілими словами.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="pluma-page-setup-fonts">
+	 		<title>Шрифти</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Body</guilabel> </term>
+			 <listitem>
+				<para>Натискаючи цю кнопку можна обрати шрифт для друку тексту.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Ця кнопка дозволяє обрати шрифт для друку номерів рядків.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Headers and footers</guilabel> </term>
+			 <listitem>
+				<para>Цією кнопкою обирається шрифт для друку верхніх та нижніх колонтитулів.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Кнопкою <guibutton>Відновити початкові шрифти</guibutton> можна відновити типові шрифти.</para>
+		</sect3>
+
+	 </sect2>
+
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="pluma-print-file">
+		<title>Друк документу</title>
+		<para><application>Pluma</application> може виконувати наступні завдання друку:</para>
+		<itemizedlist>
+		  <listitem><para>Друк документу на принтері.</para>
+		  </listitem>
+		  <listitem><para>Друк у файл.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>При друкуванні у файл, <application>pluma</application> створює файл в одному з друкованих форматів. Загальними форматами друку є PostScript та Portable Document Format.</para>
+
+		<para lang="en">To preview the pages that you want to print, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print Preview</guimenuitem> </menuchoice>.</para>
+
+		<para lang="en">To print the current file to a printer or a file, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice> to display the <guilabel>Print</guilabel> dialog.</para>
+
+		<para>Вікно <guilabel>Друк</guilabel> дозволяє встановлювати наступні параметри друку:</para>
+
+		<sect3 id="print-dialog-job">
+		<title>Вкладка «Завдання»</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Print range</guilabel> </term>
+			 <listitem>
+				<para>Для визначення кількості сторінок для друку виберіть один з наступних параметрів:</para>
+				<itemizedlist>
+				<listitem>
+				<para lang="en"><guilabel>All</guilabel></para>
+				<para>Відмітьте цей параметр для друкування усіх сторінок документа.</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Lines</guilabel></para>
+				<para>При виборі цього параметра друкуються лише певний діапазон рядків. Діапазон визначається полями <guilabel>Від</guilabel> та <guilabel>До</guilabel>.</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Selection</guilabel></para>
+				<para>Буде надрукований лише виділений текст. Якщо текст не виділений, параметр недоступний.</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Copies</guilabel> </term>
+			 <listitem>
+				<para>У полі <guilabel>Кількість копій</guilabel> можна вказати скільки екземплярів документу треба надрукувати.</para>
+				<para>Для друку кількох екземплярів, можна сортувати сторінки за копіями за допомогою параметра <guilabel>Розібрати за копіями</guilabel>.</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>Вкладка «Принтер»</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Printer</guilabel> </term>
+	    <listitem>
+	      <para>Використовуючи цей список можна вибрати принтер для друку.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Settings</guilabel> </term>
+	    <listitem>
+	      <para>У цьому списку обираються параметри принтера.</para>
+	      <para>Для налаштовування принтера натисніть <guibutton>Налаштувати</guibutton>. Наприклад, можна увімкнути або вимкнути друк з двох сторін, або відкласти друк до певного часу, якщо ця функціональність підтримується принтером.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Location</guilabel> </term>
+	    <listitem>
+	      <para>У цьому списку можна вибрати:</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>Друк документу на принтер CUPS.</para>
+	            <note>
+	              <para>Якщо виділений принтер є принтером CUPS, тоді у цьому розкривному списку є єдиний елемент - <guilabel>CUPS</guilabel>.</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>Друк документу на принтер lpr.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>Друк документу у файл PostScript.</para>
+	            <para>Натисніть <guibutton>Зберегти як</guibutton> щоб відкрити діалогове вікно,у якому вказується назва та розташування файлу PostScript.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>Дозволяє використовувати вказану команду для друку документу.</para>
+	            <para>Введіть у текстовому полі назву команди та її аргументи.</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>State</guilabel> </term>
+	    <listitem>
+	      <para>Функціональність не підтримується у цій версії pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Type</guilabel> </term>
+	    <listitem>
+	      <para>Функціональність не підтримується у цій версії pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Comment</guilabel> </term>
+	    <listitem>
+	      <para>Функціональність не підтримується у цій версії pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>Вкладка «Папір»</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Paper size</guilabel> </term>
+			 <listitem>
+				<para>У цьому розкривному списку можна вибрати розмір аркушів, на які буде друкуватись документ.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Width</guilabel> </term>
+			 <listitem>
+				<para>У цьому полі визначається ширина аркуша. Одиниця виміру обирається у сусідньому розкривному списку.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Height</guilabel> </term>
+			 <listitem>
+				<para>У цьому полі визначається висота сторінки.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Feed orientation</guilabel> </term>
+			 <listitem>
+				<para>У цьому списку вибирається орієнтація паперу у принтері.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Page orientation</guilabel> </term>
+			 <listitem>
+				<para>У цьому списку вибирається орієнтація сторінки.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Layout</guilabel> </term>
+			 <listitem>
+				<para>У цьому списку вказується схема розташування сторінки. Попередній вигляд компонування сторінки відображається у полі <guilabel>Попередній перегляд</guilabel>.</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term lang="en"><guilabel>Paper tray</guilabel> </term>
+            <listitem>
+              <para>У цьому списку можна вибрати джерело паперу.</para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-programming-features">
+	  <title>Програмування</title>
+
+	  <para>Деякі з можливостей програмування у <application>pluma</application> підтримуються модулями. Наприклад, «Список тегів» — модуль, що відображає теги різних мов розмітки: дивіться <xref linkend="pluma-tag-list-plugin"/>.</para>
+
+<!-- ============= Syntax Highlighting =================== -->
+	 <sect2 id="pluma-set-highlightmode">
+	 <title>Виділення синтаксису</title>
+	 <para>Виділення синтаксису кольором робить полегшує читання коду людиною. Різні смислові елементи тексту виділяються різними кольорами.</para>
+
+	 <para lang="en"><application>pluma</application> chooses an appropriate syntax highlighting mode based on a document's type. To override the syntax highlighting mode, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Highlight Mode</guimenuitem> </menuchoice>, then choose one of the following menu items:</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term lang="en"><guimenuitem>Normal</guimenuitem></term>
+		      <listitem>
+		        <para>Без виділення кольором.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Sources</guisubmenu></term>
+		      <listitem>
+		        <para>Виділення програмних текстів. З підменю виберіть потрібний тип.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Markup</guisubmenu></term>
+		      <listitem>
+		        <para>Виділяє мови розмітки. З підменю можна обрати потрібну.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Scripts</guisubmenu></term>
+		      <listitem>
+		        <para>Виділення кольором синтаксису сценаріїв. У підменю містяться деякі мови «сценаріїв».</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Others</guisubmenu></term>
+		      <listitem>
+		        <para>Інші режими виділення кольором.</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 </sect2>
+
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="pluma-pipe-output">
+		<title>Вставка результатів виконання команд у файл</title>
+		<para>Можна використовувати <application>pluma</application> для вставки результатів виконання певної команди у текстовий файл. Наприклад, <command>ls | pluma</command>.</para>
+		<para>Вивід команди <command>ls</command> буде занесений у новий текстовий файл у вікні <application>pluma</application>.</para>
+		<para>Інший спосіб — використовувати модуль <application>Зовнішні інструменти</application> для вставки результатів виконання команди у поточний файл.</para>
+	 </sect2>
+  </sect1>
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="pluma-shortcutkeys">
+  <title>Комбінації клавіш</title>
+  <para>Для прискорення виконання поширених операцій замість миші та меню використовуйте комбінації клавіш. У наступній таблиці перелічені усі комбінації клавіш <application>pluma</application>.</para>
+  <para>Докладнішу інформацію про комбінації клавіш дивіться у <ulink type="help" url="help:user-guide?keyboard-skills">Посібнику користувача середовища MATE</ulink>.</para>
+
+  <!-- ============= Tabs ======================== -->
+	<bridgehead>Вкладки</bridgehead>
+	<para>Комбінації клавіш для роботи з вкладкам</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Комбінація клавіш</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>Команда</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para lang="en">Ctrl + Alt + PageUp</para></entry>
+          <entry><para>Перейти до сусідньої вкладки, що розташована ліворуч</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Alt + PageDown</para></entry>
+          <entry><para>Перейти до сусідньої вкладки, що розташована праворуч</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>Закрити вкладку.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Shift + L</para></entry>
+          <entry><para>Зберегти усі вкладки.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Shift + W</para></entry>
+          <entry><para>Закрити усі вкладки.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Alt + n</para></entry>
+          <entry><para>Перейти до n-ої вкладки</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>Файли</bridgehead>
+	<para>Комбінації клавіш для роботи з файлами:</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Комбінація клавіш</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Команда</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>Створити новий документ.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>Відкрити документ.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + L</para></entry>
+                        <entry><para>Відкрити адресу.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>Зберегти поточний документ на диск.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + S</para></entry>
+                        <entry><para>Зберегти поточний документ з новою назвою.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>Надрукувати поточний документ.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + P</para></entry>
+                        <entry><para>Попередній перегляд документу.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + W</para></entry>
+                        <entry><para>Закрити поточний документ.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>Вихід з pluma.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>Правка</bridgehead>
+	<para>Комбінації клавіш для правки документу:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Комбінація клавіш</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Команда</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>Скасувати останню операцію</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + Z</para></entry>
+                        <entry><para>Повторити скасовану дію</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>Вирізати виділену текстову область та перемістити у буфер обміну.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>Копіювати виділений текст або регіон у буфер обміну.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>Вставити текст з буферу обміну.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>Виділити все.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Ctrl + D</para></entry>
+                        <entry><para lang="en">Delete current line.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Alt + Up</para></entry>
+                        <entry><para lang="en">Move the selected line up one line.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Alt + Down</para></entry>
+                        <entry><para lang="en">Move the selected line down one line.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+	<bridgehead>Панелі</bridgehead>
+	<para>Комбінації клавіш для роботи з панелями:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Комбінація клавіш</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Команда</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>F9</para></entry>
+                        <entry><para>Показати чи сховати бічну панель.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>Відобразити/приховати нижню панель.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Search ======================= -->
+	<bridgehead>Пошук</bridgehead>
+	<para>Комбінації клавіш для виконання пошуку</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Комбінація клавіш</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Команда</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>Знайти рядок</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>Пошук місця наступного збігу з вказаним рядком.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + G</para></entry>
+                        <entry><para>Знайти попереднє місце збігу з рядком</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>Інтерактивний пошук.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>Пошук та заміна.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + K</para></entry>
+                        <entry><para>Очистити виділення кольором</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>Перейти на рядок.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Tools ======================= -->
+	<bridgehead>Сервіс</bridgehead>
+	<para>Комбінації клавіш для сервісних функцій:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Комбінація клавіш</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Команда</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para lang="en">Shift + F7</para></entry>
+                        <entry><para>Перевірка орфографії</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + F12</para></entry>
+                        <entry><para>Видалення завершальних пробілів (модуль).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + T</para></entry>
+                        <entry><para>Модуль «Відступи рядків»</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + T</para></entry>
+                        <entry><para>Забрати відступ у рядку (модуль).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>F8</para></entry>
+                        <entry><para>Запустити "make" у поточному каталозі (модуль).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + D</para></entry>
+                        <entry><para>Список файлів каталогу (модуль).</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Help ======================= -->
+	<bridgehead>Довідка</bridgehead>
+	<para>Комбінації клавіш для отримання довідки</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Комбінація клавіш</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>Команда</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para>F1</para></entry>
+          <entry><para>Відкривання посібника користувача <application>pluma</application>:</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="pluma-prefs">
+    <title>Параметри</title>
+
+    <para lang="en">To configure <application>pluma</application>, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. The <guilabel>Preferences</guilabel> dialog contains the following categories:</para>
+    <itemizedlist>
+      <listitem><para><xref linkend="pluma-prefs-view"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-editor"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-fontsandcolors"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-plugins"/></para></listitem>
+    </itemizedlist>
+
+    <sect2 id="pluma-prefs-view">
+      <title>Зовнішній вигляд</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+          <listitem>
+            <para>Відмітьте <guilabel>Увімкнути перенос тексту</guilabel>, щоб довгі рядки відображались як абзаци, а не забігли за край вікна. Горизонтальне прокручування стане зайвим.</para>
+            <para>Параметр <guilabel>Не розривати слово між рядками</guilabel> включає перенос по словам тексту між рядками. Такий текст легше читати.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Line Numbers</guilabel></term>
+          <listitem>
+            <para>При відміченому параметрі <guilabel>Показувати номери рядків</guilabel> коло лівої межі вікна <application>pluma</application> відображаються номери рядків.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Current Line</guilabel></term>
+          <listitem>
+            <para lang="en">Select the <guilabel>Highlight current line</guilabel> option to highlight the line where the cursor is placed. </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Right Margin</guilabel></term>
+          <listitem>
+            <para>Відмітьте <guilabel>Відображати праву межу</guilabel>, щоб відображалась вертикальна лінія праворуч - права межа.</para>
+            <para>У параметрі <guilabel>Права межа у стовпчику</guilabel>, можна вказати розташування цієї вертикальної лінії.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Bracket Matching</guilabel></term>
+          <listitem>
+            <para lang="en">Select the <guilabel>Highlight matching bracket</guilabel> option to highlight the corresponding bracket when the cursor is positioned on a bracket character. </para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-editor">
+      <title>Параметри редактора</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Tabs</guilabel> </term>
+          <listitem>
+            <para>У полі <guilabel>Ширина табуляції</guilabel> можна вказати ширину вільного простору, що додається <application> pluma</application> при натисканні клавіші <keycap>Tab</keycap>.</para>
+            <para>Параметр <guilabel>Вставляти пробіли замість табуляції</guilabel> вказує <application>pluma</application> при натисканні клавіші <keycap>Tab</keycap> замість символу табуляції вставляти певну кількість пробілів.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Auto Indentation</guilabel> </term>
+          <listitem>
+            <para>Параметр <guilabel>Увімкнути автоматичний відступ</guilabel> визначає чи буде наступний рядок починатись з такого ж відступу як і попередній.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>File Saving</guilabel> </term>
+          <listitem>
+            <para>При увімкненому параметрі <guilabel>Створювати резервну копію файлу перед збереженням</guilabel> кожен раз при збереженні файлу створюється його резервна копія. Резервна копія містить символ ~ наприкінці імені файлу.</para>
+            <para>Параметр <guilabel>Автоматично зберігати поточний файл кожні ... хв</guilabel> дозволяє періодично автоматично зберігати поточний файл.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-fontsandcolors">
+      <title>Параметри шрифтів та кольорів</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Font</guilabel> </term>
+          <listitem>
+            <para>Виберіть <guilabel>Шрифт типової теми</guilabel>, щоб текст у вікні <application>pluma</application> відображався типовим шрифтом.</para>
+            <para>В полі <guilabel>Шрифт редактора</guilabel> відображається поточний шрифт, що використовується для виводу тексту. Натискання на кнопку дозволяє встановити сам шрифт, гарнітуру та розмір.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Color Scheme</guilabel></term>
+          <listitem>
+            <para lang="en">You can choose a color scheme from the list of color schemes. By default, the following color schemes are installed:</para>
+            <variablelist>
+              <varlistentry>
+                <term lang="en"><guilabel>Classic</guilabel></term>
+                <listitem>
+                  <para lang="en">Classic color scheme based on the gvim color scheme.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Cobalt</guilabel></term>
+                <listitem>
+                  <para lang="en">Blue based color scheme.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Kate</guilabel></term>
+                <listitem>
+                  <para lang="en">Color scheme used in the Kate text editor.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Oblivion</guilabel></term>
+                <listitem>
+                  <para lang="en">Dark color scheme using the Tango color palette.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Tango</guilabel></term>
+                <listitem>
+                  <para lang="en">Color scheme using the Tango color scheme.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <para lang="en">You can add a new color scheme by clicking on <guilabel>Add...</guilabel>, and selecting a color scheme file</para>
+            <para lang="en">You can remove the selected color scheme by clicking on <guilabel>Remove</guilabel></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-plugins">
+      <title>Параметри модулів</title>
+      <para>Модулі розширюють можливості <application>pluma</application>. Для інформації про вбудовані модулі дивіться <xref linkend="pluma-plugins-overview"/>.</para>
+
+<!-- ============= To Load pluma Plugins ========================= -->
+	 <sect3 id="pluma-install-plugins">
+		<title>Підключення модулів</title>
+		<para>Щоб підключити модуль у <application>pluma</application>, виконайте інструкції:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Перейдіть до вкладки <guilabel>Модулі</guilabel>.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Відмітьте модуль, який хочете увімкнути.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Натисніть на кнопку <guibutton>Закрити</guibutton> для закриття діалогу <guilabel>Параметри</guilabel>.</para>
+                  </listitem>
+                </orderedlist>
+	 </sect3>
+
+<!-- ============= To Remove pluma Plugins ========================= -->
+  	 <sect3 id="pluma-remove-plugins">
+  		<title>Вимикання модулів</title>
+  		<para>Модулі залишаються увімкненими після виходу з <application>pluma</application>.</para>
+  		<para>Щоб вимкнути модуль виконайте наступне:</para>
+                  <orderedlist>
+                    <listitem>
+                      <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                    </listitem>
+                    <listitem>
+                      <para>Перейдіть до вкладки <guilabel>Модулі</guilabel>.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Просто зніміть позначку з модуля, що вимикається.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Натисніть на кнопку <guibutton>Закрити</guibutton> для закриття діалогу <guilabel>Параметри</guilabel>.</para>
+                    </listitem>
+                  </orderedlist>
+  	 </sect3>
+	 </sect2>
+
+ </sect1>
+<!-- ============= To Use the pluma Plugins ========================= -->
+	 <sect1 id="pluma-plugins">
+		<title>Модулі</title>
+		<sect2 id="pluma-plugins-overview">
+		  <title>Робота з модулями</title>
+  		<para>Підключенням <firstterm>модулів</firstterm>, можна розширити функціональність <application>pluma</application>. Модулі — це додаткові програми. Вони можуть додавати нові пункти меню для доступу до своєї функціональності.</para>
+  		<para>Деякі модулі постачаються разом з <application>pluma</application>, але можна встановити й інші. На <ulink type="http" url="http://live.gnome.org/Pluma/Plugins">веб-сайті pluma</ulink> є список додаткових модулів.</para>
+  		<para>Для вмикання та вимикання модулів дивіться розділ <link linkend="pluma-prefs-plugins">Налаштовування модулів</link>.</para>
+  		<para>Наступні модулі постачаються разом з <application>pluma</application>:</para>
+  		<!-- Not yet documented:
+  		File browser
+  		-->
+  		<itemizedlist>
+  		  <listitem>
+  		    <para><link linkend="pluma-change-case-plugin"><application>Заміна регістру</application></link> дозволяє змінити регістр символів виділеного тексту.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-document-statistics-plugin">Статистика документа</link></application> показує кількість рядків, слів та символів у документі.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-external-tools-plugin">Зовнішні інструменти</link></application> дозволяє виконати зовнішні команди з <application>pluma</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application>Перегляд файлів</application> дозволяє переглядати теки та файли у бічній панелі.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-indent-lines-plugin">Відступ у рядках</link></application> вставляє або прибирає відступ у виділених рядках.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-insert-date-time-plugin">Вставка дати й часу</link></application> вставляє поточну дату й час у позиції курсору.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-modelines-plugin">Стилі редагування</link></application> підтримка стилів редагування рядків <application>Emacs</application>, <application>Kate</application> та <application>Vim</application> для pluma.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-python-console-plugin">Консоль Python</link></application> дозволяє запускати команди на мові програмування Python.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-snippets-plugin">Фрагменти тексту</link></application> дозволяє швидко вставляти фрагменти тексту, що часто використовуються.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-sort-plugin">Сортування</link></application> сортує документ або виділений текст.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-spell-checker-plugin">Перевірка орфографії</link></application> перевіряє орфографію у поточному документі.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-tag-list-plugin">Список тегів</link></application> надає простий спосіб вставки у документ теги або рядки, не вводячи їх вручну.</para>
+  		  </listitem>
+  		</itemizedlist>
+
+	<note><para lang="en">For more information on creating plugins, see the <ulink type="http" url="http://live.gnome.org/Pluma/Plugins"><application>pluma</application> website</ulink>.</para></note>
+  	</sect2>
+
+<sect2 id="pluma-change-case-plugin">
+<title>Модуль зміни регістру символів</title>
+	<para>Модуль <application>Заміна регістру</application> змінює регістр символів виділеного тексту.</para>
+	 <para>Якщо модуль увімкнений, у меню <guimenu>Правка</guimenu> будуть доступні наступні пункти меню:</para>
+
+  <informaltable frame="all">
+    <tgroup cols="3" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="33*"/>
+      <colspec colname="COLSPEC1" colwidth="33*"/>
+      <colspec colname="COLSPEC2" colwidth="33*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Пункт меню</para></entry>
+          <entry colname="COLSPEC1">
+            <para>Дія</para></entry>
+          <entry colname="COLSPEC2">
+            <para>Приклад</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Upper Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Змінює регістр кожного символу у верхній регістр.</para></entry>
+          <entry><para><literal>Цей текст</literal> перетворюється у <literal>ЦЕЙ ТЕКСТ</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Lower Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Змінює регістр кожного символу на нижній регістр.</para></entry>
+          <entry><para><literal>Цей текст</literal> перетворюється на <literal>цей текст</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Invert Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Змінює регістр кожного символу, нижній на верхній, а верхній на нижній.</para></entry>
+          <entry><para><literal>Цей Текст</literal> перетвориться на <literal>цЕЙ тЕКСТ</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Title Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Змінює регістр першого символу кожного слова у верхньому регістрі.</para></entry>
+          <entry><para><literal>цей текст</literal> перетвориться на <literal>Цей Текст</literal></para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect2>
+
+<sect2 id="pluma-document-statistics-plugin">
+<title>Модуль «Статистика документа»</title>
+	<para>Модуль <application>Статистика документа</application> підраховує кількість рядків, слів, символів з пробілами, символів без пробілів, а також байтів у поточному файлі. Результати виводяться у діалоговому вікні <guilabel>Статистика документа</guilabel>. Щоб скористатись цим модулем виконайте наступні дії:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Document Statistics</guimenuitem> </menuchoice> to display the <guilabel>Document Statistics</guilabel> dialog. The <guilabel>Document Statistics</guilabel> dialog displays the following information about the file:
+				</para>
+		      <itemizedlist>
+		      <listitem><para>Кількість рядків у поточному документі.</para>
+		      </listitem>
+		      <listitem><para>Кількість слів.</para>
+		      </listitem>
+		      <listitem><para>Кількість символів разом з пробілами.</para>
+		      </listitem>
+		      <listitem><para>Кількість символів без урахування пробілів.</para>
+		      </listitem>
+		      <listitem><para>Кількість байт.</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para>Можна продовжувати редагування файлів та при відкритому вікну <guilabel>Статистика документа</guilabel>. Кнопка <guibutton>Оновити</guibutton> оновлює зміст діалогового вікна.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-external-tools-plugin">
+  <title>Модуль «Зовнішні інструменти»</title>
+  <para>Модуль <application>Зовнішні інструменти</application> дозволяє виконувати зовнішні команди та сценарії оболонки. Команді можна передавати деякі дані, а потім використовувати виведену нею інформацію (наприклад, <application>sed</application>), або запускати запускати певну команду (наприклад, <application>make</application>)</para>
+  <para>Використовуючи <guilabel>Менеджер зовнішніх інструментів</guilabel> можна створювати та редагувати команди. Для запуску зовнішніх команд використовуйте меню <guimenu>Сервіс</guimenu>.</para>
+
+  <sect3 id="pluma-external-tools-plugin-builtin">
+    <title>Вбудовані команди</title>
+    <para>З модулем постачаються наступні команди:</para>
+    <variablelist>
+      <varlistentry><term>Build</term>
+        <listitem>
+          <para>Запускає <application>make</application> у каталозі поточного документу.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Directory Listing</term>
+        <listitem>
+          <para>Вставляє зміст каталогу поточного документу у новий документ.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Environment Variables</term>
+        <listitem>
+          <para>Відображає список змінних оточення у нижній панелі.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Grep</term>
+        <listitem>
+          <para>Шукає вираз в усіх файлах у каталозі поточного документу, використовуючи шаблони. Результати відображаються у нижній панелі.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Remove Trailing Spaces</term>
+        <listitem>
+          <para>Видаляє всі початкові та завершальні пробіли у рядках.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-define">
+    <title>Визначення команд</title>
+    <para>Щоб додати зовнішню команду, виберіть <menuchoice><guimenu>Сервіс</guimenu><guimenuitem>Зовнішні інструменти</guimenuitem></menuchoice>.</para>
+    <para>У вікні <guilabel>Менеджер зовнішніх інструментів</guilabel> натисніть кнопку <guibutton>Створити</guibutton>. Для нової команди можна вказати наступні подробиці:</para>
+    <variablelist>
+      <varlistentry><term>Опис</term>
+        <listitem>
+          <para>Коли меню команди обрано, опис відображається у рядку статусу.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Комбінація клавіш</term>
+        <listitem>
+          <para>Комбінація клавіш для виклику команди.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Команди</term>
+        <listitem>
+          <para>Команди, що запускаються. Можна використовувати також і змінні оточення, докладніше дивіться <xref linkend="pluma-external-tools-plugin-variables"/>.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Ввід</term>
+        <listitem>
+          <para>Дані, що отримуються командами (як <systemitem>stdin</systemitem>): текст всього поточного документу, виділена область, рядок або слово.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Вікно виводу</term>
+        <listitem>
+          <para>Що робити з виводом команди: відобразити у нижній панелі, вставити у новий документ або у поточний; у кінець, у позицію курсора, замінити виділений текст у документі або ж замінити весь документ.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Застосовність:</term>
+        <listitem>
+          <para>Визначає тип документу, до якого типу застосовуються команди, наприклад, локальні документи або документи у мережі.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-edit">
+    <title>Редагування та видалення фрагментів</title>
+    <para>Для редагування фрагменту виберіть його зі списку та відредагуйте.</para>
+    <para>Для перейменування фрагменту, клацніть на ньому у списку.</para>
+    <para>Щоб відновити змінені вбудовані фрагменти, натисніть <guilabel>Відновити</guilabel>.</para>
+    <para>Для видалення фрагменту, виберіть його у списку та натисніть кнопку <guibutton>Видалити</guibutton>. Вбудовані фрагменти видалити неможливо.</para>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-variables">
+    <title>Змінні</title>
+    <para>У полі <guilabel>Команда(и)</guilabel> можна використовувати наступні змінні:</para>
+    <itemizedlist>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_NAME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_SCHEME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_PATH</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_DIR</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_PATH</para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>
+
+<sect2 id="pluma-file-browser-plugin">
+  <title>Модуль перегляду файлової системи</title>
+  <para>Модуль <application>Перегляд файлів</application> відображає теки та файли у бічній панелі, дозволяючи швидко відкривати файли.</para>
+  <para lang="en">To view the File Browser, choose <menuchoice><guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice> and then click on the tab showing the File Browser icon at the bottom of the side pane.</para>
+  <sect3 id="pluma-file-browser-plugin-browsing">
+    <title>Перегляд ваших файлів</title>
+    <para>Вкладка Перегляд файлів початково відображає закладки. Для перегляду змісту будь-якого елементу двічі клацніть на ньому.</para>
+    <para>Щоб піднятись рівнем вище, скористайтесь розкривним списком або натисніть клавішу зі стрілкою вгору (фокус вводу повинен бути на панелі).</para>
+    <para>Щоб переглянути теку документу, з яким ви працюєте зараз, клацніть правою кнопкою на списку файлів та виберіть <guimenuitem>Встановити корінь на активний документ</guimenuitem>.</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-open">
+    <title>Відкриття файлу</title>
+    <para>Подвійне клацання на файлі відкриває його у <application>pluma</application>.</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-create">
+    <title>Створення файлів та тек</title>
+    <para>Щоб створити файл у поточній теці, клацніть на списку файлів правою кнопкою миші та виберіть <guimenuitem>Створити файл</guimenuitem>.</para>
+    <para>Щоб створити нову теку у поточній теці, у контекстному меню виберіть <guimenuitem>Створити теку</guimenuitem>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-indent-lines-plugin">
+<title>Модуль «Відступи в рядках»</title>
+	<para>Модуль <application>Відступ у рядках</application> вставляє або прибирає відступ на початку рядків.</para>
+	<para>Щоб вставити чи прибрати відступ, зробіть наступне:</para>
+  	<orderedlist>
+		  <listitem><para>Виділіть рядки. Якщо це один рядок, просто залиште курсор десь у його межах.</para>
+		  </listitem>
+		  <listitem>
+		    <itemizedlist>
+		      <listitem>
+		        <para lang="en">To indent the text, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Indent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		      <listitem>
+		        <para lang="en">To remove the indentation, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Unindent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+	<para>Кількість пробілів, а також чи будуть ці пробіли або символ табуляції залежать від параметрів <guilabel>Знаки табуляції</guilabel> у параметрах редактора, дивіться <xref linkend="pluma-prefs-editor"/>.</para>
+
+</sect2>
+
+<sect2 id="pluma-insert-date-time-plugin">
+<title>Модуль вставки дати та часу</title>
+	<para>Модуль <application>Вставка дати й часу</application> вставляє поточну дату й час у поточний документ. Щоб використати його:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>. </para>
+        <para>Якщо ви не налаштовували цей модуль на вставку дати та часу без запиту формату, тоді <application>pluma</application> відобразить діалог <guilabel>Вставити дату й час</guilabel>. Виберіть зі списку потрібний формат та натисніть <guibutton>Вставити</guibutton>. У позицію курсору будуть вставлені нова дата та час. Діалог закриється автоматично.</para>
+				<para>Якщо <application>pluma</application> вже налаштований для вставки дати та часу визначеного формату, діалог <guilabel>Вставити дату й час</guilabel> показаний не буде.</para>
+		  </listitem>
+		</orderedlist>
+
+<sect3 id="pluma-date-time-configure">
+<title>Настройка модуль вставляння дати й часу</title>
+<para>Для налаштовування модуля вставки дати й часу, виконайте наступне:</para>
+		<orderedlist>
+		  <listitem> <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>.
+                    </para>
+		  </listitem>
+		  <listitem> <para>Перейдіть до вкладки <guilabel>Модулі</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Виберіть модуль <guilabel>Вставка дати й часу</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Натисніть кнопку <guibutton>Налаштувати модуль</guibutton>. Відкриється діалог <guilabel>Налаштовування модуля вставляння дати й часу</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Виберіть один з параметрів:</para>
+		      <itemizedlist>
+		      <listitem><para>Для запиту формату вставки кожен раз, відмітьте <guilabel>Запитувати формат</guilabel>.</para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same <application>pluma</application>-provided date/time format each time you insert the date/time, select the <guilabel>Use the selected format</guilabel> option, then select the appropriate format from the list. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same customized date/time format each time you insert the date/time, select the <guilabel>Use custom format</guilabel> option, then enter the appropriate format in the text box. For more information about how to specify a custom format, see <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem> <para>Натисніть <guibutton>Гаразд</guibutton> для закриття діалогу.</para>
+		  </listitem>
+		  <listitem> <para>Закрийте діалог <guilabel>Параметри</guilabel> натисніть на кнопку <guibutton>Закрити</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect3>
+</sect2>
+
+<sect2 id="pluma-modelines-plugin">
+  <title>Модуль «Стилі редагування»</title>
+    <para>Модуль <application>Стилі редагування</application> дозволяє встановити індивідуальні параметри документа. <firstterm>Стилі редагування</firstterm> є рядками тексту на початку або наприкінці документу з параметрами для <application>pluma</application>.</para>
+    <para lang="en">Preferences set using modelines take precedence over the ones specified in the preference dialog.</para>
+    <para lang="en">You can set the following preferences with modelines:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Ширина табуляції</para>
+      </listitem>
+      <listitem>
+        <para lang="en">Indent width</para>
+      </listitem>
+      <listitem>
+        <para>Пробіли замість табуляції</para>
+      </listitem>
+      <listitem>
+        <para>Перенос тексту</para>
+      </listitem>
+      <listitem>
+        <para>Пробіли замість табуляцій</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Модуль <application>Стилі редагування</application> підтримує набори параметрів інших текстових редакторів: <application>Emacs</application>, <application>Kate</application> та <application>Vim</application>.</para>
+
+    <sect3 id="pluma-modelines-plugin-emacs">
+      <title>«Стиль редагування» Emacs</title>
+      <para>Скануються перші два рядки документу.</para>
+      <para lang="en">The <application>Emacs</application> options for tab-width, indent-offset, indent-tabs-mode and autowrap are supported. For more information, see the <ulink type="http" url="http://www.delorie.com/gnu/docs/emacs/emacs_486.html">GNU Emacs Manual</ulink>.</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-kate">
+      <title>«Стиль редагування» Kate</title>
+      <para>Скануються перші та останні десять рядків документу.</para>
+      <para>З параметрів <application>Kate</application> підтримуються ширина табуляції, ширина відступу, відступ пробілами, перенос слів та word-wrap-column. Додаткову інформації дивіться <ulink type="http" url="http://www.kate-editor.org/article/katepart_modelines">веб-сайт Kate</ulink>.</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-vim">
+      <title>«Стиль редагування» Vim</title>
+      <para>Скануються перші та останні три рядки документа.</para>
+      <para lang="en">The <application>Vim</application> options for et, expandtab, ts, tabstop, sw, shiftwidth, wrap, and textwidth are supported. For more information, see the <ulink type="http" url="http://vimdoc.sourceforge.net/htmldoc/options.html#modeline">Vim website</ulink>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-python-console-plugin">
+  <title>Модуль «Консоль Python»</title>
+  <para>Модуль <application>Консоль Python</application> дозволяє запускати команди на мові програмування python. У нижню панель буде додана вкладка, у якій можна ввести команду та переглянути її вивід.</para>
+  <caution><para>Команди, що вводяться, виконуються без будь-якої перевірки. Можливі зависання <application>pluma</application>, наприклад, при вході у нескінченний цикл.</para></caution>
+</sect2>
+
+<sect2 id="pluma-snippets-plugin">
+<title>Модуль «Фрагменти тексту»</title>
+  <para>Модуль <application>Фрагменти тексту</application> дозволяє зберігати  фрагменти тексту, що часто використовуються, потім швидко вставляти ці фрагменти у будь-яке місце документу.</para>
+    <para>Фрагменти тексту специфічні для мови поточного документу. Наприклад, працюючи з HTML-документом, можна обрати фрагменти для HTML. Деякі текстові фрагменти глобальні, вони доступні для усіх видів документів.</para>
+    <para>Декілька фрагментів постачається у складі <application>pluma</application>. Їх можна змінювати.</para>
+
+  <sect3 id="pluma-snippets-plugin-insert">
+    <title>Вставка фрагментів</title>
+    <para>Для вставки фрагменту введіть його <firstterm>tab-тригер</firstterm> та натисніть клавішу <keycap>Tab</keycap>. <firstterm>Tab-тригер</firstterm> фрагменту тексту — це зазвичай перші декілька символів потрібного фрагменту, або будь-яка послідовність, що легко запам'ятовується.</para>
+    <para>Інший спосіб: натискання <keycombo><keycap>Ctrl</keycap><keycap>Пробіл</keycap></keycombo> дозволяє обрати зі списку потрібний фрагмент для вставки.</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-add">
+    <title>Додавання фрагментів</title>
+    <para>Для створення нового фрагменту тексту:</para>
+      <orderedlist>
+        <listitem>
+          <para>Виберіть <menuchoice><guimenu>Сервіс</guimenu><guimenuitem>Керування фрагментами</guimenuitem></menuchoice>. Відкриється вікно <guilabel>Менеджер фрагментів</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>У списку фрагменти тексту згруповані за мовою. Оберіть мову, для якого хочете додати фрагмент. Для додавання фрагменту, що стосується усіх мов, виберіть «Глобальний».</para>
+        </listitem>
+        <listitem>
+          <para>Натисніть <guibutton>Створити</guibutton>, та новий фрагмент додається у список.</para>
+        </listitem>
+        <listitem>
+          <para>Введіть наступну інформацію про фрагмент:</para>
+          <variablelist>
+            <varlistentry><term>Назва</term>
+              <listitem>
+                <para>Введіть назву фрагменту у текстове полі у списку. Назва служить лише для відображення суті фрагменту. Можна змінити назва текстового фрагмента, клацнув по ньому мишкою.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Текст фрагменту</term>
+              <listitem>
+                <para>Введіть текст самого фрагменту у текстовому полі <guilabel>Редагувати фрагмент</guilabel>. Дивіться також <xref linkend="pluma-snippets-plugin-syntax"/>.</para>
+                <tip><para>Можна перемикнутися у вікно документу без закриття вікна <guilabel>Менеджер фрагментів</guilabel>.</para></tip>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Tab-тригер</term>
+              <listitem>
+                <para>Введіть tab-тригер для фрагменту це - текст, який треба ввести до натискання клавіші <keycap>Tab</keycap> при вставлянні фрагменту.</para>
+                <para><guilabel>Tab-тригер</guilabel> Може бути або одним символом, або словом, що складається лише із літер. Якщо введений неправильний tab-тригер, він буде виділений червоним кольором.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Комбінація клавіш</term>
+              <listitem>
+                <para>Введіть комбінацію клавіш, для вставки фрагменту.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+        </listitem>
+      </orderedlist>
+  </sect3>
+  <sect3 id="pluma-snippets-plugin-edit">
+    <title>Редагування та видалення фрагментів</title>
+    <para>Для редагування фрагменту виберіть його з списку та відредагуйте.</para>
+    <para>Для зміни назви фрагменту, клацніть на ньому у списку.</para>
+    <para>Щоб відновити змінені вбудовані фрагменти, натисніть <guilabel>Відновити</guilabel>.</para>
+    <para>Для видалення фрагменту, виберіть його зі списку та натисніть кнопку <guibutton>Видалити</guibutton>. Вбудовані фрагменти видаляти не можна.</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-syntax">
+    <title>Підстановка у фрагментах</title>
+    <para>Окрім статичного тексту у фрагменти можна включати і змінюваний текст, або символи пробілів, куди можна буде додати текст після вставки фрагменту у документ.</para>
+
+    <para/>
+
+    <para>Можна використати наступні символи-замінники:</para>
+      <variablelist>
+        <varlistentry><term>Закладки</term>
+          <listitem>
+            <para><literal>$<replaceable>n</replaceable></literal> встановлює закладку, де <literal>n</literal> — число більше 1.</para>
+            <para><literal>${<replaceable>n</replaceable>:<replaceable>default</replaceable>}</literal> встановлює закладку з типовим значенням.</para>
+            <para>Закладка позначає місце у фрагменті, куди можна додати текст після вставки фрагменту.</para>
+            <para>Після вставки фрагменту, курсор переміщується у позицію першої закладки. Можна ввести деякий текст та, натиснувши клавішу <keycap>Tab</keycap>, переміститися у позицію наступної закладки. Нумерація закладок та визначає порядок перемикання між ними.</para>
+            <para>При натисканні комбінації клавіш <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo>, можна перейти до попередньої закладки. Якщо закладок більше немає, клавіша <keycap>Tab</keycap> переміщує курсор у кінець фрагменту, або до кінцевого символу-заміннику, якщо такий є.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Дзеркала</term>
+          <listitem>
+            <para>Декілька закладок будуть відображати один і той самий текст. Дзеркала дозволяють ввести текст один раз, і він відображатиметься у кількох місцях у фрагменті.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Кінцевий символ-замінник</term>
+          <listitem>
+            <para><literal>$0</literal> визначає кінцевий символ-замінник. Дозволяє завершити роботу з фрагментом, залишаючи курсор у потрібній позиції.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Змінні оточення</term>
+          <listitem>
+            <para>У фрагментах можуть використовуватись змінні оточення, такі як <literal>$PATH</literal> та <literal>$HOME</literal> . Ось повний список змінних оточення, що можуть використовуватись:</para>
+            <variablelist>
+              <varlistentry><term>$PLUMA_SELECTED_TEXT</term>
+                <listitem>
+                  <para>Виділений текст.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_FILENAME</term>
+                <listitem>
+                  <para>Повна назва поточного документу. Якщо документ ще не був збережений, повертається порожній рядок.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_BASENAME</term>
+                <listitem>
+                  <para>Назва файлу без шляху, або порожній рядок, якщо файл не збережений.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_CURRENT_WORD</term>
+                <listitem>
+                  <para>Слово у позиції курсору. Слово буде замінене фрагментом тексту.</para>
+                </listitem>
+              </varlistentry>
+
+            </variablelist>
+
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Команди оболонки</term>
+          <listitem>
+            <para><literal>$(<replaceable>cmd</replaceable>)</literal> у фрагменті тексту замінюється результатом виконання <replaceable>cmd</replaceable> у оболонці.</para>
+            <para><literal>$(<replaceable>n</replaceable>:<replaceable>cmd</replaceable>)</literal> дозволяє призначити посиланню цьому елементу, де <replaceable>n</replaceable> — число більше 1. За допомогою <literal>$<replaceable>n</replaceable></literal> можна вивід однієї команди подати на вхід іншої.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Команди Python</term>
+          <listitem>
+            <para><literal>$&lt;<replaceable>cmd</replaceable>&gt;</literal> замінюється результатами обчислення <replaceable>cmd</replaceable> у інтерпретаторі мови python.</para>
+            <para><literal>$&lt;<replaceable>a</replaceable>:<replaceable>cmd</replaceable>&gt;</literal> визначає зв'язок з іншими командами python, де <replaceable>a</replaceable> — їх порядок у фрагменті. Це дозволяє використовувати функції python, визначення у інших фрагментах. Для вказування кількох залежностей, розділіть їх комами: <literal>$&lt;<replaceable>a</replaceable>,<replaceable>b</replaceable>:<replaceable>cmd</replaceable>&gt;</literal></para>
+            <para>Для використання змінних у python-фрагментах, декларуйте їх як <literal>global</literal>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+  </sect3>
+
+</sect2>
+
+<sect2 id="pluma-sort-plugin">
+<title>Модуль сортування</title>
+	<para>Модуль <application>Сортування</application> впорядковує виділені рядки за алфавітом.</para>
+		  <caution><para lang="en">You cannot undo the Sort operation, so you should save the file before performing the sort. To revert to the saved version of the file after the sort operation, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Revert</guimenuitem> </menuchoice>.
+				</para>
+		  </caution>
+              <para>Щоб скористатись сортуванням виконайте наступні дії:</para>
+		<orderedlist>
+		  <listitem>
+		    <para>Виділіть рядки для сортування</para>
+		  </listitem>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Sort</guimenuitem> </menuchoice>. The <guilabel>Sort</guilabel> dialog opens.
+				</para>
+		  </listitem>
+		  <listitem><para>Відмітьте потрібні параметри сортування:</para>
+		    <itemizedlist>
+    		  <listitem>
+    		    <para>Щоб сортувати у зворотному порядку, виберіть <guilabel>Зворотний порядок</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Для видалення дублікатів рядків, відмітьте <guilabel>Видаляти повтори</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Щоб не звертати увагу на регістр символів, виберіть <guilabel>Ігнорувати регістр</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Також можна виконувати сортування ігноруючи перші декілька символів рядків. Для цього скористайтесь полем <guilabel>Починати з стовпчика</guilabel>.</para>
+    		  </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>При натисканні кнопки <guibutton>Сортувати</guibutton> виконується сортування.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-spell-checker-plugin">
+<title>Модуль перевірки орфографії</title>
+	<para>Модуль <application>Перевірка орфографії</application> перевіряє орфографію виділеного тексту. Можна налаштувати <application>pluma</application> на автоматичну перевірку орфографії, або робити перевірку вручну. Мовні параметри та параметри автоперевірки застосовуються до документу. Для використання модуля, виконайте:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Set Language</guimenuitem> </menuchoice> to display the <guilabel>Set language</guilabel> dialog. Select the appropriate language from the list. Click <guibutton>OK</guibutton> to close the <guilabel>Set language</guilabel> dialog.
+				</para>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling automatically, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice>. To unset the automatic spell check, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice> again. When automatic spell checking is set, an icon is displayed beside the <guimenuitem>Autocheck Spelling</guimenuitem> menu item. Automatic spell checking is unset by default, each time <application>pluma</application> starts.</para>
+                            <para>Невідомі слова відображаються іншим кольором та підкреслюються. Клацніть правою кнопкою на такому слові та виберіть підменю <guimenu>Можливі варіанти</guimenu> дозволяє:</para>
+		    <itemizedlist>
+		      <listitem><para>Замінити слово на інше, що пропонується зі списку, просто клацнувши на ньому.</para>
+		      </listitem>
+		      <listitem><para lang="en">To add the unknown spelling to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Add</guimenuitem> </menuchoice>.
+				</para>
+		      </listitem>
+		      <listitem><para lang="en">To ignore all occurrences of the unknown spelling, so that they are no longer flagged as unknown but are not added to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Ignore All</guimenuitem> </menuchoice>. The unknown word is ignored in the current <application>pluma</application> session only.
+				</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling manually, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Check Spelling</guimenuitem> </menuchoice>.
+				</para>
+				<para>Якщо ніяких помилок не знайдено, буде виведене повідомлення: немає помилкових слів.</para>
+				<para>Якщо ж були помилки, відкриється діалогове вікно <guilabel>Перевірка орфографії</guilabel>:</para>
+		    <itemizedlist>
+		      <listitem><para><guilabel>Слово з помилкою</guilabel> буде показано у верхній частині вікна.</para>
+		      </listitem>
+		      <listitem><para>Поле <guilabel>Замінити на</guilabel> буде містити пропонований варіант напису слова. Можна ввести у це поле власний варіант для заміни, або обрати альтернативу зі списку <guilabel>Варіанти</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Можна перевірити напис введеного на заміну слова, натискаючи кнопку <guibutton>Перевірити слово</guibutton>. Якщо слово правильне, у списку <guilabel>Варіанти</guilabel> буде надпис <literal>(правильний напис)</literal>. Якщо ж слово невідоме, у списку <guilabel>Варіанти</guilabel> будуть відображені уже варіанти його написання.</para>
+		      </listitem>
+		      <listitem><para>Для ігнорування невідомого слова, натисніть <guibutton>Ігнорувати</guibutton>. Щоб ігнорувати всі подібні слова, натисніть <guibutton>Ігнорувати все</guibutton>. Дійсно лише у межах поточної сеансу <application>pluma</application>.</para>
+		      </listitem>
+		      <listitem><para>Для заміни невідомого слова на слово у текстовому полі <guilabel>Замінити на</guilabel>, натисніть на кнопку <guibutton>Замінити</guibutton>. Щоб замінити всі подібні невідомі слова у тексті всього документу, натисніть <guibutton>Замінити все</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Додати невідоме слово у особистий словник можна натиснути на кнопку <guibutton>Додати слово</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Щоб закрити діалог <guilabel>Перевірка орфографії</guilabel> натисніть <guibutton>Закрити</guibutton>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-tag-list-plugin">
+<title>Модуль списку тегів</title>
+	<para>Модуль <application>Список тегів</application> дозволяє вставити у документ теги зі списку у бічній панелі.</para>
+  <para>Для використання модуля:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice>.
+				</para>
+		  </listitem>
+		  <listitem>
+		    <para>Типово, у бічній панелі відображається вкладка зі списком відкритих документів. Натисніть вкладку із зображенням «+» внизу панелі.</para>
+		  </listitem>
+		  <listitem><para>Виберіть відповідну категорію тегів у розкривному списку, наприклад, <guilabel>HTML - теги</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Можна прокрутити список тегів для пошуку потрібного.</para>
+		  </listitem>
+		  <listitem><para>Щоб вставити тег у позицію курсору у поточному файлі, двічі клацніть на потрібному тегу у списку. Інші способи вставки тегів:</para>
+		    <itemizedlist>
+		      <listitem><para>Для вставки тегу та зміни фокусу вводу з бічної панелі до редагування поточного документу, натисніть клавішу <keycap>Enter</keycap>.</para>
+		      </listitem>
+		      <listitem><para>Для вставки тегу та збереження фокусу вводу за списком тегів, натисніть комбінацію клавіш <keycombo><keycap>Shift</keycap><keycap>Enter</keycap></keycombo>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

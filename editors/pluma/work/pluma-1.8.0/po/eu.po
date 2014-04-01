@@ -1,0 +1,4979 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-04 12:56+0100\n"
+"PO-Revision-Date: 2013-11-04 11:56+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Basque (http://www.transifex.com/projects/p/MATE/language/eu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: eu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:1
+msgid "Use Default Font"
+msgstr "Erabili letra-tipo lehenetsia"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:2
+msgid ""
+"Whether to use the system's default fixed width font for editing text "
+"instead of a font specific to pluma. If this option is turned off, then the "
+"font named in the \"Editor Font\" option will be used instead of the system "
+"font."
+msgstr "Testua editatzeko, pluma-en berezko letra-tipoaren ordez sistemaren letra-tipo lehenetsia erabiliko den ala ez. Aukera hori desaktibatuta badago, \"Editorearen letra-tipoa\" aukeran adierazitako letra-tipoa erabiliko da sistemaren letra-tipoaren ordez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:3
+msgid "Editor Font"
+msgstr "Editorearen letra-tipoa"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:4
+msgid ""
+"A custom font that will be used for the editing area. This will only take "
+"effect if the \"Use Default Font\" option is turned off."
+msgstr "Editatzeko arean erabiliko den letra-tipo pertsonalizatua. Eragina izan dezan, \"Erabili letra-tipo lehenetsia\" aukerak desaktibatuta egon behar du."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:5
+msgid "Style Scheme"
+msgstr "Estilo-eskema"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:6
+msgid "The ID of a GtkSourceView Style Scheme used to color the text."
+msgstr "Testuaren kolorean erabilitako GtkSourceView estilo-eskemaren IDa."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:7
+msgid "Create Backup Copies"
+msgstr "Sortu babeskopiak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:8
+msgid ""
+"Whether pluma should create backup copies for the files it saves. You can "
+"set the backup file extension with the \"Backup Copy Extension\" option."
+msgstr "Pluma-ek gordetzen dituen fitxategien babeskopiak sortu behar dituen ala ez. Babeskopiaren luzapena ezar dezakezu \"Babeskopiaren luzapena\" aukeraren bidez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:9
+msgid "Autosave"
+msgstr "Gorde automatikoki"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:10
+msgid ""
+"Whether pluma should automatically save modified files after a time "
+"interval. You can set the time interval with the \"Autosave Interval\" "
+"option."
+msgstr "Pluma-ek aldatutako fitxategiak denbora-tarte baten ondoren automatikoki gorde behar dituen ala ez. Denbora-tartea ezar dezakezu \"Automatikoki gordetzeko bitartea\" aukeraren bidez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:11
+msgid "Autosave Interval"
+msgstr "Automatikoki gordetzeko bitartea"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:12
+msgid ""
+"Number of minutes after which pluma will automatically save modified files. "
+"This will only take effect if the \"Autosave\" option is turned on."
+msgstr "Pluma-ek aldatutako fitxategiak automatikoki gorde aurretik zenbat minutu itxaron behar duen. Eragina izan dezan, \"Gorde automatikoki\" aukerak aktibatuta egon behar du."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:13
+msgid "Writable VFS schemes"
+msgstr "VFS eskema idazgarriak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:14
+msgid ""
+"List of VFS schemes pluma supports in write mode. The 'file' scheme is "
+"writable by default."
+msgstr "Pluma-ek idazteko moduan onartzen dituen VFS eskemen zerrenda. 'fitxategia' eskema idazgarria da lehenetsi gisa."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:15
+msgid "Maximum Number of Undo Actions"
+msgstr "Gehiengo desegite-ekintza kopurua"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:16
+msgid ""
+"Maximum number of actions that pluma will be able to undo or redo. Use "
+"\"-1\" for unlimited number of actions."
+msgstr "Pluma-ek desegin edo berregin ditzakeen ekintzen gehienezko kopurua. Erabili \"-1\" ekintza kopurua ez mugatzeko."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:17
+msgid "Line Wrapping Mode"
+msgstr "Lerroaren itzulbiratze-modua"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:18
+msgid ""
+"Specifies how to wrap long lines in the editing area. Use \"GTK_WRAP_NONE\" "
+"for no wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
+"\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note that"
+" the values are case-sensitive, so make sure they appear exactly as "
+"mentioned here."
+msgstr "Lerro luzeak editatzeko arean nola itzulbiratu zehazten du. Erabili \"GTK_WRAP_NONE\" ez itzulbiratzeko, \"GTK_WRAP_WORD\" hitzaren mugetan itzulbiratzeko eta \"GTK_WRAP_CHAR\" karaktere indibidualen mugetan itzulbiratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:19
+msgid "Tab Size"
+msgstr "Tabuladorearen tamaina"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:20
+msgid ""
+"Specifies the number of spaces that should be displayed instead of Tab "
+"characters."
+msgstr "Tabuladore-karaktereen ordez bistaratu behar diren zuriune-kopurua zehazten du."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:21
+msgid "Insert spaces"
+msgstr "Txertatu zuriuneak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:22
+msgid "Whether pluma should insert spaces instead of tabs."
+msgstr "Pluma-ek tabuladoreen ordez zuriuneak sartu behar dituen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:23
+msgid "Automatic indent"
+msgstr "Koska automatikoa"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:24
+msgid "Whether pluma should enable automatic indentation."
+msgstr "Pluma-ek koska automatikoa gaitu behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:25
+msgid "Display Line Numbers"
+msgstr "Bistaratu lerro-zenbakiak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:26
+msgid "Whether pluma should display line numbers in the editing area."
+msgstr "Pluma-ek editatzeko arean lerro-zenbakiak bistaratu behar dituen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:27
+msgid "Highlight Current Line"
+msgstr "Nabarmendu uneko lerroa"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:28
+msgid "Whether pluma should highlight the current line."
+msgstr "Pluma-ek uneko lerroa nabarmendu behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:29
+msgid "Highlight Matching Bracket"
+msgstr "Nabarmendu bat-datorren parentesia"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:30
+msgid "Whether pluma should highlight the bracket matching the selected one."
+msgstr "Pluma-ek hautatutako parentesiari dagokion bikotea nabarmendu behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:31
+msgid "Display Right Margin"
+msgstr "Bistaratu eskuineko marjinak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:32
+msgid "Whether pluma should display the right margin in the editing area."
+msgstr "Pluma-ek editatzeko arean eskuineko marjina bistaratu behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:33
+msgid "Right Margin Position"
+msgstr "Eskuineko marjinaren kokalekua"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:34
+msgid "Specifies the position of the right margin."
+msgstr "Eskuineko marjinaren kokalekua zehazten du."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:35
+msgid "Smart Home End"
+msgstr "Hasiera Amaiera azkarra"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:36
+msgid ""
+"Specifies how the cursor moves when the HOME and END keys are pressed. Use "
+"\"DISABLED\" to always move at the start/end of the line, \"AFTER\" to move "
+"to the start/end of the line the first time the keys are pressed and to the "
+"start/end of the text ignoring whitespaces the second time the keys are "
+"pressed, \"BEFORE\" to move to the start/end of the text before moving to "
+"the start/end of the line and \"ALWAYS\" to always move to the start/end of "
+"the text instead of the start/end of the line."
+msgstr "Kurtsorea nola mugitzen den zehazten du HASIERA eta AMAIERA teklak sakatzen direnean. Erabili \"DESGAITUTA\" beti lerroaren hasierara/amaierara mugitzeko. \"ONDOREN\"  lerroaren hasierara/amaierara mugitzeko teklak aurreneko aldiz sakatzen direnean eta testuaren hasierara/amaierara (zuriuneei ez ikusi eginez) mugitzeko teklak bigarren aldiz sakatzean. \"AURRETIK\" testuaren hasierara/amaierara mugitzeko lerroaren hasierara/amaierara mugitu aurretik. Edo erabili \"BETI\" testuaren hasierara/amaierara beti mugitzeko, lerroaren hasierara/amaierara mugitu ordez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:37
+msgid "Restore Previous Cursor Position"
+msgstr "Leheneratu kurtsorearen aurreko posizioa"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:38
+msgid ""
+"Whether pluma should restore the previous cursor position when a file is "
+"loaded."
+msgstr "Fitxategi bat kargatzean Pluma-ek kurtsorearen aurreko posizioa leheneratu behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:39
+msgid "Enable Search Highlighting"
+msgstr "Gaitu bilaketaren nabarmentzea"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:40
+msgid ""
+"Whether pluma should highlight all the occurrences of the searched text."
+msgstr "Pluma-ek bilaketako testuaren gertaera guztiak nabarmendu behar dituen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:41
+msgid "Enable Syntax Highlighting"
+msgstr "Gaitu sintaxiaren nabarmentzea"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:42
+msgid "Whether pluma should enable syntax highlighting."
+msgstr "Pluma-ek sintaxiaren nabarmentzea gaitu behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:43
+msgid "Toolbar is Visible"
+msgstr "Tresna-barra ikusgai dago"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:44
+msgid "Whether the toolbar should be visible in editing windows."
+msgstr "Tresna-barrak editatzeko leihoetan ikusgai egon behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:45
+msgid "Toolbar Buttons Style"
+msgstr "Tresna-barrako botoien estiloa"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:46
+msgid ""
+"Style for the toolbar buttons. Possible values are \"PLUMA_TOOLBAR_SYSTEM\" "
+"to use the system's default style, \"PLUMA_TOOLBAR_ICONS\" to display icons "
+"only, \"PLUMA_TOOLBAR_ICONS_AND_TEXT\" to display both icons and text, and "
+"\"PLUMA_TOOLBAR_ICONS_BOTH_HORIZ\" to display prioritized text beside icons."
+" Note that the values are case-sensitive, so make sure they appear exactly "
+"as mentioned here."
+msgstr "Tresna-barrako botoien estiloa. Balio posibleak hauek dira: \"PLUMA_TOOLBAR_SYSTEM\" sistemaren estilo lehenetsia erabiltzeko, \"PLUMA_TOOLBAR_ICONS\" ikonoak bakarrik bistaratzeko \"PLUMA_TOOLBAR_ICONS_AND_TEXT\" ikonoak eta testua bistaratzeko, eta \"PLUMA_TOOLBAR_ICONS_BOTH_HORIZ\" ikonoen ondoko testu lehenetsia bistaratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:47
+msgid "Status Bar is Visible"
+msgstr "Egoera-barra ikusgai dago"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:48
+msgid ""
+"Whether the status bar at the bottom of editing windows should be visible."
+msgstr "Editatzeko leihoen beheko egoera-barrak ikusgai egon behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:49
+msgid "Side Pane is Visible"
+msgstr "Alboko panela ikusgai dago"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:50
+msgid ""
+"Whether the side pane at the left of editing windows should be visible."
+msgstr "Editatzeko leihoen alboko panelak ikusgai egon behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:51
+msgid "Bottom Panel is Visible"
+msgstr "Beheko panela ikusgai dago"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:52
+msgid ""
+"Whether the bottom panel at the bottom of editing windows should be visible."
+msgstr "Editatzeko leihoen beheko panelak ikusgai egon behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:53
+msgid "Maximum Recent Files"
+msgstr "Fitxategi berrienen gehienezko kopurua"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:54
+msgid ""
+"Specifies the maximum number of recently opened files that will be displayed"
+" in the \"Recent Files\" submenu."
+msgstr "\"Fitxategi berrienak\" azpimenuan bistaratuko diren fitxategi ireki berrien gehienezko kopurua zehazten du."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:55
+msgid "Print Syntax Highlighting"
+msgstr "Inprimatu sintaxiaren nabarmentzea"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:56
+msgid ""
+"Whether pluma should print syntax highlighting when printing documents."
+msgstr "pluma-ek dokumentuak inprimatzean sintaxiaren nabarmentzea inprimatu behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:57
+msgid "Print Header"
+msgstr "Inprimatu goiburua"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:58
+msgid ""
+"Whether pluma should include a document header when printing documents."
+msgstr "Pluma-ek dokumentuak inprimatzean dokumentuaren goiburua sartu behar duen ala ez."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:59
+msgid "Printing Line Wrapping Mode"
+msgstr "Lerroaren itzulbiratze-modua inprimatzen"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:60
+msgid ""
+"Specifies how to wrap long lines for printing. Use \"GTK_WRAP_NONE\" for no "
+"wrapping, \"GTK_WRAP_WORD\" for wrapping at word boundaries, and "
+"\"GTK_WRAP_CHAR\" for wrapping at individual character boundaries. Note that"
+" the values are case-sensitive, so make sure they appear exactly as "
+"mentioned here."
+msgstr "Lerro luzeak inprimatzeko nola itzulbiratu zehazten du. Erabili \"GTK_WRAP_NONE\" ez itzulbiratzeko, \"GTK_WRAP_WORD\" hitzaren mugetan itzulbiratzeko eta \"GTK_WRAP_CHAR\"  karaktere indibidualen mugetan itzulbiratzeko. Kontuan hartu balioek maiuskulak/minuskulak desberdintzen dituztela; beraz, ziurtatu hemen aipatu bezalaxe agertzen direla."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:61
+msgid "Print Line Numbers"
+msgstr "Inprimatu lerro-zenbakiak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:62
+msgid ""
+"If this value is 0, then no line numbers will be inserted when printing a "
+"document. Otherwise, pluma will print line numbers every such number of "
+"lines."
+msgstr "Balioa 0 bada, ez da lerro-zenbakirik txertatuko dokumentua inprimatzean. Bestalde, pluma-ek lerro-zenbakiak inprimatuko ditu adierazitako lerro-kopuru bakoitzeko."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:63
+msgid "Body Font for Printing"
+msgstr "Testuaren letra-tipoa inprimatzeko"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:64
+msgid ""
+"Specifies the font to use for a document's body when printing documents."
+msgstr "Dokumentuak inprimatzean dokumentuaren testuan zein letra-tipo erabili behar den zehazten du."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:65
+msgid "Header Font for Printing"
+msgstr "Inprimatzeko goiburuen letra-tipoa"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:66
+msgid ""
+"Specifies the font to use for page headers when printing a document. This "
+"will only take effect if the \"Print Header\" option is turned on."
+msgstr "Dokumentuak inprimatzean orrialdearen goiburuan zein letra-tipo erabili behar den zehazten du. \"Inprimatu goiburua\" aukera aktibatuta dagoenean bakarrik du eragina."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:67
+msgid "Line Number Font for Printing"
+msgstr "Inprimatzeko lerro-zenbakiaren letra-tipoa"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:68
+msgid ""
+"Specifies the font to use for line numbers when printing. This will only "
+"take effect if the \"Print Line Numbers\" option is non-zero."
+msgstr "Inprimatzean lerro-zenbakietan erabili beharreko letra-tipoa zehazten du. \"Inprimatu lerro-zenbakiak\" aukera zero ez denean bakarrik du eragina."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:69
+msgid "Automatically Detected Encodings"
+msgstr "Automatikoki detektatutako kodeketak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:70
+msgid ""
+"Sorted list of encodings used by pluma for automatically detecting the "
+"encoding of a file. \"CURRENT\" represents the current locale encoding. Only"
+" recognized encodings are used."
+msgstr "Pluma-ek fitxategien kodeketa automatikoki detektatzeko erabiltzen dituen kodeketen zerrenda ordenatua. \"CURRENT\" uneko locale-aren kodeketa da. Kodeketa ezagunak bakarrik erabiltzen dira."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:71
+msgid "Encodings shown in menu"
+msgstr "Menuan agertzen diren kodeketak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:72
+msgid ""
+"List of encodings shown in the Character Encoding menu in open/save file "
+"selector. Only recognized encodings are used."
+msgstr "'Karaktereak kodetzea' menuan agertzen diren kodeketen zerrenda, ireki/gorde fitxategi-hautatzailean. Ezagutzen diren kodeketak bakarrik erabiltzen dira."
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:73
+msgid "History for \"search for\" entries"
+msgstr ""
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:74
+msgid "List of entries in \"search for\" textbox."
+msgstr ""
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:75
+msgid "History for \"replace with\" entries"
+msgstr ""
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:76
+msgid "List of entries in \"replace with\" textbox."
+msgstr ""
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:77
+msgid "Active plugins"
+msgstr "Aktibatu pluginak"
+
+#: ../data/org.mate.pluma.gschema.xml.in.in.h:78
+msgid ""
+"List of active plugins. It contains the \"Location\" of the active plugins. "
+"See the .pluma-plugin file for obtaining the \"Location\" of a given plugin."
+msgstr "Plugin aktiboen zerrenda. Plugin aktiboen \"Helbidea\" dauka. Ikusi .pluma-plugin fitxategia plugin zehatz baten kokalekua jakiteko."
+
+#: ../data/pluma.desktop.in.in.h:1
+msgid "Pluma"
+msgstr ""
+
+#: ../data/pluma.desktop.in.in.h:2 ../pluma/pluma-print-job.c:769
+msgid "Text Editor"
+msgstr "Testu-editorea"
+
+#: ../data/pluma.desktop.in.in.h:3
+msgid "Edit text files"
+msgstr "Editatu testu-fitxategiak"
+
+#: ../data/pluma.desktop.in.in.h:4
+msgid "pluma Text Editor"
+msgstr "pluma testu-editorea"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:140
+msgid "Log Out _without Saving"
+msgstr "Amaitu saioa gorde _gabe"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:144
+msgid "_Cancel Logout"
+msgstr "_Ez amaitu saioa"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:151
+msgid "Close _without Saving"
+msgstr "Itxi gorde _gabe"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:214
+msgid "Question"
+msgstr "Galdera"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:414
+#, c-format
+msgid ""
+"If you don't save, changes from the last %ld second will be permanently "
+"lost."
+msgid_plural ""
+"If you don't save, changes from the last %ld seconds will be permanently "
+"lost."
+msgstr[0] "Ez baduzu gordetzen, azken %ld segundoko aldaketak betirako galduko dira."
+msgstr[1] "Ez baduzu gordetzen, azken %ld segundotako aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:423
+msgid ""
+"If you don't save, changes from the last minute will be permanently lost."
+msgstr "Ez baduzu gordetzen, azken minutuko aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:429
+#, c-format
+msgid ""
+"If you don't save, changes from the last minute and %ld second will be "
+"permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last minute and %ld seconds will be "
+"permanently lost."
+msgstr[0] "Ez baduzu gordetzen, azken minutuko eta %ld segundoko aldaketak betirako galduko dira."
+msgstr[1] "Ez baduzu gordetzen, azken minutuko eta %ld segundotako aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:439
+#, c-format
+msgid ""
+"If you don't save, changes from the last %ld minute will be permanently "
+"lost."
+msgid_plural ""
+"If you don't save, changes from the last %ld minutes will be permanently "
+"lost."
+msgstr[0] "Ez baduzu gordetzen, azken %ld minutuko aldaketak betirako galduko dira."
+msgstr[1] "Ez baduzu gordetzen, azken %ld minututako aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:454
+msgid ""
+"If you don't save, changes from the last hour will be permanently lost."
+msgstr "Ez baduzu gordetzen, azken orduko aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:460
+#, c-format
+msgid ""
+"If you don't save, changes from the last hour and %d minute will be "
+"permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last hour and %d minutes will be "
+"permanently lost."
+msgstr[0] "Ez baduzu gordetzen, azken orduko eta %d minutuko aldaketak betirako galduko dira."
+msgstr[1] "Ez baduzu gordetzen, azken orduko eta %d minututako aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:475
+#, c-format
+msgid ""
+"If you don't save, changes from the last %d hour will be permanently lost."
+msgid_plural ""
+"If you don't save, changes from the last %d hours will be permanently lost."
+msgstr[0] "Ez baduzu gordetzen, azken orduko (%d) aldaketak betirako galduko dira."
+msgstr[1] "Ez baduzu gordetzen, azken %d orduko aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:518
+#, c-format
+msgid "Changes to document \"%s\" will be permanently lost."
+msgstr "\"%s\" dokumentuan egindako aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:523
+#, c-format
+msgid "Save changes to document \"%s\" before closing?"
+msgstr "Aldaketak \"%s\" dokumentuan gorde itxi aurretik?"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:537
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:748
+msgid "Saving has been disabled by the system administrator."
+msgstr "Sistemako administratzaileak desgaitu egin du gordetzea."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:703
+#, c-format
+msgid "Changes to %d document will be permanently lost."
+msgid_plural "Changes to %d documents will be permanently lost."
+msgstr[0] "Dokumentu %dean egindako aldaketak betirako galduko dira."
+msgstr[1] "%d dokumentutan egindako aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:709
+#, c-format
+msgid ""
+"There is %d document with unsaved changes. Save changes before closing?"
+msgid_plural ""
+"There are %d documents with unsaved changes. Save changes before closing?"
+msgstr[0] "Aldatutako  dokumentu %d gorde gabe dago. Aldaketak gorde itxi aurretik?"
+msgstr[1] "Aldatutako %d dokumentu gorde gabe daude. Aldaketak gorde itxi aurretik?"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:727
+msgid "Docum_ents with unsaved changes:"
+msgstr "_Dokumentuak, gorde gabeko aldaketekin:"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:729
+msgid "S_elect the documents you want to save:"
+msgstr "_Hautatu dokumentuak, gordetzea nahi dituzunak:"
+
+#: ../pluma/dialogs/pluma-close-confirmation-dialog.c:750
+msgid "If you don't save, all your changes will be permanently lost."
+msgstr "Ez baduzu gordetzen, aldaketak betirako galduko dira."
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:321
+msgid "Character Encodings"
+msgstr "Karaktere-kodeketak"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:387
+#: ../pluma/dialogs/pluma-encodings-dialog.c:448
+msgid "_Description"
+msgstr "_Azalpena"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.c:396
+#: ../pluma/dialogs/pluma-encodings-dialog.c:457
+msgid "_Encoding"
+msgstr "_Kodeketa"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:1
+msgid "Character encodings"
+msgstr "Karaktere-kodeketak"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "Kodeke_ta erabilgarriak:"
+
+#: ../pluma/dialogs/pluma-encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "Me_nuan agertzen diren kodeketak:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:574
+msgid "Click on this button to select the font to be used by the editor"
+msgstr "Sakatu botoi hau editoreak erabili beharreko letra-tipoa hautatzeko"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:584
+#, c-format
+msgid "_Use the system fixed width font (%s)"
+msgstr "_Erabili sistemako letra-zabalera (%s)"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:787
+msgid "The selected color scheme cannot be installed."
+msgstr "Hautatutako kolore-eskema ezin da instalatu."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:812
+msgid "Add Scheme"
+msgstr "Gehitu eskema"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:819
+msgid "A_dd Scheme"
+msgstr "_Gehitu eskema"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:827
+msgid "Color Scheme Files"
+msgstr "Kolore-eskemaren fitxategiak"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:834
+#: ../pluma/pluma-file-chooser-dialog.c:55
+msgid "All Files"
+msgstr "Fitxategi guztiak"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:879
+#, c-format
+msgid "Could not remove color scheme \"%s\"."
+msgstr "Ezin izan da \"%s\" kolore-eskema kendu."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.c:1090
+msgid "pluma Preferences"
+msgstr "pluma-en hobespenak"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:1
+msgid "Preferences"
+msgstr "Hobespenak"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:2
+#: ../pluma/pluma-print-preferences.ui.h:9
+msgid "Text Wrapping"
+msgstr "Testua itzulbiratzea"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:3
+#: ../plugins/docinfo/docinfo.ui.h:4
+#: ../plugins/externaltools/tools/tools.ui.h:21
+#: ../plugins/snippets/snippets/snippets.ui.h:9
+#: ../plugins/time/pluma-time-dialog.ui.h:4
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:3
+msgid "    "
+msgstr "    "
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:4
+#: ../pluma/pluma-print-preferences.ui.h:10
+msgid "Enable text _wrapping"
+msgstr "Gaitu t_estua itzulbiratzea"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:5
+#: ../pluma/pluma-print-preferences.ui.h:11
+msgid "Do not _split words over two lines"
+msgstr "Ez _zatitu hitzak bi lerrotan"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:6
+#: ../pluma/pluma-print-preferences.ui.h:3
+msgid "Line Numbers"
+msgstr "Lerro-zenbakiak"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:7 ../pluma/pluma-view.c:2070
+msgid "_Display line numbers"
+msgstr "B_istaratu lerro-zenbakiak"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:8
+msgid "Current Line"
+msgstr "Uneko lerroa"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:9
+msgid "Highlight current _line"
+msgstr "_Nabarmendu uneko lerroa"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:10
+msgid "Right Margin"
+msgstr "Eskuineko marjina"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:11
+msgid "Display right _margin"
+msgstr "_Bistaratu eskuineko marjina"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:12
+msgid "_Right margin at column:"
+msgstr "E_skuineko marjina zutabe honetan:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:13
+msgid "Bracket Matching"
+msgstr "Parentesien bat-etortzea"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:14
+msgid "Highlight matching _bracket"
+msgstr "Nabarmendu itxierako parentesia"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:15
+msgid "View"
+msgstr "Ikusi"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:16
+msgid "Tab Stops"
+msgstr "Tabulazioak"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:17
+msgid "_Tab width:"
+msgstr "_Zabalera:"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:18
+msgid "Insert _spaces instead of tabs"
+msgstr "Txertatu _zuriuneak tabuladoreen ordez"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:19
+msgid "Automatic Indentation"
+msgstr "Koska automatikoa"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:20
+msgid "_Enable automatic indentation"
+msgstr "Gaitu _koska automatikoa"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:21
+msgid "File Saving"
+msgstr "Fitxategia gordetzea"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:22
+msgid "Create a _backup copy of files before saving"
+msgstr "Sortu _fitxategien babeskopia gorde aurretik"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:23
+msgid "_Autosave files every"
+msgstr "_Autogorde fitxategia maiztasun honekin"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:24
+msgid "_minutes"
+msgstr "_minutuz behin"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:25
+msgid "Editor"
+msgstr "Editorea"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:26
+msgid "Font"
+msgstr "Letra-tipoa"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:27
+msgid "Editor _font: "
+msgstr "Editorearen _letra-tipoa: "
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:28
+msgid "Pick the editor font"
+msgstr "Aukeratu editorearen letra-tipoa"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:29
+msgid "Color Scheme"
+msgstr "Kolore-eskema"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:30
+msgid "_Add..."
+msgstr "_Gehitu..."
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:31
+msgid "Font & Colors"
+msgstr "Letra-tipoak eta koloreak"
+
+#: ../pluma/dialogs/pluma-preferences-dialog.ui.h:32
+msgid "Plugins"
+msgstr "Pluginak"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:305
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:1 ../pluma/pluma-window.c:1530
+msgid "Replace"
+msgstr "Ordeztu"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:316 ../pluma/pluma-window.c:1528
+msgid "Find"
+msgstr "Bilatu"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:423
+msgid "Replace _All"
+msgstr "Ordeztu _guztiak"
+
+#: ../pluma/dialogs/pluma-search-dialog.c:424
+#: ../pluma/pluma-commands-file.c:577
+msgid "_Replace"
+msgstr "Orde_ztu"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:2
+msgid "Replace All"
+msgstr "Ordeztu denak"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:3
+msgid "_Search for: "
+msgstr "Bila_tu: "
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:4
+msgid "Replace _with: "
+msgstr "Ordeztu ho_nekin: "
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:5
+msgid "_Match case"
+msgstr "_Maiuskula/minuskula"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:6
+msgid "Match _entire word only"
+msgstr "_Hitz osoak soilik"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:7
+msgid "Search _backwards"
+msgstr "Bilatu _atzerantz"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:8
+msgid "_Wrap around"
+msgstr "_Doitu"
+
+#: ../pluma/dialogs/pluma-search-dialog.ui.h:9
+msgid "_Parse escape sequences (e.g. \\n)"
+msgstr ""
+
+#: ../pluma/pluma.c:126
+msgid "Show the application's version"
+msgstr "Erakutsi aplikazioaren bertsioa"
+
+#: ../pluma/pluma.c:129
+msgid ""
+"Set the character encoding to be used to open the files listed on the "
+"command line"
+msgstr "Ezarri karaketere-kodeketa komando lerroan zerrendatzen diren fitxategiak irekitzean erabiltzeko"
+
+#: ../pluma/pluma.c:129
+msgid "ENCODING"
+msgstr "KODEKETA"
+
+#: ../pluma/pluma.c:132
+msgid "Display list of possible values for the encoding option"
+msgstr "Bistaratu balio posibleen zerrenda kodeketaren aukerarentzako"
+
+#: ../pluma/pluma.c:135
+msgid "Create a new top-level window in an existing instance of pluma"
+msgstr "Sortu goi-mailako leiho berri bat lehendik dagoen pluma-en instantzia batean"
+
+#: ../pluma/pluma.c:138
+msgid "Create a new document in an existing instance of pluma"
+msgstr "Sortu dokumentu berri bat lehendik dagoen pluma-en instantzia batean"
+
+#: ../pluma/pluma.c:141
+msgid "[FILE...]"
+msgstr "[FITXATEGIA...]"
+
+#: ../pluma/pluma.c:196
+#, c-format
+msgid "%s: invalid encoding.\n"
+msgstr "%s: kodeketa baliogabea.\n"
+
+#. Setup command line options
+#: ../pluma/pluma.c:583
+msgid "- Edit text files"
+msgstr "- Editatu testu-fitxategiak"
+
+#: ../pluma/pluma.c:619
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options.\n"
+msgstr "%s\nExekutatu '%s --help' aukera erabilgarrien zerrenda osoa ikusteko.\n"
+
+#: ../pluma/pluma-commands-file.c:250
+#, c-format
+msgid "Loading file '%s'…"
+msgstr "'%s' fitxategia kargatzen..."
+
+#: ../pluma/pluma-commands-file.c:259
+#, c-format
+msgid "Loading %d file…"
+msgid_plural "Loading %d files…"
+msgstr[0] "Fitxategi %d kargatzen..."
+msgstr[1] "%d fitxategi kargatzen..."
+
+#. Translators: "Open Files" is the title of the file chooser window
+#: ../pluma/pluma-commands-file.c:453
+msgid "Open Files"
+msgstr "Ireki fitxategiak"
+
+#: ../pluma/pluma-commands-file.c:564
+#, c-format
+msgid "The file \"%s\" is read-only."
+msgstr "\"%s\" fitxategia irakurtzeko soilik da."
+
+#: ../pluma/pluma-commands-file.c:569
+msgid "Do you want to try to replace it with the one you are saving?"
+msgstr "Gordetzen ari zarenarekin ordezten saiatu nahi duzu?"
+
+#: ../pluma/pluma-commands-file.c:638 ../pluma/pluma-commands-file.c:861
+#, c-format
+msgid "Saving file '%s'…"
+msgstr "'%s fitxategia gordetzen..."
+
+#: ../pluma/pluma-commands-file.c:746
+msgid "Save As…"
+msgstr "Gorde honela..."
+
+#: ../pluma/pluma-commands-file.c:1075
+#, c-format
+msgid "Reverting the document '%s'…"
+msgstr "'%s' fitxategia leheneratzen..."
+
+#: ../pluma/pluma-commands-file.c:1120
+#, c-format
+msgid "Revert unsaved changes to document '%s'?"
+msgstr "Leheneratu '%s' dokumentuko gorde ez diren aldaketak?"
+
+#: ../pluma/pluma-commands-file.c:1129
+#, c-format
+msgid ""
+"Changes made to the document in the last %ld second will be permanently "
+"lost."
+msgid_plural ""
+"Changes made to the document in the last %ld seconds will be permanently "
+"lost."
+msgstr[0] "Azken %ld segundoan dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[1] "Azken %ld segundotan dokumentuan egin diren aldaketak betirako galduko dira."
+
+#: ../pluma/pluma-commands-file.c:1138
+msgid ""
+"Changes made to the document in the last minute will be permanently lost."
+msgstr "Azken minutuan dokumentuan egin diren aldaketak betirako galduko dira."
+
+#: ../pluma/pluma-commands-file.c:1144
+#, c-format
+msgid ""
+"Changes made to the document in the last minute and %ld second will be "
+"permanently lost."
+msgid_plural ""
+"Changes made to the document in the last minute and %ld seconds will be "
+"permanently lost."
+msgstr[0] "Azken minutuan eta %ld segundoan dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[1] "Azken minutuan eta %ld segundotan dokumentuan egin diren aldaketak betirako galduko dira."
+
+#: ../pluma/pluma-commands-file.c:1154
+#, c-format
+msgid ""
+"Changes made to the document in the last %ld minute will be permanently "
+"lost."
+msgid_plural ""
+"Changes made to the document in the last %ld minutes will be permanently "
+"lost."
+msgstr[0] "Azken %ld minutuan dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[1] "Azken %ld minututan dokumentuan egin diren aldaketak betirako galduko dira."
+
+#: ../pluma/pluma-commands-file.c:1169
+msgid ""
+"Changes made to the document in the last hour will be permanently lost."
+msgstr "Azken orduan dokumentuan egin diren aldaketak betirako galduko dira."
+
+#: ../pluma/pluma-commands-file.c:1175
+#, c-format
+msgid ""
+"Changes made to the document in the last hour and %d minute will be "
+"permanently lost."
+msgid_plural ""
+"Changes made to the document in the last hour and %d minutes will be "
+"permanently lost."
+msgstr[0] "Azken azken orduan eta %d minutuan dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[1] "Azken azken orduan eta %d minututan dokumentuan egin diren aldaketak betirako galduko dira."
+
+#: ../pluma/pluma-commands-file.c:1190
+#, c-format
+msgid ""
+"Changes made to the document in the last %d hour will be permanently lost."
+msgid_plural ""
+"Changes made to the document in the last %d hours will be permanently lost."
+msgstr[0] "Azken orduan (%d) dokumentuan egin diren aldaketak betirako galduko dira."
+msgstr[1] "Azken %d ordutan dokumentuan egin diren aldaketak betirako galduko dira."
+
+#: ../pluma/pluma-commands-file.c:1216
+msgid "_Revert"
+msgstr "_Leheneratu"
+
+#: ../pluma/pluma-commands-help.c:82
+msgid "pluma is a small and lightweight text editor for the MATE Desktop"
+msgstr "pluma testu-editore txikia eta sinplea da, MATE mahaigainerako."
+
+#: ../pluma/pluma-commands-help.c:93
+msgid "translator-credits"
+msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>\nIñaki Larrañaga Murgoitio<dooteo@euskalgnu.org>"
+
+#: ../pluma/pluma-commands-search.c:116
+#, c-format
+msgid "Found and replaced %d occurrence"
+msgid_plural "Found and replaced %d occurrences"
+msgstr[0] "Agerraldi %d aurkitu eta ordeztu da."
+msgstr[1] "%d agerraldi aurkitu eta ordeztu dira."
+
+#: ../pluma/pluma-commands-search.c:126
+msgid "Found and replaced one occurrence"
+msgstr "Agerraldi bat aurkitu eta ordeztu da."
+
+#. Translators: %s is replaced by the text
+#. entered by the user in the search box
+#: ../pluma/pluma-commands-search.c:147
+#, c-format
+msgid "\"%s\" not found"
+msgstr "\"%s\" ez da aurkitu"
+
+#: ../pluma/pluma-document.c:1080 ../pluma/pluma-document.c:1095
+#, c-format
+msgid "Unsaved Document %d"
+msgstr "Gorde gabeko %d dokumentua"
+
+#: ../pluma/pluma-documents-panel.c:97 ../pluma/pluma-documents-panel.c:111
+#: ../pluma/pluma-window.c:2279 ../pluma/pluma-window.c:2284
+msgid "Read-Only"
+msgstr "Irakurtzeko soilik"
+
+#: ../pluma/pluma-documents-panel.c:791 ../pluma/pluma-window.c:3689
+msgid "Documents"
+msgstr "Dokumentuak"
+
+#: ../pluma/pluma-encodings.c:138 ../pluma/pluma-encodings.c:180
+#: ../pluma/pluma-encodings.c:182 ../pluma/pluma-encodings.c:184
+#: ../pluma/pluma-encodings.c:186 ../pluma/pluma-encodings.c:188
+#: ../pluma/pluma-encodings.c:190 ../pluma/pluma-encodings.c:192
+msgid "Unicode"
+msgstr "Unicode"
+
+#: ../pluma/pluma-encodings.c:151 ../pluma/pluma-encodings.c:175
+#: ../pluma/pluma-encodings.c:225 ../pluma/pluma-encodings.c:268
+msgid "Western"
+msgstr "Mendebaldekoa"
+
+#: ../pluma/pluma-encodings.c:153 ../pluma/pluma-encodings.c:227
+#: ../pluma/pluma-encodings.c:264
+msgid "Central European"
+msgstr "Europako erdialdekoa"
+
+#: ../pluma/pluma-encodings.c:155
+msgid "South European"
+msgstr "Europako hegoaldekoa"
+
+#: ../pluma/pluma-encodings.c:157 ../pluma/pluma-encodings.c:171
+#: ../pluma/pluma-encodings.c:278
+msgid "Baltic"
+msgstr "Baltikokoa"
+
+#: ../pluma/pluma-encodings.c:159 ../pluma/pluma-encodings.c:229
+#: ../pluma/pluma-encodings.c:242 ../pluma/pluma-encodings.c:246
+#: ../pluma/pluma-encodings.c:248 ../pluma/pluma-encodings.c:266
+msgid "Cyrillic"
+msgstr "Zirilikoa"
+
+#: ../pluma/pluma-encodings.c:161 ../pluma/pluma-encodings.c:235
+#: ../pluma/pluma-encodings.c:276
+msgid "Arabic"
+msgstr "Arabiarra"
+
+#: ../pluma/pluma-encodings.c:163 ../pluma/pluma-encodings.c:270
+msgid "Greek"
+msgstr "Grekoa"
+
+#: ../pluma/pluma-encodings.c:165
+msgid "Hebrew Visual"
+msgstr "Hebrear bisuala"
+
+#: ../pluma/pluma-encodings.c:167 ../pluma/pluma-encodings.c:231
+#: ../pluma/pluma-encodings.c:272
+msgid "Turkish"
+msgstr "Turkiarra"
+
+#: ../pluma/pluma-encodings.c:169
+msgid "Nordic"
+msgstr "Nordikoa"
+
+#: ../pluma/pluma-encodings.c:173
+msgid "Celtic"
+msgstr "Zelta"
+
+#: ../pluma/pluma-encodings.c:177
+msgid "Romanian"
+msgstr "Errumaniarra"
+
+#: ../pluma/pluma-encodings.c:195
+msgid "Armenian"
+msgstr "Armeniarra"
+
+#: ../pluma/pluma-encodings.c:197 ../pluma/pluma-encodings.c:199
+#: ../pluma/pluma-encodings.c:213
+msgid "Chinese Traditional"
+msgstr "Txinatar tradizionala"
+
+#: ../pluma/pluma-encodings.c:201
+msgid "Cyrillic/Russian"
+msgstr "Zirilikoa/errusiarra"
+
+#: ../pluma/pluma-encodings.c:204 ../pluma/pluma-encodings.c:206
+#: ../pluma/pluma-encodings.c:208 ../pluma/pluma-encodings.c:238
+#: ../pluma/pluma-encodings.c:253
+msgid "Japanese"
+msgstr "Japoniarra"
+
+#: ../pluma/pluma-encodings.c:211 ../pluma/pluma-encodings.c:240
+#: ../pluma/pluma-encodings.c:244 ../pluma/pluma-encodings.c:259
+msgid "Korean"
+msgstr "Korearra"
+
+#: ../pluma/pluma-encodings.c:216 ../pluma/pluma-encodings.c:218
+#: ../pluma/pluma-encodings.c:220
+msgid "Chinese Simplified"
+msgstr "Txinatar erraztua"
+
+#: ../pluma/pluma-encodings.c:222
+msgid "Georgian"
+msgstr "Georgiarra"
+
+#: ../pluma/pluma-encodings.c:233 ../pluma/pluma-encodings.c:274
+msgid "Hebrew"
+msgstr "Hebrearra"
+
+#: ../pluma/pluma-encodings.c:250
+msgid "Cyrillic/Ukrainian"
+msgstr "Zirilikoa/Ukrainarra"
+
+#: ../pluma/pluma-encodings.c:255 ../pluma/pluma-encodings.c:261
+#: ../pluma/pluma-encodings.c:280
+msgid "Vietnamese"
+msgstr "Vietnamdarra"
+
+#: ../pluma/pluma-encodings.c:257
+msgid "Thai"
+msgstr "Thailandiarra"
+
+#: ../pluma/pluma-encodings.c:431
+msgid "Unknown"
+msgstr "Ezezaguna"
+
+#: ../pluma/pluma-encodings-combo-box.c:280
+msgid "Automatically Detected"
+msgstr "Automatikoki detektatuta"
+
+#: ../pluma/pluma-encodings-combo-box.c:296
+#: ../pluma/pluma-encodings-combo-box.c:311
+#, c-format
+msgid "Current Locale (%s)"
+msgstr "Uneko locale-a (%s)"
+
+#: ../pluma/pluma-encodings-combo-box.c:361
+msgid "Add or Remove..."
+msgstr "Gehitu edo kendu..."
+
+#: ../pluma/pluma-file-chooser-dialog.c:56
+msgid "All Text Files"
+msgstr "Testu-fitxategi guztiak"
+
+#: ../pluma/pluma-file-chooser-dialog.c:84
+msgid "C_haracter Encoding:"
+msgstr "_Karaktere-kodeketa:"
+
+#: ../pluma/pluma-file-chooser-dialog.c:149
+msgid "L_ine Ending:"
+msgstr "_Lerroaren amaiera:"
+
+#: ../pluma/pluma-file-chooser-dialog.c:168
+msgid "Unix/Linux"
+msgstr "Unix/Linux"
+
+#: ../pluma/pluma-file-chooser-dialog.c:174
+msgid "Mac OS Classic"
+msgstr "Mac OS Klasikoa"
+
+#: ../pluma/pluma-file-chooser-dialog.c:180
+msgid "Windows"
+msgstr "Windows"
+
+#: ../pluma/pluma-help.c:104
+msgid "There was an error displaying the help."
+msgstr "Errorea gertatu da laguntza bistaratzean."
+
+#: ../pluma/pluma-io-error-message-area.c:204
+#: ../pluma/pluma-io-error-message-area.c:209
+#: ../pluma/pluma-io-error-message-area.c:513
+#: ../pluma/pluma-io-error-message-area.c:536
+msgid "_Retry"
+msgstr "_Saiatu berriro"
+
+#: ../pluma/pluma-io-error-message-area.c:231
+#, c-format
+msgid "Could not find the file %s."
+msgstr "Ezin izan da %s fitxategia aurkitu."
+
+#: ../pluma/pluma-io-error-message-area.c:233
+#: ../pluma/pluma-io-error-message-area.c:272
+#: ../pluma/pluma-io-error-message-area.c:279
+msgid "Please check that you typed the location correctly and try again."
+msgstr "Egiaztatu helbidea ondo idatzi duzula eta saiatu berriro."
+
+#. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
+#: ../pluma/pluma-io-error-message-area.c:248
+#, c-format
+msgid "pluma cannot handle %s locations."
+msgstr "pluma-ek ezin ditu %s helbideak kudeatu."
+
+#: ../pluma/pluma-io-error-message-area.c:254
+msgid "pluma cannot handle this location."
+msgstr "pluma-ek ezin du helbide hau kudeatu."
+
+#: ../pluma/pluma-io-error-message-area.c:262
+msgid "The location of the file cannot be mounted."
+msgstr "Fitxategiaren kokalekua ezin da muntatu."
+
+#: ../pluma/pluma-io-error-message-area.c:266
+msgid "The location of the file cannot be accessed because it is not mounted."
+msgstr "Fitxategiaren kokalekua ezin da atzitu ez dagoelako muntatuta."
+
+#: ../pluma/pluma-io-error-message-area.c:270
+#, c-format
+msgid "%s is a directory."
+msgstr "%s direktorioa da."
+
+#: ../pluma/pluma-io-error-message-area.c:277
+#, c-format
+msgid "%s is not a valid location."
+msgstr "%s ez da baliozko helbidea."
+
+#: ../pluma/pluma-io-error-message-area.c:307
+#, c-format
+msgid ""
+"Host %s could not be found. Please check that your proxy settings are "
+"correct and try again."
+msgstr "Ezin izan da %s ostalaria aurkitu. Egiaztatu proxy-ezarpenak zuzenak direla eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:320
+#, c-format
+msgid ""
+"Hostname was invalid. Please check that you typed the location correctly and"
+" try again."
+msgstr "Ostalari-izena baliogabea da. Egiaztatu helbidea ondo idatzi duzula eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:328
+#, c-format
+msgid "%s is not a regular file."
+msgstr "%s ez da fitxategi arrunta."
+
+#: ../pluma/pluma-io-error-message-area.c:333
+msgid "Connection timed out. Please try again."
+msgstr "Konexioaren denbora-muga gainditu da. Saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:356
+msgid "The file is too big."
+msgstr "Fitxategiak handiegia da."
+
+#: ../pluma/pluma-io-error-message-area.c:397
+#, c-format
+msgid "Unexpected error: %s"
+msgstr "Ustekabeko errorea: %s."
+
+#: ../pluma/pluma-io-error-message-area.c:433
+msgid "pluma cannot find the file. Perhaps it has recently been deleted."
+msgstr "pluma-ek ezin du fitxategia aurkitu. Baliteke duela gutxi ezabatu izana."
+
+#: ../pluma/pluma-io-error-message-area.c:443
+#, c-format
+msgid "Could not revert the file %s."
+msgstr "Ezin izan da %s fitxategia leheneratu."
+
+#: ../pluma/pluma-io-error-message-area.c:469
+msgid "Ch_aracter Encoding:"
+msgstr "_Karaktere-kodeketa:"
+
+#. Translators: the access key chosen for this string should be
+#. different from other main menu access keys (Open, Edit, View...)
+#: ../pluma/pluma-io-error-message-area.c:520
+#: ../pluma/pluma-io-error-message-area.c:545
+#: ../pluma/pluma-io-error-message-area.c:831
+#: ../pluma/pluma-io-error-message-area.c:841
+msgid "Edit Any_way"
+msgstr "Editatu _dena den"
+
+#. Translators: the access key chosen for this string should be
+#. different from other main menu access keys (Open, Edit, View...)
+#: ../pluma/pluma-io-error-message-area.c:523
+#: ../pluma/pluma-io-error-message-area.c:550
+#: ../pluma/pluma-io-error-message-area.c:834
+#: ../pluma/pluma-io-error-message-area.c:846
+msgid "D_on't Edit"
+msgstr "_Ez editatu"
+
+#: ../pluma/pluma-io-error-message-area.c:654
+msgid ""
+"The number of followed links is limited and the actual file could not be "
+"found within this limit."
+msgstr "Esteka jarraien kopurua mugatua dago, eta uneko fitxategia ezin izan da muga horretan aurkitu."
+
+#: ../pluma/pluma-io-error-message-area.c:658
+msgid "You do not have the permissions necessary to open the file."
+msgstr "Ez dituzu nahikoa baimen fitxategia irekitzeko."
+
+#: ../pluma/pluma-io-error-message-area.c:664
+msgid "pluma has not been able to detect the character encoding."
+msgstr "pluma ez da gai izan karaktere-kodeketa atzemateko."
+
+#: ../pluma/pluma-io-error-message-area.c:666
+#: ../pluma/pluma-io-error-message-area.c:688
+msgid "Please check that you are not trying to open a binary file."
+msgstr "Egiaztatu fitxategi bitarra irekitzen saiatzen ari ez zarela."
+
+#: ../pluma/pluma-io-error-message-area.c:667
+msgid "Select a character encoding from the menu and try again."
+msgstr "Hautatu karaktere-kodeketa menutik eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:673
+#, c-format
+msgid "There was a problem opening the file %s."
+msgstr "Arazo bat egon da %s fitxategia irekitzean."
+
+#: ../pluma/pluma-io-error-message-area.c:675
+msgid ""
+"The file you opened has some invalid characters. If you continue editing "
+"this file you could make this document useless."
+msgstr "Ireki duzun fitxategiak zenbait karaktere baliogabe ditu. Fitxategi hau editatzen jarraitzen baduzu, dokumentua erabilkaitz egin dezake."
+
+#: ../pluma/pluma-io-error-message-area.c:678
+msgid "You can also choose another character encoding and try again."
+msgstr "Beste karaktere-kodeketa hauta dezakezu menutik eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:685
+#, c-format
+msgid "Could not open the file %s using the %s character encoding."
+msgstr "Ezin izan da %s fitxategia ireki %s karaktere-kodeketa erabiliz."
+
+#: ../pluma/pluma-io-error-message-area.c:689
+#: ../pluma/pluma-io-error-message-area.c:764
+msgid "Select a different character encoding from the menu and try again."
+msgstr "Hautatu beste karaktere-kodeketa menutik eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:699
+#, c-format
+msgid "Could not open the file %s."
+msgstr "Ezin izan da %s fitxategia ireki."
+
+#: ../pluma/pluma-io-error-message-area.c:759
+#, c-format
+msgid "Could not save the file %s using the %s character encoding."
+msgstr "Ezin izan da %s fitxategia gorde %s karaktere-kodeketa erabiliz."
+
+#: ../pluma/pluma-io-error-message-area.c:762
+msgid ""
+"The document contains one or more characters that cannot be encoded using "
+"the specified character encoding."
+msgstr "Zehaztutako karaktere-kodeketarekin kodetu ezin den karaktere bat (edo gehiago) du dokumentuak."
+
+#: ../pluma/pluma-io-error-message-area.c:861
+#, c-format
+msgid "This file (%s) is already open in another pluma window."
+msgstr "%s fitxategia jadanik irekita dago beste pluma leihoan."
+
+#: ../pluma/pluma-io-error-message-area.c:879
+msgid ""
+"pluma opened this instance of the file in a non-editable way. Do you want to"
+" edit it anyway?"
+msgstr "pluma-ek fitxategiaren instantzia irakurtzeko soilik moduan ireki du. Dena den editatzea nahi duzu?"
+
+#: ../pluma/pluma-io-error-message-area.c:942
+#: ../pluma/pluma-io-error-message-area.c:952
+#: ../pluma/pluma-io-error-message-area.c:1056
+#: ../pluma/pluma-io-error-message-area.c:1066
+msgid "S_ave Anyway"
+msgstr "_Gorde dena den"
+
+#: ../pluma/pluma-io-error-message-area.c:946
+#: ../pluma/pluma-io-error-message-area.c:956
+#: ../pluma/pluma-io-error-message-area.c:1060
+#: ../pluma/pluma-io-error-message-area.c:1070
+msgid "D_on't Save"
+msgstr "_Ez gorde"
+
+#. FIXME: review this message, it's not clear since for the user the
+#. "modification"
+#. could be interpreted as the changes he made in the document. beside
+#. "reading" is
+#. not accurate (since last load/save)
+#: ../pluma/pluma-io-error-message-area.c:974
+#, c-format
+msgid "The file %s has been modified since reading it."
+msgstr "%s fitxategia aldatu egin da azken irakurketatik."
+
+#: ../pluma/pluma-io-error-message-area.c:993
+msgid ""
+"If you save it, all the external changes could be lost. Save it anyway?"
+msgstr "Gordetzen baduzu kanpoko aldaketak galdu egingo dira. Gorde dena den?"
+
+#: ../pluma/pluma-io-error-message-area.c:1088
+#, c-format
+msgid "Could not create a backup file while saving %s"
+msgstr "Ezin izan da babeskopiarik sortu %s gordetzean."
+
+#: ../pluma/pluma-io-error-message-area.c:1091
+#, c-format
+msgid "Could not create a temporary backup file while saving %s"
+msgstr "Ezin izan da aldi baterako babeskopiarik sortu %s gordetzean"
+
+#: ../pluma/pluma-io-error-message-area.c:1111
+msgid ""
+"pluma could not back up the old copy of the file before saving the new one. "
+"You can ignore this warning and save the file anyway, but if an error occurs"
+" while saving, you could lose the old copy of the file. Save anyway?"
+msgstr "pluma-ek ezin izan du fitxategiaren kopia zaharraren babeskopirik egin berria gordetzean. Abisu honi ez ikusi egin dezaiokezu eta fitxategia gorde dena den, baina errore bat gertatzen bada gordetzean fitxategiaren kopia zaharra gal dezakezu. Gorde dena den?"
+
+#. Translators: %s is a URI scheme (like for example http:, ftp:, etc.)
+#: ../pluma/pluma-io-error-message-area.c:1175
+#, c-format
+msgid ""
+"pluma cannot handle %s locations in write mode. Please check that you typed "
+"the location correctly and try again."
+msgstr "Pluma-ek ezin ditu %s helbideak idazteko moduan kudeatu. Egiaztatu helbidea ondo idatzi duzula eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:1183
+msgid ""
+"pluma cannot handle this location in write mode. Please check that you typed"
+" the location correctly and try again."
+msgstr "pluma-ek ezin du helbide hau idazteko moduan kudeatu. Egiaztatu helbidea ondo idatzi duzula eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:1192
+#, c-format
+msgid ""
+"%s is not a valid location. Please check that you typed the location "
+"correctly and try again."
+msgstr "%s ez da baliozko helbidea. Egiaztatu helbidea ondo idatzi duzula eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:1198
+msgid ""
+"You do not have the permissions necessary to save the file. Please check "
+"that you typed the location correctly and try again."
+msgstr "Ez dituzu nahikoa baimen fitxategia gordetzeko. Egiaztatu helbidea ondo idatzi duzula eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:1204
+msgid ""
+"There is not enough disk space to save the file. Please free some disk space"
+" and try again."
+msgstr "Diskoan ez dago fitxategia gordetzeko behar adina leku. Libratu lekua diskoan eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:1209
+msgid ""
+"You are trying to save the file on a read-only disk. Please check that you "
+"typed the location correctly and try again."
+msgstr "Irakurtzeko soilik den diskoan fitxategia gordetzen saiatzen ari zara. Egiaztatu helbidea ondo idatzi duzula eta saiatu berriro."
+
+#: ../pluma/pluma-io-error-message-area.c:1215
+msgid "A file with the same name already exists. Please use a different name."
+msgstr "Izen berdineko fitxategia badago lehendik ere. Erabili beste izen bat."
+
+#: ../pluma/pluma-io-error-message-area.c:1220
+msgid ""
+"The disk where you are trying to save the file has a limitation on length of"
+" the file names. Please use a shorter name."
+msgstr "Fitxategia gordetzeko erabili nahi duzun diskoak fitxategi-izenaren muga du. Saiatu izen laburragoa erabiltzen."
+
+#: ../pluma/pluma-io-error-message-area.c:1227
+msgid ""
+"The disk where you are trying to save the file has a limitation on file "
+"sizes. Please try saving a smaller file or saving it to a disk that does not"
+" have this limitation."
+msgstr "Fitxategia gordetzeko erabili nahi duzun diskoak fitxategi-tamainaren muga du. Saiatu fitxategia tamaina txikiagoan gordetzen edo muga hori ez duen disko batean gordetzen."
+
+#: ../pluma/pluma-io-error-message-area.c:1243
+#, c-format
+msgid "Could not save the file %s."
+msgstr "Ezin izan da %s fitxategia gorde."
+
+#. FIXME: review this message, it's not clear since for the user the
+#. "modification"
+#. could be interpreted as the changes he made in the document. beside
+#. "reading" is
+#. not accurate (since last load/save)
+#: ../pluma/pluma-io-error-message-area.c:1287
+#, c-format
+msgid "The file %s changed on disk."
+msgstr "%s fitxategia diskoan aldatu da."
+
+#: ../pluma/pluma-io-error-message-area.c:1292
+msgid "Do you want to drop your changes and reload the file?"
+msgstr "Nahi duzu aldaketak jaregin eta fitxategia berriro kargatzea?"
+
+#: ../pluma/pluma-io-error-message-area.c:1294
+msgid "Do you want to reload the file?"
+msgstr "Nahi duzu fitxategia berriro kargatzea?"
+
+#: ../pluma/pluma-io-error-message-area.c:1300
+#: ../pluma/pluma-io-error-message-area.c:1311
+msgid "_Reload"
+msgstr "_Birkargatu"
+
+#: ../pluma/pluma-panel.c:365 ../pluma/pluma-panel.c:541
+msgid "Empty"
+msgstr "Hutsa"
+
+#: ../pluma/pluma-panel.c:431
+msgid "Hide panel"
+msgstr "Ezkutatu panela"
+
+#: ../pluma/pluma-plugin-manager.c:54
+msgid "Plugin"
+msgstr "Plugina"
+
+#: ../pluma/pluma-plugin-manager.c:55
+msgid "Enabled"
+msgstr "Gaituta"
+
+#: ../pluma/pluma-plugin-manager.c:504
+msgid "_About"
+msgstr "_Honi buruz"
+
+#: ../pluma/pluma-plugin-manager.c:512
+msgid "C_onfigure"
+msgstr "K_onfiguratu"
+
+#: ../pluma/pluma-plugin-manager.c:521
+msgid "A_ctivate"
+msgstr "_Aktibatu"
+
+#: ../pluma/pluma-plugin-manager.c:532
+msgid "Ac_tivate All"
+msgstr "A_ktibatu denak"
+
+#: ../pluma/pluma-plugin-manager.c:537
+msgid "_Deactivate All"
+msgstr "_Desaktibatu denak"
+
+#: ../pluma/pluma-plugin-manager.c:800
+msgid "Active _Plugins:"
+msgstr "_Plugin aktiboak:"
+
+#: ../pluma/pluma-plugin-manager.c:825
+msgid "_About Plugin"
+msgstr "_Pluginari buruz"
+
+#: ../pluma/pluma-plugin-manager.c:829
+msgid "C_onfigure Plugin"
+msgstr "K_onfiguratu plugina"
+
+#: ../pluma/pluma-print-job.c:551
+#, c-format
+msgid "File: %s"
+msgstr "Fitxategia: %s"
+
+#: ../pluma/pluma-print-job.c:560
+msgid "Page %N of %Q"
+msgstr "%N/%Q orria"
+
+#: ../pluma/pluma-print-job.c:819
+msgid "Preparing..."
+msgstr "Prestatzen..."
+
+#: ../pluma/pluma-print-preferences.ui.h:1
+msgid "Syntax Highlighting"
+msgstr "Sintaxiaren nabarmentzea"
+
+#: ../pluma/pluma-print-preferences.ui.h:2
+msgid "Print synta_x highlighting"
+msgstr "Inprimatu s_intaxiaren nabarmentzea"
+
+#: ../pluma/pluma-print-preferences.ui.h:4
+msgid "Print line nu_mbers"
+msgstr "Inprimatu _lerro-zenbakiak"
+
+#. 'Number every' from 'Number every 3 lines' in the 'Text Editor' tab of the
+#. print preferences.
+#: ../pluma/pluma-print-preferences.ui.h:6
+msgid "_Number every"
+msgstr "_Zenbakia"
+
+#. 'lines' from 'Number every 3 lines' in the 'Text Editor' tab of the print
+#. preferences.
+#: ../pluma/pluma-print-preferences.ui.h:8
+msgid "lines"
+msgstr "lerroz behin"
+
+#: ../pluma/pluma-print-preferences.ui.h:12
+msgid "Page header"
+msgstr "Orri-goiburua"
+
+#: ../pluma/pluma-print-preferences.ui.h:13
+msgid "Print page _headers"
+msgstr "In_primatu orrialde-goiburuak"
+
+#: ../pluma/pluma-print-preferences.ui.h:14
+msgid "Fonts"
+msgstr "Letra-tipoak"
+
+#: ../pluma/pluma-print-preferences.ui.h:15
+msgid "_Body:"
+msgstr "_Testua:"
+
+#: ../pluma/pluma-print-preferences.ui.h:16
+msgid "_Line numbers:"
+msgstr "_Lerro-zenbakiak:"
+
+#: ../pluma/pluma-print-preferences.ui.h:17
+msgid "He_aders and footers:"
+msgstr "Goib_uruak eta orri-oinak:"
+
+#: ../pluma/pluma-print-preferences.ui.h:18
+msgid "_Restore Default Fonts"
+msgstr "_Leheneratu letra-tipo lehenetsiak"
+
+#: ../pluma/pluma-print-preview.c:568
+msgid "Show the previous page"
+msgstr "Erakutsi aurreko orrialdea"
+
+#: ../pluma/pluma-print-preview.c:580
+msgid "Show the next page"
+msgstr "Erakutsi hurrengo orrialdea"
+
+#: ../pluma/pluma-print-preview.c:596
+msgid "Current page (Alt+P)"
+msgstr "Uneko orrialdea (Alt+P)"
+
+#. Translators: the "of" from "1 of 19" in print preview.
+#: ../pluma/pluma-print-preview.c:619
+msgid "of"
+msgstr " / "
+
+#: ../pluma/pluma-print-preview.c:627
+msgid "Page total"
+msgstr "Orrialdeak guztira"
+
+#: ../pluma/pluma-print-preview.c:628
+msgid "The total number of pages in the document"
+msgstr "Dokumentuaren orrialde-kopurua"
+
+#: ../pluma/pluma-print-preview.c:645
+msgid "Show multiple pages"
+msgstr "Erakutsi hainbat orrialde"
+
+#: ../pluma/pluma-print-preview.c:658
+msgid "Zoom 1:1"
+msgstr "Zooma 1:1"
+
+#: ../pluma/pluma-print-preview.c:667
+msgid "Zoom to fit the whole page"
+msgstr "Orrialde osoa hartzeko doitzen du ikuspegia"
+
+#: ../pluma/pluma-print-preview.c:676
+msgid "Zoom the page in"
+msgstr "Handiagotu zooma"
+
+#: ../pluma/pluma-print-preview.c:685
+msgid "Zoom the page out"
+msgstr "Txikiagotu zooma"
+
+#: ../pluma/pluma-print-preview.c:697
+msgid "_Close Preview"
+msgstr "_Itxi aurrebista"
+
+#: ../pluma/pluma-print-preview.c:700
+msgid "Close print preview"
+msgstr "Itxi inprimatzeko aurrebista"
+
+#: ../pluma/pluma-print-preview.c:770
+#, c-format
+msgid "Page %d of %d"
+msgstr "%d / %d orrialdea"
+
+#: ../pluma/pluma-print-preview.c:954
+msgid "Page Preview"
+msgstr "Orrialdearen aurrebista"
+
+#: ../pluma/pluma-print-preview.c:955
+msgid "The preview of a page in the document to be printed"
+msgstr "Inprimatuko den dokumentuaren orrialdearen aurrebista"
+
+#: ../pluma/pluma-smart-charset-converter.c:319
+msgid "It is not possible to detect the encoding automatically"
+msgstr "Ezin izan da kodeketa automatikoki detektatu"
+
+#: ../pluma/pluma-statusbar.c:70 ../pluma/pluma-statusbar.c:76
+msgid "OVR"
+msgstr "GAIN"
+
+#: ../pluma/pluma-statusbar.c:70 ../pluma/pluma-statusbar.c:76
+msgid "INS"
+msgstr "TXER"
+
+#. Translators: "Ln" is an abbreviation for "Line", Col is an abbreviation for
+#. "Column". Please,
+#. use abbreviations if possible to avoid space problems.
+#: ../pluma/pluma-statusbar.c:341
+#, c-format
+msgid "  Ln %d, Col %d"
+msgstr "  %d lerroa, %d zutabea"
+
+#: ../pluma/pluma-statusbar.c:444
+#, c-format
+msgid "There is a tab with errors"
+msgid_plural "There are %d tabs with errors"
+msgstr[0] "Erroreak dituen fitxa bat dago."
+msgstr[1] "Erroreak dituzten %d fitxa daude"
+
+#: ../pluma/pluma-style-scheme-manager.c:215
+#, c-format
+msgid "Directory '%s' could not be created: g_mkdir_with_parents() failed: %s"
+msgstr "Ezin izan da '%s' direktorioa sortu: g_mkdir_with_parents() huts egin du: %s"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:660
+#, c-format
+msgid "Reverting %s from %s"
+msgstr "%2$s(e)tik %1$s(e)ra leheneratzen"
+
+#: ../pluma/pluma-tab.c:667
+#, c-format
+msgid "Reverting %s"
+msgstr "%s leheneratzen"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:683
+#, c-format
+msgid "Loading %s from %s"
+msgstr "%2$s(e)tik %1$s kargatzen"
+
+#: ../pluma/pluma-tab.c:690
+#, c-format
+msgid "Loading %s"
+msgstr "%s kargatzen"
+
+#. Translators: the first %s is a file name (e.g. test.txt) the second one
+#. is a directory (e.g. ssh://master.gnome.org/home/users/paolo)
+#: ../pluma/pluma-tab.c:773
+#, c-format
+msgid "Saving %s to %s"
+msgstr "%2$s(e)n %1$s gordetzen"
+
+#: ../pluma/pluma-tab.c:780
+#, c-format
+msgid "Saving %s"
+msgstr "%s gordetzen"
+
+#. Read only
+#: ../pluma/pluma-tab.c:1673
+msgid "RO"
+msgstr "IS"
+
+#: ../pluma/pluma-tab.c:1720
+#, c-format
+msgid "Error opening file %s"
+msgstr "Errorea %s fitxategia irekitzean."
+
+#: ../pluma/pluma-tab.c:1725
+#, c-format
+msgid "Error reverting file %s"
+msgstr "Errorea %s fitxategia leheneratzean."
+
+#: ../pluma/pluma-tab.c:1730
+#, c-format
+msgid "Error saving file %s"
+msgstr "Errorea %s fitxategia gordetzean."
+
+#: ../pluma/pluma-tab.c:1751
+msgid "Unicode (UTF-8)"
+msgstr "Unicode (UTF-8)"
+
+#: ../pluma/pluma-tab.c:1758
+msgid "Name:"
+msgstr "Izena:"
+
+#: ../pluma/pluma-tab.c:1759
+msgid "MIME Type:"
+msgstr "MIME mota:"
+
+#: ../pluma/pluma-tab.c:1760
+msgid "Encoding:"
+msgstr "Kodeketa:"
+
+#: ../pluma/pluma-tab-label.c:285
+msgid "Close document"
+msgstr "Itxi dokumentua"
+
+#. Toplevel
+#: ../pluma/pluma-ui.h:47
+msgid "_File"
+msgstr "_Fitxategia"
+
+#: ../pluma/pluma-ui.h:48
+msgid "_Edit"
+msgstr "_Editatu"
+
+#: ../pluma/pluma-ui.h:49
+msgid "_View"
+msgstr "_Ikusi"
+
+#: ../pluma/pluma-ui.h:50
+msgid "_Search"
+msgstr "_Bilatu"
+
+#: ../pluma/pluma-ui.h:51
+msgid "_Tools"
+msgstr "_Tresnak"
+
+#: ../pluma/pluma-ui.h:52
+msgid "_Documents"
+msgstr "_Dokumentuak"
+
+#: ../pluma/pluma-ui.h:53
+msgid "_Help"
+msgstr "La_guntza"
+
+#: ../pluma/pluma-ui.h:57
+msgid "Create a new document"
+msgstr "Dokumentu berria sortzen du"
+
+#: ../pluma/pluma-ui.h:58
+msgid "_Open..."
+msgstr "_Ireki..."
+
+#: ../pluma/pluma-ui.h:59 ../pluma/pluma-window.c:1458
+msgid "Open a file"
+msgstr "Fitxategi bat irekitzen du"
+
+#. Edit menu
+#: ../pluma/pluma-ui.h:62
+msgid "Pr_eferences"
+msgstr "_Hobespenak"
+
+#: ../pluma/pluma-ui.h:63
+msgid "Configure the application"
+msgstr "Aplikazioa konfiguratzen du"
+
+#. Help menu
+#: ../pluma/pluma-ui.h:66
+msgid "_Contents"
+msgstr "_Edukia"
+
+#: ../pluma/pluma-ui.h:67
+msgid "Open the pluma manual"
+msgstr "Pluma-en eskuliburua irekitzen du"
+
+#: ../pluma/pluma-ui.h:69
+msgid "About this application"
+msgstr "Aplikazio honi buruz"
+
+#: ../pluma/pluma-ui.h:73
+msgid "Leave fullscreen mode"
+msgstr "Irten pantaila osoko modutik"
+
+#: ../pluma/pluma-ui.h:81
+msgid "Save the current file"
+msgstr "Uneko fitxategia gordetzen du"
+
+#: ../pluma/pluma-ui.h:82
+msgid "Save _As..."
+msgstr "Gorde _honela..."
+
+#: ../pluma/pluma-ui.h:83
+msgid "Save the current file with a different name"
+msgstr "Uneko fitxategia beste izen batekin gordetzen du"
+
+#: ../pluma/pluma-ui.h:85
+msgid "Revert to a saved version of the file"
+msgstr "Fitxategiaren gordetako bertsio batera itzultzen da"
+
+#: ../pluma/pluma-ui.h:87
+msgid "Page Set_up..."
+msgstr "Orrialdearen _konfigurazioa..."
+
+#: ../pluma/pluma-ui.h:88
+msgid "Set up the page settings"
+msgstr "Konfiguratu orriaren ezarpenak"
+
+#: ../pluma/pluma-ui.h:90
+msgid "Print Previe_w"
+msgstr "Inprimatzeko _aurrebista"
+
+#: ../pluma/pluma-ui.h:91
+msgid "Print preview"
+msgstr "Inprimatzeko aurrebista"
+
+#: ../pluma/pluma-ui.h:92
+msgid "_Print..."
+msgstr "_Inprimatu..."
+
+#: ../pluma/pluma-ui.h:93
+msgid "Print the current page"
+msgstr "Uneko orria inprimatzen du"
+
+#: ../pluma/pluma-ui.h:97
+msgid "Undo the last action"
+msgstr "Azken ekintza desegiten du"
+
+#: ../pluma/pluma-ui.h:99
+msgid "Redo the last undone action"
+msgstr "Desegin den azken ekintza berregiten du"
+
+#: ../pluma/pluma-ui.h:101
+msgid "Cut the selection"
+msgstr "Hautapena ebakitzen du"
+
+#: ../pluma/pluma-ui.h:103
+msgid "Copy the selection"
+msgstr "Hautapena kopiatzen du"
+
+#: ../pluma/pluma-ui.h:105
+msgid "Paste the clipboard"
+msgstr "Arbelaren edukia itsasten du"
+
+#: ../pluma/pluma-ui.h:107
+msgid "Delete the selected text"
+msgstr "Hautatutako testua ezabatzen du"
+
+#: ../pluma/pluma-ui.h:108
+msgid "Select _All"
+msgstr "Hautatu _dena"
+
+#: ../pluma/pluma-ui.h:109
+msgid "Select the entire document"
+msgstr "Dokumentu osoa hautatzen du"
+
+#. View menu
+#: ../pluma/pluma-ui.h:112
+msgid "_Highlight Mode"
+msgstr "_Nabarmentze-modua"
+
+#. Search menu
+#: ../pluma/pluma-ui.h:115
+msgid "_Find..."
+msgstr "_Bilatu..."
+
+#: ../pluma/pluma-ui.h:116
+msgid "Search for text"
+msgstr "Bilatu testua"
+
+#: ../pluma/pluma-ui.h:117
+msgid "Find Ne_xt"
+msgstr "Bilatu _hurrengoa"
+
+#: ../pluma/pluma-ui.h:118
+msgid "Search forwards for the same text"
+msgstr "Bilatu testu bera aurrerantz"
+
+#: ../pluma/pluma-ui.h:119
+msgid "Find Pre_vious"
+msgstr "Bilatu _aurrekoa"
+
+#: ../pluma/pluma-ui.h:120
+msgid "Search backwards for the same text"
+msgstr "Bilatu testu bera atzerantz"
+
+#: ../pluma/pluma-ui.h:122 ../pluma/pluma-ui.h:125
+msgid "_Replace..."
+msgstr "_Ordeztu..."
+
+#: ../pluma/pluma-ui.h:123 ../pluma/pluma-ui.h:126
+msgid "Search for and replace text"
+msgstr "Bilatu eta ordeztu testua"
+
+#: ../pluma/pluma-ui.h:128
+msgid "_Clear Highlight"
+msgstr "_Garbitu nabarmentzea"
+
+#: ../pluma/pluma-ui.h:129
+msgid "Clear highlighting of search matches"
+msgstr "Kendu nabarmentzea bilaketan bat datozenei"
+
+#: ../pluma/pluma-ui.h:130
+msgid "Go to _Line..."
+msgstr "Joan _lerro honetara:"
+
+#: ../pluma/pluma-ui.h:131
+msgid "Go to a specific line"
+msgstr "Joan lerro zehatzera"
+
+#: ../pluma/pluma-ui.h:132
+msgid "_Incremental Search..."
+msgstr "Bilaketa _inkrementala..."
+
+#: ../pluma/pluma-ui.h:133
+msgid "Incrementally search for text"
+msgstr "Testuaren bilaketa inkrementala"
+
+#. Documents menu
+#: ../pluma/pluma-ui.h:136
+msgid "_Save All"
+msgstr "_Gorde dena"
+
+#: ../pluma/pluma-ui.h:137
+msgid "Save all open files"
+msgstr "Irekitako fitxategi guztiak gordetzen ditu"
+
+#: ../pluma/pluma-ui.h:138
+msgid "_Close All"
+msgstr "It_xi dena"
+
+#: ../pluma/pluma-ui.h:139
+msgid "Close all open files"
+msgstr "Irekita dauden fitxategi guztiak ixten ditu"
+
+#: ../pluma/pluma-ui.h:140
+msgid "_Previous Document"
+msgstr "_Aurreko dokumentua"
+
+#: ../pluma/pluma-ui.h:141
+msgid "Activate previous document"
+msgstr "Aktibatu aurreko dokumentua"
+
+#: ../pluma/pluma-ui.h:142
+msgid "_Next Document"
+msgstr "_Hurrengo dokumentua"
+
+#: ../pluma/pluma-ui.h:143
+msgid "Activate next document"
+msgstr "Aktibatu hurrengo dokumentua"
+
+#: ../pluma/pluma-ui.h:144
+msgid "_Move to New Window"
+msgstr "_Eraman leiho berrira"
+
+#: ../pluma/pluma-ui.h:145
+msgid "Move the current document to a new window"
+msgstr "Eraman uneko dokumentua leiho berri batera"
+
+#: ../pluma/pluma-ui.h:152
+msgid "Close the current file"
+msgstr "Uneko fitxategia ixten du"
+
+#: ../pluma/pluma-ui.h:159
+msgid "Quit the program"
+msgstr "Programatik irteten da"
+
+#: ../pluma/pluma-ui.h:164
+msgid "_Toolbar"
+msgstr "_Tresna-barra"
+
+#: ../pluma/pluma-ui.h:165
+msgid "Show or hide the toolbar in the current window"
+msgstr "Uneko leihoko tresna-barra erakusten/ezkutatzen du"
+
+#: ../pluma/pluma-ui.h:167
+msgid "_Statusbar"
+msgstr "_Egoera-barra"
+
+#: ../pluma/pluma-ui.h:168
+msgid "Show or hide the statusbar in the current window"
+msgstr "Uneko leihoko egoera-barra erakusten/ezkutatzen du"
+
+#: ../pluma/pluma-ui.h:171
+msgid "Edit text in fullscreen"
+msgstr "Editatu testua pantaila osoan"
+
+#: ../pluma/pluma-ui.h:178
+msgid "Side _Pane"
+msgstr "_Alboko panela"
+
+#: ../pluma/pluma-ui.h:179
+msgid "Show or hide the side pane in the current window"
+msgstr "Uneko leihoko alboko panela erakusten/ezkutatzen du"
+
+#: ../pluma/pluma-ui.h:181
+msgid "_Bottom Pane"
+msgstr "_Beheko panela"
+
+#: ../pluma/pluma-ui.h:182
+msgid "Show or hide the bottom pane in the current window"
+msgstr "Erakutsi edo ezkutatu beheko panela uneko leihoan"
+
+#: ../pluma/pluma-utils.c:1090
+msgid "Please check your installation."
+msgstr "Egiaztatu instalazioa"
+
+#: ../pluma/pluma-utils.c:1159
+#, c-format
+msgid "Unable to open UI file %s. Error: %s"
+msgstr "Ezin da %s UI fitxategia aurkitu. Errorea: %s"
+
+#: ../pluma/pluma-utils.c:1179
+#, c-format
+msgid "Unable to find the object '%s' inside file %s."
+msgstr "Ezin da '%s' objektua aurkitu %s fitxategiaren barruan."
+
+#. Translators: '/ on <remote-share>'
+#: ../pluma/pluma-utils.c:1339
+#, c-format
+msgid "/ on %s"
+msgstr "/ %s(e)n"
+
+#. create "Wrap Around" menu item.
+#: ../pluma/pluma-view.c:1274
+msgid "_Wrap Around"
+msgstr "_Doitu"
+
+#. create "Match Entire Word Only" menu item.
+#: ../pluma/pluma-view.c:1284
+msgid "Match _Entire Word Only"
+msgstr "_Hitz osoak soilik"
+
+#. create "Match Case" menu item.
+#: ../pluma/pluma-view.c:1294
+msgid "_Match Case"
+msgstr "_Maiuskula/minuskula"
+
+#. create "Parse escapes" menu item.
+#: ../pluma/pluma-view.c:1304
+msgid ""
+"_Parse escape sequences (e.g. \n"
+")"
+msgstr ""
+
+#: ../pluma/pluma-view.c:1418
+msgid "String you want to search for"
+msgstr "Bilatzea nahi duzun katea"
+
+#: ../pluma/pluma-view.c:1427
+msgid "Line you want to move the cursor to"
+msgstr "Lerroa kurtsorea kokatzeko"
+
+#: ../pluma/pluma-window.c:1011
+#, c-format
+msgid "Use %s highlight mode"
+msgstr "Erabili %s nabarmentze-modua"
+
+#. add the "Plain Text" item before all the others
+#. Translators: "Plain Text" means that no highlight mode is selected in the
+#. * "View->Highlight Mode" submenu and so syntax highlighting is disabled
+#: ../pluma/pluma-window.c:1068 ../pluma/pluma-window.c:1980
+#: ../plugins/externaltools/tools/manager.py:121
+#: ../plugins/externaltools/tools/manager.py:419
+#: ../plugins/externaltools/tools/manager.py:529
+#: ../plugins/externaltools/tools/manager.py:844
+msgid "Plain Text"
+msgstr "Testu arrunta"
+
+#: ../pluma/pluma-window.c:1069
+msgid "Disable syntax highlighting"
+msgstr "Desgaitu sintaxiaren nabarmentzea"
+
+#. Translators: %s is a URI
+#: ../pluma/pluma-window.c:1355
+#, c-format
+msgid "Open '%s'"
+msgstr "Ireki '%s'"
+
+#: ../pluma/pluma-window.c:1460
+msgid "Open a recently used file"
+msgstr "Erabili berri duzun fitxategi bat irekitzen du"
+
+#: ../pluma/pluma-window.c:1466
+msgid "Open"
+msgstr "Ireki"
+
+#: ../pluma/pluma-window.c:1524
+msgid "Save"
+msgstr "Gorde"
+
+#: ../pluma/pluma-window.c:1526
+msgid "Print"
+msgstr "Inprimatu"
+
+#. Translators: %s is a URI
+#: ../pluma/pluma-window.c:1705
+#, c-format
+msgid "Activate '%s'"
+msgstr "Aktibatu '%s'"
+
+#: ../pluma/pluma-window.c:1958
+msgid "Use Spaces"
+msgstr "Erabili zuriuneak"
+
+#: ../pluma/pluma-window.c:2029
+msgid "Tab Width"
+msgstr "Tabulazio-zabalera"
+
+#: ../pluma/pluma-window.c:3893
+msgid "About pluma"
+msgstr "Pluma-i buruz"
+
+#: ../plugins/changecase/changecase.pluma-plugin.desktop.in.h:1
+msgid "Change Case"
+msgstr "Aldatu Maiuskulak/Minuskulak"
+
+#: ../plugins/changecase/changecase.pluma-plugin.desktop.in.h:2
+msgid "Changes the case of selected text."
+msgstr "Hautatutako testuaren Maiuskulak/Minuskulak aldatzen ditu."
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:222
+msgid "C_hange Case"
+msgstr "Alda_tu Maiuskula/Minuskula"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:223
+msgid "All _Upper Case"
+msgstr "Dena m_aiuskuletan"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:224
+msgid "Change selected text to upper case"
+msgstr "Hautatutako testua maiuskuletara bihurtzen du"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:226
+msgid "All _Lower Case"
+msgstr "Dena m_inuskuletan"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:227
+msgid "Change selected text to lower case"
+msgstr "Hautatutako testua minuskuletara bihurtzen du"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:229
+msgid "_Invert Case"
+msgstr "Alderantzikatu maiuskulak eta minuskulak"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:230
+msgid "Invert the case of selected text"
+msgstr "Alderantzikatu hautatutako testuaren Maiuskulak/Minuskulak"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:232
+msgid "_Title Case"
+msgstr "_Izenburua maiuskuletan"
+
+#: ../plugins/changecase/pluma-changecase-plugin.c:233
+msgid "Capitalize the first letter of each selected word"
+msgstr "Hautatutako hitz bakoitzaren lehenengo hizkia maiuskuletan jarri"
+
+#: ../plugins/checkupdate/checkupdate.pluma-plugin.desktop.in.h:1
+msgid "Check update"
+msgstr "Begiratu eguneraketak"
+
+#: ../plugins/checkupdate/checkupdate.pluma-plugin.desktop.in.h:2
+msgid "Check for latest version of pluma"
+msgstr "Begiratu pluma-en bertsio berririk dagoen"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:239
+msgid "There was an error displaying the URI."
+msgstr "Errorea gertatu da URLa bistaratzean."
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:285
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:300
+msgid "_Download"
+msgstr "_Deskargatu"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:289
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:308
+msgid "_Ignore Version"
+msgstr "E_zikusi egin bertsioari"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:324
+msgid "There is a new version of pluma"
+msgstr "Pluma-en bertsio berri bat dago"
+
+#: ../plugins/checkupdate/pluma-check-update-plugin.c:328
+msgid ""
+"You can download the new version of pluma by clicking on the download button"
+" or ignore that version and wait for a new one"
+msgstr "Pluma-en bertsio berria deskarga dezakezu 'Deskargatu' botoia sakatuz, edo ezikusi egin bertsio horri eta itxaron berri bati."
+
+#: ../plugins/checkupdate/org.mate.pluma.plugins.checkupdate.gschema.xml.in.in.h:1
+msgid "Version to ignore until the next version is released"
+msgstr "Ezikusi egingo den bertsioa hurrengoa kaleratu arte"
+
+#: ../plugins/docinfo/docinfo.pluma-plugin.desktop.in.h:1
+#: ../plugins/docinfo/docinfo.ui.h:1
+msgid "Document Statistics"
+msgstr "Dokumentuaren estatistikak"
+
+#: ../plugins/docinfo/docinfo.pluma-plugin.desktop.in.h:2
+msgid ""
+"Analyzes the current document and reports the number of words, lines, "
+"characters and non-space characters in it."
+msgstr "Uneko dokumentua aztertzen du eta dokumentuan zenbat hitz, lerro, karaktere eta tarterik gabeko karaktere dauden zehazten du, eta gero emaitza bistaratzen du."
+
+#: ../plugins/docinfo/docinfo.ui.h:2
+msgid "_Update"
+msgstr "_Eguneratu"
+
+#: ../plugins/docinfo/docinfo.ui.h:3
+msgid "File Name"
+msgstr "Fitxategi-izena"
+
+#: ../plugins/docinfo/docinfo.ui.h:5
+msgid "Bytes"
+msgstr "Byte"
+
+#: ../plugins/docinfo/docinfo.ui.h:6
+msgid "Characters (no spaces)"
+msgstr "Karaktereak (tarterik ez)"
+
+#: ../plugins/docinfo/docinfo.ui.h:7
+msgid "Characters (with spaces)"
+msgstr "Karaktereak (tarteekin)"
+
+#: ../plugins/docinfo/docinfo.ui.h:8
+msgid "Words"
+msgstr "Hitzak"
+
+#: ../plugins/docinfo/docinfo.ui.h:9
+msgid "Lines"
+msgstr "Lerroak"
+
+#: ../plugins/docinfo/docinfo.ui.h:10
+msgid "Document"
+msgstr "Dokumentua"
+
+#: ../plugins/docinfo/docinfo.ui.h:11
+msgid "Selection"
+msgstr "Hautapena"
+
+#: ../plugins/docinfo/pluma-docinfo-plugin.c:431
+msgid "_Document Statistics"
+msgstr "_Dokumentuaren estatistikak"
+
+#: ../plugins/docinfo/pluma-docinfo-plugin.c:433
+msgid "Get statistical information on the current document"
+msgstr "Lortu uneko dokumentuari buruzko estatistika-informazioa"
+
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:1
+#: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:1
+msgid "Open terminal here"
+msgstr "Ireki terminala hemen"
+
+#: ../plugins/externaltools/data/open-terminal-here-osx.desktop.in.h:2
+#: ../plugins/externaltools/data/open-terminal-here.desktop.in.h:2
+msgid "Open a terminal in the document location"
+msgstr "Ireki terminala dokumentuaren kokalekuarekin"
+
+#: ../plugins/externaltools/externaltools.pluma-plugin.desktop.in.h:1
+msgid "External Tools"
+msgstr "Kanpoko tresnak"
+
+#: ../plugins/externaltools/externaltools.pluma-plugin.desktop.in.h:2
+msgid "Execute external commands and shell scripts."
+msgstr "Exekutatu kanpoko komandoak eta shell-eko script-ak."
+
+#: ../plugins/externaltools/tools/__init__.py:172
+msgid "Manage _External Tools..."
+msgstr "Kudeatu _kanpoko tresnak..."
+
+#: ../plugins/externaltools/tools/__init__.py:174
+msgid "Opens the External Tools Manager"
+msgstr "Ireki kanpoko tresnen kudeatzailea"
+
+#: ../plugins/externaltools/tools/__init__.py:178
+msgid "External _Tools"
+msgstr "Kanpoko _tresnak"
+
+#: ../plugins/externaltools/tools/__init__.py:180
+msgid "External tools"
+msgstr "Kanpoko tresnak"
+
+#: ../plugins/externaltools/tools/__init__.py:212
+msgid "Shell Output"
+msgstr "Shell-eko irteera"
+
+#: ../plugins/externaltools/tools/capture.py:93
+#, python-format
+msgid "Could not execute command: %s"
+msgstr "Ezin izan da komandoa exekutatu: %s"
+
+#: ../plugins/externaltools/tools/functions.py:162
+msgid "You must be inside a word to run this command"
+msgstr "Hitz baten barruan egon behar zara komando hau exekutatzeko"
+
+#: ../plugins/externaltools/tools/functions.py:267
+msgid "Running tool:"
+msgstr "Tresna exekutatzen:"
+
+#: ../plugins/externaltools/tools/functions.py:292
+msgid "Done."
+msgstr "Eginda"
+
+#: ../plugins/externaltools/tools/functions.py:294
+msgid "Exited"
+msgstr "Irten da"
+
+#: ../plugins/externaltools/tools/manager.py:119
+msgid "All languages"
+msgstr "Hizkuntza guztiak"
+
+#: ../plugins/externaltools/tools/manager.py:518
+#: ../plugins/externaltools/tools/manager.py:522
+#: ../plugins/externaltools/tools/manager.py:842
+#: ../plugins/externaltools/tools/tools.ui.h:22
+msgid "All Languages"
+msgstr "Hizkuntza guztiak"
+
+#: ../plugins/externaltools/tools/manager.py:628
+msgid "New tool"
+msgstr "Tresna berria"
+
+#: ../plugins/externaltools/tools/manager.py:759
+#, python-format
+msgid "This accelerator is already bound to %s"
+msgstr "Bizkortzaile hau jadanik %s(e)ra lotuta dago"
+
+#: ../plugins/externaltools/tools/manager.py:810
+msgid "Type a new accelerator, or press Backspace to clear"
+msgstr "Sakatu bizkortzaile berria, edo Atzera-tekla garbitzeko"
+
+#: ../plugins/externaltools/tools/manager.py:812
+msgid "Type a new accelerator"
+msgstr "Sakatu bizkortzaile berria"
+
+#: ../plugins/externaltools/tools/outputpanel.py:105
+msgid "Stopped."
+msgstr "Geldituta."
+
+#. ex:ts=4:et:
+#: ../plugins/externaltools/tools/tools.ui.h:1
+msgid "Nothing"
+msgstr "Ezer ez"
+
+#: ../plugins/externaltools/tools/tools.ui.h:2
+msgid "Current document"
+msgstr "Uneko dokumentua"
+
+#: ../plugins/externaltools/tools/tools.ui.h:3
+msgid "All documents"
+msgstr "Dokumentu guztiak"
+
+#: ../plugins/externaltools/tools/tools.ui.h:4
+msgid "Current selection"
+msgstr "Uneko hautapena"
+
+#: ../plugins/externaltools/tools/tools.ui.h:5
+msgid "Current selection (default to document)"
+msgstr "Uneko hautapena (lehenetsia dokumentuarentzat)"
+
+#: ../plugins/externaltools/tools/tools.ui.h:6
+msgid "Current line"
+msgstr "Uneko lerroa"
+
+#: ../plugins/externaltools/tools/tools.ui.h:7
+msgid "Current word"
+msgstr "Uneko hitza"
+
+#: ../plugins/externaltools/tools/tools.ui.h:8
+msgid "Display in bottom pane"
+msgstr "Bistaratu beheko panelean"
+
+#: ../plugins/externaltools/tools/tools.ui.h:9
+msgid "Create new document"
+msgstr "Sortu dokumentu berria"
+
+#: ../plugins/externaltools/tools/tools.ui.h:10
+msgid "Append to current document"
+msgstr "Erantsi uneko dokumentuari"
+
+#: ../plugins/externaltools/tools/tools.ui.h:11
+msgid "Replace current document"
+msgstr "Ordeztu uneko dokumentua"
+
+#: ../plugins/externaltools/tools/tools.ui.h:12
+msgid "Replace current selection"
+msgstr "Ordeztu uneko hautapena"
+
+#: ../plugins/externaltools/tools/tools.ui.h:13
+msgid "Insert at cursor position"
+msgstr "Txertatu kurtsorearen posizioan"
+
+#: ../plugins/externaltools/tools/tools.ui.h:14
+msgid "All documents except untitled ones"
+msgstr "Dokumentu guztiak izenik gabekoak ezik"
+
+#: ../plugins/externaltools/tools/tools.ui.h:15
+msgid "Local files only"
+msgstr "Fitxategi lokalak soilik"
+
+#: ../plugins/externaltools/tools/tools.ui.h:16
+msgid "Remote files only"
+msgstr "Urruneko fitxategiak soilik"
+
+#: ../plugins/externaltools/tools/tools.ui.h:17
+msgid "Untitled documents only"
+msgstr "Izenik gabeko dokumentuak soilik"
+
+#: ../plugins/externaltools/tools/tools.ui.h:18
+msgid "External Tools Manager"
+msgstr "Kanpoko tresnen kudeatzailea"
+
+#: ../plugins/externaltools/tools/tools.ui.h:19
+msgid "_Tools:"
+msgstr "_Tresnak:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:20
+#: ../plugins/snippets/snippets/snippets.ui.h:7
+msgid "_Edit:"
+msgstr "_Editatu:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:23
+msgid "_Applicability:"
+msgstr "_Aplikagarritasuna:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:24
+msgid "_Output:"
+msgstr "_Irteera:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:25
+msgid "_Input:"
+msgstr "_Sarrera:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:26
+msgid "_Save:"
+msgstr "_Gorde:"
+
+#: ../plugins/externaltools/tools/tools.ui.h:27
+msgid "_Shortcut Key:"
+msgstr "_Laster-teklak:"
+
+#: ../plugins/externaltools/data/build.desktop.in.h:1
+msgid "Build"
+msgstr "Eraiki"
+
+#: ../plugins/externaltools/data/build.desktop.in.h:2
+msgid "Run \"make\" in the document directory"
+msgstr "Exekutatu 'make' dokumentuen direktorioan"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:1
+msgid "Remove trailing spaces"
+msgstr "Kendu tarteko zuriuneak"
+
+#: ../plugins/externaltools/data/remove-trailing-spaces.desktop.in.h:2
+msgid "Remove useless trailing spaces in your file"
+msgstr "Kendu erabiltzen ez diren zuriuneak fitxategitik"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:1
+msgid "Run command"
+msgstr "Exekutatu komandoa"
+
+#: ../plugins/externaltools/data/run-command.desktop.in.h:2
+msgid "Execute a custom command and put its output in a new document"
+msgstr "Exekutatu komando pertsonalizatua eta jarri bere irteera dokumentu berrian"
+
+#: ../plugins/externaltools/data/search-recursive.desktop.in.h:1
+msgid "Search"
+msgstr ""
+
+#: ../plugins/externaltools/data/switch-c.desktop.in.h:1
+msgid "Switch onto a file .c and .h"
+msgstr ""
+
+#: ../plugins/filebrowser/filebrowser.pluma-plugin.desktop.in.h:1
+msgid "File Browser Pane"
+msgstr "Fitxategi-arakatzailearen panela"
+
+#: ../plugins/filebrowser/filebrowser.pluma-plugin.desktop.in.h:2
+msgid "Easy file access from the side pane"
+msgstr "Fitxategiak erraz sarbidetu albo-paneletik"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:1
+msgid "Set Location to First Document"
+msgstr "Ezarri aurreneko dokumentuaren kokalekua"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:2
+msgid ""
+"If TRUE the file browser plugin will view the directory of the first opened "
+"document given that the file browser hasn't been used yet. (Thus this "
+"generally applies to opening a document from the command line or opening it "
+"with Caja, etc.)"
+msgstr "TRUE (egia) gisa ezartzen bada, fitxategi-arakatzaileak oraindik erabili ez duen irekitako aurreneko dokumentuaren direktorioa bistaratuko du fitxategi-arakatzailearen osagaiak. Kasu hau dokumentua komando lerrotik edo Caja-etik irekitzen denean gertatu ohi da."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:3
+msgid "File Browser Filter Mode"
+msgstr "Fitxategi-arakatzailearen iragazki modua"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:4
+msgid ""
+"This value determines what files get filtered from the file browser. Valid "
+"values are: none (filter nothing), hidden (filter hidden files), binary "
+"(filter binary files) and hidden_and_binary (filter both hidden and binary "
+"files)."
+msgstr "Balio honek fitxategi-arakatzailetik iragaziko diren fitxategiak zehazten du. Balio posibleak: 'none' (ez du iragazten), 'hidden' (iragazi ezkutuko fitxategiak), 'binary' (iragazi fitxategi bitarrak) eta 'hidden_and_binary' (iragazi bai ezkutukoak bai bitarrak)."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:5
+msgid "File Browser Filter Pattern"
+msgstr "Fitxategi-arakatzailearen iragazki-eredua"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:6
+msgid ""
+"The filter pattern to filter the file browser with. This filter works on top"
+" of the filter_mode."
+msgstr "Iragazki-eredua fitxategi-arakatzailearekin iragazteko. Iragazki honek iragazki-moduaren gainean funtzionatzen du."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:7
+msgid "Open With Tree View"
+msgstr "Ireki zuhaitz ikuspegiarekin"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:8
+msgid ""
+"Open the tree view when the file browser plugin gets loaded instead of the "
+"bookmarks view"
+msgstr "Ireki zuhaitz-ikuspegian fitxategi-arakatzailearen osagaiak kargatzen duenean laster-marken ikuspegiaren ordez"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:9
+msgid "File Browser Root Directory"
+msgstr "Fitxategi-arakatzailearen erroko direktorioa"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:10
+msgid ""
+"The file browser root directory to use when loading the file browser plugin "
+"and onload/tree_view is TRUE."
+msgstr "Fitxategi-arakatzailearen erroko direktorioa, fitxategi-arakatzailearen osagaia kargatzean eta onload/tree_view EGIA denean erabiltzeko."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:11
+msgid "File Browser Virtual Root Directory"
+msgstr "Fitxategi-arakatzailearen erro birtualeko direktorioa"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:12
+msgid ""
+"The file browser virtual root directory to use when loading the file browser"
+" plugin when onload/tree_view is TRUE. The virtual root must always be below"
+" the actual root."
+msgstr "Fitxategi-arakatzailearen erro birtualeko direktorioa, fitxategi-arakatzailearen osagaia kargatzean eta onload/tree_view EGIA denean erabiltzeko. Erro birtuala uneko erroari dagokio beti."
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:13
+msgid "Enable Restore of Remote Locations"
+msgstr "Gaitu urruneko kokalekuak berreskuratzea"
+
+#: ../plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in.in.h:14
+msgid "Sets whether to enable restoring of remote locations."
+msgstr "Urruneko kokalekuak berreskuratzea edo ez ezartzen du."
+
+#: ../plugins/filebrowser/pluma-file-bookmarks-store.c:235
+msgid "File System"
+msgstr "Fitxategi-sistema"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:531
+msgid "_Set root to active document"
+msgstr "_Ezarri dokumentu aktiboaren erroa"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:533
+msgid "Set the root to the active document location"
+msgstr "Ezarri dokumentu aktiboaren kokalekuaren erroa"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:538
+msgid "_Open terminal here"
+msgstr "_Ireki terminala hemen"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:540
+msgid "Open a terminal at the currently opened directory"
+msgstr "Ireki terminala unean irekitako direktorioan"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:681
+msgid "File Browser"
+msgstr "Fitxategi-arakatzailea"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:803
+msgid "An error occurred while creating a new directory"
+msgstr "Errorea gertatu da direktorio berria sortzean"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:806
+msgid "An error occurred while creating a new file"
+msgstr "Errorea gertatu da fitxategi berria sortzean"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:811
+msgid "An error occurred while renaming a file or directory"
+msgstr "Errorea gertatu da fitxategia/direktorioa izenez aldatzean"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:816
+msgid "An error occurred while deleting a file or directory"
+msgstr "Errorea gertatu da fitxategia/direktorioa ezabatzean"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:821
+msgid "An error occurred while opening a directory in the file manager"
+msgstr "Errorea gertatu da direktorioa fitxategi-kudeatzailearekin irekitzean"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:825
+msgid "An error occurred while setting a root directory"
+msgstr "Errorea gertatu da erroko direktorioa ezartzean"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:829
+msgid "An error occurred while loading a directory"
+msgstr "Errorea gertatu da direktorioa kargatzean"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:832
+msgid "An error occurred"
+msgstr "Errorea gertatu da"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1063
+msgid ""
+"Cannot move file to trash, do you\n"
+"want to delete permanently?"
+msgstr "Ezin da fitxategia zakarrontzira bota.\nBetirako ezabatzea nahi duzu?"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1067
+#, c-format
+msgid "The file \"%s\" cannot be moved to the trash."
+msgstr "\"%s\" fitxategia ezin da zakarrontzira bota."
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1070
+msgid "The selected files cannot be moved to the trash."
+msgstr "Hautatutako fitxategia ezin da zakarrontzira bota."
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1103
+#, c-format
+msgid "Are you sure you want to permanently delete \"%s\"?"
+msgstr "Ziur zaude \"%s\" betirako ezabatzea nahi duzula?"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1106
+msgid "Are you sure you want to permanently delete the selected files?"
+msgstr "Ziur zaude hautatutako fitxategiak betirako ezabatzea nahi dituzula?"
+
+#: ../plugins/filebrowser/pluma-file-browser-plugin.c:1109
+msgid "If you delete an item, it is permanently lost."
+msgstr "Elementu bat ezabatzen baduzu betirako galduko da."
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:1667
+msgid "(Empty)"
+msgstr "(Hutsa)"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3307
+msgid ""
+"The renamed file is currently filtered out. You need to adjust your filter "
+"settings to make the file visible"
+msgstr "Izenez aldatutako fitxategia jadanik iragazita dago. Iragazkiaren ezarpenak egokitu behar dituzu fitxategia ikusgai egiteko."
+
+#. Translators: This is the default name of new files created by the file
+#. browser pane.
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3546
+msgid "file"
+msgstr "fitxategia"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3570
+msgid ""
+"The new file is currently filtered out. You need to adjust your filter "
+"settings to make the file visible"
+msgstr "Fitxategi berria jadanik iragazita dago. Iragazkiaren ezarpenak egokitu behar dituzu fitxategia ikusgai egiteko."
+
+#. Translators: This is the default name of new directories created by the
+#. file browser pane.
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3599
+msgid "directory"
+msgstr "direktorioa"
+
+#: ../plugins/filebrowser/pluma-file-browser-store.c:3619
+msgid ""
+"The new directory is currently filtered out. You need to adjust your filter "
+"settings to make the directory visible"
+msgstr "Direktorio berria jadanik iragazita dago. Iragazkiaren ezarpenak egokitu behar dituzu direktorioa ikusgai egiteko."
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:713
+msgid "Bookmarks"
+msgstr "Laster-markak"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:794
+msgid "_Filter"
+msgstr "_Iragazkia"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:799
+msgid "_Move to Trash"
+msgstr "_Bota zakarrontzira"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:800
+msgid "Move selected file or folder to trash"
+msgstr "Bota hautatutako fitxategi edo karpeta zakarrontzira"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:802
+msgid "_Delete"
+msgstr "_Ezabatu"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:803
+msgid "Delete selected file or folder"
+msgstr "Ezabatu hautatutako fitxategia edo karpeta"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:810
+msgid "Open selected file"
+msgstr "Ireki hautatutako fitxategia"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:816
+msgid "Up"
+msgstr "Gora"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:817
+msgid "Open the parent folder"
+msgstr "Ireki gurasoa den karpeta"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:822
+msgid "_New Folder"
+msgstr "Karpeta _berria"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:823
+msgid "Add new empty folder"
+msgstr "Gehitu karpeta huts berria"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:825
+msgid "New F_ile"
+msgstr "_Fitxategi berria"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:826
+msgid "Add new empty file"
+msgstr "Gehitu fitxategi huts berria"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:831
+msgid "_Rename"
+msgstr "Aldatu _izena"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:832
+msgid "Rename selected file or folder"
+msgstr "Aldatu hautatutako fitxategi edo karpetaren izena"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:838
+msgid "_Previous Location"
+msgstr "_Aurreko kokalekua"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:840
+msgid "Go to the previous visited location"
+msgstr "Joan bisitatutako aurreko kokalekura"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:842
+msgid "_Next Location"
+msgstr "_Hurrengo kokalekua"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:843
+msgid "Go to the next visited location"
+msgstr "Joan bisitatutako hurrengo kokalekura"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:844
+msgid "Re_fresh View"
+msgstr "_Freskatu ikuspegia"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:845
+msgid "Refresh the view"
+msgstr "Freskatu ikuspegia"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:846
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:864
+msgid "_View Folder"
+msgstr "_Ikusi karpeta"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:847
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:865
+msgid "View folder in file manager"
+msgstr "Ikusi karpeta fitxategi-kudeatzailean"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:854
+msgid "Show _Hidden"
+msgstr "Erakutsi _ezkutukoak"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:855
+msgid "Show hidden files and folders"
+msgstr "Erakutsi ezkutuko fitxategi eta karpetak"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:857
+msgid "Show _Binary"
+msgstr "Erakutsi _bitarra"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:858
+msgid "Show binary files"
+msgstr "Erakutsi fitxategi bitarrak"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:990
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:999
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1024
+msgid "Previous location"
+msgstr "Aurreko kokalekua"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:992
+msgid "Go to previous location"
+msgstr "Joan aurreko kokalekura"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:994
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1019
+msgid "Go to a previously opened location"
+msgstr "Joan irekitako aurreko kokalekura"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1015
+msgid "Next location"
+msgstr "Hurrengo kokalekua"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1017
+msgid "Go to next location"
+msgstr "Joan hurrengo kokalekura"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:1233
+msgid "_Match Filename"
+msgstr "_Bat etorri fitxategi-izenarekin"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2137
+#, c-format
+msgid "No mount object for mounted volume: %s"
+msgstr "Ez da muntatutako bolumenaren objekturik muntatu: %s"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2217
+#, c-format
+msgid "Could not open media: %s"
+msgstr "Ezin izan da euskarria ireki: %s"
+
+#: ../plugins/filebrowser/pluma-file-browser-widget.c:2264
+#, c-format
+msgid "Could not mount volume: %s"
+msgstr "Ezin izan da bolumena muntatu: %s"
+
+#. ex:ts=8:noet:
+#: ../plugins/modelines/modelines.pluma-plugin.desktop.in.h:1
+msgid "Modelines"
+msgstr "Lerro-moduak"
+
+#: ../plugins/modelines/modelines.pluma-plugin.desktop.in.h:2
+msgid "Emacs, Kate and Vim-style modelines support for pluma."
+msgstr "Emacs, Kate eta Vim estiloko lerro-moduen euskarria Pluma-entzat"
+
+#: ../plugins/pythonconsole/pythonconsole.pluma-plugin.desktop.in.h:1
+#: ../plugins/pythonconsole/pythonconsole/__init__.py:50
+msgid "Python Console"
+msgstr "Python kontsola"
+
+#: ../plugins/pythonconsole/pythonconsole.pluma-plugin.desktop.in.h:2
+msgid "Interactive Python console standing in the bottom panel"
+msgstr "Python-en kontsola interaktiboa beheko panelean."
+
+#. ex:et:ts=4:
+#: ../plugins/pythonconsole/pythonconsole/config.ui.h:1
+msgid "C_ommand color:"
+msgstr "_Komando-kolorea:"
+
+#: ../plugins/pythonconsole/pythonconsole/config.ui.h:2
+msgid "_Error color:"
+msgstr "_Errore-kolorea:"
+
+#. ex:ts=8:et:
+#: ../plugins/quickopen/quickopen/popup.py:35
+#: ../plugins/quickopen/quickopen.pluma-plugin.desktop.in.h:1
+msgid "Quick Open"
+msgstr "Azkar ireki"
+
+#: ../plugins/quickopen/quickopen/windowhelper.py:69
+msgid "Quick open"
+msgstr "Azkar ireki"
+
+#: ../plugins/quickopen/quickopen/windowhelper.py:70
+msgid "Quickly open documents"
+msgstr "Dokumentuak azkar irekitzen ditu"
+
+#: ../plugins/quickopen/quickopen.pluma-plugin.desktop.in.h:2
+msgid "Quickly open files"
+msgstr "Fitxategiak azkar irekitzen ditu"
+
+#: ../plugins/snippets/snippets.pluma-plugin.desktop.in.h:1
+#: ../plugins/snippets/snippets/Document.py:58
+msgid "Snippets"
+msgstr "Mozkinak"
+
+#: ../plugins/snippets/snippets.pluma-plugin.desktop.in.h:2
+msgid "Insert often-used pieces of text in a fast way"
+msgstr "Txertatu sarritan erabilitako testu-zatiak era bizkorrean"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:1
+msgid "Snippets Manager"
+msgstr "Mozkin-kudeatzailea"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:2
+msgid "_Snippets:"
+msgstr "_Mozkinak:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:3
+msgid "Create new snippet"
+msgstr "Sortu mozkin berria"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:4
+#: ../plugins/snippets/snippets/Manager.py:800
+msgid "Import snippets"
+msgstr "Inportatu mozkinak"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:5
+msgid "Export selected snippets"
+msgstr "Esportatu hautatutako mozkinak"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:6
+#: ../plugins/snippets/snippets/Manager.py:412
+msgid "Delete selected snippet"
+msgstr "Ezabatu hautatutako mozkina"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:8
+msgid "Activation"
+msgstr "Aktibatzea"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:10
+msgid "_Tab trigger:"
+msgstr "_Fitxa-abiarazlea:"
+
+#. self['hbox_tab_trigger'].set_spacing(0)
+#: ../plugins/snippets/snippets/snippets.ui.h:11
+#: ../plugins/snippets/snippets/Manager.py:689
+msgid "Single word the snippet is activated with after pressing Tab"
+msgstr "Hitz bakuna mozkina aktibatzeko tabuladorea sakatu ondoren"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:12
+msgid "Shortcut key with which the snippet is activated"
+msgstr "Laster-tekla mozkina aktibatzeko"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:13
+msgid "S_hortcut key:"
+msgstr "Lasterbide tekla:"
+
+#: ../plugins/snippets/snippets/snippets.ui.h:14
+msgid "_Drop targets:"
+msgstr "_Jaregin helburuak:"
+
+#: ../plugins/snippets/snippets/WindowHelper.py:130
+msgid "Manage _Snippets..."
+msgstr "Kudeatu _mozkinak..."
+
+#: ../plugins/snippets/snippets/WindowHelper.py:131
+msgid "Manage snippets"
+msgstr "Kudeatu mozkinak"
+
+#: ../plugins/snippets/snippets/Manager.py:46
+msgid "Snippets archive"
+msgstr "Mozkinen artxiboa"
+
+#: ../plugins/snippets/snippets/Manager.py:71
+msgid "Add a new snippet..."
+msgstr "Gehitu mozkin berria..."
+
+#: ../plugins/snippets/snippets/Manager.py:121
+msgid "Global"
+msgstr "Globala"
+
+#: ../plugins/snippets/snippets/Manager.py:409
+msgid "Revert selected snippet"
+msgstr "Alderantzikatu hautatutako mozkina"
+
+#. self['hbox_tab_trigger'].set_spacing(3)
+#: ../plugins/snippets/snippets/Manager.py:682
+msgid ""
+"This is not a valid Tab trigger. Triggers can either contain letters or a "
+"single (non-alphanumeric) character like: {, [, etc."
+msgstr "Hau ez da Tabuladorearen baliozko abiarazlea. Abiarazleek letrak edo karaktere bakarra (ez alfanumerikoa, {, [ bezalako karaktereak) eduki dezakete."
+
+#: ../plugins/snippets/snippets/Manager.py:779
+#, python-format
+msgid "The following error occurred while importing: %s"
+msgstr "Honako errorea gertatu da inportatzean: %s"
+
+#: ../plugins/snippets/snippets/Manager.py:786
+msgid "Import successfully completed"
+msgstr "Ongi inportatu da"
+
+#: ../plugins/snippets/snippets/Manager.py:805
+#: ../plugins/snippets/snippets/Manager.py:891
+#: ../plugins/snippets/snippets/Manager.py:954
+msgid "All supported archives"
+msgstr "Onartzen diren artxibo guztiak"
+
+#: ../plugins/snippets/snippets/Manager.py:806
+#: ../plugins/snippets/snippets/Manager.py:892
+#: ../plugins/snippets/snippets/Manager.py:955
+msgid "Gzip compressed archive"
+msgstr "Gzip-ekin konprimitutako artxiboa"
+
+#: ../plugins/snippets/snippets/Manager.py:807
+#: ../plugins/snippets/snippets/Manager.py:893
+#: ../plugins/snippets/snippets/Manager.py:956
+msgid "Bzip2 compressed archive"
+msgstr "Bzip2-rekin konprimitutako artxiboa"
+
+#: ../plugins/snippets/snippets/Manager.py:808
+msgid "Single snippets file"
+msgstr "Mozkinen fitxategi bakarra"
+
+#: ../plugins/snippets/snippets/Manager.py:809
+#: ../plugins/snippets/snippets/Manager.py:895
+#: ../plugins/snippets/snippets/Manager.py:958
+msgid "All files"
+msgstr "Fitxategi denak"
+
+#: ../plugins/snippets/snippets/Manager.py:821
+#, python-format
+msgid "The following error occurred while exporting: %s"
+msgstr "Honako errorea gertatu da esportatzean: %s"
+
+#: ../plugins/snippets/snippets/Manager.py:825
+msgid "Export successfully completed"
+msgstr "Ongi esportatu da"
+
+#. Ask if system snippets should also be exported
+#: ../plugins/snippets/snippets/Manager.py:865
+#: ../plugins/snippets/snippets/Manager.py:932
+msgid "Do you want to include selected <b>system</b> snippets in your export?"
+msgstr "Nahi duzu hautatutako <b>sistemako</b> mozkinak esportazioan txertatzea?"
+
+#: ../plugins/snippets/snippets/Manager.py:880
+#: ../plugins/snippets/snippets/Manager.py:950
+msgid "There are no snippets selected to be exported"
+msgstr "Ez da mozkinik hautatu esportatzeko"
+
+#: ../plugins/snippets/snippets/Manager.py:885
+#: ../plugins/snippets/snippets/Manager.py:923
+msgid "Export snippets"
+msgstr "Esportatu mozkinak"
+
+#: ../plugins/snippets/snippets/Manager.py:1062
+msgid "Type a new shortcut, or press Backspace to clear"
+msgstr "Sakatu laster-tekla berria, edo sakatu Atzera-tekla garbitzeko"
+
+#: ../plugins/snippets/snippets/Manager.py:1064
+msgid "Type a new shortcut"
+msgstr "Sakatu laster-tekla berria"
+
+#: ../plugins/snippets/snippets/Exporter.py:65
+#, python-format
+msgid "The archive \"%s\" could not be created"
+msgstr "Ezin izan da \"%s\" artxiboa sortu"
+
+#: ../plugins/snippets/snippets/Exporter.py:82
+#, python-format
+msgid "Target directory \"%s\" does not exist"
+msgstr "Helburuko \"%s\" direktorioa ez da existitzen"
+
+#: ../plugins/snippets/snippets/Exporter.py:85
+#, python-format
+msgid "Target directory \"%s\" is not a valid directory"
+msgstr "Helburuko \"%s\" direktorioa ez da baliozko direktorioa"
+
+#: ../plugins/snippets/snippets/Importer.py:29
+#: ../plugins/snippets/snippets/Importer.py:83
+#, python-format
+msgid "File \"%s\" does not exist"
+msgstr "\"%s\" fitxategia ez da existitzen"
+
+#: ../plugins/snippets/snippets/Importer.py:32
+#, python-format
+msgid "File \"%s\" is not a valid snippets file"
+msgstr "\"%s\" fitxategia ez da baliozko mozkinen fitxategia"
+
+#: ../plugins/snippets/snippets/Importer.py:42
+#, python-format
+msgid "Imported file \"%s\" is not a valid snippets file"
+msgstr "Inportatutako \"%s\" fitxategia ez da baliozko mozkinen fitxategia"
+
+#: ../plugins/snippets/snippets/Importer.py:52
+#, python-format
+msgid "The archive \"%s\" could not be extracted"
+msgstr "Ezin izan da \"%s\" artxiboa erauzi"
+
+#: ../plugins/snippets/snippets/Importer.py:70
+#, python-format
+msgid "The following files could not be imported: %s"
+msgstr "Ezin izan dira honako fitxategiak inportatu: %s"
+
+#: ../plugins/snippets/snippets/Importer.py:86
+#: ../plugins/snippets/snippets/Importer.py:99
+#, python-format
+msgid "File \"%s\" is not a valid snippets archive"
+msgstr "\"%s\" fitxategia ez da baliozko mozkinen artxiboa"
+
+#: ../plugins/snippets/snippets/Placeholder.py:594
+#, python-format
+msgid ""
+"Execution of the Python command (%s) exceeds the maximum time, execution "
+"aborted."
+msgstr "Python-eko komandoak (%s) gehienezko denbora gainditu du, exekuzioa abortatu egin da."
+
+#: ../plugins/snippets/snippets/Placeholder.py:602
+#, python-format
+msgid "Execution of the Python command (%s) failed: %s"
+msgstr "Python komandoaren (%s) exekuzioak huts egin du: %s"
+
+#: ../plugins/sort/pluma-sort-plugin.c:88
+msgid "S_ort..."
+msgstr "_Ordenatu..."
+
+#: ../plugins/sort/pluma-sort-plugin.c:90
+msgid "Sort the current document or selection"
+msgstr "Ordenatu uneko dokumentua edo hautapena"
+
+#: ../plugins/sort/sort.pluma-plugin.desktop.in.h:1
+#: ../plugins/sort/sort.ui.h:1
+msgid "Sort"
+msgstr "Ordenatu"
+
+#: ../plugins/sort/sort.pluma-plugin.desktop.in.h:2
+msgid "Sorts a document or selected text."
+msgstr "Dokumentua edo hautatutako testua ordenatzen du."
+
+#: ../plugins/sort/sort.ui.h:2
+msgid "_Sort"
+msgstr "_Ordenatu"
+
+#: ../plugins/sort/sort.ui.h:3
+msgid "_Reverse order"
+msgstr "_Alderantzizko ordena"
+
+#: ../plugins/sort/sort.ui.h:4
+msgid "R_emove duplicates"
+msgstr "_Kendu bikoiztuak"
+
+#: ../plugins/sort/sort.ui.h:5
+msgid "_Ignore case"
+msgstr "Ez _bereizi maiuskulak eta minuskulak"
+
+#: ../plugins/sort/sort.ui.h:6
+msgid "S_tart at column:"
+msgstr "Hasi _zutabe honetan:"
+
+#: ../plugins/sort/sort.ui.h:7
+msgid "You cannot undo a sort operation"
+msgstr "Ezin duzu ordenatze-eragiketarik desegin"
+
+#. Translators: Displayed in the "Check Spelling" dialog if there are no
+#. suggestions for the current misspelled word
+#. Translators: Displayed in the "Check Spelling" dialog if there are no
+#. suggestions
+#. * for the current misspelled word
+#: ../plugins/spell/pluma-automatic-spell-checker.c:420
+#: ../plugins/spell/pluma-spell-checker-dialog.c:471
+msgid "(no suggested words)"
+msgstr "(hitz-iradokizunik ez)"
+
+#: ../plugins/spell/pluma-automatic-spell-checker.c:444
+msgid "_More..."
+msgstr "_Gehiago..."
+
+#. Ignore all
+#: ../plugins/spell/pluma-automatic-spell-checker.c:499
+msgid "_Ignore All"
+msgstr "_Ez ikusi egin guztiei"
+
+#. + Add to Dictionary
+#: ../plugins/spell/pluma-automatic-spell-checker.c:514
+msgid "_Add"
+msgstr "_Gehitu"
+
+#: ../plugins/spell/pluma-automatic-spell-checker.c:553
+msgid "_Spelling Suggestions..."
+msgstr "O_rtografia-iradokizunak..."
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:282
+msgid "Check Spelling"
+msgstr "Ortografia-egiaztapena"
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:293
+msgid "Suggestions"
+msgstr "Iradokizunak"
+
+#. Translators: Displayed in the "Check Spelling" dialog if the current word
+#. isn't misspelled
+#: ../plugins/spell/pluma-spell-checker-dialog.c:578
+msgid "(correct spelling)"
+msgstr "(ortografia zuzena)"
+
+#: ../plugins/spell/pluma-spell-checker-dialog.c:721
+msgid "Completed spell checking"
+msgstr "Ortografia-egiaztapena bukatuta"
+
+#. Translators: the first %s is the language name, and
+#. * the second %s is the locale name. Example:
+#. * "French (France)"
+#: ../plugins/spell/pluma-spell-checker-language.c:285
+#: ../plugins/spell/pluma-spell-checker-language.c:291
+#, c-format
+msgctxt "language"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#. Translators: this refers to an unknown language code
+#. * (one which isn't in our built-in list).
+#: ../plugins/spell/pluma-spell-checker-language.c:300
+#, c-format
+msgctxt "language"
+msgid "Unknown (%s)"
+msgstr "Ezezaguna (%s)"
+
+#. Translators: this refers the Default language used by the
+#. * spell checker
+#: ../plugins/spell/pluma-spell-checker-language.c:406
+msgctxt "language"
+msgid "Default"
+msgstr "Lehenetsia"
+
+#: ../plugins/spell/pluma-spell-language-dialog.c:141
+#: ../plugins/spell/languages-dialog.ui.h:1
+msgid "Set language"
+msgstr "Ezarri hizkuntza"
+
+#: ../plugins/spell/pluma-spell-language-dialog.c:198
+msgid "Languages"
+msgstr "Hizkuntzak"
+
+#: ../plugins/spell/pluma-spell-plugin.c:86
+msgid "_Check Spelling..."
+msgstr "_Ortografia-egiaztapena..."
+
+#: ../plugins/spell/pluma-spell-plugin.c:88
+msgid "Check the current document for incorrect spelling"
+msgstr "Bilatu ortografia-akatsak uneko dokumentuan"
+
+#: ../plugins/spell/pluma-spell-plugin.c:94
+msgid "Set _Language..."
+msgstr "Ezarri _hizkuntza..."
+
+#: ../plugins/spell/pluma-spell-plugin.c:96
+msgid "Set the language of the current document"
+msgstr "Uneko dokumentuaren hizkuntza ezartzen du"
+
+#: ../plugins/spell/pluma-spell-plugin.c:105
+msgid "_Autocheck Spelling"
+msgstr "_Ortografiaren egiaztapen automatikoa"
+
+#: ../plugins/spell/pluma-spell-plugin.c:107
+msgid "Automatically spell-check the current document"
+msgstr "Uneko dokumentuaren ortografia-egiaztapena automatikoki egiten du"
+
+#: ../plugins/spell/pluma-spell-plugin.c:752
+msgid "The document is empty."
+msgstr "Dokumentua hutsik dago."
+
+#: ../plugins/spell/pluma-spell-plugin.c:782
+msgid "No misspelled words"
+msgstr "Ez dago gaizki idatzitako hitzik"
+
+#: ../plugins/spell/languages-dialog.ui.h:2
+msgid "Select the _language of the current document."
+msgstr "Hautatu _uneko dokumentuaren hizkuntza."
+
+#: ../plugins/spell/spell-checker.ui.h:1
+msgid "Check spelling"
+msgstr "Ortografia-egiaztapena"
+
+#: ../plugins/spell/spell-checker.ui.h:2
+msgid "Misspelled word:"
+msgstr "Gaizki idatzitako hitza:"
+
+#: ../plugins/spell/spell-checker.ui.h:3
+msgid "word"
+msgstr "hitza"
+
+#: ../plugins/spell/spell-checker.ui.h:4
+msgid "Change _to:"
+msgstr "Aldatu _hona:"
+
+#: ../plugins/spell/spell-checker.ui.h:5
+msgid "Check _Word"
+msgstr "Egiaztatu _hitza"
+
+#: ../plugins/spell/spell-checker.ui.h:6
+msgid "_Suggestions:"
+msgstr "Ira_dokizunak:"
+
+#: ../plugins/spell/spell-checker.ui.h:7
+msgid "_Ignore"
+msgstr "_Ez ikusi egin"
+
+#: ../plugins/spell/spell-checker.ui.h:8
+msgid "Cha_nge"
+msgstr "Alda_tu"
+
+#: ../plugins/spell/spell-checker.ui.h:9
+msgid "Ignore _All"
+msgstr "Ez i_kusi egin guztiei"
+
+#: ../plugins/spell/spell-checker.ui.h:10
+msgid "Change A_ll"
+msgstr "Aldatu _denak"
+
+#: ../plugins/spell/spell-checker.ui.h:11
+msgid "User dictionary:"
+msgstr "Erabiltzaile-hiztegia:"
+
+#: ../plugins/spell/spell-checker.ui.h:12
+msgid "Add w_ord"
+msgstr "Gehitu hi_tza"
+
+#: ../plugins/spell/spell-checker.ui.h:13
+msgid "Language:"
+msgstr "Hizkuntza:"
+
+#: ../plugins/spell/spell-checker.ui.h:14
+msgid "Language"
+msgstr "Hizkuntza"
+
+#: ../plugins/spell/spell.pluma-plugin.desktop.in.h:1
+msgid "Spell Checker"
+msgstr "Ortografia-egiaztatzailea"
+
+#: ../plugins/spell/spell.pluma-plugin.desktop.in.h:2
+msgid "Checks the spelling of the current document."
+msgstr "Uneko dokumentuaren ortografia egiaztatzen du."
+
+#: ../plugins/taglist/pluma-taglist-plugin.c:98
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:716
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:732
+msgid "Tags"
+msgstr "Etiketak"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:623
+msgid "Select the group of tags you want to use"
+msgstr "Hautatu erabili nahi duzun etiketa-taldea"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:642
+msgid "_Preview"
+msgstr "_Aurrebista"
+
+#: ../plugins/taglist/pluma-taglist-plugin-panel.c:713
+msgid "Available Tag Lists"
+msgstr "Erabil dauden etiketen zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:1
+msgid "XHTML 1.0 - Tags"
+msgstr "XHTML 1.0 - Etiketak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:2
+msgid "Abbreviated form"
+msgstr "Forma laburrak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:3
+msgid "Abbreviation"
+msgstr "Laburdurak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:4
+msgid "Accessibility key character"
+msgstr "Erabilerraztasunaren tekla karakterea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:5
+msgid "Acronym"
+msgstr "Akronimo"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:6
+msgid "Align"
+msgstr "Lerrokatu"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:7
+msgid "Alignment character"
+msgstr "Lerrokatze-karakterea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:8
+msgid "Alternative"
+msgstr "Alternatiba"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:9
+msgid "Anchor URI"
+msgstr "Ainguratu URIa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:10
+msgid "Anchor"
+msgstr "Ainguratu"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:12
+msgid "Applet class file code (deprecated)"
+msgstr "Miniaplikazioaren klase-fitxategiaren kodea (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:13
+msgid "Associated information"
+msgstr "Elkartutako informazioa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:14
+msgid "Author info"
+msgstr "Egilearen datuak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:15
+msgid "Axis related headers"
+msgstr "Ardatzarekin zerikusia duten goiburuak"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:17
+msgid "Background color (deprecated)"
+msgstr "Atzeko planoaren kolorea (zaharkitua)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:19
+msgid "Background texture tile (deprecated)"
+msgstr "Atzeko planoaren testuraren mosaikoa (zaharkitua)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:21
+msgid "Base font (deprecated)"
+msgstr "Oinarrizko letra-tipoa (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:22
+msgid "Base URI"
+msgstr "Oinarrizko URIa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:23
+msgid "Bold"
+msgstr "Lodia"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:25
+msgid "Border (deprecated)"
+msgstr "Ertza (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:26
+msgid "Cell rowspan"
+msgstr "Gelaxkaren errenkada hedatzea"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:28
+msgid "Center (deprecated)"
+msgstr "Zentratua (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:29
+msgid "Character encoding of linked resource"
+msgstr "Karaktere-kodeketa (estekatutako baliabidearena)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:30
+msgid "Checked state"
+msgstr "Egoera egiaztatua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:31
+msgid "Citation"
+msgstr "Aipua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:32
+msgid "Cite reason for change"
+msgstr "Aipuaren arrazoia aldaketarako"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:33
+msgid "Class implementation ID"
+msgstr "Klase-inplementazioaren IDa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:34
+msgid "Class list"
+msgstr "Klase-zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:35
+msgid "Clear text flow control"
+msgstr "Garbitu testu-fluxuaren kontrola"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:36
+msgid "Code content type"
+msgstr "Kodearen eduki-mota"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:38
+msgid "Color of selected links (deprecated)"
+msgstr "Hautatutako esteken kolorea (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:39
+msgid "Column span"
+msgstr "Zutabea hedatzea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:40
+msgid "Columns"
+msgstr "Zutabeak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:41
+msgid "Comment"
+msgstr "Iruzkina"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:42
+msgid "Computer code fragment"
+msgstr "Ordenagailuaren kode-zatia"
+
+#. The "type" attribute is deprecated for the "ol" tag only,
+#. since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:45
+msgid "Content type (deprecated)"
+msgstr "Eduki-mota (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:46
+msgid "Coordinates"
+msgstr "Koordinatuak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:47
+msgid "Date and time of change"
+msgstr "Aldaketaren data eta ordua"
+
+#. NOTE: used in "object" tag
+#: ../plugins/taglist/HTML.tags.xml.in.h:49
+msgid "Declare flag"
+msgstr "Deklarazioaren bandera"
+
+#. Translators: DEFER is an optional attribute of the <script> tag.
+#. It indicates that the script is not going to generate any document
+#. content. The browser can continue parsing and drawing the page.
+#: ../plugins/taglist/HTML.tags.xml.in.h:53
+msgid "Defer attribute"
+msgstr "Geroratu atributua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:54
+msgid "Definition description"
+msgstr "Definizioaren azalpena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:55
+msgid "Definition list"
+msgstr "Definizio-zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:56
+msgid "Definition term"
+msgstr "Definizioaren terminoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:57
+msgid "Deleted text"
+msgstr "Ezabatutako testua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:58
+msgid "Directionality"
+msgstr "Norabidetasuna"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:60
+msgid "Directionality (deprecated)"
+msgstr "Norabidetasuna (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:61
+msgid "Disabled"
+msgstr "Desgaituta"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:62
+msgid "DIV container"
+msgstr "DIV edukitzailea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:63
+msgid "DIV Style container"
+msgstr "DIV estiloko edukitzailea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:64
+msgid "Document base"
+msgstr "Dokumentuaren oinarria"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:65
+msgid "Document body"
+msgstr "Dokumentuaren gorputza"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:66
+msgid "Document head"
+msgstr "Dokumentuaren goiburua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:67
+msgid "Element ID"
+msgstr "Elementuaren IDa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:68
+msgid "Document title"
+msgstr "Dokumentuaren titulua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:69
+msgid "Document type"
+msgstr "Dokumentu-mota"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:70
+#: ../plugins/taglist/Latex.tags.xml.in.h:72
+msgid "Emphasis"
+msgstr "Enfasia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:71
+msgid "Encode type"
+msgstr "Kodeketa-mota"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:73
+msgid "Font face (deprecated)"
+msgstr "Letra-tipoa (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:74
+msgid "For label"
+msgstr "Etiketarena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:75
+msgid "Forced line break"
+msgstr "Derrigortu lerro-jauzia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:76
+msgid "Form action handler"
+msgstr "Inprimaki-ekintzaren kudeatzailea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:77
+msgid "Form control group"
+msgstr "Inprimakiaren kontrol-taldea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:78
+msgid "Form field label text"
+msgstr "Inprimakiaren eremuaren etiketa-testua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:79
+msgid "Form input type"
+msgstr "Inprimakiaren sarrera-mota"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:80
+msgid "Form input"
+msgstr "Inprimakiaren sarrera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:81
+msgid "Form method"
+msgstr "Inprimakiaren metodoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:82
+msgid "Form"
+msgstr "Inprimakia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:83
+msgid "Forward link"
+msgstr "Birbidali esteka"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:84
+msgid "Frame render parts"
+msgstr "Markoaren errendatze-zatiak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:85
+msgid "Frame source"
+msgstr "Markoaren iturburua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:86
+msgid "Frame target"
+msgstr "Markoaren helburua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:87
+msgid "Frame"
+msgstr "Markoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:88
+msgid "Frame border"
+msgstr "Markoaren ertza"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:89
+msgid "Frameset columns"
+msgstr "Marko-multzoaren zutabeak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:90
+msgid "Frameset rows"
+msgstr "Marko-multzoaren errenkadak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:91
+msgid "Frameset"
+msgstr "Marko-multzoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:92
+msgid "Frame spacing"
+msgstr "Marko-tartea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:93
+msgid "Generic embedded object"
+msgstr "Objektu kapsulatu generikoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:94
+msgid "Generic metainformation"
+msgstr "Metadatu generikoak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:95
+msgid "Generic span"
+msgstr "Hedapen generikoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:96
+msgid "Header cell IDs"
+msgstr "Goiburuko gelaxkaren IDak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:97
+msgid "Heading 1"
+msgstr "Izenburua 1"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:98
+msgid "Heading 2"
+msgstr "Izenburua 2"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:99
+msgid "Heading 3"
+msgstr "Izenburua 3"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:100
+msgid "Heading 4"
+msgstr "Izenburua 4"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:101
+msgid "Heading 5"
+msgstr "Izenburua 5"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:102
+msgid "Heading 6"
+msgstr "Izenburua 6"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:103
+msgid "Height"
+msgstr "Altuera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:104
+msgid "Horizontal rule"
+msgstr "Erregela horizontala"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:106
+msgid "Horizontal space (deprecated)"
+msgstr "Tarte horizontala (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:107
+msgid "HREF URI"
+msgstr "HREF URI"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:108
+msgid "HTML root element"
+msgstr "HTMLko erroko elementua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:109
+msgid "HTTP header name"
+msgstr "HTTP goiburuko izena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:110
+msgid "I18N BiDi override"
+msgstr "Gainidatzi l18n BiDi"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:111
+msgid "Image map area"
+msgstr "Irudi-maparen area"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:112
+msgid "Image map name"
+msgstr "Irudi-maparen izena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:113
+msgid "Image map"
+msgstr "Irudi-mapa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:114
+msgid "Image"
+msgstr "Irudia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:115
+msgid "Inline frame"
+msgstr "Markoa lerroan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:116
+msgid "Inserted text"
+msgstr "Txertatutako testua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:117
+msgid "Instance definition"
+msgstr "Instantziaren definizioa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:118
+msgid "Italic text"
+msgstr "Testu etzana"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:120
+msgid "Java applet (deprecated)"
+msgstr "Java miniaplikazioa (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:121
+msgid "Label"
+msgstr "Etiketa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:122
+msgid "Language code"
+msgstr "Hizkuntzaren kodea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:123
+msgid "Large text style"
+msgstr "Testu handiaren estiloa"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:125
+msgid "Link color (deprecated)"
+msgstr "Estekaren kolorea (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:126
+msgid "List item"
+msgstr "Elementuen zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:127
+msgid "List of MIME types for file upload"
+msgstr "MIME moten zerrenda fitxategia kargatzeko"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:128
+msgid "List of supported character sets"
+msgstr "Onartutako karaktere-multzoaren zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:129
+msgid "Local change to font"
+msgstr "Letra-tipoaren aldaketa lokala"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:130
+msgid "Long description link"
+msgstr "Azalpen luzeko esteka"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:131
+msgid "Long quotation"
+msgstr "Aipu luzea"
+
+#. Supported in XHTML 1.0 Frameset DTD only.
+#: ../plugins/taglist/HTML.tags.xml.in.h:133
+msgid "Margin pixel height"
+msgstr "Marjinaren altuera (pixeletan)"
+
+#. Supported in XHTML 1.0 Frameset DTD only.
+#: ../plugins/taglist/HTML.tags.xml.in.h:135
+msgid "Margin pixel width"
+msgstr "Marjinaren zabalera (pixeletan)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:136
+msgid "Maximum length of text field"
+msgstr "Testu-eremuaren gehienezko luzera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:137
+msgid "Output media"
+msgstr "Irteerako euskarria"
+
+#. Here I take some liberties: There's no mandatory attributes,
+#. but those are most common, and will likely be used.
+#: ../plugins/taglist/HTML.tags.xml.in.h:140
+msgid "Media-independent link"
+msgstr "Esteka euskarritik independentea"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:142
+msgid "Menu list (deprecated)"
+msgstr "Menu-zerrenda (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:143
+msgid "Multi-line text field"
+msgstr "Lerro anitzeko testu-eremua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:144
+msgid "Multiple"
+msgstr "Hainbat"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:145
+msgid "Name"
+msgstr "Izena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:146
+msgid "Named property value"
+msgstr "Propietatearen balioa izenarekin"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:147
+msgid "No frames"
+msgstr "Markorik ez"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:148
+msgid "No resize"
+msgstr "Tamainaz aldatu gabe"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:149
+msgid "No script"
+msgstr "Script-ik ez"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:151
+msgid "No shade (deprecated)"
+msgstr "Itzalik ez (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:152
+msgid "No URI"
+msgstr "URIrik ez"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:154
+msgid "No word wrap (deprecated)"
+msgstr "Hitzaren aingurarik ez (zaharkitua)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:156
+msgid "Object applet file (deprecated)"
+msgstr "Miniaplikazioaren objektu-fitxategia (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:157
+msgid "Object data reference"
+msgstr "Objektuaren datuen erreferentzia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:158
+msgid "Offset for alignment character"
+msgstr "Desplazamendua karakterea lerrokatzeko"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:159
+msgid "OnBlur event"
+msgstr "OnBlur gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:160
+msgid "OnChange event"
+msgstr "OnChange gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:161
+msgid "OnClick event"
+msgstr "OnKlik gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:162
+msgid "OnDblClick event"
+msgstr "OnDblCklik gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:163
+msgid "OnFocus event"
+msgstr "OnFocus gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:164
+msgid "OnKeyDown event"
+msgstr "OnKeyDown gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:165
+msgid "OnKeyPress event"
+msgstr "OnKeyPress gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:166
+msgid "OnKeyUp event"
+msgstr "OnKeyUp gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:167
+msgid "OnLoad event"
+msgstr "OnLoad gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:168
+msgid "OnMouseDown event"
+msgstr "OnMouseDown gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:169
+msgid "OnMouseMove event"
+msgstr "OnMouseMove gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:170
+msgid "OnMouseOut event"
+msgstr "OnMouseOut gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:171
+msgid "OnMouseOver event"
+msgstr "OnMouseOver gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:172
+msgid "OnMouseUp event"
+msgstr "OnMouseUp gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:173
+msgid "OnReset event"
+msgstr "OnReset gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:174
+msgid "OnSelect event"
+msgstr "OnSelect gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:175
+msgid "OnSubmit event"
+msgstr "OnSubmit gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:176
+msgid "OnUnload event"
+msgstr "OnUnload gertaera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:177
+msgid "Option group"
+msgstr "Aukera-taldea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:178
+msgid "Option selector"
+msgstr "Aukeren hautatzailea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:179
+msgid "Ordered list"
+msgstr "Zerrenda ordenatua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:180
+msgid "Paragraph class"
+msgstr "Paragrafo-klasea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:181
+msgid "Paragraph style"
+msgstr "Paragrafo-estiloa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:182
+msgid "Paragraph"
+msgstr "Paragrafoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:183
+msgid "Preformatted text"
+msgstr "Aurrez formateatutako testua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:184
+msgid "Profile metainfo dictionary"
+msgstr "Profilaren metadatuen hiztegia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:185
+msgid "Push button"
+msgstr "Sakatze-botoia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:186
+msgid "ReadOnly text and password"
+msgstr "Testua eta pasahitza irakurtzeko soilik"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:188
+msgid "Reduced spacing (deprecated)"
+msgstr "Tarte gutxitua (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:189
+msgid "Reverse link"
+msgstr "Alderantzizko esteka"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:190
+msgid "Rows"
+msgstr "Errenkadak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:191
+msgid "Rulings between rows and columns"
+msgstr "Erregelak errenkaden eta zutabeen artean"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:192
+msgid "Sample program output, scripts"
+msgstr "Irteerako programen adibideak, script-ak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:193
+msgid "Scope covered by header cells"
+msgstr "Gelaxken goiburuek betetzen duten esparrua"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:195
+msgid "Script language name"
+msgstr "Script hizkuntzaren izena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:196
+msgid "Script statements"
+msgstr "Script-aren sententziak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:197
+msgid "Scrollbar"
+msgstr "Korritze-barra"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:198
+msgid "Selectable option"
+msgstr "Aukera hautagarria"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:199
+msgid "Selected"
+msgstr "Hautatuta"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:200
+msgid "Server-side image map"
+msgstr "Zerbitzari-aldeko irudi-mapa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:201
+msgid "Shape"
+msgstr "Itzala"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:202
+msgid "Short inline quotation"
+msgstr "Lineako aipu laburra"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:204
+msgid "Size (deprecated)"
+msgstr "Tamaina (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:205
+msgid "Small text style"
+msgstr "Testu-estilo txikia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:206
+msgid "Source"
+msgstr "Iturburua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:207
+msgid "Space-separated archive list"
+msgstr "Zuriunez bereizitako artxibo-zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:208
+msgid "Spacing between cells"
+msgstr "Gelaxken arteko tartea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:209
+msgid "Spacing within cells"
+msgstr "Gelaxken barruko tartea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:210
+msgid "Span"
+msgstr "Hedatu"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:211
+msgid "Standby load message"
+msgstr "Mezua kargatu bitartean"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:213
+msgid "Starting sequence number (deprecated)"
+msgstr "Zenbaki sekuentzia hastea (zaharkitua)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:215
+msgid "Strike-through text style (deprecated)"
+msgstr "Testu-marratuaren estiloa (zaharkitua)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:217
+msgid "Strike-through text (deprecated)"
+msgstr "Testu-marratuaren estiloa (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:218
+msgid "Strong emphasis"
+msgstr "Enfasi lodia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:219
+msgid "Style info"
+msgstr "Estiloaren datuak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:220
+msgid "Subscript"
+msgstr "Azpi-indizea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:221
+msgid "Superscript"
+msgstr "Goi-indizea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:222
+msgid "Table body"
+msgstr "Taularen gorputza"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:223
+msgid "Table caption"
+msgstr "Taularen epigrafea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:224
+msgid "Table column group properties"
+msgstr "Taulako zutabe-taldearen propietateak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:225
+msgid "Table column properties"
+msgstr "Taulako zutabearen propietateak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:226
+msgid "Table data cell"
+msgstr "Taulako datuen gelaxka"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:227
+msgid "Table footer"
+msgstr "Taulako orri-oina"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:228
+msgid "Table header cell"
+msgstr "Taulako goiburuaren gelaxka"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:229
+msgid "Table header"
+msgstr "Taulako goiburua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:230
+msgid "Table row"
+msgstr "Taulako errenkada"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:231
+msgid "Table summary"
+msgstr "Taulako laburpena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:232
+msgid "Table"
+msgstr "Taula"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:233
+msgid "Target - Blank"
+msgstr "Helburua - Hutsa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:234
+msgid "Target - Parent"
+msgstr "Helburua - Gurasoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:235
+msgid "Target - Self"
+msgstr "Helburua - Bera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:236
+msgid "Target - Top"
+msgstr "Helburua - Goian"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:237
+msgid "Teletype or monospace text style"
+msgstr "Faxa edo tarte bakarreko testu-estiloa"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:239
+msgid "Text color (deprecated)"
+msgstr "Testuaren kolorea (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:240
+msgid "Text entered by user"
+msgstr "Erabiltzaileak sartutako testua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:241
+msgid "Title"
+msgstr "Izenburua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:242
+msgid "Underlined text style"
+msgstr "Azpimarratutako testuaren estilo"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:243
+msgid "Unordered list"
+msgstr "Ordenatu gabeko zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:244
+msgid "Use image map"
+msgstr "Erabili irudi-mapa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:245
+msgid "Value interpretation"
+msgstr "Balioaren interpretazioa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:246
+msgid "Value"
+msgstr "Balioa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:247
+msgid "Variable or program argument"
+msgstr "Aldagaia edo programaren argumentua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:248
+msgid "Vertical cell alignment"
+msgstr "Gelaxkaren lerrokadura bertikala"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:250
+msgid "Vertical space (deprecated)"
+msgstr "Tarte bertikala (zaharkitua)"
+
+#. Deprecated since HTML 4.01, not supported in XHTML 1.0 Strict DTD.
+#: ../plugins/taglist/HTML.tags.xml.in.h:252
+msgid "Visited link color (deprecated)"
+msgstr "Bisitatutako esteken kolorea (zaharkitua)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:253
+msgid "Width"
+msgstr "Zabalera"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:254
+msgid "HTML - Tags"
+msgstr "HTML - Etiketak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:255
+msgid "Above"
+msgstr "Gainean"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:256
+msgid "Applet class file code"
+msgstr "Miniaplikazioaren klase-fitxategiaren kodea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:257
+msgid "Array"
+msgstr "Array-a"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:258
+msgid "Background color"
+msgstr "Atzeko planoaren kolorea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:259
+msgid "Background texture tile"
+msgstr "Atzeko planoaren testuraren mosaikoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:260
+msgid "Base font"
+msgstr "Oinarriko letra-tipoa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:261
+msgid "Border color"
+msgstr "Ertzaren kolorea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:262
+msgid "Border"
+msgstr "Ertza"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:263
+msgid "Center"
+msgstr "Zentratu"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:264
+msgid "Checked (state)"
+msgstr "Egiaztatua (egoera)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:265
+msgid "Color of selected links"
+msgstr "Kolorea (hautatutako estekena)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:266
+msgid "Content scheme"
+msgstr "Edukiaren eskema"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:267
+msgid "Content type"
+msgstr "Eduki-mota"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:268
+msgid "Direction"
+msgstr "Norabidea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:269
+msgid "Directory list"
+msgstr "Direktorio-zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:270
+msgid "HTML version"
+msgstr "HTML bertsioa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:271
+msgid "Embedded object"
+msgstr "Objektu kapsulatua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:272
+msgid "Figure"
+msgstr "Irudia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:273
+msgid "Font face"
+msgstr "Letra-tipoaren izena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:274
+msgid "Frameborder"
+msgstr "Markoaren ertza"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:275
+msgid "Framespacing"
+msgstr "Marko-tartea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:276
+msgid "Heading"
+msgstr "Izenburua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:277
+msgid "Horizontal space"
+msgstr "Tarte horizontala"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:278
+msgid "Image source"
+msgstr "Irudiaren iturburua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:279
+msgid "Inline layer"
+msgstr "Geruza lerroan"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:280
+msgid "Java applet"
+msgstr "Java miniaplikazioa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:281
+msgid "Layer"
+msgstr "Geruza"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:282
+msgid "Link color"
+msgstr "Estekaren kolorea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:283
+msgid "Listing"
+msgstr "Zerrendatzea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:284
+msgid "Mail link"
+msgstr "Postaren esteka"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:285
+msgid "Marquee"
+msgstr "Markesina"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:286
+msgid "Menu list"
+msgstr "Menu-zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:287
+msgid "Multicolumn"
+msgstr "Zutabe-anitza"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:288
+msgid "Next ID"
+msgstr "Hurrengo IDa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:289
+msgid "No embedded objects"
+msgstr "Objektu kapsulaturik ez"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:290
+msgid "No layers"
+msgstr "Geruzarik ez"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:291
+msgid "No line break"
+msgstr "Lerro-jauzirik ez"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:292
+msgid "No shade"
+msgstr "Itzalik ez"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:293
+msgid "No word wrap"
+msgstr "Hitzaren aingurarik ez"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:294
+msgid "Note"
+msgstr "Oharra"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:295
+msgid "Object applet file"
+msgstr "Miniaplikazioaren objektu-fitxategia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:296
+msgid "Preformatted listing"
+msgstr "Aurrez formateatutako zerrenda"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:297
+msgid "Prompt message"
+msgstr "Gonbitearen mezua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:298
+msgid "Quote"
+msgstr "Aipua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:299
+msgid "Range"
+msgstr "Barrutia"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:300
+msgid "Reduced spacing"
+msgstr "Tarte gutxitua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:301
+msgid "Root"
+msgstr "Erroa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:302
+msgid "Single line prompt"
+msgstr "Lerroko bakarreko gonbitea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:303
+msgid "Size"
+msgstr "Tamaina"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:304
+msgid "Soft line break"
+msgstr "Lerro-jauzi biguna"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:305
+msgid "Sound"
+msgstr "Soinua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:306
+msgid "Spacer"
+msgstr "Bereizgailua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:307
+msgid "Square root"
+msgstr "Erro karratua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:308
+msgid "Starting sequence number"
+msgstr "Zenbaki sekuentzia hastea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:309
+msgid "Strike-through text style"
+msgstr "Testu-marratuaren estiloa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:310
+msgid "Strike-through text"
+msgstr "Testu-marratua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:311
+msgid "Tab order position"
+msgstr "Fitxen ordena"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:312
+msgid "Text color"
+msgstr "Testuaren kolorea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:313
+msgid "Text"
+msgstr "Testua"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:314
+msgid "Top margin in pixels"
+msgstr "Goiko marjina (pixeletan)"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:315
+msgid "URL"
+msgstr "URLa"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:316
+msgid "Vertical space"
+msgstr "Tarte bertikala"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:317
+msgid "Visited link color"
+msgstr "Bisitatutako esteken kolorea"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:318
+msgid "HTML - Special Characters"
+msgstr "HTML - Karaktere bereziak"
+
+#: ../plugins/taglist/HTML.tags.xml.in.h:319
+msgid "Non-breaking space"
+msgstr "Zuriune zatiezina"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:1
+msgid "Latex - Tags"
+msgstr "Latex - Etiketak"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:2
+msgid "Bibliography (cite)"
+msgstr "Bibliografia (aipua)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:3
+msgid "Bibliography (item)"
+msgstr "Bibliografia (elementua)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:4
+msgid "Bibliography (shortcite)"
+msgstr "Bibliografia (aipu laburra)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:5
+msgid "Bibliography (thebibliography)"
+msgstr "Bibliografia (bibliografia)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:6
+msgid "Brackets ()"
+msgstr "Parentesiak ()"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:7
+msgid "Brackets []"
+msgstr "Parentesiak []"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:8
+msgid "Brackets {}"
+msgstr "Parentesiak {}"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:9
+msgid "Brackets <>"
+msgstr "Parentesiak <>"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:10
+msgid "File input"
+msgstr "Sarrerako fitxategia"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:11
+msgid "Function cosine"
+msgstr "Funtzioa: kosinua"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:12
+msgid "Function e^"
+msgstr "Funtzioa: e^"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:13
+msgid "Function exp"
+msgstr "Funtzioa: ber"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:14
+msgid "Function log"
+msgstr "Funtzioa: log"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:15
+msgid "Function log10"
+msgstr "Funtzioa: log10"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:16
+msgid "Function sine"
+msgstr "Funtzioa: sinua"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:17
+msgid "Greek alpha"
+msgstr "Grekoa: alfa"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:18
+msgid "Greek beta"
+msgstr "Grekoa: beta"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:19
+msgid "Greek epsilon"
+msgstr "Grekoa: epsilon"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:20
+msgid "Greek gamma"
+msgstr "Grekoa: gamma"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:21
+msgid "Greek lambda"
+msgstr "Grekoa: lambda"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:22
+msgid "Greek rho"
+msgstr "Grekoa: rho"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:23
+msgid "Greek tau"
+msgstr "Grekoa: tau"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:24
+msgid "Header 0 (chapter)"
+msgstr "Goiburua 0 (kapitulua)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:25
+msgid "Header 0 (chapter*)"
+msgstr "Goiburua 0 (kapitulua*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:26
+msgid "Header 1 (section)"
+msgstr "Goiburua 1 (atala)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:27
+msgid "Header 1 (section*)"
+msgstr "Goiburua 1 (atala*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:28
+msgid "Header 2 (subsection)"
+msgstr "Goiburua 2 (azpiatala)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:29
+msgid "Header 2 (subsection*)"
+msgstr "Goiburua 2 (azpiatala*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:30
+msgid "Header 3 (subsubsection)"
+msgstr "Goiburua 2 (azpiazpiatala)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:31
+msgid "Header 3 (subsubsection*)"
+msgstr "Goiburua 3 (azpiazpiatala*)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:32
+msgid "Header 4 (paragraph)"
+msgstr "Goiburua 4 (paragrafoa)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:33
+msgid "Header appendix"
+msgstr "Goiburuaren eranskina"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:34
+msgid "List description"
+msgstr "Zerrendaren azalpena"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:35
+msgid "List enumerate"
+msgstr "Zenbatutako zerrenda"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:36
+msgid "List itemize"
+msgstr "Elementuen zerrenda"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:37
+msgid "Item with label"
+msgstr "Elementua etiketarekin"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:38
+msgid "Item"
+msgstr "Elementua"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:39
+msgid "Maths (display)"
+msgstr "Matematikak (adierazpena)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:40
+msgid "Maths (inline)"
+msgstr "Matematikak (lerroan)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:41
+msgid "Operator fraction"
+msgstr "Eragilea: zatikia"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:42
+msgid "Operator integral (display)"
+msgstr "Eragilea: integrala (adierazpena)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:43
+msgid "Operator integral (inline)"
+msgstr "Eragilea: integrala (lerroan)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:44
+msgid "Operator sum (display)"
+msgstr "Eragilea: batuketa (adierazpena)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:45
+msgid "Operator sum (inline)"
+msgstr "Eragilea: batuketa (lerroan)"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:46
+msgid "Reference label"
+msgstr "Erreferentzia-etiketa"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:47
+msgid "Reference ref"
+msgstr "Erreferentziaren erref."
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:48
+msgid "Symbol <<"
+msgstr "Ikurra: <<"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:49
+msgid "Symbol <="
+msgstr "Ikurra: <="
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:50
+msgid "Symbol >="
+msgstr "Ikurra: >="
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:51
+msgid "Symbol >>"
+msgstr "Ikurra: >>"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:52
+msgid "Symbol and"
+msgstr "Ikurra: and"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:53
+msgid "Symbol const"
+msgstr "Ikurra: konst"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:54
+msgid "Symbol d2-by-dt2-partial"
+msgstr "Ikurra: 2. deribatu partziala"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:55
+msgid "Symbol dagger"
+msgstr "Ikurra: ezpata"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:56
+msgid "Symbol d-by-dt"
+msgstr "Ikurra: deribatua"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:57
+msgid "Symbol d-by-dt-partial"
+msgstr "Ikurra: deribatu partziala"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:58
+msgid "Symbol equiv"
+msgstr "Ikurra: baliokidetasuna"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:59
+msgid "Symbol en-dash --"
+msgstr "Ikurra: hipenazioa --"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:60
+msgid "Symbol em-dash ---"
+msgstr "Ikurra: hipenazioa ---"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:61
+msgid "Symbol infinity"
+msgstr "Ikurra: infinitua"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:62
+msgid "Symbol mathspace ,"
+msgstr "Ikurra: bereizlea ,"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:63
+msgid "Symbol mathspace ."
+msgstr "Ikurra: bereizlea ."
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:64
+msgid "Symbol mathspace _"
+msgstr "Ikurra: bereizlea _"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:65
+msgid "Symbol mathspace __"
+msgstr "Ikurra: bereizlea __"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:66
+msgid "Symbol simeq"
+msgstr "Ikurra: 'simeq'"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:67
+msgid "Symbol star"
+msgstr "Ikurra: izarra"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:68
+msgid "Typeface bold"
+msgstr "Letra-tipo lodia"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:69
+msgid "Typeface type"
+msgstr "Letra-tipo mota"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:70
+msgid "Typeface italic"
+msgstr "Letra-tipo etzana"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:71
+msgid "Typeface slanted"
+msgstr "Letra-tipo okerra"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:73
+msgid "Unbreakable text"
+msgstr "Apurtu ezineko testua"
+
+#: ../plugins/taglist/Latex.tags.xml.in.h:74
+msgid "Footnote"
+msgstr "Orri-oina"
+
+#: ../plugins/taglist/taglist.pluma-plugin.desktop.in.h:1
+msgid "Tag list"
+msgstr "Etiketa-zerrenda"
+
+#: ../plugins/taglist/taglist.pluma-plugin.desktop.in.h:2
+msgid ""
+"Provides a method to easily insert commonly used tags/strings into a "
+"document without having to type them."
+msgstr "Sarri erabiltzen diren etiketak/kateak dokumentu batean erraz sartzeko, idatzi gabe, metodoa eskaintzen du."
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:1
+msgid "XSLT - Elements"
+msgstr "XSLT - Elementuak"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:2
+msgid "XSLT - Functions"
+msgstr "XSLT - Funtzioak"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:3
+msgid "XSLT - Axes"
+msgstr "XSLT - Ardatzak"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:4
+msgid "ancestor"
+msgstr "asaba"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:5
+msgid "ancestor-or-self"
+msgstr "asaba-edo-bera"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:6
+msgid "attribute"
+msgstr "atributua"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:7
+msgid "child"
+msgstr "umea"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:8
+msgid "descendant"
+msgstr "ondorengoa"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:9
+msgid "descendant-or-self"
+msgstr "ondorengoa-edo-bera"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:10
+msgid "following"
+msgstr "hurrengoa"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:11
+msgid "following-sibling"
+msgstr "hurrengoa-senidea"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:12
+msgid "namespace"
+msgstr "izen-lekua"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:13
+msgid "parent"
+msgstr "gurasoa"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:14
+msgid "preceding"
+msgstr "aurrekoa"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:15
+msgid "preceding-sibling"
+msgstr "aurrekoa-senidea"
+
+#: ../plugins/taglist/XSLT.tags.xml.in.h:16
+msgid "self"
+msgstr "bera"
+
+#: ../plugins/taglist/XUL.tags.xml.in.h:1
+msgid "XUL - Tags"
+msgstr "XUL - Etiketak"
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:1
+msgid "Prompt type"
+msgstr ""
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:2
+msgid "Selected format"
+msgstr ""
+
+#: ../plugins/time/org.mate.pluma.plugins.time.gschema.xml.in.in.h:3
+msgid "Custom format"
+msgstr ""
+
+#: ../plugins/time/pluma-time-plugin.c:181
+msgid "In_sert Date and Time..."
+msgstr "Sartu _data eta ordua..."
+
+#: ../plugins/time/pluma-time-plugin.c:183
+msgid "Insert current date and time at the cursor position"
+msgstr "Uneko data eta ordua kurtsorearen posizioan sartzen ditu"
+
+#: ../plugins/time/pluma-time-plugin.c:568
+msgid "Available formats"
+msgstr "Erabil daitezkeen formatuak"
+
+#: ../plugins/time/pluma-time-plugin.c:721
+msgid "Configure insert date/time plugin..."
+msgstr "Konfiguratu data/ordua txertatzeko plugina..."
+
+#: ../plugins/time/time.pluma-plugin.desktop.in.h:1
+msgid "Insert Date/Time"
+msgstr "Sartu data/ordua"
+
+#: ../plugins/time/time.pluma-plugin.desktop.in.h:2
+msgid "Inserts current date and time at the cursor position."
+msgstr "Uneko data eta ordua sartzen ditu kurtsorearen posizioan."
+
+#: ../plugins/time/pluma-time-dialog.ui.h:1
+msgid "Insert Date and Time"
+msgstr "Sartu data eta ordua"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:2
+msgid "_Insert"
+msgstr "_Txertatu"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:3
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:5
+msgid "Use the _selected format"
+msgstr "Erabili _hautatutako formatua"
+
+#: ../plugins/time/pluma-time-dialog.ui.h:5
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:6
+msgid "_Use custom format"
+msgstr "_Erabili formatu pertsonalizatua"
+
+#. Translators: Use the more common date format in your locale
+#: ../plugins/time/pluma-time-dialog.ui.h:7
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:9
+#, no-c-format
+msgid "%d/%m/%Y %H:%M:%S"
+msgstr "%Y/%m/%d %H:%M:%S"
+
+#. Translators: This example should follow the date format defined in the
+#. entry above
+#: ../plugins/time/pluma-time-dialog.ui.h:8
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:11
+msgid "01/11/2009 17:52:00"
+msgstr "2009/11/01 17:52:00"
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:1
+msgid "Configure date/time plugin"
+msgstr "Konfiguratu dataren/orduaren plugina"
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:2
+msgid "When inserting date/time..."
+msgstr "Data/ordua txertatzean..."
+
+#: ../plugins/time/pluma-time-setup-dialog.ui.h:4
+msgid "_Prompt for a format"
+msgstr "Eskatu _formatu bat"

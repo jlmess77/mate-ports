@@ -1,0 +1,1919 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.16">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "July 2006">
+<!ENTITY app "pluma">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.MATE.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Εγχειρίδιο του Pluma</title>
+	 <copyright lang="en">
+		<year>2007</year>
+		<holder>MATE Documentation Project</holder> </copyright>
+	 <copyright lang="en">
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright lang="en">
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher role="maintainer">
+		<publishername>Έργο τεκμηρίωσης του MATE</publishername>
+	 </publisher>
+
+	 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+	 <authorgroup>
+           <author lang="en">
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author lang="en">
+		  <firstname>MATE Documentation Project</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>MATE</orgname>
+		  </affiliation>
+		</author>
+		<author lang="en">
+			<firstname>Hal</firstname>
+			<surname>Canary</surname>
+			<contrib>Added the Shortcut Keys Table</contrib>
+		</author>
+		<author lang="en">
+		  <firstname>Sun Java Desktop System Documentation Team</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author lang="en">
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>MATE Documentation Project</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Baris</firstname>
+			<surname>Cicek provided information from earlier revisions of the pluma application.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Ajit</firstname>
+			<surname>George provided information about plugins.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision lang="en">
+		  <revnumber>pluma V1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author" lang="en">Eric Baudais <email>baudais@okstate.edu</email>
+				</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.0</revnumber>
+		  <date>March 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.1</revnumber>
+		  <date>June 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.2</revnumber>
+		  <date>August 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.3</revnumber>
+		  <date>September 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.4</revnumber>
+		  <date>January 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.5</revnumber>
+		  <date>March 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.6</revnumber>
+		  <date>September 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.7</revnumber>
+		  <date>March 2004</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   	<revision lang="en">
+		  <revnumber>pluma Manual V2.8</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun Java Desktop System Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   		<revision lang="en">
+		  <revnumber>pluma Manual V2.9</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">MATE Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.16 του Pluma.</releaseinfo>
+	 <legalnotice>
+		<title>Ανάδραση</title>
+		<para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια εισήγηση σχετικά με την εφαρμογή <application>pluma</application> ή με αυτό το έγγραφο, ακολουθήστε τις οδηγίες στη <ulink url="help:user-guide?feedback-bugs" type="help">Σελίδα ανάδρασης του MATE</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para>Το pluma είναι ένα επεξεργαστής κειμένου για την επιφάνεια εργασίας του MATE που το χαρακτηρίζουν βασικές αλλά ισχυρές δυνατότητες όπως  εκτύπωση, ορθογραφικός έλεγχος, εύρεση και αντικατάσταση, και επισήμανση σύνταξης. Πιο προχωρημένα χαρακτηριστικά είναι διαθέσιμα ως πρόσθετες λειτουργίες.</para>
+    </abstract>
+  </articleinfo>
+  <indexterm lang="en"><primary>pluma</primary></indexterm>
+  <indexterm lang="en"><primary>text editor</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="pluma-intro">
+	 <title>Εισαγωγή</title>
+
+   <!-- removed ids, here as anchors to prevent possible breakage -->
+	 <anchor id="pluma-customize-toolbar"/>
+
+	 <para>Η εφαρμογή <application>pluma</application> σας επιτρέπει να δημιουργείτε και να επεξεργάζεστε αρχεία κειμένου.</para>
+
+	 <para>Το <application>pluma</application> στοχεύει να είναι ένας απλός επεξεργαστής κειμένου. Πιο ισχυρές δυνατότητες μπορούν να ενεργοποιηθούν με διάφορες <firstterm>πρόσθετες λειτουργίες</firstterm>, που επιτρέπουν μια ποικιλία από εργασίες σχετικές με την επεξεργασία κειμένου.</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="pluma-getting-started">
+	 <title>Ξεκινώντας</title>
+
+<!-- ============= To Start pluma ============================ -->
+	 <sect2 id="pluma-to-start">
+		<title>Εκκινώντας το Pluma</title>
+		<para>Μπορείτε να εκκινήσετε το <application>pluma</application> με τους εξής τρόπους:</para>
+		<variablelist>
+    		<varlistentry>
+    		<term>Μενού <guimenu>Εφαρμογές</guimenu></term>
+    		<listitem>
+    		<para>Επιλέξτε το <menuchoice><guisubmenu>Βοηθήματα</guisubmenu><guimenuitem>Επεξεργαστής κειμένου</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>Γραμμή εντολών</term>
+    		<listitem>
+    		<para>Εκτελέστε την ακόλουθη εντολή: <command>pluma</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <para>Εξ ορισμού, όταν ανοίγετε ένα αρχείο κειμένου από τον περιηγητή αρχείων, θα ξεκινήσει το pluma και θα εμφανίσει το κείμενο.</para>
+	</sect2>
+
+	<sect2 id="pluma-when-you-start">
+
+		<title>Το παράθυρο του pluma</title>
+		<para>Όταν ξεκινάτε το <application>pluma</application> εμφανίζεται το ακόλουθο παράθυρο:</para>
+
+		<figure id="pluma-window">
+		  <title>Το παράθυρο του pluma</title>
+		  <screenshot>
+			 <mediaobject lang="en">
+				<imageobject>
+				  <imagedata fileref="figures/pluma_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Shows pluma main window.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para>Το παράθυρο του <application>pluma</application> περιέχει τα εξής στοιχεία:</para>
+		<variablelist>
+		  <varlistentry> <term>Γραμμή μενού</term>
+			 <listitem>
+				<para>Τα μενού στη γραμμή μενού περιέχουν όλες τις εντολές που θα χρειαστείτε για να δουλέψετε με αρχείο στο <application>pluma</application>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Γραμμή εργαλείων</term>
+			 <listitem>
+				<para>Η γραμμή εργαλείων περιέχει μερικές από τις εντολές στις οποίες έχετε πρόσβαση από τη μπάρα μενού.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Περιοχή προβολής</term>
+			 <listitem>
+				<para>Η περιοχή προβολής περιλαμβάνει το κείμενο που επεξεργάζεστε.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Γραμμή κατάστασης</term>
+			 <listitem>
+				<para>Η γραμμή κατάστασης εμφανίζει πληροφορίες για την τρέχουσα δραστηριότητα του <application>pluma</application> και πληροφορίες του περιεχομένου των αντικειμένων του μενού. Η γραμμή κατάστασης εμφανίζει επίσης τις εξής πληροφορίες:</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>Θέση δρομέα: ο αριθμός της γραμμής και της στήλης στη θέση του δρομέα.</para>
+		  </listitem>
+		  <listitem>
+		  <para>Μορφή επεξεργασίας: αν ο επεξεργαστής είναι σε λειτουργία εισαγωγής τότε η μπάρα κατάστασης περιέχει το κείμενο <guilabel>ΕΙΣ</guilabel>. Αν ο επεξεργαστής είναι σε λειτουργία αντικατάστασης, τότε η μπάρα κατάστασης περιέχει το κείμενο <guilabel>ΑΝΤ</guilabel>. Πατήστε το πλήκτρο <keycap>Insert</keycap> για να αλλάξετε τη λειτουργία.</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Πλευρική εργαλειοθήκη</term>
+			 <listitem>
+				<para>Η πλευρική εργαλειοθήκη εμφανίζει μια λίστα από ανοικτά έγγραφα, και άλλες πληροφορίες ανάλογα με τις ενεργοποιημένες πρόσθετες λειτουργίες.</para>
+				<para>Εξ ορισμού η πλευρική εργαλειοθήκη δεν εμφανίζεται. Για να την εμφανίσετε, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Πλευρική εργαλειοθήκη</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>Κάτω εργαλειοθήκη</term>
+			 <listitem>
+				<para>Η κάτω εργαλειοθήκη χρησιμοποιείται από προγραμματιστικά εργαλεία όπως η πρόσθετη λειτουργία <application>Κονσόλα Python</application> για να εμφανίζουν την έξοδο του προγράμματος.</para>
+				<para>Εξ ορισμού η κάτω εργαλειοθήκη δεν εμφανίζεται. Για να την εμφανίσετε, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Κάτω εργαλειοθήκη</guimenuitem></menuchoice>.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Όταν κάνετε δεξί κλικ μέσα στο παράθυρο του <application>pluma</application>, η εφαρμογή εμφανίζει ένα αναδυόμενο μενού. Το αναδυόμενο μενού περιέχει τις πιο συνηθισμένες εντολές επεξεργασίας κειμένου.</para>
+
+		<para>Όπως και στις άλλες εφαρμογές του MATE, οι ενέργειες στο <application>pluma</application> μπορούν να γίνουν με διάφορους τρόπους: με το μενού, με την εργαλειοθήκη ή με συντομεύσεις πληκτρολογίου. Οι συντομεύσεις που είναι κοινές σε όλες τις εφαρμογές βρίσκονται στον <ulink type="help" url="help:user-guide?shortcuts-apps">Οδηγό χρήσης</ulink>.</para>
+	 </sect2>
+
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="pluma-run-from-cmd-line">
+		<title>Εκτέλεση του pluma από τη Γραμμή εντολών</title>
+		<para>Μπορείτε να εκτελέσετε το <application>pluma</application> από μια γραμμή εντολών και να ανοίξετε ένα ή περισσότερα αρχεία. Για να ανοίξετε πολλά αρχεία από γραμμή εντολών, πληκτρολογήστε την ακόλουθη εντολή και πατήστε <keycap>Return</keycap>:</para>
+		<para lang="en"><command>pluma <replaceable>file1.txt file2.txt file3.txt</replaceable></command></para>
+		<para>Εναλλακτικά, μπορείτε να καθορίσετε μια τοποθεσία (URI) αντί για ένα όνομα αρχείου.</para>
+    <para>Για περισσότερες πληροφορίες για την εκτέλεση του <application>pluma</application> από μια γραμμή εντολών, δείτε τη σελίδα εγχειριδίου του Unix για το pluma, <ulink url="man:pluma" type="man"><citerefentry><refentrytitle>pluma</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink>.</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="pluma-usage">
+	 <title>Δουλεύοντας με αρχεία</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="pluma-create-new-file">
+		<title>Δημιουργία ενός νέου εγγράφου</title>
+		<para>Για να δημιουργήσετε ένα νέο έγγραφο, επιλέξτε <menuchoice><guimenu>Αρχείο</guimenu><guimenuitem>Νέο</guimenuitem></menuchoice>. Η εφαρμογή εμφανίζει ένα νέο άδειο έγγραφο στο παράθυρο του <application>pluma</application>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="pluma-open-file">
+		<title>Άνοιγμα ενός αρχείου</title>
+		<para>Για να ανοίξετε ένα αρχείο, επιλέξτε <menuchoice><guimenu>Αρχείο</guimenu><guimenuitem>Άνοιγμα</guimenuitem></menuchoice> για να εμφανίσετε το διάλογο <guilabel>Άνοιγμα αρχείων</guilabel>. Επιλέξτε το αρχείο που θέλετε να ανοίξετε και πατήστε <guibutton>Άνοιγμα</guibutton>. Το αρχείο εμφανίζεται στο παράθυρο του <application>pluma</application>.</para>
+
+		<para lang="en">The application records the paths and filenames of the five most recent files that you edited and displays the files as menu items on the <menuchoice><guimenu>File</guimenu></menuchoice> menu. You can also click on the <inlinemediaobject><imageobject><imagedata fileref="figures/pluma_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>Shows Recent Files menu icon.</phrase></textobject></inlinemediaobject>  icon on the toolbar to display the list of recent files.  </para>
+
+		<note><para>Μπορείτε να ανοίξετε πολλαπλά αρχεία στο <application>pluma</application>. Η εφαρμογή προσθέτει μια καρτέλα στο παράθυρο για κάθε ανοικτό αρχείο. Για περισσότερες πληροφορίες δείτε <xref linkend="pluma-tabs"/>.</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="pluma-save-file">
+		<title>Αποθήκευση αρχείου</title>
+		<para>Μπορείτε να αποθηκεύετε αρχεία με τους εξής τρόπους:</para>
+		<itemizedlist>
+		  <listitem><para>Για να αποθηκεύσετε αλλαγές σε υφιστάμενο αρχείο, επιλέξτε <menuchoice><guimenu>Αρχείο</guimenu><guimenuitem>Αποθήκευση</guimenuitem></menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To save a new file or to save an existing file under a new filename, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save As</guimenuitem> </menuchoice>. Enter a name for the file in the <guilabel>Save As</guilabel> dialog, then click <guibutton>Save</guibutton>. </para>
+		  </listitem>
+		  <listitem><para lang="en">To save all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Save All</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para lang="en">To close all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Close All</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="pluma-open-from-uri">
+		<title>Άνοιγμα ενός αρχείου από μια τοποθεσία (URI)</title>
+		<para>Για να ανοίξετε ένα αρχείο από μια τοποθεσία URI, κάντε τα εξής βήματα:</para>
+		<orderedlist>
+		<listitem>
+		<para lang="en">Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Open Location</guimenuitem> </menuchoice> to display the <guilabel>Open Location</guilabel> dialog. </para>
+		</listitem>
+		<listitem>
+		<para>Εισάγετε την τοποθεσία του αρχείου που θέλετε να ανοίξετε.</para>
+		</listitem>
+		<listitem>
+		<para>Χρησιμοποιήστε την αναδιπλούμενη λίστα <guilabel>Kωδικοποίηση χαρακτήρων</guilabel> για να διαλέξετε την κατάλληλη κωδικοποίηση.</para>
+		</listitem>
+		<listitem>
+		<para>Πατήστε το <guibutton>Άνοιγμα</guibutton>.</para>
+		</listitem>
+		</orderedlist>
+		<para>Τα <literal>http:</literal>, <literal>ftp:</literal>, <literal>file:</literal>, και όλες οι μέθοδοι που υποστηρίζονται από το <literal>mate-vfs</literal> είναι έγκυροι τύποι τοποθεσιών <replaceable>URI</replaceable>.</para>
+		<para>Αρχεία από μερικούς τύπους URI ανοίγονται μόνο για ανάγνωση, και ό,τι αλλαγές κάνετε θα πρέπει να αποθηκευτούν σε μια διαφορετική τοποθεσία. Το HTTP επιτρέπει μόνο την ανάγνωση αρχείων. Αρχεία που ανοίγονται από FTP είναι μόνο για ανάγνωση γιατί δεν υποστηρίζουν όλοι οι εξυπηρετητές FTP την αποθήκευση απομακρυσμένων αρχείων.</para>
+		<warning><para>Η αποθήκευση σε εξυπηρετητές FTP μπορεί να ενεργοποιηθεί από τον <ulink type="help" url="help:mateconf-editor"><application>Configuration Editor</application></ulink>, με την επιλογή του κλειδιού <systemitem>/apps/pluma/preferences/editor/save/writable_vfs_schemes</systemitem>, αλλά αυτό μπορεί να προκαλέσει σφάλματα.</para></warning>
+	 </sect2>
+
+<!-- ============= Working with tabs ======================== -->
+	 <sect2 id="pluma-tabs">
+	   <title>Δουλεύοντας με τις καρτέλες</title>
+
+		 <para>Όταν είναι ανοικτά περισσότερα από ένα αρχεία, τότε το <application>pluma</application> εμφανίζει μια <firstterm>καρτέλα</firstterm> για κάθε έγγραφο στο πάνω μέρος της περιοχής προβολής. Για να περάσετε σε ένα άλλο έγγραφο, πατήστε στην καρτέλα του.</para>
+		 <para>Για να μετακινήσετε ένα έγγραφο σε ένα άλλο παράθυρο του <application> pluma</application>, σύρετε την αντίστοιχη καρτέλα στο παράθυρο στο οποίο θέλετε να τη μετακινήσετε.</para>
+		 <para lang="en">To move a document to a new <application> pluma</application> window, either drag its tab to the desktop, or choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Move to New Window</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>Δουλεύοντας με κείμενο</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="pluma-edit-text">
+		<title>Επεξεργασία κειμένου</title>
+		<para>Μπορείτε να επεξεργαστείτε το κείμενο σε ένα αρχείο με τους ακόλουθους τρόπους:</para>
+		<itemizedlist>
+		  <listitem><para>Πληκτρολογήστε νέο κείμενο από το πληκτρολόγιο. Ο <firstterm>δρομέας εισαγωγής</firstterm>, που αναβοσβήνει, υποδεικνύει το σημείο στο οποίο θα εμφανίζεται το νέο κείμενο. Για να το αλλάξετε αυτό, χρησιμοποιήστε τα βελάκια ή πατήστε με το ποντίκι.</para>
+		  </listitem>
+		  <listitem><para lang="en">To copy the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To delete the selected text from the file and move the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To permanently delete the selected text from the file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Delete</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To insert the contents of the clipboard at the cursor position, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem> </menuchoice>. You must cut or copy text before you can paste text into the file, either from pluma or another application.</para>
+		  </listitem>
+		  <listitem><para lang="en">To select all of the text in a file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem> </menuchoice>. </para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="pluma-undo-redo-edits">
+		<title>Αναίρεση αλλαγών και ακύρωση αναίρεσης</title>
+		<para lang="en">To undo a change you have made, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem> </menuchoice>. To reverse this action, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	</sect1>
+	<sect1 id="pluma-find">
+		<title>Εύρεση και αντικατάσταση</title>
+
+		<para>Στο <application>pluma</application> υπάρχουν δύο τρόποι αναζήτησης κειμένου. Μπορείτε να χρησιμοποιήσετε το διάλογο <guilabel>Εύρεση</guilabel> για να ψάξετε για ένα συγκεκριμένο κομμάτι κειμένου, ή την <guilabel>Αυξητική αναζήτηση</guilabel> για να φωτίσετε το κείμενο που ταιριάζει καθώς πληκτρολογείτε.</para>
+
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="pluma-find-text">
+		<title>Εύρεση κειμένου</title>
+		<para>Για να αναζητήσετε μια σειρά κειμένου, ακολουθήστε τα εξής βήματα:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice> to display the <guilabel>Find</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Πληκρολογήστε την αλληλουχία που θέλετε να αναζητήσετε στο πεδίο <guilabel>Αναζήτηση για</guilabel>. Μπορείτε να συμπεριλάβετε ειδικούς χαρακτήρες όπως νέα γραμμή και στηλοθέτης: δείτε το <xref linkend="pluma-find-escapes"/>.</para>
+		  </listitem>
+		  <listitem><para>Κάντε κλικ στο <guibutton>Εύρεση</guibutton> για να κάνετε αναζήτηση στο αρχείο για την πρώτη εμφάνιση της αλληλουχίας μετά την τρέχουσα θέση του δρομέα. Αν το <application>pluma</application> βρει την αλληλουχία, θα επιλέξει την πρώτη εμφάνισή της. Άλλες περιπτώσεις της αλληλουχίας στο κείμενο θα επισημανθούν.</para>
+		  </listitem>
+		  <listitem><para lang="en">To find the next occurrence of the string, click <guibutton>Find</guibutton> or choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice>. To find the previous occurrence of the text, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</orderedlist>
+		<para lang="en">After you have closed the <guilabel>Find</guilabel> dialog, you can still move the selection to other occurrences of the text by choosing  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice> and  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		<para lang="en">To remove the highlighting from the text, choose  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Clear Highlight</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	 <sect2 id="pluma-find-incremental">
+	   <title>Αυξητική αναζήτηση</title>
+
+	   <para>Η αυξητική αναζήτηση επισημαίνει το κείμενο που ταιριάζει με αυτό της αναζήτησης καθώς το πληκτρολογείτε γράμμα γράμμα. (Παρόμοιο με το χαρακτηριστικό αναζήτησης σε πολλούς περιηγητές ιστοσελίδων).</para>
+	   <para lang="en">To start an incremental search, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Incremental Search</guimenuitem> </menuchoice>. The search box appears at the top of the display area. </para>
+	   <para>Ξεκινήστε την πληκτρολόγηση και το κείμενο που ταιριάζει θα επισημανθεί στο έγγραφο. Επίσης, η πρώτη περίπτωση εμφάνισης μετά τη θέση του δρομέα θα επιλεγεί.</para>
+	   <para>Για να προχωρήσετε την επιλογή στην επόμενη σύμπτωση ενώ κρατάτε το πεδίο της αυξητικής αναζήτησης ανοιχτό, πατήστε <keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>. Πατήστε <keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>G</keycap></keycombo> για να πάτε στην προηγούμενη σύμπτωση.</para>
+	   <tip><para>Μπορείτε επίσης να χρησιμοποιήσετε τα άνω και κάτω βελάκια ή τη ροδέλα του ποντικιού για να μετακινήσετε την επιλογή μεταξύ των συμπτώσεων.</para></tip>
+	 </sect2>
+
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="pluma-find-replace-text">
+		<title>Αντικατάσταση κειμένου</title>
+
+		<para>Για να κάνετε αναζήτηση για μια αλληλουχία χαρακτήρων σε ένα αρχείο και να την αντικαταστήσετε με μια εναλλακτική, κάντε τα ακόλουθα:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Replace</guimenuitem> </menuchoice> to display the <guilabel>Replace</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para>Πληκτρολογήστε την αλληλουχία που θέλετε να βρείτε, στο πεδίο <guilabel>Αναζήτηση για</guilabel>. Μπορείτε να περιλάβατε ειδικούς χαρακτήρες όπως νέα γραμμή ή στηλοθέτη: δείτε το <xref linkend="pluma-find-escapes"/>.</para></listitem>
+		  <listitem><para>Πληκτρολογήστε την αλληλουχία που θέλετε να χρησιμοποιήσετε για να αντικαταστήσετε την αναζητούμενη αλληλουχία στο πεδίο <guilabel>Αντικατάσταση με</guilabel>.</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>Για να εξετάσετε κάθε εμφάνιση της αλληλουχίας χαρακτήρων πριν την αντικαταστήσετε, πατήστε το <guibutton>Εύρεση</guibutton>. Αν το <application>pluma</application> βρει την αλληλουχία, την επιλέγει. Κάντε κλικ στο <guibutton>Αντικατάσταση</guibutton> για να αντικαταστήσετε την επιλεγμένη εμφάνιση της αλληλουχίας. Για να βρείτε την επόμενη εμφάνιση της αλληλουχίας κάντε ξανά κλικ στο <guibutton>Εύρεση</guibutton>.</para>
+		<para>Για να αντικαταστήσετε όλες τις περιπτώσεις εμφάνισης της αλληλουχίας σε όλο το έγγραφο, κάντε κλικ στο <guibutton>Αντικατάσταση όλων</guibutton>.</para>
+	 </sect2>
+
+<!-- ============= Find and Replace Options ============================ -->
+  <sect2 id="pluma-find-options">
+		<title>Επιλογές εύρεσης και αντικατάστασης</title>
+		<para>Τα παράθυρα διαλόγου <guilabel>Εύρεση</guilabel> και <guilabel>Αντικατάσταση</guilabel> έχουν και τα δύο τις ακόλουθες επιλογές:</para>
+		<itemizedlist>
+		  <listitem><para>Επιλέξτε το <guilabel>Διάκριση πεζών από κεφαλαία</guilabel> για να βρείτε εμφανίσεις της αλληλουχίας που ταιριάζουν και ως προς αυτό με το κείμενο που πληκτρολογείτε. Π.χ. έχοντας επιλέξει το <guilabel>Διάκριση πεζών από κεφαλαία</guilabel> το "ΚΕΙΜΕΝΟ" δεν θα βρεί το "κείμενο".</para>
+		  </listitem>
+		  <listitem><para>Επιλέξτε το <guilabel>Ταίριασμα ολόκληρης λέξης μόνο</guilabel> για να βρείτε εμφανίσεις της αλληλουχίας όπου ταιριάζει με ολόκληρες τις λέξεις του κειμένου που πληκτρολογείτε. Π.χ. έχοντας επιλέξει το <guilabel>Ταίριασμα ολόκληρης λέξης μόνο</guilabel>, το "κείμενο" δεν θα βρει το "υπερκείμενο".</para>
+		  </listitem>
+		  <listitem><para>Επιλέξτε το <guilabel>Αναζήτηση προς τα πίσω</guilabel> για να γίνει η αναζήτηση προς τα πίσω, δηλ. προς την αρχή του εγγράφου.</para>
+		  </listitem>
+		  <listitem><para>Επιλέξτε το <guilabel>Αναδίπλωση γύρω</guilabel> για να αναζητήσετε μέχρι το τέλος του εγγράφου και μετά να συνεχίσετε την αναζήτηση από την άλλη άκρη του εγγράφου.</para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+
+<!-- ============= Special Characters ============================ -->
+	 <sect2 id="pluma-find-escapes">
+	   <title>Ειδικοί χαρακτήρες</title>
+	     <para>Μπορείτε να συμπεριλάβετε τις ακόλουθες αλληλουχίες διαφυγής στο κείμενο προς εύρεση ή αντικατάσταση για να αναπαραστήσετε ειδικούς χαρακτήρες:</para>
+			 <variablelist>
+        <varlistentry>
+          <term lang="en"><literal>\n</literal></term>
+    				<listitem>
+              <para>Καθορίζει μια καινούρια γραμμή.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\t</literal></term>
+    				<listitem>
+              <para>Καθορίζει στηλοθέτη.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\r</literal></term>
+    				<listitem>
+              <para>Καθορίζει επιστροφή γραμμής.</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\\</literal></term>
+    				<listitem>
+              <para>Η ανάστροφη κάθετος πρέπει να αντικατασταθεί αν την αναζητείτε. Π.χ. αν ψάχνετε για το "<literal>\n</literal>" ως έχει, θα πρέπει να πληκτρολογήσετε  "\\n" στο πεδίο <guilabel>Αναζήτηση για</guilabel>. Ή αν ψάχνετε για μια αλληλουχία ανάστροφων καθέτων, θα πρέπει να διπλασιάσετε τον αριθμό τους στο πεδίο.</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+    <sect2 id="pluma-goto-line">
+      <title>Τοποθέτηση του δρομέα σε συγκεκριμένη γραμμή</title>
+
+      <para lang="en">To position the cursor on a specific line in the current file, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Go to Line</guimenuitem> </menuchoice>. The line number box appears at the top of the display area.</para>
+      <para>Ξεκινήστε να πληκτρολογείτε τον αριθμό της γραμμής στην οποία θέλετε να μετακινήσετε το δρομέα και το έγγραφο θα κυλήσει στην καθορισμένη γραμμή.</para>
+      <para>Για να απομακρύνετε το πεδίο και να μετακινήσετε το δρομέα στην καθορισμένη γραμμή, πατήστε <keycap>Return</keycap>.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-printing">
+    <title>Εκτύπωση</title>
+
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="pluma-page-setup">
+		<title>Ορισμός επιλογών σελίδας</title>
+
+		<para lang="en">To set the page options, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Page Setup</guimenuitem> </menuchoice> to display the <guilabel>Page Setup</guilabel> dialog.</para>
+
+		<para>Το παράθυρο διαλόγου <guilabel>Διαμόρφωση σελίδας</guilabel> σας επιτρέπει να καθορίσετε τις ακόλουθες επιλογές εκτύπωσης:</para>
+
+		<sect3 id="pluma-page-setup-general">
+		<title>Καρτέλα Γενικά</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Print syntax highlighting</guilabel> </term>
+			 <listitem>
+				<para>Επιλέξτε το για να εκτυπώσετε την επισήμανση σύνταξης. Για περισσότερες πληροφορίες σχετικά με την επισήμανση σύνταξης, δείτε το <xref linkend="pluma-set-highlightmode"/>.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Print page headers</guilabel> </term>
+			 <listitem>
+				<para>Επιλέξτε το για να περιλάβετε μια κεφαλίδα σε κάθε σελίδα που εκτυπώνετε. Δεν μπορείτε να διαμορφώσετε την κεφαλίδα.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line Numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Επιλέξτε το <guilabel>Εκτύπωση αριθμών γραμμής</guilabel> για να συμπεριλάβετε τους αριθμούς γραμμής στην εκτύπωση ενός αρχείου.</para>
+				<para>Χρησιμοποιήστε το πεδίο αριθμών <guilabel>Αριθμός γραμμής κάθε ... γραμμές</guilabel> για να καθορίσετε πόσο συχνά θα εκτυπώνονται οι αριθμοί γραμμής, π.χ. κάθε 5 γραμμές, κάθε 10 γραμμές κ.ο.κ.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+			 <listitem>
+                            <para>Επιλέξτε το <guilabel>Ενεργοποίηση αναδίπλωσης κειμένου</guilabel> για να αναδιπλώσετε κείμενο στην επόμενη γραμμή, σε επίπεδο χαρακτήρα, όταν εκτυπώνετε ένα αρχείο. Η εφαρμογή υπολογίζει κάθε αναδιπλωμένη γραμμή ως μία γραμμή για τους σκοπούς της αρίθμησης.</para>
+				<para>Επιλέξτε το <guilabel>Να μην χωρίζονται λέξεις σε δύο γραμμές</guilabel> για να αναδιπλώσετε το κείμενο στην επόμενη γραμμή, σε επίπεδο λέξης, όταν εκτυπώνετε ένα αρχείο.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="pluma-page-setup-fonts">
+	 		<title>Γραμματοσειρές</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Body</guilabel> </term>
+			 <listitem>
+				<para>Κάντε κλικ σε αυτό το κουμπί για να επιλέξετε τη γραμματοσειρά στην οποία θα εκτυπωθεί το σώμα του κειμένου ενός αρχείου.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>Κάντε κλικ σε αυτό το κουμπί για να επιλέξετε τη γραμματοσειρά στην οποία θα εκτυπωθούν οι αριθμοί γραμμών.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Headers and footers</guilabel> </term>
+			 <listitem>
+				<para>Κάντε κλικ σε αυτό το κουμπί για να επιλέξτε τη γραμματοσειρά στην οποία θα εκτυπωθούν οι κεφαλίδες και τα υποσέλιδα ενός αρχείου.</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para>Για να επαναφέρετε τις γραμματοσειρές στις προεπιλεγμένες για την εκτύπωση ενός αρχείου από το <application>pluma</application>, κάντε κλικ στο κουμπί <guibutton>Επαναφορά προεπιλεγμένων γραμματοσειρών</guibutton>.</para>
+		</sect3>
+
+	 </sect2>
+
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="pluma-print-file">
+		<title>Εκτύπωση εγγράφου</title>
+		<para>Μπορείτε να χρησιμοποιήσετε το <application>pluma</application> για να εκτελέσετε τις ακόλουθες εργασίες εκτύπωσης:</para>
+		<itemizedlist>
+		  <listitem><para>Εκτύπωση εγγράφου σε εκτυπωτή.</para>
+		  </listitem>
+		  <listitem><para>Εκτύπωση του αποτελέσματος της εντολής εκτύπωσης σε ένα αρχείο.</para>
+		  </listitem>
+		</itemizedlist>
+		<para>Αν εκτυπώσετε σε αρχείο, το <application>pluma</application> στέλνει το αποτέλεσμα σε ένα αρχείο προ-εκτύπωσης. ΟΙ πιο κοινές μορφές αρχείων προ-εκτύπωσης είναι το PostScript και το Portable Document Format (PDF).</para>
+
+		<para lang="en">To preview the pages that you want to print, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print Preview</guimenuitem> </menuchoice>.</para>
+
+		<para lang="en">To print the current file to a printer or a file, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice> to display the <guilabel>Print</guilabel> dialog.</para>
+
+		<para>Το παράθυρο διαλόγου <guilabel>Εκτύπωση</guilabel> σας επιτρέπει να ορίσετε τις ακόλουθες επιλογές εκτύπωσης:</para>
+
+		<sect3 id="print-dialog-job">
+		<title>Καρτέλα εργασία</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Print range</guilabel> </term>
+			 <listitem>
+				<para>Επιλέξτε μία από τις ακόλουθες επιλογές για να καθορίσετε πόσες σελίδες θα εκτυπωθούν:</para>
+				<itemizedlist>
+				<listitem>
+				<para lang="en"><guilabel>All</guilabel></para>
+				<para>Επιλέξτε αυτή την επιλογή για να εκτυπώσετε όλες τις σελίδες του αρχείου.</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Lines</guilabel></para>
+				<para>Επιλέξτε αυτή την επιλογή για εκτυπώσετε μόνο τις καθορισμένες γραμμές. Χρησιμοποιήστε τα αριθμητικά πεδία <guilabel>Από</guilabel> και <guilabel>Έως</guilabel> για να καθορίσετε τις γραμμές.</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Selection</guilabel></para>
+				<para>Επιλέξτε αυτή την επιλογή για να εκτυπώσετε μόνο το επιλεγμένο κείμενο. Αυτή η επιλογή είναι διαθέσιμη μόνο αν επιλέξετε κείμενο.</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Copies</guilabel> </term>
+			 <listitem>
+				<para>Χρησιμοπιήστε το αριθμητικό πεδίο <guilabel>Αριθμός αντιγράφων</guilabel> για να καθορίσετε τον αριθμό των αντιγράφων για το αρχείο που θέελτε να εκτυπώσετε.</para>
+				<para>Αν εκτυπώσετε πολλαπλά αντίγραφα του αρχείου, επιλέξτε το <guilabel>Συρραφή</guilabel> για να συρράψετε τα αντίγραφα που θα εκτυπωθούν.</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>Καρτέλα Εκτυπωτής</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Printer</guilabel> </term>
+	    <listitem>
+	      <para>Χρησιμοποιήστε την αναδυόμενη λίστα για να επιλέξετε τον εκτυπωτή στον οποίο θέλετε να εκτυπωθεί το αρχείο.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Settings</guilabel> </term>
+	    <listitem>
+	      <para>Χρησιμοποιήστε αυτή τη λίστα για να επιλέξετε τις ρυθμίσεις εκτυπωτή.</para>
+	      <para>Για να διαμορφώσετε τον εκτυπωτή, κάντε κλικ στο <guibutton>Διαμόρφωση</guibutton>. Π.χ., μπορείτε να ενεργοποιήσετε ή απενεργοποιήσετε την εκτύπωση διπλής όψης, αν αυτή η λειτουργία υποστηρίζεται από τον εκτυπωτή σας.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Location</guilabel> </term>
+	    <listitem>
+	      <para>Χρησιμοποιήστε αυτή τη λίστα για να επιλέξετε έναν από τους ακόλουθους προορισμούς εκτύπωσης:</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>Εκτύπωση του αρχείου σε εκτυπωτή του CUPS.</para>
+	            <note>
+	              <para>Αν ο επιλεγμένος εκτυπωτής είναι CUPS, το <guilabel>CUPS</guilabel> είναι η μόνη καταχώρηση σε αυτή τη λίστα.</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>Εκτύπωση του αρχείου σε εκτυπωτή.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>Εκτύπωση του αρχείου σε αρχείο PostScript.</para>
+	            <para>Κάντε κλικ στο <guibutton>Αποθήκευση ως</guibutton> για να εμφανίσετε ένα παράθυρο διαλόγου όπου καθορίζετε το όνομα και την τοποθεσία του αρχείου PostScript.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>Χρησιμοποιήστε την καθορισμένη εντολή για να εκτυπώσετε το αρχείο.</para>
+	            <para>Πληκτρολογήστε το όνομα της εντολής στο πεδίο κειμένου. Συμπεριλάβετε όλα τα ορίσματα της γραμμής εντολών.</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>State</guilabel> </term>
+	    <listitem>
+	      <para>Αυτή η λειτουργία δεν υποστηρίζεται σε αυτή την έκδοση του pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Type</guilabel> </term>
+	    <listitem>
+	      <para>Αυτή η λειτουργία δεν υποστηρίζεται σε αυτή την έκδοση του pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Comment</guilabel> </term>
+	    <listitem>
+	      <para>Αυτή η λειτουργία δεν υποστηρίζεται σε αυτή την έκδοση του pluma.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>Καρτέλα Χαρτί</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Paper size</guilabel> </term>
+			 <listitem>
+				<para>Χρησιμοποιήστε αυτή τη λίστα για να επιλέξετε το μέγεθος του χαρτιού στο οποίο θέλετε να εκτυπώσετε το αρχείο.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Width</guilabel> </term>
+			 <listitem>
+				<para>Χρησιμοποιήστε αυτό το αριθμητικό πεδίο για να καθορίσετε το πλάτος του χαρτιού. Χρησιμοποιήστε τη διπλανή λίστα για αλλάξετε τη μονάδα μέτρησης.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Height</guilabel> </term>
+			 <listitem>
+				<para>Χρησιμοποιήστε αυτό το αριθμητικό πεδίο για να ορίσετε το ύψος του χαρτιού.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Feed orientation</guilabel> </term>
+			 <listitem>
+				<para>Χρησιμοποιήστε αυτή τη λίστα για να επιλέξετε τον προσανατολισμό του χαρτιού στον εκτυπωτή.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Page orientation</guilabel> </term>
+			 <listitem>
+				<para>Χρησιμοποιήστε αυτή τη λίστα για να επιλέξετε τον προσανατολισμό της σελίδας.</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Layout</guilabel> </term>
+			 <listitem>
+				<para>Χρησιμοποιήστε αυτή τη λίστα για επιλέξετε τη διάταξη σελίδας. Μια προεπισκόπηση κάθε διάταξης που επιλέγετε εμφανίζεται στην περιοχή <guilabel>Προεπισκόπηση</guilabel>.</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term lang="en"><guilabel>Paper tray</guilabel> </term>
+            <listitem>
+              <para>Χρησιμοποιήστε αυτή τη λίστα για να επιλέξετε τροφοδότη χαρτιού.</para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-programming-features">
+	  <title>Προγραμματιστικά χαρακτηριστικά</title>
+
+	  <para>Πολλές λειτουργίες προγραμματισμού του <application>pluma</application> παρέχονται με πρόσθετα. Π.χ., το πρόσθετο Λίστα Ετικετών παρέχει μια λίστα των συνηθέστερων ετικετών για διαφορετικές γλώσσες ιστοσελίδων: δείτε το <xref linkend="pluma-tag-list-plugin"/>.</para>
+
+<!-- ============= Syntax Highlighting =================== -->
+	 <sect2 id="pluma-set-highlightmode">
+	 <title>Επισήμανση σύνταξης</title>
+	 <para>Η επισήμανση σύνταξης καθιστά ευκολότερη την ανάγνωση πηγαίου κώδικα, απεικονίζοντας διαφορετικά μέρη του με διαφορετικά χρώματα.</para>
+
+	 <para lang="en"><application>pluma</application> chooses an appropriate syntax highlighting mode based on a document's type. To override the syntax highlighting mode, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Highlight Mode</guimenuitem> </menuchoice>, then choose one of the following menu items:</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term lang="en"><guimenuitem>Normal</guimenuitem></term>
+		      <listitem>
+		        <para>Καμμία επισήμανση σύνταξης.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Sources</guisubmenu></term>
+		      <listitem>
+		        <para>Εμφάνιση επισήμανσης για επεξεργασία πηγαίου κώδικα. Χρησιμοποιήστε το υπομενού <guisubmenu>Κώδικας</guisubmenu> για να επιλέξετε τον τύπο του πηγαίου κώδικα.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Markup</guisubmenu></term>
+		      <listitem>
+		        <para>Εμφάνιση επισήμανσης σύνταξης για επεξεργασία κώδικα σήμανσης. Χρησιμοποιήστε το υπομενού <guisubmenu>Markup</guisubmenu> για να επιλέξετε τον τύπο του κώδικα σήμανσης.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Scripts</guisubmenu></term>
+		      <listitem>
+		        <para>Εμφανίστε τη λειτουργία επισήμανσης κώδικα για επεξεργασθείτε κώδικα σεναρίων ενεργειών. Χρησιμοποιήστε το υπομενού <guisubmenu>Σενάρια ενεργειών</guisubmenu> για να επιλέξετε τον τύπο του κώδικα.</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Others</guisubmenu></term>
+		      <listitem>
+		        <para>Εμφάνιση επισήμανσης σύνταξης για επεξεργασία άλλων τύπων κώδικα. Χρησιμοποιήστε το υπομενού <guisubmenu>Άλλα</guisubmenu> για να επιλέξετε τον τύπο του κώδικα.</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 </sect2>
+
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="pluma-pipe-output">
+		<title>Διοχέτευση της εξόδου μιας εντολής σε ένα αρχείο.</title>
+		<para>Μπορείτε να χρησιμοποιήσετε το <application>pluma</application> για να διοχετεύσετε την έξοδο μιας εντολής σε ένα αρχείο κειμένου. Π.χ., για να διοχετεύσετε το αποτέλεσμα μιας εντολής <command>ls</command> σε ένα αρχείο, πληκτρολογήστε <command>ls | pluma</command> και πατήστε <keycap>Return</keycap>.</para>
+		<para>Η έξοδος της εντολής <command>ls</command> εμφανίζεται σε ένα καινούριο αρχείο κειμένου στο παράθυρο του <application>pluma</application>.</para>
+		<para>Εναλλακτικά μπορείτε να χρησιμοποιήσετε το πρόσθετο <application>External tools</application> για να διοχετεύσετε την έξοδο της εντολής στο τρέχον αρχείο.</para>
+	 </sect2>
+  </sect1>
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="pluma-shortcutkeys">
+  <title>Πλήκτρα συντόμευσης</title>
+  <para>Χρησιμοποιήστε πλήκτρα συντόμευσης για να πραγματοποιήσετε συνήθεις εργασίες πιο γρήγορα σε σχέση με το ποντίκι και τα μενού. Οι ακόλουθοι πίνακες απαριθμούν όλες τις συντομεύσεις πληκτρολογίου του <application>pluma</application>.</para>
+  <para>Για περισσότερα σχετικά με τις συντομεύσεις πληκτρολογίου, δείτε τον <ulink type="help" url="help:user-guide?keyboard-skills">Desktop User Guide</ulink>.</para>
+
+  <!-- ============= Tabs ======================== -->
+	<bridgehead>Καρτέλες</bridgehead>
+	<para>Συντομεύσεις για τις καρτέλες:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Πλήκτρα συντόμευσης</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>Εντολή</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para>Ctrl + Alt + PageUp</para></entry>
+          <entry><para>Μετάβαση στην επόμενη προς τα αριστερά καρτέλα.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Alt + PageDown</para></entry>
+          <entry><para>Μετάβαση στην επόμενη προς τα δεξιά καρτέλα.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>Κλείσιμο καρτέλας.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Shift + L</para></entry>
+          <entry><para>Αποθήκευση όλων των καρτελών.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Shift + W</para></entry>
+          <entry><para>Κλείσιμο όλων των καρτελών.</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Alt + αριθμός</para></entry>
+          <entry><para>Μετάβαση στην καρτέλα με τον αντίστοιχο αριθμό (μπορεί να μη λειτουργεί με το αριθμητικό πληκτρολόγιο)</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>Αρχεία</bridgehead>
+	<para>Συντομεύσεις για εργασία με αρχεία:</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Πλήκτρα συντόμευσης</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Εντολή</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>Δημιουργία νέου εγγράφου</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>Άνοιγμα εγγράφου.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + L</para></entry>
+                        <entry><para>Άνοιγμα τοποθεσίας.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>Αποθήκευση του τρέχοντος εγγράφου στο δίσκο.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + S</para></entry>
+                        <entry><para>Αποθήκευση του τρέχοντος εγγράφου με νέο όνομα αρχείου.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>Εκτύπωση του τρέχοντος εγγράφου.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + P</para></entry>
+                        <entry><para>Προεπισκόπηση εκτύπωσης</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + W</para></entry>
+                        <entry><para>Κλείσιμο του τρέχοντος εγγράφου.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>Έξοδος από το Pluma.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>Επεξεργασία</bridgehead>
+	<para>Συντομεύσεις για επεξεργασία εγγράφων:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Πλήκτρα συντόμευσης</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Εντολή</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>Αναίρεση της τελευταίας ενέργειας.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + Z</para></entry>
+                        <entry><para>Επανάληψη της τελευταίας ενέργειας.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>Αποκοπή του επιλεγμένου κειμένου ή περιοχής και τοποθέτηση στο πρόχειρο.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>Αντιγραφή του επιλεγμένου κειμένου ή περιοχή στο πρόχειρο.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>Επικόλληση των περιεχομένων του πρόχειρου.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>Επιλογή όλων.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + D</para></entry>
+                        <entry><para>Διαγραφή τρέχουσας γραμμής.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + πάνω</para></entry>
+                        <entry><para>Μετακίνηση της επιλεγμένης γραμμής μια γραμμή επάνω.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + κάτω</para></entry>
+                        <entry><para>Μετακίνηση της επιλεγμένης γραμμής μια γραμμή κάτω.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+	<bridgehead>Εργαλειοθήκες</bridgehead>
+	<para>Συντομεύσεις για εμφάνιση και απόκρυψη εργαλειοθηκών:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Πλήκτρα συντόμευσης</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Εντολή</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>F9</para></entry>
+                        <entry><para>Εμφάνιση / απόκρυψη της πλευρικής εργαλειοθήκης.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>Εμφάνιση / απόκρυψη της κάτω εργαλειοθήκης.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Search ======================= -->
+	<bridgehead>Αναζήτηση</bridgehead>
+	<para>Συντομεύσεις για αναζήτηση:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Πλήκτρα συντόμευσης</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Εντολή</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>Εύρεση αλληλουχίας.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>Εύρεση της επόμενης εμφάνισης της αλληλουχίας.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + G</para></entry>
+                        <entry><para>Εύρεση της προηγούμενης εμφάνισης της αλληλουχίας.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>Διαδραστική αναζήτηση.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>Αναζήτηση και αντικατάσταση.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + K</para></entry>
+                        <entry><para>Καθαρισμός επισήμανσης.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>Μετάβαση στη γραμμή.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Tools ======================= -->
+	<bridgehead>Εργαλεία</bridgehead>
+	<para>Συντομεύσεις για τα εργαλεία:</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>Πλήκτρα συντόμευσης</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>Εντολή</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Shift + F7</para></entry>
+                        <entry><para>Έλεγχος ορθογραφίας (με πρόσθετο).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + F12</para></entry>
+                        <entry><para>Αφαίρεαση πλεοναζόντων κενών (με πρόσθετο).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + T</para></entry>
+                        <entry><para>Εσοχή (με πρόσθετο).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + T</para></entry>
+                        <entry><para>Αφαίρεση εσοχής (με πρόσθετο).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>F8</para></entry>
+                        <entry><para>Εκτέλεση της εντολής "make" στον τρέχοντα κατάλογο (με πρόσθετο).</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + D</para></entry>
+                        <entry><para>Λίστα καταλόγου (με πρόσθετο).</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Help ======================= -->
+	<bridgehead>Βοήθεια</bridgehead>
+	<para>Συντομεύσεις για τη βοήθεια:</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Πλήκτρα συντόμευσης</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>Εντολή</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para>F1</para></entry>
+          <entry><para>Άνοιγμα του οδηγού χρήστη του <application>pluma</application>.</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="pluma-prefs">
+    <title>Προτιμήσεις</title>
+
+    <para lang="en">To configure <application>pluma</application>, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. The <guilabel>Preferences</guilabel> dialog contains the following categories:</para>
+    <itemizedlist>
+      <listitem><para><xref linkend="pluma-prefs-view"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-editor"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-fontsandcolors"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-plugins"/></para></listitem>
+    </itemizedlist>
+
+    <sect2 id="pluma-prefs-view">
+      <title>Προβολή</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+          <listitem>
+            <para>Επιλέξτε την επιλογή <guilabel>Ενεργοποίηση αναδίπλωσης κειμένου</guilabel> για να οργανώνονται σε παραγράφους οι μακρές γραμμές κειμένου αντί να συνεχίζονται πέραν της άκρης του παραθύρου κειμένου. Έτσι αποφεύγετε την οριζόντια κύλιση.</para>
+            <para>Επιλέξτε το <guilabel>Να μη χωρίζονται οι λέξεις σε δύο γραμμές</guilabel> για να διατηρούνται ολόκληρες οι λέξεις κατά την αναδίπλωση κειμένου. Έτσι γίνεται ευκολότερη η ανάγνωση.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Line Numbers</guilabel></term>
+          <listitem>
+            <para>Επιλέξτε το <guilabel>Προβολή αριθμών γραμμής</guilabel> για εμφανίζονται οι αριθμοί γραμμής στην αριστερή πλευρά του παραθύρου του <application>pluma</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Current Line</guilabel></term>
+          <listitem>
+            <para>Επιλέξτε το <guilabel>Επισήμανση τρέχουσας γραμμής</guilabel> για να επισημάνετε τη γραμμή όπου βρίσκεται ο δρομέας.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Right Margin</guilabel></term>
+          <listitem>
+            <para>Επιλέξτε το <guilabel>Προβολή δεξιού περιθωρίου</guilabel> για να εμφανίσετε μια κάθετη γραμμή που υποδεικνύει τη θέση του δεξιού περιθωρίου.</para>
+            <para>Χρησιμοποιήστε το αριθμητικό πεδίο <guilabel>Δεξί περιθώριο στη στήλη</guilabel> για να καθορίσετε τη θέση της κάθετης γραμμής.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Bracket Matching</guilabel></term>
+          <listitem>
+            <para>Επιλέξτε το <guilabel>Επισήμανση παρένθεσης που ταιριάζει</guilabel> για να επισημαίνετε την αντίστοιχη παρένθεση όταν ο δρομέας τοποθετηθεί σε ένα χαρακτήρα παρένθεσης.</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-editor">
+      <title>Επεξεργαστής</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Tabs</guilabel> </term>
+          <listitem>
+            <para>Χρησιμοποιήστε το αριθμητικό πεδίο <guilabel>Πλάτος στηλοθέτη</guilabel> για να ορίσετε το πλάτος του διαστήματος που θα εισάγει το <application>pluma</application> όταν πιέζετε το πλήκτρο <keycap>Tab</keycap>.</para>
+            <para>Επιλέξτε το <guilabel>Εισαγωγή διαστημάτων αντί για στηλοθέτες</guilabel> για να ορίσετε ότι το <application>pluma</application> θα εισάγει διαστήματα αντί για χαρακτήρα στηλοθέτη όταν πατάτε το <keycap>Tab</keycap>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Auto Indentation</guilabel> </term>
+          <listitem>
+            <para>Επιλέξτε το <guilabel>Ενεργοποίηση αυτόματης εσοχής</guilabel> για να ορίσετε ότι η επόμενη γραμμή θα ξεκινά με την ίδια εσοχή με την τρέχουσα γραμμή.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>File Saving</guilabel> </term>
+          <listitem>
+            <para>Επιλέξτε <guilabel>Δημιουργία αντιγράφου ασφαλείας πριν την αποθήκευση</guilabel> για να δημιουργείται ένα αντίγραφο του αρχείου κάθε φορά που το αποθηκεύετε. Το αντίγραφο του αρχείου περιέχει μια ~ στο τέλος του ονόματος του αρχείου.</para>
+            <para>Επιλέξτε το <guilabel>Αυτόματη αποθήκευση αρχείων κάθε ... λεπτά</guilabel> για να αποθηκεύετε το τρέχον αρχείο σε τακτά διαστήματα. Χρησιμοποιήστε το αριθμητικό πεδίο για να ορίσετε πόσο συχνά θέλετε να αποθηκεύεται το αρχείο.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-fontsandcolors">
+      <title>Γραμματοσειρές &amp; Χρώματα</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Font</guilabel> </term>
+          <listitem>
+            <para>Επιλέξτε το <guilabel>Χρήση προκαθορισμένης σταθερού πλάτους γραμματοσειράς συστήματος</guilabel> για να χρησιμοποιήσετε την προεπιλεγμένη γραμματοσειρά του συστήματος στο παράθυρο κειμένου του <application>pluma</application>.</para>
+            <para>Το πεδίο <guilabel>Γραμματοσειρά επεξεργαστή</guilabel> απεικονίζει τη γραμματοσειρά που χρησιμοποιεί το <application>pluma</application> για να εμφανίσει το κείμενο. Κάντε κλικ στο κουμπί για να καθορίσετε τον τύπο, μορφή και μέγεθος της γραμματοσειράς που θα χρησιμοποιηθεί για το κείμενο.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Color Scheme</guilabel></term>
+          <listitem>
+            <para>Μπορείτε να επιλέξετε ένα συνδυασμό χρωμάτων από τη λίστα των συνδυασμών χρωμάτων. Ως προεπιλογή, οι ακόλουθοι συνδυασμοί είναι εγκατεστημένοι:</para>
+            <variablelist>
+              <varlistentry>
+                <term lang="en"><guilabel>Classic</guilabel></term>
+                <listitem>
+                  <para>Κλασσικός συνδυασμός χρωμάτων που βασίζεται σε αυτόν του gvim.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Cobalt</guilabel></term>
+                <listitem>
+                  <para>Συνδυασμός χρωμάτων βασισμένος στο μπλε.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Kate</guilabel></term>
+                <listitem>
+                  <para>Συνδυασμός χρωμάτων στο επεξεργαστή κειμένου  Kate.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Oblivion</guilabel></term>
+                <listitem>
+                  <para>Σκοτεινός συνδυασμός χρωμάτων που χρησιμοποιεί τη χρωματική παλέττα του Tango.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Tango</guilabel></term>
+                <listitem>
+                  <para>Συνδυασμός χρωμάτων που χρησιμοποιεί αυτόν του Tango.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <para>Μπορείτε να προσθέσετε ένα νέο συνδυασμό χρωμάτων κάνοντας κλικ στο <guilabel>Προσθήκη...</guilabel> και επιλέγοντας αρχείο χρωματικού συνδυασμού.</para>
+            <para>Μπορείτε να αφαιρέσετε τον επιλεγμένο συνδυασμό χρωμάτων κάνοντας κλικ στο <guilabel>Αφαίρεση</guilabel></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-plugins">
+      <title>Προτιμήσεις Πρόσθετων Λειτουργιών</title>
+      <para>Τα πρόσθετα δίνουν επιπλέον χαρακτηριστικά στο <application>pluma</application>. Για περισσότερες πληροφορίες για τα πρόσθετα και τη χρήση των ενσωματωμένων προσθέτων, δείτε το <xref linkend="pluma-plugins-overview"/>.</para>
+
+<!-- ============= To Load pluma Plugins ========================= -->
+	 <sect3 id="pluma-install-plugins">
+		<title>Ενεργοποίηση προσθέτων</title>
+		<para>Για να ενεργοποιήσετε ένα πρόσθετο του <application>pluma</application>, κάντε τα ακόλουθα βήματα:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Επιλέξτε την καρτέλα <guilabel>Πρόσθετες λειτουργίες</guilabel>.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Επιλέξτε το κουτάκι δίπλα στο όνομα του προσθέτου που θέλετε να ενεργοποιήσετε.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Κάντε κλικ στο <guibutton>Κλείσιμο</guibutton> για να κλείσετε το παράθυρο διαλόγου <guilabel>Προτιμήσεις</guilabel>.</para>
+                  </listitem>
+                </orderedlist>
+	 </sect3>
+
+<!-- ============= To Remove pluma Plugins ========================= -->
+  	 <sect3 id="pluma-remove-plugins">
+  		<title>Απενεργοποίηση πρόσθετου</title>
+  		<para>Τα πρόσθετα παραμένουν ενεργοποιημένα και αφού εγκαταλείψετε το <application>pluma</application>.</para>
+  		<para>Για να απενεργοποιήσετε ένα πρόσθετο του <application>pluma</application>, ακολουθήστε τα εξής βήματα:</para>
+                  <orderedlist>
+                    <listitem>
+                      <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                    </listitem>
+                    <listitem>
+                      <para>Επιλέξτε την καρτέλα <guilabel>Πρόσθετες λειτουργίες</guilabel>.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Απο-επιλέξτε το κουτάκι δίπλα στο όνομα του πρόσθετου που θέλετε να απενεργοποιήσετε.</para>
+                    </listitem>
+                    <listitem>
+                      <para>Κάντε κλικ στο <guibutton>Κλείσιμο</guibutton> για να κλείσετε το παράθυρο διαλόγου <guilabel>Προτιμήσεις</guilabel>.</para>
+                    </listitem>
+                  </orderedlist>
+  	 </sect3>
+	 </sect2>
+
+ </sect1>
+<!-- ============= To Use the pluma Plugins ========================= -->
+	 <sect1 id="pluma-plugins">
+		<title>Πρόσθετα</title>
+		<sect2 id="pluma-plugins-overview">
+		  <title>Εργασία με πρόσθετα</title>
+  		<para>Μπορείτε να προσθέσετε επιπλέον χαρακτηριστικά στο <application>pluma</application> ενεργοποιώντας τα <firstterm>plugins</firstterm>. Το πρόσθετο είναι ένα συμπληρωματικό πρόγραμμα που αυξάνει τη λειτουργικότητα μιας εφαρμογής. Τα πρόσθετα προσθέτουν νέα αντικείμενα στα μενού του <application>pluma</application> για τα νέα χαρακτηριστικά που παρέχουν.</para>
+  		<para>Πολλά πρόσθετα έρχονται ενσωματωμένα στο <application>pluma</application> και μπορείτε να εγκαταστήσετε περισσότερα. Στο <ulink type="http" url="http://live.gnome.org/Pluma/Plugins">pluma website</ulink> απαριθμούνται πρόσθετα από τρίτους.</para>
+  		<para>Για να ενεργοποιήσετε και να απενεργοποιήσετε πρόσθετα ή να δείτε ποια πρόσθετα είναι ενεργοποιημένα, χρησιμοποιήστε το <link linkend="pluma-prefs-plugins">Προτιμήσεις προσθέτων</link>.</para>
+  		<para>Τα ακόλουθα πρόσθετα είναι ενσωματωμένα στο <application>pluma</application>:</para>
+  		<!-- Not yet documented:
+  		File browser
+  		-->
+  		<itemizedlist>
+  		  <listitem>
+  		    <para><link linkend="pluma-change-case-plugin"><application>Αλλαγή πεζών κεφαλαίων</application></link>, σας επιτρέπει να αλλάξετε μεταξύ πεζών και κεφαλαίων στο επιλεγμένο κείμενο.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-document-statistics-plugin">Στατιστικά εγγράφου</link></application>, δείχνει τον αριθμό γραμμών, λέξεων και χαρακτήρων του εγγράφου.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-external-tools-plugin">Εξωτερικά εργαλεία</link></application>, σας επιτρέπει να εκτελέσετε εξωτερικές εντολές από το <application>pluma</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application>Περιηγητής αρχείων</application>, σας επιτρέπει να περιηγηθείτε στα αρχεία και τους φακέλους σας στο πλευρικό πλαίσιο.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-indent-lines-plugin">Εσοχή γραμμών</link></application>, προσθέτει ή αφαιρεί την εσοχή στις επιλεγμένες γραμμές.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-insert-date-time-plugin">Εισαγωγή Ημερομηνίας/Ώρας</link></application>, προσθέτει την τρέχουσα ημερομηνία και ώρα σε ένα έγγραφο.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-modelines-plugin">Modelines</link></application>, σας επιτρέπει να ορίσετε τις προτιμήσεις επεξεργασίας ξεχωριστά για κάθε έγγραφο, και υποστηρίζει modelines τύπου <application>Emacs</application>, <application>Kate</application> και <application>Vim</application>.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-python-console-plugin">Κοσνόλα Python</link></application>, σας επιτρέπει να εκτελείτε εντολές της γλώσσας προγραμματισμού python.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-snippets-plugin">Snippets</link></application>, σας επιτρέπει να αποθηκεύσετε συχνά χρησιμοποιούμενα τμήματα κειμένου και να τα εισάγετε γρήγορα σε ένα έγγραφο.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-sort-plugin">Ταξινόμηση</link></application>, ταξινομεί τις επιλεγμένες γραμμές κειμένου σε αλφαβητική σειρά.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-spell-checker-plugin">Έλεγχος ορθογραφίας</link></application>, διορθώνει τα ορθογραφικά λάθη στο επιλεγμένο κείμενο ή σημειώνει αυτόματα τα λάθη στο έγγραφο.</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-tag-list-plugin">Λίστα ετικετών</link></application>, σας επιτρέπει να εισάγετε συνήθεις ετικέτες για την HTML και άλλες γλώσσες από μια λίστα στο πλευρικό πλαίσιο.</para>
+  		  </listitem>
+  		</itemizedlist>
+
+	<note><para>Για περισσότερες πληροφορίες σχετικά με τη δημιουργία προσθέτων, δείτε τον <ulink type="http" url="http://live.gnome.org/Pluma/Plugins">ιστότοπο του<application>pluma</application></ulink>.</para></note>
+  	</sect2>
+
+<sect2 id="pluma-change-case-plugin">
+<title>Πρόσθετο Αλλαγή πεζών κεφαλαίων</title>
+	<para>Το πρόσθετο <application>Αλλαγή πεζών κεφαλαίων</application> αλλάζει τα γράμματα (πεζά - κεφαλαία) του επιλεγμένου κειμένου.</para>
+	 <para>Τα ακόλουθα αντικείμενα προστίθενται στο μενού <guimenu>Επεξεργασία</guimenu> όταν είναι ενεργό το πρόσθετο <application>Αλλαγή πεζών κεφαλαίων</application>:</para>
+
+  <informaltable frame="all">
+    <tgroup cols="3" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="33*"/>
+      <colspec colname="COLSPEC1" colwidth="33*"/>
+      <colspec colname="COLSPEC2" colwidth="33*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>Αντικείμενο μενού</para></entry>
+          <entry colname="COLSPEC1">
+            <para>Ενέργεια</para></entry>
+          <entry colname="COLSPEC2">
+            <para>Παράδειγμα</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Upper Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Αλλάζει κάθε χαρακτήρα σε κεφαλαίο.</para></entry>
+          <entry><para><literal>Αυτό το κείμενο</literal> γίνεται <literal>ΑΥΤΟ ΤΟ ΚΕΙΜΕΝΟ</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Lower Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Αλλάζει κάθε χαρακτήρα σε πεζό.</para></entry>
+          <entry><para><literal>Αυτό το κείμενο</literal> γίνεται <literal>αυτό το κείμενο</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Invert Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Αλλάζει κάθε πεζό χαρακτήρα σε κεφαλαίο και αντίστροφα.</para></entry>
+          <entry><para><literal>Αυτό Το Κείμενο</literal> γίνεται <literal>αΥΤΟ τΟ κΕΙΜΕΝΟ</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Title Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>Αλλάζει τον πρώτο χαρακτήρα κάθε λέξης σε κεφαλαίο.</para></entry>
+          <entry><para><literal>αυτό το κείμενο</literal> γίνεται <literal>Αυτό Το Κείμενο</literal></para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect2>
+
+<sect2 id="pluma-document-statistics-plugin">
+<title>Πρόσθετο στατιστικών εγγράφου</title>
+	<para>Το πρόσθετο <application>Στατιστικά εγγράφου</application> καταμετρά τον αριθμό γραμμών, λέξεων, χαρακτήρων με τα διαστήματα, χαρακτήρων χωρίς τα διαστήματα, και τα bytes του τρέχοντος αρχείου. Το πρόσθετο απεικονίζει τα αποτελέσματα σε ένα παράθυρο διαλόγου <application>Στατιστικά εγγράφου</application>. Για να χρησιμοποιήσετε το πρόσθετο Στατιστικά εγγράφου, κάντε τα ακόλουθα βήματα:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Document Statistics</guimenuitem> </menuchoice> to display the <guilabel>Document Statistics</guilabel> dialog. The <guilabel>Document Statistics</guilabel> dialog displays the following information about the file:
+				</para>
+		      <itemizedlist>
+		      <listitem><para>Αριθμός γραμμών στο τρέχον έγγραφο.</para>
+		      </listitem>
+		      <listitem><para>Αριθμός λέξεων στο τρέχον έγγραφο.</para>
+		      </listitem>
+		      <listitem><para>Αριθμός χαρακτήρων, συμπεριλαμβανομένων των διαστημάτων, στο τρέχον έγγραφο.</para>
+		      </listitem>
+		      <listitem><para>Αριθμός χαρακτήρων, μη συμπεριλαμβανομένων των διαστημάτων, στο τρέχον έγγραφο.</para>
+		      </listitem>
+		      <listitem><para>Αριθμός bytes στο τρέχον έγγραφο.</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para>Μπορείτε να συνεχίσετε να ενημερώνετε το αρχείο του <application>pluma</application> ενώ το παράθυρο διαλόγου <guilabel>Στατιστικά εγγράφου</guilabel> είναι ανοιχτό. Για να ανανεώσετε τα περιεχόμενα του παραθύρου διαλόγου <guilabel>Στατιστικά εγγράφου</guilabel>, κάντε κλικ στο <guibutton>Ενημέρωση</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-external-tools-plugin">
+  <title>Πρόσθετο εξωτερικά εργαλεία</title>
+  <para>Το πρόσθετο <application>Εξωτερικά εργαλεία</application> σας επιτρέπει να εκτελέσετε εξωτερικές εντολές από το <application>pluma</application>. Μπορείτε να διοχετεύσετε κάποιο περιεχόμενο σε μια εντολή και να εκμεταλλευθείτε το αποτέλεσμά της (π.χ., <application>sed</application>) ή να εκκινήσετε μια προκαθορισμένη εντολή (π.χ., <application>make</application>).</para>
+  <para>Χρησιμοποιήστε τη <guilabel>Διαχείριση εξωτερικών εργαλείων</guilabel> για να δημιουργήσετε και επεξεργασθείτε εντολές. Για να εκτελέσετε μια εξωτερική εντολή, επιλέξτε τη από το μενού <guimenu>Εργαλεία</guimenu>.</para>
+
+  <sect3 id="pluma-external-tools-plugin-builtin">
+    <title>Ενσωματωμένες εντολές</title>
+    <para>Οι ακόλουθες εντολές παρέχονται με το πρόσθετο <application>Εξωτερικά εργαλεία</application>:</para>
+    <variablelist>
+      <varlistentry><term>Κατασκευή (Build)</term>
+        <listitem>
+          <para>Εκτελεί τη <application>make</application> στον κατάλογο του τρέχοντος εγγράφου.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Περιεχόμενα καταλόγου</term>
+        <listitem>
+          <para>Εμφανίζει τα περιεχόμενα του καταλόγου του τρέχοντος εγγράφου σε ένα νέο έγγραφο.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Μεταβλητές περιβάλλοντος</term>
+        <listitem>
+          <para>Εμφανίζει τις μεταβλητές περιβάλλοντος στο κάτω πλαίσιο.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Grep</term>
+        <listitem>
+          <para>Αναζητά για έναν όρο σε όλα τα αρχεία του καταλόγου του τρέχοντος εγγράφου, χρησιμοποιώντας ταίριασμα μορφής. Τα αποτελέσματα εμφανίζονται στο κάτω πλαίσιο.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Αφαίρεση τελικών διαστημάτων</term>
+        <listitem>
+          <para>Αφαιρεί όλα τα διαστήματα από το τέλος των γραμμών στο έγγραφο.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-define">
+    <title>Ορισμός εντολής</title>
+    <para>Για να προσθέσετε μια εξωτερική , επιλέξτε <menuchoice><guimenu>Εργαλεία</guimenu><guimenuitem>Εξωτερικά εργαλεία</guimenuitem></menuchoice>.</para>
+    <para>Στο παράθυρο της <guilabel>Διαχείρισης εξωτερικών εργαλείων</guilabel>, κάντε κλικ στο <guibutton>Νέο</guibutton>. Μπορείτε να καθορίσετε τις ακόλουθες λεπτομέρειες για τη νέα εντολή:</para>
+    <variablelist>
+      <varlistentry><term>Περιγραφή</term>
+        <listitem>
+          <para>Αυτή η περιγραφή εμφανίζεται στη γραμμή κατάστασης όταν έχει επιλεγεί η εντολή μενού.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Επιταχυντής</term>
+        <listitem>
+          <para>Εισάγετε μια συντόμευση πληκτρολογίου για την εντολή.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Εντολές</term>
+        <listitem>
+          <para>Οι εντολές που θα εκτελεστούν. Πολλές μεταβλητές περιβάλλοντος του <application>pluma</application> μπορούν να χρησιμοποιηθούν για να περάσει περιεχόμενο σε αυτές τις εντολές: δείτε το <xref linkend="pluma-external-tools-plugin-variables"/>.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Είσοδος</term>
+        <listitem>
+          <para>Το περιεχόμενο που θα δοθεί στις εντολές (όπως <systemitem>stdin</systemitem>): ολόκληρο το κείμενο του τρέχοντος εγγράφου, η τρέχουσα επιλογή, γραμμή ή λέξη.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Έξοδος</term>
+        <listitem>
+          <para>Τι θα γίνει το αποτέλεσμα των εντολών: εμφάνιση στο κάτω πλαίσιο, τοποθέτηση σε νέο έγγραφο ή στο τρέχον έγγραφο, στο τέλος, στη θέση του δρομέα ή αντικατάσταση της επιλογής ή ολόκληρου του εγγράφου.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Πεδίο εφαρμογής</term>
+        <listitem>
+          <para>Καθορίζει τι είδους έγγραφα μπορούν να επηρεαστούν από την εντολή, π.χ. αν θα είναι αποθηκευμένα ή όχι, τοπικά ή απομακρυσμένα.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-edit">
+    <title>Επεξεργασία και αφαίρεση εργαλείων</title>
+    <para>Για να επεξεργασθείτε ένα εργαλείο, επιλέξτε το από τη λίστα και αλλάξτε τις ιδιότητές του.</para>
+    <para>Για να μετονομάσετε ένα εργαλείο, κάντε του ξανά κλικ στη λίστα.</para>
+    <para>Για να επαναφέρετε ένα ενσωματωμένο εργαλείο που έχετε αλλάξει, πατήστε <guilabel>Επαναφορά</guilabel>.</para>
+    <para>Για να αφαιρέσετε ένα εργαλείο, επιλέξτε το στη λίστα και πατήστε <guibutton>Αφαίρεση</guibutton>. Δεν μπορείτε να αφαιρέσετε ενσωματωμένα εργαλεία, μόνο αυτά που έχετε δημιουργήσει μόνοι σας.</para>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-variables">
+    <title>Μεταβλητές</title>
+    <para>Μπορείτε να χρησιμοποιήσετε τις ακόλουθες μεταβλητές στο πεδίο <guilabel>Εντολές</guilabel> στον ορισμό εντολών:</para>
+    <itemizedlist>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_NAME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_SCHEME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_PATH</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_DIR</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_PATH</para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>
+
+<sect2 id="pluma-file-browser-plugin">
+  <title>Πρόσθετο περιηγητή αρχείων</title>
+  <para>Το πρόσθετο <application>Πειρηγητής αρχείων</application> σας δείχνει τα αρχεία και τους φακέλους σε ένα πλευρικό πλαίσιο, επιτρέποντάς σας να ανοίξετε γρήγορα αρχεία.</para>
+  <para lang="en">To view the File Browser, choose <menuchoice><guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice> and then click on the tab showing the File Browser icon at the bottom of the side pane.</para>
+  <sect3 id="pluma-file-browser-plugin-browsing">
+    <title>Περιήγηση στα αρχεία σας</title>
+    <para>Η καρτέλα του περιηγητή αρχείων αρχικά δείχνει τους σελιδοδείκτες του διαχειριστή αρχείων σας. Για να περιηγηθείτε στα περιεχόμενα οποιουδήποτε αντικειμένου κάντε διπλό κλικ σε αυτό.</para>
+    <para>Για να εμφανίσετε ένα γονικό φάκελο, επιλέξτε από τη λίστα ή πατήστε το πάνω βέλος στη γραμμή εργαλείων του περιηγητή αρχείων.</para>
+    <para>Για να εμφανίσετε το φάκελο που περιέχει το έγγραφο στο οποίο ήδη εργάζεστε, κάντε δεξί κλικ στη λίστα αρχείων και επιλέξτε <guimenuitem>Ορισμός του ριζικού στο ενεργό έγγραφο</guimenuitem>.</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-open">
+    <title>Άνοιγμα ενός αρχείου</title>
+    <para>Για να ανοίξετε ένα αρχείο στο <application>pluma</application>, κάντε διπλό κλικ σε αυτό στη λίστα.</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-create">
+    <title>Δημιουργία αρχείων και φακέλων</title>
+    <para>Για να δημιουργήσετε ένα νέο, κενό αρχείο κειμένου στον τρέχοντα φάκελο που φαίνεται στον περιηγητή, κάντε δεξί κλικ στη λίστα αρχείων και επιλέξτε <guimenuitem>Νέο αρχείο</guimenuitem>.</para>
+    <para>Για να δημιουργήσετε ένα νέο φάκελο μέσα στον τρέχοντα φάκελο που φαίνεται στον περιηγητή, κάντε δεξί κλικ στη λίστα αρχείων και επιλέξτε <guimenuitem>Νέος φάκελος</guimenuitem>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-indent-lines-plugin">
+<title>Πρόσθετο εσοχής γραμμών</title>
+	<para>Το πρόσθετο <application>Εσοχή γραμμών</application> προσθέτει ή αφαιρεί διάστημα από την αρχή των γραμμών κειμένου.</para>
+	<para>Για να προσθέσετε ή να αφαιρέσετε εσοχή σε κείμενο, ακολουθήστε τα εξής βήματα:</para>
+  	<orderedlist>
+		  <listitem><para>Επιλέξτε τις γραμμές που θέλετε να εργασθείτε. Για να προσθέσετε ή να αφαιρέσετε την εσοχή από μία μόνο γραμμή, τοποθετήστε το δρομέα σε αυτή τη γραμμή.</para>
+		  </listitem>
+		  <listitem>
+		    <itemizedlist>
+		      <listitem>
+		        <para lang="en">To indent the text, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Indent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		      <listitem>
+		        <para lang="en">To remove the indentation, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Unindent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+	<para>Το μέγεθος του διαστήματος που θα χρησιμοποιηθεί καθώς και αν θα χρησιμοποιηθούν χαρακτήρες στηλοθέτη ή χαρακτήρες κενού διαστήματος, εξαρτάται από την επιλογή <guilabel>Στηλοθέτες</guilabel> στις ρυθμίσεις των Προτιμήσεων επεξεργαστή: δείτε το <xref linkend="pluma-prefs-editor"/>.</para>
+
+</sect2>
+
+<sect2 id="pluma-insert-date-time-plugin">
+<title>Πρόσθετο εισαγωγής ημερομηνίας/ώρας</title>
+	<para>Το πρόσθετο <application>Εισαγωγή ημερομηνίας/ώρας</application> εισάγει την τρέχουσα ημερομηνία και ώρα σε ένα έγγραφο. Για να κάνετε χρήση του προσθέτου ακολουθήστε τα εξής βήματα:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>. </para>
+        <para>Αν δεν έχετε ρυθμίσει το πρόσθετο Εισαγωγή ημερομηνίας/ώρας να εισάγει αυτόματα την ημερομηνία/ώρα χωρίς να σας ρωτά για τη μορφή, το <application>pluma</application> εμφανίζει το παράθυρο διαλόγου <guilabel>Εισαγωγή ημερομηνίας και ώρας</guilabel>. Επιλέξτε την κατάλληλη μορφοποίηση ημερομηνίας/ώρας από τη λίστα. Κάντε κλικ στο κουμπί <guibutton>Εισαγωγή</guibutton> για κλείσετε το παράθυρο διαλόγου <guilabel>Εισαγωγή ημερομηνίας και ώρας</guilabel>. Το <application>pluma</application> εισάγει την ημερομηνία/ώρα στη θέση του δρομέα στο τρέχον αρχείο.</para>
+				<para>Αν έχετε ρυθμίσει το <application>pluma</application> να χρησιμοποιεί μια συγκεκριμένη μορφοποίηση ημερομηνίας/ώρας, το παράθυρο διαλόγου <guilabel>Εισαγωγή ημερομηνίας και ώρας</guilabel> δεν εμφανίζεται. Το <application>pluma</application> εισάγει αυτόματα την ημερομηνία/ώρα στη θέση του δρομέα στο τρέχον αρχείο.</para>
+		  </listitem>
+		</orderedlist>
+
+<sect3 id="pluma-date-time-configure">
+<title>Ρύθμιση του πρόσθετου Εισαγωγή ημερομηνίας/ώρας</title>
+<para>Για να ρυθμίσετε το πρόσθετο Εισαγωγή ημερομηνίας/ώρας, κάντε τα ακόλουθα:</para>
+		<orderedlist>
+		  <listitem> <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>.
+                    </para>
+		  </listitem>
+		  <listitem> <para>Επιλέξτε την καρτέλα <guilabel>Πρόσθετες λειτουργίες</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Επιλέξτε το πρόσθετο <guilabel>Εισαγωγή ημερομηνίας/ώρας</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Κάντε κλικ στο <guibutton>Προσαρμογή προσθέτου</guibutton> για να εμφανίσετε το παράθυρο διαλόγου <guilabel>Ρύθμιση προσθέτου Εισαγωγή ημερομηνίας/ώρας</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Επιλέξτε ένα από τα ακόλουθα:</para>
+		      <itemizedlist>
+		      <listitem><para>Για να ορίσετε τη μορφή ημερομηνίας/ώρας κάθε φορά που εισάγετε την ημερομηνία/ώρα, επιλέξτε το <guilabel>Ερώτημα για μορφή</guilabel>.</para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same <application>pluma</application>-provided date/time format each time you insert the date/time, select the <guilabel>Use the selected format</guilabel> option, then select the appropriate format from the list. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same customized date/time format each time you insert the date/time, select the <guilabel>Use custom format</guilabel> option, then enter the appropriate format in the text box. For more information about how to specify a custom format, see <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem> <para>Πατήστε <guibutton>OK</guibutton> για να κλείσετε το παράθυρο διαλόγου <guilabel>Προσαρμογή προσθέτου Εισαγωγή ημερομηνίας/ώρας</guilabel>.</para>
+		  </listitem>
+		  <listitem> <para>Για να κλείσετε το παράθυρο διαλόγου <guilabel>Προτιμήσεις</guilabel>, κάντε κλικ στο <guibutton>Κλείσιμο</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect3>
+</sect2>
+
+<sect2 id="pluma-modelines-plugin">
+  <title>Πρόσθετο Modelines</title>
+    <para>Το πρόσθετο <application>Modelines</application> σας επιτρέπει να ορίσετε προτιμήσεις για συγκεκριμένα έγγραφα. Μια <firstterm>modeline</firstterm> είναι μια γραμμή κειμένου στην αρχή ή το τέλος του εγγράφου με ρυθμίσεις που αναγνωρίζει το <application>pluma</application>.</para>
+    <para>Οι προτιμήσεις που ορίζονται με τις modelines υπερισχύουν αυτών που καθορίζονται στο παράθυρο διαλόγου προτιμήσεις.</para>
+    <para>Μπορείτε να ορίσετε τις ακόλουθες προτιμήσεις με modelines:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Πλάτος στηλοθέτη</para>
+      </listitem>
+      <listitem>
+        <para>Πλάτος εσοχής</para>
+      </listitem>
+      <listitem>
+        <para>Εισαγωγή κενών διαστημάτων αντί στηλοθετών</para>
+      </listitem>
+      <listitem>
+        <para>Αναδίπλωση κειμένου</para>
+      </listitem>
+      <listitem>
+        <para>Πλάτος δεξιού περιθωρίου</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Το πρόσθετο <application>Modelines</application> υποστηρίζει ένα υποσύνολο των επιλογών που χρησιμοποιούνται από άλλους επεξεργαστές κειμένου, τους <application>Emacs</application>, <application>Kate</application> και <application>Vim</application>.</para>
+
+    <sect3 id="pluma-modelines-plugin-emacs">
+      <title>Emacs Modelines</title>
+      <para>Οι πρώτες δύο γραμμές ενός κειμένου σαρώνονται για <application>Emacs</application> modelines.</para>
+      <para>Υποστηρίζονται οι επιλογές του <application>Emacs</application> για πλάτος στηλοθέτη, εσοχή, εσοχή στηλοθετών και αυτόματη αναδίπλωση. Για περισσότερες πληροφορίες δείτε το <ulink type="http" url="http://www.delorie.com/gnu/docs/emacs/emacs_486.html">GNU Emacs Manual</ulink>.</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-kate">
+      <title>Kate Modelines</title>
+      <para>Η πρώτη και οι τελευταίες δέκα γραμμές ενός κειμένου σαρώνονται για <application>Kate</application> modelines.</para>
+      <para>Υποστηρίζονται οι επιλογές του <application>Kate</application> για πλάτος στηλοθέτη, εσοχή με διαστήματα, αναδίπλωση λέξης και αναδίπλωση λέξης σε στήλη. Για περισσότερες πληροφορίες δείτε το <ulink type="http" url="http://www.kate-editor.org/article/katepart_modelines">Kate website</ulink>.</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-vim">
+      <title>Vim Modelines</title>
+      <para>Η πρώτη και οι τελευταίες τρεις γραμμές ενός κειμένου σαρώνονται για <application>Vim</application> modelines.</para>
+      <para>Υποστηρίζονται οι επιλογές του <application>vim</application> για et, expandtab, ts, tabstop, sw, shiftwidth, wrap, και textwidth. Για περισσότερες πληροφορίες δείτε το <ulink type="http" url="http://vimdoc.sourceforge.net/htmldoc/options.html#modeline">Vim website</ulink>.</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-python-console-plugin">
+  <title>Πρόσθετο κονσόλας Python</title>
+  <para>Το πρόσθετο <application>Κονσόλα Python</application> σας επιτρέπει να εκτελείτε εντολές της γλώσσας προγραμματισμού Python από το <application>pluma</application>. Η ενεργοποίηση του προσθέτου προσθέτει μια καρτέλα στο κάτω πλαίσιο. Αυτή δείχνει τα πρόσφατα αποτελέσματα και ένα πεδίο γραμμής εντολών.</para>
+  <caution><para>Οι εντολές που εισάγονται στην κονσόλα της python δεν ελέγχονται πριν εκτελεσθούν. Επομένως, είναι δυνατόν να "κρεμάσει" το <application>pluma</application>, π.χ. εισάγοντας έναν ατέρμονα βρόγχο.</para></caution>
+</sect2>
+
+<sect2 id="pluma-snippets-plugin">
+<title>Πρόσθετο αποσπασμάτων κειμένου (snippets)</title>
+  <para>Το πρόσθετο <application>Snippets</application> σας επιτρέπει να αποθηκεύσετε συχνά χρησιμοποιούμενα τμήματα κειμένου, αποκαλούμενα <firstterm>αποσπάσματα (snippets)</firstterm> και να εισάγετε γρήγορα σε ένα έγγραφο.</para>
+    <para>Τα αποσπάσματα (snippets) είναι εξειδικευμένα για το συντακτικό της γλώσσας του τρέχοντος εγγράφου. Π.χ. όταν εργάζεσται με ένα έγγραφο σε HTML μπορείτε να επιλέξετε από μια λίστα snippets που χρησιμοποιούνται στην HTML. Επιπλέον, μερικά αποσπάσματα έχουν καθολική ισχύ και είναι διαθέσιμα σε όλα τα έγγραφα.</para>
+    <para>Με το <application>pluma</application>, εγκαθιστάται και ένας αριθμός ενσωματωμένων αποσπασμάτων, τα οποία μπορούν να τροποποιηθούν.</para>
+
+  <sect3 id="pluma-snippets-plugin-insert">
+    <title>Εισαγωγή Αποσπασμάτων (Snippets)</title>
+    <para>Για να εισάγετε ένα απόσπασμα (snippet) σε ένα έγγραφο, πληκτρολογείστε το <firstterm>έναυσμα tab</firstterm> του και πατήστε <keycap>Tab</keycap>. Συνήθως αυτό είναι τα πρώτα γράμματα του αποσπάσματος ή κάτι άλλο σύντομο και εύκολο στην απομνημόνευση.</para>
+    <para>Εναλλακτικά, πατήστε <keycombo><keycap>Ctrl</keycap><keycap>Space</keycap></keycombo> για δείτε μια λίστα αποσπασμάτων που μπορείτε να εισάγετε.</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-add">
+    <title>Προσθήκη αποσπασμάτων</title>
+    <para>Για να δημιουργήσετε ένα καινούριο απόσπασμα, κάντε τα ακόλουθα:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Εργαλεία</guimenu><guimenuitem>Διαχείριση Αποσπασμάτων</guimenuitem></menuchoice>.</para>
+        </listitem>
+        <listitem>
+          <para>Η λίστα αποσπασμάτων είναι ομαδοποιημένη κατά γλώσσα. Επιλέξτε τη γλώσσα στην οποία επιθυμείτε να προσθέσετε ένα απόσπασμα ή ένα απόσπασμα σε αυτή την ομάδα. Για να προσθέσετε ένα απόσπασμα σε όλες τις γλώσσες, επιλέξτε Καθολικό στην κορυφή της λίστας. Η σύνταξη του εγγράφου στο οποίο εργάζεστε εμφανίζεται από προεπιλογή.</para>
+        </listitem>
+        <listitem>
+          <para>Κάντε κλικ στο <guibutton>Νέο</guibutton>. Ένα νέο απόσπασμα εμφανίζεται στη λίστα.</para>
+        </listitem>
+        <listitem>
+          <para>Εισάγετε τις ακόλουθες πληροφορίες για το νέο απόσπασμα:</para>
+          <variablelist>
+            <varlistentry><term>Όνομα</term>
+              <listitem>
+                <para>Εισάγετε ένα όνομα για το απόσπασμα στο πεδίο κειμένου εντός της λίστας. Το όνομα του αποσπάσματος εξυπηρετεί μόνο ως υπενθύμιση του σκοπού του. Μπορείτε να αλλάξετε το όνομα ενός αποσπάσματος που δημιουργήσατε κάνοντας κλικ σε αυτό στη λίστα.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Κείμενο αποσπάσματος</term>
+              <listitem>
+                <para>Εισάγετε το κείμενο του αποσπάσματος στο πεδίο κειμένου <guilabel>Επεξεργασία αποσπάσματος</guilabel>. Για ειδικούς κώδικες που μπορείτε να χρησιμοποιήσετε, δείτε το <xref linkend="pluma-snippets-plugin-syntax"/>.</para>
+                <tip><para>Μπορείτε να επιστρέψετε στο παράθυρο του εγγράφου για να αντιγράψετε κείμενο χωρίς να κλείσετε το παράθυρο της <guilabel>Διαχείρισης αποσπασμάτων</guilabel>.</para></tip>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Έναυσμα Tab (Tab Trigger)</term>
+              <listitem>
+                <para>Εισάγετε το έναυσμα για το πλήκτρο tab του αποσπάσματος. Αυτό είναι το κείμενο που πληκτρολογείτε πριν πατήσετε το πλήκτρο <keycap>Tab</keycap> για να εισάγετε το απόσπασμα.</para>
+                <para>Η ετικέτα πρέπει να είναι είτε μία μόνο λέξη αποτελούμενη μόνο από γράμματα ή οποιοσδήποτε ένας χαρακτήρας. Το <guilabel>Έναυσμα Tab</guilabel> θα επισημανθεί με κόκκινο αν εισαχθεί μη επιτρεπόμενο έναυσμα.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>Πλήκτρο συντόμευσης</term>
+              <listitem>
+                <para>Δώστε ένα πλήκτρο συντόμευσης για την εισαγωγή του αποσπάσματος.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+        </listitem>
+      </orderedlist>
+  </sect3>
+  <sect3 id="pluma-snippets-plugin-edit">
+    <title>Επεξεργασία και αφαίρεση αποσπασμάτων</title>
+    <para>Για να επεξεργασθείτε ένα απόσπασμα, επιλέξτε το στη λίστα και κάντε αλλαγές στο κείμενό του και στις ιδιότητες ενεργοποίησής του.</para>
+    <para>Για να μετονομάσετε ένα απόσπασμα, κάντε ξανά κλικ σε αυτό στη λίστα.</para>
+    <para>Για να αποκαταστήσετε ένα ενσωματωμένο απόσπασμα στο οποίο έχετε κάνει αλλαγές, πατήστε <guilabel>Επαναφορά</guilabel>.</para>
+    <para>Για να αφαιρέσετε ένα απόσπασμα, επιλέξτε το από τη λίστα και πατήστε <guibutton>Αφαίρεση</guibutton>. Δεν μπορείτε να αφαιρέσετε τα ενσωματωμένα αποσπάσματα, μόνο αυτά που έχετε δημιουργήσει οι ίδιοι.</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-syntax">
+    <title>Υποκαταστάσεις αποσπασμάτων</title>
+    <para>Επιπλέον της εισαγωγής αποθηκευμένου κειμένου, ένα απόσπασμα μπορεί να περιέχει προσαρμόσιμο κείμενο ή σημειωμένα διαστήματα όπου μπορείτε να προσθέσετε κείμενο μόλις το απόσπασμα εισαχθεί στο έγγραφό σας.</para>
+
+    <para/>
+
+    <para>Μπορείτε να χρησιμοποιήσετε τους ακόλουθες κώδικες κράτησης θέσης στο κείμενο των αποσπασμάτων σας:</para>
+      <variablelist>
+        <varlistentry><term>Θέσεις στηλοθέτη (Tab)</term>
+          <listitem>
+            <para><literal>$<replaceable>n</replaceable></literal>, καθορίζει μια θέση στηλοθέτη, όπου <literal>n</literal>  οποιοσδήποτε αριθμός από το 1 και άνω.</para>
+            <para><literal>${<replaceable>n</replaceable>:<replaceable>default</replaceable>}</literal>, καθορίζει μια θέση στηλοθέτη με προκαθορισμένη τιμή.</para>
+            <para>Μια θέση κράτησης στηλοθέτη υποδεικνύει ένα σημείο στο κείμενο του αποσπάσματος όπου μπορείτε να εισάγετε επιπλέον κείμενο μετά την εισαγωγή του αποσπάσματος.</para>
+            <para>Για να χρησιμοποιήσετε θέσεις κράτησης στηλοθετών, εισάγετε το απόσπασμα κανονικά. Πληκτρολογήστε το κείμενο και πατήστε το <keycap>Tab</keycap> για να μεταβείτε στην επόμενη θέση στηλοθέτη. Ο αριθμός στον κώδικα του στηλοθέτη καθορίζει τη σειρά μετάβασης σε κάθε θέση στο κείμενο.</para>
+            <para>Πατήστε <keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo> για να επιστρέψετε στην προηγούμενη θέση. Το πάτημα του <keycap>Tab</keycap> όταν δεν υπάρχουν άλλες θέσεις μετακινεί το δρομέα στο τέλος του κειμένου του αποσπάσματος ή στη θέση τέλους αν υπάρχει.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Επαναλαμβανόμενες θέσεις κράτησης</term>
+          <listitem>
+            <para>Μια επαναλαμβανόμενη κράτηση στηλοθέτη θα αντικατοπτρίζει τη θέση που έχει ήδη καθοριστεί. Αυτό σας επιτρέπει να πληκτρολογείτε μόνο μια φορά κείμενο που επιθυμείτε να εμφανίζεται πολλές φορές στο απόσπασμα.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Θέση κράτησης τέλους</term>
+          <listitem>
+            <para><literal>$0</literal>, καθορίζει τη θέση κράτησης τέλους. Αυτό σας επιτρέπει να τελειώνετε την εργασία σας με το απόσπασμα με το δρομέα σε σημείο άλλο από το τέλος του κειμένου του αποσπάσματος.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Μεταβλητές περιβάλλοντος</term>
+          <listitem>
+            <para>Μεταβλητές περιβάλλοντος όπως <literal>$PATH</literal> και <literal>$HOME</literal> αντικαθίστανται στο κείμενο του αποσπάσματος. Οι ακόλουθες μεταβλητές, ειδικές για το <application>pluma</application>, μπορούν επίσης να χρησιμοποιηθούν:</para>
+            <variablelist>
+              <varlistentry><term>$PLUMA_SELECTED_TEXT</term>
+                <listitem>
+                  <para>Η τρέχουσα επιλογή κειμένου.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_FILENAME</term>
+                <listitem>
+                  <para>Το πλήρες όνομα αρχείου του εγγράφου ή μια κενή αλληλουχία αν το έγγραφο δεν έχει αποθηκευθεί ακόμα.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_BASENAME</term>
+                <listitem>
+                  <para>Το βασικό όνομα του ονόματος αρχείου του εγγράφου ή μια κενή αλληλουχία αν το έγγραφο δεν έχει αποθηκευθεί ακόμα.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_CURRENT_WORD</term>
+                <listitem>
+                  <para>Η λέξη στη θέση του δρομέα στο έγγραφο. Όταν αυτή η μεταβλητή χρησιμοποιηθεί, η τρέχουσα λέξη θα αντικατασταθεί από το κείμενο του αποσπάσματος (snippet).</para>
+                </listitem>
+              </varlistentry>
+
+            </variablelist>
+
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Θέσης κράτησης κελύφους</term>
+          <listitem>
+            <para><literal>$(<replaceable>cmd</replaceable>)</literal>, αντικαθίσταται από το αποτέλεσμα της εκτέλεσης της <replaceable>cmd</replaceable> σε ένα κέλυφος.</para>
+            <para><literal>$(<replaceable>n</replaceable>:<replaceable>cmd</replaceable>)</literal>, σας επιτρέπει να δώσετε σε αυτή τη θέση κράτησης μια αναφορά, όπου το <replaceable>n</replaceable> είναι οποιοσδήποτε αριθμός από το 1 και άνω. Χρησιμοποιήστε το <literal>$<replaceable>n</replaceable></literal> για να χρησιμοποιήσετε το αποτέλεσμα από μια θέση κράτησης κελύφους ως είσοδο σε μια άλλη.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Θέσεις κράτησης της Python</term>
+          <listitem>
+            <para><literal>$&lt;<replaceable>cmd</replaceable>&gt;</literal>, αντικαθίσταται από το αποτέλεσμα της αξιολόγησης της <replaceable>cmd</replaceable> στο μεταφραστή της python.</para>
+            <para><literal>$&lt;<replaceable>a</replaceable>:<replaceable>cmd</replaceable>&gt;</literal>, καθορίζει μια άλλη θέση κράτησης της python ως εξάρτηση, όπου το <replaceable>a</replaceable> ορίζει τη σειρά του στο απόσπασμα. Αυτό σας επιτρέπει να χρησιμοποιείτε λειτουργίες της python που ορίζονται σε άλλο απόσπασμα. Για να ορίσετε πολλές εξαρτήσεις, χωρίστε τους αριθμούς με κόμματα, όπως: <literal>$&lt;<replaceable>a</replaceable>,<replaceable>b</replaceable>:<replaceable>cmd</replaceable>&gt;</literal></para>
+            <para>Για να χρησιμοποιήσετε μια μεταβλητή σε όλα τα άλλα αποσπάσματα της python, δηλώστε τη ως <literal>καθολική</literal>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+  </sect3>
+
+</sect2>
+
+<sect2 id="pluma-sort-plugin">
+<title>Πρόσθετο Ταξινόμηση</title>
+	<para>Το πρόσθετο <application>Ταξινόμηση</application> διευθετεί τις επιλεγμένες γραμμές κειμένου σε αλφαβητική σειρά.</para>
+		  <caution><para lang="en">You cannot undo the Sort operation, so you should save the file before performing the sort. To revert to the saved version of the file after the sort operation, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Revert</guimenuitem> </menuchoice>.
+				</para>
+		  </caution>
+              <para>Για να χρησιμοποιήσετε το πρόσθετο Ταξινόμηση, κάντε τα ακόλουθα:</para>
+		<orderedlist>
+		  <listitem>
+		    <para>Επιλέξτε τις γραμμές κειμένου που θέλετε να ταξινομήσετε.</para>
+		  </listitem>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Sort</guimenuitem> </menuchoice>. The <guilabel>Sort</guilabel> dialog opens.
+				</para>
+		  </listitem>
+		  <listitem><para>Επιλέξτε τους ακόλουθους τρόπους ταξινόμησης:</para>
+		    <itemizedlist>
+    		  <listitem>
+    		    <para>Για να ταξινομήσετε το κείμενο με ανάστροφη σειρά, επιλέξτε <guilabel>Ανάστροφη σειρά</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Για να διαγράψετε διπλές γραμμές, επιλέξτε <guilabel>Αφαίρεση διπλών γραμμών</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Για αγνοήσετε τα πεζά - κεφαλαία, επιλέξτε <guilabel>Να αγνοούνται πεζά - κεφαλαία</guilabel>.</para>
+    		  </listitem>
+    		  <listitem><para>Για να αγνοεί η ταξινόμηση τον πρώτο χαρακτήρα στην αρχή των γραμμών, ορίστε τον πρώτο χαρακτήρα που θα χρησιμοποιηθεί για την ταξινόμηση στο αριθμητικό πεδίο <guilabel>Έναρξη στη στήλη</guilabel>.</para>
+    		  </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>Για να εκτελεστεί η ταξινόμηση, κάντε κλικ στο <guibutton>Ταξινόμηση</guibutton>.</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-spell-checker-plugin">
+<title>Πρόσθετο ελέγχου ορθογραφίας</title>
+	<para>Το πρόσθετο <application>Έλεγχος ορθογραφίας</application> ελέγχει την ορθογραφία στο επιλεγμένο κείμενο. Μπορείτε να διαμορφώσετε το <application>pluma</application> να ελέγχει αυτόματα την ορθογραφία ή μπορείτε να ελέγξετε την ορθογραφία χειροκίνητα, στην επιλεγμένη γλώσσα. Η ρύθμιση γλώσσας και οι ιδιότητες του αυτόματου ορθογραφικού ελέγχου ισχύουν σε έγγραφο ξεχωριστά. Για να χρησιμοποιήσετε το πρόσθετο Ορθογραφικός έλεγχος, κάντε τα ακόλουθα:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Set Language</guimenuitem> </menuchoice> to display the <guilabel>Set language</guilabel> dialog. Select the appropriate language from the list. Click <guibutton>OK</guibutton> to close the <guilabel>Set language</guilabel> dialog.
+				</para>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling automatically, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice>. To unset the automatic spell check, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice> again. When automatic spell checking is set, an icon is displayed beside the <guimenuitem>Autocheck Spelling</guimenuitem> menu item. Automatic spell checking is unset by default, each time <application>pluma</application> starts.</para>
+                            <para>Πιθανά ορθογραφικά λάθη επισημαίνονται με διαφορετικό χρώμα και υπογραμμίζονται. Κάντε δεξί κλικ σε ένα πιθανό ορθογραφικό λάθος και επιλέξτε <guimenu>Προτάσεις ορθογραφίας</guimenu> από το αναδυόμενο μενού:</para>
+		    <itemizedlist>
+		      <listitem><para>Για να αντικαταστήσετε το πιθανό λάθος με μια λέξη της λίστας, επιλέξτε την από το αναδυόμενο μενού.</para>
+		      </listitem>
+		      <listitem><para lang="en">To add the unknown spelling to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Add</guimenuitem> </menuchoice>.
+				</para>
+		      </listitem>
+		      <listitem><para lang="en">To ignore all occurrences of the unknown spelling, so that they are no longer flagged as unknown but are not added to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Ignore All</guimenuitem> </menuchoice>. The unknown word is ignored in the current <application>pluma</application> session only.
+				</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling manually, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Check Spelling</guimenuitem> </menuchoice>.
+				</para>
+				<para>Αν δεν υπάρχουν ορθογραφικά λάθη ένα παράθυρο διαλόγου <guilabel>Πληροφορίες</guilabel> εμφανίζει ένα μήνυμα που δηλώνει ότι το έγγραφο δεν περιέχει λέξεις με λάθη. Κάντε κλικ στο <guibutton>OK</guibutton> για να κλείσετε το παράθυρο διαλόγου <guilabel>Πληροφορίες</guilabel>.</para>
+				<para>Αν υπάρχουν ορθογραφικά λάθη, εμφανίζεται το παράθυρο διαλόγου <guilabel>Έλεγχος ορθογραφίας</guilabel>:</para>
+		    <itemizedlist>
+		      <listitem><para>Στην κορυφή του παραθύρου διαλόγου εμφανίζεται το <guilabel>Ορθογραφικό λάθος</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Μια προτεινόμενη ορθογραφία εμφανίζεται στο πεδίο κειμένου <guilabel>Αλλαγή σε</guilabel>. Μπορείτε να αντικαταστήσετε αυτή με μια άλλη γνωστή ορθογραφία επιλέγοντας από τη λίστα <guilabel>Προτάσεις</guilabel> ή μπορείτε να εισάγετε κείμενο απευθείας στο πεδίο κειμένου <guilabel>Αλλαγή σε</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Για να ελέγξετε την ορθογραφία του κειμένου στο πεδίο κειμένου <guilabel>Αλλαγή σε</guilabel>, κάντε κλικ στο <guibutton>Έλεγχος λέξης</guibutton>. Αν η λέξη είναι γνωστή, η λίστα <guilabel>Προτάσεις</guilabel> αντικαθίσταται με το κείμενο <literal>(σωστή ορθογραφία)</literal>. Αν η λέξη είναι άγνωστη εμφανίζονται νέες καταχωρήσεις στη λίστα <guilabel>Προτάσεις</guilabel>.</para>
+		      </listitem>
+		      <listitem><para>Για να μη ληφθεί υπόψη η τρέχουσα περίπτωση εμφάνισης της άγνωστης λέξης, κάντε κλικ στο <guibutton>Παράβλεψη</guibutton>. Για να παραβλεφθούν όλες οι περιπτώσεις εμφάνισης της άγνωστης λέξης, κάντε κλικ στο <guibutton>Παράβλεψη όλων</guibutton>. Η άγνωστη λέξη παραβλέπεται για την τρέχουσα μόνο συνεδρία του <application>pluma</application>.</para>
+		      </listitem>
+		      <listitem><para>Για να αλλάξετε την τρέχουσα περίπτωση εμφάνιση της άγνωστης λέξης στο κείμενο στο πεδίο κειμένου <guilabel>Αλλαγή σε</guilabel>, κάντε κλικ στο <guibutton>Αλλαγή</guibutton>. Για να αλλάξετε όλες τις περιπτώσεις εμφάνισης της άγνωστης λέξης στο κείμενο στο πεδίο κειμένου <guilabel>Αλλαγή σε</guilabel>, κάντε κλικ στο <guibutton>Αλλαγή όλων</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Για να προσθέσετε την άγνωστη λέξη στο προσωπικό σας λεξικό, κάντε κλικ στο <guibutton>Προσθήκη λέξης</guibutton>.</para>
+		      </listitem>
+		      <listitem><para>Για να κλείσετε το παράθυρο διαλόγου <guilabel>Έλεγχος ορθογραφίας</guilabel>, κάντε κλικ στο <guibutton>Κλείσιμο</guibutton>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-tag-list-plugin">
+<title>Πρόσθετο Λίστα ετικετών (Tags)</title>
+	<para>Το πρόσθετο <application>Λίστα ετικετών</application> σας επιτρέπει να εισάγετε κοινές ετικέτες από μια λίστα στο πλευρικό πλαίσιο.</para>
+  <para>Για να χρησιμοποιήσετε το πρόσθετο Λίστα ετικετών, κάντε τα ακόλουθα:</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice>.
+				</para>
+		  </listitem>
+		  <listitem>
+		    <para>Ως προεπιλογή, η πλευρική εργαλειοθήκη εμφανίζει μια καρτέλα που περιέχει μια λίστα των ανοιχτών εγγράφων. Κάντε κλικ στην καρτέλα που εμφανίζει ένα + στο τέλος της πλευρικής εργαλειοθήκης για εμφανίσετε την καρτέλα με τη λίστα ετικετών.</para>
+		  </listitem>
+		  <listitem><para>Επιλέξτε την κατάλληλη κατηγορία ετικετών από την αναδυόμενη λίστα. Π.χ. <guilabel>Ετικέτες HTML</guilabel>.</para>
+		  </listitem>
+		  <listitem><para>Κυλίστε τη λίστα ετικετών μέχρι να βρείτε την απαιτούμενη ετικέτα.</para>
+		  </listitem>
+		  <listitem><para>Για εισάγετε μια ετικέτα στη θέση του δρομέα στο τρέχον αρχείο, κάντε διπλό κλικ στην ετικέτα στη λίστα ετικετών. Μπορείτε επίσης να εισάγετε μια ετικέτα ως εξής:</para>
+		    <itemizedlist>
+		      <listitem><para>Για να εισάγετε μια ετικέτα στο τρέχον αρχείο και να αλλάξετε την εστίαση από την πλευρική εργαλειοθήκη στην περιοχή απεικόνισης, πατήστε <keycap>Return</keycap>.</para>
+		      </listitem>
+		      <listitem><para>Για να εισάγετε μια ετικέτα στο τρέχον αρχείο και να παραμείνετε στο παράθυρο <guilabel>Πρόσθετο Λίστα ετικετών</guilabel>, πατήστε <keycombo><keycap>Shift</keycap><keycap>Return</keycap></keycombo>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

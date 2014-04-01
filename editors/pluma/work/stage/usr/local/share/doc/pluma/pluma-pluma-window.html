@@ -1,0 +1,1094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>pluma Reference Manual: PlumaWindow</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="pluma Reference Manual">
+<link rel="up" href="ch01.html" title="pluma">
+<link rel="prev" href="pluma-pluma-view.html" title="PlumaView">
+<link rel="next" href="pluma-pluma-convert.html" title="pluma-convert">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#pluma-pluma-window.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#pluma-pluma-window.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces"> <span class="dim">|</span> 
+                  <a href="#pluma-pluma-window.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties"> <span class="dim">|</span> 
+                  <a href="#pluma-pluma-window.properties" class="shortcut">Properties</a></span><span id="nav_signals"> <span class="dim">|</span> 
+                  <a href="#pluma-pluma-window.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="pluma-pluma-view.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="pluma-pluma-convert.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="pluma-pluma-window"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="pluma-pluma-window.top_of_page"></a>PlumaWindow</span></h2>
+<p>PlumaWindow</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="pluma-pluma-window.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-create-tab" title="pluma_window_create_tab ()">pluma_window_create_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-create-tab-from-uri" title="pluma_window_create_tab_from_uri ()">pluma_window_create_tab_from_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-close-tab" title="pluma_window_close_tab ()">pluma_window_close_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-close-all-tabs" title="pluma_window_close_all_tabs ()">pluma_window_close_all_tabs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-close-tabs" title="pluma_window_close_tabs ()">pluma_window_close_tabs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-active-tab" title="pluma_window_get_active_tab ()">pluma_window_get_active_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-set-active-tab" title="pluma_window_set_active_tab ()">pluma_window_set_active_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-view.html#PlumaView"><span class="returnvalue">PlumaView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-active-view" title="pluma_window_get_active_view ()">pluma_window_get_active_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-document.html#PlumaDocument"><span class="returnvalue">PlumaDocument</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-active-document" title="pluma_window_get_active_document ()">pluma_window_get_active_document</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-documents" title="pluma_window_get_documents ()">pluma_window_get_documents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-unsaved-documents" title="pluma_window_get_unsaved_documents ()">pluma_window_get_unsaved_documents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-views" title="pluma_window_get_views ()">pluma_window_get_views</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gtk3/GtkWindowGroup.html"><span class="returnvalue">GtkWindowGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-group" title="pluma_window_get_group ()">pluma_window_get_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-panel.html#PlumaPanel"><span class="returnvalue">PlumaPanel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-side-panel" title="pluma_window_get_side_panel ()">pluma_window_get_side_panel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-panel.html#PlumaPanel"><span class="returnvalue">PlumaPanel</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-bottom-panel" title="pluma_window_get_bottom_panel ()">pluma_window_get_bottom_panel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-statusbar" title="pluma_window_get_statusbar ()">pluma_window_get_statusbar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gtk3/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-ui-manager" title="pluma_window_get_ui_manager ()">pluma_window_get_ui_manager</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-window.html#PlumaWindowState" title="enum PlumaWindowState"><span class="returnvalue">PlumaWindowState</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-state" title="pluma_window_get_state ()">pluma_window_get_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-tab-from-location" title="pluma_window_get_tab_from_location ()">pluma_window_get_tab_from_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-tab-from-uri" title="pluma_window_get_tab_from_uri ()">pluma_window_get_tab_from_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="PlumaMessageBus.html" title="PlumaMessageBus"><span class="returnvalue">PlumaMessageBus</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="pluma-pluma-window.html#pluma-window-get-message-bus" title="pluma_window_get_message_bus ()">pluma_window_get_message_bus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a class="link" href="pluma-pluma-window.html#PlumaWindowState" title="enum PlumaWindowState"><span class="type">PlumaWindowState</span></a></td>
+<td class="property_name"><a class="link" href="pluma-pluma-window.html#PlumaWindow--state" title="The “state” property">state</a></td>
+<td class="property_flags">Read</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="pluma-pluma-window.html#PlumaWindow-active-tab-changed" title="The “active-tab-changed” signal">active-tab-changed</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="pluma-pluma-window.html#PlumaWindow-active-tab-state-changed" title="The “active-tab-state-changed” signal">active-tab-state-changed</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="pluma-pluma-window.html#PlumaWindow-tab-added" title="The “tab-added” signal">tab-added</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="pluma-pluma-window.html#PlumaWindow-tab-removed" title="The “tab-removed” signal">tab-removed</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="pluma-pluma-window.html#PlumaWindow-tabs-reordered" title="The “tabs-reordered” signal">tabs-reordered</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="PlumaWindow"></a><div class="refsect1">
+<a name="pluma-pluma-window.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="pluma-pluma-window.html#PlumaWindowState" title="enum PlumaWindowState">PlumaWindowState</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="pluma-pluma-window.html#PlumaWindowPrivate" title="PlumaWindowPrivate">PlumaWindowPrivate</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="pluma-pluma-window.html#PlumaWindow-struct" title="struct PlumaWindow">PlumaWindow</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkObject.html">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkWidget.html">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkContainer.html">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkBin.html">GtkBin</a>
+                        <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkWindow.html">GtkWindow</a>
+                            <span class="lineart">╰──</span> PlumaWindow
+</pre>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+PlumaWindow implements
+ AtkImplementorIface and  <a href="http://library.gnome.org/devel/gtk3/GtkBuildable.html">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="pluma-window-create-tab"></a><h3>pluma_window_create_tab ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+pluma_window_create_tab (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>,
+                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> jump_to</code></em>);</pre>
+<p>Creates a new <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> and adds the new tab to the <a class="link" href="pluma-pluma-notebook.html#PlumaNotebook"><span class="type">PlumaNotebook</span></a>.
+In case <em class="parameter"><code>jump_to</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the <a class="link" href="pluma-pluma-notebook.html#PlumaNotebook"><span class="type">PlumaNotebook</span></a> switches to that new <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>jump_to</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to set the new <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> as active</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.2.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-create-tab-from-uri"></a><h3>pluma_window_create_tab_from_uri ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+pluma_window_create_tab_from_uri (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>,
+                                  <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                                  <em class="parameter"><code>const <a class="link" href="pluma-pluma-encodings.html#PlumaEncoding"><span class="type">PlumaEncoding</span></a> *encoding</code></em>,
+                                  <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line_pos</code></em>,
+                                  <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create</code></em>,
+                                  <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> jump_to</code></em>);</pre>
+<p>Creates a new <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> loading the document specified by <em class="parameter"><code>uri</code></em>
+.
+In case <em class="parameter"><code>jump_to</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the <a class="link" href="pluma-pluma-notebook.html#PlumaNotebook"><span class="type">PlumaNotebook</span></a> swithes to that new <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a>.
+Whether <em class="parameter"><code>create</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, creates a new empty document if location does 
+not refer to an existing file</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the uri of the document</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>encoding</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-encodings.html#PlumaEncoding"><span class="type">PlumaEncoding</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line_pos</p></td>
+<td class="parameter_description"><p>the line position to visualize</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>create</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to create a new document in case <em class="parameter"><code>uri</code></em>
+does exist</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>jump_to</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to set the new <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> as active</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.3.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-close-tab"></a><h3>pluma_window_close_tab ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_window_close_tab (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>,
+                        <em class="parameter"><code><a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> *tab</code></em>);</pre>
+<p>Closes the <em class="parameter"><code>tab</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tab</p></td>
+<td class="parameter_description"><p>the <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> to close</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-close-all-tabs"></a><h3>pluma_window_close_all_tabs ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_window_close_all_tabs (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Closes all opened tabs.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-close-tabs"></a><h3>pluma_window_close_tabs ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_window_close_tabs (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>,
+                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *tabs</code></em>);</pre>
+<p>Closes all tabs specified by <em class="parameter"><code>tabs</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tabs</p></td>
+<td class="parameter_description"><p>a list of <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-active-tab"></a><h3>pluma_window_get_active_tab ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+pluma_window_get_active_tab (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the active <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> in the <em class="parameter"><code>window</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a PlumaWindow</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.7.6"></a><h4>Returns</h4>
+<p> the active <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> in the <em class="parameter"><code>window</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-set-active-tab"></a><h3>pluma_window_set_active_tab ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_window_set_active_tab (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>,
+                             <em class="parameter"><code><a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> *tab</code></em>);</pre>
+<p>Switches to the tab that matches with <em class="parameter"><code>tab</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tab</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-active-view"></a><h3>pluma_window_get_active_view ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-view.html#PlumaView"><span class="returnvalue">PlumaView</span></a> *
+pluma_window_get_active_view (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the active <a class="link" href="pluma-pluma-view.html#PlumaView"><span class="type">PlumaView</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.9.6"></a><h4>Returns</h4>
+<p> the active <a class="link" href="pluma-pluma-view.html#PlumaView"><span class="type">PlumaView</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-active-document"></a><h3>pluma_window_get_active_document ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-document.html#PlumaDocument"><span class="returnvalue">PlumaDocument</span></a> *
+pluma_window_get_active_document (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the active <a class="link" href="pluma-pluma-document.html#PlumaDocument"><span class="type">PlumaDocument</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.10.6"></a><h4>Returns</h4>
+<p> the active <a class="link" href="pluma-pluma-document.html#PlumaDocument"><span class="type">PlumaDocument</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-documents"></a><h3>pluma_window_get_documents ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+pluma_window_get_documents (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets a newly allocated list with all the documents in the window.
+This list must be freed.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.11.6"></a><h4>Returns</h4>
+<p> a newly allocated list with all the documents in the window</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-unsaved-documents"></a><h3>pluma_window_get_unsaved_documents ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+pluma_window_get_unsaved_documents (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the list of documents that need to be saved before closing the window.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.12.6"></a><h4>Returns</h4>
+<p> a list of <a class="link" href="pluma-pluma-document.html#PlumaDocument"><span class="type">PlumaDocument</span></a> that need to be saved before closing the window</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-views"></a><h3>pluma_window_get_views ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+pluma_window_get_views (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets a list with all the views in the window. This list must be freed.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.13.6"></a><h4>Returns</h4>
+<p> a newly allocated list with all the views in the window</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-group"></a><h3>pluma_window_get_group ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk3/GtkWindowGroup.html"><span class="returnvalue">GtkWindowGroup</span></a> *
+pluma_window_get_group (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the <a href="http://library.gnome.org/devel/gtk3/GtkWindowGroup.html"><span class="type">GtkWindowGroup</span></a> in which <em class="parameter"><code>window</code></em>
+ resides.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.14.6"></a><h4>Returns</h4>
+<p> the <a href="http://library.gnome.org/devel/gtk3/GtkWindowGroup.html"><span class="type">GtkWindowGroup</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-side-panel"></a><h3>pluma_window_get_side_panel ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-panel.html#PlumaPanel"><span class="returnvalue">PlumaPanel</span></a> *
+pluma_window_get_side_panel (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the side <a class="link" href="pluma-pluma-panel.html#PlumaPanel"><span class="type">PlumaPanel</span></a> of the <em class="parameter"><code>window</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.15.6"></a><h4>Returns</h4>
+<p> the side <a class="link" href="pluma-pluma-panel.html#PlumaPanel"><span class="type">PlumaPanel</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-bottom-panel"></a><h3>pluma_window_get_bottom_panel ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-panel.html#PlumaPanel"><span class="returnvalue">PlumaPanel</span></a> *
+pluma_window_get_bottom_panel (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the bottom <a class="link" href="pluma-pluma-panel.html#PlumaPanel"><span class="type">PlumaPanel</span></a> of the <em class="parameter"><code>window</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.16.6"></a><h4>Returns</h4>
+<p> the bottom <a class="link" href="pluma-pluma-panel.html#PlumaPanel"><span class="type">PlumaPanel</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-statusbar"></a><h3>pluma_window_get_statusbar ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+pluma_window_get_statusbar (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the <a class="link" href="pluma-pluma-statusbar.html#PlumaStatusbar"><span class="type">PlumaStatusbar</span></a> of the <em class="parameter"><code>window</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.17.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="pluma-pluma-statusbar.html#PlumaStatusbar"><span class="type">PlumaStatusbar</span></a> of the <em class="parameter"><code>window</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-ui-manager"></a><h3>pluma_window_get_ui_manager ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk3/GtkUIManager.html"><span class="returnvalue">GtkUIManager</span></a> *
+pluma_window_get_ui_manager (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the <a href="http://library.gnome.org/devel/gtk3/GtkUIManager.html"><span class="type">GtkUIManager</span></a> associated with the <em class="parameter"><code>window</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.18.6"></a><h4>Returns</h4>
+<p> the <a href="http://library.gnome.org/devel/gtk3/GtkUIManager.html"><span class="type">GtkUIManager</span></a> of the <em class="parameter"><code>window</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-state"></a><h3>pluma_window_get_state ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-window.html#PlumaWindowState" title="enum PlumaWindowState"><span class="returnvalue">PlumaWindowState</span></a>
+pluma_window_get_state (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Retrieves the state of the <em class="parameter"><code>window</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.19.6"></a><h4>Returns</h4>
+<p> the current <a class="link" href="pluma-pluma-window.html#PlumaWindowState" title="enum PlumaWindowState"><span class="type">PlumaWindowState</span></a> of the <em class="parameter"><code>window</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-tab-from-location"></a><h3>pluma_window_get_tab_from_location ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+pluma_window_get_tab_from_location (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>,
+                                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *location</code></em>);</pre>
+<p>Gets the <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> that matches with the given <em class="parameter"><code>location</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>location</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.20.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> that matches with the given <em class="parameter"><code>location</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-tab-from-uri"></a><h3>pluma_window_get_tab_from_uri ()</h3>
+<pre class="programlisting"><a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="returnvalue">PlumaTab</span></a> *
+pluma_window_get_tab_from_uri (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>,
+                               <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">pluma_window_get_tab_from_uri</code> has been deprecated since version 2.24 and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="pluma-pluma-window.html#pluma-window-get-tab-from-location" title="pluma_window_get_tab_from_location ()"><code class="function">pluma_window_get_tab_from_location()</code></a> instead.</p>
+</div>
+<p>Gets the <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> that matches <em class="parameter"><code>uri</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.21.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the uri to get the <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.21.7"></a><h4>Returns</h4>
+<p> the <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a> associated with <em class="parameter"><code>uri</code></em>
+.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-window-get-message-bus"></a><h3>pluma_window_get_message_bus ()</h3>
+<pre class="programlisting"><a class="link" href="PlumaMessageBus.html" title="PlumaMessageBus"><span class="returnvalue">PlumaMessageBus</span></a> *
+pluma_window_get_message_bus (<em class="parameter"><code><a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *window</code></em>);</pre>
+<p>Gets the <a class="link" href="PlumaMessageBus.html" title="PlumaMessageBus"><span class="type">PlumaMessageBus</span></a> associated with <em class="parameter"><code>window</code></em>
+. The returned reference
+is owned by the window and should not be unreffed.</p>
+<div class="refsect3">
+<a name="id-1.2.18.11.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.18.11.22.6"></a><h4>Returns</h4>
+<p> the <a class="link" href="PlumaMessageBus.html" title="PlumaMessageBus"><span class="type">PlumaMessageBus</span></a> associated with <em class="parameter"><code>window</code></em>
+</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="PlumaWindowState"></a><h3>enum PlumaWindowState</h3>
+<div class="refsect3">
+<a name="id-1.2.18.12.2.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="PLUMA-WINDOW-STATE-NORMAL:CAPS"></a>PLUMA_WINDOW_STATE_NORMAL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PLUMA-WINDOW-STATE-SAVING:CAPS"></a>PLUMA_WINDOW_STATE_SAVING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PLUMA-WINDOW-STATE-PRINTING:CAPS"></a>PLUMA_WINDOW_STATE_PRINTING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PLUMA-WINDOW-STATE-LOADING:CAPS"></a>PLUMA_WINDOW_STATE_LOADING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PLUMA-WINDOW-STATE-ERROR:CAPS"></a>PLUMA_WINDOW_STATE_ERROR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="PLUMA-WINDOW-STATE-SAVING-SESSION:CAPS"></a>PLUMA_WINDOW_STATE_SAVING_SESSION</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PlumaWindowPrivate"></a><h3>PlumaWindowPrivate</h3>
+<pre class="programlisting">typedef struct _PlumaWindowPrivate PlumaWindowPrivate;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PlumaWindow-struct"></a><h3>struct PlumaWindow</h3>
+<pre class="programlisting">struct PlumaWindow;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="PlumaWindow--state"></a><h3>The <code class="literal">“state”</code> property</h3>
+<pre class="programlisting">  “state”                    <a class="link" href="pluma-pluma-window.html#PlumaWindowState" title="enum PlumaWindowState"><span class="type">PlumaWindowState</span></a></pre>
+<p>The window's state.</p>
+<p>Flags: Read</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="pluma-pluma-window.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="PlumaWindow-active-tab-changed"></a><h3>The <code class="literal">“active-tab-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *plumawindow,
+               <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a>    *arg1,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PlumaWindow-active-tab-state-changed"></a><h3>The <code class="literal">“active-tab-state-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *plumawindow,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PlumaWindow-tab-added"></a><h3>The <code class="literal">“tab-added”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *plumawindow,
+               <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a>    *arg1,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PlumaWindow-tab-removed"></a><h3>The <code class="literal">“tab-removed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *plumawindow,
+               <a class="link" href="pluma-pluma-tab.html#PlumaTab"><span class="type">PlumaTab</span></a>    *arg1,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PlumaWindow-tabs-reordered"></a><h3>The <code class="literal">“tabs-reordered”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="pluma-pluma-window.html#PlumaWindow"><span class="type">PlumaWindow</span></a> *plumawindow,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

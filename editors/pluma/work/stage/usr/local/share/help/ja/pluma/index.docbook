@@ -1,0 +1,1920 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY appversion "2.16">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "July 2006">
+<!ENTITY app "pluma">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.MATE.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<?db.chunk.max_depth 2?>
+<article id="index" lang="ja">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>pluma マニュアル</title>
+	 <copyright lang="en">
+		<year>2007</year>
+		<holder>MATE Documentation Project</holder> </copyright>
+	 <copyright lang="en">
+		<year>2002</year>
+		<year>2003</year>
+		<year>2004</year>
+		<holder>Sun Microsystems</holder> </copyright>
+	 <copyright lang="en">
+		<year>2000</year>
+		<holder>Eric Baudais</holder> </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+	 <publisher role="maintainer">
+		<publishername>MATE ドキュメンテーション プロジェクト</publishername>
+	 </publisher>
+
+	 <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+	 <authorgroup>
+           <author lang="en">
+             <firstname>Joachim</firstname>
+             <surname>Noreiko</surname>
+           </author>
+		<author lang="en">
+		  <firstname>MATE Documentation Project</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>MATE</orgname>
+		  </affiliation>
+		</author>
+		<author lang="en">
+			<firstname>Hal</firstname>
+			<surname>Canary</surname>
+			<contrib>Added the Shortcut Keys Table</contrib>
+		</author>
+		<author lang="en">
+		  <firstname>Sun Java Desktop System Documentation Team</firstname>
+		  <surname/>
+		  <affiliation>
+			 <orgname>Sun Microsystems</orgname>
+			 <address><email>gdocteam@sun.com</email></address>
+		  </affiliation>
+		</author>
+		<author lang="en">
+		  <firstname>Eric</firstname>
+		  <surname>Baudais</surname>
+		  <affiliation>
+			 <orgname>MATE Documentation Project</orgname>
+			 <address> <email>baudais@okstate.edu</email> </address>
+		  </affiliation>
+		</author>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Baris</firstname>
+			<surname>Cicek provided information from earlier revisions of the pluma application.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+		<othercredit role="reviewer" lang="en">
+			<firstname>Ajit</firstname>
+			<surname>George provided information about plugins.</surname>
+			<contrib>Acknowledgements</contrib>
+    </othercredit>
+
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+	  <orgname>Latin Translation Team</orgname>
+	  <address> <email>translator@gnome.org</email> </address>
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+	 </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+		<revision lang="en">
+		  <revnumber>pluma V1.0</revnumber>
+		  <date>2000</date>
+		  <revdescription>
+			 <para role="author" lang="en">Eric Baudais <email>baudais@okstate.edu</email>
+				</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.0</revnumber>
+		  <date>March 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.1</revnumber>
+		  <date>June 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.2</revnumber>
+		  <date>August 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.3</revnumber>
+		  <date>September 2002</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.4</revnumber>
+		  <date>January 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.5</revnumber>
+		  <date>March 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.6</revnumber>
+		  <date>September 2003</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+		<revision lang="en">
+		  <revnumber>pluma Manual V2.7</revnumber>
+		  <date>March 2004</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun GNOME Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   	<revision lang="en">
+		  <revnumber>pluma Manual V2.8</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">Sun Java Desktop System Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+   		<revision lang="en">
+		  <revnumber>pluma Manual V2.9</revnumber>
+		  <date>July 2006</date>
+		  <revdescription>
+			 <para role="author" lang="en">MATE Documentation Team</para>
+			 <para role="publisher" lang="en">MATE Documentation Project</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo>このマニュアルは pluma のバージョン 2.16 について説明します。</releaseinfo>
+	 <legalnotice>
+		<title>フィードバック</title>
+		<para lang="en">To report a bug or make a suggestion regarding the <application>pluma</application> application or this manual, follow the directions in the <ulink url="help:user-guide?feedback-bugs" type="help">MATE Feedback Page</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+    <abstract role="description">
+      <para>pluma は印刷やスペル・チェック、検索、強調表示といった基本的な機能を兼ね備えた、 MATE デスクトップのテキスト・エディタです。さらに、プラグインを導入することでより強力な機能を利用することもできます。</para>
+    </abstract>
+  </articleinfo>
+  <indexterm lang="en"><primary>pluma</primary></indexterm>
+  <indexterm lang="en"><primary>text editor</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="pluma-intro">
+	 <title>概要</title>
+
+   <!-- removed ids, here as anchors to prevent possible breakage -->
+	 <anchor id="pluma-customize-toolbar"/>
+
+	 <para><application>pluma</application> はテキストファイルを作成・編集するためのアプリケーションです。</para>
+
+	 <para><application>pluma</application> はより単純に、より簡単に使えるように作られています。テキスト編集に関する複雑な作業については、強力な<firstterm>プラグイン</firstterm>を導入することで、補うことができます。</para>
+  </sect1>
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="pluma-getting-started">
+	 <title>基本的な使用方法</title>
+
+<!-- ============= To Start pluma ============================ -->
+	 <sect2 id="pluma-to-start">
+		<title>pluma を起動する</title>
+		<para>以下の方法で <application>pluma</application> を起動してください。</para>
+		<variablelist>
+    		<varlistentry>
+    		<term><guimenu>アプリケーション</guimenu>メニュー</term>
+    		<listitem>
+    		<para><menuchoice><guisubmenu>アクセサリ</guisubmenu><guimenuitem>テキスト・エディタ</guimenuitem></menuchoice>を選択します。</para>
+    		</listitem>
+    		</varlistentry>
+    		<varlistentry>
+    		<term>コマンドライン</term>
+    		<listitem>
+    		<para>次のコマンドを実行します： <command>pluma</command></para>
+    		</listitem>
+    		</varlistentry>
+    		</variablelist>
+    <para>初期設定のままファイル・マネージャからテキストドキュメントを開いた場合、pluma が起動し、テキストの内容を表示するでしょう。</para>
+	</sect2>
+
+	<sect2 id="pluma-when-you-start">
+
+		<title>pluma ウィンドウ</title>
+		<para><application>pluma</application> を起動すると、次のウィンドウが表示されます。</para>
+
+		<figure id="pluma-window">
+		  <title>pluma ウィンドウ</title>
+		  <screenshot>
+			 <mediaobject lang="en">
+				<imageobject>
+				  <imagedata fileref="figures/pluma_window.png" format="PNG"/>
+					 </imageobject>
+				<textobject> <phrase>Shows pluma main window.</phrase>
+				</textobject>
+			</mediaobject>
+		  </screenshot>
+		</figure>
+
+		<para><application>pluma</application> ウィンドウの構成要素は次のとおりです。</para>
+		<variablelist>
+		  <varlistentry> <term>メニューバー</term>
+			 <listitem>
+				<para>メニューバー上のメニューには、<application>pluma</application> でファイルを操作するために必要なコマンドがすべて含まれています。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>ツールバー</term>
+			 <listitem>
+				<para>ツールバーには、メニューバーからアクセスできるコマンドの一部の機能が含まれています。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>表示領域</term>
+			 <listitem>
+				<para>表示領域には、編集中のファイルのテキストが表示されます。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>ステータスバー</term>
+			 <listitem>
+				<para>ステータスバーには、<application>pluma</application> で実行中の操作に関する情報や、選択中のメニュー項目に関する説明が表示されます。また、以下の情報も表示されます。</para>
+		  <itemizedlist>
+		  <listitem>
+		  <para>カーソルの位置：現在カーソルがある、行番号および列番号を表示します。</para>
+		  </listitem>
+		  <listitem>
+		  <para>編集モード：エディタが挿入モードになっている場合は、ステータスバーに<guilabel>挿入</guilabel>と表示されます。上書きモードになっている場合は、ステータスバーに<guilabel>上書き</guilabel>と表示されます。編集モードを切り替えるには、<keycap>Insert</keycap>キーを押してください。</para>
+		  </listitem>
+		  </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>サイド・ペイン</term>
+			 <listitem>
+				<para>サイド・ペインには現在開いているドキュメントや、プラグインによるさまざまな情報が表示されます。</para>
+				<para>初期設定ではサイド・ペインは表示されていません。これを表示するためには、<menuchoice><guimenu>表示</guimenu><guimenuitem>サイド・ペイン</guimenuitem></menuchoice>を選択してください。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term>ボトム・ペイン</term>
+			 <listitem>
+				<para>ボトム・ペインは <application>Python コンソール</application>プラグインのようなプログラミングツールの出力を表示するために使われます。</para>
+				<para>初期設定ではボトム・ペインは表示されていません。これを表示するためには、<menuchoice><guimenu>表示</guimenu><guimenuitem>ボトム・ペイン</guimenuitem></menuchoice>を選択してください。</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para><application>pluma</application> ウィンドウ内で右クリックすると、ポップアップメニューが表示されます。 ポップアップメニューからは、使用頻度の高いテキスト編集コマンドを実行できます。</para>
+
+		<para>他の MATE アプリケーションと同様に、 <application>pluma</application> のコマンドは、メニューやツールバー、ショートカットキーなどさまざまな方法で実行できます。すべてのアプリケーションで共通なショートカットキーの一覧は、<ulink type="help" url="help:user-guide?shortcuts-apps">ユーザーガイド</ulink>に掲載されています。</para>
+	 </sect2>
+
+<!-- ============= To Open Multiple Files from the Command Line ========= -->
+	 <sect2 id="pluma-run-from-cmd-line">
+		<title>コマンドラインから pluma を起動する</title>
+		<para>コマンドラインから <application>pluma</application> を起動し、単一のファイル、または複数のファイルを開くことができます。コマンドラインから複数のファイルを開くには、次のコマンドを入力して <keycap>Enter</keycap> キーを押してください。</para>
+		<para lang="en"><command>pluma <replaceable>file1.txt file2.txt file3.txt</replaceable></command></para>
+		<para>ファイル名の代わりに、URI を指定することもできます。</para>
+    <para>コマンドラインから <application>pluma</application> を実行する方法については、<ulink url="man:pluma" type="man"><citerefentry><refentrytitle>pluma</refentrytitle><manvolnum>1</manvolnum></citerefentry></ulink> を参照してください。</para>
+	 </sect2>
+  </sect1>
+<!-- ================ Usage ================================ -->
+  <sect1 id="pluma-usage">
+	 <title>ファイルの操作</title>
+
+<!-- ============= To Create a New File ======================== -->
+	 <sect2 id="pluma-create-new-file">
+		<title>新しいファイルを作成する</title>
+		<para>新しいファイルを作成するには、<menuchoice><guimenu>ファイル</guimenu><guimenuitem>新規</guimenuitem></menuchoice>を選択します。 <application>pluma</application> ウィンドウに新規の何も書かれていないファイルが表示されます。</para>
+	 </sect2>
+
+<!-- ============= To Open a File ============================= -->
+	 <sect2 id="pluma-open-file">
+		<title>ファイルを開く</title>
+		<para>ファイルを開くには、<menuchoice><guimenu>ファイル</guimenu><guimenuitem>開く</guimenuitem></menuchoice>を選択して<guilabel>ファイルを開く</guilabel>ダイアログを表示させます。開きたいファイルを選択して、<guibutton>開く</guibutton>をクリックします。選択したファイルが <application>pluma</application> ウィンドウに表示されます。</para>
+
+		<para lang="en">The application records the paths and filenames of the five most recent files that you edited and displays the files as menu items on the <menuchoice><guimenu>File</guimenu></menuchoice> menu. You can also click on the <inlinemediaobject><imageobject><imagedata fileref="figures/pluma_recent_files_menu_icon.png" format="PNG"/></imageobject><textobject><phrase>Shows Recent Files menu icon.</phrase></textobject></inlinemediaobject>  icon on the toolbar to display the list of recent files.  </para>
+
+		<note><para><application>pluma</application> では複数のファイルを開くこともできます。その場合、一つのウィンドウ内に複数のタブにわかれて、それぞれのファイルが表示されます。より詳しいことは、<xref linkend="pluma-tabs"/>を参照してください。</para></note>
+
+	 </sect2>
+
+<!-- ============= To Save a File ============================== -->
+	 <sect2 id="pluma-save-file">
+		<title>ファイルを保存する</title>
+		<para>ファイルの保存方法は次のとおりです。</para>
+		<itemizedlist>
+		  <listitem><para>既存のファイルに対する変更点を、同じファイルに保存するには、<menuchoice><guimenu>ファイル</guimenu><guimenuitem>保存</guimenuitem></menuchoice>を選択してください。</para>
+		  </listitem>
+		  <listitem><para lang="en">To save a new file or to save an existing file under a new filename, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save As</guimenuitem> </menuchoice>. Enter a name for the file in the <guilabel>Save As</guilabel> dialog, then click <guibutton>Save</guibutton>. </para>
+		  </listitem>
+		  <listitem><para lang="en">To save all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Save All</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</itemizedlist>
+		<para lang="en">To close all of the files that are currently open in <application>pluma</application>, choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Close All</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+<!-- ============= To Open a File from a URI ======================= -->
+	 <sect2 id="pluma-open-from-uri">
+		<title>URI からファイルを開く</title>
+		<para>URI (Uniform Resource Identifier) からファイルを開くには、以下の操作を行います。</para>
+		<orderedlist>
+		<listitem>
+		<para lang="en">Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Open Location</guimenuitem> </menuchoice> to display the <guilabel>Open Location</guilabel> dialog. </para>
+		</listitem>
+		<listitem>
+		<para>開きたいファイルの URI を入力します。</para>
+		</listitem>
+		<listitem>
+		<para><guilabel>文字のエンコーディング</guilabel>から、開きたいファイルの文字コードを選択します。</para>
+		</listitem>
+		<listitem>
+		<para><guibutton>開く</guibutton>をクリックします。</para>
+		</listitem>
+		</orderedlist>
+		<para>有効な <replaceable>URI</replaceable> は <literal>http:</literal>、 <literal>ftp:</literal>、 <literal>file:</literal>、および <literal>mate-vfs</literal> でサポートしている全ての形式です。</para>
+		<para>URI の形式によっては、ファイルを読み込み専用として開きます。その場合、変更点を保存する際には、別の場所を指定してください。例えば HTTP はファイルの読み込みのみ可能です。全ての FTP サーバがリモートファイルの保存をサポートしているわけではないので、FTP からファイルを開いた場合も、読み込み専用となります。</para>
+		<warning><para><ulink type="help" url="help:mateconf-editor"><application>設定エディタ</application></ulink>を利用すればFTP サーバへの保存も利用可能になります。<systemitem>/apps/pluma/preferences/editor/save/writable_vfs_schemes</systemitem> キーを変更してください。ただしこれはエラーの原因にもなります。</para></warning>
+	 </sect2>
+
+<!-- ============= Working with tabs ======================== -->
+	 <sect2 id="pluma-tabs">
+	   <title>タブを利用する</title>
+
+		 <para>複数のファイルを開いた場合、<application>pluma</application> は表示領域の上にドキュメントごとの<firstterm>タブ</firstterm>を表示します。別のドキュメントを表示するには、このタブをクリックしてください。</para>
+		 <para>あるドキュメントを別の <application> pluma</application> ウィンドウに移動したい場合は、そのドキュメントが表示されているタブを、移動したいウィンドウまでドラッグしてください。</para>
+		 <para lang="en">To move a document to a new <application> pluma</application> window, either drag its tab to the desktop, or choose <menuchoice> <guimenu>Documents</guimenu> <guimenuitem>Move to New Window</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="working-with-text">
+    <title>テキストの操作</title>
+
+<!-- ============= To Edit Text ================================ -->
+	 <sect2 id="pluma-edit-text">
+		<title>テキストを編集する</title>
+		<para>ファイルのテキストを編集する方法は次のとおりです。</para>
+		<itemizedlist>
+		  <listitem><para>キーボードから新しいテキストを入力します。点滅している<firstterm>入力カーソル</firstterm>は、新しいテキストが書き込まれる場所を示しています。場所を変更するには、キーボード上の矢印キーで移動するか、マウスを使って入力したい場所をクリックしてください。</para>
+		  </listitem>
+		  <listitem><para lang="en">To copy the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Copy</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To delete the selected text from the file and move the selected text to the clipboard, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Cut</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To permanently delete the selected text from the file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Delete</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		  <listitem><para lang="en">To insert the contents of the clipboard at the cursor position, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Paste</guimenuitem> </menuchoice>. You must cut or copy text before you can paste text into the file, either from pluma or another application.</para>
+		  </listitem>
+		  <listitem><para lang="en">To select all of the text in a file, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Select All</guimenuitem> </menuchoice>. </para>
+		  </listitem>
+		</itemizedlist>
+	 </sect2>
+<!-- ============== To Undo or Redo Edits ====================== -->
+	 <sect2 id="pluma-undo-redo-edits">
+		<title>元に戻すもしくはやり直す</title>
+		<para lang="en">To undo a change you have made, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Undo</guimenuitem> </menuchoice>. To reverse this action, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Redo</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	</sect1>
+	<sect1 id="pluma-find">
+		<title>文字列の検索・置換</title>
+
+		<para><application>pluma</application> には文字列を検索するための二つの方法が存在します。特定の文字列を検索したい場合は<guilabel>検索</guilabel>ダイアログを、入力にあわせて即座に検索したい場合は<guilabel>インクリメンタル検索</guilabel>を利用できます。</para>
+
+<!-- ============= To Find Text ================================ -->
+	 <sect2 id="pluma-find-text">
+		<title>文字列を検索する</title>
+		<para>ファイル内の特定の文字列を検索するには、次のようにします。</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice> to display the <guilabel>Find</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para><guilabel>検索する文字列</guilabel>フィールドに、検索したい文字列を入力します。改行やタブなど特別な文字も入力できます。詳しいことは<xref linkend="pluma-find-escapes"/>を参照してください。</para>
+		  </listitem>
+		  <listitem><para><guibutton>検索</guibutton>をクリックすると、現在のカーソルの位置より後ろにある、入力した文字列と一致する最初の文字列が検索されます。<application>pluma</application> が文字列を発見した場合、最初の文字列を選択状態にします。他の場所で一致した文字列については強調表示されます。</para>
+		  </listitem>
+		  <listitem><para lang="en">To find the next occurrence of the string, click <guibutton>Find</guibutton> or choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice>. To find the previous occurrence of the text, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		  </listitem>
+		</orderedlist>
+		<para lang="en">After you have closed the <guilabel>Find</guilabel> dialog, you can still move the selection to other occurrences of the text by choosing  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Next</guimenuitem> </menuchoice> and  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Find Previous</guimenuitem> </menuchoice>.</para>
+		<para lang="en">To remove the highlighting from the text, choose  <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Clear Highlight</guimenuitem> </menuchoice>.</para>
+	 </sect2>
+
+	 <sect2 id="pluma-find-incremental">
+	   <title>インクリメンタル検索</title>
+
+	   <para>インクリメンタル検索は、キーボードからの文字の入力にあわせてリアルタイムに検索する機能です（いくつかのウェブブラウザに搭載されている検索機能に似ています）。</para>
+	   <para lang="en">To start an incremental search, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Incremental Search</guimenuitem> </menuchoice>. The search box appears at the top of the display area. </para>
+	   <para>次に検索したい文字列を入力してください。入力した文字列にあわせて、ドキュメント上で一致した文字列が強調表示され、カーソルの場所から一番最初に一致された文字列が選択状態になります。</para>
+	   <para>インクリメンタル検索ボックスを開いたまま、次の一致文字列に移動したい場合は、<keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo>を押してください。<keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>G</keycap></keycombo>を押すと、一つ前の一致文字列に移動します。</para>
+	   <tip><para>矢印キーやマウスホイールを使っても、一致文字列間を移動できます。</para></tip>
+	 </sect2>
+
+<!-- ============= To Find and Replace Text =================== -->
+	 <sect2 id="pluma-find-replace-text">
+		<title>文字列を置換する</title>
+
+		<para>ファイル内の特定の文字列を検索し、別の文字列に置換するには、次のようにします。</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Replace</guimenuitem> </menuchoice> to display the <guilabel>Replace</guilabel> dialog.</para>
+		  </listitem>
+		  <listitem><para><guilabel>検索する文字列</guilabel>フィールドに、検索したい文字列を入力します。改行やタブなど特別な文字も入力できます。詳しいことは<xref linkend="pluma-find-escapes"/>を参照してください。</para></listitem>
+		  <listitem><para><guilabel>置換後の文字列</guilabel>フィールドに、検索した文字列の代わりに表示したい文字列を入力します。</para>
+		  </listitem>
+		</orderedlist>
+
+		<para>一致した文字列ごとに置換するかどうかを確認したい場合は、<guibutton>検索</guibutton>をクリックしてください。<application>pluma</application> が文字列を発見した場合、その文字列が選択状態になります。<guibutton>置換</guibutton>をクリックすれば、選択した文字列が置換されます。次の一致文字列に移動するには、再び<guibutton>検索</guibutton>をクリックしてください。</para>
+		<para>ドキュメントにある全ての一致文字列を置換するには、<guibutton>全て置換</guibutton>をクリックしてください。</para>
+	 </sect2>
+
+<!-- ============= Find and Replace Options ============================ -->
+  <sect2 id="pluma-find-options">
+		<title>検索・置換オプション</title>
+		<para><guilabel>検索</guilabel>ダイアログと<guilabel>置換</guilabel>ダイアログでは、以下のオプションを指定できます。</para>
+		<itemizedlist>
+		  <listitem><para><guilabel>大/小文字を区別する</guilabel>オプションを選択すると、入力したアルファベット文字列の大小が一致した文字列のみを表示します。例えば<guilabel>大/小文字を区別する</guilabel>が選択されている状態では、"TEXT" を検索しても "text" に一致しません。</para>
+		  </listitem>
+		  <listitem><para><guilabel>単語全体にマッチさせる</guilabel>オプションを選択すると、単語の一部のみ一致した文字列は無視します。例えば<guilabel>単語全体にマッチさせる</guilabel>が選択されている状態では、"text" を検索しても "texture" に一致しません。</para>
+		  </listitem>
+		  <listitem><para><guilabel>前方へ検索する</guilabel>オプションを選択すると、現在のカーソル一に対してドキュメントの前の方へ検索を行います。</para>
+		  </listitem>
+		  <listitem><para><guilabel>折り返しも対象にする</guilabel>オプションを選択すると、ファイルの最後まで検索を行った後、再びファイルの最初から検索を行います。</para>
+		  </listitem>
+		</itemizedlist>
+  </sect2>
+
+<!-- ============= Special Characters ============================ -->
+	 <sect2 id="pluma-find-escapes">
+	   <title>特殊文字</title>
+	     <para>エスケープ文字を使うことで、検索・置換の際に以下のような特殊文字を使うことができます。</para>
+			 <variablelist>
+        <varlistentry>
+          <term lang="en"><literal>\n</literal></term>
+    				<listitem>
+              <para>改行を意味します。</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\t</literal></term>
+    				<listitem>
+              <para>タブ文字を意味します。</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\r</literal></term>
+    				<listitem>
+              <para>復帰 (CR: Carriage Return) を意味します。</para>
+    				</listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><literal>\\</literal></term>
+    				<listitem>
+              <para>バックスラッシュ文字を検索したい場合は、それ自身をエスケープする必要があります。たとえば "<literal>\n</literal>" という文字列を検索したい場合は、<guilabel>検索する文字列</guilabel>フィールドに "\\n" と入力してください。もしバックスラッシュからなる文字列を検索したい場合は、倍の数のバックスラッシュを入力する必要があります。</para>
+    				</listitem>
+        </varlistentry>
+			 </variablelist>
+    </sect2>
+
+<!-- ============= To Position the Cursor on a Specific Line ======================= -->
+    <sect2 id="pluma-goto-line">
+      <title>カーソルを指定行へ移動する</title>
+
+      <para lang="en">To position the cursor on a specific line in the current file, choose <menuchoice> <guimenu>Search</guimenu> <guimenuitem>Go to Line</guimenuitem> </menuchoice>. The line number box appears at the top of the display area.</para>
+      <para>移動したい行番号の入力を開始すると、その数字に合わせてドキュメントが自動的にスクロールします。</para>
+      <para>ボックスを消してカーソルの移動を確定したい場合は、<keycap>Enter</keycap>キーを押してください。</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-printing">
+    <title>印刷</title>
+
+<!-- ============= To Set the Page Options ============================ -->
+	 <sect2 id="pluma-page-setup">
+		<title>ページオプションを設定する</title>
+
+		<para lang="en">To set the page options, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Page Setup</guimenuitem> </menuchoice> to display the <guilabel>Page Setup</guilabel> dialog.</para>
+
+		<para><guilabel>ページの設定</guilabel>ダイアログでは、以下のオプションを指定できます。</para>
+
+		<sect3 id="pluma-page-setup-general">
+		<title>全般タブ</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Print syntax highlighting</guilabel> </term>
+			 <listitem>
+				<para>このオプションを選択した場合、構文の強調表示も印刷に反映されます。構文の強調表示機能については、<xref linkend="pluma-set-highlightmode"/>を参照してください。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Print page headers</guilabel> </term>
+			 <listitem>
+				<para>このオプションを選択した場合、ページごとにヘッダが印刷されます。ヘッダの内容を設定することはできません。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line Numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para><guilabel>行番号を印刷する</guilabel>オプションを選択した場合、ファイルの行番号も併せて印刷されます。</para>
+				<para><guilabel>行番号を付与する間隔</guilabel>では、行番号の印刷頻度、例えば 5 行ごとや 10 行ごとなどを指定できます。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+			 <listitem>
+                            <para><guilabel>テキストの折り返しを有効にする</guilabel>オプションを選択した場合、印刷する際に、必要に応じて文字単位で文字列の改行を行います。行番号を印刷する場合は、改行の前後を含めて 1 行として扱います。</para>
+				<para><guilabel>単語を二行以上に分割しない</guilabel>オプションを選択すると、印刷時に単語単位で折り返しを行います。</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		</sect3>
+
+		<sect3 id="pluma-page-setup-fonts">
+	 		<title>フォント</title>
+	 	<variablelist>
+		  <varlistentry> <term lang="en"><guilabel>Body</guilabel> </term>
+			 <listitem>
+				<para>このボタンをクリックして、ドキュメント本文の印刷に使用するフォントを選択します。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Line numbers</guilabel>
+			 </term>
+			 <listitem>
+				<para>このボタンをクリックして、行番号の印刷に使用するフォントを選択します。</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry> <term lang="en"><guilabel>Headers and footers</guilabel> </term>
+			 <listitem>
+				<para>このボタンをクリックして、ファイルのヘッダとフッタの印刷に使用するフォントを選択します。</para>
+			 </listitem>
+		  </varlistentry>
+		</variablelist>
+		<para><application>pluma</application> からファイルを印刷するときに使用するフォントを初期設定に戻したい場合は、<guibutton>デフォルトに戻す</guibutton>をクリックしてください。</para>
+		</sect3>
+
+	 </sect2>
+
+<!-- ============= To Print a File ============================ -->
+	 <sect2 id="pluma-print-file">
+		<title>ドキュメントを印刷する</title>
+		<para><application>pluma</application> を使って、次の印刷操作を実行できます。</para>
+		<itemizedlist>
+		  <listitem><para>ドキュメントをプリンタで印刷する。</para>
+		  </listitem>
+		  <listitem><para>印刷コマンドの実行結果をファイルに出力する。</para>
+		  </listitem>
+		</itemizedlist>
+		<para>ファイルに出力する場合、<application>pluma</application> は印刷用のフォーマットをファイルに送信します。最も一般的なフォーマットは、PostScript と PDF (Portable Document Format) です。</para>
+
+		<para lang="en">To preview the pages that you want to print, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print Preview</guimenuitem> </menuchoice>.</para>
+
+		<para lang="en">To print the current file to a printer or a file, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice> to display the <guilabel>Print</guilabel> dialog.</para>
+
+		<para><guilabel>印刷</guilabel>ダイアログでは、次の印刷オプションを指定できます。</para>
+
+		<sect3 id="print-dialog-job">
+		<title>ジョブタブ</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Print range</guilabel> </term>
+			 <listitem>
+				<para>次のいずれかのオプションを選択して、出力するページ数を指定します。</para>
+				<itemizedlist>
+				<listitem>
+				<para lang="en"><guilabel>All</guilabel></para>
+				<para>ファイルの全ページを出力します。</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Lines</guilabel></para>
+				<para>指定した行のみを出力します。<guilabel>From</guilabel> と <guilabel>To</guilabel> にて、出力する行範囲を指定します。</para>
+				</listitem>
+				<listitem>
+				<para lang="en"><guilabel>Selection</guilabel></para>
+				<para>選択したテキストだけを出力します。 このオプションは、テキストを選択している場合にのみ有効です。</para>
+				</listitem>
+
+				</itemizedlist>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Copies</guilabel> </term>
+			 <listitem>
+				<para><guilabel>コピーの数</guilabel>を使って、出力部数を指定します。</para>
+				<para>ファイルを複数の部数出力する場合に、<guilabel>ページを揃える</guilabel>オプションを選択すると、各部ごとにページ順に並んだ結果が出力されます。</para>
+			 </listitem>
+		  	</varlistentry>
+			</variablelist>
+		</sect3>
+
+		<sect3 id="print-dialog-printer">
+		<title>プリンタタブ</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Printer</guilabel> </term>
+	    <listitem>
+	      <para>ドロップダウンリストからファイルを出力するプリンタを選択します。</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Settings</guilabel> </term>
+	    <listitem>
+	      <para>ドロップダウンリストからプリンタの設定を選択します。</para>
+	      <para>プリンタの設定を行うには、<guibutton>設定する</guibutton>をクリックしてください。プリンタがその機能をサポートしていれば、両面印刷、印刷スケジュールなどを設定できます。</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Location</guilabel> </term>
+	    <listitem>
+	      <para>ドロップダウンリストから印刷データの送り先を選択します。</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>CUPSプリンタに出力します。</para>
+	            <note>
+	              <para>選択したプリンタがCUPSプリンタの場合、このドロップダウンリストには<guilabel>CUPS</guilabel>のみが表示されます。</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>プリンタに出力します。</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>PostScript ファイルに出力します。</para>
+	            <para><guibutton>別名で保存</guibutton>をクリックし、表示されるダイアログに PostScript ファイルの名前と場所を指定します。</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>印刷コマンドを直接記述します。</para>
+	            <para>テキストボックスに、引数も含めたコマンドを入力してください。</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>State</guilabel> </term>
+	    <listitem>
+	      <para>現在のバージョンではサポートされていません。</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Type</guilabel> </term>
+	    <listitem>
+	      <para>現在のバージョンではサポートされていません。</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Comment</guilabel> </term>
+	    <listitem>
+	      <para>現在のバージョンではサポートされていません。</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+
+		<sect3 id="print-dialog-paper">
+		<title>用紙タブ</title>
+		<variablelist>
+	 		<varlistentry> <term lang="en"><guilabel>Paper size</guilabel> </term>
+			 <listitem>
+				<para>ドロップダウンリストから印刷用紙のサイズを選択します。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Width</guilabel> </term>
+			 <listitem>
+				<para>用紙の幅を指定します。用紙サイズの単位を変更するには、隣のドロップダウンリストを使用します。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Height</guilabel> </term>
+			 <listitem>
+				<para>用紙の高さを指定します。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Feed orientation</guilabel> </term>
+			 <listitem>
+				<para>ドロップダウンリストからプリンタ内の用紙の向きを選択します。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Page orientation</guilabel> </term>
+			 <listitem>
+				<para>ドロップダウンリストからページの向きを選択します。</para>
+			 </listitem>
+		  	</varlistentry>
+		  	<varlistentry> <term lang="en"><guilabel>Layout</guilabel> </term>
+			 <listitem>
+				<para>ドロップダウンリストからページレイアウトを選択します。<guilabel>プレビュー</guilabel>領域には、選択した各レイアウトのプレビューが表示されます。</para>
+			 </listitem>
+		  	</varlistentry>
+          <varlistentry> <term lang="en"><guilabel>Paper tray</guilabel> </term>
+            <listitem>
+              <para>ドロップダウンリストから用紙のトレイを選択します。</para>             </listitem>
+          </varlistentry>
+		</variablelist>
+		</sect3>
+
+	 </sect2>
+
+  </sect1>
+
+  <sect1 id="pluma-programming-features">
+	  <title>プログラミング機能</title>
+
+	  <para><application>pluma</application> プラグインによって、さまざまなプログラミング向け機能が提供されています。例えば、タグの一覧プラグインを使えば、マークアップ言語ごとに、よく使われるタグの一覧を表示してくれます。詳しいことは、<xref linkend="pluma-tag-list-plugin"/>を参照してください。</para>
+
+<!-- ============= Syntax Highlighting =================== -->
+	 <sect2 id="pluma-set-highlightmode">
+	 <title>構文の強調表示</title>
+	 <para>構文の強調表示を使うと、ソースコードがその構文にしたがって色分けされ、より読みやすくなります。</para>
+
+	 <para lang="en"><application>pluma</application> chooses an appropriate syntax highlighting mode based on a document's type. To override the syntax highlighting mode, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Highlight Mode</guimenuitem> </menuchoice>, then choose one of the following menu items:</para>
+		  <variablelist>
+		    <varlistentry>
+		      <term lang="en"><guimenuitem>Normal</guimenuitem></term>
+		      <listitem>
+		        <para>強調表示を行いません。</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Sources</guisubmenu></term>
+		      <listitem>
+		        <para>ソースコード向け強調表示を行います。<guisubmenu>ソース</guisubmenu>サブメニューから、ソースコードの種類を選択してください。</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Markup</guisubmenu></term>
+		      <listitem>
+		        <para>マークアップ言語向け強調表示を行います。<guisubmenu>マークアップ</guisubmenu>サブメニューから、マークアップ言語の種類を選択してください。</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Scripts</guisubmenu></term>
+		      <listitem>
+		        <para>スクリプト言語向け強調表示を行います。<guisubmenu>スクリプト</guisubmenu>サブメニューから、スクリプト言語の種類を選択してください。</para>
+		      </listitem>
+		    </varlistentry>
+		    <varlistentry>
+		      <term lang="en"><guisubmenu>Others</guisubmenu></term>
+		      <listitem>
+		        <para>その他のファイル向け強調表示を行います。<guisubmenu>その他</guisubmenu>サブメニューから、ファイルの種類を選択してください。</para>
+		      </listitem>
+		    </varlistentry>
+		  </variablelist>
+	 </sect2>
+
+<!-- ============= To Pipe the Output of a Command to a File ======= -->
+	 <sect2 id="pluma-pipe-output">
+		<title>コマンドの出力をファイルにパイプする</title>
+		<para><application>pluma</application> を使って、コマンド出力をテキストファイルに直接渡す（パイプする）ことができます。 例えば、<command>ls</command> コマンドの出力をテキストファイルに渡すには、<command>ls | pluma</command> と入力して、<keycap>Enter</keycap> キーを押します。</para>
+		<para><command>ls</command> コマンドの結果が新しいテキストファイルに出力され、<application>pluma</application> ウィンドウに表示されます。</para>
+		<para>別の方法として、<application>外部ツール</application>プラグインを使えば、コマンドの出力結果を現在開いているファイルに渡すことができます。</para>
+	 </sect2>
+  </sect1>
+
+<!-- ================ Shortcut Keys ============================= -->
+<sect1 id="pluma-shortcutkeys">
+  <title>ショートカットキー</title>
+  <para>ショートカットキーを使えば、よく使う作業をマウスやメニューを使うよりも素早く実行できます。以下の表は、<application>pluma</application> で利用できるすべてのショートカットキーの一覧です。</para>
+  <para>ショートカットキーについての詳しいことは、<ulink type="help" url="help:user-guide?keyboard-skills">デスクトップユーザーガイド</ulink>を参照してください。</para>
+
+  <!-- ============= Tabs ======================== -->
+	<bridgehead>タブ</bridgehead>
+	<para>タブ用のショートカット</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>ショートカットキー</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>コマンド</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para lang="en">Ctrl + Alt + PageUp</para></entry>
+          <entry><para>左のタブに移動します。</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Alt + PageDown</para></entry>
+          <entry><para>右のタブに移動します。</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + W</para></entry>
+          <entry><para>タブを閉じます。</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Shift + L</para></entry>
+          <entry><para>全てのタブを保存します。</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Ctrl + Shift + W</para></entry>
+          <entry><para>全てのタブを閉じます。</para></entry>
+        </row>
+        <row valign="top">
+          <entry><para>Alt + n</para></entry>
+          <entry><para>n 番目のタブに移動します。</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+  <!-- ============= Files ======================== -->
+	<bridgehead>ファイル</bridgehead>
+	<para>ファイル用のショートカット</para>
+  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>ショートカットキー</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>コマンド</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + N</para></entry>
+                        <entry><para>新しいドキュメントを作成します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + O</para></entry>
+                        <entry><para>ドキュメントを開きます。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + L</para></entry>
+                        <entry><para>指定した場所にあるファイルを開きます。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + S</para></entry>
+                        <entry><para>現在のドキュメントをファイルに保存します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + S</para></entry>
+                        <entry><para>現在のドキュメントを新しいファイル名で保存します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + P</para></entry>
+                        <entry><para>現在のドキュメントを印刷します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + P</para></entry>
+                        <entry><para>印刷プレビューを表示します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + W</para></entry>
+                        <entry><para>現在のドキュメントを閉じます。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Q</para></entry>
+                        <entry><para>pluma を終了します。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Edit ======================= -->
+	<bridgehead>編集</bridgehead>
+	<para>編集用のショートカット</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>ショートカットキー</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>コマンド</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + Z</para></entry>
+                        <entry><para>最後に行った作業を元に戻します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + Z</para></entry>
+                        <entry><para>最後に元に戻した作業をやり直します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + X</para></entry>
+                        <entry><para>選択したテキストもしくは領域を切り取り、クリップボードに移動します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + C</para></entry>
+                        <entry><para>選択したテキストもしくは領域をクリップボードにコピーします。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + V</para></entry>
+                        <entry><para>クリップボードの内容を貼り付けます。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + A</para></entry>
+                        <entry><para>全てを選択状態にします。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + D</para></entry>
+                        <entry><para>現在カーソルがある行を削除します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Alt + Up</para></entry>
+                        <entry><para lang="en">Move the selected line up one line.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para lang="en">Alt + Down</para></entry>
+                        <entry><para lang="en">Move the selected line down one line.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Panes ======================= -->
+	<bridgehead>ペイン</bridgehead>
+	<para>ペイン用のショートカット</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>ショートカットキー</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>コマンド</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>F9</para></entry>
+                        <entry><para>サイド・ペインの表示/非表示を切り替えます。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + F9</para></entry>
+                        <entry><para>ボトム・ペインの表示/非表示を切り替えます。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+  <!-- ============= Search ======================= -->
+	<bridgehead>検索</bridgehead>
+	<para>検索用のショートカット</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>ショートカットキー</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>コマンド</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Ctrl + F</para></entry>
+                        <entry><para>文字列を検索します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + G</para></entry>
+                        <entry><para>次の一致文字列に移動します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + G</para></entry>
+                        <entry><para>前の一致文字列に移動します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + K</para></entry>
+                        <entry><para>インクリメンタル検索を行います。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + H</para></entry>
+                        <entry><para>文字列を検索し置換します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + K</para></entry>
+                        <entry><para>一致した文字列の強調表示を解除します。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + I</para></entry>
+                        <entry><para>指定した行番号へ移動します。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Tools ======================= -->
+	<bridgehead>ツール</bridgehead>
+	<para>ツール用のショートカット</para>
+	  <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>ショートカットキー</para></entry>
+                        <entry colname="COLSPEC1" align="left">
+                          <para>コマンド</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>Shift + F7</para></entry>
+                        <entry><para>スペル・チェックを行います（プラグインを使用します）。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Alt + F12</para></entry>
+                        <entry><para>文字列の終端にある空白を削除します（プラグインを使用します）。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + T</para></entry>
+                        <entry><para>指定した行をインデントします（プラグインを使用します）。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + T</para></entry>
+                        <entry><para>指定した行のインデントを削除します（プラグインを使用します）。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>F8</para></entry>
+                        <entry><para>現在のディレクトリで "make" を実行します（プラグインを使用します）。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>Ctrl + Shift + D</para></entry>
+                        <entry><para>ディレクトリを表示します（プラグインを使用します）。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+  <!-- ============= Help ======================= -->
+	<bridgehead>ヘルプ</bridgehead>
+	<para>ヘルプ用のショートカット</para>
+  <informaltable frame="all">
+    <tgroup cols="2" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="50*"/>
+      <colspec colname="COLSPEC1" colwidth="50*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>ショートカットキー</para></entry>
+          <entry colname="COLSPEC1" align="left">
+            <para>コマンド</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para>F1</para></entry>
+          <entry><para><application>pluma</application> のマニュアルを開きます。</para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect1>
+
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="pluma-prefs">
+    <title>設定</title>
+
+    <para lang="en">To configure <application>pluma</application>, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. The <guilabel>Preferences</guilabel> dialog contains the following categories:</para>
+    <itemizedlist>
+      <listitem><para><xref linkend="pluma-prefs-view"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-editor"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-fontsandcolors"/></para></listitem>
+      <listitem><para><xref linkend="pluma-prefs-plugins"/></para></listitem>
+    </itemizedlist>
+
+    <sect2 id="pluma-prefs-view">
+      <title>表示</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Text Wrapping</guilabel> </term>
+          <listitem>
+            <para><guilabel>テキストの折り返しを有効にする</guilabel>オプションを選択した場合、長い文字列がテキストウィンドウの端まで来たときに、文字単位で次の行に折り返します。これにより、水平方向のスクロールを避けることができます。</para>
+            <para><guilabel>単語を二行以上に分割しない</guilabel>オプションを選択した場合、一つの単語が二行以上にまたがらないように折り返しが行われます。これにより、テキストが読みやすくなります。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Line Numbers</guilabel></term>
+          <listitem>
+            <para><guilabel>行番号を表示する</guilabel>オプションを選択した場合、<application>pluma</application> ウィンドウの左側に、行番号を表示します。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Current Line</guilabel></term>
+          <listitem>
+            <para><guilabel>カーソルのある行を強調表示する</guilabel>オプションを選択した場合、カーソルのある行の背景色が変わります。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Right Margin</guilabel></term>
+          <listitem>
+            <para><guilabel>右マージンを表示する</guilabel>オプションを選択した場合、右マージンの位置が垂直線で表示されます。</para>
+            <para><guilabel>右マージンを表す列番号</guilabel>を使って、垂直線の表示位置を指定できます。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Bracket Matching</guilabel></term>
+          <listitem>
+            <para><guilabel>対応するカッコを強調表示する</guilabel>オプションを選択した場合、カーソルの位置にカッコ文字が存在した場合、それに対応するカッコが強調表示されます。</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-editor">
+      <title>エディタ</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Tabs</guilabel> </term>
+          <listitem>
+            <para><guilabel>タブの幅</guilabel>を使って、<keycap>Tab</keycap> キーを押したときに<application>pluma</application> が挿入する空白の幅を指定することができます。</para>
+            <para><guilabel>タブの代わりにスペースを挿入する</guilabel>オプションを選択した場合、<keycap>Tab</keycap> キーを押したときに<application>pluma</application> はタブ文字ではなく、適切な数の半角空白文字を挿入します。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Auto Indentation</guilabel> </term>
+          <listitem>
+            <para><guilabel>自動インデントを有効にする</guilabel>オプションを選択した場合、改行すると元の行のインデントと同じ位置までインデントを行います。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>File Saving</guilabel> </term>
+          <listitem>
+            <para><guilabel>保存する前にバックアップを生成する</guilabel>オプションを選択した場合、ファイルを保存するたびに、バックアップ用のコピーも生成します。バックアップ用のコピーファイルは、ファイル名の末尾に ~ が付きます。</para>
+            <para><guilabel>ファイルを自動的に保存する間隔 ... 分ごと</guilabel>オプションを使えば、現在のファイルを定期的に保存できます。ファイルを保存したい時間間隔を指定してください。</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-fontsandcolors">
+      <title>フォントと色</title>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guilabel>Font</guilabel> </term>
+          <listitem>
+            <para><guilabel>システムの固定幅フォントを使う</guilabel>オプションを選択した場合、<application>pluma</application> テキストウィンドウの文字列には、システムの標準フォントが使われます。</para>
+            <para><guilabel>エディタのフォント</guilabel>フィールドには、<application>pluma</application> が使う表示フォントの種類が表示されます。ボタンをクリックすれば、使用したいフォントの種類やスタイル、サイズを指定できます。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term lang="en"><guilabel>Color Scheme</guilabel></term>
+          <listitem>
+            <para lang="en">You can choose a color scheme from the list of color schemes. By default, the following color schemes are installed:</para>
+            <variablelist>
+              <varlistentry>
+                <term lang="en"><guilabel>Classic</guilabel></term>
+                <listitem>
+                  <para lang="en">Classic color scheme based on the gvim color scheme.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Cobalt</guilabel></term>
+                <listitem>
+                  <para lang="en">Blue based color scheme.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Kate</guilabel></term>
+                <listitem>
+                  <para lang="en">Color scheme used in the Kate text editor.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Oblivion</guilabel></term>
+                <listitem>
+                  <para lang="en">Dark color scheme using the Tango color palette.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Tango</guilabel></term>
+                <listitem>
+                  <para lang="en">Color scheme using the Tango color scheme.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+            <para lang="en">You can add a new color scheme by clicking on <guilabel>Add...</guilabel>, and selecting a color scheme file</para>
+            <para lang="en">You can remove the selected color scheme by clicking on <guilabel>Remove</guilabel></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="pluma-prefs-plugins">
+      <title>プラグイン</title>
+      <para>プラグインを使えば、より多彩な機能を <application>pluma</application> に追加できます。プラグインについての詳しい情報と、内蔵のプラグインについては、<xref linkend="pluma-plugins-overview"/>を参照してください。</para>
+
+<!-- ============= To Load pluma Plugins ========================= -->
+	 <sect3 id="pluma-install-plugins">
+		<title>プラグインを有効化する</title>
+		<para><application>pluma</application> プラグインを有効化するには、以下の操作を実行してください。</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                  </listitem>
+                  <listitem>
+                    <para><guilabel>プラグイン</guilabel>タブを選択します。</para>
+                  </listitem>
+                  <listitem>
+                    <para>利用したいプラグインの名前の横にあるチェックボックスを選択します。</para>
+                  </listitem>
+                  <listitem>
+                    <para><guibutton>閉じる</guibutton>をクリックして、<guilabel>設定</guilabel>ダイアログを閉じます。</para>
+                  </listitem>
+                </orderedlist>
+	 </sect3>
+
+<!-- ============= To Remove pluma Plugins ========================= -->
+  	 <sect3 id="pluma-remove-plugins">
+  		<title>プラグインを無効化する</title>
+  		<para><application>pluma</application> を終了しても、プラグインは有効化されたままです。</para>
+  		<para><application>pluma</application> プラグインを無効化するには、以下の操作を実行してください。</para>
+                  <orderedlist>
+                    <listitem>
+                      <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>. </para>
+                    </listitem>
+                    <listitem>
+                      <para><guilabel>プラグイン</guilabel>タブを選択します。</para>
+                    </listitem>
+                    <listitem>
+                      <para>無効化したいプラグインの名前の横にあるチェックボックスを非選択状態にします。</para>
+                    </listitem>
+                    <listitem>
+                      <para><guibutton>閉じる</guibutton>をクリックして、<guilabel>設定</guilabel>ダイアログを閉じます。</para>
+                    </listitem>
+                  </orderedlist>
+  	 </sect3>
+	 </sect2>
+
+ </sect1>
+<!-- ============= To Use the pluma Plugins ========================= -->
+	 <sect1 id="pluma-plugins">
+		<title>プラグイン</title>
+		<sect2 id="pluma-plugins-overview">
+		  <title>プラグインを使用する</title>
+  		<para>プラグインとはアプリケーションの機能を強化する補完プログラムであり、<firstterm>プラグイン</firstterm>を導入することで、<application>pluma</application> に多様な機能を追加することができます。例えば、<application>pluma</application> メニューに新しい項目や新機能が追加されます。</para>
+  		<para>いくつかのプラグインが <application>pluma</application> に内蔵されています。また、追加でインストールすることも可能です。サードパーティのプラグインについては、<ulink type="http" url="http://live.gnome.org/Pluma/Plugins">pluma のウェブサイト</ulink>に一覧が存在します。</para>
+  		<para>プラグインを有効化・無効化する方法や、どのプラグインが有効化されているかを確認する方法については、<link linkend="pluma-prefs-plugins">プラグイン設定</link>の項目を参照してください。</para>
+  		<para>以下のプラグインは <application>pluma</application> に内蔵されています。</para>
+  		<!-- Not yet documented:
+  		File browser
+  		-->
+  		<itemizedlist>
+  		  <listitem>
+  		    <para><link linkend="pluma-change-case-plugin"><application>大/小文字の変更</application></link>は、選択したテキストの大/小文字を変更します。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-document-statistics-plugin">ドキュメントの統計</link></application>は、ドキュメントの行数や単語数、文字数を表示します。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-external-tools-plugin">外部ツール</link></application>は <application>pluma</application> から外部コマンドを実行します。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application>ファイル参照ペイン</application>はサイド・ペインから、ファイルやフォルダの閲覧が可能になります。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-indent-lines-plugin">行のインデント</link></application>は指定した行にインデントを追加・削除します。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-insert-date-time-plugin">日付/時刻の挿入</link></application>はドキュメントに現在の日付や時刻を追加します。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-modelines-plugin">モードライン</link></application>は、個々のドキュメントごとに設定を保存したり、<application>Emacs</application>、<application>Kate</application>、<application>Vim</application> 風のモードラインをサポートします。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-python-console-plugin">Python コンソール</link></application>は、プログラミング言語である Python のコマンドを実行します。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-snippets-plugin">コード・スニペット</link></application>は、よく使われる文字列を保存し、手軽にドキュメントに挿入できます。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-sort-plugin">並び替え</link></application>は、選択した行を並び替えることができます。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-spell-checker-plugin">スペル・チェッカ</link></application>は、選択したテキストのスペルを修正したり、ドキュメント内の誤字を自動的に発見します。</para>
+  		  </listitem>
+  		  <listitem>
+  		    <para><application><link linkend="pluma-tag-list-plugin">タグの一覧</link></application>は、HTML やその他の言語で一般的に使われるタグをサイド・ペインから簡単に挿入することができます。</para>
+  		  </listitem>
+  		</itemizedlist>
+
+	<note><para lang="en">For more information on creating plugins, see the <ulink type="http" url="http://live.gnome.org/Pluma/Plugins"><application>pluma</application> website</ulink>.</para></note>
+  	</sect2>
+
+<sect2 id="pluma-change-case-plugin">
+<title>大/小文字の変更プラグイン</title>
+	<para><application>大/小文字の変更</application>プラグインは選択した文字列の、大文字・小文字を切り替えます。</para>
+	 <para><application>大/小文字の変更</application>プラグインを有効にすると、以下の項目が<guimenu>編集</guimenu>メニューに追加されます。</para>
+
+  <informaltable frame="all">
+    <tgroup cols="3" colsep="1" rowsep="1">
+      <colspec colname="COLSPEC0" colwidth="33*"/>
+      <colspec colname="COLSPEC1" colwidth="33*"/>
+      <colspec colname="COLSPEC2" colwidth="33*"/>
+      <thead>
+        <row valign="top">
+          <entry colname="COLSPEC0">
+            <para>項目</para></entry>
+          <entry colname="COLSPEC1">
+            <para>動作</para></entry>
+          <entry colname="COLSPEC2">
+            <para>例</para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Upper Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>選択中の文字を全て大文字に変更します。</para></entry>
+          <entry><para><literal>This text</literal> → <literal>THIS TEXT</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>All Lower Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>選択中の文字を全て小文字に変更します。</para></entry>
+          <entry><para><literal>This Text</literal> → <literal>this text</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Invert Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>選択中の全ての小文字を大文字に変更し、逆に選択中の全ての大文字を小文字に変更します。</para></entry>
+          <entry><para><literal>This Text</literal> → <literal>tHIS tEXT</literal></para></entry>
+        </row>
+        <row valign="top">
+          <entry><para lang="en"><menuchoice><guimenu>Edit</guimenu>
+<guisubmenu>Change Case</guisubmenu><guimenuitem>Title Case</guimenuitem></menuchoice></para></entry>
+          <entry><para>各単語の最初の文字を大文字に変更します。</para></entry>
+          <entry><para><literal>this text</literal> → <literal>This Text</literal></para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+
+</sect2>
+
+<sect2 id="pluma-document-statistics-plugin">
+<title>ドキュメントの統計プラグイン</title>
+	<para><application>ドキュメントの統計</application>プラグインは、現在のファイルに対して、行数、空白込みの文字数、空白なしの文字数、バイト数を計算します。その計算結果は<application>ドキュメントの統計</application>ダイアログに表示されます。ドキュメントの統計プラグインを利用するには、以下の手順を実行します。</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Document Statistics</guimenuitem> </menuchoice> to display the <guilabel>Document Statistics</guilabel> dialog. The <guilabel>Document Statistics</guilabel> dialog displays the following information about the file:
+				</para>
+		      <itemizedlist>
+		      <listitem><para>現在のドキュメントの行数</para>
+		      </listitem>
+		      <listitem><para>現在のドキュメントの単語数</para>
+		      </listitem>
+		      <listitem><para>現在の文書の文字数（空白を含む）</para>
+		      </listitem>
+		      <listitem><para>現在の文書の文字数（空白を除く）</para>
+		      </listitem>
+		      <listitem><para>現在の文書のバイト数</para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem><para><guilabel>ドキュメントの統計</guilabel>ダイアログを開いたまま、<application>pluma</application> 中のファイルを編集し続けることもできます。<guilabel>ドキュメントの統計</guilabel>ダイアログの情報を更新するには、<guibutton>更新</guibutton>をクリックしてください。</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-external-tools-plugin">
+  <title>外部ツールプラグイン</title>
+  <para><application>外部ツール</application>プラグインを使えば、<application>pluma</application> から外部コマンドを実行することができます。コマンドにデータを渡して、その出力結果を取得したり（例えば、<application>sed</application>）、独立した外部コマンドを実行したり（例えば、<application>make</application>）といったことが可能になります。</para>
+  <para><guilabel>外部ツール・マネージャ</guilabel>を使って、実行したいコマンドを定義することができます。定義したコマンドは、<guimenu>ツール</guimenu>メニューに表示されます。</para>
+
+  <sect3 id="pluma-external-tools-plugin-builtin">
+    <title>組み込みコマンド</title>
+    <para>以下のコマンドは、<application>外部ツール</application>プラグインを有効にした段階で利用できます。</para>
+    <variablelist>
+      <varlistentry><term>ビルド</term>
+        <listitem>
+          <para>編集中のドキュメントが存在するディレクトリで、<application>make</application> を実行します。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>ディレクトリの内容を表示</term>
+        <listitem>
+          <para>編集中のドキュメントが存在するディレクトリの内容を、新しいドキュメントに出力します。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>環境変数</term>
+        <listitem>
+          <para>ボトム・ペインに環境変数の一覧を表示します。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>Grep</term>
+        <listitem>
+          <para>編集中のドキュメントが存在するディレクトリ中の全てのファイルに対して検索を行います。結果はボトム・ペインに表示されます。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>末尾の空白を削除する</term>
+        <listitem>
+          <para>ドキュメント中の各行末尾にある空白を削除します。</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-define">
+    <title>コマンドの定義</title>
+    <para>外部コマンドを新規に追加するには、<menuchoice><guimenu>ツール</guimenu><guimenuitem>外部ツール</guimenuitem></menuchoice>を選択してください。</para>
+    <para><guilabel>外部ツール・マネージャ</guilabel>ウィンドウが開きますので、<guibutton>新規</guibutton>をクリックします。実行したいコマンドにあわせて、以下の情報を入力してください。</para>
+    <variablelist>
+      <varlistentry><term>説明</term>
+        <listitem>
+          <para>メニュー上でコマンドを選択したときに、ステータスバーに表示される説明です。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>ショートカット・キー</term>
+        <listitem>
+          <para>キーボードショートカットを行うためのキーコマンドを入力してください。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>コマンド</term>
+        <listitem>
+          <para>実行したいコマンドを入力します。コマンドに現在編集しているドキュメントの情報などを渡すために、<application>pluma</application> 環境変数を使うこともできます。詳しいことは<xref linkend="pluma-external-tools-plugin-variables"/>を参照してください。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>入力</term>
+        <listitem>
+          <para>コマンドに（<systemitem>標準入力</systemitem>として）与える内容を指定します。編集中のドキュメント全体や、選択中のテキスト、行、単語などを指定できます。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>出力</term>
+        <listitem>
+          <para>コマンドの結果をどこに出力するかを指定します。ボトム・ペインに表示、新しいドキュメントに出力、編集中のドキュメントの末尾に追記する、カーソル位置に挿入する、選択部分を置き換える、ドキュメント全体を置き換えるなどを指定できます。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry><term>適用範囲</term>
+        <listitem>
+          <para>コマンドで扱えるドキュメントの種類を指定します。保存されているドキュメントかそうでないか、ローカルのドキュメントかリモートのドキュメントかなどから選べます。</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-edit">
+    <title>ツールの編集・削除</title>
+    <para>既存のツールを編集するには、一覧から編集したいツールを選択し、設定を変更してください。</para>
+    <para>ツールの名前を変更するには、一覧にて名前を二度クリックしてください。</para>
+    <para>組み込みコマンドに加えた変更を元に戻したい場合は、<guilabel>元に戻す</guilabel>をクリックしてください。</para>
+    <para>定義したツールを削除するには、一覧にてツールを選択し、<guibutton>削除</guibutton>をクリックしてください。ただし組み込みコマンドは削除できません。削除できるのは、新規に作成したコマンドのみです。</para>
+  </sect3>
+
+  <sect3 id="pluma-external-tools-plugin-variables">
+    <title>変数</title>
+    <para><guilabel>コマンド</guilabel>フィールドでコマンドを定義する際に、以下の変数を利用することができます。</para>
+    <itemizedlist>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_NAME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_SCHEME</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_PATH</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_CURRENT_DOCUMENT_DIR</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_URI</para>
+      </listitem>
+      <listitem>
+        <para>PLUMA_DOCUMENTS_PATH</para>
+      </listitem>
+    </itemizedlist>
+  </sect3>
+</sect2>
+
+<sect2 id="pluma-file-browser-plugin">
+  <title>ファイル参照ペインプラグイン</title>
+  <para><application>ファイル参照ペイン</application>プラグインを使えば、サイド・ペインにてファイルやフォルダを参照することができ、簡単にファイルを開くことができます。</para>
+  <para lang="en">To view the File Browser, choose <menuchoice><guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice> and then click on the tab showing the File Browser icon at the bottom of the side pane.</para>
+  <sect3 id="pluma-file-browser-plugin-browsing">
+    <title>ファイルを表示する</title>
+    <para>初期状態のファイル・ブラウザタブでは、ファイル・マネージャでブックマークされている内容が表示されています。中身を表示するには、それぞれの項目をダブルクリックしてください。</para>
+    <para>親フォルダを表示するには、ドロップダウンリストから選択するか、ファイル・ブラウザツールバー上の上矢印をクリックしてください。</para>
+    <para>編集中のドキュメントが存在するフォルダを表示するには、ファイルの一覧で右クリックし、<guimenuitem>ドキュメントのルートにする</guimenuitem>を選択してください。</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-open">
+    <title>ファイルを開く</title>
+    <para>ファイルを <application>pluma</application> で開くには、ファイルの一覧から開きたいファイルをダブルクリックしてください。</para>
+  </sect3>
+  <sect3 id="pluma-file-browser-plugin-create">
+    <title>ファイルやフォルダを作成する</title>
+    <para>ファイル・ブラウザで表示されているフォルダに、新規に空のテキストファイルを作成するには、そのファイル一覧上で右クリックし、<guimenuitem>新しいファイル</guimenuitem>を選択してください。</para>
+    <para>ファイル・ブラウザで表示されているフォルダに、新規にフォルダを作成するには、そのファイル一覧上で右クリックし、<guimenuitem>新しいフォルダ</guimenuitem>を選択してください。</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-indent-lines-plugin">
+<title>行のインデントプラグイン</title>
+	<para><application>行のインデント</application>プラグインは、行の先頭に空白を追加・削除します。</para>
+	<para>インデントやインデントの解除を行うには、次の手順を実行します。</para>
+  	<orderedlist>
+		  <listitem><para>インデントを設定する行を選択します。1 行にインデントを設定したり削除したりするには、その行にカーソルを置きます。同じ行であればカーソルの位置はどこでも構いません。</para>
+		  </listitem>
+		  <listitem>
+		    <itemizedlist>
+		      <listitem>
+		        <para lang="en">To indent the text, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Indent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		      <listitem>
+		        <para lang="en">To remove the indentation, choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Unindent</guimenuitem> </menuchoice>.</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+	<para>インデント幅やタブ文字/空白文字のどちらを使うかといった設定は、エディタ設定の<guilabel>タブ文字</guilabel>に依存します。詳しいことは、<xref linkend="pluma-prefs-editor"/>を参照してください。</para>
+
+</sect2>
+
+<sect2 id="pluma-insert-date-time-plugin">
+<title>日付/時間の挿入プラグイン</title>
+	<para><application>日付/時間の挿入プラグイン</application>プラグインは、ドキュメントに原罪の日付や時刻を挿入します。日付/時間の挿入プラグインを使用するには、次の手順を実行します。</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>. </para>
+        <para>自動的に指定した形式で日付/時刻を挿入するよう日付/時刻の挿入プラグインで設定していない場合は、<guilabel>日付と時刻の挿入</guilabel>ダイアログが表示されます。一覧の中から、希望の形式を選択してください。<guibutton>挿入</guibutton>をクリックすれば、<guilabel>日付と時刻の挿入</guilabel>ダイアログが閉じます。さらに現在編集中のファイルのカーソル位置に、日付/時刻が挿入されます。</para>
+				<para>特定の日付/時間形式を <application>pluma</application> が使用する設定になっている場合は、<guilabel>日付と時刻の挿入</guilabel>ダイアログは表示されません。日付/時間は、現在編集中のファイルのカーソル位置に自動的に挿入されます。</para>
+		  </listitem>
+		</orderedlist>
+
+<sect3 id="pluma-date-time-configure">
+<title>日付/時間の挿入プラグインの設定</title>
+<para>日付/時間の挿入プラグインを設定するには、次の手順を実行します。</para>
+		<orderedlist>
+		  <listitem> <para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Preferences</guimenuitem> </menuchoice>.
+                    </para>
+		  </listitem>
+		  <listitem> <para><guilabel>プラグイン</guilabel>タブを選択します。</para>
+		  </listitem>
+		  <listitem> <para><guilabel>日付/時間の挿入</guilabel> プラグインを選択します。</para>
+		  </listitem>
+		  <listitem> <para><guibutton>プラグインの設定</guibutton>をクリックして、<guilabel>日付/時間挿入プラグインの設定</guilabel>ダイアログを表示します。</para>
+		  </listitem>
+		  <listitem> <para>次のようにオプションを 1 つ選択します。</para>
+		      <itemizedlist>
+		      <listitem><para>日付/時間を挿入するたびに日付/時間の形式を指定したい場合は、<guilabel>フォーマットのためのプロンプト</guilabel>オプションを選択します。</para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same <application>pluma</application>-provided date/time format each time you insert the date/time, select the <guilabel>Use the selected format</guilabel> option, then select the appropriate format from the list. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      <listitem><para lang="en">To use the same customized date/time format each time you insert the date/time, select the <guilabel>Use custom format</guilabel> option, then enter the appropriate format in the text box. For more information about how to specify a custom format, see <ulink url="man:strftime" type="man"><citerefentry><refentrytitle>strftime</refentrytitle><manvolnum>3</manvolnum></citerefentry></ulink>. When you select this option, <application>pluma</application> does not prompt you for the date/time format when you choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Insert Date and Time</guimenuitem> </menuchoice>.
+		                </para>
+		      </listitem>
+		      </itemizedlist>
+		  </listitem>
+		  <listitem> <para><guibutton>OK</guibutton>をクリックして、<guilabel>日付/時間挿入プラグインの設定</guilabel>ダイアログを閉じます。</para>
+		  </listitem>
+		  <listitem> <para><guilabel>設定</guilabel>ダイアログを閉じるには、<guibutton>閉じる</guibutton>をクリックします。</para>
+		  </listitem>
+		</orderedlist>
+</sect3>
+</sect2>
+
+<sect2 id="pluma-modelines-plugin">
+  <title>モードラインプラグイン</title>
+    <para><application>モードライン</application>プラグインを使えば、ドキュメントごとの設定を保存できます。<firstterm>モードライン</firstterm>とは <application>pluma</application> がそのドキュメントを判別するためのテキストの先頭もしくは終端行を意味します。</para>
+    <para>モードラインを使えば、設定ダイアログで設定できる項目を上書きすることができます。</para>
+    <para>モードラインでは以下の項目を設定できます。</para>
+    <itemizedlist>
+      <listitem>
+        <para>タブの幅</para>
+      </listitem>
+      <listitem>
+        <para>インデントの幅</para>
+      </listitem>
+      <listitem>
+        <para>タブ文字の代わりに半角空白を使うかどうか</para>
+      </listitem>
+      <listitem>
+        <para>テキストの折り返し</para>
+      </listitem>
+      <listitem>
+        <para>右マージン幅</para>
+      </listitem>
+    </itemizedlist>
+
+    <para><application>モードライン</application>プラグインでは、<application>Emacs</application>、<application>Kate</application>、<application>Vim</application> などのテキストエディタでも使われているモードラインをサポートしています。</para>
+
+    <sect3 id="pluma-modelines-plugin-emacs">
+      <title>Emacs モードライン</title>
+      <para><application>Emacs</application> モードラインでは、ドキュメントの先頭二行を使って判別します。</para>
+      <para><application>Emacs</application> ではタブの幅 (tab-width)、インデントの幅 (indent-offset)、インデント文字の種類 (indent-tabs-mode)、自動テキストの折り返し (autowrap)オプションなどをサポートしています。詳しいことは <ulink type="http" url="http://www.delorie.com/gnu/docs/emacs/emacs_486.html">GNU Emacs マニュアル</ulink>を参照してください。</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-kate">
+      <title>Kate モードライン</title>
+      <para><application>Kate</application> モードラインでは、ドキュメントの先頭と終端の十行を使って判別します。</para>
+      <para><application>Kate</application> ではタブの幅 (tab-width)、インデントの幅 (indent-width)、空白文字によるインデント (space-indent)、単語の折り返し (word-wrap)、折り返し幅 (word-wrap-column)オプションなどをサポートしています。詳しいことは <ulink type="http" url="http://www.kate-editor.org/article/katepart_modelines">Kate のウェブサイト</ulink>を参照してください。</para>
+    </sect3>
+    <sect3 id="pluma-modelines-plugin-vim">
+      <title>Vim モードライン</title>
+      <para><application>Vim</application> モードラインでは、ドキュメントの先頭と終端の三行を使って判別します。</para>
+      <para><application>Vim</application> ではタブ文字の種類 (expandtab)、タブの幅 (tabstop)、インデントの幅 (shiftwidth)、テキストの折り返し (wrap)、折り返し幅 (textwidth)オプションなどをサポートしています。詳しいことは <ulink type="http" url="http://vimdoc.sourceforge.net/htmldoc/options.html#modeline">Vim のウェブサイト</ulink>を参照してください。</para>
+    </sect3>
+</sect2>
+
+<sect2 id="pluma-python-console-plugin">
+  <title>Python コンソールプラグイン</title>
+  <para><application>Python コンソール</application>プラグインを使えば、<application>pluma</application> からプログラミング言語である Python のコマンドを実行できます。プラグインを有効にするとボトム・ペインにタブが追加されて、ここにコマンドプロンプトやその結果が出力されます。</para>
+  <caution><para>Python コンソールで入力されたコマンドは、実行前の確認が行われません。そのため、無限ループなどを実行することで、<application>pluma</application> が停止してしまう可能性もあります。</para></caution>
+</sect2>
+
+<sect2 id="pluma-snippets-plugin">
+<title>コード・スニペットプラグイン</title>
+  <para><application>コード・スニペット</application>プラグインを使えば、よく使う文字列（<firstterm>スニペット</firstterm>）を保存し、手軽にドキュメントに挿入できます。</para>
+    <para>挿入できるスニペットは、現在編集中のドキュメントの種類に依存します。例えば、HTML ドキュメントを編集中であれば、HTML でよく使われるスニペットの一覧から文字列を選択することができます。一部のスニペットは、全ての種類のドキュメントで利用できます。</para>
+    <para><application>pluma</application> には数多くの組み込みスニペットが存在し、それを編集することも可能です。</para>
+
+  <sect3 id="pluma-snippets-plugin-insert">
+    <title>スニペットの挿入</title>
+    <para>スニペットを実際に挿入するにはまず<firstterm>タブトリガ</firstterm>と呼ばれる単語を入力してから、<keycap>Tab</keycap> キーを押します。スニペットのタブトリガは、一般的に挿入したいスニペットの一部の文字で構成されるか、より覚えやすい短い単語が選ばれています。</para>
+    <para>別の方法として、<keycombo><keycap>Ctrl</keycap><keycap>Space</keycap></keycombo> を入力すれば、挿入可能なスニペットの一覧が表示されます。訳注：日本語環境の場合、<keycombo><keycap>Ctrl</keycap><keycap>Space</keycap></keycombo> は日本語入力のオン/オフが割り当てられていることがあるため、日本語入力の設定を変更しない限り使えない場合もあります。</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-add">
+    <title>スニペットの追加</title>
+    <para>新規にスニペットを追加する方法は次のとおりです。</para>
+      <orderedlist>
+        <listitem>
+          <para><menuchoice><guimenu>ツール</guimenu><guimenuitem>スニペットの管理</guimenuitem></menuchoice>を選択し、<guilabel>スニペットの管理</guilabel>ウィンドウを開きます。</para>
+        </listitem>
+        <listitem>
+          <para>スニペットの一覧は言語ごとにグループ分けされていますので、追加したいスニペットの言語か言語グループにあるスニペット自体を選択します。全ての言語に共通するスニペットを追加したい場合は、一覧の先頭にある全般を選択します。標準状態では、現在編集中のドキュメントの種類が選択されています。</para>
+        </listitem>
+        <listitem>
+          <para><guibutton>新規</guibutton>をクリックします。一覧の中に新しいスニペットの項目が現れます。</para>
+        </listitem>
+        <listitem>
+          <para>新しいスニペットに対して、以下の情報を入力してください。</para>
+          <variablelist>
+            <varlistentry><term>名前</term>
+              <listitem>
+                <para>スニペットの一覧で表示される、スニペットの名前を入力します。この名前は、そのスニペットがどういうものかを思い出すためだけに使われます。一覧の中でスニペットの名前をクリックすれば、名前を変更することができます。</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>スニペットテキスト</term>
+              <listitem>
+                <para><guilabel>編集</guilabel>ボックスに、挿入したいスニペットの文字列を入力します。特殊なコードも入力可能です。詳しいことは、<xref linkend="pluma-snippets-plugin-syntax"/>を参照してください。</para>
+                <tip><para><guilabel>スニペットの管理</guilabel>ウィンドウを閉じることなく、ドキュメントウィンドウに一旦戻って、そこから入力したい文字列をコピーすることも可能です。</para></tip>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>タブトリガ</term>
+              <listitem>
+                <para>タブ欄にタブトリガとなる文字列を入力します。これは、<keycap>Tab</keycap> キーを押した際に、どのスニペットに置き換えるべきかを識別するための文字列です。</para>
+                <para>タブトリガは他のスニペットのタブトリガと重複できません。もし、入力した文字列が重複している場合は、<guilabel>タブ</guilabel>の欄が赤く表示されます。</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry><term>ショートカット・キー</term>
+              <listitem>
+                <para>スニペットを挿入するためのショートカット・キーを入力します。</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+
+        </listitem>
+      </orderedlist>
+  </sect3>
+  <sect3 id="pluma-snippets-plugin-edit">
+    <title>スニペットの編集・削除</title>
+    <para>特定のスニペットを編集するには、一覧からスニペットを選択後、表示される各設定を適宜修正してください。</para>
+    <para>特定のスニペットの名前を編集するには、スニペットの名前を二度クリックしてください。</para>
+    <para>一度編集した組み込みスニペットを元に戻すには、<guilabel>元に戻す</guilabel>をクリックしてください。</para>
+    <para>特定のスニペットを削除するには、スニペットを選択後、<guibutton>削除</guibutton>をクリックしてください。組み込みスニペットは削除できません。自分で作ったスニペットのみ削除可能です。</para>
+  </sect3>
+
+  <sect3 id="pluma-snippets-plugin-syntax">
+    <title>スニペット置換</title>
+    <para>文字列を挿入するだけでなく、スニペットには状況に合わせて変更可能な文字列を挿入したり、スニペット挿入後に修正が必要な場所を指定したりといったことが可能です。</para>
+
+    <para/>
+
+    <para>スニペットテキストに、以下のコードを入力できます。</para>
+      <variablelist>
+        <varlistentry><term>タブコード</term>
+          <listitem>
+            <para><literal>$<replaceable>n</replaceable></literal> はタブコードを表します。<literal>n</literal> は 1 から始まるタブの番号です。</para>
+            <para><literal>${<replaceable>n</replaceable>:<replaceable>default</replaceable>}</literal> は初期値付きのタブコードです。</para>
+            <para>タブコードは、そのスニペットを挿入後に別の文字列を挿入する可能性がある場所を指定するコードです。</para>
+            <para>タブコードを使うためには、まず普通にスニペットを挿入します。その後、カーソルが最初のタブ番号の位置に移動します。テキストを入力し、<keycap>Tab</keycap> キーを押せば、次のタブ番号の位置に移動します。タブコードの番号は、<keycap>Tab</keycap> キーを押すことによって進む順番を指定します。</para>
+            <para><keycombo><keycap>Shift</keycap><keycap>Tab</keycap></keycombo> を押せば一つ前のタブ番号の位置にカーソルが移動します。一番最後の位置で、<keycap>Tab</keycap> キーを押した場合、スニペットで挿入された文字列の最後か、もし存在すれば終端コードの位置にカーソルが移動します。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>ミラーコード</term>
+          <listitem>
+            <para>タブコード連続して記述すると、既に定義されたコードを複写します。これによりスニペットが数回現れる場面でも、入力は一度だけで済みます。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>終端コード</term>
+          <listitem>
+            <para><literal>$0</literal> は終端コードを表します。これはスニペットの末尾に記され、カーソルがスニペットの最後尾に移動する際に使われます。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>環境変数</term>
+          <listitem>
+            <para><literal>$PATH</literal> や <literal>$HOME</literal> のような環境変数はスニペットでも利用できます。<application>pluma</application> では以下の独自の環境変数も使用できます。</para>
+            <variablelist>
+              <varlistentry><term>$PLUMA_SELECTED_TEXT</term>
+                <listitem>
+                  <para>現在選択中の文字列を表します。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_FILENAME</term>
+                <listitem>
+                  <para>現在編集中のファイル名を表します。ドキュメントが未保存であれば、空文字となります。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_BASENAME</term>
+                <listitem>
+                  <para>現在編注のファイル名の、拡張子を除いた部分を表します。ドキュメントが未保存であれば、空文字となります。</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry><term>$PLUMA_CURRENT_WORD</term>
+                <listitem>
+                  <para>現在カーソルが存在する場所の単語を表します。この変数が使われたとき、現在の単語は、スニペットに置換されます。</para>
+                </listitem>
+              </varlistentry>
+
+            </variablelist>
+
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>シェルコード</term>
+          <listitem>
+            <para><literal>$(<replaceable>cmd</replaceable>)</literal> は端末内で <replaceable>cmd</replaceable> を実行した結果に置換されます。</para>
+            <para><literal>$(<replaceable>n</replaceable>:<replaceable>cmd</replaceable>)</literal> は参照番号付きのシェルコードで、<replaceable>n</replaceable> には 1 以上の数字を割り当てます。<literal>$<replaceable>n</replaceable></literal> を使えば、その番号の割り当てられたシェルコードと同じ出力結果を挿入できます。</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry><term>Python コード</term>
+          <listitem>
+            <para><literal>$&lt;<replaceable>cmd</replaceable>&gt;</literal> は Python インタプリタ内で <replaceable>cmd</replaceable> を実行した結果に置換されます。</para>
+            <para><literal>$&lt;<replaceable>a</replaceable>:<replaceable>cmd</replaceable>&gt;</literal> は、別の Python コードへの依存性を表しています。ここで <replaceable>a</replaceable> はスニペットの順番です。これを使えば、他のスニペットで定義された Python 関数を利用できます。複数の依存性を表すには、次のようにカンマで区切ってください： <literal>$&lt;<replaceable>a</replaceable>,<replaceable>b</replaceable>:<replaceable>cmd</replaceable>&gt;</literal></para>
+            <para>他の Python スニペットで使っている変数を利用するには、その変数が<literal>グローバル</literal>として定義されている必要があります。</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+  </sect3>
+
+</sect2>
+
+<sect2 id="pluma-sort-plugin">
+<title>並び替えプラグイン</title>
+	<para><application>並び替え</application>プラグインは、選択した行をアルファベット順（文字コード順）に並べ替えます。</para>
+		  <caution><para lang="en">You cannot undo the Sort operation, so you should save the file before performing the sort. To revert to the saved version of the file after the sort operation, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Revert</guimenuitem> </menuchoice>.
+				</para>
+		  </caution>
+              <para>並び替えプラグインを使用するには、次の手順を実行します。</para>
+		<orderedlist>
+		  <listitem>
+		    <para>並び替えたい行を選択します。</para>
+		  </listitem>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Sort</guimenuitem> </menuchoice>. The <guilabel>Sort</guilabel> dialog opens.
+				</para>
+		  </listitem>
+		  <listitem><para>並び替え作業で使用したいオプションを選択します。</para>
+		    <itemizedlist>
+    		  <listitem>
+    		    <para>逆の順序に並べ替えたい場合は、<guilabel>逆順にする</guilabel>オプションを選択します。</para>
+    		  </listitem>
+    		  <listitem><para>重複した行を削除する場合は、<guilabel>重複する部分を削除する</guilabel>オプションを選択します。</para>
+    		  </listitem>
+    		  <listitem><para>大文字と小文字を認識して並び替えたい場合は、<guilabel>大/小文字を区別する</guilabel>オプションを選択します。</para>
+    		  </listitem>
+    		  <listitem><para>各行ごとに最初の数文字を並び替え判別の対称から外したい場合は、<guilabel>開始行</guilabel>でその文字数を指定します。</para>
+    		  </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para>並び替え操作を実行するには、<guibutton>並び替え</guibutton>をクリックします。</para>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-spell-checker-plugin">
+<title>スペル・チェッカプラグイン</title>
+	<para><application>スペル・チェッカ</application>プラグインは、選択したテキストのスペルを確認します。自動的にスペルチェックを行ったり、特定の言語で手動でスペルチェックを行うといった設定が可能です。言語設定や自動チェックのオン/オフについては、ドキュメントごとに保存されます。スペル・チェッカプラグインを使用するには、以下の手順を実行します。</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Set Language</guimenuitem> </menuchoice> to display the <guilabel>Set language</guilabel> dialog. Select the appropriate language from the list. Click <guibutton>OK</guibutton> to close the <guilabel>Set language</guilabel> dialog.
+				</para>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling automatically, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice>. To unset the automatic spell check, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Autocheck Spelling</guimenuitem> </menuchoice> again. When automatic spell checking is set, an icon is displayed beside the <guimenuitem>Autocheck Spelling</guimenuitem> menu item. Automatic spell checking is unset by default, each time <application>pluma</application> starts.</para>
+                            <para>辞書にないスペルが発見されたときは、別の色で下線が表示されます。その単語を右クリックし、<guimenu>スペルの提示</guimenu>を選択すると、以下の選択肢が表示されます。</para>
+		    <itemizedlist>
+		      <listitem><para>辞書にないスペルを別のスペルに置き換える場合は、<guimenu>スペルの提示</guimenu>に表示されているスペルを選択してください。</para>
+		      </listitem>
+		      <listitem><para lang="en">To add the unknown spelling to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Add</guimenuitem> </menuchoice>.
+				</para>
+		      </listitem>
+		      <listitem><para lang="en">To ignore all occurrences of the unknown spelling, so that they are no longer flagged as unknown but are not added to your personal dictionary, select <menuchoice> <guimenu>Spelling Suggestions</guimenu> <guimenuitem>Ignore All</guimenuitem> </menuchoice>. The unknown word is ignored in the current <application>pluma</application> session only.
+				</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		  <listitem><para lang="en">To check the spelling manually, choose <menuchoice> <guimenu>Tools</guimenu> <guimenuitem>Check Spelling</guimenuitem> </menuchoice>.
+				</para>
+				<para>スペルミスが発見されなかった場合は、<guilabel>情報</guilabel>ダイアログに、スペルミスと思われる単語が見つからなかった旨が表示されます。<guibutton>OK</guibutton> をクリックして<guilabel>情報</guilabel>ダイアログを閉じてください。</para>
+				<para>スペルミスが発見された場合、<guilabel>スペルチェック</guilabel>ダイアログが表示されます。</para>
+		    <itemizedlist>
+		      <listitem><para>ダイアログの冒頭には<guilabel>スペルミスと思われる単語</guilabel>が表示されます。</para>
+		      </listitem>
+		      <listitem><para><guilabel>変更先</guilabel>には、正しいと予想される候補が表示されます。<guilabel>正解の候補</guilabel>リストから別の候補を選択することや、<guilabel>変更先</guilabel>に直接正しいスペルを書き込むこともできます。</para>
+		      </listitem>
+		      <listitem><para><guilabel>変更先</guilabel>に入力したスペルが正しいかどうかを確認するには、<guibutton>単語のチェック</guibutton>をクリックしてください。辞書の単語と一致すれば、<guilabel>正解の候補</guilabel>リストの内容は<literal>（正しいつづり）</literal>に置き換わります。辞書の単語と一致しなければ、新しい候補が<guilabel>正解の候補</guilabel>リストに表示されます。</para>
+		      </listitem>
+		      <listitem><para>現在の単語に対するスペルチェックを無視するには、<guibutton>無視</guibutton>をクリックしてください。同じドキュメント中にある同じ単語全てを無視するには<guibutton>全て無視</guibutton>をクリックしてください。これらの設定は <application>pluma</application> を再起動すると無効になります。</para>
+		      </listitem>
+		      <listitem><para>現在、確認している単語のみを<guilabel>変更先</guilabel>の単語に置き換える場合は、<guibutton>変更</guibutton>をクリックします。同じスペルの単語を全て置き換える場合は、<guibutton>全て変更</guibutton>をクリックします。</para>
+		      </listitem>
+		      <listitem><para>その不明な単語を個人辞書に追加するには、<guibutton>単語の追加</guibutton>をクリックします。</para>
+		      </listitem>
+		      <listitem><para><guilabel>スペル・チェック</guilabel>ダイアログを閉じるには、<guibutton>閉じる</guibutton>をクリックしてください。</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+<sect2 id="pluma-tag-list-plugin">
+<title>タグの一覧プラグイン</title>
+	<para><application>タグの一覧</application>プラグインを使えば、よく使われるタグがサイド・ペインに表示され、そこから簡単にドキュメントに挿入できます。</para>
+  <para>タグの一覧プラグインを使用するには、次の手順を実行します。</para>
+		<orderedlist>
+		  <listitem><para lang="en">Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Side Pane</guimenuitem> </menuchoice>.
+				</para>
+		  </listitem>
+		  <listitem>
+		    <para>初期設定では、サイドペインには開いているファイルの一覧が表示されます。タグの一覧を表示するためには、サイド・ペインの下部にある + アイコンをクリックしてください。</para>
+		  </listitem>
+		  <listitem><para>ドロップダウンリストから、適切なタグカテゴリを選択します。例えば、<literal>HTML - タグ</literal>を選択します。</para>
+		  </listitem>
+		  <listitem><para>タグの一覧をスクロールして、希望のタグを見つけます。</para>
+		  </listitem>
+		  <listitem><para>編集中のドキュメントのカーソル位置にタグを挿入するには、タグの一覧で該当するタグをダブルクリックします。次の方法でもタグを挿入できます。</para>
+		    <itemizedlist>
+		      <listitem><para><keycap>Enter</keycap> キーを押せば、タグを挿入し、サイド・ペインから表示領域に戻れます。</para>
+		      </listitem>
+		      <listitem><para><keycombo><keycap>Shift</keycap><keycap>Enter</keycap></keycombo> キーを押せば、タグを挿入し、フォーカスはサイド・ペイン上に残ります。</para>
+		      </listitem>
+		    </itemizedlist>
+		  </listitem>
+		</orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

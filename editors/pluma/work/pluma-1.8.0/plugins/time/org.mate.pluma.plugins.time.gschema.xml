@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="pluma">
+  <enum id="org.mate.pluma.plugins.time.PromptType">
+    <value value="0" nick="prompt-selected-format"/>
+    <value value="1" nick="prompt-custom-format"/>
+    <value value="2" nick="use-selected-format"/>
+    <value value="3" nick="use-custom-format"/>
+  </enum>
+  <schema path="/org/mate/pluma/plugins/time/" id="org.mate.pluma.plugins.time">
+    <key name="prompt-type" enum="org.mate.pluma.plugins.time.PromptType">
+      <default>'prompt-selected-format'</default>
+      <summary>Prompt type</summary>
+    </key>
+    <key type="s" name="selected-format">
+      <default>'%c'</default>
+      <summary>Selected format</summary>
+    </key>
+    <key type="s" name="custom-format">
+      <default>'%d/%m/%Y %H:%M:%S'</default>
+      <summary>Custom format</summary>
+    </key>
+  </schema>
+</schemalist>

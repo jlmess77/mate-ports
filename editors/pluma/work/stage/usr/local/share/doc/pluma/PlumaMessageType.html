@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>pluma Reference Manual: PlumaMessageType</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="pluma Reference Manual">
+<link rel="up" href="ch01.html" title="pluma">
+<link rel="prev" href="PlumaMessageBus.html" title="PlumaMessageBus">
+<link rel="next" href="PlumaMessage.html" title="PlumaMessage">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#PlumaMessageType.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#PlumaMessageType.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="PlumaMessageBus.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="PlumaMessage.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="PlumaMessageType"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="PlumaMessageType.top_of_page"></a>PlumaMessageType</span></h2>
+<p>PlumaMessageType — message type description</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="PlumaMessageType.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-get-type" title="pluma_message_type_get_type ()">pluma_message_type_get_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-is-supported" title="pluma_message_type_is_supported ()">pluma_message_type_is_supported</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-identifier" title="pluma_message_type_identifier ()">pluma_message_type_identifier</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-is-valid-object-path" title="pluma_message_type_is_valid_object_path ()">pluma_message_type_is_valid_object_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="returnvalue">PlumaMessageType</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-new" title="pluma_message_type_new ()">pluma_message_type_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="returnvalue">PlumaMessageType</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-new-valist" title="pluma_message_type_new_valist ()">pluma_message_type_new_valist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="returnvalue">PlumaMessageType</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-ref" title="pluma_message_type_ref ()">pluma_message_type_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-unref" title="pluma_message_type_unref ()">pluma_message_type_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-set" title="pluma_message_type_set ()">pluma_message_type_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-set-valist" title="pluma_message_type_set_valist ()">pluma_message_type_set_valist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="PlumaMessage.html" title="PlumaMessage"><span class="returnvalue">PlumaMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-instantiate" title="pluma_message_type_instantiate ()">pluma_message_type_instantiate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="PlumaMessage.html" title="PlumaMessage"><span class="returnvalue">PlumaMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-instantiate-valist" title="pluma_message_type_instantiate_valist ()">pluma_message_type_instantiate_valist</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-get-object-path" title="pluma_message_type_get_object_path ()">pluma_message_type_get_object_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-get-method" title="pluma_message_type_get_method ()">pluma_message_type_get_method</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-lookup" title="pluma_message_type_lookup ()">pluma_message_type_lookup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="PlumaMessageType.html#pluma-message-type-foreach" title="pluma_message_type_foreach ()">pluma_message_type_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PlumaMessageType.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="PlumaMessageType.html#PlumaMessageType-struct" title="PlumaMessageType">PlumaMessageType</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="PlumaMessageType.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GBoxed
+    <span class="lineart">╰──</span> PlumaMessageType
+</pre>
+</div>
+<div class="refsect1">
+<a name="PlumaMessageType.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;pluma/pluma-message-type.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="PlumaMessageType.description"></a><h2>Description</h2>
+<p>A message type is a prototype description for a <a class="link" href="PlumaMessage.html" title="PlumaMessage"><span class="type">PlumaMessage</span></a> used to
+transmit messages on a <a class="link" href="PlumaMessageBus.html" title="PlumaMessageBus"><span class="type">PlumaMessageBus</span></a>. The message type describes
+the Object Path, Method and Arguments of the message.</p>
+<p>A message type can contain any number of required and optional arguments.
+To instantiate a <a class="link" href="PlumaMessage.html" title="PlumaMessage"><span class="type">PlumaMessage</span></a> from a <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a>, use 
+<a class="link" href="PlumaMessageType.html#pluma-message-type-instantiate" title="pluma_message_type_instantiate ()"><code class="function">pluma_message_type_instantiate()</code></a>.</p>
+<p>Registering a new message type on a <a class="link" href="PlumaMessageBus.html" title="PlumaMessageBus"><span class="type">PlumaMessageBus</span></a> with
+<a class="link" href="PlumaMessageBus.html#pluma-message-bus-register" title="pluma_message_bus_register ()"><code class="function">pluma_message_bus_register()</code></a> internally creates a new <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a>. When
+then using <a class="link" href="PlumaMessageBus.html#pluma-message-bus-send" title="pluma_message_bus_send ()"><code class="function">pluma_message_bus_send()</code></a>, an actual instantiation of the 
+registered type is internally created and send over the bus.</p>
+<div class="example">
+<a name="id-1.2.7.7.5"></a><p class="title"><b>Example 4. </b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc slc">// Defining a new message type</span>
+PlumaMessageType <span class="gtkdoc opt">*</span>message_type <span class="gtkdoc opt">=</span> <span class="function"><a href="PlumaMessageType.html#pluma-message-type-new">pluma_message_type_new</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;/plugins/example&quot;</span><span class="gtkdoc opt">,</span>
+                                                         <span class="string">&quot;method&quot;</span><span class="gtkdoc opt">,</span>
+                                                         <span class="number">0</span><span class="gtkdoc opt">,</span>
+                                                         <span class="string">&quot;arg1&quot;</span><span class="gtkdoc opt">,</span> G_TYPE_STRING<span class="gtkdoc opt">,</span>
+                                                         NULL<span class="gtkdoc opt">);</span>
+
+<span class="gtkdoc slc">// Instantiating an actual message from the type</span>
+PlumaMessage <span class="gtkdoc opt">*</span>message <span class="gtkdoc opt">=</span> <span class="function"><a href="PlumaMessageType.html#pluma-message-type-instantiate">pluma_message_type_instantiate</a></span> <span class="gtkdoc opt">(</span>message_type<span class="gtkdoc opt">,</span>
+                                                        <span class="string">&quot;arg1&quot;</span><span class="gtkdoc opt">,</span> <span class="string">&quot;Hello World&quot;</span><span class="gtkdoc opt">,</span>
+                                                        NULL<span class="gtkdoc opt">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break">
+</div>
+<div class="refsect1">
+<a name="PlumaMessageType.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="pluma-message-type-get-type"></a><h3>pluma_message_type_get_type ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+pluma_message_type_get_type (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Retrieves the GType object which is associated with the
+<a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> class.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.2.5"></a><h4>Returns</h4>
+<p> the GType associated with <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-is-supported"></a><h3>pluma_message_type_is_supported ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+pluma_message_type_is_supported (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);</pre>
+<p>Returns if <em class="parameter"><code>type</code></em>
+ is <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> supported by the message system.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.3.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>type</code></em>
+is a supported <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-identifier"></a><h3>pluma_message_type_identifier ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+pluma_message_type_identifier (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                               <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>);</pre>
+<p>Get the string identifier for <em class="parameter"><code>method</code></em>
+ at <em class="parameter"><code>object_path</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.4.6"></a><h4>Returns</h4>
+<p> the identifier for <em class="parameter"><code>method</code></em>
+at <em class="parameter"><code>object_path</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-is-valid-object-path"></a><h3>pluma_message_type_is_valid_object_path ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+pluma_message_type_is_valid_object_path
+                               (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>);</pre>
+<p>Returns whether <em class="parameter"><code>object_path</code></em>
+ is a valid object path</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.5.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>object_path</code></em>
+is a valid object path</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-new"></a><h3>pluma_message_type_new ()</h3>
+<pre class="programlisting"><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="returnvalue">PlumaMessageType</span></a> *
+pluma_message_type_new (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                        <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>,
+                        <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> num_optional</code></em>,
+                        <em class="parameter"><code>...</code></em>);</pre>
+<p>Create a new <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> for <em class="parameter"><code>method</code></em>
+ at <em class="parameter"><code>object_path</code></em>
+. Argument names
+and values are supplied by the NULL terminated variable argument list.
+The last <em class="parameter"><code>num_optional</code></em>
+ provided arguments are considered optional.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_optional</p></td>
+<td class="parameter_description"><p>number of optional arguments</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>key/gtype pair variable argument list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.6.6"></a><h4>Returns</h4>
+<p> the newly constructed <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-new-valist"></a><h3>pluma_message_type_new_valist ()</h3>
+<pre class="programlisting"><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="returnvalue">PlumaMessageType</span></a> *
+pluma_message_type_new_valist (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                               <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>,
+                               <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> num_optional</code></em>,
+                               <em class="parameter"><code><span class="type">va_list</span> va_args</code></em>);</pre>
+<p>Create a new <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> for <em class="parameter"><code>method</code></em>
+ at <em class="parameter"><code>object_path</code></em>
+. Argument names
+and values are supplied by the NULL terminated variable argument list.
+The last <em class="parameter"><code>num_optional</code></em>
+ provided arguments are considered optional.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_optional</p></td>
+<td class="parameter_description"><p>number of optional arguments</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>var_args</p></td>
+<td class="parameter_description"><p>key/gtype pair variable argument list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.7.6"></a><h4>Returns</h4>
+<p> the newly constructed <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-ref"></a><h3>pluma_message_type_ref ()</h3>
+<pre class="programlisting"><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="returnvalue">PlumaMessageType</span></a> *
+pluma_message_type_ref (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>);</pre>
+<p>Increases the reference count on <em class="parameter"><code>message_type</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.8.6"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>message_type</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-unref"></a><h3>pluma_message_type_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_message_type_unref (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>);</pre>
+<p>Decreases the reference count on <em class="parameter"><code>message_type</code></em>
+. When the reference count
+drops to 0, <em class="parameter"><code>message_type</code></em>
+ is destroyed.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-set"></a><h3>pluma_message_type_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_message_type_set (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>,
+                        <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> num_optional</code></em>,
+                        <em class="parameter"><code>...</code></em>);</pre>
+<p>Sets argument names/types supplied by the NULL terminated variable
+argument list. The last <em class="parameter"><code>num_optional</code></em>
+ provided arguments are considered
+optional.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_optional</p></td>
+<td class="parameter_description"><p>number of optional arguments</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>key/gtype pair variable argument list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-set-valist"></a><h3>pluma_message_type_set_valist ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_message_type_set_valist (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>,
+                               <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> num_optional</code></em>,
+                               <em class="parameter"><code><span class="type">va_list</span> va_args</code></em>);</pre>
+<p>Sets argument names/types supplied by the NULL terminated variable
+argument list <em class="parameter"><code>var_args</code></em>
+. The last <em class="parameter"><code>num_optional</code></em>
+ provided arguments are 
+considered optional.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_optional</p></td>
+<td class="parameter_description"><p>number of optional arguments</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>var_args</p></td>
+<td class="parameter_description"><p>key/gtype pair variable argument list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-instantiate"></a><h3>pluma_message_type_instantiate ()</h3>
+<pre class="programlisting"><a class="link" href="PlumaMessage.html" title="PlumaMessage"><span class="returnvalue">PlumaMessage</span></a> *
+pluma_message_type_instantiate (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>,
+                                <em class="parameter"><code>...</code></em>);</pre>
+<p>Instantiate a new message from the message type with specific values
+for the message arguments.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>NULL terminated variable list of key/value pairs</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.12.6"></a><h4>Returns</h4>
+<p> the newly created message</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-instantiate-valist"></a><h3>pluma_message_type_instantiate_valist ()</h3>
+<pre class="programlisting"><a class="link" href="PlumaMessage.html" title="PlumaMessage"><span class="returnvalue">PlumaMessage</span></a> *
+pluma_message_type_instantiate_valist (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>,
+                                       <em class="parameter"><code><span class="type">va_list</span> va_args</code></em>);</pre>
+<p>Instantiate a new message from the message type with specific values
+for the message arguments.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>va_args</p></td>
+<td class="parameter_description"><p>NULL terminated variable list of key/value pairs</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.13.6"></a><h4>Returns</h4>
+<p> the newly created message</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-get-object-path"></a><h3>pluma_message_type_get_object_path ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+pluma_message_type_get_object_path (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>);</pre>
+<p>Get the message type object path.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.14.6"></a><h4>Returns</h4>
+<p> the message type object path</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-get-method"></a><h3>pluma_message_type_get_method ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+pluma_message_type_get_method (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>);</pre>
+<p>Get the message type method.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.15.6"></a><h4>Returns</h4>
+<p> the message type method</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-lookup"></a><h3>pluma_message_type_lookup ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+pluma_message_type_lookup (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>,
+                           <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
+<p>Get the argument key <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>the argument key</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.7.8.16.6"></a><h4>Returns</h4>
+<p> the <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of <em class="parameter"><code>key</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="pluma-message-type-foreach"></a><h3>pluma_message_type_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+pluma_message_type_foreach (<em class="parameter"><code><a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a> *message_type</code></em>,
+                            <em class="parameter"><code><span class="type">PlumaMessageTypeForeach</span> func</code></em>,
+                            <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Calls <em class="parameter"><code>func</code></em>
+ for each argument in the message type.</p>
+<div class="refsect3">
+<a name="id-1.2.7.8.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the <a class="link" href="PlumaMessageType.html" title="PlumaMessageType"><span class="type">PlumaMessageType</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>the callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data supplied to the callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="PlumaMessageType.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="PlumaMessageType-struct"></a><h3>PlumaMessageType</h3>
+<pre class="programlisting">typedef struct _PlumaMessageType PlumaMessageType;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

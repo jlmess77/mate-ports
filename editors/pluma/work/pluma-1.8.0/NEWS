@@ -1,0 +1,18 @@
+pluma 1.8.0
+===========
+
+  * Add GTK3 support
+  * Use yelp-tools instead of mate-doc-utils
+  * Move user plugin dir from config_dir to data_dir. Plugins should have
+    never been installed in the config dir as they are not part of the
+    configuration. This means user will need to move the plugins directory
+    from: $HOME/.config/pluma/ to $HOME/.local/share/pluma/.
+
+pluma 1.5.0
+===========
+
+  * Migration to GSettings and drop mateconf
+    (All code is migrated, except pythonconsole plugin. The plugin works,
+    except you cant configure it; the configurable things were command
+    and error colors; this will be fixed migrating the plugin to Gir
+    instead of python-gtk)
