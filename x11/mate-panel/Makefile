@@ -15,8 +15,8 @@ BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-RUN_DEPENDS=    yelp-tools:${PORTSDIR}/textproc/yelp-tools
-                libwnck:${PORTSDIR}/x11-toolkits/libwnck
+RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools \
+				libwnck:${PORTSDIR}/x11-toolkits/libwnck
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake libtool pathfix pkgconfig

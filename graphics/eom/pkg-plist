@@ -35,60 +35,63 @@ libdata/pkgconfig/eom.pc
 man/man1/eom.1.gz
 share/MateConf/gsettings/eom.convert
 share/applications/eom.desktop
-share/doc/eom/EomDialog.html
-share/doc/eom/EomExifDetails.html
-share/doc/eom/EomFileChooser.html
-share/doc/eom/EomImageSaveInfo.html
-share/doc/eom/EomMetadataReaderJpg.html
-share/doc/eom/EomMetadataReaderPng.html
-share/doc/eom/EomPluginManager.html
-share/doc/eom/EomPreferencesDialog.html
-share/doc/eom/EomPrintImageSetup.html
-share/doc/eom/EomPrintPreview.html
-share/doc/eom/EomScrollView.html
-share/doc/eom/EomSidebar.html
-share/doc/eom/EomStatusbar.html
-share/doc/eom/ch01.html
-share/doc/eom/ch02.html
-share/doc/eom/ch03.html
-share/doc/eom/ch04.html
-share/doc/eom/ch05.html
-share/doc/eom/ch06.html
-share/doc/eom/ch07.html
-share/doc/eom/eom-eom-application.html
-share/doc/eom/eom-eom-config-keys.html
-share/doc/eom/eom-eom-debug.html
-share/doc/eom/eom-eom-error-message-area.html
-share/doc/eom/eom-eom-exif-util.html
-share/doc/eom/eom-eom-image.html
-share/doc/eom/eom-eom-job-queue.html
-share/doc/eom/eom-eom-jobs.html
-share/doc/eom/eom-eom-list-store.html
-share/doc/eom/eom-eom-metadata-reader.html
-share/doc/eom/eom-eom-pixbuf-util.html
-share/doc/eom/eom-eom-plugin-engine.html
-share/doc/eom/eom-eom-plugin.html
-share/doc/eom/eom-eom-print.html
-share/doc/eom/eom-eom-properties-dialog.html
-share/doc/eom/eom-eom-save-as-dialog-helper.html
-share/doc/eom/eom-eom-session.html
-share/doc/eom/eom-eom-thumb-nav.html
-share/doc/eom/eom-eom-thumb-view.html
-share/doc/eom/eom-eom-thumbnail.html
-share/doc/eom/eom-eom-transform.html
-share/doc/eom/eom-eom-uri-converter.html
-share/doc/eom/eom-eom-util.html
-share/doc/eom/eom-eom-window.html
-share/doc/eom/eom-uta.html
-share/doc/eom/eom-zoom.html
-share/doc/eom/eom.devhelp2
-share/doc/eom/home.png
-share/doc/eom/index.html
-share/doc/eom/index.sgml
-share/doc/eom/left.png
-share/doc/eom/right.png
-share/doc/eom/style.css
-share/doc/eom/up.png
+%%PORTDOCS%%%%DOCSDIR%%/EomDialog.html
+%%PORTDOCS%%%%DOCSDIR%%/EomExifDetails.html
+%%PORTDOCS%%%%DOCSDIR%%/EomFileChooser.html
+%%PORTDOCS%%%%DOCSDIR%%/EomImageSaveInfo.html
+%%PORTDOCS%%%%DOCSDIR%%/EomMetadataReaderJpg.html
+%%PORTDOCS%%%%DOCSDIR%%/EomMetadataReaderPng.html
+%%PORTDOCS%%%%DOCSDIR%%/EomPluginManager.html
+%%PORTDOCS%%%%DOCSDIR%%/EomPreferencesDialog.html
+%%PORTDOCS%%%%DOCSDIR%%/EomPrintImageSetup.html
+%%PORTDOCS%%%%DOCSDIR%%/EomPrintPreview.html
+%%PORTDOCS%%%%DOCSDIR%%/EomScrollView.html
+%%PORTDOCS%%%%DOCSDIR%%/EomSidebar.html
+%%PORTDOCS%%%%DOCSDIR%%/EomStatusbar.html
+%%PORTDOCS%%%%DOCSDIR%%/ch01.html
+%%PORTDOCS%%%%DOCSDIR%%/ch02.html
+%%PORTDOCS%%%%DOCSDIR%%/ch03.html
+%%PORTDOCS%%%%DOCSDIR%%/ch04.html
+%%PORTDOCS%%%%DOCSDIR%%/ch05.html
+%%PORTDOCS%%%%DOCSDIR%%/ch06.html
+%%PORTDOCS%%%%DOCSDIR%%/ch07.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-application.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-config-keys.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-debug.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-error-message-area.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-exif-util.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-image.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-job-queue.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-jobs.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-list-store.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-metadata-reader.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-pixbuf-util.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-plugin-engine.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-plugin.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-print.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-properties-dialog.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-save-as-dialog-helper.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-session.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-thumb-nav.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-thumb-view.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-thumbnail.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-transform.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-uri-converter.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-util.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-eom-window.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-uta.html
+%%PORTDOCS%%%%DOCSDIR%%/eom-zoom.html
+%%PORTDOCS%%%%DOCSDIR%%/eom.devhelp2
+%%PORTDOCS%%%%DOCSDIR%%/home.png
+%%PORTDOCS%%%%DOCSDIR%%/index.html
+%%PORTDOCS%%%%DOCSDIR%%/index.sgml
+%%PORTDOCS%%%%DOCSDIR%%/left-insensitive.png
+%%PORTDOCS%%%%DOCSDIR%%/left.png
+%%PORTDOCS%%%%DOCSDIR%%/right-insensitive.png
+%%PORTDOCS%%%%DOCSDIR%%/right.png
+%%PORTDOCS%%%%DOCSDIR%%/style.css
+%%PORTDOCS%%%%DOCSDIR%%/up-insensitive.png
+%%PORTDOCS%%%%DOCSDIR%%/up.png
 %%DATADIR%%/eom-image-properties-dialog.ui
 %%DATADIR%%/eom-multiple-save-as-dialog.ui
 %%DATADIR%%/eom-preferences-dialog.ui
@@ -267,6 +270,7 @@ share/locale/en@shaw/LC_MESSAGES/eom.mo
 share/locale/en_AU/LC_MESSAGES/eom.mo
 share/locale/en_CA/LC_MESSAGES/eom.mo
 share/locale/en_GB/LC_MESSAGES/eom.mo
+share/locale/en_US/LC_MESSAGES/eom.mo
 share/locale/eo/LC_MESSAGES/eom.mo
 share/locale/es/LC_MESSAGES/eom.mo
 share/locale/et/LC_MESSAGES/eom.mo
@@ -341,6 +345,26 @@ share/locale/zh_CN/LC_MESSAGES/eom.mo
 share/locale/zh_HK/LC_MESSAGES/eom.mo
 share/locale/zh_TW/LC_MESSAGES/eom.mo
 share/locale/zu/LC_MESSAGES/eom.mo
+@dirrmtry share/xmodmap
+@dirrmtry share/vfolders
+@dirrmtry share/vala/vapi
+@dirrmtry share/vala
+@dirrmtry share/sounds
+@dirrmtry share/sgml/docbook/gnome-customization-0.1
+@dirrmtry share/sgml/docbook
+@dirrmtry share/pixmaps/splash
+@dirrmtry share/pixmaps/document-icons
+@dirrmtry share/omf
+@dirrmtry share/oaf
+@dirrmtry share/mime-info
+@dirrmtry share/mc/templates
+@dirrmtry share/mc
+@dirrmtry share/mate/help
+@dirrmtry share/mate-control-center/keybindings
+@dirrmtry share/mate-control-center
+@dirrmtry share/mate-2.0/ui
+@dirrmtry share/mate-2.0
+@dirrmtry share/mate
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
 @dirrmtry share/locale/zh_HK/LC_MESSAGES
@@ -383,6 +407,8 @@ share/locale/zu/LC_MESSAGES/eom.mo
 @dirrmtry share/locale/kk
 @dirrmtry share/locale/fur/LC_MESSAGES
 @dirrmtry share/locale/fur
+@dirrmtry share/locale/en_US/LC_MESSAGES
+@dirrmtry share/locale/en_US
 @dirrmtry share/locale/en@shaw/LC_MESSAGES
 @dirrmtry share/locale/en@shaw
 @dirrmtry share/locale/dz/LC_MESSAGES
@@ -399,6 +425,19 @@ share/locale/zu/LC_MESSAGES/eom.mo
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/images
+@dirrmtry share/icons/hicolor/scalable/apps
+@dirrmtry share/icons/hicolor/scalable
+@dirrmtry share/icons/hicolor/32x32/apps
+@dirrmtry share/icons/hicolor/32x32
+@dirrmtry share/icons/hicolor/24x24/apps
+@dirrmtry share/icons/hicolor/24x24
+@dirrmtry share/icons/hicolor/22x22/apps
+@dirrmtry share/icons/hicolor/22x22
+@dirrmtry share/icons/hicolor/16x16/apps
+@dirrmtry share/icons/hicolor/16x16
+@dirrmtry share/icons/hicolor
+@dirrmtry share/icons
 @dirrmtry share/help/zh_TW/eom/figures
 @dirrmtry share/help/zh_TW/eom
 @dirrmtry share/help/zh_TW
@@ -475,7 +514,133 @@ share/locale/zu/LC_MESSAGES/eom.mo
 @dirrmtry share/help/C/eom
 @dirrmtry share/help/C
 @dirrmtry share/help
-@dirrm lib/eom/plugins
-@dirrm lib/eom
-@dirrm include/eom-2.20/eom
-@dirrm include/eom-2.20
+@dirrmtry share/gnome/wm-properties
+@dirrmtry share/gnome/ui
+@dirrmtry share/gnome/panel
+@dirrmtry share/gnome/help/lgpl/C
+@dirrmtry share/gnome/help/lgpl
+@dirrmtry share/gnome/help/gpl/C
+@dirrmtry share/gnome/help/gpl
+@dirrmtry share/gnome/help/fdl/C
+@dirrmtry share/gnome/help/fdl
+@dirrmtry share/gnome/help
+@dirrmtry share/gnome/autostart
+@dirrmtry share/gnome/apps/Utilities
+@dirrmtry share/gnome/apps/System
+@dirrmtry share/gnome/apps/Settings/Session
+@dirrmtry share/gnome/apps/Settings/Peripherals
+@dirrmtry share/gnome/apps/Settings/Documents
+@dirrmtry share/gnome/apps/Settings/Desktop
+@dirrmtry share/gnome/apps/Settings
+@dirrmtry share/gnome/apps/Multimedia
+@dirrmtry share/gnome/apps/Internet
+@dirrmtry share/gnome/apps/Graphics
+@dirrmtry share/gnome/apps/Games
+@dirrmtry share/gnome/apps/Development
+@dirrmtry share/gnome/apps/Audio
+@dirrmtry share/gnome/apps/Applications
+@dirrmtry share/gnome/apps
+@dirrmtry share/gnome-settings-daemon-3.0
+@dirrmtry share/gnome-control-center/keybindings
+@dirrmtry share/gnome-control-center
+@dirrmtry share/gnome-about
+@dirrmtry share/gnome-2.0/ui
+@dirrmtry share/gnome-2.0
+@dirrmtry share/gnome
+@dirrmtry share/glib-2.0/schemas
+@dirrmtry share/glib-2.0
+@dirrmtry share/gir-1.0
+@dirrmtry %%DATADIR%%/pixmaps
+@dirrmtry %%DATADIR%%/icons/hicolor/scalable/actions
+@dirrmtry %%DATADIR%%/icons/hicolor/scalable
+@dirrmtry %%DATADIR%%/icons/hicolor/48x48/actions
+@dirrmtry %%DATADIR%%/icons/hicolor/48x48
+@dirrmtry %%DATADIR%%/icons/hicolor/32x32/actions
+@dirrmtry %%DATADIR%%/icons/hicolor/32x32
+@dirrmtry %%DATADIR%%/icons/hicolor/24x24/actions
+@dirrmtry %%DATADIR%%/icons/hicolor/24x24
+@dirrmtry %%DATADIR%%/icons/hicolor/22x22/actions
+@dirrmtry %%DATADIR%%/icons/hicolor/22x22
+@dirrmtry %%DATADIR%%/icons/hicolor/16x16/actions
+@dirrmtry %%DATADIR%%/icons/hicolor/16x16
+@dirrmtry %%DATADIR%%/icons/hicolor
+@dirrmtry %%DATADIR%%/icons
+@dirrmtry %%DATADIR%%
+@dirrmtry share/doc/libgda
+%%PORTDOCS%%@dirrmtry %%DOCSDIR%%
+@dirrmtry share/control-center/keybindings/gtk-modules
+@dirrmtry share/control-center/keybindings
+@dirrmtry share/control-center/capplets
+@dirrmtry share/control-center/Session
+@dirrmtry share/control-center/Peripherals
+@dirrmtry share/control-center/Documents
+@dirrmtry share/control-center/Desktop
+@dirrmtry share/control-center-2.0/capplets
+@dirrmtry share/control-center-2.0
+@dirrmtry share/control-center
+@dirrmtry share/capplets
+@dirrmtry share/application-registry
+@dirrmtry share/applets/Utility
+@dirrmtry share/applets/Network
+@dirrmtry share/applets/Multimedia
+@dirrmtry share/applets/Monitors
+@dirrmtry share/applets/Clocks
+@dirrmtry share/applets/Amusements
+@dirrmtry share/applets
+@dirrmtry share/MateConf/gsettings
+@dirrmtry share/MateConf
+@dirrmtry libdata/matecomponent/servers
+@dirrmtry libdata/matecomponent
+@dirrmtry libdata/bonobo/servers
+@dirrmtry libdata/bonobo
+@dirrmtry lib/vfs/modules
+@dirrmtry lib/vfs
+@dirrmtry lib/matecomponent/monikers
+@dirrmtry lib/matecomponent-2.0/samples
+@dirrmtry lib/matecomponent-2.0
+@dirrmtry lib/matecomponent
+@dirrmtry lib/mate-vfs-2.0/modules
+@dirrmtry lib/mate-vfs-2.0
+@dirrmtry lib/gnome-vfs-2.0/modules
+@dirrmtry lib/gnome-vfs-2.0
+@dirrmtry lib/girepository-1.0
+@dirrmtry lib/eom/plugins
+@dirrmtry lib/eom
+@dirrmtry lib/bonobo/plugin
+@dirrmtry lib/bonobo/monikers
+@dirrmtry lib/bonobo
+@dirrmtry lib/GConf
+@dirrmtry include/gnome-1.0
+@dirrmtry include/gdkcardimage
+@dirrmtry include/gconf
+@dirrmtry include/eom-2.20/eom
+@dirrmtry include/eom-2.20
+@dirrmtry etc/xdg/autostart
+@dirrmtry etc/xdg
+@dirrmtry etc/vfs/modules
+@dirrmtry etc/vfs
+@dirrmtry etc/sound/events
+@dirrmtry etc/sound
+@dirrmtry etc/mateconf/schemas
+@dirrmtry etc/mateconf/mateconf.xml.system
+@dirrmtry etc/mateconf/mateconf.xml.mandatory
+@dirrmtry etc/mateconf/mateconf.xml.defaults
+@dirrmtry etc/mateconf
+@dirrmtry etc/gnome/config
+@dirrmtry etc/gnome-vfs-2.0/modules
+@dirrmtry etc/gnome-vfs-2.0
+@dirrmtry etc/gnome
+@dirrmtry etc/gconf/schemas
+@dirrmtry etc/gconf/gconf.xml.system
+@dirrmtry etc/gconf/gconf.xml.mandatory
+@dirrmtry etc/gconf/gconf.xml.defaults
+@dirrmtry etc/gconf
+@dirrmtry etc/dconf/profile
+@dirrmtry etc/dconf/db
+@dirrmtry etc/dconf
+@dirrmtry etc/X11/sysconfig
+@dirrmtry etc/X11/starthere
+@dirrmtry etc/X11/serverconfig
+@dirrmtry etc/X11
+@dirrmtry etc/CORBA/servers
+@dirrmtry etc/CORBA

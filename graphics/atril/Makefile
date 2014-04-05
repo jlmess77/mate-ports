@@ -17,7 +17,7 @@ LIB_DEPENDS=	libpoppler-glib.so:${PORTSDIR}/graphics/poppler-glib \
 				libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme \
-				libsecret:${PORTSDIR}/security/libsecret
+				${LOCALBASE}/libdata/pkgconfig/libsecret-1.pc:${PORTSDIR}/security/libsecret
 
 PORTSCOUT=	limitw:1,even
 

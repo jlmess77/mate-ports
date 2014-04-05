@@ -80,4 +80,3 @@ post-patch:
 .endfor
 
 .include <bsd.port.post.mk>
-

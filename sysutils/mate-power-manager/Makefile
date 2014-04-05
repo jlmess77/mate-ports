@@ -19,8 +19,8 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 
 RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit \
-				libsecret-1.pc:${PORTSDIR}security/libsecret \
-				gnome-keyring-1.pc:${PORTSDIR}security/nome-keyring
+				libsecret-1.pc:${PORTSDIR}/security/libsecret \
+				gnome-keyring-1.pc:${PORTSDIR}/security/gnome-keyring
 
 PORTSCOUT=	limitw:1,even
 
