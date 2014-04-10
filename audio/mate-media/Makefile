@@ -15,11 +15,9 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	desktop panel
 USE_GNOME=	gnomehier glib20 gnomehier gtk20 intlhack libxml2
-INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_GSTREAMER=	good
 GNU_CONFIGURE=	yes
