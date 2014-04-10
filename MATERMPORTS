@@ -5,3 +5,10 @@ graphics/mate-document-viewer|graphics/atril|2014-02-21|renamed
 graphics/mate-image-viewer|graphics/eom|2014-02-22|renamed
 x11-fm/mate-file-manager|x11-fm/caja|2014-02-21|renamed
 x11-wm/mate-window-manager|x11-wm/marco|2014-02-22|renamed
+deskutils/mate-character-map||2014-04-10|removed
+deskutils/mate-file-manager-open-terminal||2014-04-10|removed
+deskutils/mate-menu-editor||2014-04-10|removed
+security/libmatekeyring||2014-04-10|removed
+security/mate-keyring||2014-04-10|removed
+textproc/mate-doc-utils||2014-04-10|removed
+x11-toolkits/libmatewnck||2014-04-10|removed
