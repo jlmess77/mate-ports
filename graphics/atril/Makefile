@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	atril
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 CATEGORIES=	graphics print mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -11,16 +11,19 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MATE multi-format document viewer
 
 BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
+
 LIB_DEPENDS=	libpoppler-glib.so:${PORTSDIR}/graphics/poppler-glib \
-		libspectre.so:${PORTSDIR}/print/libspectre \
-		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
-RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme
+				libspectre.so:${PORTSDIR}/print/libspectre \
+				libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
+
+RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme \
+				${LOCALBASE}/libdata/pkgconfig/libsecret-1.pc:${PORTSDIR}/security/libsecret
 
 PORTSCOUT=	limitw:1,even
 
 USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	icontheme
+USE_MATE=	icontheme caja
 USE_XORG=	sm
 USE_GNOME=	cairo gnomehier gtk20 intlhack libxml2
 INSTALLS_OMF=	yes

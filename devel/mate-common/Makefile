@@ -1,8 +1,8 @@
-#Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
+# Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
 # $FreeBSD$
 
 PORTNAME=	mate-common
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 CATEGORIES=	devel mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

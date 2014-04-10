@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-applets
-PORTVERSION=	1.6.1
+PORTVERSION=	1.8.0
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -19,16 +19,18 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 
+RUN_DEPENDS=	gucharmap:${PORTSDIR}/deskutils/gucharmap \
+		yelp-tools:${PORTSDIR}/textproc/yelp-tools
+
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix pkgconfig
 USE_XZ=		yes
-USE_MATE=	autogen common:build desktop docutils icontheme intlhack \
-		libmateweather libmatewnck mucharmap panel \
-		polkit settingsdaemon
+USE_MATE=	autogen common:build desktop icontheme intlhack \
+		libmateweather panel polkit settingsdaemon
 USE_XORG=	x11
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection:build \
-		libxml2 libxslt pygobject pygtk2
+		libxml2 libxslt pygobject pygtk2 libwnck
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 INSTALLS_OMF=	yes

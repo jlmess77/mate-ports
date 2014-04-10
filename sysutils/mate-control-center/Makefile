@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-control-center
-PORTVERSION=	1.6.1
+PORTVERSION=	1.8.1
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -17,15 +17,17 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libxklavier.so:${PORTSDIR}/x11/libxklavier \
 		libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit
 
+RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools
+
 PORTSCOUT=	limitw:1,even
 
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig \
-		shared-mime-info
+			shared-mime-info
 USE_XZ=		yes
-USE_MATE=	desktop docutils libmatekbd marco menus settingsdaemon
+USE_MATE=	desktop libmatekbd marco menus settingsdaemon
 USE_XORG=	x11 xcursor xext xxf86misc xft xi xrandr xscrnsaver
 USE_GNOME=	dconf glib20 gnomehier gtk20 intlhack libxml2 librsvg2 \
-		ltverhack pango
+			ltverhack pango
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 USE_AUTOTOOLS=	libtool

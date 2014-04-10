@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	engrampa
-PORTVERSION=	1.7.90
+PORTVERSION=	1.8.0
 CATEGORIES=	archivers mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -12,7 +12,7 @@ COMMENT=	Archive manager for zip files, tar, etc
 
 BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 RUN_DEPENDS=	${LOCALBASE}/bin/gtar:${PORTSDIR}/archivers/gtar \
-    		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
+		${LOCALBASE}/bin/unzip:${PORTSDIR}/archivers/unzip
 
 PORTSCOUT=	limitw:1,even
 

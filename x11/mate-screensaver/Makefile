@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-screensaver
-PORTVERSION=	1.6.1
+PORTVERSION=	1.8.0
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -43,7 +43,7 @@ XSCREENSAVER_EXCLUDE=	"(popsquares.xml)"
 OPTIONS_DEFINE=	PAM KEYRING XSCREENSAVER
 OPTIONS_DEFAULT=PAM KEYRING
 PAM_DESC=	Pluggable Authentication Module support
-KEYRING_DESC=	MateKeyring integration (needs PAM)
+KEYRING_DESC=	GnomeKeyring integration (needs PAM)
 
 .include <bsd.port.options.mk>
 

@@ -1,14 +1,16 @@
-# Created by: Nicole Reid <root@cooltrainer.org>
+# Created by: Eric Turgeon <ericturgeon@ghostbsd.org>
 # $FreeBSD$
 
-PORTNAME=	mate-file-manager-open-terminal
-PORTVERSION=	1.6.0
+PORTNAME=	caja-extensions
+PORTVERSION=	1.8.0
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Caja extension which allows you to open a terminal
+
+RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gupnp-1.0.pc:${PORTSDIR}/net/gupnp
 
 PORTSCOUT=	limitw:1,even
 
@@ -23,7 +25,5 @@ USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env \
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 PATHFIX_MAKEFILEIN=	Makefile.*
-
-GLIB_SCHEMAS=	org.mate.apps.caja-open-terminal.gschema.xml
 
 .include <bsd.port.mk>
