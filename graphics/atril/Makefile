@@ -13,35 +13,33 @@ COMMENT=	MATE multi-format document viewer
 BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 
 LIB_DEPENDS=	libpoppler-glib.so:${PORTSDIR}/graphics/poppler-glib \
-				libspectre.so:${PORTSDIR}/print/libspectre \
-				libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
+		libspectre.so:${PORTSDIR}/print/libspectre \
+		libsecret-1.so:${PORTSDIR}/security/libsecret \
+		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib
 
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicolor-icon-theme \
-				${LOCALBASE}/libdata/pkgconfig/libsecret-1.pc:${PORTSDIR}/security/libsecret
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	icontheme caja
 USE_XORG=	sm
 USE_GNOME=	cairo gnomehier gtk20 intlhack libxml2
-INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.Atril.gschema.xml
 
-OPTIONS_DEFINE=	DVI T1LIB CAJA KEYRING COMICS DJVU
-OPTIONS_DEFAULT=CAJA KEYRING COMICS
+OPTIONS_DEFINE=	DVI T1LIB CAJA COMICS DJVU
+OPTIONS_DEFAULT=CAJA COMICS
 DVI_DESC=	DVI viewer support
 T1LIB_DESC=	T1LIB for TYPE1 fonts to DVI (Enables DVI)
 CAJA_DESC=	Caja plugin
-KEYRING_DESC=	Gnome-Keyring without Nautilus
 COMICS_DESC=	Comic book archives support
 DJVU_DESC=	DJVU support
 
@@ -74,12 +72,6 @@ CONFIGURE_ARGS+=--disable-caja
 PLIST_SUB+=	CAJA="@comment "
 .endif
 
-.if ${PORT_OPTIONS:MKEYRING}
-USE_MATE+=	libmatekeyring
-. else
-CONFIGURE_ARGS+=--without-keyring
-. endif
-
 .if ${PORT_OPTIONS:MDJVU}
 LIB_DEPENDS+=	libdjvulibre.so:${PORTSDIR}/graphics/djvulibre
 CONFIGURE_ARGS+=--enable-djvu
@@ -95,14 +87,6 @@ PLIST_SUB+=	COMICS=""
 .else
 CONFIGURE_ARGS+=--disable-comics
 PLIST_SUB+=	COMICS="@comment "
-.endif
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libatrildocument.so.3
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/atril/3/backends/*.so
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libatrilview.so.3
-.if ${PORT_OPTIONS:MCAJA}
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/caja/extensions-2.0/libatril-properties-page.so
 .endif
 
 .include <bsd.port.mk>
