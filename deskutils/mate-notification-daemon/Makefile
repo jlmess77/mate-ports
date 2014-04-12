@@ -20,8 +20,7 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_XORG=	x11
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2 intlhack libwnck
 GNU_CONFIGURE=	yes
@@ -30,10 +29,8 @@ CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.NotificationDaemon.gschema.xml
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/mate-notification-daemon/engines/lib*.so
 
 .include <bsd.port.mk>
