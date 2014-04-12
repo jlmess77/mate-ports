@@ -30,6 +30,7 @@ share/applications/mate-about.desktop
 %%DOCSDIR%%/index.html
 %%DOCSDIR%%/index.sgml
 %%DOCSDIR%%/intro.html
+%%DOCSDIR%%/left-insensitive.png
 %%DOCSDIR%%/left.png
 %%DOCSDIR%%/libmate.html
 %%DOCSDIR%%/mate-desktop-Miscellaneous-Functions.html
@@ -41,9 +42,11 @@ share/applications/mate-about.desktop
 %%DOCSDIR%%/mate-desktop-mate-rr-screen.html
 %%DOCSDIR%%/mate-desktop.devhelp2
 %%DOCSDIR%%/randr.html
+%%DOCSDIR%%/right-insensitive.png
 %%DOCSDIR%%/right.png
 %%DOCSDIR%%/style.css
 %%DOCSDIR%%/thumbnail.html
+%%DOCSDIR%%/up-insensitive.png
 %%DOCSDIR%%/up.png
 share/libmate-desktop/pnp.ids
 share/locale/af/LC_MESSAGES/mate-desktop.mo

@@ -15,8 +15,7 @@ LIB_DEPENDS=	libstartup-notification-1.so:${PORTSDIR}/x11/startup-notification
 
 PORTSCOUT=	limitw:1,even
 
-USES=		bison gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		bison gettext gmake libtool pathfix pkgconfig tar:xz
 USE_XORG=	x11 xrandr
 USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20 intlhack
 USE_PYTHON=	yes
