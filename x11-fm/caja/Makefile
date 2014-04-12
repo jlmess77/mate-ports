@@ -19,8 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/libexec/gvfsd:${PORTSDIR}/devel/gvfs
 PORTSCOUT=	limitw:1,even
 
 USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
-		shared-mime-info
-USE_XZ=		yes
+		shared-mime-info tar:xz
 USE_MATE=	desktop icontheme:run
 USE_XORG=	ice x11 xrender
 USE_GNOME=	glib20 gnomehier gtk20 intlhack introspection:build \
@@ -35,12 +34,12 @@ CONFIGURE_ARGS=	--disable-packagekit \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.caja.gschema.xml \
 		org.mate.media-handling.gschema.xml
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/caja/extensions-2.0
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libcaja-extension.so.1
 
 .include <bsd.port.mk>
