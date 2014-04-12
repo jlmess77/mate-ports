@@ -12,14 +12,14 @@ COMMENT=	Implementation of the FreeDesktop Desktop Menu Spec
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_GNOME=	glib20 gnomehier intlhack introspection:build
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/share/mate|${LOCALBASE}/share/mate|g' \
@@ -33,7 +33,5 @@ post-patch:
 post-install:
 	@${INSTALL_DATA} ${WRKSRC}/*.directory \
 		${STAGEDIR}${PREFIX}/share/mate/desktop-directories/
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/lib*.so*
-	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/matemenu.so
 
 .include <bsd.port.mk>
