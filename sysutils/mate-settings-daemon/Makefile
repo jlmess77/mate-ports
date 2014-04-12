@@ -21,8 +21,7 @@ RUN_DEPENDS=	xrdb:${PORTSDIR}/x11/xrdb
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	desktop libmatekbd
 USE_XORG=	xxf86misc
 USE_GNOME=	dconf gnomehier gtk20 intlhack
@@ -34,6 +33,7 @@ CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.SettingsDaemon.plugins.a11y-keyboard.gschema.xml \
 		org.mate.SettingsDaemon.plugins.background.gschema.xml \
@@ -56,8 +56,5 @@ GLIB_SCHEMAS=	org.mate.SettingsDaemon.plugins.a11y-keyboard.gschema.xml \
 		org.mate.keybindings.gschema.xml \
 		org.mate.peripherals-smartcard.gschema.xml \
 		org.mate.peripherals-touchpad.gschema.xml
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/mate-settings-daemon/*.so
 
 .include <bsd.port.mk>
