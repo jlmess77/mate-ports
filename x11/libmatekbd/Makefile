@@ -14,8 +14,7 @@ LIB_DEPENDS=	libxklavier.so:${PORTSDIR}/x11/libxklavier
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_GNOME=	gnomehier gtk20 intlhack
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
