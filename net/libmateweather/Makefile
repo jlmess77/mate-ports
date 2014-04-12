@@ -15,8 +15,7 @@ LIB_DEPENDS=	libsoup-2.4.so:${PORTSDIR}/devel/libsoup
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_GNOME=	gtk20 libxml2 intlhack
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
@@ -25,10 +24,8 @@ CONFIGURE_ARGS=	--disable-gtk-doc \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.weather.gschema.xml
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmateweather.so.1
 
 .include <bsd.port.mk>
