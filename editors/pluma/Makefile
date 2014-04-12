@@ -19,8 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:${PORTSDIR}/misc/iso-co
 PORTSCOUT=	limitw:1,even
 
 USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
-		shebangfix
-USE_XZ=		yes
+		shebangfix tar:xz
 USE_XORG=	sm x11
 USE_GNOME=	gnomehier gtk20 gtksourceview2 gvfs intlhack libxml2 \
 		pygobject pygtk2 pygtksourceview
@@ -31,6 +30,7 @@ CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 SHEBANG_FILES=	${WRKSRC}/plugins/externaltools/data/search-recursive.tool.in \
 		${WRKSRC}/plugins/externaltools/data/switch-c.tool.in
@@ -38,8 +38,5 @@ SHEBANG_FILES=	${WRKSRC}/plugins/externaltools/data/search-recursive.tool.in \
 GLIB_SCHEMAS=	org.mate.pluma.gschema.xml \
 		org.mate.pluma.plugins.filebrowser.gschema.xml \
 		org.mate.pluma.plugins.time.gschema.xml
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/pluma/*/*.so
 
 .include <bsd.port.mk>
