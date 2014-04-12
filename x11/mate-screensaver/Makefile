@@ -16,9 +16,8 @@ LIB_DEPENDS=	libdbus-1.so:${PORTSDIR}/devel/dbus \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig
+USES=		gettext gmake pathfix pkgconfig tar:xz
 USE_GL=		gl
-USE_XZ=		yes
 USE_MATE=	desktop libmatekbd menus
 USE_XORG=	ice sm x11 xext xtst xxf86misc xxf86vm xscrnsaver
 USE_GNOME=	glib20 gnomehier gtk20 intlhack
@@ -40,10 +39,9 @@ SCREENSAVER_DIR=	share/applications/screensavers
 
 XSCREENSAVER_EXCLUDE=	"(popsquares.xml)"
 
-OPTIONS_DEFINE=	PAM KEYRING XSCREENSAVER
-OPTIONS_DEFAULT=PAM KEYRING
+OPTIONS_DEFINE=	PAM XSCREENSAVER
+OPTIONS_DEFAULT=PAM
 PAM_DESC=	Pluggable Authentication Module support
-KEYRING_DESC=	GnomeKeyring integration (needs PAM)
 
 .include <bsd.port.options.mk>
 
@@ -59,18 +57,6 @@ PLIST_SUB+=	PAM=""
 .else
 CONFIGURE_ARGS+=--disable-pam
 PLIST_SUB+=	PAM="@comment "
-.endif
-
-.if ${PORT_OPTIONS:MKEYRING} && ${PORT_OPTIONS:MPAM}
-SUB_LIST+=	PAM_KEYRING=
-USE_MATE+=	keyring:run
-.else
-SUB_LIST+=	PAM_KEYRING=\#
-.endif
-
-pre-everything::
-.if !${PORT_OPTIONS:MPAM} && ${PORT_OPTIONS:MKEYRING}
-	@${ECHO_MSG} "Keyring integration is disabled because it needs PAM."
 .endif
 
 post-patch:
