@@ -18,18 +18,14 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libexecinfo.so:${PORTSDIR}/devel/libexecinfo \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 
-RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit \
-				libsecret-1.pc:${PORTSDIR}/security/libsecret \
-				gnome-keyring-1.pc:${PORTSDIR}/security/gnome-keyring
+RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake pathfix pkgconfig tar:xz
 USE_MATE=	panel
 USE_XORG=	x11 xext xproto xrandr xrender
 USE_GNOME=	cairo glib20 gnomehier gtk20 intlhack
-INSTALLS_OMF=	yes
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CONFIGURE_ENV=	LIBS="-lexecinfo"
@@ -37,6 +33,8 @@ CONFIGURE_ARGS=	--with-doc-dir=${PREFIX}/share/doc \
 		--disable-docbook-docs \
 		--with-gtk=2.0 \
 		--with-systemdinhibit=no
+# needs gnome-keyring 3.0.0+
+CONFIGURE_ARGS+=--without-keyring
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
