@@ -9,7 +9,7 @@ DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	The "meta-port" for the MATE base integrated X11 desktop
+COMMENT=	"meta-port" for the MATE base integrated X11 desktop
 
 RUN_DEPENDS=	${LOCALBASE}/lib/X11/fonts/dejavu/DejaVuSerif.ttf:${PORTSDIR}/x11-fonts/dejavu \
 		${LOCALBASE}/share/hal/fdi/information/10freedesktop/10-camera-ptp.fdi:${PORTSDIR}/sysutils/hal-info \
@@ -23,8 +23,7 @@ USE_MATE=	caja:run controlcenter:run dialogs:run icontheme:run \
 		polkit:run
 
 NO_BUILD=	yes
+NO_INSTALL=	yes
 NO_MTREE=	yes
-
-do-install:	# empty
 
 .include <bsd.port.mk>
