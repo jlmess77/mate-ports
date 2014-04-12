@@ -12,8 +12,7 @@ COMMENT=	Terminal component for the MATE Desktop
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake pathfix pkgconfig tar:xz
 USE_XORG=	sm x11
 USE_GNOME=	dconf gnomehier gtk20 intlhack vte
 GNU_CONFIGURE=	yes
