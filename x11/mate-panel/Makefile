@@ -15,18 +15,16 @@ BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra
 
-RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools \
-				libwnck:${PORTSDIR}/x11-toolkits/libwnck
+RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools
+
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	desktop libmateweather  menus
 USE_XORG=	ice sm x11 xau xrandr
 USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
-		intlhack introspection:build librsvg2 pango
+		intlhack introspection:build librsvg2 pango libwnck
 USE_PYTHON=	yes
-INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-network-manager \
@@ -36,6 +34,7 @@ CONFIGURE_ARGS=	--disable-network-manager \
 INSTALLS_ICONS=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib
 CPPFLAGS+=	-I${LOCALBASE}/include
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 		org.mate.panel.applet.fish.gschema.xml \
@@ -49,6 +48,5 @@ GLIB_SCHEMAS=	org.mate.panel.applet.clock.gschema.xml \
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/mate-panel/modules
-	@${STRIP_CMD} ${STAGEDIR}/${PREFIX}/lib/libmate-panel-applet-4.so.1
 
 .include <bsd.port.mk>
