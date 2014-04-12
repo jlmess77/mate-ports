@@ -9,7 +9,7 @@ DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT=	The "meta-port" for the MATE integrated X11 desktop
+COMMENT=	"meta-port" for the MATE integrated X11 desktop
 
 RUN_DEPENDS=	mate-base>=1.8.0:${PORTSDIR}/x11/mate-base \
 		mate-themes>=1.8.0:${PORTSDIR}/x11-themes/mate-themes \
@@ -30,8 +30,7 @@ RUN_DEPENDS=	mate-base>=1.8.0:${PORTSDIR}/x11/mate-base \
 USE_MATE=	pluma:run
 
 NO_BUILD=	yes
+NO_INSTALL=	yes
 NO_MTREE=	yes
-
-do-install:	# empty
 
 .include <bsd.port.mk>
