@@ -16,8 +16,7 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	panel
 USE_XORG=	x11 xext
 USE_GNOME=	gnomehier gtk20 intlhack
@@ -29,14 +28,12 @@ CONFIGURE_ARGS=	--enable-maintainer-flags=no \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.dictionary.gschema.xml \
 		org.mate.disk-usage-analyzer.gschema.xml \
 		org.mate.screenshot.gschema.xml \
 		org.mate.search-tool.gschema.xml \
 		org.mate.system-log.gschema.xml
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmatedict.so.*
 
 .include <bsd.port.mk>
