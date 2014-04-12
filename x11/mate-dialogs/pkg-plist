@@ -373,6 +373,8 @@ share/locale/zh_TW/LC_MESSAGES/mate-dialogs.mo
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
+@dirrmtry share/matedialog/clothes
+@dirrmtry share/matedialog
 @dirrm share/help/zh_CN/matedialog/figures
 @dirrm share/help/zh_CN/matedialog
 @dirrmtry share/help/zh_CN
