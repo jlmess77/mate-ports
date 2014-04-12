@@ -11,15 +11,14 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Session component for the MATE desktop
 
 LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
-				libupower-glib.so:${PORTSDIR}/sysutils/upower \
-				libexecinfo.so:${PORTSDIR}/devel/libexecinfo
+		libupower-glib.so:${PORTSDIR}/sysutils/upower \
+		libexecinfo.so:${PORTSDIR}/devel/libexecinfo
 RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:${PORTSDIR}/sysutils/consolekit \
-				${LOCALBASE}/bin/xdpyinfo:${PORTSDIR}/x11/xdpyinfo
+		${LOCALBASE}/bin/xdpyinfo:${PORTSDIR}/x11/xdpyinfo
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig
-USE_XZ=		yes
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	settingsdaemon
 USE_XORG=	ice sm xau xext xrandr xrender xtrans xtst
 USE_GNOME=	gnomehier gtk20 intlhack librsvg2 libxslt pango
