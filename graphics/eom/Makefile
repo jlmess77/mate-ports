@@ -15,12 +15,11 @@ LIB_DEPENDS=	libjpeg.so:${PORTSDIR}/graphics/jpeg
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig
-USE_XZ=		yes
+USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
+		tar:xz
 USE_MATE=	desktop icontheme
 USE_XORG=	x11
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 librsvg2 libxml2
-INSTALLS_OMF=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-gtk-doc \
 		--with-html-dir=${PREFIX}/share/doc \
@@ -29,6 +28,7 @@ CONFIGURE_ARGS=	--disable-gtk-doc \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.eom.gschema.xml
 
@@ -65,8 +65,5 @@ PLIST_SUB+=	EXIFEXEMPI=""
 .else
 PLIST_SUB+=	EXIFEXEMPI="@comment "
 .endif
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/eom/plugins/*.so
 
 .include <bsd.port.mk>
