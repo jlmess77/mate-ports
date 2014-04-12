@@ -12,8 +12,7 @@ COMMENT=	Common automake macros for MATE
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gmake pkgconfig:both
-USE_XZ=		yes
+USES=		gmake pkgconfig:both tar:xz
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>
