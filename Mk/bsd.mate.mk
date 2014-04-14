@@ -51,7 +51,7 @@ _USE_MATE_ALL=	autogen intlhack intltool ltasneededhack lthack ltverhack
 # for the library dependency first. If not exists then do the build/run on
 # the *.pc file instead.
 _USE_MATE_ALL+=	caja common controlcenter desktop dialogs docutils icontheme \
-		keyring libmatekbd libmatekeyring libmateweather libmatewnck \
+		libmatekbd libmateweather libmatewnck \
 		marco menus mucharmap notificationdaemon panel polkit pluma \
 		settingsdaemon
 
@@ -108,20 +108,10 @@ intlhack_PRE_PATCH=		${FIND} ${WRKSRC} -name "intltool-merge.in" | ${XARGS} ${RE
 USE_MATE+=				intltool
 .endif
 
-keyring_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-gcr-0.pc
-keyring_BUILD_DEPENDS=	${keyring_DETECT}:${PORTSDIR}/security/mate-keyring
-keyring_LIB_DEPENDS=	libmategcr.so:${PORTSDIR}/security/mate-keyring
-keyring_RUN_DEPENDS=	${keyring_DETECT}:${PORTSDIR}/security/mate-keyring
-
 libmatekbd_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatekbd.pc
 libmatekbd_BUILD_DEPENDS=	${libmatekbd_DETECT}:${PORTSDIR}/x11/libmatekbd
 libmatekbd_LIB_DEPENDS=		libmatekbd.so:${PORTSDIR}/x11/libmatekbd
 libmatekbd_RUN_DEPENDS=		${libmatekbd_DETECT}:${PORTSDIR}/x11/libmatekbd
-
-libmatekeyring_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-keyring-1.pc
-libmatekeyring_BUILD_DEPENDS=	${libmatekeyring_DETECT}:${PORTSDIR}/security/libmatekeyring
-libmatekeyring_LIB_DEPENDS=	libmate-keyring.so:${PORTSDIR}/security/libmatekeyring
-libmatekeyring_RUN_DEPENDS=	${libmatekeyring_DETECT}:${PORTSDIR}/security/libmatekeyring
 
 libmateweather_DETECT=		${LOCALBASE}/libdata/pkgconfig/mateweather.pc
 libmateweather_BUILD_DEPENDS=	${libmateweather_DETECT}:${PORTSDIR}/net/libmateweather

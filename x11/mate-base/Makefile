@@ -19,7 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/X11/fonts/dejavu/DejaVuSerif.ttf:${PORTSDIR}/x11-f
 		mate-icon-theme-faenza>=1.8.0:${PORTSDIR}/x11-themes/mate-icon-theme-faenza
 
 USE_MATE=	caja:run controlcenter:run dialogs:run icontheme:run \
-		keyring:run marco:run notificationdaemon:run panel:run \
+		marco:run notificationdaemon:run panel:run \
 		polkit:run
 
 NO_BUILD=	yes
