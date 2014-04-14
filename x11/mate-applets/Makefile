@@ -20,33 +20,30 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 
 RUN_DEPENDS=	gucharmap:${PORTSDIR}/deskutils/gucharmap \
-		yelp-tools:${PORTSDIR}/textproc/yelp-tools
+		yelp-tools>=0:${PORTSDIR}/textproc/yelp-tools
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig
-USE_XZ=		yes
-USE_MATE=	autogen common:build desktop icontheme intlhack \
-		libmateweather panel polkit settingsdaemon
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
+USE_MATE=	desktop icontheme libmateweather panel polkit settingsdaemon
 USE_XORG=	x11
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection:build \
-		libxml2 libxslt pygobject pygtk2 libwnck
+		libxml2 libxslt pygobject pygtk2 libwnck intlhack
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
-INSTALLS_OMF=	yes
-USE_AUTOTOOLS=	aclocal:env autoconf:env automake:env libtool libtoolize:env
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
-CONFIGURE_ARGS=	--enable-mixer-applet \
-		--disable-networkmanager
+CONFIGURE_ARGS=	--disable-networkmanager
 CONFIGURE_ENV=	OS_SYS="/usr/include"
 CPPFLAGS+=	-I${LOCALBASE}/include ${PTHREAD_CFLAGS}
 LDFLAGS+=	-L${LOCALBASE}/lib ${PTHREAD_LIBS}
-PATHFIX_MAKEFILEIN=	Makefile.*
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.panel.applet.charpick.gschema.xml \
+		org.mate.panel.applet.command.gschema.xml \
 		org.mate.panel.applet.geyes.gschema.xml \
 		org.mate.panel.applet.multiload.gschema.xml \
+		org.mate.panel.applet.timer.gschema.xml \
 		org.mate.stickynotes.gschema.xml
 
 FIX_APPLETS=	accessx-status battstat charpick drivemount geyes \
@@ -54,24 +51,26 @@ FIX_APPLETS=	accessx-status battstat charpick drivemount geyes \
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} != "i386" && ${ARCH} != "amd64"
+#.if ${ARCH} != "i386" && ${ARCH} != "amd64"
+CONFIGURE_ARGS+=--disable-battstat
 CFLAGS+=	-fPIC
 PLIST_SUB+=	BATTERY="@comment "
-.else
-GLIB_SCHEMAS+=	org.mate.panel.applet.battstat.gschema.xml
-PLIST_SUB+=	BATTERY=""
-.endif
+#.else
+#CONFIGURE_ARGS+=--enable-battstat
+#GLIB_SCHEMAS+=	org.mate.panel.applet.battstat.gschema.xml
+#PLIST_SUB+=	BATTERY=""
+#.endif
 
-.if ${ARCH} != "i386" && ${ARCH} != "amd64"
+#.if ${ARCH} != "i386" && ${ARCH} != "amd64"
+CONFIGURE_ARGS+=--disable-cpufreq
 PLIST_SUB+=	CPUFREQ="@comment "
-.else
-PLIST_SUB+=	CPUFREQ=""
-GLIB_SCHEMAS+=	org.mate.panel.applet.cpufreq.gschema.xml
-.endif
+#.else
+#CONFIGURE_ARGS+=--enable-cpufreq
+#PLIST_SUB+=	CPUFREQ=""
+#GLIB_SCHEMAS+=	org.mate.panel.applet.cpufreq.gschema.xml
+#.endif
 
 post-patch:
-	@${FIND} ${WRKSRC} -name Makefile.am | ${XARGS} ${REINPLACE_CMD} -e \
-	    	's|" == "|" = "|g'
 	${MV} ${WRKSRC}/invest-applet/invest/invest-applet.py \
 		${WRKSRC}/invest-applet/invest/mate-invest-applet.py
 .for dir in ${FIX_APPLETS}
