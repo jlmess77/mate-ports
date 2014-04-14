@@ -19,16 +19,14 @@ LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libhal.so:${PORTSDIR}/sysutils/hal \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
 		libnotify.so:${PORTSDIR}/devel/libnotify
-
-RUN_DEPENDS=	gucharmap:${PORTSDIR}/deskutils/gucharmap \
-		yelp-tools>=0:${PORTSDIR}/textproc/yelp-tools
+RUN_DEPENDS=	gucharmap:${PORTSDIR}/deskutils/gucharmap
 
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	desktop icontheme libmateweather panel polkit settingsdaemon
 USE_XORG=	x11
-USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection:build \
+USE_GNOME=	gdkpixbuf2 gnomehier gtksourceview2 introspection:build \
 		libxml2 libxslt pygobject pygobject3 libwnck intlhack
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
