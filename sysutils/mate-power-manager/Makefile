@@ -22,7 +22,7 @@ RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig tar:xz
+USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	panel
 USE_XORG=	x11 xext xproto xrandr xrender
 USE_GNOME=	cairo glib20 gnomehier gtk20 intlhack
@@ -31,8 +31,7 @@ INSTALLS_ICONS=	yes
 CONFIGURE_ENV=	LIBS="-lexecinfo"
 CONFIGURE_ARGS=	--with-doc-dir=${PREFIX}/share/doc \
 		--disable-docbook-docs \
-		--with-gtk=2.0 \
-		--with-systemdinhibit=no
+		--with-gtk=2.0
 # needs gnome-keyring 3.0.0+
 CONFIGURE_ARGS+=--without-keyring
 CPPFLAGS+=	-I${LOCALBASE}/include
