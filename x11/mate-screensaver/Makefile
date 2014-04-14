@@ -31,7 +31,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.screensaver.gschema.xml
 
-PLIST=		${WRKDIR}/pkg-plist
 SUB_FILES+=	mate-screensaver.pam
 
 XSCREENSAVER_DIR=	${LOCALBASE}/share/xscreensaver/config
@@ -65,20 +64,20 @@ post-patch:
 		${WRKSRC}/src/gs-auth-pam.c
 .endif
 
-pre-install:
-	@${CAT} ${.CURDIR}/pkg-plist > ${PLIST}
-	@cd ${XSCREENSAVER_DIR} && ${FIND} -s * -maxdepth 1 -type f -name "*.xml" | \
-		${GREP} -Ev ${XSCREENSAVER_EXCLUDE} | \
-		${SED} -e 's:^:${SCREENSAVER_DIR}/:' | \
-		${SED} -e 's:[.]xml$$:.desktop:' >> ${PLIST}
-	@${ECHO_CMD} @dirrm ${SCREENSAVER_DIR} >> ${PLIST}
+#pre-install:
+#	@${CAT} ${.CURDIR}/pkg-plist > ${PLIST}
+#	@cd ${XSCREENSAVER_DIR} && ${FIND} -s * -maxdepth 1 -type f -name "*.xml" | \
+#		${GREP} -Ev ${XSCREENSAVER_EXCLUDE} | \
+#		${SED} -e 's:^:${SCREENSAVER_DIR}/:' | \
+#		${SED} -e 's:[.]xml$$:.desktop:' >> ${PLIST}
+#	@${ECHO_CMD} @dirrm ${SCREENSAVER_DIR} >> ${PLIST}
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR}
-	cd ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR} && \
-		${FIND} -s ${XSCREENSAVER_DIR} -maxdepth 1 -type f -name "*.xml" | \
-			${GREP} -Ev ${XSCREENSAVER_EXCLUDE} | \
-			${XARGS} ${WRKSRC}/data/migrate-xscreensaver-config.sh
+#	cd ${STAGEDIR}${PREFIX}/${SCREENSAVER_DIR} && \
+#		${FIND} -s ${XSCREENSAVER_DIR} -maxdepth 1 -type f -name "*.xml" | \
+#			${GREP} -Ev ${XSCREENSAVER_EXCLUDE} | \
+#			${XARGS} ${WRKSRC}/data/migrate-xscreensaver-config.sh
 .if ${PORT_OPTIONS:MPAM}
 	${INSTALL_DATA} ${WRKDIR}/mate-screensaver.pam ${STAGEDIR}${PREFIX}/etc/pam.d/mate-screensaver
 .endif
