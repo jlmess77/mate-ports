@@ -143,8 +143,8 @@ polkit_LIB_DEPENDS=	libpolkit-gtk-mate-1.so:${PORTSDIR}/sysutils/mate-polkit
 polkit_RUN_DEPENDS=	${polkit_DETECT}:${PORTSDIR}/sysutils/mate-polkit
 
 pluma_DETECT=		${LOCALBASE}/libdata/pkgconfig/pluma.pc
-pluma_BUILD_DEPENDS=	${pluma_DETECT}:${PORTSDIR}/editors/mate-text-editor
-pluma_RUN_DEPENDS=	${pluma_DETECT}:${PORTSDIR}/editors/mate-text-editor
+pluma_BUILD_DEPENDS=	${pluma_DETECT}:${PORTSDIR}/editors/pluma
+pluma_RUN_DEPENDS=	${pluma_DETECT}:${PORTSDIR}/editors/pluma
 
 settingsdaemon_DETECT=		${LOCALBASE}/libdata/pkgconfig/mate-settings-daemon.pc
 settingsdaemon_BUILD_DEPENDS=	${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-settings-daemon
