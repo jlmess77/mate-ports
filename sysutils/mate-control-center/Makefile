@@ -10,6 +10,7 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Control center for MATE project
 
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \

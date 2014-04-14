@@ -10,6 +10,7 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Power management system for the MATE Desktop
 
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libdbus-1.so:${PORTSDIR}/devel/dbus \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
@@ -17,7 +18,6 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
 		libexecinfo.so:${PORTSDIR}/devel/libexecinfo \
 		libnotify.so:${PORTSDIR}/devel/libnotify
-
 RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
 PORTSCOUT=	limitw:1,even

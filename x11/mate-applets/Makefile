@@ -10,6 +10,7 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Applets components for the MATE Desktop Environment
 
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 LIB_DEPENDS=	libgtop-2.0.so:${PORTSDIR}/devel/libgtop \
 		libxklavier.so:${PORTSDIR}/x11/libxklavier \
 		libdbus-1.so:${PORTSDIR}/devel/dbus \

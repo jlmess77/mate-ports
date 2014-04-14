@@ -10,6 +10,8 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Terminal component for the MATE Desktop
 
+BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
+
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix pkgconfig tar:xz
