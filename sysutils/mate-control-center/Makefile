@@ -18,8 +18,6 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libxklavier.so:${PORTSDIR}/x11/libxklavier \
 		libpolkit-gobject-1.so:${PORTSDIR}/sysutils/polkit
 
-RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/yelp-xsl.pc:${PORTSDIR}/textproc/yelp-tools
-
 PORTSCOUT=	limitw:1,even
 
 USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
