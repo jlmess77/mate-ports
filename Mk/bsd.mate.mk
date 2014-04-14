@@ -51,7 +51,7 @@ _USE_MATE_ALL=	autogen intlhack intltool ltasneededhack lthack ltverhack
 # for the library dependency first. If not exists then do the build/run on
 # the *.pc file instead.
 _USE_MATE_ALL+=	caja common controlcenter desktop dialogs docutils icontheme \
-		libmatekbd libmateweather libmatewnck \
+		libmatekbd libmateweather \
 		marco menus mucharmap notificationdaemon panel polkit pluma \
 		settingsdaemon
 
@@ -117,11 +117,6 @@ libmateweather_DETECT=		${LOCALBASE}/libdata/pkgconfig/mateweather.pc
 libmateweather_BUILD_DEPENDS=	${libmateweather_DETECT}:${PORTSDIR}/net/libmateweather
 libmateweather_LIB_DEPENDS=	libmateweather.so:${PORTSDIR}/net/libmateweather
 libmateweather_RUN_DEPENDS=	${libmateweather_DETECT}:${PORTSDIR}/net/libmateweather
-
-libmatewnck_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmatewnck.pc
-libmatewnck_BUILD_DEPENDS=	${libmatewnck_DETECT}:${PORTSDIR}/x11-toolkits/libmatewnck
-libmatewnck_LIB_DEPENDS=	libmatewnck.so:${PORTSDIR}/x11-toolkits/libmatewnck
-libmatewnck_RUN_DEPENDS=	${libmatewnck_DETECT}:${PORTSDIR}/x11-toolkits/libmatewnck
 
 marco_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmarco-private.pc
 marco_BUILD_DEPENDS=	${marco_DETECT}:${PORTSDIR}/x11-wm/marco
