@@ -29,7 +29,7 @@ USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	desktop icontheme libmateweather panel polkit settingsdaemon
 USE_XORG=	x11
 USE_GNOME=	gdkpixbuf2 glib20 gnomehier gtk20 introspection:build \
-		libxml2 libxslt pygobject pygtk2 libwnck intlhack
+		libxml2 libxslt pygobject pygobject3 libwnck intlhack
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
