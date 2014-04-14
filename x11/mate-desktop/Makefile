@@ -17,7 +17,7 @@ PORTSCOUT=	limitw:1,even
 
 USES=		bison gettext gmake libtool pathfix pkgconfig tar:xz
 USE_XORG=	x11 xrandr
-USE_GNOME=	gnomehier gdkpixbuf2 glib20 gtk20 intlhack
+USE_GNOME=	dconf gnomehier gdkpixbuf2 glib20 gtk20 intlhack
 USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
