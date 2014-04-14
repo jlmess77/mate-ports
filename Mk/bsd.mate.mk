@@ -134,9 +134,9 @@ libmatewnck_LIB_DEPENDS=	libmatewnck.so:${PORTSDIR}/x11-toolkits/libmatewnck
 libmatewnck_RUN_DEPENDS=	${libmatewnck_DETECT}:${PORTSDIR}/x11-toolkits/libmatewnck
 
 marco_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmarco-private.pc
-marco_BUILD_DEPENDS=	${marco_DETECT}:${PORTSDIR}/x11-wm/mate-window-manager
-marco_LIB_DEPENDS=	libmarco-private.so:${PORTSDIR}/x11-wm/mate-window-manager
-marco_RUN_DEPENDS=	${marco_DETECT}:${PORTSDIR}/x11-wm/mate-window-manager
+marco_BUILD_DEPENDS=	${marco_DETECT}:${PORTSDIR}/x11-wm/marco
+marco_LIB_DEPENDS=	libmarco-private.so:${PORTSDIR}/x11-wm/marco
+marco_RUN_DEPENDS=	${marco_DETECT}:${PORTSDIR}/x11-wm/marco
 
 menus_DETECT=		${LOCALBASE}/libdata/pkgconfig/libmate-menu.pc
 menus_BUILD_DEPENDS=	${menus_DETECT}:${PORTSDIR}/x11/mate-menus
