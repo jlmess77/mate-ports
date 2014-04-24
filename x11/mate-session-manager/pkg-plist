@@ -125,7 +125,7 @@ share/locale/zu/LC_MESSAGES/mate-session-manager.mo
 share/mate-session-manager/gsm-inhibit-dialog.ui
 share/mate-session-manager/session-properties.ui
 share/xsessions/mate.desktop
-@dirrm share/xsessions
+@dirrmtry share/xsessions
 @dirrm share/mate-session-manager
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
