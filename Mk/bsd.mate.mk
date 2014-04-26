@@ -154,6 +154,7 @@ settingsdaemon_RUN_DEPENDS=	${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-s
 
 Mate_Post_Include=		bsd.mate.mk
 
+.if defined(USE_MATE)
 # Comparing between USE_MATE and _USE_MATE_ALL to make sure the component
 # exists in _USE_MATE_ALL. If it does not exist then give an error about it.
 #. for component in ${USE_MATE:O:u:C/^([^:]+).*/\1/}
