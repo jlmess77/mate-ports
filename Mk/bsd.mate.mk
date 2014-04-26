@@ -42,9 +42,7 @@ Mate_Pre_Include=			bsd.mate.mk
 #
 
 # non-version specific components. Do not use :build/:run on those.
-_USE_MATE_ALL=	autogen intlhack intltool ltasneededhack lthack ltverhack
-# These *hack* tools are the same as in bsd.gnome.mk but are run in
-# pre-configure because pre-patch is when we run autogen.sh.
+_USE_MATE_ALL=	autogen intlhack intltool
 
 # MATE components, you can use the :build or :run if need. Without the :build
 # and :run, it will be added in both build and run dependency. It will check
@@ -56,9 +54,6 @@ _USE_MATE_ALL+=	caja common controlcenter desktop dialogs docutils icontheme \
 		settingsdaemon
 
 SCROLLKEEPER_DIR=	/var/db/rarian
-
-lthack_PRE_PATCH=	${FIND} ${WRKSRC} -name "configure" -type f | ${XARGS} ${REINPLACE_CMD} -e \
-				'/^LIBTOOL_DEPS="$$ac_aux_dir\/ltmain.sh"$$/s|$$|; $$ac_aux_dir/ltconfig $$LIBTOOL_DEPS;|'
 
 caja_DETECT=		${LOCALBASE}/libdata/pkgconfig/libcaja-extension.pc
 caja_BUILD_DEPENDS=	${caja_DETECT}:${PORTSDIR}/x11-fm/caja
@@ -159,50 +154,6 @@ settingsdaemon_RUN_DEPENDS=	${settingsdaemon_DETECT}:${PORTSDIR}/sysutils/mate-s
 
 Mate_Post_Include=		bsd.mate.mk
 
-.if defined(USE_MATE)
-# Then handle the ltverhack component (it has to be done here, because
-# we rely on some bsd.autotools.mk variables, and bsd.autotools.mk is
-# included in the post-makefile section).
-.if defined(_AUTOTOOL_libtool)
-lthacks_CONFIGURE_ENV=	ac_cv_path_DOLT_BASH=
-lthacks_PRE_PATCH=		${CP} -pf ${LTMAIN} ${WRKDIR}/mate-ltmain.sh && \
-						${CP} -pf ${LIBTOOL} ${WRKDIR}/mate-libtool && \
-						for file in ${LIBTOOLFILES}; do \
-							${REINPLACE_CMD} -e \
-								'/^ltmain=/!s|$$ac_aux_dir/ltmain\.sh|${LIBTOOLFLAGS} ${WRKDIR}/mate-ltmain.sh|g; \
-								 /^LIBTOOL=/s|$$(top_builddir)/libtool|${WRKDIR}/mate-libtool|g' \
-								${PATCH_WRKSRC}/$$file; \
-						done;
-.else
-.  if ${USE_MATE:Mltverhack*}!="" || ${USE_MATE:Mltasneededhack}!=""
-IGNORE=	cannot install: ${PORTNAME} uses the ltverhack and/or ltasneededhack MATE components but does not use libtool
-.  endif
-.endif
-
-.if ${USE_MATE:Mltverhack\:*:C/^[^:]+:([^:]+).*/\1/}==""
-ltverhack_LIB_VERSION=	major=.`expr $$current - $$age`
-.else
-ltverhack_LIB_VERSION=	major=".${USE_MATE:Mltverhack\:*:C/^[^:]+:([^:]+).*/\1/}"
-.endif
-ltverhack_PATCH_DEPENDS=${LIBTOOL_DEPENDS}
-ltverhack_PRE_PATCH=	for file in mate-ltmain.sh mate-libtool; do \
-							if [ -f ${WRKDIR}/$$file ]; then \
-								${REINPLACE_CMD} -e \
-									'/freebsd-elf)/,/;;/ s|major="\.$$current"|${ltverhack_LIB_VERSION}|; \
-									 /freebsd-elf)/,/;;/ s|versuffix="\.$$current"|versuffix="$$major"|' \
-									${WRKDIR}/$$file; \
-							fi; \
-						done
-
-ltasneededhack_PATCH_DEPENDS=${LIBTOOL_DEPENDS}
-ltasneededhack_PRE_PATCH=	if [ -f ${WRKDIR}/mate-libtool ]; then \
-								${REINPLACE_CMD} -e \
-									'/^archive_cmds=/s/-shared/-shared -Wl,--as-needed/ ; \
-									/^archive_expsym_cmds=/s/-shared/-shared -Wl,--as-needed/' \
-									${WRKDIR}/mate-libtool; \
-							fi
-
-
 # Comparing between USE_MATE and _USE_MATE_ALL to make sure the component
 # exists in _USE_MATE_ALL. If it does not exist then give an error about it.
 #. for component in ${USE_MATE:O:u:C/^([^:]+).*/\1/}
@@ -212,11 +163,6 @@ ltasneededhack_PRE_PATCH=	if [ -f ${WRKDIR}/mate-libtool ]; then \
 .error cannot install: Unknown component USE_MATE=${component}
 .  endif
 . endfor
-
-. if ${USE_MATE:Mltverhack*}!= "" || ${USE_MATE:Mltasneededhack}!= ""
-MATE_PRE_PATCH+=	${lthacks_PRE_PATCH}
-CONFIGURE_ENV+=		${lthacks_CONFIGURE_ENV}
-. endif
 
 . for component in ${USE_MATE:O:u:C/^([^:]+).*/\1/}
 .  if defined(${component}_PATCH_DEPENDS)
