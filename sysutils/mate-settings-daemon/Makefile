@@ -29,6 +29,7 @@ USE_LDCONFIG=	yes
 USE_GSTREAMER=	good
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
+		--disable-static \
 		--disable-pulse
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

@@ -12,7 +12,6 @@ include/mate-desktop-2.0/libmate-desktop/mate-rr-config.h
 include/mate-desktop-2.0/libmate-desktop/mate-rr-labeler.h
 include/mate-desktop-2.0/libmate-desktop/mate-rr.h
 lib/libmate-desktop-2.a
-lib/libmate-desktop-2.la
 lib/libmate-desktop-2.so
 lib/libmate-desktop-2.so.17
 lib/libmate-desktop-2.so.17.1.4

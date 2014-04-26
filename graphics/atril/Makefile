@@ -21,13 +21,16 @@ RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:${PORTSDIR}/misc/hicol
 
 PORTSCOUT=	limitw:1,even
 
-USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig tar:xz
+USES=		desktop-file-utils gettext gmake libtool pathfix \
+		pkgconfig tar:xz
 USE_MATE=	icontheme caja
 USE_XORG=	sm
 USE_GNOME=	cairo gnomehier gtk20 intlhack libxml2
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-gtk=2.0
+CONFIGURE_ARGS=	--with-gtk=2.0 \
+		--disable-xps \
+		--disable-static
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

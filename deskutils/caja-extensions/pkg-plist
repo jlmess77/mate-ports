@@ -1,26 +1,15 @@
 bin/caja-sendto
 include/caja-sendto/caja-sendto-plugin.h
-lib/caja-sendto/plugins/libnstburn.la
 lib/caja-sendto/plugins/libnstburn.so
-lib/caja-sendto/plugins/libnstemailclient.la
 lib/caja-sendto/plugins/libnstemailclient.so
-lib/caja-sendto/plugins/libnstgajim.la
 lib/caja-sendto/plugins/libnstgajim.so
-lib/caja-sendto/plugins/libnstpidgin.la
 lib/caja-sendto/plugins/libnstpidgin.so
-lib/caja-sendto/plugins/libnstremovable_devices.la
 lib/caja-sendto/plugins/libnstremovable_devices.so
-lib/caja-sendto/plugins/libnstupnp.la
 lib/caja-sendto/plugins/libnstupnp.so
-lib/caja/extensions-2.0/libcaja-gksu.la
 lib/caja/extensions-2.0/libcaja-gksu.so
-lib/caja/extensions-2.0/libcaja-image-converter.la
 lib/caja/extensions-2.0/libcaja-image-converter.so
-lib/caja/extensions-2.0/libcaja-open-terminal.la
 lib/caja/extensions-2.0/libcaja-open-terminal.so
-lib/caja/extensions-2.0/libcaja-sendto.la
 lib/caja/extensions-2.0/libcaja-sendto.so
-lib/caja/extensions-2.0/libcaja-share.la
 lib/caja/extensions-2.0/libcaja-share.so
 libdata/pkgconfig/caja-sendto.pc
 man/man1/caja-sendto.1.gz
@@ -89,5 +78,8 @@ share/locale/zh_TW/LC_MESSAGES/caja-extensions.mo
 @dirrmtry share/gtk-doc/html
 @dirrmtry share/gtk-doc
 @dirrmtry %%DATADIR%%
-@dirrmtry lib/caja-sendto/plugins
-@dirrmtry lib/caja-sendto
+@dirrmtry lib/caja/extensions-2.0
+@dirrmtry lib/caja
+@dirrm lib/caja-sendto/plugins
+@dirrm lib/caja-sendto
+@dirrm include/caja-sendto

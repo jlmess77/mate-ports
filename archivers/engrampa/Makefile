@@ -28,6 +28,7 @@ CONFIGURE_ARGS=	--disable-packagekit \
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.engrampa.gschema.xml
 
@@ -35,8 +36,5 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' \
 		${WRKSRC}/src/fr-command-tar.c \
 		${WRKSRC}/src/fr-command-zip.c
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/caja/extensions-2.0/libcaja-engrampa.so
 
 .include <bsd.port.mk>

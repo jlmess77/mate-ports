@@ -49,31 +49,17 @@ include/atril/1.5.0/libview/ev-view-presentation.h
 include/atril/1.5.0/libview/ev-view-type-builtins.h
 include/atril/1.5.0/libview/ev-view.h
 lib/atril/3/backends/comicsdocument.atril-backend
-lib/atril/3/backends/libcomicsdocument.a
-lib/atril/3/backends/libcomicsdocument.la
 lib/atril/3/backends/libcomicsdocument.so
-lib/atril/3/backends/libpdfdocument.a
-lib/atril/3/backends/libpdfdocument.la
 lib/atril/3/backends/libpdfdocument.so
-lib/atril/3/backends/libpsdocument.a
-lib/atril/3/backends/libpsdocument.la
 lib/atril/3/backends/libpsdocument.so
-lib/atril/3/backends/libtiffdocument.a
-lib/atril/3/backends/libtiffdocument.la
 lib/atril/3/backends/libtiffdocument.so
 lib/atril/3/backends/pdfdocument.atril-backend
 lib/atril/3/backends/psdocument.atril-backend
 lib/atril/3/backends/tiffdocument.atril-backend
-lib/caja/extensions-2.0/libatril-properties-page.a
-lib/caja/extensions-2.0/libatril-properties-page.la
 lib/caja/extensions-2.0/libatril-properties-page.so
-lib/libatrildocument.a
-lib/libatrildocument.la
 lib/libatrildocument.so
 lib/libatrildocument.so.3
 lib/libatrildocument.so.%%GTK3_VERSION%%
-lib/libatrilview.a
-lib/libatrilview.la
 lib/libatrilview.so
 lib/libatrilview.so.3
 lib/libatrilview.so.%%GTK3_VERSION%%
@@ -556,6 +542,8 @@ share/thumbnailers/atril.thumbnailer
 @dirrmtry %%DATADIR%%/icons/hicolor
 @dirrmtry %%DATADIR%%/icons
 @dirrmtry %%DATADIR%%
+@dirrmtry lib/caja/extensions-2.0
+@dirrmtry lib/caja
 @dirrmtry lib/atril/3/backends
 @dirrmtry lib/atril/3
 @dirrmtry lib/atril

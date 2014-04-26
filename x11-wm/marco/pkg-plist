@@ -10,7 +10,6 @@ include/marco-1/marco-private/theme-parser.h
 include/marco-1/marco-private/theme.h
 include/marco-1/marco-private/util.h
 lib/libmarco-private.a
-lib/libmarco-private.la
 lib/libmarco-private.so
 lib/libmarco-private.so.0
 lib/libmarco-private.so.0.0.0
@@ -257,7 +256,6 @@ share/themes/eOS/metacity-1/unmaximize_unfocused_over.png
 @dirrmtry share/locale/ast
 @dirrmtry share/locale/as/LC_MESSAGES
 @dirrmtry share/locale/as
-@dirrmtry share/images
 @dirrmtry share/help/C/creating-marco-themes
 @dirrmtry share/help/C
 @dirrmtry share/help

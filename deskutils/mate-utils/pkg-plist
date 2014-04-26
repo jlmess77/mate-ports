@@ -18,7 +18,6 @@ include/mate-dict/gdict/gdict-utils.h
 include/mate-dict/gdict/gdict-version.h
 include/mate-dict/gdict/gdict.h
 lib/libmatedict.a
-lib/libmatedict.la
 lib/libmatedict.so
 lib/libmatedict.so.6
 lib/libmatedict.so.6.0.7
@@ -346,7 +345,6 @@ share/mate-screenshot/mate-screenshot.ui
 %%DATADIR%%/logview-toolbar.xml
 share/pixmaps/mate-search-tool/thumbnail_frame.png
 @dirrmtry share/pixmaps/mate-search-tool
-@dirrmtry share/pixmaps/document-icons
 @dirrmtry %%DATADIR%%
 @dirrmtry share/mate-screenshot
 @dirrmtry share/mate-panel/applets

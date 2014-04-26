@@ -38,17 +38,14 @@ include/libslab/tile.h
 include/mate-window-settings-2.0/mate-window-manager.h
 include/mate-window-settings-2.0/mate-wm-manager.h
 lib/libmate-window-settings.a
-lib/libmate-window-settings.la
 lib/libmate-window-settings.so
 lib/libmate-window-settings.so.1
 lib/libmate-window-settings.so.1.0.0
 lib/libslab.a
-lib/libslab.la
 lib/libslab.so
 lib/libslab.so.0
 lib/libslab.so.0.0.0
 lib/window-manager-settings/libmarco.a
-lib/window-manager-settings/libmarco.la
 lib/window-manager-settings/libmarco.so
 libdata/pkgconfig/libslab.pc
 libdata/pkgconfig/mate-default-applications.pc
@@ -579,11 +576,10 @@ share/mime/packages/mate-theme-package.xml
 @dirrmtry share/thumbnailers
 @dirrmtry share/polkit-1/actions
 @dirrmtry share/polkit-1
+@dirrmtry share/mime/application
 @dirrm share/mate/cursor-fonts
 @dirrm %%DATADIR%%/ui
 @dirrm %%DATADIR%%/pixmaps
-@dirrm %%DATADIR%%/keybindings
-@dirrm %%DATADIR%%
 @dirrmtry share/locale/zu/LC_MESSAGES
 @dirrmtry share/locale/zu
 @dirrmtry share/locale/zh_HK/LC_MESSAGES

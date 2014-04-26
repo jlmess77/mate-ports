@@ -25,6 +25,7 @@ USE_XORG=	x11
 USE_GNOME=	glib20 gnomehier gtk20 librsvg2 intlhack libwnck
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-dbus-services=${PREFIX}/share/dbus-1/services \
+		--disable-static \
 		--with-gtk=2.0
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

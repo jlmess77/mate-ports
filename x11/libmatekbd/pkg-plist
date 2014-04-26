@@ -6,12 +6,10 @@ include/libmatekbd/matekbd-keyboard-drawing.h
 include/libmatekbd/matekbd-status.h
 include/libmatekbd/matekbd-util.h
 lib/libmatekbd.a
-lib/libmatekbd.la
 lib/libmatekbd.so
 lib/libmatekbd.so.4
 lib/libmatekbd.so.4.2.0
 lib/libmatekbdui.a
-lib/libmatekbdui.la
 lib/libmatekbdui.so
 lib/libmatekbdui.so.4
 lib/libmatekbdui.so.4.2.0
