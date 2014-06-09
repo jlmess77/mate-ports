@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Preferred Applications
+_Comment=Select your default applications
+Exec=mate-default-applications-properties
+Icon=preferences-desktop-default-applications
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Settings;X-MATE-PersonalSettings;
+OnlyShowIn=MATE;

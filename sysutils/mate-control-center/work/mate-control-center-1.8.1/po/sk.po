@@ -1,0 +1,2851 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Ján Ďanovský <dagsoftware@yahoo.com>, 2013-2014
+# Marcel Telka <marcel@telka.sk>, 2005
+# Pavol Šimo <palo.simo@gmail.com>, 2007-2009
+# Peter Tuhársky <tuharsky@misbb.sk>, 2007
+# Stanislav Višňovský <visnovsky@kde.org>, 2003
+# Stanislav Višňovsky <visnovsky@nenya.ms.mff.cuni.cz>, 2000-2004
+# Stanislav Višňovský <visnov@suse.cz>, 2003
+# tibbi <tibbbi2@gmail.com>, 2014
+# tibbi <tibbbi2@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-23 16:27+0100\n"
+"PO-Revision-Date: 2014-02-23 16:31+0000\n"
+"Last-Translator: tibbi <tibbbi2@gmail.com>\n"
+"Language-Team: Slovak (http://www.transifex.com/projects/p/MATE/language/sk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:1
+msgid ""
+"[ 'Change Theme;mate-appearance-properties.desktop', 'Set Preferred "
+"Applications;mate-default-applications-properties.desktop' ]"
+msgstr "[ 'Zmeniť tému; mate-appearance-properties.desktop', 'Nastaviť prednostné aplikácie;mate-default-applications-properties.desktop' ]"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:2
+msgid "Task names and associated .desktop files"
+msgstr "Názvy úloh a súvisiacich .desktop súborov"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:3
+msgid ""
+"The task name to be displayed in the control-center followed by a \";\" "
+"separator then the filename of an associated .desktop file to launch for "
+"that task."
+msgstr "Názov úlohy, ktorá sa má zobraziť v ovládacom centre, nasledovaná oddeľovačom „;“ a názvom súvisiaceho .desktop súboru, ktorý sa má pre túto úlohu spustiť."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:4
+msgid "Close the control-center when a task is activated"
+msgstr "Zatvoriť ovládacie centrum keď je aktivovaná úloha"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:5
+msgid ""
+"if true, the control-center will close when a \"Common Task\" is activated."
+msgstr "Ak je true, ovládacie centrum sa zavrie pri aktivácii „Bežnej úlohy“."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:6
+msgid "Exit shell on start action performed"
+msgstr "Ukončiť shell pri vykonaní akcie spustenia"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:7
+msgid "Indicates whether to close the shell when a start action is performed."
+msgstr "Určuje, či sa má shell zavrieť keď sa vykoná operácia spustenia"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:8
+msgid "Exit shell on help action performed"
+msgstr "Ukončiť shell pri vykonaní operácie pomocníka"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:9
+msgid "Indicates whether to close the shell when a help action is performed."
+msgstr "Určuje, či sa má zatvoriť shell keď sa vykoná operácia pomocníka"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:10
+msgid "Exit shell on add or remove action performed"
+msgstr "Ukončiť shell pri vykonaní operácií pridania alebo odstránenia"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:11
+msgid ""
+"Indicates whether to close the shell when an add or remove action is "
+"performed."
+msgstr "Určuje, či sa má shell zavrieť keď sa vykoná operácia pridania alebo odstránenia"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:12
+msgid "Exit shell on upgrade or uninstall action performed"
+msgstr "Ukončiť shell pri vykonaní operácie aktualizácie alebo odinštalovania"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:13
+msgid ""
+"Indicates whether to close the shell when an upgrade or uninstall action is "
+"performed."
+msgstr "Určuje, či sa má shell zavrieť keď sa vykoná operácia aktualizácie alebo odinštalovania"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:14
+msgid "More backgrounds URL"
+msgstr "URL adresa s ďalšími pozadiami"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:15
+msgid ""
+"URL for where to get more desktop backgrounds. If set to an empty string the"
+" link will not appear."
+msgstr "URL adresa, z ktorej sa dajú získať ďalšie pozadia pracovnej plochy. Ak je nastavené na prázdny reťazec, odkaz se nezobrazí."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:16
+msgid "More themes URL"
+msgstr "URL adresa s ďalšími témami"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:17
+msgid ""
+"URL for where to get more desktop themes. If set to an empty string the link"
+" will not appear."
+msgstr "URL adresa, z ktorej sa dajú získať ďalšie témy pracovnej plochy. Ak je nastavené na prázdny reťazec, odkaz se nezobrazí."
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:1
+msgid "Keybinding"
+msgstr "Klávesová skratka"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:2
+msgid "Keybinding associated with a custom shortcut."
+msgstr "Klávesová skratka asociovaná s vlastným príkazom"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:3
+msgid "Command"
+msgstr "Príkaz"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:4
+msgid "Command associated with a custom keybinding."
+msgstr "Príkaz asociovaný s vlastnou klávesovou skratkou"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:5
+msgid "Name"
+msgstr "Názov"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:6
+msgid "Description associated with a custom keybinding."
+msgstr "Popis asociovaný s vlastnou klávesovou skratkou"
+
+#: ../capplets/about-me/eel-alert-dialog.c:110
+msgid "Image/label border"
+msgstr "Okraj obrázka/popisu"
+
+#: ../capplets/about-me/eel-alert-dialog.c:111
+msgid "Width of border around the label and image in the alert dialog"
+msgstr "Šírka okraja okolo popisu a obrázka v dialógovom okne výstrahy"
+
+#: ../capplets/about-me/eel-alert-dialog.c:120
+msgid "Alert Type"
+msgstr "Typ výstrahy"
+
+#: ../capplets/about-me/eel-alert-dialog.c:121
+msgid "The type of alert"
+msgstr "Typ výstrahy"
+
+#: ../capplets/about-me/eel-alert-dialog.c:129
+msgid "Alert Buttons"
+msgstr "Tlačidlá výstrahy"
+
+#: ../capplets/about-me/eel-alert-dialog.c:130
+msgid "The buttons shown in the alert dialog"
+msgstr "Tlačidlá zobrazené v dialógovom okne výstrahy"
+
+#: ../capplets/about-me/eel-alert-dialog.c:194
+msgid "Show more _details"
+msgstr "Zobraziť viac _podrobností"
+
+#: ../capplets/about-me/mate-about-me.c:288
+msgid "Select Image"
+msgstr "Zvoliť obrázok"
+
+#: ../capplets/about-me/mate-about-me.c:290
+msgid "No Image"
+msgstr "Bez obrázka"
+
+#: ../capplets/about-me/mate-about-me.c:318
+#: ../capplets/appearance/appearance-desktop.c:650
+msgid "Images"
+msgstr "Obrázky"
+
+#: ../capplets/about-me/mate-about-me.c:322
+#: ../capplets/appearance/theme-installer.c:774
+msgid "All Files"
+msgstr "Všetky súbory"
+
+#: ../capplets/about-me/mate-about-me.c:473
+#, c-format
+msgid "About %s"
+msgstr "O %s"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:1
+#: ../capplets/about-me/mate-about-me.desktop.in.in.h:1
+msgid "About Me"
+msgstr "O mne"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:2
+msgid "Select your photo"
+msgstr "Zvoľte si fotku"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:3
+msgid "Full Name"
+msgstr "Celé meno"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:4
+msgid "User name:"
+msgstr "Meno používateľa:"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:5
+msgid "Change Passwo_rd..."
+msgstr "Zmeniť _heslo..."
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:6
+msgid "Enable _Fingerprint Login..."
+msgstr "Povoliť prihlásenie _odtlačkom prsta..."
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:7
+msgid "Disable _Fingerprint Login..."
+msgstr "Zakázať prihlásenie _odtlačkom prsta..."
+
+#: ../capplets/about-me/mate-about-me.desktop.in.in.h:2
+msgid "Set your personal information"
+msgstr "Nastaviť vaše osobné informácie"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:100
+msgid ""
+"You are not allowed to access the device. Contact your system administrator."
+msgstr "Nemáte povolený prístup k zariadeniu. Kontaktujte vášho správcu systému."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:102
+msgid "The device is already in use."
+msgstr "Zariadenie sa už používa."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:104
+msgid "An internal error occured"
+msgstr "Vyskytla sa interná chyba"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:221
+msgid "Delete registered fingerprints?"
+msgstr "Vymazať zaregistrované odtlačky prstov?"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:224
+msgid "_Delete Fingerprints"
+msgstr "Vy_mazať odtlačky prstov"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:231
+msgid ""
+"Do you want to delete your registered fingerprints so fingerprint login is "
+"disabled?"
+msgstr "Chcete vymazať vaše zaregistrované odtlačky prstov, takže bude prihlásenie odtlačkom prsta zakázané?"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:359
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:15
+msgid "Done!"
+msgstr "Hotovo!"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "Could you not access "Digital Persona U.are.U 4000/4000B" device
+#: ../capplets/about-me/mate-about-me-fingerprint.c:405
+#: ../capplets/about-me/mate-about-me-fingerprint.c:427
+#, c-format
+msgid "Could not access '%s' device"
+msgstr "Nepodaril sa prístup k zariadeniu '%s'"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "Could you not access "Digital Persona U.are.U 4000/4000B" device
+#: ../capplets/about-me/mate-about-me-fingerprint.c:476
+#, c-format
+msgid "Could not start finger capture on '%s' device"
+msgstr "Nepodarilo sa spustiť čítanie odtlačku na zariadení '%s'"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:523
+msgid "Could not access any fingerprint readers"
+msgstr "Nepodaril sa prístup k žiadnej čítačke odtlačkov prstov"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:524
+msgid "Please contact your system administrator for help."
+msgstr "Pre pomoc, prosím, kontaktujte správcu vášho systému."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:554
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:9
+msgid "Enable Fingerprint Login"
+msgstr "Povoliť prihlásenie odtlačkom prsta"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "To enable fingerprint login, you need to save one of your fingerprints,
+#. using the
+#. * 'Digital Persona U.are.U 4000/4000B' device."
+#: ../capplets/about-me/mate-about-me-fingerprint.c:584
+#, c-format
+msgid ""
+"To enable fingerprint login, you need to save one of your fingerprints, "
+"using the '%s' device."
+msgstr "Pre povolenie prihlásenia odtlačkom prsta musíte uložiť jeden z vašich odtlačkov prstov, pomocou zariadenia '%s'."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:593
+msgid "Swipe finger on reader"
+msgstr "Prejdite prstom po čítačke"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:595
+msgid "Place finger on reader"
+msgstr "Dajte prst na čítačku"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:1
+msgid "Left thumb"
+msgstr "Palec ľavej ruky"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:2
+msgid "Left middle finger"
+msgstr "Prostredník ľavej ruky"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:3
+msgid "Left ring finger"
+msgstr "Prstenník ľavej ruky"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:4
+msgid "Left little finger"
+msgstr "Malíček ľavej ruky"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:5
+msgid "Right thumb"
+msgstr "Palec pravej ruky"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:6
+msgid "Right middle finger"
+msgstr "Prostredník pravej ruky"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:7
+msgid "Right ring finger"
+msgstr "Prstenník pravej ruky"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:8
+msgid "Right little finger"
+msgstr "Malíček ľavej ruky"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:10
+msgid "Right index finger"
+msgstr "Pravý ukazovák"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:11
+msgid "Left index finger"
+msgstr "Ľavý ukazovák"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:12
+msgid "Other finger: "
+msgstr "Iný prst: "
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:13
+msgid "Select finger"
+msgstr "Zvoľte prst"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:14
+msgid ""
+"Your fingerprint was successfully saved. You should now be able to log in "
+"using your fingerprint reader."
+msgstr "Odtlačok vášho prsta bol úspešne uložený. Teraz by sa vám už malo podariť prihlásiť sa pomocou čítačky odtlačkov prstov."
+
+#: ../capplets/about-me/mate-about-me-password.c:161
+msgid "Child exited unexpectedly"
+msgstr "Potomok neočakávane skončil"
+
+#: ../capplets/about-me/mate-about-me-password.c:297
+#, c-format
+msgid "Could not shutdown backend_stdin IO channel: %s"
+msgstr "Nepodarilo sa vypnúť backend_stdin V/V kanál: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:310
+#, c-format
+msgid "Could not shutdown backend_stdout IO channel: %s"
+msgstr "Nepodarilo sa vypnúť backend_stdout V/V kanál: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:409
+msgid "Authenticated!"
+msgstr "Overené!"
+
+#. This is a re-auth, and it failed.
+#. * The password must have been changed in the meantime!
+#. * Ask the user to re-authenticate
+#. Update status message and auth state
+#. Authentication failure
+#: ../capplets/about-me/mate-about-me-password.c:475
+#: ../capplets/about-me/mate-about-me-password.c:560
+msgid ""
+"Your password has been changed since you initially authenticated! Please re-"
+"authenticate."
+msgstr "Vaše heslo sa zmenilo medzitým, ako ste sa pôvodne overili! Overte sa znova, prosím."
+
+#: ../capplets/about-me/mate-about-me-password.c:477
+msgid "That password was incorrect."
+msgstr "To heslo nebolo správne."
+
+#: ../capplets/about-me/mate-about-me-password.c:528
+msgid "Your password has been changed."
+msgstr "Vaše heslo bolo zmenené."
+
+#. What does this indicate?
+#. * "Authentication information cannot be recovered?" from libpam?
+#: ../capplets/about-me/mate-about-me-password.c:538
+#, c-format
+msgid "System error: %s."
+msgstr "Systémová chyba: %s."
+
+#: ../capplets/about-me/mate-about-me-password.c:541
+msgid "The password is too short."
+msgstr "Heslo je príliš krátke."
+
+#: ../capplets/about-me/mate-about-me-password.c:545
+msgid "The password is too simple."
+msgstr "Heslo je príliš jednoduché."
+
+#: ../capplets/about-me/mate-about-me-password.c:550
+msgid "The old and new passwords are too similar."
+msgstr "Staré a nové heslo sú si príliš podobné."
+
+#: ../capplets/about-me/mate-about-me-password.c:552
+msgid "The new password must contain numeric or special character(s)."
+msgstr "Musí obsahovať číselný alebo špeciálny znak (znaky)."
+
+#: ../capplets/about-me/mate-about-me-password.c:555
+msgid "The old and new passwords are the same."
+msgstr "Staré a nové heslo sú rovnaké."
+
+#: ../capplets/about-me/mate-about-me-password.c:557
+msgid "The new password has already been used recently."
+msgstr "Nové heslo už bolo nedávno použité."
+
+#. translators: Unable to launch <program>: <error message>
+#: ../capplets/about-me/mate-about-me-password.c:828
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Nepodarilo sa spustiť %s: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:832
+msgid "Unable to launch backend"
+msgstr "Nepodarilo sa spustiť backend"
+
+#: ../capplets/about-me/mate-about-me-password.c:833
+msgid "A system error has occurred"
+msgstr "Vyskytla sa systémová chyba"
+
+#. Update status message
+#: ../capplets/about-me/mate-about-me-password.c:853
+msgid "Checking password..."
+msgstr "Overovanie hesla..."
+
+#: ../capplets/about-me/mate-about-me-password.c:940
+msgid "Click <b>Change password</b> to change your password."
+msgstr "Pre zmenu hesla kliknite na <b>Zmeniť heslo</b>."
+
+#: ../capplets/about-me/mate-about-me-password.c:943
+msgid "Please type your password in the <b>New password</b> field."
+msgstr "Prosím, zadajte vaše heslo do políčka <b>Nové heslo</b>."
+
+#: ../capplets/about-me/mate-about-me-password.c:946
+#: ../capplets/about-me/mate-about-me-password.ui.h:9
+msgid ""
+"Please type your password again in the <b>Retype new password</b> field."
+msgstr "Prosím, zadajte heslo znova do poľa <b>Znova zadať nové heslo</b>."
+
+#: ../capplets/about-me/mate-about-me-password.c:949
+msgid "The two passwords are not equal."
+msgstr "Zadané heslá sa nezhodujú."
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:1
+msgid "Change password"
+msgstr "Zmeniť heslo"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:2
+msgid "Change your password"
+msgstr "Zmeniť vaše heslo"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:3
+msgid ""
+"To change your password, enter your current password in the field below and click <b>Authenticate</b>.\n"
+"After you have authenticated, enter your new password, retype it for verification and click <b>Change password</b>."
+msgstr "Pre zmenu vášho hesla vložte do políčka nižšie vaše aktuálne heslo a kliknite na <b>Overiť</b>.\nPo vašom overení vložte vaše nové heslo, zadajte ho pre overenie znova a kliknite na <b>Zmeniť heslo</b>."
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:5
+msgid "Current _password:"
+msgstr "_Aktuálne heslo:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:6
+msgid "_New password:"
+msgstr "_Nové heslo:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:7
+msgid "_Retype new password:"
+msgstr "_Znova zadať nové heslo:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:8
+msgid "_Authenticate"
+msgstr "_Overiť"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:10
+msgid "Change pa_ssword"
+msgstr "Zmeniť _heslo"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:1
+msgid "Assistive Technologies Preferences"
+msgstr "Nastavenie asistenčných technológií"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:2
+#: ../capplets/accessibility/at-properties/mate-at-properties.desktop.in.in.h:1
+msgid "Assistive Technologies"
+msgstr "Asistenčné technológie"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:3
+msgid "_Preferred Applications"
+msgstr "_Prednostné aplikácie"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:4
+msgid "Jump to Preferred Applications dialog"
+msgstr "Otvoriť dialógové okno nastavenia prednostných aplikácií"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:5
+msgid "_Enable assistive technologies"
+msgstr "Povoliť _asistenčné technológie"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:6
+msgid ""
+"Changes to enable assistive technologies will not take effect until your "
+"next log in."
+msgstr "Zmeny tohto nastavenia sa prejavia až po opätovnom prihlásení."
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:7
+msgid "Preferences"
+msgstr "Predvoľby"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:8
+msgid "_Keyboard Accessibility"
+msgstr "Sprístupnenie _klávesnice"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:9
+msgid "Jump to the Keyboard Accessibility dialog"
+msgstr "Otvoriť dialógové okno nastavenia sprístupnenia klávesnice"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:10
+msgid "_Mouse Accessibility"
+msgstr "Sprístupnenie _myši"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:11
+msgid "Jump to the Mouse Accessibility dialog"
+msgstr "Otvoriť dialógové okno nastavenia sprístupnenia myši"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:12
+msgid "Accessible Lo_gin"
+msgstr "Prístupné pri_hlásenie"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:13
+msgid "Jump to the Accessible Login dialog"
+msgstr "Otvoriť dialógové okno nastavenia sprístupnenia prihlásenia"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:14
+msgid "Close and _Log Out"
+msgstr "Zavrieť a _odhlásiť"
+
+#: ../capplets/accessibility/at-properties/mate-at-properties.desktop.in.in.h:2
+msgid "Choose which accessibility features to enable when you log in"
+msgstr "Zvoľte si, ktoré druhy sprístupnenia majú byť aktivované po prihlásení"
+
+#: ../capplets/appearance/appearance-desktop.c:619
+msgid "Add Wallpaper"
+msgstr "Pridať pozadie"
+
+#: ../capplets/appearance/appearance-desktop.c:654
+msgid "All files"
+msgstr "Všetky súbory"
+
+#: ../capplets/appearance/appearance-main.c:59
+#, c-format
+msgid "Could not load user interface file: %s"
+msgstr "Nepodarilo sa načítať súbor používateľského rozhrania: %s"
+
+#: ../capplets/appearance/appearance-main.c:155
+msgid "Specify the filename of a theme to install"
+msgstr "Určuje názov súboru témy pre nainštalovanie"
+
+#: ../capplets/appearance/appearance-main.c:156
+msgid "filename"
+msgstr "súbor"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/appearance/appearance-main.c:163
+msgid ""
+"Specify the name of the page to show (theme|background|fonts|interface)"
+msgstr "Určuje názov záložky pre zobrazenie (theme|background|fonts|interface)"
+
+#: ../capplets/appearance/appearance-main.c:164
+#: ../capplets/default-applications/mate-da-capplet.c:575
+#: ../capplets/mouse/mate-mouse-properties.c:496
+msgid "page"
+msgstr "záložka"
+
+#: ../capplets/appearance/appearance-main.c:171
+msgid "[WALLPAPER...]"
+msgstr "[POZADIE...]"
+
+#: ../capplets/appearance/appearance-style.c:171
+#: ../capplets/common/mate-theme-info.c:497
+#: ../capplets/common/mate-theme-info.c:694
+msgid "Default Pointer"
+msgstr "Predvolený kurzor"
+
+#: ../capplets/appearance/appearance-style.c:233
+#: ../capplets/appearance/appearance-themes.c:674
+msgid "Install"
+msgstr "Inštalovať"
+
+#: ../capplets/appearance/appearance-style.c:255
+#: ../capplets/common/mate-theme-info.c:1724
+#, c-format
+msgid ""
+"This theme will not look as intended because the required GTK+ theme engine "
+"'%s' is not installed."
+msgstr "Táto téma nebude vyzerať ako bolo plánované, pretože požadovaný témový motor GTK+ '%s' nie je nainštalovaný."
+
+#: ../capplets/appearance/appearance-themes.c:662
+msgid "Apply Background"
+msgstr "Použiť pozadie"
+
+#: ../capplets/appearance/appearance-themes.c:666
+msgid "Apply Font"
+msgstr "Použiť písmo"
+
+#: ../capplets/appearance/appearance-themes.c:670
+msgid "Revert Font"
+msgstr "Obnoviť písmo"
+
+#: ../capplets/appearance/appearance-themes.c:701
+msgid ""
+"The current theme suggests a background and a font. Also, the last applied "
+"font suggestion can be reverted."
+msgstr "Aktuálna téma ovplyvňuje pozadie a písmo. Okrem toho môže byť naposledy aplikovaný návrh písma navrátený späť."
+
+#: ../capplets/appearance/appearance-themes.c:703
+msgid ""
+"The current theme suggests a background. Also, the last applied font "
+"suggestion can be reverted."
+msgstr "Aktuálna téma ovplyvňuje pozadie. Okrem toho môže byť naposledy aplikovaný návrh písma navrátený späť."
+
+#: ../capplets/appearance/appearance-themes.c:705
+msgid "The current theme suggests a background and a font."
+msgstr "Aktuálna téma ovplyvňuje pozadie a písmo."
+
+#: ../capplets/appearance/appearance-themes.c:707
+msgid ""
+"The current theme suggests a font. Also, the last applied font suggestion "
+"can be reverted."
+msgstr "Aktuálna téma ovplyvňuje písmo. Okrem toho môže byť naposledy aplikovaný návrh písma navrátený späť."
+
+#: ../capplets/appearance/appearance-themes.c:709
+msgid "The current theme suggests a background."
+msgstr "Aktuálna téma ovplyvňuje pozadie."
+
+#: ../capplets/appearance/appearance-themes.c:711
+msgid "The last applied font suggestion can be reverted."
+msgstr "Naposledy aplikovaný návrh písma môže byť navrátený späť."
+
+#: ../capplets/appearance/appearance-themes.c:713
+msgid "The current theme suggests a font."
+msgstr "Aktuálna téma ovplyvňuje písmo."
+
+#: ../capplets/appearance/appearance-themes.c:1029
+msgid "Custom"
+msgstr "Vlastná"
+
+#: ../capplets/appearance/data/appearance.ui.h:1
+msgid "Font Rendering Details"
+msgstr "Detaily zobrazenia písiem"
+
+#: ../capplets/appearance/data/appearance.ui.h:2
+msgid "R_esolution:"
+msgstr "R_ozlíšenie:"
+
+#: ../capplets/appearance/data/appearance.ui.h:3
+msgid "dots per inch"
+msgstr "bodov na palec"
+
+#: ../capplets/appearance/data/appearance.ui.h:4
+msgid "Smoothing"
+msgstr "Vyhladzovanie"
+
+#: ../capplets/appearance/data/appearance.ui.h:5
+msgid "_None"
+msgstr "Žiadn_e"
+
+#: ../capplets/appearance/data/appearance.ui.h:6
+msgid "Gra_yscale"
+msgstr "Od_tiene sivej"
+
+#: ../capplets/appearance/data/appearance.ui.h:7
+msgid "Sub_pixel (LCDs)"
+msgstr "Sub-pi_xely (LCD)"
+
+#. font hinting
+#: ../capplets/appearance/data/appearance.ui.h:9
+msgid "Hinting"
+msgstr "Hinting"
+
+#: ../capplets/appearance/data/appearance.ui.h:10
+msgid "N_one"
+msgstr "Žia_dna"
+
+#: ../capplets/appearance/data/appearance.ui.h:11
+msgid "_Slight"
+msgstr "_Jemná"
+
+#: ../capplets/appearance/data/appearance.ui.h:12
+msgid "_Medium"
+msgstr "_Stredná"
+
+#: ../capplets/appearance/data/appearance.ui.h:13
+msgid "_Full"
+msgstr "Úpl_ná"
+
+#: ../capplets/appearance/data/appearance.ui.h:14
+msgid "Subpixel Order"
+msgstr "Poradie subpixelov"
+
+#. pixel order red, green, blue
+#: ../capplets/appearance/data/appearance.ui.h:16
+msgid "_RGB"
+msgstr "_RGB"
+
+#. pixel order blue, green, red
+#: ../capplets/appearance/data/appearance.ui.h:18
+msgid "_BGR"
+msgstr "_BGR"
+
+#. vertical hinting, pixel order red, green, blue
+#: ../capplets/appearance/data/appearance.ui.h:20
+msgid "_VRGB"
+msgstr "_VRGB"
+
+#. vertical hinting, pixel order blue, green, red
+#: ../capplets/appearance/data/appearance.ui.h:22
+msgid "VB_GR"
+msgstr "VB_GR"
+
+#: ../capplets/appearance/data/appearance.ui.h:23
+msgid "Appearance Preferences"
+msgstr "Predvoľby vzhľadu"
+
+#: ../capplets/appearance/data/appearance.ui.h:24
+msgid "Save _As..."
+msgstr "Uložiť _ako..."
+
+#: ../capplets/appearance/data/appearance.ui.h:25
+msgid "C_ustomize..."
+msgstr "P_rispôsobiť..."
+
+#: ../capplets/appearance/data/appearance.ui.h:26
+msgid "_Install..."
+msgstr "_Inštalovať..."
+
+#: ../capplets/appearance/data/appearance.ui.h:27
+msgid "Get more themes online"
+msgstr "Získať ďalšie témy online"
+
+#: ../capplets/appearance/data/appearance.ui.h:28
+msgid "Theme"
+msgstr "Téma"
+
+#: ../capplets/appearance/data/appearance.ui.h:29
+msgid "_Style:"
+msgstr "Štý_l:"
+
+#: ../capplets/appearance/data/appearance.ui.h:30
+msgid "C_olors:"
+msgstr "_Farby:"
+
+#: ../capplets/appearance/data/appearance.ui.h:31
+msgid "Open a dialog to specify the color"
+msgstr "Otvoriť dialógové okno pre zadanie farby"
+
+#: ../capplets/appearance/data/appearance.ui.h:32
+msgid "Get more backgrounds online"
+msgstr "Získať ďalšie pozadia online"
+
+#: ../capplets/appearance/data/appearance.ui.h:33
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:17
+msgid "_Add..."
+msgstr "P_ridať..."
+
+#: ../capplets/appearance/data/appearance.ui.h:34
+msgid "Background"
+msgstr "Pozadie"
+
+#: ../capplets/appearance/data/appearance.ui.h:35
+msgid "_Document font:"
+msgstr "Písmo _dokumentov:"
+
+#: ../capplets/appearance/data/appearance.ui.h:36
+msgid "Des_ktop font:"
+msgstr "Písmo p_lochy:"
+
+#: ../capplets/appearance/data/appearance.ui.h:37
+msgid "_Window title font:"
+msgstr "Písmo titulku _okna:"
+
+#: ../capplets/appearance/data/appearance.ui.h:38
+msgid "_Fixed width font:"
+msgstr "Písmo s pevno_u šírkou:"
+
+#: ../capplets/appearance/data/appearance.ui.h:39
+msgid "_Application font:"
+msgstr "Písmo _aplikácií:"
+
+#: ../capplets/appearance/data/appearance.ui.h:40
+msgid "Rendering"
+msgstr "Vykresľovanie"
+
+#: ../capplets/appearance/data/appearance.ui.h:41
+msgid "Sub_pixel smoothing (LCDs)"
+msgstr "Sub-pi_xelové vyhladzovanie (LCD)"
+
+#: ../capplets/appearance/data/appearance.ui.h:42
+msgid "Best co_ntrast"
+msgstr "Najlepší _kontrast"
+
+#: ../capplets/appearance/data/appearance.ui.h:43
+msgid "Best _shapes"
+msgstr "Najlepšie _tvary"
+
+#: ../capplets/appearance/data/appearance.ui.h:44
+msgid "_Monochrome"
+msgstr "Čierno_bielo"
+
+#: ../capplets/appearance/data/appearance.ui.h:45
+msgid "D_etails..."
+msgstr "Pod_robnosti..."
+
+#: ../capplets/appearance/data/appearance.ui.h:46
+msgid "Fonts"
+msgstr "Písma"
+
+#: ../capplets/appearance/data/appearance.ui.h:47
+msgid "Tile"
+msgstr "Dlaždice"
+
+#: ../capplets/appearance/data/appearance.ui.h:48
+msgid "Zoom"
+msgstr "Vyplniť"
+
+#: ../capplets/appearance/data/appearance.ui.h:49
+msgid "Center"
+msgstr "Zacentrovať"
+
+#: ../capplets/appearance/data/appearance.ui.h:50
+msgid "Scale"
+msgstr "Prispôsobiť 1"
+
+#: ../capplets/appearance/data/appearance.ui.h:51
+msgid "Stretch"
+msgstr "Roztiahnuť"
+
+#: ../capplets/appearance/data/appearance.ui.h:52
+msgid "Span"
+msgstr "Prispôsobiť2"
+
+#: ../capplets/appearance/data/appearance.ui.h:53
+msgid "Solid color"
+msgstr "Jednoliata farba"
+
+#: ../capplets/appearance/data/appearance.ui.h:54
+msgid "Horizontal gradient"
+msgstr "Vodorovný prechod"
+
+#: ../capplets/appearance/data/appearance.ui.h:55
+msgid "Vertical gradient"
+msgstr "Zvislý prechod"
+
+#: ../capplets/appearance/data/appearance.ui.h:56
+msgid "Text below items"
+msgstr "Text pod položkami"
+
+#: ../capplets/appearance/data/appearance.ui.h:57
+msgid "Text beside items"
+msgstr "Text vedľa položiek"
+
+#: ../capplets/appearance/data/appearance.ui.h:58
+msgid "Icons only"
+msgstr "Iba ikony"
+
+#: ../capplets/appearance/data/appearance.ui.h:59
+msgid "Text only"
+msgstr "Iba text"
+
+#: ../capplets/appearance/data/appearance.ui.h:60
+msgid "Customize Theme"
+msgstr "Prispôsobenie témy"
+
+#: ../capplets/appearance/data/appearance.ui.h:61
+msgid "Controls"
+msgstr "Ovládacie prvky"
+
+#: ../capplets/appearance/data/appearance.ui.h:62
+msgid "The current controls theme does not support color schemes."
+msgstr "Aktuálna téma ovládacích prvkov nepodporuje farebné schémy"
+
+#: ../capplets/appearance/data/appearance.ui.h:63
+msgid "_Tooltips:"
+msgstr "_Rady:"
+
+#: ../capplets/appearance/data/appearance.ui.h:64
+msgid "_Selected items:"
+msgstr "_Vybrané položky:"
+
+#: ../capplets/appearance/data/appearance.ui.h:65
+msgid "_Input boxes:"
+msgstr "Vs_tupné polia:"
+
+#: ../capplets/appearance/data/appearance.ui.h:66
+msgid "_Windows:"
+msgstr "_Okná:"
+
+#: ../capplets/appearance/data/appearance.ui.h:67
+msgid "Text"
+msgstr "Text"
+
+#: ../capplets/appearance/data/appearance.ui.h:68
+msgid "_Reset to Defaults"
+msgstr "Obnoviť p_redvolené"
+
+#: ../capplets/appearance/data/appearance.ui.h:69
+msgid "Colors"
+msgstr "Farby"
+
+#: ../capplets/appearance/data/appearance.ui.h:70
+msgid "Window Border"
+msgstr "Okraj okna"
+
+#: ../capplets/appearance/data/appearance.ui.h:71
+msgid "Icons"
+msgstr "Ikony"
+
+#: ../capplets/appearance/data/appearance.ui.h:72
+msgid "Changing your cursor theme takes effect the next time you log in."
+msgstr "Zmena kurzorovej témy sa prejaví až po opätovnom prihlásení"
+
+#: ../capplets/appearance/data/appearance.ui.h:73
+msgid "_Size:"
+msgstr "V_eľkosť:"
+
+#: ../capplets/appearance/data/appearance.ui.h:74
+#: ../capplets/mouse/mate-mouse-properties.ui.h:16
+msgid "Small"
+msgstr "Malá"
+
+#: ../capplets/appearance/data/appearance.ui.h:75
+#: ../capplets/mouse/mate-mouse-properties.ui.h:18
+msgid "Large"
+msgstr "Veľká"
+
+#: ../capplets/appearance/data/appearance.ui.h:76
+msgid "Pointer"
+msgstr "Kurzor"
+
+#: ../capplets/appearance/data/appearance.ui.h:77
+msgid "Save Theme As..."
+msgstr "Uložiť tému ako..."
+
+#: ../capplets/appearance/data/appearance.ui.h:78
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:4
+msgid "_Name:"
+msgstr "_Názov:"
+
+#: ../capplets/appearance/data/appearance.ui.h:79
+msgid "_Description:"
+msgstr "_Popis:"
+
+#: ../capplets/appearance/data/appearance.ui.h:80
+msgid "Save _background image"
+msgstr "Uložiť _tapetu plochy"
+
+#: ../capplets/appearance/data/mate-appearance-properties.desktop.in.in.h:1
+msgid "Appearance"
+msgstr "Vzhľad"
+
+#: ../capplets/appearance/data/mate-appearance-properties.desktop.in.in.h:2
+msgid "Customize the look of the desktop"
+msgstr "Prispôsobiť vzhľad pracovnej plochy"
+
+#: ../capplets/appearance/data/mate-theme-installer.desktop.in.in.h:1
+msgid "Theme Installer"
+msgstr "Inštalátor tém"
+
+#: ../capplets/appearance/data/mate-theme-installer.desktop.in.in.h:2
+msgid "Installs themes packages for various parts of the desktop"
+msgstr "Inštaluje balíčky tém pre rôzne časti prostredia"
+
+#: ../capplets/appearance/data/mate-theme-package.xml.in.h:1
+msgid "Mate Theme Package"
+msgstr "Balíček témy pre MATE"
+
+#: ../capplets/appearance/mate-wp-info.c:51
+msgid "No Desktop Background"
+msgstr "Bez pozadia plochy"
+
+#: ../capplets/appearance/mate-wp-item.c:288
+msgid "unknown"
+msgstr "neznámy"
+
+#: ../capplets/appearance/mate-wp-item.c:295
+msgid "Slide Show"
+msgstr "Prezentácia"
+
+#: ../capplets/appearance/mate-wp-item.c:297
+msgid "Image"
+msgstr "Obrázok"
+
+#: ../capplets/appearance/mate-wp-item.c:303
+msgid "multiple sizes"
+msgstr "viacero veľkostí"
+
+#. translators: x pixel(s) by y pixel(s)
+#: ../capplets/appearance/mate-wp-item.c:306
+#, c-format
+msgid "%d %s by %d %s"
+msgstr "%d %s na %d %s"
+
+#: ../capplets/appearance/mate-wp-item.c:308
+#: ../capplets/appearance/mate-wp-item.c:310
+msgid "pixel"
+msgid_plural "pixels"
+msgstr[0] "pixel"
+msgstr[1] "pixle"
+msgstr[2] "pixlov"
+
+#. translators: <b>wallpaper name</b>
+#. * mime type, size
+#. * Folder: /path/to/file
+#. * Artist: wallpaper author
+#: ../capplets/appearance/mate-wp-item.c:319
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"%s, %s\n"
+"Folder: %s\n"
+"Artist: %s"
+msgstr "<b>%s</b>\n%s, %s\nPriečinok: %s\nUmelec: %s"
+
+#. translators: <b>wallpaper name</b>
+#. * Image missing
+#. * Folder: /path/to/file
+#. * Artist: wallpaper author
+#: ../capplets/appearance/mate-wp-item.c:334
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"%s\n"
+"Folder: %s\n"
+"Artist: %s"
+msgstr "<b>%s</b>\n%s\nPriečinok: %s\nUmelec: %s"
+
+#: ../capplets/appearance/mate-wp-item.c:339
+msgid "Image missing"
+msgstr "Obrázok chýba"
+
+#: ../capplets/appearance/theme-installer.c:178
+#: ../capplets/appearance/theme-installer.c:234
+msgid "Cannot install theme"
+msgstr "Nepodarilo sa nainštalovať tému"
+
+#: ../capplets/appearance/theme-installer.c:180
+#, c-format
+msgid "The %s utility is not installed."
+msgstr "Nástroj %s nie je nainštalovaný."
+
+#: ../capplets/appearance/theme-installer.c:236
+msgid "There was a problem while extracting the theme."
+msgstr "Vyskytol sa problém pri rozbaľovaní témy."
+
+#: ../capplets/appearance/theme-installer.c:264
+msgid "There was an error installing the selected file"
+msgstr "Pri inštalácií zvoleného súboru nastala chyba"
+
+#: ../capplets/appearance/theme-installer.c:265
+#, c-format
+msgid "\"%s\" does not appear to be a valid theme."
+msgstr "„%s“ sa nezdá byť platnou témou."
+
+#: ../capplets/appearance/theme-installer.c:266
+#, c-format
+msgid ""
+"\"%s\" does not appear to be a valid theme. It may be a theme engine which "
+"you need to compile."
+msgstr "„%s“ sa nezdá byť platnou témou. Môže to byť „témový motor“, ktorý musíte skompilovať."
+
+#: ../capplets/appearance/theme-installer.c:372
+#, c-format
+msgid "Installation for theme \"%s\" failed."
+msgstr "Inštalácia témy „%s“ zlyhala."
+
+#: ../capplets/appearance/theme-installer.c:411
+#, c-format
+msgid "The theme \"%s\" has been installed."
+msgstr "Téma %s bola nainštalovaná."
+
+#: ../capplets/appearance/theme-installer.c:421
+msgid "Would you like to apply it now, or keep your current theme?"
+msgstr "Chceli by ste ju teraz aplikovať, alebo ponechať aktuálnu tému?"
+
+#: ../capplets/appearance/theme-installer.c:424
+msgid "Keep Current Theme"
+msgstr "Ponechať aktuálnu"
+
+#: ../capplets/appearance/theme-installer.c:427
+msgid "Apply New Theme"
+msgstr "Použiť novú"
+
+#: ../capplets/appearance/theme-installer.c:479
+#, c-format
+msgid "MATE Theme %s correctly installed"
+msgstr "Téma pre MATE %s nainštalovaná správne"
+
+#: ../capplets/appearance/theme-installer.c:541
+msgid "Failed to create temporary directory"
+msgstr "Vytváranie dočasného adresára zlyhalo"
+
+#: ../capplets/appearance/theme-installer.c:604
+msgid "New themes have been successfully installed."
+msgstr "Nové témy boli úspešne nainštalované."
+
+#: ../capplets/appearance/theme-installer.c:654
+msgid "No theme file location specified to install"
+msgstr "Nezadané umiestnenie súboru, ktorý sa má nainštalovať"
+
+#: ../capplets/appearance/theme-installer.c:678
+#, c-format
+msgid ""
+"Insufficient permissions to install the theme in:\n"
+"%s"
+msgstr "Nedostatočné oprávnenia na inštaláciu témy do:\n%s"
+
+#: ../capplets/appearance/theme-installer.c:756
+msgid "Select Theme"
+msgstr "Zvoliť tému"
+
+#: ../capplets/appearance/theme-installer.c:767
+msgid "Theme Packages"
+msgstr "Balíčky tém"
+
+#: ../capplets/appearance/theme-save.c:94
+#, c-format
+msgid "Theme name must be present"
+msgstr "Musíte zadať názov témy"
+
+#: ../capplets/appearance/theme-save.c:157
+msgid "The theme already exists. Would you like to replace it?"
+msgstr "Téma už existuje. Chcete ju nahradiť?"
+
+#: ../capplets/appearance/theme-save.c:158
+#: ../capplets/common/file-transfer-dialog.c:450
+msgid "_Overwrite"
+msgstr "P_repísať"
+
+#: ../capplets/appearance/theme-util.c:73
+msgid "Would you like to delete this theme?"
+msgstr "Chceli by ste odstrániť túto tému?"
+
+#: ../capplets/appearance/theme-util.c:123
+msgid "Theme cannot be deleted"
+msgstr "Tému nie je možné odstrániť"
+
+#: ../capplets/appearance/theme-util.c:249
+msgid "Could not install theme engine"
+msgstr "Nepodarilo sa nainštalovať „témový motor“"
+
+#: ../capplets/common/activate-settings-daemon.c:16
+msgid ""
+"Unable to start the settings manager 'mate-settings-daemon'.\n"
+"Without the MATE settings manager running, some preferences may not take effect. This could indicate a problem with DBus, or a non-MATE (e.g. KDE) settings manager may already be active and conflicting with the MATE settings manager."
+msgstr "Nedá sa spustiť správca nastavení „mate-settings-daemon“. Bez spusteného správcu nastavení prostredia MATE se nemusia niektoré zmeny nastavení prejaviť. Táto chyba by mohla naznačovať problém so systémom D-Bus, alebo je možno aktívny správca nastavení iného prostredia (napr. KDE), a ten je v konflikte so správcem nastavení prostredia MATE."
+
+#: ../capplets/common/capplet-stock-icons.c:66
+#, c-format
+msgid "Unable to load stock icon '%s'\n"
+msgstr "Nepodarilo sa načítať skladovú ikonu '%s'\n"
+
+#: ../capplets/common/capplet-util.c:88
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Pri pokuse o zobrazenie Pomocníka nastala chyba: %s"
+
+#: ../capplets/common/file-transfer-dialog.c:98
+#, c-format
+msgid "Copying file: %u of %u"
+msgstr "Kopíruje sa súbor: %u z %u"
+
+#: ../capplets/common/file-transfer-dialog.c:145
+#, c-format
+msgid "Copying '%s'"
+msgstr "Kopíruje sa '%s'"
+
+#: ../capplets/common/file-transfer-dialog.c:185
+#: ../capplets/common/file-transfer-dialog.c:313
+msgid "Copying files"
+msgstr "Kopírujú sa súbory"
+
+#: ../capplets/common/file-transfer-dialog.c:224
+msgid "Parent Window"
+msgstr "Nadradené okno"
+
+#: ../capplets/common/file-transfer-dialog.c:225
+msgid "Parent window of the dialog"
+msgstr "Nadradené okno dialógu"
+
+#: ../capplets/common/file-transfer-dialog.c:231
+msgid "From URI"
+msgstr "Z URI"
+
+#: ../capplets/common/file-transfer-dialog.c:232
+msgid "URI currently transferring from"
+msgstr "URI, z ktorého sa momentálne prenáša"
+
+#: ../capplets/common/file-transfer-dialog.c:239
+msgid "To URI"
+msgstr "URI do"
+
+#: ../capplets/common/file-transfer-dialog.c:240
+msgid "URI currently transferring to"
+msgstr "URI, kam sa momentálne prenáša"
+
+#: ../capplets/common/file-transfer-dialog.c:247
+msgid "Fraction completed"
+msgstr "Dokončená časť"
+
+#: ../capplets/common/file-transfer-dialog.c:248
+msgid "Fraction of transfer currently completed"
+msgstr "Momentálne dokončená časť prenosu"
+
+#: ../capplets/common/file-transfer-dialog.c:255
+msgid "Current URI index"
+msgstr "Index aktuálneho URI"
+
+#: ../capplets/common/file-transfer-dialog.c:256
+msgid "Current URI index - starts from 1"
+msgstr "Index aktuálneho URI - začína od 1"
+
+#: ../capplets/common/file-transfer-dialog.c:263
+msgid "Total URIs"
+msgstr "Celkom URI"
+
+#: ../capplets/common/file-transfer-dialog.c:264
+msgid "Total number of URIs"
+msgstr "Celkový počet URI"
+
+#: ../capplets/common/file-transfer-dialog.c:444
+#, c-format
+msgid "File '%s' already exists. Do you want to overwrite it?"
+msgstr "Súbor '%s' už existuje. Chcete ho nahradiť?"
+
+#: ../capplets/common/file-transfer-dialog.c:447
+msgid "_Skip"
+msgstr "Pre_skočiť"
+
+#: ../capplets/common/file-transfer-dialog.c:448
+msgid "Overwrite _All"
+msgstr "N_ahradiť všetky"
+
+#: ../capplets/common/mate-theme-info.c:695
+msgid "Default Pointer - Current"
+msgstr "Predvolený kurzor - aktuálny"
+
+#: ../capplets/common/mate-theme-info.c:699
+msgid "White Pointer"
+msgstr "Biely kurzor"
+
+#: ../capplets/common/mate-theme-info.c:700
+msgid "White Pointer - Current"
+msgstr "Biely kurzor - aktuálny"
+
+#: ../capplets/common/mate-theme-info.c:704
+msgid "Large Pointer"
+msgstr "Veľký kurzor"
+
+#: ../capplets/common/mate-theme-info.c:705
+msgid "Large Pointer - Current"
+msgstr "Veľký kurzor - aktuálny"
+
+#: ../capplets/common/mate-theme-info.c:709
+msgid "Large White Pointer - Current"
+msgstr "Veľký biely kurzor - aktuálny"
+
+#: ../capplets/common/mate-theme-info.c:710
+msgid "Large White Pointer"
+msgstr "Veľký biely kurzor"
+
+#: ../capplets/common/mate-theme-info.c:1694
+#, c-format
+msgid ""
+"This theme will not look as intended because the required GTK+ theme '%s' is"
+" not installed."
+msgstr "Táto téma nebude vyzerať ako bolo plánované, pretože chýba požadovaná GTK+ téma '%s'"
+
+#: ../capplets/common/mate-theme-info.c:1704
+#, c-format
+msgid ""
+"This theme will not look as intended because the required window manager "
+"theme '%s' is not installed."
+msgstr "Táto téma nebude vyzerať ako bolo plánované, pretože chýba požadovaná téma správcu okien '%s'"
+
+#: ../capplets/common/mate-theme-info.c:1712
+#, c-format
+msgid ""
+"This theme will not look as intended because the required icon theme '%s' is"
+" not installed."
+msgstr "Táto téma nebude vyzerať ako bolo plánované, pretože chýba požadovaná téma ikon '%s'"
+
+#: ../capplets/default-applications/mate-default-applications-properties.desktop.in.in.h:1
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:1
+msgid "Preferred Applications"
+msgstr "Predvolené aplikácie"
+
+#: ../capplets/default-applications/mate-default-applications-properties.desktop.in.in.h:2
+msgid "Select your default applications"
+msgstr "Nastaviť vlastné preferované aplikácie"
+
+#: ../capplets/default-applications/mate-da-capplet.c:448
+msgid "Could not load the main interface"
+msgstr "Nepodarilo sa načítať hlavné rozhranie"
+
+#: ../capplets/default-applications/mate-da-capplet.c:449
+msgid "Please make sure that the applet is properly installed"
+msgstr "Uistite sa, prosím, že je tento aplet správne nainštalovaný"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/default-applications/mate-da-capplet.c:574
+msgid "Specify the name of the page to show (internet|multimedia|system|a11y)"
+msgstr "Určuje názov záložky pre zobrazenie (internet|multimedia|system|a11y)"
+
+#: ../capplets/default-applications/mate-da-capplet.c:580
+msgid "- MATE Default Applications"
+msgstr "- Predvolené aplikácie MATE"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:2
+msgid "Web Browser"
+msgstr "Internetový prehliadač"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:4
+#, no-c-format
+msgid "All %s occurrences will be replaced with actual link"
+msgstr "Všetky výskyty %s sa nahradia aktuálnym odkazom"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:5
+msgid "Run in t_erminal"
+msgstr "Spustiť v _termináli"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:6
+msgid "Open link with web browser _default"
+msgstr "Spôsob otvorenia _určuje internetový prehliadač"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:7
+msgid "Open link in new _tab"
+msgstr "Otvoriť odkaz na novej _karte"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:8
+msgid "Open link in new _window"
+msgstr "Otvoriť odkaz v novom _okne"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:9
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:5
+msgid "C_ommand:"
+msgstr "P_ríkaz:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:10
+msgid "Mail Reader"
+msgstr "Mailový kliwnt"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:11
+msgid "Co_mmand:"
+msgstr "Príka_z:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:12
+msgid "Instant Messenger"
+msgstr "Komunikátor"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:13
+msgid "Internet"
+msgstr "Internet"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:14
+msgid "Image Viewer"
+msgstr "Prehliadač obrázkov"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:15
+msgid "Multimedia Player"
+msgstr "Multimediálny prehrávač"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:16
+msgid "Video Player"
+msgstr "Video prehrávač"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:17
+msgid "Multimedia"
+msgstr "Multimédiá"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:18
+msgid "Text Editor"
+msgstr "Textový editor"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:19
+msgid "Terminal Emulator"
+msgstr "Emulátor terminálu"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:20
+msgid "E_xecute flag:"
+msgstr "Príznak pre _spustenie:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:21
+msgid "File Manager"
+msgstr "Správca súborov"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:22
+msgid "System"
+msgstr "Systém"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:23
+msgid "Visual"
+msgstr "Zraková"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:24
+msgid "_Run at start"
+msgstr "Spustiť pri šta_rte"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:25
+msgid "Mobility"
+msgstr "Pohybová"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:26
+msgid "Run at st_art"
+msgstr "Spustiť pri štart_e"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:27
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:45
+msgid "Accessibility"
+msgstr "Prístupnosť"
+
+#: ../capplets/display/display-capplet.ui.h:1
+msgid "Monitor Preferences"
+msgstr "Predvoľby monitora"
+
+#: ../capplets/display/display-capplet.ui.h:2
+msgid "Sa_me image in all monitors"
+msgstr "Rovnaký obrázok na všetkých _monitoroch"
+
+#: ../capplets/display/display-capplet.ui.h:3
+msgid "_Detect monitors"
+msgstr "Rozpozn_ať monitory"
+
+#: ../capplets/display/display-capplet.ui.h:4
+msgid "Panel icon"
+msgstr "Ikona na paneli"
+
+#: ../capplets/display/display-capplet.ui.h:5
+msgid "_Show monitors in panel"
+msgstr "Zobrazi_ť monitory na paneli"
+
+#: ../capplets/display/display-capplet.ui.h:6
+msgid "_Resolution:"
+msgstr "_Rozlíšenie:"
+
+#: ../capplets/display/display-capplet.ui.h:7
+msgid "Re_fresh rate:"
+msgstr "Obnovovacia _frekvencia:"
+
+#: ../capplets/display/display-capplet.ui.h:8
+msgid "On"
+msgstr "Zapnutý"
+
+#: ../capplets/display/display-capplet.ui.h:9
+msgid "Off"
+msgstr "Vypnutý"
+
+#: ../capplets/display/display-capplet.ui.h:10
+#: ../capplets/display/xrandr-capplet.c:513
+msgid "Monitor"
+msgstr "Monitor"
+
+#: ../capplets/display/display-capplet.ui.h:11
+msgid "R_otation:"
+msgstr "_Otočenie:"
+
+#: ../capplets/display/display-capplet.ui.h:12
+msgid "Include _panel"
+msgstr "Vrátane _panela"
+
+#: ../capplets/display/display-capplet.ui.h:13
+msgid "Make Default"
+msgstr "Nastaviť ako predvolené"
+
+#: ../capplets/display/display-capplet.ui.h:14
+#: ../capplets/display/xrandr-capplet.c:309
+#: ../capplets/display/xrandr-capplet.c:348
+msgid "Normal"
+msgstr "Normálne"
+
+#: ../capplets/display/display-capplet.ui.h:15
+#: ../capplets/display/xrandr-capplet.c:310
+msgid "Left"
+msgstr "Vľavo"
+
+#: ../capplets/display/display-capplet.ui.h:16
+#: ../capplets/display/xrandr-capplet.c:311
+msgid "Right"
+msgstr "Vpravo"
+
+#: ../capplets/display/display-capplet.ui.h:17
+msgid "Upside-down"
+msgstr "Prevrátiť"
+
+#: ../capplets/display/mate-display-properties.desktop.in.in.h:1
+msgid "Monitors"
+msgstr "Monitory"
+
+#: ../capplets/display/mate-display-properties.desktop.in.in.h:2
+msgid "Change resolution and position of monitors"
+msgstr "Zmeniť rozlíšenie a pozíciu monitorov"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:44
+#, c-format
+msgid ""
+"Usage: %s SOURCE_FILE DEST_NAME\n"
+"\n"
+"This program installs a RANDR profile for multi-monitor setups into\n"
+"a systemwide location.  The resulting profile will get used when\n"
+"the RANDR plug-in gets run in mate-settings-daemon.\n"
+"\n"
+"SOURCE_FILE - a full pathname, typically /home/username/.config/monitors.xml\n"
+"\n"
+"DEST_NAME - relative name for the installed file.  This will get put in\n"
+"            the systemwide directory for RANDR configurations,\n"
+"            so the result will typically be %s/DEST_NAME\n"
+msgstr "Použitie: %s ZDROJOVÝ_SÚBOR CIEĽOVÝ_NÁZOV \n\nTento program nainštaluje profil RANDR pre viac monitorové nastavenie do \ncelosystémového umiestnenia.  Výsledný profil bude použitý, keď sa\nplugin RANDR spustí v rámci mate-settings-daemon. \n\nZDROJOVÝ_SÚBOR - celá cesta k súboru, typicky /home/meno_použivateľa/.config/monitors.xml\n\nCIEĽOVÝ_NÁZOV - relatívny názov inštalovaného súboru. Tento bude umiestnený \ndo celosystémového adresára na RANDR konfigurácie, \ntakže výsledkom bude typicky %s/CIEĽOVÝ_NÁZOV \n"
+
+#. Translators: only able to install RANDR profiles as root
+#: ../capplets/display/mate-display-properties-install-systemwide.c:151
+msgid "This program can only be used by the root user"
+msgstr "Tento program môže byť použitý iba používateľom root"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:168
+msgid "The source filename must be absolute"
+msgstr "Názov zdrojového súboru musí byť absolútny"
+
+#. Translators: first %s is a filename; second %s is an error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:179
+#, c-format
+msgid "Could not open %s: %s\n"
+msgstr "Nepodarilo sa otvoriť %s: %s\n"
+
+#. Translators: first %s is a filename; second %s is an error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:188
+#, c-format
+msgid "Could not get information for %s: %s\n"
+msgstr "Nepodarilo sa získať informácie o %s: %s \n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:195
+#, c-format
+msgid "%s must be a regular file\n"
+msgstr "%s musí byť bežný súbor\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:204
+msgid "This program must only be run through pkexec(1)"
+msgstr "Tento program musí bežať iba cez pkexec(1)"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:209
+msgid "PKEXEC_UID must be set to an integer value"
+msgstr "PKEXEC_UID musí byť nastavené na celočíselnú hodnotu"
+
+#. Translators: we are complaining that a file must be really owned by the
+#. user who called this program
+#: ../capplets/display/mate-display-properties-install-systemwide.c:215
+#, c-format
+msgid "%s must be owned by you\n"
+msgstr "%s musíte vlastniť vy\n"
+
+#. Translators: here we are saying that a plain filename must look like
+#. "filename", not like "some_dir/filename"
+#: ../capplets/display/mate-display-properties-install-systemwide.c:223
+#, c-format
+msgid "%s must not have any directory components\n"
+msgstr "%s nesmie mať žiadne adresárové komponenty\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:231
+#, c-format
+msgid "%s must be a directory\n"
+msgstr "%s musí byť adresár\n"
+
+#. Translators: the first %s/%s is a directory/filename; the last %s is an
+#. error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:242
+#, c-format
+msgid "Could not open %s/%s: %s\n"
+msgstr "Nepodarilo sa otvoriť %s/%s: %s\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:262
+#, c-format
+msgid "Could not rename %s to %s: %s\n"
+msgstr "Nepodarilo sa premenovať %s na %s: %s\n"
+
+#: ../capplets/display/org.mate.randr.policy.in.h:1
+msgid "Install multi-monitor settings for the whole system"
+msgstr "Inštalovať nastavenia s viacerými monitormi pre celý systém"
+
+#: ../capplets/display/org.mate.randr.policy.in.h:2
+msgid ""
+"Authentication is required to install multi-monitor settings for all users"
+msgstr "Na inštaláciu nastavení s viacerými monitormi je vyžadované oprávnenie"
+
+#: ../capplets/display/xrandr-capplet.c:312
+msgid "Upside Down"
+msgstr "Dolu hlavou"
+
+#: ../capplets/display/xrandr-capplet.c:354
+#, c-format
+msgid "%d Hz"
+msgstr "%d Hz"
+
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#: ../capplets/display/xrandr-capplet.c:502
+#: ../capplets/display/xrandr-capplet.c:1652
+msgid "Mirror Screens"
+msgstr "Zrkadlové obrazovky"
+
+#: ../capplets/display/xrandr-capplet.c:504
+#, c-format
+msgid "Monitor: %s"
+msgstr "Monitor: %s"
+
+#: ../capplets/display/xrandr-capplet.c:582
+#, c-format
+msgid "%d x %d"
+msgstr "%d x %d"
+
+#: ../capplets/display/xrandr-capplet.c:1508
+msgid ""
+"Select a monitor to change its properties; drag it to rearrange its "
+"placement."
+msgstr "Vyberte monitor, aby ste zmenili jeho vlastnosti; umiestnenie upravíte jeho pretiahnutím."
+
+#: ../capplets/display/xrandr-capplet.c:2073
+msgid "Could not save the monitor configuration"
+msgstr "Nepodarilo sa uložiť nastavenie monitora"
+
+#: ../capplets/display/xrandr-capplet.c:2095
+msgid "Could not get session bus while applying display configuration"
+msgstr "Nepodarilo sa získať zbernicu relácie pri aplikovaní nastavenia obrazovky"
+
+#: ../capplets/display/xrandr-capplet.c:2137
+msgid "Could not detect displays"
+msgstr "Nepodarilo sa rozpoznať monitory"
+
+#: ../capplets/display/xrandr-capplet.c:2334
+msgid "The monitor configuration has been saved"
+msgstr "Nastavenie monitora bolo uložené"
+
+#: ../capplets/display/xrandr-capplet.c:2336
+msgid "This configuration will be used the next time someone logs in."
+msgstr "Toto nastavenie bude použité pri ďalšom prihlásení niektorého používateľa."
+
+#: ../capplets/display/xrandr-capplet.c:2345
+msgid "Could not set the default configuration for monitors"
+msgstr "Nepodarilo sa nastaviť predvolené nastavenie monitorov"
+
+#: ../capplets/display/xrandr-capplet.c:2429
+msgid "Could not get screen information"
+msgstr "Nepodarilo sa získať informácie o obrazovke"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:24
+msgid "New shortcut..."
+msgstr "Nová klávesová skratka..."
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:160
+#: ../capplets/keybindings/eggcellrendererkeys.c:161
+msgid "Accelerator key"
+msgstr "Klávesová skratka"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:170
+#: ../capplets/keybindings/eggcellrendererkeys.c:171
+msgid "Accelerator modifiers"
+msgstr "Modifikátory klávesových skratiek"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:179
+#: ../capplets/keybindings/eggcellrendererkeys.c:180
+msgid "Accelerator keycode"
+msgstr "Kód klávesu klávesovej skratky"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:190
+msgid "Accel Mode"
+msgstr "Režim skratky"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:191
+msgid "The type of accelerator."
+msgstr "Typ klávesovej skratky."
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:234
+#: ../capplets/keybindings/mate-keybinding-properties.c:137
+#: ../typing-break/drwright.c:504
+msgid "Disabled"
+msgstr "Nenastavená"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:219
+msgid "<Unknown Action>"
+msgstr "<Neznáma operácia>"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1026
+#: ../capplets/keybindings/mate-keybinding-properties.c:1624
+msgid "Custom Shortcuts"
+msgstr "Vlastné klávesové skratky"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1204
+msgid "Error saving the new shortcut"
+msgstr "Chyba pri ukladaní novej klávesovej skratky"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1280
+#, c-format
+msgid ""
+"The shortcut \"%s\" cannot be used because it will become impossible to type using this key.\n"
+"Please try with a key such as Control, Alt or Shift at the same time."
+msgstr "Skratka „%s“ sa nedá použiť, pretože by nebolo možné normálne písať týmto klávesom.\nProsím, skúste to súčasne s klávesami ako Ctrl, Alt alebo Shift."
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1312
+#, c-format
+msgid ""
+"The shortcut \"%s\" is already used for\n"
+"\"%s\""
+msgstr "Klávesová skratka „%s“ sa už používa pre\n\"%s\""
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1319
+#, c-format
+msgid "If you reassign the shortcut to \"%s\", the \"%s\" shortcut will be disabled."
+msgstr "Ak pridelíte klávesovú skratku pre „%s“, skratka pre „%s“ nebude nastavená."
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1324
+msgid "_Reassign"
+msgstr "P_rideliť"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1579
+msgid "Too many custom shortcuts"
+msgstr "Priveľa vlastných klávesových skratiek"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1867
+msgid "Action"
+msgstr "Operácia"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1889
+msgid "Shortcut"
+msgstr "Klávesová skratka"
+
+#. * vim: sw=2 ts=8 cindent noai bs=2
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:1
+#: ../capplets/keybindings/mate-keybinding.desktop.in.in.h:1
+msgid "Keyboard Shortcuts"
+msgstr "Klávesové skratky"
+
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:2
+msgid ""
+"To edit a shortcut key, click on the corresponding row and type a new key "
+"combination, or press backspace to clear."
+msgstr "Klávesovú skratku môžete upraviť tak, že kliknete na príslušný riadok a stlačíte novú skratku, alebo ju vyčistíte stlačením backspace."
+
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:3
+msgid "Custom Shortcut"
+msgstr "Vlastná klávesová skratka"
+
+#: ../capplets/keybindings/mate-keybinding.desktop.in.in.h:2
+msgid "Assign shortcut keys to commands"
+msgstr "Priradiť klávesové skratky príkazom"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:203
+#: ../capplets/keyboard/mate-keyboard-properties.c:208
+msgid ""
+"Just apply settings and quit (compatibility only; now handled by daemon)"
+msgstr "Použiť nastavenia a skončiť (iba pre kompatibilitu, teraz ju má na starosti démonom)"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:213
+msgid "Start the page with the typing break settings showing"
+msgstr "Spustiť so zobrazením záložky nastavenia prestávky v písaní"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:218
+msgid "Start the page with the accessibility settings showing"
+msgstr "Spustiť so zobrazením záložky nastavenia prístupnosti"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:224
+msgid "- MATE Keyboard Preferences"
+msgstr "- Nastavenie klávesnice MATE"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:1
+msgid "Keyboard Accessibility Audio Feedback"
+msgstr "Zvuková spätná väzba sprístupnenia klávesnice"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:2
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:15
+#: ../capplets/mouse/mate-mouse-properties.ui.h:24
+#: ../capplets/windows/mate-window-properties.c:319
+msgid "General"
+msgstr "Všeobecné"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:3
+msgid "Beep when _accessibility features are turned on or off"
+msgstr "Pípnuť pri prepnutí _funkcií prístupnosti"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:4
+msgid "Beep when a _toggle key is pressed"
+msgstr "Pípnuť pri stlačení p_repínacej klávesy"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:5
+msgid "Visual cues for sounds"
+msgstr "Vizuálne upozornenia na zvuky"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:6
+msgid "Show _visual feedback for the alert sound"
+msgstr "Vizuálne zo_brazovať zvuk výstrahy"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:7
+msgid "Flash _window titlebar"
+msgstr "Bliknúť _titulkom okna"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:8
+msgid "Flash entire _screen"
+msgstr "Bliknúť _celou obrazovkou"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:9
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:39
+msgid "Slow Keys"
+msgstr "Pomalé klávesy"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:10
+msgid "Beep when a key is pr_essed"
+msgstr "Pípnuť pri _stlačení klávesu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:11
+msgid "Beep when key is _accepted"
+msgstr "Pípnuť, ak je kláves _akceptovaný"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:12
+msgid "Beep when key is _rejected"
+msgstr "Pípnuť, ak je kláves _odmietnutý"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:13
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:41
+msgid "Bounce Keys"
+msgstr "Viacnásobné stlačenie kláves"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:14
+msgid "Beep when a key is reje_cted"
+msgstr "Pípnuť, ak je kláves o_dmietnutý"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:15
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:36
+msgid "Sticky Keys"
+msgstr "Kombinácia kláves jedným prstom"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:16
+msgid "Beep when a _modifier key is pressed"
+msgstr "Pípnuť pri stlačení _modifikátora"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:1
+msgid "Keyboard Preferences"
+msgstr "Nastavenie klávesnice"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:2
+msgid "Repeat Keys"
+msgstr "Opakovanie kláves"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:3
+msgid "Key presses _repeat when key is held down"
+msgstr "Kláves sa _opakuje pri držaní"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:4
+msgid "_Delay:"
+msgstr "_Oneskorenie:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:5
+msgid "_Speed:"
+msgstr "_Rýchlosť:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:6
+#: ../capplets/mouse/mate-mouse-properties.ui.h:21
+msgid "Short"
+msgstr "Krátke"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:7
+#: ../capplets/mouse/mate-mouse-properties.ui.h:10
+msgid "Slow"
+msgstr "Pomalá"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:8
+msgid "Repeat keys speed"
+msgstr "Rýchlosť opakovania kláves"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:9
+#: ../capplets/mouse/mate-mouse-properties.ui.h:22
+msgid "Long"
+msgstr "Dlhé"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:10
+#: ../capplets/mouse/mate-mouse-properties.ui.h:11
+msgid "Fast"
+msgstr "Rýchla"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:11
+msgid "Cursor Blinking"
+msgstr "Blikanie kurzora"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:12
+msgid "Cursor _blinks in text fields"
+msgstr "Kurzor v textových poliach _bliká"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:13
+msgid "S_peed:"
+msgstr "Rýchlo_sť:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:14
+#: ../capplets/mouse/mate-mouse-properties.ui.h:17
+msgid "Cursor blinks speed"
+msgstr "Rýchlosť blikania kurzora"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:16
+msgid "List of keyboard layouts selected for usage"
+msgstr "Zoznam rozložení klávesnice vybraných na používanie"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:18
+msgid "Select a keyboard layout to be added to the list"
+msgstr "Vyberte rozloženie klávesnice, ktoré má byť pridané do zoznamu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:19
+msgid "Remove the selected keyboard layout from the list"
+msgstr "Odstrániť vybraté rozloženie klávesnice zo zoznamu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:20
+msgid "Move _Up"
+msgstr "Presunúť _nahor"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:21
+msgid "Move the selected keyboard layout up in the list"
+msgstr "Presunúť vybraté rozloženie klávesnice v zozname nahor"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:22
+msgid "Move _Down"
+msgstr "Presunúť _nadol"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:23
+msgid "Move the selected keyboard layout down in the list"
+msgstr "Posunúť vybraté rozloženie klávesnice v zozname nadol"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:24
+msgid "_Show..."
+msgstr "_Zobraziť..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:25
+msgid "Print a diagram of the selected keyboard layout"
+msgstr "Vytlačiť diagram vybraného rozloženia klávesnice"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:26
+msgid "_Separate layout for each window"
+msgstr "Oddel_ené rozloženie pre každé okno"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:27
+msgid "New windows u_se active window's layout"
+msgstr "N_ové okná použijú rozloženie aktívneho okna"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:28
+msgid "Keyboard _model:"
+msgstr "_Model klávesnice:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:29
+msgid "_Options..."
+msgstr "M_ožnosti..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:30
+msgid "View and edit keyboard layout options"
+msgstr "Zobraziť a upraviť možnosti rozloženia klávesnice"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:31
+msgid "Reset to De_faults"
+msgstr "_Obnoviť predvolené"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:32
+msgid ""
+"Replace the current keyboard layout settings with the\n"
+"default settings"
+msgstr "Nahradiť aktuálne nastavenie rozloženia klávesnice \npredvoleným nastavením"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:34
+msgid "Layouts"
+msgstr "Rozloženia"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:35
+msgid "_Accessibility features can be toggled with keyboard shortcuts"
+msgstr "_Funkcie prístupnosti môžu byť prepínané klávesovými skratkami"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:37
+msgid "_Simulate simultaneous keypresses"
+msgstr "_Simulovať súčasné stlačenia kláves"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:38
+msgid "Disa_ble sticky keys if two keys are pressed together"
+msgstr "Za_kázať lepkavé klávesy, ak sú stlačené dva klávesy naraz"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:40
+msgid "_Only accept long keypresses"
+msgstr "Akceptovať iba _dlhé stlačenie kláves"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:42
+msgid "_Ignore fast duplicate keypresses"
+msgstr "_Ignorovať rýchlo opakované stlačenie kláves"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:43
+msgid "D_elay:"
+msgstr "On_eskorenie:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:44
+msgid "Audio _Feedback..."
+msgstr "_Zvuková spätná väzba..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:46
+msgid "_Pointer can be controlled using the keypad"
+msgstr "Kurzor myši môže byť _ovládaný pomocou kláves"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:47
+#: ../capplets/mouse/mate-mouse-properties.ui.h:8
+msgid "_Acceleration:"
+msgstr "_Zrýchlenie:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:48
+msgid "Mouse Keys"
+msgstr "Myš klávesami"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:49
+msgid "_Lock screen to enforce typing break"
+msgstr "U_zamknúť obrazovku a vynútiť tak prestávku v písaní"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:50
+msgid ""
+"Lock screen after a certain duration to help prevent repetitive keyboard use"
+" injuries"
+msgstr "Uzamknúť obrazovku po zadanej dobe pre zabránenie problémom s používaním klávesnice"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:51
+msgid "_Work interval lasts:"
+msgstr "Pr_acovný interval trvá:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:52
+msgid "_Break interval lasts:"
+msgstr "Interval pre_stávky trvá:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:53
+msgid "Duration of work before forcing a break"
+msgstr "Trvanie práce pred vynútením prestávky"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:54
+msgid "Duration of the break when typing is disallowed"
+msgstr "Trvanie prestávky, kedy je zakázané písanie"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:55
+msgid "minutes"
+msgstr "minút"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:56
+msgid "All_ow postponing of breaks"
+msgstr "Povoliť _odloženie prestávky"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:57
+msgid "Check if breaks are allowed to be postponed"
+msgstr "Určuje, či je možné odložiť prestávky"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:58
+msgid "Typing Break"
+msgstr "Prestávka v písaní"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:59
+msgid "_Type to test settings:"
+msgstr "_Test nastavení:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:1
+msgid "Choose a Layout"
+msgstr "Vyberte rozloženie"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:2
+msgid "_Variants:"
+msgstr "_Varianty:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:3
+msgid "_Country:"
+msgstr "_Krajina:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:4
+msgid "By _country"
+msgstr "Podľa _krajiny"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:5
+msgid "_Language:"
+msgstr "_Jazyk:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:6
+msgid "By _language"
+msgstr "Podľa _jazyka"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:7
+msgid "Preview:"
+msgstr "Náhľad:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:1
+msgid "Choose a Keyboard Model"
+msgstr "Zvoľte model klávesnice"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:2
+msgid "_Vendors:"
+msgstr "_Výrobcovia:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:3
+msgid "_Models:"
+msgstr "_Modely:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-options-dialog.ui.h:1
+msgid "Keyboard Layout Options"
+msgstr "Možnosti rozloženia klávesnice"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkb.c:85
+msgid "Unknown"
+msgstr "Neznámy"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkblt.c:240
+msgid "Layout"
+msgstr "Rozloženie"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbmc.c:173
+msgid "Vendors"
+msgstr "Výrobcovia"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbmc.c:239
+msgid "Models"
+msgstr "Modely"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbot.c:237
+msgid "Default"
+msgstr "Predvolené"
+
+#: ../capplets/keyboard/mate-keyboard.desktop.in.in.h:1
+msgid "Keyboard"
+msgstr "Klávesnica"
+
+#: ../capplets/keyboard/mate-keyboard.desktop.in.in.h:2
+msgid "Set your keyboard preferences"
+msgstr "Nastaviť vlastnosti klávesnice"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/mouse/mate-mouse-properties.c:495
+msgid "Specify the name of the page to show (general)"
+msgstr "Určte názov strany, ktorá sa má zobraziť (všeobecne)"
+
+#: ../capplets/mouse/mate-mouse-properties.c:500
+msgid "- MATE Mouse Preferences"
+msgstr "- Predvoľby myši pre MATE"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:1
+msgid "Mouse Preferences"
+msgstr "Predvoľby myši"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:2
+msgid "Mouse Orientation"
+msgstr "Orientácia myši"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:3
+msgid "_Right-handed"
+msgstr "Pre p_ravákov"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:4
+msgid "_Left-handed"
+msgstr "Pre ľ_avákov"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:5
+msgid "Locate Pointer"
+msgstr "Vyhľadať kurzor"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:6
+msgid "Sh_ow position of pointer when the Control key is pressed"
+msgstr "_Ukázať pozíciu kurzora pri stlačení klávesu Control"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:7
+msgid "Pointer Speed"
+msgstr "Rýchlosť kurzora"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:9
+msgid "_Sensitivity:"
+msgstr "_Citlivosť:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:12
+msgid "Low"
+msgstr "Nízka"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:13
+msgid "High"
+msgstr "Vysoká"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:14
+msgid "Drag and Drop"
+msgstr "Funkcia „ťahaj a pusť“"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:15
+msgid "Thr_eshold:"
+msgstr "Pra_h:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:19
+msgid "Double-Click Timeout"
+msgstr "Interval dvojitého kliknutia"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:20
+msgid "_Timeout:"
+msgstr "Ča_kanie:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:23
+msgid ""
+"To test your double-click settings, try to double-click on the light bulb."
+msgstr "Ak chcete vyskúšať nastavenie dvojitého kliknutia, skúste dvakrát kliknúť na žiarovku."
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:25
+msgid "Disable _touchpad while typing"
+msgstr "Zakázať touchpa_d pri písaní"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:26
+msgid "Enable _mouse clicks with touchpad"
+msgstr "Povoliť kliknutie myšou pomo_cou touchpadu"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:27
+msgid "Scrolling"
+msgstr "Skrolovanie"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:28
+msgid "_Disabled"
+msgstr "_Vypnuté"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:29
+msgid "_Edge scrolling"
+msgstr "Skrolovani_e pri okraji"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:30
+msgid "Two-_finger scrolling"
+msgstr "Skrolovanie dvoma _prstami"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:31
+msgid "Enable h_orizontal scrolling"
+msgstr "Po_voliť vodorovné skrolovanie"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:32
+msgid "Touchpad"
+msgstr "Touchpad"
+
+#: ../capplets/mouse/mate-settings-mouse.desktop.in.in.h:1
+msgid "Mouse"
+msgstr "Myš"
+
+#: ../capplets/mouse/mate-settings-mouse.desktop.in.in.h:2
+msgid "Set your mouse preferences"
+msgstr "Nastaviť predvoľby myši"
+
+#: ../capplets/network/mate-network-properties.desktop.in.in.h:1
+msgid "Network Proxy"
+msgstr "Sieťové proxy"
+
+#: ../capplets/network/mate-network-properties.desktop.in.in.h:2
+msgid "Set your network proxy preferences"
+msgstr "Nastaviť predvoľby vášho sieťového proxy"
+
+#: ../capplets/network/mate-network-properties.ui.h:1
+msgid "HTTP Proxy Details"
+msgstr "Detaily HTTP proxy"
+
+#: ../capplets/network/mate-network-properties.ui.h:2
+msgid "<b>_Use authentication</b>"
+msgstr "<b>Po_užiť prihlásenie</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:3
+msgid "U_sername:"
+msgstr "_Meno používateľa:"
+
+#: ../capplets/network/mate-network-properties.ui.h:4
+msgid "_Password:"
+msgstr "_Heslo:"
+
+#: ../capplets/network/mate-network-properties.ui.h:5
+msgid "Network Proxy Preferences"
+msgstr "Nastavenie sieťového proxy"
+
+#: ../capplets/network/mate-network-properties.ui.h:6
+msgid "<b>Di_rect internet connection</b>"
+msgstr "<b>Pr_iame pripojenie na internet</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:7
+msgid "<b>_Manual proxy configuration</b>"
+msgstr "<b>_Ručné nastavenie proxy</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:8
+msgid "H_TTP proxy:"
+msgstr "_HTTP proxy:"
+
+#: ../capplets/network/mate-network-properties.ui.h:9
+msgid "_Secure HTTP proxy:"
+msgstr "Proxy _zabezpečeného HTTP:"
+
+#: ../capplets/network/mate-network-properties.ui.h:10
+msgid "_FTP proxy:"
+msgstr "_FTP proxy:"
+
+#: ../capplets/network/mate-network-properties.ui.h:11
+msgid "S_ocks host:"
+msgstr "Hostiteľ S_ocks:"
+
+#: ../capplets/network/mate-network-properties.ui.h:12
+msgid "Port:"
+msgstr "Port:"
+
+#: ../capplets/network/mate-network-properties.ui.h:13
+msgid "_Details"
+msgstr "_Detaily"
+
+#: ../capplets/network/mate-network-properties.ui.h:14
+msgid "<b>_Automatic proxy configuration</b>"
+msgstr "<b>_Automatické nastavenie proxy</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:15
+msgid "Autoconfiguration _URL:"
+msgstr "_URL pre automatické nastavenie:"
+
+#: ../capplets/network/mate-network-properties.ui.h:16
+msgid "Proxy Configuration"
+msgstr "Konfigurácia proxy"
+
+#: ../capplets/network/mate-network-properties.ui.h:17
+msgid "Ignore Host List"
+msgstr "Zoznam ignorovaných hostiteľov"
+
+#: ../capplets/network/mate-network-properties.ui.h:18
+msgid "Ignored Hosts"
+msgstr "Ignorovaní hostitelia"
+
+#: ../capplets/windows/mate-metacity-support.c:40
+msgid "Metacity Preferences"
+msgstr "Nastavenia Metacity"
+
+#. Compositing manager
+#: ../capplets/windows/mate-metacity-support.c:51
+#: ../capplets/windows/mate-window-properties.c:333
+msgid "Compositing Manager"
+msgstr "Kompozitný správca"
+
+#: ../capplets/windows/mate-metacity-support.c:58
+#: ../capplets/windows/mate-window-properties.c:339
+msgid "Enable software _compositing window manager"
+msgstr "Povoliť softvérového kompozitného správcu okien"
+
+#: ../capplets/windows/mate-window-properties.c:218
+msgid "The current window manager is unsupported"
+msgstr "Aktuálny správca okien nie je podporovaný"
+
+#. Window
+#: ../capplets/windows/mate-window-properties.c:304
+msgid "Window Preferences"
+msgstr "Predvoľby okien"
+
+#: ../capplets/windows/mate-window-properties.c:323
+msgid "Behaviour"
+msgstr "Správanie"
+
+#: ../capplets/windows/mate-window-properties.c:327
+msgid "Placement"
+msgstr "Umiestnenie"
+
+#: ../capplets/windows/mate-window-properties.c:340
+msgid "Disable _thumbnails in Alt-Tab"
+msgstr "Zakázať náhľady v Alt-_Tab"
+
+#. New Windows
+#: ../capplets/windows/mate-window-properties.c:348
+msgid "New Windows"
+msgstr "Nové okná"
+
+#: ../capplets/windows/mate-window-properties.c:352
+msgid "Center _new windows"
+msgstr "Vycentrovať _nové okná"
+
+#. Window Snapping
+#: ../capplets/windows/mate-window-properties.c:357
+msgid "Window Snapping"
+msgstr "Priťahovanie okien"
+
+#: ../capplets/windows/mate-window-properties.c:361
+msgid "Enable side by side _tiling"
+msgstr "Povoliť pokrývanie zo s_trany na stranu"
+
+#. Window Selection
+#: ../capplets/windows/mate-window-properties.c:366
+msgid "Window Selection"
+msgstr "Výber okna"
+
+#: ../capplets/windows/mate-window-properties.c:375
+msgid "_Select windows when the mouse moves over them"
+msgstr "Vybrať okno pod _kurzorom myši"
+
+#: ../capplets/windows/mate-window-properties.c:378
+msgid "_Raise selected windows after an interval"
+msgstr "P_resunúť vybrané okno vpred po danej dobe"
+
+#: ../capplets/windows/mate-window-properties.c:384
+msgid "_Interval before raising:"
+msgstr "_Interval pred presunom vpred:"
+
+#: ../capplets/windows/mate-window-properties.c:388
+msgid "seconds"
+msgstr "sekúnd"
+
+#. Titlebar Action
+#: ../capplets/windows/mate-window-properties.c:399
+msgid "Titlebar Action"
+msgstr "Operácia záhlavia okna"
+
+#: ../capplets/windows/mate-window-properties.c:403
+msgid "_Double-click titlebar to perform this action:"
+msgstr "_Dvojité kliknutie na titulku vyvolá akciu:"
+
+#. Movement Key
+#: ../capplets/windows/mate-window-properties.c:411
+msgid "Movement Key"
+msgstr "Pohybová klávesa"
+
+#: ../capplets/windows/mate-window-properties.c:416
+msgid "To move a window, press-and-hold this key then grab the window:"
+msgstr "Pre presun okna stlačte a držte tento kláves, potom ťahajte:"
+
+#: ../capplets/windows/mate-window-properties.c:427
+#: ../libwindow-settings/marco-window-manager.c:379
+msgid "Roll up"
+msgstr "Zabaliť"
+
+#: ../capplets/windows/mate-window-properties.c:428
+#: ../libwindow-settings/marco-window-manager.c:380
+msgid "Maximize"
+msgstr "Maximalizovať"
+
+#: ../capplets/windows/mate-window-properties.c:429
+#: ../libwindow-settings/marco-window-manager.c:381
+msgid "Maximize Horizontally"
+msgstr "Maximalizovať vodorovne"
+
+#: ../capplets/windows/mate-window-properties.c:430
+#: ../libwindow-settings/marco-window-manager.c:382
+msgid "Maximize Vertically"
+msgstr "Maximalizovať zvislo"
+
+#: ../capplets/windows/mate-window-properties.c:431
+#: ../libwindow-settings/marco-window-manager.c:383
+msgid "Minimize"
+msgstr "Minimalizovať"
+
+#: ../capplets/windows/mate-window-properties.c:432
+#: ../libwindow-settings/marco-window-manager.c:384
+msgid "None"
+msgstr "Nič"
+
+#: ../capplets/windows/mate-window-properties.c:636
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../capplets/windows/mate-window-properties.c:642
+msgid "H_yper"
+msgstr "H_yper"
+
+#: ../capplets/windows/mate-window-properties.c:649
+msgid "S_uper (or \"Windows logo\")"
+msgstr "S_uper (alebo „logo Okná“)"
+
+#: ../capplets/windows/mate-window-properties.c:656
+msgid "_Meta"
+msgstr "_Meta"
+
+#: ../capplets/windows/mate-window-properties.desktop.in.in.h:1
+msgid "Windows"
+msgstr "Okná"
+
+#: ../capplets/windows/mate-window-properties.desktop.in.in.h:2
+msgid "Set your window properties"
+msgstr "Nastaviť vaše vlastnosti okna"
+
+#: ../libwindow-settings/mate-wm-manager.c:321
+#, c-format
+msgid "Window manager \"%s\" has not registered a configuration tool\n"
+msgstr "Správca okien „%s“ nemá zaregistrovaný nástroj pre nastavenie\n"
+
+#: ../shell/control-center.c:61
+#, c-format
+msgid "%s key is empty\n"
+msgstr "%s kláves je prázdny\n"
+
+#: ../shell/control-center.c:161
+msgid "Hide on start (useful to preload the shell)"
+msgstr "Skryť pri spustení (užitočné, ak sa predom načítava shell)"
+
+#: ../shell/control-center.c:201
+msgid "Filter"
+msgstr "Filter"
+
+#: ../shell/control-center.c:201
+msgid "Groups"
+msgstr "Skupiny"
+
+#: ../shell/control-center.c:201
+msgid "Common Tasks"
+msgstr "Bežné úlohy"
+
+#: ../shell/control-center.c:203 ../shell/matecc.desktop.in.in.h:1
+#: ../shell/matecc.directory.in.h:1
+msgid "Control Center"
+msgstr "Ovládacie centrum"
+
+#: ../shell/matecc.desktop.in.in.h:2
+msgid "The MATE configuration tool"
+msgstr "Nástroj pre nastavenie MATE"
+
+#: ../typing-break/drw-break-window.c:195
+msgid "_Postpone Break"
+msgstr "_Odložiť prestávku"
+
+#: ../typing-break/drw-break-window.c:256
+msgid "Take a break!"
+msgstr "Urobte si prestávku!"
+
+#: ../typing-break/drwright.c:142
+msgid "_Take a Break"
+msgstr "_Urobiť si prestávku"
+
+#: ../typing-break/drwright.c:513
+#, c-format
+msgid "Take a break now (next in %dm)"
+msgstr "Urobiť si prestávku teraz (nasledujúca za %dm)"
+
+#: ../typing-break/drwright.c:515
+#, c-format
+msgid "%d minute until the next break"
+msgid_plural "%d minutes until the next break"
+msgstr[0] "%d minúta do nasledujúcej prestávky"
+msgstr[1] "%d minúty do nasledujúcej prestávky"
+msgstr[2] "%d minút do nasledujúcej prestávky"
+
+#: ../typing-break/drwright.c:521
+#, c-format
+msgid "Take a break now (next in less than one minute)"
+msgstr "Urobiť si prestávku teraz (nasledujúca za menej než minútu)"
+
+#: ../typing-break/drwright.c:523
+#, c-format
+msgid "Less than one minute until the next break"
+msgstr "Menej ako jedna minúta do nasledujúcej prestávky"
+
+#: ../typing-break/drwright.c:613
+#, c-format
+msgid ""
+"Unable to bring up the typing break properties dialog with the following "
+"error: %s"
+msgstr "Nepodarilo sa zobraziť dialóg pre nastavenie monitoru písania kvôli tejto chybe: %s"
+
+#: ../typing-break/drwright.c:630
+msgid "Written by Richard Hult <richard@imendio.com>"
+msgstr "Napísal Richard Hult <richard@imendio.com>"
+
+#: ../typing-break/drwright.c:631
+msgid "Eye candy added by Anders Carlsson"
+msgstr "Ozdoby Anders Carlsson"
+
+#: ../typing-break/drwright.c:640
+msgid "A computer break reminder."
+msgstr "Upozornenie na to, že si máte urobiť prestávku."
+
+#: ../typing-break/drwright.c:642
+msgid "translator-credits"
+msgstr "Marcel Telka <marcel@telka.sk>\nPeter Tuhársky <tuharsky@misbb.sk>\nPavol Šimo <palo.simo@gmail.com>\nJán Ďanovský <dagsoftware@yahoo.com>\nTibor Kaputa <tibbbi2@gmail.com>"
+
+#: ../typing-break/main.c:67
+msgid "Enable debugging code"
+msgstr "Povoliť ladiaci kód"
+
+#: ../typing-break/main.c:69
+msgid "Don't check whether the notification area exists"
+msgstr "Neoverovať, či oblasť upozornení existuje"
+
+#: ../typing-break/main.c:95
+msgid "Typing Monitor"
+msgstr "Sledovanie písania"
+
+#: ../typing-break/main.c:112
+msgid ""
+"The typing monitor uses the notification area to display information. You "
+"don't seem to have a notification area on your panel. You can add it by "
+"right-clicking on your panel and choosing 'Add to panel', selecting "
+"'Notification area' and clicking 'Add'."
+msgstr "Sledovač písania používa oblasť upozornení pre zobrazovanie informácií. Zdá sa, že váš panel túto oblasť neobsahuje. Môžete ju pridať kliknutím pravým tlačidlom na vašom paneli a vybraním 'Pridať do panelu', zvolením 'Oblasť upozornení' a kliknutím na 'Pridať'."
+
+#: ../font-viewer/font-view.c:303
+msgid "Name:"
+msgstr "Názov:"
+
+#: ../font-viewer/font-view.c:306
+msgid "Style:"
+msgstr "Štýl:"
+
+#: ../font-viewer/font-view.c:319
+msgid "Type:"
+msgstr "Typ:"
+
+#: ../font-viewer/font-view.c:323
+msgid "Size:"
+msgstr "Veľkosť:"
+
+#: ../font-viewer/font-view.c:367 ../font-viewer/font-view.c:380
+msgid "Version:"
+msgstr "Verzia:"
+
+#: ../font-viewer/font-view.c:371 ../font-viewer/font-view.c:382
+msgid "Copyright:"
+msgstr "Copyright:"
+
+#: ../font-viewer/font-view.c:375
+msgid "Description:"
+msgstr "Popis:"
+
+#: ../font-viewer/font-view.c:457
+msgid "Installed"
+msgstr "Nainštalované"
+
+#: ../font-viewer/font-view.c:460
+msgid "Install Failed"
+msgstr "Inštalácia zlyhala"
+
+#: ../font-viewer/font-view.c:533
+#, c-format
+msgid "usage: %s fontfile\n"
+msgstr "použitie: %s súborpísma\n"
+
+#: ../font-viewer/font-view.c:606
+msgid "I_nstall Font"
+msgstr "I_nštalovať písmo"
+
+#: ../font-viewer/mate-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Prehliadač písiem"
+
+#: ../font-viewer/mate-font-viewer.desktop.in.in.h:2
+msgid "Preview fonts"
+msgstr "Zobraziť náhľad písma"
+
+#: ../font-viewer/font-thumbnailer.c:245
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Text pre miniatúru (predvolené: Aa)"
+
+#: ../font-viewer/font-thumbnailer.c:245
+msgid "TEXT"
+msgstr "TEXT"
+
+#: ../font-viewer/font-thumbnailer.c:247
+msgid "Font size (default: 64)"
+msgstr "Veľkosť písma (predvolená: 64)"
+
+#: ../font-viewer/font-thumbnailer.c:247
+msgid "SIZE"
+msgstr "VEĽKOSŤ"
+
+#: ../font-viewer/font-thumbnailer.c:249
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "SÚBOR-PÍSMA VÝSTUPNÝ-SÚBOR"
+
+#: ../font-viewer/font-thumbnailer.c:272
+#, c-format
+msgid "Error parsing arguments: %s\n"
+msgstr "Chyba pri spracovaní parametrov: %s\n"
+
+#: ../libslab/app-shell.c:761
+#, c-format
+msgid "Your filter \"%s\" does not match any items."
+msgstr "Váš filter „%s“ sa nezhoduje so žiadnymi položkami."
+
+#: ../libslab/app-shell.c:763
+msgid "No matches found."
+msgstr "Nenájdená žiadna zhoda."
+
+#: ../libslab/app-shell.c:864
+msgid "New Applications"
+msgstr "Nové aplikácie"
+
+#: ../libslab/app-shell.c:919
+msgid "Other"
+msgstr "Ostatné"
+
+#. make start action
+#: ../libslab/application-tile.c:340
+#, c-format
+msgid "Start %s"
+msgstr "Spustiť %s"
+
+#: ../libslab/application-tile.c:361
+msgid "Help"
+msgstr "Pomocník"
+
+#: ../libslab/application-tile.c:629 ../libslab/document-tile.c:735
+msgid "Remove from Favorites"
+msgstr "Odstrániť z Obľúbených"
+
+#: ../libslab/application-tile.c:631 ../libslab/document-tile.c:737
+msgid "Add to Favorites"
+msgstr "Pridať k Obľúbeným"
+
+#: ../libslab/application-tile.c:716
+msgid "Remove from Startup Programs"
+msgstr "Odstrániť z Programov pri štarte"
+
+#: ../libslab/application-tile.c:718
+msgid "Add to Startup Programs"
+msgstr "Pridať k Programom pri štarte"
+
+#: ../libslab/bookmark-agent.c:1091
+msgid "New Spreadsheet"
+msgstr "Nová tabuľka"
+
+#: ../libslab/bookmark-agent.c:1096
+msgid "New Document"
+msgstr "Nový dokument"
+
+#: ../libslab/bookmark-agent.c:1149
+msgctxt "Home folder"
+msgid "Home"
+msgstr "Domov"
+
+#: ../libslab/bookmark-agent.c:1156
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: ../libslab/bookmark-agent.c:1164
+msgid "Desktop"
+msgstr "Plocha"
+
+#: ../libslab/bookmark-agent.c:1171
+msgid "File System"
+msgstr "Súborový systém"
+
+#: ../libslab/bookmark-agent.c:1175
+msgid "Network Servers"
+msgstr "Sieťové servery"
+
+#: ../libslab/bookmark-agent.c:1204
+msgid "Search"
+msgstr "Hľadať"
+
+#. make open with default action
+#: ../libslab/directory-tile.c:176
+#, c-format
+msgid "<b>Open</b>"
+msgstr "<b>Otvoriť</b>"
+
+#. make rename action
+#: ../libslab/directory-tile.c:195 ../libslab/document-tile.c:241
+msgid "Rename..."
+msgstr "Premenovať..."
+
+#: ../libslab/directory-tile.c:209 ../libslab/directory-tile.c:218
+#: ../libslab/document-tile.c:255 ../libslab/document-tile.c:264
+msgid "Send To..."
+msgstr "Odoslať..."
+
+#. make move to trash action
+#: ../libslab/directory-tile.c:233 ../libslab/document-tile.c:290
+msgid "Move to Trash"
+msgstr "Presunúť do Koša"
+
+#: ../libslab/directory-tile.c:243 ../libslab/directory-tile.c:453
+#: ../libslab/document-tile.c:300 ../libslab/document-tile.c:851
+msgid "Delete"
+msgstr "Vymazať"
+
+#: ../libslab/directory-tile.c:530 ../libslab/document-tile.c:1014
+#, c-format
+msgid "Are you sure you want to permanently delete \"%s\"?"
+msgstr "Ste si istý, že chcete trvale odstrániť „%s“?"
+
+#: ../libslab/directory-tile.c:531 ../libslab/document-tile.c:1015
+msgid "If you delete an item, it is permanently lost."
+msgstr "Ak položku vymažete, bude trvale stratená"
+
+#: ../libslab/document-tile.c:200
+#, c-format
+msgid "Open with \"%s\""
+msgstr "Otvoriť pomocou „%s“"
+
+#: ../libslab/document-tile.c:214
+msgid "Open with Default Application"
+msgstr "Otvoriť s predvoleným programom"
+
+#: ../libslab/document-tile.c:225
+msgid "Open in File Manager"
+msgstr "Otvoriť v správcovi súborov"
+
+#. clean item from menu
+#: ../libslab/document-tile.c:309
+msgid "Remove from recent menu"
+msgstr "Odstrániť z menu nedávno otvorených"
+
+#. clean all the items from menu
+#: ../libslab/document-tile.c:317
+msgid "Purge all the recent items"
+msgstr "Odstrániť všetky nedávno otvorené položky"
+
+#: ../libslab/document-tile.c:631
+msgid "?"
+msgstr "?"
+
+#: ../libslab/document-tile.c:638
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#: ../libslab/document-tile.c:646
+msgid "Today %l:%M %p"
+msgstr "Dnes %l:%M %p"
+
+#: ../libslab/document-tile.c:656
+msgid "Yesterday %l:%M %p"
+msgstr "Včera %l:%M %p"
+
+#: ../libslab/document-tile.c:668
+msgid "%a %l:%M %p"
+msgstr "%a %l:%M %p"
+
+#: ../libslab/document-tile.c:676
+msgid "%b %d %l:%M %p"
+msgstr "%b %d %l:%M %p"
+
+#: ../libslab/document-tile.c:678
+msgid "%b %d %Y"
+msgstr "%b %d %Y"
+
+#: ../libslab/search-bar.c:255
+msgid "Find Now"
+msgstr "Nájsť teraz"
+
+#: ../libslab/system-tile.c:126
+#, c-format
+msgid "<b>Open %s</b>"
+msgstr "<b>Otvoriť %s</b>"
+
+#: ../libslab/system-tile.c:139
+#, c-format
+msgid "Remove from System Items"
+msgstr "Odstrániť zo systémových položiek"

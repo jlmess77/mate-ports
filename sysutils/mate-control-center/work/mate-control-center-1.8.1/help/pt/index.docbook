@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY VERSION "1.5.7">
+]>
+<article id="index" lang="pt">
+  
+  <articleinfo>
+    <abstract role="description">
+      <para>O Centro de Controlo MATE fornece um ponto central para o utilizador configurar a sua experiência MATE. Permite-lhe configurar tudo desde o comportamento das margens das janelas até ao tipo de fonte por omissão.</para>
+    </abstract>
+    <title>Centro de Controlo</title>
+    <authorgroup>
+      <author lang="en">
+	<firstname>Kevin</firstname><surname>Breit</surname>
+      </author>
+    </authorgroup>
+    <copyright lang="en">
+      <year>2001, 2002</year>
+      <holder>Ximian, Inc.</holder>
+    </copyright>
+
+    <publisher role="maintainer">
+      <publishername>Projecto de Documentação MATE</publishername>
+    </publisher>
+    
+    <revhistory>
+      <revision lang="en"> 
+        <revnumber>2.14</revnumber> 
+        <date>2006-03</date> 
+      </revision> 
+    </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para lang="en">
+	Permission is granted to copy, distribute and/or modify this document
+        under the terms of the
+        <ulink type="help" url="mate-help:fdl">
+          <citetitle>
+            GNU Free Documentation License
+          </citetitle>
+        </ulink>, Version 1.1 or any later version
+        published by the Free Software Foundation with no Invariant Sections,
+        no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+        can be found <ulink type="help" url="mate-help:fdl">here</ulink>.
+      </para>
+      <para>Muitos dos nomes utilizados pelas empresas para distinguir os seus produtos e serviços são considerados marcas registadas. Onde esses nomes aparecerem na documentação do MATE, e essas marcas registadas são dadas a conhecer aos membros do Projecto de Documentação do MATE, os nomes foram impressos em maiúsculas ou com a inicial em maiúscula.</para>
+    </legalnotice>
+
+    <releaseinfo>Este manual descreve a versão 1.5.7 do Centro de Controlo do MATE.</releaseinfo>
+  </articleinfo>
+  
+  <sect1 id="intro">
+    <title>Introdução</title>
+    <para>O <application>Centro de Controlo MATE</application> fornece uma única janela a partir da qual são iniciadas todas as ferramentas de configuração.</para>
+    <para>Para iniciar o <application>Centro de Controlo MATE</application>, escreva <command>mate-control-center</command> numa janela de consola.</para>
+    <para>Para ajuda na utilização de ferramentas de configuração, consulte o <ulink type="help" url="help:user-guide?prefs">Manual de Utilização</ulink>.</para>
+  </sect1>
+  
+  <sect1 id="matecc-interface">
+    <title>Utilização</title>
+    <para>O <application>Centro de Controlo MATE</application> apresenta numa janela os ícones de todas as ferramentas de configuração instaladas no seu sistema. Seleccione uma ferramenta de configuração para ver a sua descrição na barra de estados.</para>
+    <para>Para abrir uma ferramenta de configuração, faça duplo-clique no seu ícone.</para>
+  </sect1>
+</article>

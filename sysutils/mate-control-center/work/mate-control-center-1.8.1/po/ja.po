@@ -1,0 +1,2845 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Akira TAGOH <tagoh@gnome.gr.jp>, 2001
+# Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999
+# Hideki Yamane <henrich@debian.or.jp>, 2009
+# KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003
+# Satoru SATOH <ss@gnome.gr.jp>, 2006
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000, 2009, 2010
+# Yukihiro Nakai <Nakai@abricot.co.jp>, 1998
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-23 16:27+0100\n"
+"PO-Revision-Date: 2014-02-23 15:29+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/MATE/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:1
+msgid ""
+"[ 'Change Theme;mate-appearance-properties.desktop', 'Set Preferred "
+"Applications;mate-default-applications-properties.desktop' ]"
+msgstr ""
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:2
+msgid "Task names and associated .desktop files"
+msgstr "タスクの名前とそれに対応する .desktop ファイル"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:3
+msgid ""
+"The task name to be displayed in the control-center followed by a \";\" "
+"separator then the filename of an associated .desktop file to launch for "
+"that task."
+msgstr "コントロール・センターの中に表示するタスクの名前です。その後ろに \";\" で区切ってタスクを起動する際に使用する .desktop ファイルを指定します。"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:4
+msgid "Close the control-center when a task is activated"
+msgstr "タスクを起動したらコントロール・センターを閉じる"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:5
+msgid ""
+"if true, the control-center will close when a \"Common Task\" is activated."
+msgstr "TRUE にすると、\"共通なタスク\" を起動するとコントロール・センターを閉じます。"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:6
+msgid "Exit shell on start action performed"
+msgstr "タスクを起動したらシェルを終了する"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:7
+msgid "Indicates whether to close the shell when a start action is performed."
+msgstr "タスクを起動したらシェルを閉じるかどうかです。"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:8
+msgid "Exit shell on help action performed"
+msgstr "ヘルプを表示したらシェルを終了する"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:9
+msgid "Indicates whether to close the shell when a help action is performed."
+msgstr "ヘルプを表示したらシェルを閉じるかどうかです。"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:10
+msgid "Exit shell on add or remove action performed"
+msgstr "追加または削除を行ったらシェルを終了する"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:11
+msgid ""
+"Indicates whether to close the shell when an add or remove action is "
+"performed."
+msgstr "追加または削除を行ったらシェルを閉じるかどうかです。"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:12
+msgid "Exit shell on upgrade or uninstall action performed"
+msgstr "アップグレードまたはアンインストールを行ったらシェルを終了する"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:13
+msgid ""
+"Indicates whether to close the shell when an upgrade or uninstall action is "
+"performed."
+msgstr "アップグレードまたはアンインストールを行ったらシェルを閉じるかどうかです。"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:14
+msgid "More backgrounds URL"
+msgstr "背景を入手できるURL"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:15
+msgid ""
+"URL for where to get more desktop backgrounds. If set to an empty string the"
+" link will not appear."
+msgstr "デスクトップの背景を入手できる場所のURLです。空文字列ならば、リンクは表示されません。"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:16
+msgid "More themes URL"
+msgstr "テーマを入手できるURL"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:17
+msgid ""
+"URL for where to get more desktop themes. If set to an empty string the link"
+" will not appear."
+msgstr "デスクトップのテーマを入手できる場所のURLです。空文字列ならば、リンクは表示されません。"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:1
+msgid "Keybinding"
+msgstr ""
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:2
+msgid "Keybinding associated with a custom shortcut."
+msgstr ""
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:3
+msgid "Command"
+msgstr ""
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:4
+msgid "Command associated with a custom keybinding."
+msgstr ""
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:5
+msgid "Name"
+msgstr ""
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:6
+msgid "Description associated with a custom keybinding."
+msgstr ""
+
+#: ../capplets/about-me/eel-alert-dialog.c:110
+msgid "Image/label border"
+msgstr "画像/ラベルの境界線"
+
+#: ../capplets/about-me/eel-alert-dialog.c:111
+msgid "Width of border around the label and image in the alert dialog"
+msgstr "警告ダイアログに表示するラベルと画像の回りに追加する境界線の幅です"
+
+#: ../capplets/about-me/eel-alert-dialog.c:120
+msgid "Alert Type"
+msgstr "警告の種類"
+
+#: ../capplets/about-me/eel-alert-dialog.c:121
+msgid "The type of alert"
+msgstr "警告ダイアログの種類です"
+
+#: ../capplets/about-me/eel-alert-dialog.c:129
+msgid "Alert Buttons"
+msgstr "警告ボタン"
+
+#: ../capplets/about-me/eel-alert-dialog.c:130
+msgid "The buttons shown in the alert dialog"
+msgstr "警告ダイアログに表示するボタンです"
+
+#: ../capplets/about-me/eel-alert-dialog.c:194
+msgid "Show more _details"
+msgstr "詳細表示(_D)"
+
+#: ../capplets/about-me/mate-about-me.c:288
+msgid "Select Image"
+msgstr "画像の選択"
+
+#: ../capplets/about-me/mate-about-me.c:290
+msgid "No Image"
+msgstr "画像なし"
+
+#: ../capplets/about-me/mate-about-me.c:318
+#: ../capplets/appearance/appearance-desktop.c:650
+msgid "Images"
+msgstr "画像"
+
+#: ../capplets/about-me/mate-about-me.c:322
+#: ../capplets/appearance/theme-installer.c:774
+msgid "All Files"
+msgstr "すべてのファイル"
+
+#: ../capplets/about-me/mate-about-me.c:473
+#, c-format
+msgid "About %s"
+msgstr "\"%s\" さんの情報"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:1
+#: ../capplets/about-me/mate-about-me.desktop.in.in.h:1
+msgid "About Me"
+msgstr "個人情報"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:2
+msgid "Select your photo"
+msgstr "写真を選択してください"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:3
+msgid "Full Name"
+msgstr "氏名"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:4
+msgid "User name:"
+msgstr "ユーザ名:"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:5
+msgid "Change Passwo_rd..."
+msgstr "パスワードの変更(_R)..."
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:6
+msgid "Enable _Fingerprint Login..."
+msgstr "指紋認証を有効にする(_F)..."
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:7
+msgid "Disable _Fingerprint Login..."
+msgstr "指紋認証を無効にする(_F)..."
+
+#: ../capplets/about-me/mate-about-me.desktop.in.in.h:2
+msgid "Set your personal information"
+msgstr "自分の情報を管理します"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:100
+msgid ""
+"You are not allowed to access the device. Contact your system administrator."
+msgstr "デバイスにはアクセスできません (システム管理者に連絡してください)"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:102
+msgid "The device is already in use."
+msgstr "そのデバイスは使用中です"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:104
+msgid "An internal error occured"
+msgstr "システム内部のエラーが発生しました"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:221
+msgid "Delete registered fingerprints?"
+msgstr "登録した指紋情報を削除しますか?"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:224
+msgid "_Delete Fingerprints"
+msgstr "削除する(_D)"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:231
+msgid ""
+"Do you want to delete your registered fingerprints so fingerprint login is "
+"disabled?"
+msgstr "登録済みの指紋情報を削除して指紋認証を無効にしますか?"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:359
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:15
+msgid "Done!"
+msgstr "完了です"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "Could you not access "Digital Persona U.are.U 4000/4000B" device
+#: ../capplets/about-me/mate-about-me-fingerprint.c:405
+#: ../capplets/about-me/mate-about-me-fingerprint.c:427
+#, c-format
+msgid "Could not access '%s' device"
+msgstr "'%s' というデバイスにアクセスできません"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "Could you not access "Digital Persona U.are.U 4000/4000B" device
+#: ../capplets/about-me/mate-about-me-fingerprint.c:476
+#, c-format
+msgid "Could not start finger capture on '%s' device"
+msgstr "'%s' で指紋をキャプチャすることができませんでした"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:523
+msgid "Could not access any fingerprint readers"
+msgstr "すべての指紋リーダーにアクセスできませんでした"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:524
+msgid "Please contact your system administrator for help."
+msgstr "システム管理者に連絡してください。"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:554
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:9
+msgid "Enable Fingerprint Login"
+msgstr "指紋認証を有効にする"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "To enable fingerprint login, you need to save one of your fingerprints,
+#. using the
+#. * 'Digital Persona U.are.U 4000/4000B' device."
+#: ../capplets/about-me/mate-about-me-fingerprint.c:584
+#, c-format
+msgid ""
+"To enable fingerprint login, you need to save one of your fingerprints, "
+"using the '%s' device."
+msgstr "指紋認証を有効にするには、'%s' のデバイスを使って、あなたの指紋を登録する必要があります。"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:593
+msgid "Swipe finger on reader"
+msgstr "リーダーに指を通してください"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:595
+msgid "Place finger on reader"
+msgstr "リーダーに指を置いてください"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:1
+msgid "Left thumb"
+msgstr "左の親指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:2
+msgid "Left middle finger"
+msgstr "左の中指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:3
+msgid "Left ring finger"
+msgstr "左の薬指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:4
+msgid "Left little finger"
+msgstr "左の小指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:5
+msgid "Right thumb"
+msgstr "右の親指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:6
+msgid "Right middle finger"
+msgstr "右の中指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:7
+msgid "Right ring finger"
+msgstr "右の薬指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:8
+msgid "Right little finger"
+msgstr "右の小指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:10
+msgid "Right index finger"
+msgstr "右の人差し指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:11
+msgid "Left index finger"
+msgstr "左の人差し指"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:12
+msgid "Other finger: "
+msgstr "別の指: "
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:13
+msgid "Select finger"
+msgstr "指の選択"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:14
+msgid ""
+"Your fingerprint was successfully saved. You should now be able to log in "
+"using your fingerprint reader."
+msgstr "あなたの指紋を登録しました。今から指紋を読み取るリーダーを使ってログインできるようになりました。"
+
+#: ../capplets/about-me/mate-about-me-password.c:161
+msgid "Child exited unexpectedly"
+msgstr "子プロセスが強制終了しました"
+
+#: ../capplets/about-me/mate-about-me-password.c:297
+#, c-format
+msgid "Could not shutdown backend_stdin IO channel: %s"
+msgstr "backend_stdin IO チャンネルを終了できませんでした: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:310
+#, c-format
+msgid "Could not shutdown backend_stdout IO channel: %s"
+msgstr "backend_stdout IO チャンネルを終了できませんでした: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:409
+msgid "Authenticated!"
+msgstr "認証が完了しました!"
+
+#. This is a re-auth, and it failed.
+#. * The password must have been changed in the meantime!
+#. * Ask the user to re-authenticate
+#. Update status message and auth state
+#. Authentication failure
+#: ../capplets/about-me/mate-about-me-password.c:475
+#: ../capplets/about-me/mate-about-me-password.c:560
+msgid ""
+"Your password has been changed since you initially authenticated! Please re-"
+"authenticate."
+msgstr "初めて認証を行ってから既にパスワードが変更されています。もう一度パスワードを入力して認証し直してください。"
+
+#: ../capplets/about-me/mate-about-me-password.c:477
+msgid "That password was incorrect."
+msgstr "そのパスワードは間違っています。"
+
+#: ../capplets/about-me/mate-about-me-password.c:528
+msgid "Your password has been changed."
+msgstr "パスワードが変更されています。"
+
+#. What does this indicate?
+#. * "Authentication information cannot be recovered?" from libpam?
+#: ../capplets/about-me/mate-about-me-password.c:538
+#, c-format
+msgid "System error: %s."
+msgstr "システム・エラーです: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:541
+msgid "The password is too short."
+msgstr "パスワードが短すぎます。"
+
+#: ../capplets/about-me/mate-about-me-password.c:545
+msgid "The password is too simple."
+msgstr "パスワードが簡単すぎます。"
+
+#: ../capplets/about-me/mate-about-me-password.c:550
+msgid "The old and new passwords are too similar."
+msgstr "両方のパスワードが類似しています。"
+
+#: ../capplets/about-me/mate-about-me-password.c:552
+msgid "The new password must contain numeric or special character(s)."
+msgstr "新しいパスワードには数字または特殊文字を含めるようにしてください。"
+
+#: ../capplets/about-me/mate-about-me-password.c:555
+msgid "The old and new passwords are the same."
+msgstr "両方のパスワードが同じです。"
+
+#: ../capplets/about-me/mate-about-me-password.c:557
+msgid "The new password has already been used recently."
+msgstr "新しいパスワードは最近、既に使われています。"
+
+#. translators: Unable to launch <program>: <error message>
+#: ../capplets/about-me/mate-about-me-password.c:828
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "%s を起動できません: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:832
+msgid "Unable to launch backend"
+msgstr "バンクエンドのプログラムを起動できません"
+
+#: ../capplets/about-me/mate-about-me-password.c:833
+msgid "A system error has occurred"
+msgstr "システム・エラーが発生しました"
+
+#. Update status message
+#: ../capplets/about-me/mate-about-me-password.c:853
+msgid "Checking password..."
+msgstr "パスワードの確認中..."
+
+#: ../capplets/about-me/mate-about-me-password.c:940
+msgid "Click <b>Change password</b> to change your password."
+msgstr "パスワードを変更する場合は<b>パスワードの変更</b>をクリックしてください。"
+
+#: ../capplets/about-me/mate-about-me-password.c:943
+msgid "Please type your password in the <b>New password</b> field."
+msgstr "パスワードを<b>新しいパスワード</b>のエントリに入力してください。"
+
+#: ../capplets/about-me/mate-about-me-password.c:946
+#: ../capplets/about-me/mate-about-me-password.ui.h:9
+msgid ""
+"Please type your password again in the <b>Retype new password</b> field."
+msgstr "もう一度パスワードを<b>新しいパスワードの確認</b>エントリに入力してください。"
+
+#: ../capplets/about-me/mate-about-me-password.c:949
+msgid "The two passwords are not equal."
+msgstr "パスワードが一致しませんでした。"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:1
+msgid "Change password"
+msgstr "パスワードの変更"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:2
+msgid "Change your password"
+msgstr "パスワードの変更"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:3
+msgid ""
+"To change your password, enter your current password in the field below and click <b>Authenticate</b>.\n"
+"After you have authenticated, enter your new password, retype it for verification and click <b>Change password</b>."
+msgstr "パスワードを変更する場合は、この下のエントリに現在のパスワードを入力して<b>認証</b>ボタンをクリックしてください。\n認証後に新しいパスワードを入力し、もう一度パスワードを入力して妥当性を検証してから<b>パスワードの変更</b>ボタンをクリックしてください。"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:5
+msgid "Current _password:"
+msgstr "現在のパスワード(_P):"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:6
+msgid "_New password:"
+msgstr "新しいパスワード(_N):"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:7
+msgid "_Retype new password:"
+msgstr "パスワードの確認(_R):"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:8
+msgid "_Authenticate"
+msgstr "認証(_A)"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:10
+msgid "Change pa_ssword"
+msgstr "パスワードの変更(_S)"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:1
+msgid "Assistive Technologies Preferences"
+msgstr "支援技術の設定"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:2
+#: ../capplets/accessibility/at-properties/mate-at-properties.desktop.in.in.h:1
+msgid "Assistive Technologies"
+msgstr "支援技術"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:3
+msgid "_Preferred Applications"
+msgstr "お気に入りのアプリ(_P)"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:4
+msgid "Jump to Preferred Applications dialog"
+msgstr "お気に入りのアプリを設定します"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:5
+msgid "_Enable assistive technologies"
+msgstr "支援技術を有効にする(_E)"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:6
+msgid ""
+"Changes to enable assistive technologies will not take effect until your "
+"next log in."
+msgstr "支援技術を有効にするには、もう一度ログインし直す必要があります。"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:7
+msgid "Preferences"
+msgstr "設定"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:8
+msgid "_Keyboard Accessibility"
+msgstr "キーボードのアクセシビリティ(_K)"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:9
+msgid "Jump to the Keyboard Accessibility dialog"
+msgstr "キーボードのアクセシビリティを設定します"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:10
+msgid "_Mouse Accessibility"
+msgstr "マウスのアクセシビリティ(_M)"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:11
+msgid "Jump to the Mouse Accessibility dialog"
+msgstr "マウスのアクセシビリティを設定します"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:12
+msgid "Accessible Lo_gin"
+msgstr "アクセシビリティ対応のログイン(_G)"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:13
+msgid "Jump to the Accessible Login dialog"
+msgstr "アクセシビリティ対応のログイン・ダイアログを開きます"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:14
+msgid "Close and _Log Out"
+msgstr "閉じてログアウトする(_L)"
+
+#: ../capplets/accessibility/at-properties/mate-at-properties.desktop.in.in.h:2
+msgid "Choose which accessibility features to enable when you log in"
+msgstr "ログインした時にアクセシビリティの機能を有効にするかどうかを選択します"
+
+#: ../capplets/appearance/appearance-desktop.c:619
+msgid "Add Wallpaper"
+msgstr "壁紙の追加"
+
+#: ../capplets/appearance/appearance-desktop.c:654
+msgid "All files"
+msgstr "すべてのファイル"
+
+#: ../capplets/appearance/appearance-main.c:59
+#, c-format
+msgid "Could not load user interface file: %s"
+msgstr "ユーザ・インタフェース・ファイルを読み込めませんでした: %s"
+
+#: ../capplets/appearance/appearance-main.c:155
+msgid "Specify the filename of a theme to install"
+msgstr "インストールするテーマ・ファイルを指定する"
+
+#: ../capplets/appearance/appearance-main.c:156
+msgid "filename"
+msgstr "FILENAME"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/appearance/appearance-main.c:163
+msgid ""
+"Specify the name of the page to show (theme|background|fonts|interface)"
+msgstr "表示するページの名前を指定する (theme|background|fonts|interface)"
+
+#: ../capplets/appearance/appearance-main.c:164
+#: ../capplets/default-applications/mate-da-capplet.c:575
+#: ../capplets/mouse/mate-mouse-properties.c:496
+msgid "page"
+msgstr "PAGE"
+
+#: ../capplets/appearance/appearance-main.c:171
+msgid "[WALLPAPER...]"
+msgstr "[壁紙...]"
+
+#: ../capplets/appearance/appearance-style.c:171
+#: ../capplets/common/mate-theme-info.c:497
+#: ../capplets/common/mate-theme-info.c:694
+msgid "Default Pointer"
+msgstr "デフォルトのポインタ"
+
+#: ../capplets/appearance/appearance-style.c:233
+#: ../capplets/appearance/appearance-themes.c:674
+msgid "Install"
+msgstr "インストール"
+
+#: ../capplets/appearance/appearance-style.c:255
+#: ../capplets/common/mate-theme-info.c:1724
+#, c-format
+msgid ""
+"This theme will not look as intended because the required GTK+ theme engine "
+"'%s' is not installed."
+msgstr "このテーマを利用するには、別途 '%s' というウィンドウ・マネージャのテーマが必要です。"
+
+#: ../capplets/appearance/appearance-themes.c:662
+msgid "Apply Background"
+msgstr "背景の適用"
+
+#: ../capplets/appearance/appearance-themes.c:666
+msgid "Apply Font"
+msgstr "フォントの適用"
+
+#: ../capplets/appearance/appearance-themes.c:670
+msgid "Revert Font"
+msgstr "元に戻す"
+
+#: ../capplets/appearance/appearance-themes.c:701
+msgid ""
+"The current theme suggests a background and a font. Also, the last applied "
+"font suggestion can be reverted."
+msgstr "このテーマには使用が推奨されている背景とフォントがあります。最後に適用したフォントから推奨フォントに戻すことも可能です。"
+
+#: ../capplets/appearance/appearance-themes.c:703
+msgid ""
+"The current theme suggests a background. Also, the last applied font "
+"suggestion can be reverted."
+msgstr "このテーマには使用が推奨されている背景があります。最後に適用したフォントから推奨フォントに戻すことも可能です。"
+
+#: ../capplets/appearance/appearance-themes.c:705
+msgid "The current theme suggests a background and a font."
+msgstr "このテーマは推奨する背景とフォントの情報を提供しています。"
+
+#: ../capplets/appearance/appearance-themes.c:707
+msgid ""
+"The current theme suggests a font. Also, the last applied font suggestion "
+"can be reverted."
+msgstr "このテーマには使用が推奨されているフォントがあります。最後に適用したフォントから推奨フォントに戻すことも可能です。"
+
+#: ../capplets/appearance/appearance-themes.c:709
+msgid "The current theme suggests a background."
+msgstr "このテーマは推奨する背景の情報を提供しています。"
+
+#: ../capplets/appearance/appearance-themes.c:711
+msgid "The last applied font suggestion can be reverted."
+msgstr "最後に適用したフォントから推奨フォントに戻すことも可能です。"
+
+#: ../capplets/appearance/appearance-themes.c:713
+msgid "The current theme suggests a font."
+msgstr "このテーマは推奨するフォントの情報を提供しています。"
+
+#: ../capplets/appearance/appearance-themes.c:1029
+msgid "Custom"
+msgstr "その他"
+
+#: ../capplets/appearance/data/appearance.ui.h:1
+msgid "Font Rendering Details"
+msgstr "レンダリングの詳細"
+
+#: ../capplets/appearance/data/appearance.ui.h:2
+msgid "R_esolution:"
+msgstr "解像度(_E):"
+
+#: ../capplets/appearance/data/appearance.ui.h:3
+msgid "dots per inch"
+msgstr "ドット/インチ"
+
+#: ../capplets/appearance/data/appearance.ui.h:4
+msgid "Smoothing"
+msgstr "滑らかさの補正 (スムージング)"
+
+#: ../capplets/appearance/data/appearance.ui.h:5
+msgid "_None"
+msgstr "なし(_N)"
+
+#: ../capplets/appearance/data/appearance.ui.h:6
+msgid "Gra_yscale"
+msgstr "グレースケール(_Y)"
+
+#: ../capplets/appearance/data/appearance.ui.h:7
+msgid "Sub_pixel (LCDs)"
+msgstr "サブピクセル (LCDs)(_P)"
+
+#. font hinting
+#: ../capplets/appearance/data/appearance.ui.h:9
+msgid "Hinting"
+msgstr "線幅の補正 (ヒンティング)"
+
+#: ../capplets/appearance/data/appearance.ui.h:10
+msgid "N_one"
+msgstr "なし(_O)"
+
+#: ../capplets/appearance/data/appearance.ui.h:11
+msgid "_Slight"
+msgstr "細身(_S)"
+
+#: ../capplets/appearance/data/appearance.ui.h:12
+msgid "_Medium"
+msgstr "中間(_M)"
+
+#: ../capplets/appearance/data/appearance.ui.h:13
+msgid "_Full"
+msgstr "すべて(_F)"
+
+#: ../capplets/appearance/data/appearance.ui.h:14
+msgid "Subpixel Order"
+msgstr "サブピクセルの順番"
+
+#. pixel order red, green, blue
+#: ../capplets/appearance/data/appearance.ui.h:16
+msgid "_RGB"
+msgstr "RGB(_R)"
+
+#. pixel order blue, green, red
+#: ../capplets/appearance/data/appearance.ui.h:18
+msgid "_BGR"
+msgstr "BGR(_B)"
+
+#. vertical hinting, pixel order red, green, blue
+#: ../capplets/appearance/data/appearance.ui.h:20
+msgid "_VRGB"
+msgstr "VRGB(_V)"
+
+#. vertical hinting, pixel order blue, green, red
+#: ../capplets/appearance/data/appearance.ui.h:22
+msgid "VB_GR"
+msgstr "VBGR(_G)"
+
+#: ../capplets/appearance/data/appearance.ui.h:23
+msgid "Appearance Preferences"
+msgstr "外観の設定"
+
+#: ../capplets/appearance/data/appearance.ui.h:24
+msgid "Save _As..."
+msgstr "別名で保存(_A)..."
+
+#: ../capplets/appearance/data/appearance.ui.h:25
+msgid "C_ustomize..."
+msgstr "カスタマイズ(_U)..."
+
+#: ../capplets/appearance/data/appearance.ui.h:26
+msgid "_Install..."
+msgstr "インストール(_I)..."
+
+#: ../capplets/appearance/data/appearance.ui.h:27
+msgid "Get more themes online"
+msgstr "追加のテーマをネットから入手する"
+
+#: ../capplets/appearance/data/appearance.ui.h:28
+msgid "Theme"
+msgstr "テーマ"
+
+#: ../capplets/appearance/data/appearance.ui.h:29
+msgid "_Style:"
+msgstr "スタイル(_S):"
+
+#: ../capplets/appearance/data/appearance.ui.h:30
+msgid "C_olors:"
+msgstr "色(_O):"
+
+#: ../capplets/appearance/data/appearance.ui.h:31
+msgid "Open a dialog to specify the color"
+msgstr "色を指定するダイアログを開きます"
+
+#: ../capplets/appearance/data/appearance.ui.h:32
+msgid "Get more backgrounds online"
+msgstr "追加の背景をネットから入手する"
+
+#: ../capplets/appearance/data/appearance.ui.h:33
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:17
+msgid "_Add..."
+msgstr "追加(_A)..."
+
+#: ../capplets/appearance/data/appearance.ui.h:34
+msgid "Background"
+msgstr "背景"
+
+#: ../capplets/appearance/data/appearance.ui.h:35
+msgid "_Document font:"
+msgstr "ドキュメント(_D):"
+
+#: ../capplets/appearance/data/appearance.ui.h:36
+msgid "Des_ktop font:"
+msgstr "デスクトップ(_K):"
+
+#: ../capplets/appearance/data/appearance.ui.h:37
+msgid "_Window title font:"
+msgstr "ウィンドウのタイトル(_W):"
+
+#: ../capplets/appearance/data/appearance.ui.h:38
+msgid "_Fixed width font:"
+msgstr "固定幅のフォント(_F):"
+
+#: ../capplets/appearance/data/appearance.ui.h:39
+msgid "_Application font:"
+msgstr "アプリケーション(_A):"
+
+#: ../capplets/appearance/data/appearance.ui.h:40
+msgid "Rendering"
+msgstr "描画の種類"
+
+#: ../capplets/appearance/data/appearance.ui.h:41
+msgid "Sub_pixel smoothing (LCDs)"
+msgstr "サブピクセルのスムージング (LCDs)(_P)"
+
+#: ../capplets/appearance/data/appearance.ui.h:42
+msgid "Best co_ntrast"
+msgstr "最適なコントラスト(_N)"
+
+#: ../capplets/appearance/data/appearance.ui.h:43
+msgid "Best _shapes"
+msgstr "最適なシェイプ(_S)"
+
+#: ../capplets/appearance/data/appearance.ui.h:44
+msgid "_Monochrome"
+msgstr "モノクロ(_M)"
+
+#: ../capplets/appearance/data/appearance.ui.h:45
+msgid "D_etails..."
+msgstr "詳細(_E)..."
+
+#: ../capplets/appearance/data/appearance.ui.h:46
+msgid "Fonts"
+msgstr "フォント"
+
+#: ../capplets/appearance/data/appearance.ui.h:47
+msgid "Tile"
+msgstr "並べる"
+
+#: ../capplets/appearance/data/appearance.ui.h:48
+msgid "Zoom"
+msgstr "ズーム"
+
+#: ../capplets/appearance/data/appearance.ui.h:49
+msgid "Center"
+msgstr "中央"
+
+#: ../capplets/appearance/data/appearance.ui.h:50
+msgid "Scale"
+msgstr "サイズ調整"
+
+#: ../capplets/appearance/data/appearance.ui.h:51
+msgid "Stretch"
+msgstr "引き伸ばす"
+
+#: ../capplets/appearance/data/appearance.ui.h:52
+msgid "Span"
+msgstr "スパン(複数に跨げる)"
+
+#: ../capplets/appearance/data/appearance.ui.h:53
+msgid "Solid color"
+msgstr "単色"
+
+#: ../capplets/appearance/data/appearance.ui.h:54
+msgid "Horizontal gradient"
+msgstr "横方向にグラデーション"
+
+#: ../capplets/appearance/data/appearance.ui.h:55
+msgid "Vertical gradient"
+msgstr "縦方向にグラデーション"
+
+#: ../capplets/appearance/data/appearance.ui.h:56
+msgid "Text below items"
+msgstr "アイコンの下にラベル"
+
+#: ../capplets/appearance/data/appearance.ui.h:57
+msgid "Text beside items"
+msgstr "アイコンの横にラベル"
+
+#: ../capplets/appearance/data/appearance.ui.h:58
+msgid "Icons only"
+msgstr "アイコンのみ"
+
+#: ../capplets/appearance/data/appearance.ui.h:59
+msgid "Text only"
+msgstr "ラベルのみ"
+
+#: ../capplets/appearance/data/appearance.ui.h:60
+msgid "Customize Theme"
+msgstr "テーマのカスタマイズ"
+
+#: ../capplets/appearance/data/appearance.ui.h:61
+msgid "Controls"
+msgstr "コントロール"
+
+#: ../capplets/appearance/data/appearance.ui.h:62
+msgid "The current controls theme does not support color schemes."
+msgstr "このコントロールのテーマは色のスキーマをサポートしていません。"
+
+#: ../capplets/appearance/data/appearance.ui.h:63
+msgid "_Tooltips:"
+msgstr "ツールチップ(_T):"
+
+#: ../capplets/appearance/data/appearance.ui.h:64
+msgid "_Selected items:"
+msgstr "選択したアイテム(_S):"
+
+#: ../capplets/appearance/data/appearance.ui.h:65
+msgid "_Input boxes:"
+msgstr "入力ボックス(_I):"
+
+#: ../capplets/appearance/data/appearance.ui.h:66
+msgid "_Windows:"
+msgstr "ウィンドウ(_W):"
+
+#: ../capplets/appearance/data/appearance.ui.h:67
+msgid "Text"
+msgstr "文字列"
+
+#: ../capplets/appearance/data/appearance.ui.h:68
+msgid "_Reset to Defaults"
+msgstr "デフォルトに戻す(_R)"
+
+#: ../capplets/appearance/data/appearance.ui.h:69
+msgid "Colors"
+msgstr "色"
+
+#: ../capplets/appearance/data/appearance.ui.h:70
+msgid "Window Border"
+msgstr "ウィンドウの境界"
+
+#: ../capplets/appearance/data/appearance.ui.h:71
+msgid "Icons"
+msgstr "アイコン"
+
+#: ../capplets/appearance/data/appearance.ui.h:72
+msgid "Changing your cursor theme takes effect the next time you log in."
+msgstr "次回ログインするまで変更したカーソル・テーマは提供されません。"
+
+#: ../capplets/appearance/data/appearance.ui.h:73
+msgid "_Size:"
+msgstr "サイズ(_S):"
+
+#: ../capplets/appearance/data/appearance.ui.h:74
+#: ../capplets/mouse/mate-mouse-properties.ui.h:16
+msgid "Small"
+msgstr "小さい"
+
+#: ../capplets/appearance/data/appearance.ui.h:75
+#: ../capplets/mouse/mate-mouse-properties.ui.h:18
+msgid "Large"
+msgstr "大きい"
+
+#: ../capplets/appearance/data/appearance.ui.h:76
+msgid "Pointer"
+msgstr "ポインタ"
+
+#: ../capplets/appearance/data/appearance.ui.h:77
+msgid "Save Theme As..."
+msgstr "テーマを別名で保存..."
+
+#: ../capplets/appearance/data/appearance.ui.h:78
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:4
+msgid "_Name:"
+msgstr "名前(_N):"
+
+#: ../capplets/appearance/data/appearance.ui.h:79
+msgid "_Description:"
+msgstr "説明(_D):"
+
+#: ../capplets/appearance/data/appearance.ui.h:80
+msgid "Save _background image"
+msgstr "背景も一緒に保存する(_B)"
+
+#: ../capplets/appearance/data/mate-appearance-properties.desktop.in.in.h:1
+msgid "Appearance"
+msgstr "外観の設定"
+
+#: ../capplets/appearance/data/mate-appearance-properties.desktop.in.in.h:2
+msgid "Customize the look of the desktop"
+msgstr "デスクトップの見映えを設定します"
+
+#: ../capplets/appearance/data/mate-theme-installer.desktop.in.in.h:1
+msgid "Theme Installer"
+msgstr "テーマのインストーラ"
+
+#: ../capplets/appearance/data/mate-theme-installer.desktop.in.in.h:2
+msgid "Installs themes packages for various parts of the desktop"
+msgstr "デスクトップのさまざまな部分に適用するテーマ・パッケージをインストールします"
+
+#: ../capplets/appearance/data/mate-theme-package.xml.in.h:1
+msgid "Mate Theme Package"
+msgstr "MATE のテーマ・パッケージ"
+
+#: ../capplets/appearance/mate-wp-info.c:51
+msgid "No Desktop Background"
+msgstr "デスクトップの背景ではありません"
+
+#: ../capplets/appearance/mate-wp-item.c:288
+msgid "unknown"
+msgstr ""
+
+#: ../capplets/appearance/mate-wp-item.c:295
+msgid "Slide Show"
+msgstr "スライドショー"
+
+#: ../capplets/appearance/mate-wp-item.c:297
+msgid "Image"
+msgstr "画像"
+
+#: ../capplets/appearance/mate-wp-item.c:303
+msgid "multiple sizes"
+msgstr "複数のサイズ"
+
+#. translators: x pixel(s) by y pixel(s)
+#: ../capplets/appearance/mate-wp-item.c:306
+#, c-format
+msgid "%d %s by %d %s"
+msgstr "%d %s x %d %s"
+
+#: ../capplets/appearance/mate-wp-item.c:308
+#: ../capplets/appearance/mate-wp-item.c:310
+msgid "pixel"
+msgid_plural "pixels"
+msgstr[0] "ピクセル"
+
+#. translators: <b>wallpaper name</b>
+#. * mime type, size
+#. * Folder: /path/to/file
+#. * Artist: wallpaper author
+#: ../capplets/appearance/mate-wp-item.c:319
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"%s, %s\n"
+"Folder: %s\n"
+"Artist: %s"
+msgstr ""
+
+#. translators: <b>wallpaper name</b>
+#. * Image missing
+#. * Folder: /path/to/file
+#. * Artist: wallpaper author
+#: ../capplets/appearance/mate-wp-item.c:334
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"%s\n"
+"Folder: %s\n"
+"Artist: %s"
+msgstr ""
+
+#: ../capplets/appearance/mate-wp-item.c:339
+msgid "Image missing"
+msgstr "画像がありません"
+
+#: ../capplets/appearance/theme-installer.c:178
+#: ../capplets/appearance/theme-installer.c:234
+msgid "Cannot install theme"
+msgstr "テーマをインストールできません"
+
+#: ../capplets/appearance/theme-installer.c:180
+#, c-format
+msgid "The %s utility is not installed."
+msgstr "%s というユーティリティがインストールされていません。"
+
+#: ../capplets/appearance/theme-installer.c:236
+msgid "There was a problem while extracting the theme."
+msgstr "テーマを展開している最中に問題が発生しました。"
+
+#: ../capplets/appearance/theme-installer.c:264
+msgid "There was an error installing the selected file"
+msgstr "選択したファイルをインストールする際にエラーが発生しました"
+
+#: ../capplets/appearance/theme-installer.c:265
+#, c-format
+msgid "\"%s\" does not appear to be a valid theme."
+msgstr "\"%s\" はテーマとして妥当なファイルではないようです。"
+
+#: ../capplets/appearance/theme-installer.c:266
+#, c-format
+msgid ""
+"\"%s\" does not appear to be a valid theme. It may be a theme engine which "
+"you need to compile."
+msgstr "\"%s\" はテーマとして妥当なファイルではないようです (おそらくコンパイルが必要なテーマ・エンジンと思われます)。"
+
+#: ../capplets/appearance/theme-installer.c:372
+#, c-format
+msgid "Installation for theme \"%s\" failed."
+msgstr "\"%s\" というテーマのインストールに失敗しました。"
+
+#: ../capplets/appearance/theme-installer.c:411
+#, c-format
+msgid "The theme \"%s\" has been installed."
+msgstr "\"%s\" というテーマをインストールしました。"
+
+#: ../capplets/appearance/theme-installer.c:421
+msgid "Would you like to apply it now, or keep your current theme?"
+msgstr "今すぐ適用しますか? それとも現在のテーマを使用し続けますか?"
+
+#: ../capplets/appearance/theme-installer.c:424
+msgid "Keep Current Theme"
+msgstr "現在のテーマのまま"
+
+#: ../capplets/appearance/theme-installer.c:427
+msgid "Apply New Theme"
+msgstr "新しいテーマの適用"
+
+#: ../capplets/appearance/theme-installer.c:479
+#, c-format
+msgid "MATE Theme %s correctly installed"
+msgstr "MATE のテーマ \"%s\" のインストールが完了しました"
+
+#: ../capplets/appearance/theme-installer.c:541
+msgid "Failed to create temporary directory"
+msgstr "作業フォルダの生成に失敗しました"
+
+#: ../capplets/appearance/theme-installer.c:604
+msgid "New themes have been successfully installed."
+msgstr "新しいテーマのインストールが完了しました。"
+
+#: ../capplets/appearance/theme-installer.c:654
+msgid "No theme file location specified to install"
+msgstr "インストールするテーマ・ファイルのパス名が指定されていません"
+
+#: ../capplets/appearance/theme-installer.c:678
+#, c-format
+msgid ""
+"Insufficient permissions to install the theme in:\n"
+"%s"
+msgstr "テーマをインストールするために必要な権限が適当ではありません:\n%s"
+
+#: ../capplets/appearance/theme-installer.c:756
+msgid "Select Theme"
+msgstr "テーマの選択"
+
+#: ../capplets/appearance/theme-installer.c:767
+msgid "Theme Packages"
+msgstr "テーマのパッケージ"
+
+#: ../capplets/appearance/theme-save.c:94
+#, c-format
+msgid "Theme name must be present"
+msgstr "テーマの名前を指定してください"
+
+#: ../capplets/appearance/theme-save.c:157
+msgid "The theme already exists. Would you like to replace it?"
+msgstr "既にテーマが存在していますが、置き換えてもよろしいですか?"
+
+#: ../capplets/appearance/theme-save.c:158
+#: ../capplets/common/file-transfer-dialog.c:450
+msgid "_Overwrite"
+msgstr "置き換える(_O)"
+
+#: ../capplets/appearance/theme-util.c:73
+msgid "Would you like to delete this theme?"
+msgstr "このテーマを削除しますか?"
+
+#: ../capplets/appearance/theme-util.c:123
+msgid "Theme cannot be deleted"
+msgstr "テーマを削除できません"
+
+#: ../capplets/appearance/theme-util.c:249
+msgid "Could not install theme engine"
+msgstr "テーマ・エンジンをインストールできません"
+
+#: ../capplets/common/activate-settings-daemon.c:16
+msgid ""
+"Unable to start the settings manager 'mate-settings-daemon'.\n"
+"Without the MATE settings manager running, some preferences may not take effect. This could indicate a problem with DBus, or a non-MATE (e.g. KDE) settings manager may already be active and conflicting with the MATE settings manager."
+msgstr "MATE 設定マネージャ ('mate-settings-daemon') を起動することができません。\n設定マネージャを起動しないと、いくつかの設定が反映されません。これは DBus の問題、あるいは MATE ではない (KDE などの) 別の設定マネージャが既に起動されていて MATE 設定マネージャと衝突していることが原因かもしれません。"
+
+#: ../capplets/common/capplet-stock-icons.c:66
+#, c-format
+msgid "Unable to load stock icon '%s'\n"
+msgstr "ストック・アイコンの '%s' を読み込めません\n"
+
+#: ../capplets/common/capplet-util.c:88
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "次のヘルプを表示する際にエラーが発生しました: %s"
+
+#: ../capplets/common/file-transfer-dialog.c:98
+#, c-format
+msgid "Copying file: %u of %u"
+msgstr "ファイルのコピー中: %u / %u"
+
+#: ../capplets/common/file-transfer-dialog.c:145
+#, c-format
+msgid "Copying '%s'"
+msgstr "'%s' をコピーしています"
+
+#: ../capplets/common/file-transfer-dialog.c:185
+#: ../capplets/common/file-transfer-dialog.c:313
+msgid "Copying files"
+msgstr "ファイルのコピー"
+
+#: ../capplets/common/file-transfer-dialog.c:224
+msgid "Parent Window"
+msgstr "親ウィンドウ"
+
+#: ../capplets/common/file-transfer-dialog.c:225
+msgid "Parent window of the dialog"
+msgstr "ダイアログの親ウィンドウ"
+
+#: ../capplets/common/file-transfer-dialog.c:231
+msgid "From URI"
+msgstr "URI から"
+
+#: ../capplets/common/file-transfer-dialog.c:232
+msgid "URI currently transferring from"
+msgstr "現在 URI から転送中です"
+
+#: ../capplets/common/file-transfer-dialog.c:239
+msgid "To URI"
+msgstr "URI へ"
+
+#: ../capplets/common/file-transfer-dialog.c:240
+msgid "URI currently transferring to"
+msgstr "現在 URI へ転送中です"
+
+#: ../capplets/common/file-transfer-dialog.c:247
+msgid "Fraction completed"
+msgstr "一部完了しました"
+
+#: ../capplets/common/file-transfer-dialog.c:248
+msgid "Fraction of transfer currently completed"
+msgstr "転送の一部が完了しました"
+
+#: ../capplets/common/file-transfer-dialog.c:255
+msgid "Current URI index"
+msgstr "現在の URI インデックス"
+
+#: ../capplets/common/file-transfer-dialog.c:256
+msgid "Current URI index - starts from 1"
+msgstr "現在の URI インデックス - 1番目から開始します"
+
+#: ../capplets/common/file-transfer-dialog.c:263
+msgid "Total URIs"
+msgstr "URI の合計"
+
+#: ../capplets/common/file-transfer-dialog.c:264
+msgid "Total number of URIs"
+msgstr "URI の合計です"
+
+#: ../capplets/common/file-transfer-dialog.c:444
+#, c-format
+msgid "File '%s' already exists. Do you want to overwrite it?"
+msgstr "'%s' というファイルは既に存在しますが、置き換えますか?"
+
+#: ../capplets/common/file-transfer-dialog.c:447
+msgid "_Skip"
+msgstr "スキップする(_S)"
+
+#: ../capplets/common/file-transfer-dialog.c:448
+msgid "Overwrite _All"
+msgstr "すべて置き換える(_A)"
+
+#: ../capplets/common/mate-theme-info.c:695
+msgid "Default Pointer - Current"
+msgstr "デフォルトのポインタ - 使用中"
+
+#: ../capplets/common/mate-theme-info.c:699
+msgid "White Pointer"
+msgstr "白いポインタ"
+
+#: ../capplets/common/mate-theme-info.c:700
+msgid "White Pointer - Current"
+msgstr "白いポインタ - 使用中"
+
+#: ../capplets/common/mate-theme-info.c:704
+msgid "Large Pointer"
+msgstr "大きなポインタ"
+
+#: ../capplets/common/mate-theme-info.c:705
+msgid "Large Pointer - Current"
+msgstr "大きなポインタ - 使用中"
+
+#: ../capplets/common/mate-theme-info.c:709
+msgid "Large White Pointer - Current"
+msgstr "大きな白いポインタ - 使用中"
+
+#: ../capplets/common/mate-theme-info.c:710
+msgid "Large White Pointer"
+msgstr "大きな白いポインタ"
+
+#: ../capplets/common/mate-theme-info.c:1694
+#, c-format
+msgid ""
+"This theme will not look as intended because the required GTK+ theme '%s' is"
+" not installed."
+msgstr "このテーマは、必要となる GTK+ のテーマ (%s) がインストールされていないため、意図したようには正しく表示されないでしょう。"
+
+#: ../capplets/common/mate-theme-info.c:1704
+#, c-format
+msgid ""
+"This theme will not look as intended because the required window manager "
+"theme '%s' is not installed."
+msgstr "このテーマは、必要となるウィンドウ・マネージャのテーマ (%s) がインストールされていないため、意図したようには正しく表示されないでしょう。"
+
+#: ../capplets/common/mate-theme-info.c:1712
+#, c-format
+msgid ""
+"This theme will not look as intended because the required icon theme '%s' is"
+" not installed."
+msgstr "このテーマは、必要となるアイコン・テーマ (%s) がインストールされていないため、意図したようには正しく表示されないでしょう。"
+
+#: ../capplets/default-applications/mate-default-applications-properties.desktop.in.in.h:1
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:1
+msgid "Preferred Applications"
+msgstr "お気に入りのアプリ"
+
+#: ../capplets/default-applications/mate-default-applications-properties.desktop.in.in.h:2
+msgid "Select your default applications"
+msgstr "デフォルトで使用するアプリケーションを設定します"
+
+#: ../capplets/default-applications/mate-da-capplet.c:448
+msgid "Could not load the main interface"
+msgstr "メインのインタフェースを読み込めませんでした"
+
+#: ../capplets/default-applications/mate-da-capplet.c:449
+msgid "Please make sure that the applet is properly installed"
+msgstr "そのアプレットが適切にインストールされているか確認してください"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/default-applications/mate-da-capplet.c:574
+msgid "Specify the name of the page to show (internet|multimedia|system|a11y)"
+msgstr "表示するページの名前を指定する (internet|multimedia|system|a11y)"
+
+#: ../capplets/default-applications/mate-da-capplet.c:580
+msgid "- MATE Default Applications"
+msgstr "- MATE のデフォルトのアプリ"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:2
+msgid "Web Browser"
+msgstr "ウェブ・ブラウザ"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:4
+#, no-c-format
+msgid "All %s occurrences will be replaced with actual link"
+msgstr "%s という文字はすべて実際のリンクに置き換えられます"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:5
+msgid "Run in t_erminal"
+msgstr "端末から起動する(_E)"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:6
+msgid "Open link with web browser _default"
+msgstr "リンク先をウェブ・ブラウザのデフォルト操作で開く(_D)"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:7
+msgid "Open link in new _tab"
+msgstr "リンク先を新しいタブで開く(_T)"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:8
+msgid "Open link in new _window"
+msgstr "リンク先を新しいウィンドウで開く(_W)"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:9
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:5
+msgid "C_ommand:"
+msgstr "コマンド(_O):"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:10
+msgid "Mail Reader"
+msgstr "メール・クライアント"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:11
+msgid "Co_mmand:"
+msgstr "コマンド(_M):"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:12
+msgid "Instant Messenger"
+msgstr "インスタント・メッセンジャー"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:13
+msgid "Internet"
+msgstr "インターネット"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:14
+msgid "Image Viewer"
+msgstr "画像ビューア"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:15
+msgid "Multimedia Player"
+msgstr "マルチメディア・プレイヤー"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:16
+msgid "Video Player"
+msgstr "ビデオ・プレイヤー"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:17
+msgid "Multimedia"
+msgstr "マルチメディア"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:18
+msgid "Text Editor"
+msgstr "テキスト・エディタ"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:19
+msgid "Terminal Emulator"
+msgstr "端末エミュレータ"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:20
+msgid "E_xecute flag:"
+msgstr "起動オプション(_X):"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:21
+msgid "File Manager"
+msgstr ""
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:22
+msgid "System"
+msgstr "システム"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:23
+msgid "Visual"
+msgstr "視覚支援"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:24
+msgid "_Run at start"
+msgstr "ログインしたら起動する(_R)"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:25
+msgid "Mobility"
+msgstr "操作支援"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:26
+msgid "Run at st_art"
+msgstr "ログインしたら起動する(_A)"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:27
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:45
+msgid "Accessibility"
+msgstr "アクセシビリティ"
+
+#: ../capplets/display/display-capplet.ui.h:1
+msgid "Monitor Preferences"
+msgstr "モニタの設定"
+
+#: ../capplets/display/display-capplet.ui.h:2
+msgid "Sa_me image in all monitors"
+msgstr "すべてのモニタで同じ画像(_M)"
+
+#: ../capplets/display/display-capplet.ui.h:3
+msgid "_Detect monitors"
+msgstr "モニタの検出(_D)"
+
+#: ../capplets/display/display-capplet.ui.h:4
+msgid "Panel icon"
+msgstr "パネルのアイコン"
+
+#: ../capplets/display/display-capplet.ui.h:5
+msgid "_Show monitors in panel"
+msgstr "モニタをパネルに表示する(_S)"
+
+#: ../capplets/display/display-capplet.ui.h:6
+msgid "_Resolution:"
+msgstr "解像度(_R):"
+
+#: ../capplets/display/display-capplet.ui.h:7
+msgid "Re_fresh rate:"
+msgstr "リフレッシュ・レート(_F):"
+
+#: ../capplets/display/display-capplet.ui.h:8
+msgid "On"
+msgstr "有効"
+
+#: ../capplets/display/display-capplet.ui.h:9
+msgid "Off"
+msgstr "無効"
+
+#: ../capplets/display/display-capplet.ui.h:10
+#: ../capplets/display/xrandr-capplet.c:513
+msgid "Monitor"
+msgstr "モニタ"
+
+#: ../capplets/display/display-capplet.ui.h:11
+msgid "R_otation:"
+msgstr "回転(_O):"
+
+#: ../capplets/display/display-capplet.ui.h:12
+msgid "Include _panel"
+msgstr "パネルを含める(_P)"
+
+#: ../capplets/display/display-capplet.ui.h:13
+msgid "Make Default"
+msgstr "デフォルトにする"
+
+#: ../capplets/display/display-capplet.ui.h:14
+#: ../capplets/display/xrandr-capplet.c:309
+#: ../capplets/display/xrandr-capplet.c:348
+msgid "Normal"
+msgstr "標準"
+
+#: ../capplets/display/display-capplet.ui.h:15
+#: ../capplets/display/xrandr-capplet.c:310
+msgid "Left"
+msgstr "左回り"
+
+#: ../capplets/display/display-capplet.ui.h:16
+#: ../capplets/display/xrandr-capplet.c:311
+msgid "Right"
+msgstr "右回り"
+
+#: ../capplets/display/display-capplet.ui.h:17
+msgid "Upside-down"
+msgstr "逆さま"
+
+#: ../capplets/display/mate-display-properties.desktop.in.in.h:1
+msgid "Monitors"
+msgstr "モニタ"
+
+#: ../capplets/display/mate-display-properties.desktop.in.in.h:2
+msgid "Change resolution and position of monitors"
+msgstr "モニタの解像度と位置を変更する"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:44
+#, c-format
+msgid ""
+"Usage: %s SOURCE_FILE DEST_NAME\n"
+"\n"
+"This program installs a RANDR profile for multi-monitor setups into\n"
+"a systemwide location.  The resulting profile will get used when\n"
+"the RANDR plug-in gets run in mate-settings-daemon.\n"
+"\n"
+"SOURCE_FILE - a full pathname, typically /home/username/.config/monitors.xml\n"
+"\n"
+"DEST_NAME - relative name for the installed file.  This will get put in\n"
+"            the systemwide directory for RANDR configurations,\n"
+"            so the result will typically be %s/DEST_NAME\n"
+msgstr "使用法: %s ソースファイル インストール名\n\nこのプログラムは RANDR プロファイルをマルチモニタ用の設定として\nシステム全体で利用する場所にインストールします。インストールしたものは\nRANDR プラグインが mate-settings-daemon で実行された時に使用されます。\n\nソースファイル - フルパス名。一般例: /home/username/.config/monitors.xml\n\nインストール名 - インストールされるファイルの相対パス名。\n               RANDR の設定用にシステム全体で使用されるディレクトリに置かれ、\n               普通は %s/インストール名 のようになります\n"
+
+#. Translators: only able to install RANDR profiles as root
+#: ../capplets/display/mate-display-properties-install-systemwide.c:151
+msgid "This program can only be used by the root user"
+msgstr "このプログラムは root ユーザのみが使用できます"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:168
+msgid "The source filename must be absolute"
+msgstr "ソースのファイル名は絶対パスである必要があります"
+
+#. Translators: first %s is a filename; second %s is an error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:179
+#, c-format
+msgid "Could not open %s: %s\n"
+msgstr "'%s' をオープンできません: %s\n"
+
+#. Translators: first %s is a filename; second %s is an error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:188
+#, c-format
+msgid "Could not get information for %s: %s\n"
+msgstr "%s の情報を取得できませんでした: %s\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:195
+#, c-format
+msgid "%s must be a regular file\n"
+msgstr "%s は普通のファイルである必要があります\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:204
+msgid "This program must only be run through pkexec(1)"
+msgstr "このプログラムは pkexec(1) 経由で実行する必要があります"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:209
+msgid "PKEXEC_UID must be set to an integer value"
+msgstr "PKEXEC_UID に整数値を設定しなくてはなりません"
+
+#. Translators: we are complaining that a file must be really owned by the
+#. user who called this program
+#: ../capplets/display/mate-display-properties-install-systemwide.c:215
+#, c-format
+msgid "%s must be owned by you\n"
+msgstr "%s はあなたによって所有されてなくてはなりません\n"
+
+#. Translators: here we are saying that a plain filename must look like
+#. "filename", not like "some_dir/filename"
+#: ../capplets/display/mate-display-properties-install-systemwide.c:223
+#, c-format
+msgid "%s must not have any directory components\n"
+msgstr "%s にはディレクトリ名が含まれていてはいけません\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:231
+#, c-format
+msgid "%s must be a directory\n"
+msgstr "%s はディレクトリでなくてはなりません\n"
+
+#. Translators: the first %s/%s is a directory/filename; the last %s is an
+#. error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:242
+#, c-format
+msgid "Could not open %s/%s: %s\n"
+msgstr "%s/%s をオープンできませんでした: %s\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:262
+#, c-format
+msgid "Could not rename %s to %s: %s\n"
+msgstr "%s を %s に名前を変更することができません: %s\n"
+
+#: ../capplets/display/org.mate.randr.policy.in.h:1
+msgid "Install multi-monitor settings for the whole system"
+msgstr "システム全体にマルチモニタの設定をインストールする"
+
+#: ../capplets/display/org.mate.randr.policy.in.h:2
+msgid ""
+"Authentication is required to install multi-monitor settings for all users"
+msgstr "マルチモニタの設定をすべてのユーザに対して行うには、認証が必要です"
+
+#: ../capplets/display/xrandr-capplet.c:312
+msgid "Upside Down"
+msgstr "逆さま"
+
+#: ../capplets/display/xrandr-capplet.c:354
+#, c-format
+msgid "%d Hz"
+msgstr "%d Hz"
+
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#: ../capplets/display/xrandr-capplet.c:502
+#: ../capplets/display/xrandr-capplet.c:1652
+msgid "Mirror Screens"
+msgstr "複数の画面をミラーする"
+
+#: ../capplets/display/xrandr-capplet.c:504
+#, c-format
+msgid "Monitor: %s"
+msgstr "モニタ: %s"
+
+#: ../capplets/display/xrandr-capplet.c:582
+#, c-format
+msgid "%d x %d"
+msgstr "%d x %d"
+
+#: ../capplets/display/xrandr-capplet.c:1508
+msgid ""
+"Select a monitor to change its properties; drag it to rearrange its "
+"placement."
+msgstr "設定を変更するモニタを選んでください。ドラッグして位置を調整してください。"
+
+#: ../capplets/display/xrandr-capplet.c:2073
+msgid "Could not save the monitor configuration"
+msgstr "モニタの設定を保存できませんでした"
+
+#: ../capplets/display/xrandr-capplet.c:2095
+msgid "Could not get session bus while applying display configuration"
+msgstr "ディスプレイの設定を適用するセッション・バスの取得に失敗しました"
+
+#: ../capplets/display/xrandr-capplet.c:2137
+msgid "Could not detect displays"
+msgstr "ディスプレイを検出できませんでした"
+
+#: ../capplets/display/xrandr-capplet.c:2334
+msgid "The monitor configuration has been saved"
+msgstr "モニタの設定が保存されました"
+
+#: ../capplets/display/xrandr-capplet.c:2336
+msgid "This configuration will be used the next time someone logs in."
+msgstr "この設定は次回ログインした時に使われます"
+
+#: ../capplets/display/xrandr-capplet.c:2345
+msgid "Could not set the default configuration for monitors"
+msgstr "モニタのデフォルトの設定ができませんでした"
+
+#: ../capplets/display/xrandr-capplet.c:2429
+msgid "Could not get screen information"
+msgstr "スクリーンの情報を取得できませんでした"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:24
+msgid "New shortcut..."
+msgstr "新しいショートカット..."
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:160
+#: ../capplets/keybindings/eggcellrendererkeys.c:161
+msgid "Accelerator key"
+msgstr "アクセラレータ・キー"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:170
+#: ../capplets/keybindings/eggcellrendererkeys.c:171
+msgid "Accelerator modifiers"
+msgstr "アクセラレータの修飾キー"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:179
+#: ../capplets/keybindings/eggcellrendererkeys.c:180
+msgid "Accelerator keycode"
+msgstr "アクセラレータ・キーコード"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:190
+msgid "Accel Mode"
+msgstr "アクセラレータのモード"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:191
+msgid "The type of accelerator."
+msgstr "アクセラレータの種類です"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:234
+#: ../capplets/keybindings/mate-keybinding-properties.c:137
+#: ../typing-break/drwright.c:504
+msgid "Disabled"
+msgstr "無効"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:219
+msgid "<Unknown Action>"
+msgstr "<不明な操作>"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1026
+#: ../capplets/keybindings/mate-keybinding-properties.c:1624
+msgid "Custom Shortcuts"
+msgstr "独自のショートカット"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1204
+msgid "Error saving the new shortcut"
+msgstr "新しいショートカットを保存する際にエラー"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1280
+#, c-format
+msgid ""
+"The shortcut \"%s\" cannot be used because it will become impossible to type using this key.\n"
+"Please try with a key such as Control, Alt or Shift at the same time."
+msgstr "このキーでは入力できないので \"%s\" というショートカット・キーは利用できません。\n[Control] や [Alt] や [Shift] といった修飾キーを併用するようにしてください。"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1312
+#, c-format
+msgid ""
+"The shortcut \"%s\" is already used for\n"
+"\"%s\""
+msgstr "\"%s\" というショートカットは既に登録済です:\n\"%s\""
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1319
+#, c-format
+msgid "If you reassign the shortcut to \"%s\", the \"%s\" shortcut will be disabled."
+msgstr "ショートカットを \"%s\" に変更すると、\"%s\" というショートカットが無効になります。"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1324
+msgid "_Reassign"
+msgstr "割り当てる(_R)"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1579
+msgid "Too many custom shortcuts"
+msgstr "独自のショートカットが多すぎます"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1867
+msgid "Action"
+msgstr "操作"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1889
+msgid "Shortcut"
+msgstr "ショートカット"
+
+#. * vim: sw=2 ts=8 cindent noai bs=2
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:1
+#: ../capplets/keybindings/mate-keybinding.desktop.in.in.h:1
+msgid "Keyboard Shortcuts"
+msgstr "キーボード・ショートカット"
+
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:2
+msgid ""
+"To edit a shortcut key, click on the corresponding row and type a new key "
+"combination, or press backspace to clear."
+msgstr "キーボード・ショートカットを編集する際は、対応する操作をクリックして新しいキーの組み合わせを押下してください ([BS] キーで取り消します)"
+
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:3
+msgid "Custom Shortcut"
+msgstr "独自のショートカット"
+
+#: ../capplets/keybindings/mate-keybinding.desktop.in.in.h:2
+msgid "Assign shortcut keys to commands"
+msgstr "コマンドにショートカット・キーを割り当てます"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:203
+#: ../capplets/keyboard/mate-keyboard-properties.c:208
+msgid ""
+"Just apply settings and quit (compatibility only; now handled by daemon)"
+msgstr "設定を適用して終了する (互換性のみ; 現在はデーモン管理下)"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:213
+msgid "Start the page with the typing break settings showing"
+msgstr "入力中断設定を表示させてページを開始します"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:218
+msgid "Start the page with the accessibility settings showing"
+msgstr "アクセシビリティの設定を表示させてページを開始します"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:224
+msgid "- MATE Keyboard Preferences"
+msgstr "- キーボードの設定"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:1
+msgid "Keyboard Accessibility Audio Feedback"
+msgstr "キーボード・アクセシビリティのサウンド・フィードバック"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:2
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:15
+#: ../capplets/mouse/mate-mouse-properties.ui.h:24
+#: ../capplets/windows/mate-window-properties.c:319
+msgid "General"
+msgstr "全般"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:3
+msgid "Beep when _accessibility features are turned on or off"
+msgstr "アクセシビリティ機能の ON/OFF を切り替えたらビープ音を鳴らす(_A)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:4
+msgid "Beep when a _toggle key is pressed"
+msgstr "トグル・キーを押下したらビープ音を鳴らす(_T)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:5
+msgid "Visual cues for sounds"
+msgstr "視覚的な置き換え"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:6
+msgid "Show _visual feedback for the alert sound"
+msgstr "警告音を視覚的なフィードバックで表現する(_V)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:7
+msgid "Flash _window titlebar"
+msgstr "ウィンドウのタイトルバーを点滅させる(_W)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:8
+msgid "Flash entire _screen"
+msgstr "画面全体を点滅させる(_S)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:9
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:39
+msgid "Slow Keys"
+msgstr "スロー・キー"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:10
+msgid "Beep when a key is pr_essed"
+msgstr "何かキーを押下したらビープ音を鳴らす(_E)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:11
+msgid "Beep when key is _accepted"
+msgstr "キー押下が受け入れられたビープ音を鳴らす(_A)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:12
+msgid "Beep when key is _rejected"
+msgstr "キーの押下が拒否されたらビープ音を鳴らす(_R)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:13
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:41
+msgid "Bounce Keys"
+msgstr "バウンス・キー"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:14
+msgid "Beep when a key is reje_cted"
+msgstr "キーの押下が拒否されたらビープ音を鳴らす(_C)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:15
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:36
+msgid "Sticky Keys"
+msgstr "スティッキー・キー"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:16
+msgid "Beep when a _modifier key is pressed"
+msgstr "修飾キーを押下したらビープ音を鳴らす(_M)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:1
+msgid "Keyboard Preferences"
+msgstr "キーボードの設定"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:2
+msgid "Repeat Keys"
+msgstr "リピート・キー"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:3
+msgid "Key presses _repeat when key is held down"
+msgstr "キーが押されたままにされたらリピートされたものとする(_R)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:4
+msgid "_Delay:"
+msgstr "間隔(_D):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:5
+msgid "_Speed:"
+msgstr "速度(_S):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:6
+#: ../capplets/mouse/mate-mouse-properties.ui.h:21
+msgid "Short"
+msgstr "短い"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:7
+#: ../capplets/mouse/mate-mouse-properties.ui.h:10
+msgid "Slow"
+msgstr "遅い"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:8
+msgid "Repeat keys speed"
+msgstr "押下したキーをリピートする際の速さです"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:9
+#: ../capplets/mouse/mate-mouse-properties.ui.h:22
+msgid "Long"
+msgstr "長い"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:10
+#: ../capplets/mouse/mate-mouse-properties.ui.h:11
+msgid "Fast"
+msgstr "速い"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:11
+msgid "Cursor Blinking"
+msgstr "カーソルの点滅"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:12
+msgid "Cursor _blinks in text fields"
+msgstr "テキスト・フィールドでカーソルを点滅させる(_B)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:13
+msgid "S_peed:"
+msgstr "速度(_P):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:14
+#: ../capplets/mouse/mate-mouse-properties.ui.h:17
+msgid "Cursor blinks speed"
+msgstr "カーソルが点滅する速さです"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:16
+msgid "List of keyboard layouts selected for usage"
+msgstr "使用するよう選択されたキーボードのレイアウトの一覧"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:18
+msgid "Select a keyboard layout to be added to the list"
+msgstr "一覧に追加するキーボードのレイアウトを選択する"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:19
+msgid "Remove the selected keyboard layout from the list"
+msgstr "選択したキーボードレイアウトを一覧から削除する"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:20
+msgid "Move _Up"
+msgstr "上に移動(_U)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:21
+msgid "Move the selected keyboard layout up in the list"
+msgstr "選択したキーボードレイアウトを一覧の上へ移動する<"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:22
+msgid "Move _Down"
+msgstr "下に移動(_D)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:23
+msgid "Move the selected keyboard layout down in the list"
+msgstr "選択したキーボードレイアウトを一覧の下へ移動する"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:24
+msgid "_Show..."
+msgstr "表示(_S)..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:25
+msgid "Print a diagram of the selected keyboard layout"
+msgstr "選択したキーボードレイアウトの図を印刷"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:26
+msgid "_Separate layout for each window"
+msgstr "ウィンドウ毎に別のレイアウト(_S)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:27
+msgid "New windows u_se active window's layout"
+msgstr "新しいウィンドウは有効なウィンドウレイアウトを使う(_S)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:28
+msgid "Keyboard _model:"
+msgstr "キーボードの型式(_M):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:29
+msgid "_Options..."
+msgstr "オプション(_O)..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:30
+msgid "View and edit keyboard layout options"
+msgstr "キーボード・レイアウトのオプションを表示、編集します"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:31
+msgid "Reset to De_faults"
+msgstr "デフォルトに戻す(_F)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:32
+msgid ""
+"Replace the current keyboard layout settings with the\n"
+"default settings"
+msgstr "現在のキーボードレイアウトをデフォルトの設定に置き換える"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:34
+msgid "Layouts"
+msgstr "レイアウト"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:35
+msgid "_Accessibility features can be toggled with keyboard shortcuts"
+msgstr "キーボードからアクセシビリティの機能を切り替えられるようにする(_A)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:37
+msgid "_Simulate simultaneous keypresses"
+msgstr "同時にキーを押下した状態を模擬する(_S)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:38
+msgid "Disa_ble sticky keys if two keys are pressed together"
+msgstr "二つのキーが同時に押下されたらステッキー・キーを無効にする(_B)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:40
+msgid "_Only accept long keypresses"
+msgstr "長いキー押下のみ受け入れる(_O)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:42
+msgid "_Ignore fast duplicate keypresses"
+msgstr "重複したキーを素早く押下した場合は無視する(_I)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:43
+msgid "D_elay:"
+msgstr "遅延(_E):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:44
+msgid "Audio _Feedback..."
+msgstr "サウンドのフィードバック(_F)..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:46
+msgid "_Pointer can be controlled using the keypad"
+msgstr "キーボードでポインタを制御できるようにする(_P)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:47
+#: ../capplets/mouse/mate-mouse-properties.ui.h:8
+msgid "_Acceleration:"
+msgstr "加速(_A):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:48
+msgid "Mouse Keys"
+msgstr "マウス・キー"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:49
+msgid "_Lock screen to enforce typing break"
+msgstr "一休みに入ったら強制的に画面をロックする(_L)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:50
+msgid ""
+"Lock screen after a certain duration to help prevent repetitive keyboard use"
+" injuries"
+msgstr "キー入力のリピート防止のため一休み中は画面をロックします"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:51
+msgid "_Work interval lasts:"
+msgstr "一休みの警告を出すまでの時間(_W):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:52
+msgid "_Break interval lasts:"
+msgstr "一休みする時間(_B):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:53
+msgid "Duration of work before forcing a break"
+msgstr "強制的に一休みに入るまでの時間です"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:54
+msgid "Duration of the break when typing is disallowed"
+msgstr "入力を禁止して一休みする時間です"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:55
+msgid "minutes"
+msgstr "分"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:56
+msgid "All_ow postponing of breaks"
+msgstr "一休みの延長を許可する(_O)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:57
+msgid "Check if breaks are allowed to be postponed"
+msgstr "一休みの延長を可能にする場合は有効にしてください"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:58
+msgid "Typing Break"
+msgstr "一休み"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:59
+msgid "_Type to test settings:"
+msgstr "設定の確認(_T):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:1
+msgid "Choose a Layout"
+msgstr "レイアウトの選択"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:2
+msgid "_Variants:"
+msgstr "系列(_V):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:3
+msgid "_Country:"
+msgstr "国(_C):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:4
+msgid "By _country"
+msgstr "国別(_C)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:5
+msgid "_Language:"
+msgstr "言語(_L):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:6
+msgid "By _language"
+msgstr "言語別(_L)"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:7
+msgid "Preview:"
+msgstr "プレビュー:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:1
+msgid "Choose a Keyboard Model"
+msgstr "キーボードの型式の選択"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:2
+msgid "_Vendors:"
+msgstr "ベンダー(_V):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:3
+msgid "_Models:"
+msgstr "型式(_M):"
+
+#: ../capplets/keyboard/mate-keyboard-properties-options-dialog.ui.h:1
+msgid "Keyboard Layout Options"
+msgstr "キーボード・レイアウトのオプション"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkb.c:85
+msgid "Unknown"
+msgstr "不明"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkblt.c:240
+msgid "Layout"
+msgstr "レイアウト"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbmc.c:173
+msgid "Vendors"
+msgstr "ベンダー"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbmc.c:239
+msgid "Models"
+msgstr "型式"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbot.c:237
+msgid "Default"
+msgstr "デフォルト"
+
+#: ../capplets/keyboard/mate-keyboard.desktop.in.in.h:1
+msgid "Keyboard"
+msgstr "キーボード"
+
+#: ../capplets/keyboard/mate-keyboard.desktop.in.in.h:2
+msgid "Set your keyboard preferences"
+msgstr "お使いのキーボードを設定します"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/mouse/mate-mouse-properties.c:495
+msgid "Specify the name of the page to show (general)"
+msgstr ""
+
+#: ../capplets/mouse/mate-mouse-properties.c:500
+msgid "- MATE Mouse Preferences"
+msgstr "- 効果音の設定"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:1
+msgid "Mouse Preferences"
+msgstr "マウスの設定"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:2
+msgid "Mouse Orientation"
+msgstr "マウスの向き"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:3
+msgid "_Right-handed"
+msgstr "右利き(_M)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:4
+msgid "_Left-handed"
+msgstr "左利き(_L)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:5
+msgid "Locate Pointer"
+msgstr "ポインタの位置"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:6
+msgid "Sh_ow position of pointer when the Control key is pressed"
+msgstr "[Control] キーを押下したらポインタの位置を通知する(_O)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:7
+msgid "Pointer Speed"
+msgstr "ポインタの速度"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:9
+msgid "_Sensitivity:"
+msgstr "感度(_S):"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:12
+msgid "Low"
+msgstr "低い"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:13
+msgid "High"
+msgstr "高い"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:14
+msgid "Drag and Drop"
+msgstr "ドラッグ・アンド・ドロップ"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:15
+msgid "Thr_eshold:"
+msgstr "しきい値(_E):"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:19
+msgid "Double-Click Timeout"
+msgstr "ダブル・クリックの間隔"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:20
+msgid "_Timeout:"
+msgstr "間隔(_T):"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:23
+msgid ""
+"To test your double-click settings, try to double-click on the light bulb."
+msgstr "ダブル・クリックの設定を確認する場合は電球をダブル・クリックしてみてください。"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:25
+msgid "Disable _touchpad while typing"
+msgstr "タイプ中はタッチ・パッドを無効にする(_T)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:26
+msgid "Enable _mouse clicks with touchpad"
+msgstr "タッチ・パッドでのマウス・クリックを有効にする(_M)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:27
+msgid "Scrolling"
+msgstr "スクロール"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:28
+msgid "_Disabled"
+msgstr "無効にする(_D)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:29
+msgid "_Edge scrolling"
+msgstr "エッジ・スクロール(_E)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:30
+msgid "Two-_finger scrolling"
+msgstr "二指でのスクロール(_F)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:31
+msgid "Enable h_orizontal scrolling"
+msgstr "水平スクロールを有効にする(_O)"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:32
+msgid "Touchpad"
+msgstr "タッチ・パッド"
+
+#: ../capplets/mouse/mate-settings-mouse.desktop.in.in.h:1
+msgid "Mouse"
+msgstr "マウス"
+
+#: ../capplets/mouse/mate-settings-mouse.desktop.in.in.h:2
+msgid "Set your mouse preferences"
+msgstr "お使いのマウスの動きを設定します"
+
+#: ../capplets/network/mate-network-properties.desktop.in.in.h:1
+msgid "Network Proxy"
+msgstr "ネットワークのプロキシ"
+
+#: ../capplets/network/mate-network-properties.desktop.in.in.h:2
+msgid "Set your network proxy preferences"
+msgstr "お使いのネットワーク・プロキシを設定します"
+
+#: ../capplets/network/mate-network-properties.ui.h:1
+msgid "HTTP Proxy Details"
+msgstr "HTTP プロキシの詳細"
+
+#: ../capplets/network/mate-network-properties.ui.h:2
+msgid "<b>_Use authentication</b>"
+msgstr "<b>認証を行う(_U)</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:3
+msgid "U_sername:"
+msgstr "ユーザ名(_S):"
+
+#: ../capplets/network/mate-network-properties.ui.h:4
+msgid "_Password:"
+msgstr "パスワード(_P):"
+
+#: ../capplets/network/mate-network-properties.ui.h:5
+msgid "Network Proxy Preferences"
+msgstr "ネットワーク・プロキシの設定"
+
+#: ../capplets/network/mate-network-properties.ui.h:6
+msgid "<b>Di_rect internet connection</b>"
+msgstr "<b>インターネットに直接接続する(_R)</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:7
+msgid "<b>_Manual proxy configuration</b>"
+msgstr "<b>マニュアルでプロキシの設定を行う(_M)</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:8
+msgid "H_TTP proxy:"
+msgstr "HTTP プロキシ(_T):"
+
+#: ../capplets/network/mate-network-properties.ui.h:9
+msgid "_Secure HTTP proxy:"
+msgstr "SSL プロキシ(_S):"
+
+#: ../capplets/network/mate-network-properties.ui.h:10
+msgid "_FTP proxy:"
+msgstr "FTP プロキシ(_F):"
+
+#: ../capplets/network/mate-network-properties.ui.h:11
+msgid "S_ocks host:"
+msgstr "Socks ホスト(_O):"
+
+#: ../capplets/network/mate-network-properties.ui.h:12
+msgid "Port:"
+msgstr "ポート:"
+
+#: ../capplets/network/mate-network-properties.ui.h:13
+msgid "_Details"
+msgstr "詳細(_D)"
+
+#: ../capplets/network/mate-network-properties.ui.h:14
+msgid "<b>_Automatic proxy configuration</b>"
+msgstr "<b>自動的にプロキシの設定を行う(_A)</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:15
+msgid "Autoconfiguration _URL:"
+msgstr "自動設定する URL(_U):"
+
+#: ../capplets/network/mate-network-properties.ui.h:16
+msgid "Proxy Configuration"
+msgstr "プロキシの設定"
+
+#: ../capplets/network/mate-network-properties.ui.h:17
+msgid "Ignore Host List"
+msgstr "無視するホストの一覧"
+
+#: ../capplets/network/mate-network-properties.ui.h:18
+msgid "Ignored Hosts"
+msgstr "無視するホスト"
+
+#: ../capplets/windows/mate-metacity-support.c:40
+msgid "Metacity Preferences"
+msgstr ""
+
+#. Compositing manager
+#: ../capplets/windows/mate-metacity-support.c:51
+#: ../capplets/windows/mate-window-properties.c:333
+msgid "Compositing Manager"
+msgstr ""
+
+#: ../capplets/windows/mate-metacity-support.c:58
+#: ../capplets/windows/mate-window-properties.c:339
+msgid "Enable software _compositing window manager"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:218
+msgid "The current window manager is unsupported"
+msgstr ""
+
+#. Window
+#: ../capplets/windows/mate-window-properties.c:304
+msgid "Window Preferences"
+msgstr "ウィンドウの設定"
+
+#: ../capplets/windows/mate-window-properties.c:323
+msgid "Behaviour"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:327
+msgid "Placement"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:340
+msgid "Disable _thumbnails in Alt-Tab"
+msgstr ""
+
+#. New Windows
+#: ../capplets/windows/mate-window-properties.c:348
+msgid "New Windows"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:352
+msgid "Center _new windows"
+msgstr ""
+
+#. Window Snapping
+#: ../capplets/windows/mate-window-properties.c:357
+msgid "Window Snapping"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:361
+msgid "Enable side by side _tiling"
+msgstr ""
+
+#. Window Selection
+#: ../capplets/windows/mate-window-properties.c:366
+msgid "Window Selection"
+msgstr "ウィンドウの選択"
+
+#: ../capplets/windows/mate-window-properties.c:375
+msgid "_Select windows when the mouse moves over them"
+msgstr "マウスが移動した先のウィンドウを選択する(_S)"
+
+#: ../capplets/windows/mate-window-properties.c:378
+msgid "_Raise selected windows after an interval"
+msgstr "マウスが移動した先のウィンドウを前面に出す(_R)"
+
+#: ../capplets/windows/mate-window-properties.c:384
+msgid "_Interval before raising:"
+msgstr "前面に出すまでの時間(_I):"
+
+#: ../capplets/windows/mate-window-properties.c:388
+msgid "seconds"
+msgstr "秒"
+
+#. Titlebar Action
+#: ../capplets/windows/mate-window-properties.c:399
+msgid "Titlebar Action"
+msgstr "タイトルバーのアクション"
+
+#: ../capplets/windows/mate-window-properties.c:403
+msgid "_Double-click titlebar to perform this action:"
+msgstr "タイトルバーのダブル・クリックで実行するアクション(_D):"
+
+#. Movement Key
+#: ../capplets/windows/mate-window-properties.c:411
+msgid "Movement Key"
+msgstr "ウィンドウの移動"
+
+#: ../capplets/windows/mate-window-properties.c:416
+msgid "To move a window, press-and-hold this key then grab the window:"
+msgstr "ウィンドウをつかんで移動する際に使用する修飾キー:"
+
+#: ../capplets/windows/mate-window-properties.c:427
+#: ../libwindow-settings/marco-window-manager.c:379
+msgid "Roll up"
+msgstr "巻き上げる"
+
+#: ../capplets/windows/mate-window-properties.c:428
+#: ../libwindow-settings/marco-window-manager.c:380
+msgid "Maximize"
+msgstr "最大化する"
+
+#: ../capplets/windows/mate-window-properties.c:429
+#: ../libwindow-settings/marco-window-manager.c:381
+msgid "Maximize Horizontally"
+msgstr "横方向に最大化する"
+
+#: ../capplets/windows/mate-window-properties.c:430
+#: ../libwindow-settings/marco-window-manager.c:382
+msgid "Maximize Vertically"
+msgstr "縦方向に最大化する"
+
+#: ../capplets/windows/mate-window-properties.c:431
+#: ../libwindow-settings/marco-window-manager.c:383
+msgid "Minimize"
+msgstr "最小化する"
+
+#: ../capplets/windows/mate-window-properties.c:432
+#: ../libwindow-settings/marco-window-manager.c:384
+msgid "None"
+msgstr "何もしない"
+
+#: ../capplets/windows/mate-window-properties.c:636
+msgid "_Alt"
+msgstr "[ALT] キー(_A)"
+
+#: ../capplets/windows/mate-window-properties.c:642
+msgid "H_yper"
+msgstr "[Hyper] キー(_Y)"
+
+#: ../capplets/windows/mate-window-properties.c:649
+msgid "S_uper (or \"Windows logo\")"
+msgstr "[Windows] /スーパー・キー(_U)"
+
+#: ../capplets/windows/mate-window-properties.c:656
+msgid "_Meta"
+msgstr "[Meta] キー(_M)"
+
+#: ../capplets/windows/mate-window-properties.desktop.in.in.h:1
+msgid "Windows"
+msgstr "ウィンドウ"
+
+#: ../capplets/windows/mate-window-properties.desktop.in.in.h:2
+msgid "Set your window properties"
+msgstr "ウィンドウのプロパティを設定します"
+
+#: ../libwindow-settings/mate-wm-manager.c:321
+#, c-format
+msgid "Window manager \"%s\" has not registered a configuration tool\n"
+msgstr "お使いのウィンドウ・マネージャ \"%s\" には設定ツールが登録されていません。\n"
+
+#: ../shell/control-center.c:61
+#, c-format
+msgid "%s key is empty\n"
+msgstr ""
+
+#: ../shell/control-center.c:161
+msgid "Hide on start (useful to preload the shell)"
+msgstr "実行時に非表示 (シェルをあらかじめ読み込む時に有効)"
+
+#: ../shell/control-center.c:201
+msgid "Filter"
+msgstr "フィルタ"
+
+#: ../shell/control-center.c:201
+msgid "Groups"
+msgstr "グループ"
+
+#: ../shell/control-center.c:201
+msgid "Common Tasks"
+msgstr "よく利用するタスク"
+
+#: ../shell/control-center.c:203 ../shell/matecc.desktop.in.in.h:1
+#: ../shell/matecc.directory.in.h:1
+msgid "Control Center"
+msgstr "コントロール・センター"
+
+#: ../shell/matecc.desktop.in.in.h:2
+msgid "The MATE configuration tool"
+msgstr "MATE デスクトップの設定ツールです"
+
+#: ../typing-break/drw-break-window.c:195
+msgid "_Postpone Break"
+msgstr "中断を延長する(_P)"
+
+#: ../typing-break/drw-break-window.c:256
+msgid "Take a break!"
+msgstr "一休みしてください!"
+
+#: ../typing-break/drwright.c:142
+msgid "_Take a Break"
+msgstr "一休みする(_T)"
+
+#: ../typing-break/drwright.c:513
+#, c-format
+msgid "Take a break now (next in %dm)"
+msgstr "さあ、一休みしましょう (次は %d分)"
+
+#: ../typing-break/drwright.c:515
+#, c-format
+msgid "%d minute until the next break"
+msgid_plural "%d minutes until the next break"
+msgstr[0] "次の一休みまで %d分あります"
+
+#: ../typing-break/drwright.c:521
+#, c-format
+msgid "Take a break now (next in less than one minute)"
+msgstr "さあ、一休みしましょう (次は一分以内です)"
+
+#: ../typing-break/drwright.c:523
+#, c-format
+msgid "Less than one minute until the next break"
+msgstr "次の一休みまで 1分を切りました"
+
+#: ../typing-break/drwright.c:613
+#, c-format
+msgid ""
+"Unable to bring up the typing break properties dialog with the following "
+"error: %s"
+msgstr "次のエラーにより \"キー入力の一休み設定ダイアログ\" を開けませんでした: %s"
+
+#: ../typing-break/drwright.c:630
+msgid "Written by Richard Hult <richard@imendio.com>"
+msgstr "作者: Richard Hult <richard@imendio.com>"
+
+#: ../typing-break/drwright.c:631
+msgid "Eye candy added by Anders Carlsson"
+msgstr "目玉のキャンディの提供: Anders Carlsson"
+
+#: ../typing-break/drwright.c:640
+msgid "A computer break reminder."
+msgstr "コンピュータの一休み催促ツールです。"
+
+#: ../typing-break/drwright.c:642
+msgid "translator-credits"
+msgstr "Yukihiro Nakai <Nakai@abricot.co.jp>\nEiichiro ITANI <emu@ceres.dti.ne.jp>\n草野 貴之 <AE5T-KSN@asahi-net.or.jp>\nAkira TAGOH <tagoh@gnome.gr.jp>\n相花 毅 <takeshi.aihana@gmail.com>\nKAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\nSatoru SATOH <ss@gnome.gr.jp>\nやまね ひでき <henrich@debian.or.jp>\n日本MATEユーザー会 <http://www.gnome.gr.jp/>"
+
+#: ../typing-break/main.c:67
+msgid "Enable debugging code"
+msgstr "デバッグ・モードにする"
+
+#: ../typing-break/main.c:69
+msgid "Don't check whether the notification area exists"
+msgstr "通知スペースが存在しているかどうかを確認しない"
+
+#: ../typing-break/main.c:95
+msgid "Typing Monitor"
+msgstr "タイピングの監視"
+
+#: ../typing-break/main.c:112
+msgid ""
+"The typing monitor uses the notification area to display information. You "
+"don't seem to have a notification area on your panel. You can add it by "
+"right-clicking on your panel and choosing 'Add to panel', selecting "
+"'Notification area' and clicking 'Add'."
+msgstr "MATE 一休み催促ツールは情報を表示するために通知スペースを利用しますが、お使いのパネルには通知スペースが無いようです。通知スペースはパネルの上で右クリックして \"パネルへ追加\" を選択して、ダイアログから [通知スペース] のエントリを選択して \"追加\" ボタンをクリックしてください。"
+
+#: ../font-viewer/font-view.c:303
+msgid "Name:"
+msgstr "名前:"
+
+#: ../font-viewer/font-view.c:306
+msgid "Style:"
+msgstr "スタイル:"
+
+#: ../font-viewer/font-view.c:319
+msgid "Type:"
+msgstr "種類:"
+
+#: ../font-viewer/font-view.c:323
+msgid "Size:"
+msgstr "サイズ:"
+
+#: ../font-viewer/font-view.c:367 ../font-viewer/font-view.c:380
+msgid "Version:"
+msgstr "バージョン:"
+
+#: ../font-viewer/font-view.c:371 ../font-viewer/font-view.c:382
+msgid "Copyright:"
+msgstr "著作権:"
+
+#: ../font-viewer/font-view.c:375
+msgid "Description:"
+msgstr "説明:"
+
+#: ../font-viewer/font-view.c:457
+msgid "Installed"
+msgstr "インストール済"
+
+#: ../font-viewer/font-view.c:460
+msgid "Install Failed"
+msgstr "インストール失敗"
+
+#: ../font-viewer/font-view.c:533
+#, c-format
+msgid "usage: %s fontfile\n"
+msgstr "用法: %s フォント・ファイル\n"
+
+#: ../font-viewer/font-view.c:606
+msgid "I_nstall Font"
+msgstr "フォントのインストール(_N)"
+
+#: ../font-viewer/mate-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "フォント・ビューア"
+
+#: ../font-viewer/mate-font-viewer.desktop.in.in.h:2
+msgid "Preview fonts"
+msgstr "いろいろなフォントをプレビューします"
+
+#: ../font-viewer/font-thumbnailer.c:245
+msgid "Text to thumbnail (default: Aa)"
+msgstr "サムネイル表示する文字列 (デフォルトは Aa)"
+
+#: ../font-viewer/font-thumbnailer.c:245
+msgid "TEXT"
+msgstr "TEXT"
+
+#: ../font-viewer/font-thumbnailer.c:247
+msgid "Font size (default: 64)"
+msgstr "フォントのサイズ (デフォルトは 64)"
+
+#: ../font-viewer/font-thumbnailer.c:247
+msgid "SIZE"
+msgstr "SIZE"
+
+#: ../font-viewer/font-thumbnailer.c:249
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "フォント・ファイル 出力先のファイル"
+
+#: ../font-viewer/font-thumbnailer.c:272
+#, c-format
+msgid "Error parsing arguments: %s\n"
+msgstr "引数を解析する際にエラーが発生しました: %s\n"
+
+#: ../libslab/app-shell.c:761
+#, c-format
+msgid "Your filter \"%s\" does not match any items."
+msgstr "フィルタ \"%s\" が、どのアイテムともマッチしません"
+
+#: ../libslab/app-shell.c:763
+msgid "No matches found."
+msgstr "どれもマッチしませんでした。"
+
+#: ../libslab/app-shell.c:864
+msgid "New Applications"
+msgstr ""
+
+#: ../libslab/app-shell.c:919
+msgid "Other"
+msgstr "その他"
+
+#. make start action
+#: ../libslab/application-tile.c:340
+#, c-format
+msgid "Start %s"
+msgstr "%sを起動する"
+
+#: ../libslab/application-tile.c:361
+msgid "Help"
+msgstr "ヘルプ"
+
+#: ../libslab/application-tile.c:629 ../libslab/document-tile.c:735
+msgid "Remove from Favorites"
+msgstr "お気に入りから削除する"
+
+#: ../libslab/application-tile.c:631 ../libslab/document-tile.c:737
+msgid "Add to Favorites"
+msgstr "お気に入りに追加する"
+
+#: ../libslab/application-tile.c:716
+msgid "Remove from Startup Programs"
+msgstr "自動起動するプログラムから削除する"
+
+#: ../libslab/application-tile.c:718
+msgid "Add to Startup Programs"
+msgstr "自動起動するプログラムに追加する"
+
+#: ../libslab/bookmark-agent.c:1091
+msgid "New Spreadsheet"
+msgstr "新しいスプレッドシート"
+
+#: ../libslab/bookmark-agent.c:1096
+msgid "New Document"
+msgstr "新しいドキュメント"
+
+#: ../libslab/bookmark-agent.c:1149
+msgctxt "Home folder"
+msgid "Home"
+msgstr "ホーム"
+
+#: ../libslab/bookmark-agent.c:1156
+msgid "Documents"
+msgstr "ドキュメント"
+
+#: ../libslab/bookmark-agent.c:1164
+msgid "Desktop"
+msgstr "デスクトップ"
+
+#: ../libslab/bookmark-agent.c:1171
+msgid "File System"
+msgstr "ファイルシステム"
+
+#: ../libslab/bookmark-agent.c:1175
+msgid "Network Servers"
+msgstr "ネットワーク・サーバ"
+
+#: ../libslab/bookmark-agent.c:1204
+msgid "Search"
+msgstr "検索する"
+
+#. make open with default action
+#: ../libslab/directory-tile.c:176
+#, c-format
+msgid "<b>Open</b>"
+msgstr ""
+
+#. make rename action
+#: ../libslab/directory-tile.c:195 ../libslab/document-tile.c:241
+msgid "Rename..."
+msgstr ""
+
+#: ../libslab/directory-tile.c:209 ../libslab/directory-tile.c:218
+#: ../libslab/document-tile.c:255 ../libslab/document-tile.c:264
+msgid "Send To..."
+msgstr ""
+
+#. make move to trash action
+#: ../libslab/directory-tile.c:233 ../libslab/document-tile.c:290
+msgid "Move to Trash"
+msgstr ""
+
+#: ../libslab/directory-tile.c:243 ../libslab/directory-tile.c:453
+#: ../libslab/document-tile.c:300 ../libslab/document-tile.c:851
+msgid "Delete"
+msgstr ""
+
+#: ../libslab/directory-tile.c:530 ../libslab/document-tile.c:1014
+#, c-format
+msgid "Are you sure you want to permanently delete \"%s\"?"
+msgstr ""
+
+#: ../libslab/directory-tile.c:531 ../libslab/document-tile.c:1015
+msgid "If you delete an item, it is permanently lost."
+msgstr ""
+
+#: ../libslab/document-tile.c:200
+#, c-format
+msgid "Open with \"%s\""
+msgstr ""
+
+#: ../libslab/document-tile.c:214
+msgid "Open with Default Application"
+msgstr ""
+
+#: ../libslab/document-tile.c:225
+msgid "Open in File Manager"
+msgstr ""
+
+#. clean item from menu
+#: ../libslab/document-tile.c:309
+msgid "Remove from recent menu"
+msgstr ""
+
+#. clean all the items from menu
+#: ../libslab/document-tile.c:317
+msgid "Purge all the recent items"
+msgstr ""
+
+#: ../libslab/document-tile.c:631
+msgid "?"
+msgstr ""
+
+#: ../libslab/document-tile.c:638
+msgid "%l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:646
+msgid "Today %l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:656
+msgid "Yesterday %l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:668
+msgid "%a %l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:676
+msgid "%b %d %l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:678
+msgid "%b %d %Y"
+msgstr ""
+
+#: ../libslab/search-bar.c:255
+msgid "Find Now"
+msgstr "検索する"
+
+#: ../libslab/system-tile.c:126
+#, c-format
+msgid "<b>Open %s</b>"
+msgstr "<b>%s を開く</b>"
+
+#: ../libslab/system-tile.c:139
+#, c-format
+msgid "Remove from System Items"
+msgstr "システムのアイテムから削除する"

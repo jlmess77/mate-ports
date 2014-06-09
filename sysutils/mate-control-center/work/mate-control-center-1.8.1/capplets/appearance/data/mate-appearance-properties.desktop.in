@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Appearance
+_Comment=Customize the look of the desktop
+Exec=mate-appearance-properties %F
+Icon=preferences-desktop-theme
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Settings;DesktopSettings;
+OnlyShowIn=MATE;

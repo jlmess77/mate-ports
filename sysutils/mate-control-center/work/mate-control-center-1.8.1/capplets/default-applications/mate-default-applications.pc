@@ -1,0 +1,10 @@
+prefix=/usr/local
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+pkgdatadir=${datadir}/mate-control-center
+defappsdir=${pkgdatadir}/default-apps
+
+Name: mate-default-applications
+Description: Default MATE applications configuration
+Version: 1.8.1
+

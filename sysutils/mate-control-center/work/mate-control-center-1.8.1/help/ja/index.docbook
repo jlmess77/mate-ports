@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY VERSION "1.5.7">
+]>
+<article id="index" lang="ja">
+  
+  <articleinfo>
+    <abstract role="description">
+      <para>MATE コントロールセンターはユーザーが MATE 環境を設定する中心となります。コントロールセンターではウィンドウの枠のふるまいからフォントタイプのデフォルトまで何でも設定できます。</para>
+    </abstract>
+    <title>コントロールセンター</title>
+    <authorgroup>
+      <author lang="en">
+	<firstname>Kevin</firstname><surname>Breit</surname>
+      </author>
+    </authorgroup>
+    <copyright lang="en">
+      <year>2001, 2002</year>
+      <holder>Ximian, Inc.</holder>
+    </copyright>
+
+    <publisher role="maintainer">
+      <publishername>MATE ドキュメントプロジェクト</publishername>
+    </publisher>
+    
+    <revhistory>
+      <revision lang="en"> 
+        <revnumber>2.14</revnumber> 
+        <date>2006-03</date> 
+      </revision> 
+    </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para lang="en">
+	Permission is granted to copy, distribute and/or modify this document
+        under the terms of the
+        <ulink type="help" url="mate-help:fdl">
+          <citetitle>
+            GNU Free Documentation License
+          </citetitle>
+        </ulink>, Version 1.1 or any later version
+        published by the Free Software Foundation with no Invariant Sections,
+        no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+        can be found <ulink type="help" url="mate-help:fdl">here</ulink>.
+      </para>
+      <para>企業が彼らの製品とサービスを識別するのに用いている多くの名前は登録商標です。MATE ドキュメントと MATE ドキュメントプロジェクトのメンバーで使われているそれらの名前は商標であるとわかるようにすべて大文字または大文字ではじまるようになっています。</para>
+    </legalnotice>
+
+    <releaseinfo>このマニュアルは MATE コントロールセンターのバージョン 1.5.7 について説明しています。</releaseinfo>
+  </articleinfo>
+  
+  <sect1 id="intro">
+    <title>はじめに</title>
+    <para><application>MATE コントロールセンター</application> はすべての設定ツールを起動する単一のウィンドウを提供しています。</para>
+    <para><application>MATE コントロールセンター</application> を起動するには端末上で <command>mate-control-center</command> と入力します。</para>
+    <para>設定ツールの使い方のヘルプは <ulink type="help" url="help:user-guide?prefs">ユーザーガイド</ulink> を参照して下さい。</para>
+  </sect1>
+  
+  <sect1 id="matecc-interface">
+    <title>使い方</title>
+    <para><application>MATE コントロールセンター</application> はシステムにインストールされているすべての設定ツールのアイコンを一ウィンドウ内に表示します。設定ツールを選択するとその説明がステータスバーに表示されます。</para>
+    <para>設定ツールを開くにはアイコンをダブルクリックします。</para>
+  </sect1>
+</article>

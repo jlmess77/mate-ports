@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Control Center
+_GenericName=The MATE configuration tool
+Icon=preferences-desktop
+Exec=mate-control-center
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Settings;
+OnlyShowIn=MATE;

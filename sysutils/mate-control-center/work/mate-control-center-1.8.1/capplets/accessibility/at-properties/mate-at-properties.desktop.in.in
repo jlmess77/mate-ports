@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Assistive Technologies
+_Comment=Choose which accessibility features to enable when you log in
+Exec=mate-at-properties
+Icon=preferences-desktop-accessibility
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GTK;Settings;
+OnlyShowIn=MATE;

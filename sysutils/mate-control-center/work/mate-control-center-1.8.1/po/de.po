@@ -1,0 +1,2859 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# negativezero <blackhole89@gmail.com>, 2014
+# Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>, 1998
+# Christian Kintner <ckintner@mate-de.org>, 2007
+# Christian <Christian.Kirbach@googlemail.com>, 2009, 2010
+# Christian Meyer <chrisime@gnome.org>, 2000, 2001, 2002
+# Frank Arnold <frank@scirocco-5v-turbo.de>, 2005
+# desperateCoder <a.dawtjan@gmx.de>, 2013
+# l0r4n0n <info@stefan-geissler.net>, 2012
+# Jens Seidel <jseidel@cvs.gnome.org>, 2005
+# Karl Eichwalder <ke@suse.de>, 1999, 2000
+# Karsten Weiss <karsten@addx.au.s.shuttle.de>, 1999
+# crazyd <lebendig2002@yahoo.de>, 2012-2013
+# Mario Blättermann <mariobl@gnome.org>, 2010
+# Matthias Warkus <mawa@iname.com>, 1999
+# bambuhle <politik@philippoi.de>, 2014
+# qazwsxedc <qazwsxedc@gmx.net>, 2014
+# to_ba, 2013
+# to_ba, 2014
+# c72578 <c72578@yahoo.de>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-23 16:27+0100\n"
+"PO-Revision-Date: 2014-03-06 14:26+0000\n"
+"Last-Translator: to_ba\n"
+"Language-Team: German (http://www.transifex.com/projects/p/MATE/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:1
+msgid ""
+"[ 'Change Theme;mate-appearance-properties.desktop', 'Set Preferred "
+"Applications;mate-default-applications-properties.desktop' ]"
+msgstr "[ »Thema ändern;mate-appearance-properties.desktop«, »Bevorzugte Anwendungen einstellen;mate-default-applications-properties.desktop« ]"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:2
+msgid "Task names and associated .desktop files"
+msgstr "Aktionen und zugewiesene .desktop-Dateien"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:3
+msgid ""
+"The task name to be displayed in the control-center followed by a \";\" "
+"separator then the filename of an associated .desktop file to launch for "
+"that task."
+msgstr "Der im Kontrollzentrum angezeigte Name einer Aktion, gefolgt von einem »;«-Trenner, dann der Dateiname einer zugewiesenen .desktop-Datei, die für diese Aktion gestartet wird."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:4
+msgid "Close the control-center when a task is activated"
+msgstr "Das Kontrollzentrum schließen, nachdem die Aktion aktiviert wurde"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:5
+msgid ""
+"if true, the control-center will close when a \"Common Task\" is activated."
+msgstr "Legt fest, ob das Kontrollzentrum nach dem Aktivieren einer »Häufigen Aktion« beendet wird."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:6
+msgid "Exit shell on start action performed"
+msgstr "Kontrollzentrum nach dem Starten eines Objektes beenden"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:7
+msgid "Indicates whether to close the shell when a start action is performed."
+msgstr "Legt fest, ob das Kontrollzentrum nach dem Starten eines Objektes beendet werden soll."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:8
+msgid "Exit shell on help action performed"
+msgstr "Kontrollzentrum nach dem Aufrufen der Hilfe beenden"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:9
+msgid "Indicates whether to close the shell when a help action is performed."
+msgstr "Legt fest, ob das Kontrollzentrum nach dem Aufrufen der Hilfe beendet werden soll."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:10
+msgid "Exit shell on add or remove action performed"
+msgstr "Kontrollzentrum nach dem Hinzufügen oder Entfernen eines Objektes beenden"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:11
+msgid ""
+"Indicates whether to close the shell when an add or remove action is "
+"performed."
+msgstr "Legt fest, ob das Kontrollzentrum nach dem Hinzufügen oder Entfernen eines Objektes beendet werden soll."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:12
+msgid "Exit shell on upgrade or uninstall action performed"
+msgstr "Kontrollzentrum nach dem Aktualisieren oder Deinstallieren eines Objektes beenden"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:13
+msgid ""
+"Indicates whether to close the shell when an upgrade or uninstall action is "
+"performed."
+msgstr "Legt fest, ob das Kontrollzentrum nach dem Aktualisieren oder Deinstallieren eines Objektes beendet werden soll."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:14
+msgid "More backgrounds URL"
+msgstr "Adresse für weitere Hintergründe"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:15
+msgid ""
+"URL for where to get more desktop backgrounds. If set to an empty string the"
+" link will not appear."
+msgstr "Adresse, unter der weitere Schreibtischhintergründe zu finden sind. Wenn man die Zeichenkette leer lässt, erscheint kein Verweis."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:16
+msgid "More themes URL"
+msgstr "Adresse für weitere Themen"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:17
+msgid ""
+"URL for where to get more desktop themes. If set to an empty string the link"
+" will not appear."
+msgstr "Adresse, unter der weitere Schreibtischthemen zu finden sind. Wenn man die Zeichenkette leer lässt, erscheint kein Verweis."
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:1
+msgid "Keybinding"
+msgstr "Tastenbelegung"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:2
+msgid "Keybinding associated with a custom shortcut."
+msgstr "Tastenbelegung mit einer benutzerdefinierten Verknüpfung verbunden."
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:3
+msgid "Command"
+msgstr "Befehl"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:4
+msgid "Command associated with a custom keybinding."
+msgstr "Befehl einer benutzerdefinierten Tastenkombination zugeordnet."
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:5
+msgid "Name"
+msgstr "Name"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:6
+msgid "Description associated with a custom keybinding."
+msgstr "Beschreibung einer benutzerdefinierten Tastenkombination zuordnen."
+
+#: ../capplets/about-me/eel-alert-dialog.c:110
+msgid "Image/label border"
+msgstr "Bild-/Textrand"
+
+#: ../capplets/about-me/eel-alert-dialog.c:111
+msgid "Width of border around the label and image in the alert dialog"
+msgstr "Breite des Rands um Text und Bild in einem Warndialog"
+
+#: ../capplets/about-me/eel-alert-dialog.c:120
+msgid "Alert Type"
+msgstr "Alarmtyp"
+
+#: ../capplets/about-me/eel-alert-dialog.c:121
+msgid "The type of alert"
+msgstr "Der Typ des Alarms"
+
+#: ../capplets/about-me/eel-alert-dialog.c:129
+msgid "Alert Buttons"
+msgstr "Alarmknöpfe"
+
+#: ../capplets/about-me/eel-alert-dialog.c:130
+msgid "The buttons shown in the alert dialog"
+msgstr "Die in einem Warndialog angezeigten Knöpfe"
+
+#: ../capplets/about-me/eel-alert-dialog.c:194
+msgid "Show more _details"
+msgstr "Weitere _Details anzeigen"
+
+#: ../capplets/about-me/mate-about-me.c:288
+msgid "Select Image"
+msgstr "Bild auswählen"
+
+#: ../capplets/about-me/mate-about-me.c:290
+msgid "No Image"
+msgstr "Kein Bild"
+
+#: ../capplets/about-me/mate-about-me.c:318
+#: ../capplets/appearance/appearance-desktop.c:650
+msgid "Images"
+msgstr "Bilder"
+
+#: ../capplets/about-me/mate-about-me.c:322
+#: ../capplets/appearance/theme-installer.c:774
+msgid "All Files"
+msgstr "Alle Dateien"
+
+#: ../capplets/about-me/mate-about-me.c:473
+#, c-format
+msgid "About %s"
+msgstr "Persönliche Angaben von %s"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:1
+#: ../capplets/about-me/mate-about-me.desktop.in.in.h:1
+msgid "About Me"
+msgstr "Persönliche Angaben"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:2
+msgid "Select your photo"
+msgstr "Wählen Sie Ihr Foto aus"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:3
+msgid "Full Name"
+msgstr "Vollständiger Name"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:4
+msgid "User name:"
+msgstr "Benutzername:"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:5
+msgid "Change Passwo_rd..."
+msgstr "Passwo_rt ändern …"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:6
+msgid "Enable _Fingerprint Login..."
+msgstr "Anmeldung per _Fingerabdruck freischalten …"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:7
+msgid "Disable _Fingerprint Login..."
+msgstr "Anmeldung per _Fingerabdruck abschalten …"
+
+#: ../capplets/about-me/mate-about-me.desktop.in.in.h:2
+msgid "Set your personal information"
+msgstr "Stellen Sie hier Ihre persönlichen Informationen ein"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:100
+msgid ""
+"You are not allowed to access the device. Contact your system administrator."
+msgstr "Sie sind nicht berechtigt, auf das Gerät zuzugreifen. Kontaktieren Sie Ihren Systemadministrator."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:102
+msgid "The device is already in use."
+msgstr "Das Gerät wird bereits verwendet"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:104
+msgid "An internal error occured"
+msgstr "Ein interner Fehler ist aufgetreten"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:221
+msgid "Delete registered fingerprints?"
+msgstr "Sollen die registrierten Fingerabdrücke gelöscht werden?"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:224
+msgid "_Delete Fingerprints"
+msgstr "Fingerabdrücke _löschen"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:231
+msgid ""
+"Do you want to delete your registered fingerprints so fingerprint login is "
+"disabled?"
+msgstr "Wollen Sie Ihre registrierten Fingerabdrücke löschen und so eine Anmeldung per Fingerabdruck verhindern?"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:359
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:15
+msgid "Done!"
+msgstr "Erledigt!"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "Could you not access "Digital Persona U.are.U 4000/4000B" device
+#: ../capplets/about-me/mate-about-me-fingerprint.c:405
+#: ../capplets/about-me/mate-about-me-fingerprint.c:427
+#, c-format
+msgid "Could not access '%s' device"
+msgstr "Auf Gerät »%s« konnte nicht zugegriffen werden"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "Could you not access "Digital Persona U.are.U 4000/4000B" device
+#: ../capplets/about-me/mate-about-me-fingerprint.c:476
+#, c-format
+msgid "Could not start finger capture on '%s' device"
+msgstr "Fingerabtastung konnte auf dem Gerät »%s« nicht gestartet werden"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:523
+msgid "Could not access any fingerprint readers"
+msgstr "Es konnte auf kein Lesegerät für Fingerabdrücke zugegriffen werden"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:524
+msgid "Please contact your system administrator for help."
+msgstr "Bitte kontaktieren Sie Ihren Systemadministrator für Hilfe."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:554
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:9
+msgid "Enable Fingerprint Login"
+msgstr "Anmeldung mit Fingerabdruck freischalten"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "To enable fingerprint login, you need to save one of your fingerprints,
+#. using the
+#. * 'Digital Persona U.are.U 4000/4000B' device."
+#: ../capplets/about-me/mate-about-me-fingerprint.c:584
+#, c-format
+msgid ""
+"To enable fingerprint login, you need to save one of your fingerprints, "
+"using the '%s' device."
+msgstr "Zur Freischaltung der Anmeldung mit Fingerabdruck müssen Sie einen Fingerabdruck mit dem Gerät »%s« hinterlegen."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:593
+msgid "Swipe finger on reader"
+msgstr "Streifen Sie Ihren Finger über das Lesegerät"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:595
+msgid "Place finger on reader"
+msgstr "Legen Sie Ihren Finger auf das Lesegerät"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:1
+msgid "Left thumb"
+msgstr "Linker Daumen"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:2
+msgid "Left middle finger"
+msgstr "Linker Mittelfinger"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:3
+msgid "Left ring finger"
+msgstr "Linker Ringfinger"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:4
+msgid "Left little finger"
+msgstr "Linker kleiner Finger"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:5
+msgid "Right thumb"
+msgstr "Rechter Daumen"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:6
+msgid "Right middle finger"
+msgstr "Rechter Mittelfinger"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:7
+msgid "Right ring finger"
+msgstr "Rechter Ringfinger"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:8
+msgid "Right little finger"
+msgstr "Rechter kleiner Finger"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:10
+msgid "Right index finger"
+msgstr "Rechter Zeigefinger"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:11
+msgid "Left index finger"
+msgstr "Linker Zeigefinger"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:12
+msgid "Other finger: "
+msgstr "Anderer Finger:"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:13
+msgid "Select finger"
+msgstr "Finger auswählen"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:14
+msgid ""
+"Your fingerprint was successfully saved. You should now be able to log in "
+"using your fingerprint reader."
+msgstr "Ihr Fingerabdruck wurde erfolgreich gespeichert. Sie sollten sich jetzt mit Ihrem Fingerlesegerät anmelden können."
+
+#: ../capplets/about-me/mate-about-me-password.c:161
+msgid "Child exited unexpectedly"
+msgstr "Kindprozess wurde unerwartet beendet"
+
+#: ../capplets/about-me/mate-about-me-password.c:297
+#, c-format
+msgid "Could not shutdown backend_stdin IO channel: %s"
+msgstr "backend_stdin IO-Kanal konnte nicht herunter gefahren werden: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:310
+#, c-format
+msgid "Could not shutdown backend_stdout IO channel: %s"
+msgstr "backend_stdout IO-Kanal konnte nicht herunter gefahren werden: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:409
+msgid "Authenticated!"
+msgstr "Legitimiert!"
+
+#. This is a re-auth, and it failed.
+#. * The password must have been changed in the meantime!
+#. * Ask the user to re-authenticate
+#. Update status message and auth state
+#. Authentication failure
+#: ../capplets/about-me/mate-about-me-password.c:475
+#: ../capplets/about-me/mate-about-me-password.c:560
+msgid ""
+"Your password has been changed since you initially authenticated! Please re-"
+"authenticate."
+msgstr "Ihr Passwort wurde geändert, nachdem Sie sich legitimiert haben! Bitte legitimieren Sie sich erneut."
+
+#: ../capplets/about-me/mate-about-me-password.c:477
+msgid "That password was incorrect."
+msgstr "Das Passwort war falsch."
+
+#: ../capplets/about-me/mate-about-me-password.c:528
+msgid "Your password has been changed."
+msgstr "Ihr Passwort wurde geändert."
+
+#. What does this indicate?
+#. * "Authentication information cannot be recovered?" from libpam?
+#: ../capplets/about-me/mate-about-me-password.c:538
+#, c-format
+msgid "System error: %s."
+msgstr "Systemfehler: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:541
+msgid "The password is too short."
+msgstr "Das Passwort ist zu kurz."
+
+#: ../capplets/about-me/mate-about-me-password.c:545
+msgid "The password is too simple."
+msgstr "Das Passwort ist zu einfach."
+
+#: ../capplets/about-me/mate-about-me-password.c:550
+msgid "The old and new passwords are too similar."
+msgstr "Altes und neues Passwort sind sich zu ähnlich."
+
+#: ../capplets/about-me/mate-about-me-password.c:552
+msgid "The new password must contain numeric or special character(s)."
+msgstr "Das neue Passwort muss Ziffern oder Sonderzeichen enthalten."
+
+#: ../capplets/about-me/mate-about-me-password.c:555
+msgid "The old and new passwords are the same."
+msgstr "Altes und neues Passwort stimmen überein."
+
+#: ../capplets/about-me/mate-about-me-password.c:557
+msgid "The new password has already been used recently."
+msgstr "Das neue Passwort wurde kürzlich bereits verwendet."
+
+#. translators: Unable to launch <program>: <error message>
+#: ../capplets/about-me/mate-about-me-password.c:828
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "%s konnte nicht gestartet werden: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:832
+msgid "Unable to launch backend"
+msgstr "Das Backend konnte nicht gestartet werden"
+
+#: ../capplets/about-me/mate-about-me-password.c:833
+msgid "A system error has occurred"
+msgstr "Ein Systemfehler ist aufgetreten"
+
+#. Update status message
+#: ../capplets/about-me/mate-about-me-password.c:853
+msgid "Checking password..."
+msgstr "Passwort wird überprüft …"
+
+#: ../capplets/about-me/mate-about-me-password.c:940
+msgid "Click <b>Change password</b> to change your password."
+msgstr "Klicken Sie auf <b>Passwort ändern</b>, um das Passwort zu ändern."
+
+#: ../capplets/about-me/mate-about-me-password.c:943
+msgid "Please type your password in the <b>New password</b> field."
+msgstr "Bitte geben Sie Ihr Passwort in das Feld <b>Neues Passwort</b> ein."
+
+#: ../capplets/about-me/mate-about-me-password.c:946
+#: ../capplets/about-me/mate-about-me-password.ui.h:9
+msgid ""
+"Please type your password again in the <b>Retype new password</b> field."
+msgstr "Bitte geben Sie Ihr Passwort erneut in das Feld <b>Neues Passwort wiederholen</b> ein."
+
+#: ../capplets/about-me/mate-about-me-password.c:949
+msgid "The two passwords are not equal."
+msgstr "Die beiden Passwörter stimmen nicht überein."
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:1
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:2
+msgid "Change your password"
+msgstr "Ihr Passwort ändern"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:3
+msgid ""
+"To change your password, enter your current password in the field below and click <b>Authenticate</b>.\n"
+"After you have authenticated, enter your new password, retype it for verification and click <b>Change password</b>."
+msgstr "Um Ihr Passwort zu ändern, geben Sie bitte Ihr aktuelles Passwort in das Feld weiter unten ein und klicken Sie anschließend auf <b>Legitimieren</b>.\nNachdem Sie sich legitimiert haben, geben Sie bitte Ihr neues Passwort ein, wiederholen Sie es zur Bestätigung und klicken Sie dann auf <b>Passwort ändern</b>."
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:5
+msgid "Current _password:"
+msgstr "A_ktuelles Passwort:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:6
+msgid "_New password:"
+msgstr "_Neues Passwort:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:7
+msgid "_Retype new password:"
+msgstr "Neues Passwort _wiederholen:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:8
+msgid "_Authenticate"
+msgstr "_Authentifizieren"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:10
+msgid "Change pa_ssword"
+msgstr "Passwo_rt ändern"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:1
+msgid "Assistive Technologies Preferences"
+msgstr "Einstellungen der Hilfstechnologien"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:2
+#: ../capplets/accessibility/at-properties/mate-at-properties.desktop.in.in.h:1
+msgid "Assistive Technologies"
+msgstr "Hilfstechnologien"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:3
+msgid "_Preferred Applications"
+msgstr "_Bevorzugte Anwendungen"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:4
+msgid "Jump to Preferred Applications dialog"
+msgstr "Zum Dialog »Bevorzugte Anwendungen« springen"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:5
+msgid "_Enable assistive technologies"
+msgstr "Hilfs_technologien aktivieren"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:6
+msgid ""
+"Changes to enable assistive technologies will not take effect until your "
+"next log in."
+msgstr "Änderungen zur Aktivierung der Hilfstechnologien werden erst bei der nächsten Anmeldung wirksam."
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:7
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:8
+msgid "_Keyboard Accessibility"
+msgstr "_Tastatur-Barrierefreiheit"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:9
+msgid "Jump to the Keyboard Accessibility dialog"
+msgstr "Zum Dialog »Tastatur-Barrierefreiheit« springen"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:10
+msgid "_Mouse Accessibility"
+msgstr "_Maus-Barrierefreiheit"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:11
+msgid "Jump to the Mouse Accessibility dialog"
+msgstr "Zum Dialog »Maus-Barrierefreiheit« springen"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:12
+msgid "Accessible Lo_gin"
+msgstr "Barrierefreies _Anmelden"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:13
+msgid "Jump to the Accessible Login dialog"
+msgstr "Zum Dialog »Barrierefreies Anmelden« springen"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:14
+msgid "Close and _Log Out"
+msgstr "Schließen und _abmelden"
+
+#: ../capplets/accessibility/at-properties/mate-at-properties.desktop.in.in.h:2
+msgid "Choose which accessibility features to enable when you log in"
+msgstr "Die beim Anmelden zu startenden Hilfsmittel für Barrierefreiheit festlegen"
+
+#: ../capplets/appearance/appearance-desktop.c:619
+msgid "Add Wallpaper"
+msgstr "Hintergrund hinzufügen"
+
+#: ../capplets/appearance/appearance-desktop.c:654
+msgid "All files"
+msgstr "Alle Dateien"
+
+#: ../capplets/appearance/appearance-main.c:59
+#, c-format
+msgid "Could not load user interface file: %s"
+msgstr "Datei der Benutzeroberfläche konnte nicht geladen werden: %s"
+
+#: ../capplets/appearance/appearance-main.c:155
+msgid "Specify the filename of a theme to install"
+msgstr "Dateiname des zu installierenden Themas"
+
+#: ../capplets/appearance/appearance-main.c:156
+msgid "filename"
+msgstr "Dateiname"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/appearance/appearance-main.c:163
+msgid ""
+"Specify the name of the page to show (theme|background|fonts|interface)"
+msgstr "Der Name der anzuzeigenden Seite. Mögliche Werte: »theme« (Thema), »background« (Hintergrund), »fonts« (Schriftarten), »interface« (Oberfläche)"
+
+#: ../capplets/appearance/appearance-main.c:164
+#: ../capplets/default-applications/mate-da-capplet.c:575
+#: ../capplets/mouse/mate-mouse-properties.c:496
+msgid "page"
+msgstr "Seite"
+
+#: ../capplets/appearance/appearance-main.c:171
+msgid "[WALLPAPER...]"
+msgstr "[Hintergrund …]"
+
+#: ../capplets/appearance/appearance-style.c:171
+#: ../capplets/common/mate-theme-info.c:497
+#: ../capplets/common/mate-theme-info.c:694
+msgid "Default Pointer"
+msgstr "Vorgabezeiger"
+
+#: ../capplets/appearance/appearance-style.c:233
+#: ../capplets/appearance/appearance-themes.c:674
+msgid "Install"
+msgstr "Installieren"
+
+#: ../capplets/appearance/appearance-style.c:255
+#: ../capplets/common/mate-theme-info.c:1724
+#, c-format
+msgid ""
+"This theme will not look as intended because the required GTK+ theme engine "
+"'%s' is not installed."
+msgstr "Dieses Thema kann nicht wie gewünscht dargestellt werden, da die benötigte GTK-Themen-Engine »%s« nicht installiert ist."
+
+#: ../capplets/appearance/appearance-themes.c:662
+msgid "Apply Background"
+msgstr "Hintergrund verwenden"
+
+#: ../capplets/appearance/appearance-themes.c:666
+msgid "Apply Font"
+msgstr "Schriftart verwenden"
+
+#: ../capplets/appearance/appearance-themes.c:670
+msgid "Revert Font"
+msgstr "Schriftart weiterverwenden"
+
+#: ../capplets/appearance/appearance-themes.c:701
+msgid ""
+"The current theme suggests a background and a font. Also, the last applied "
+"font suggestion can be reverted."
+msgstr "Dieses Thema empfiehlt einen Hintergrund und eine Schriftart. Die zuletzt verwendete empfohlene Schriftart kann ebenfalls weiterverwendet werden."
+
+#: ../capplets/appearance/appearance-themes.c:703
+msgid ""
+"The current theme suggests a background. Also, the last applied font "
+"suggestion can be reverted."
+msgstr "Dieses Thema empfiehlt einen Hintergrund. Die zuletzt verwendete empfohlene Schriftart kann ebenfalls weiterverwendet werden."
+
+#: ../capplets/appearance/appearance-themes.c:705
+msgid "The current theme suggests a background and a font."
+msgstr "Dieses Thema empfiehlt einen Hintergrund und eine Schriftart."
+
+#: ../capplets/appearance/appearance-themes.c:707
+msgid ""
+"The current theme suggests a font. Also, the last applied font suggestion "
+"can be reverted."
+msgstr "Dieses Thema empfiehlt eine Schriftart. Die zuletzt verwendete empfohlene Schriftart kann ebenfalls weiterverwendet werden."
+
+#: ../capplets/appearance/appearance-themes.c:709
+msgid "The current theme suggests a background."
+msgstr "Dieses Thema empfiehlt einen Hintergrund."
+
+#: ../capplets/appearance/appearance-themes.c:711
+msgid "The last applied font suggestion can be reverted."
+msgstr "Die zuletzt verwendete empfohlene Schriftart kann weiterverwendet werden."
+
+#: ../capplets/appearance/appearance-themes.c:713
+msgid "The current theme suggests a font."
+msgstr "Dieses Thema empfiehlt eine Schriftart."
+
+#: ../capplets/appearance/appearance-themes.c:1029
+msgid "Custom"
+msgstr "Benutzerdefiniert"
+
+#: ../capplets/appearance/data/appearance.ui.h:1
+msgid "Font Rendering Details"
+msgstr "Details zur Schriftwiedergabe"
+
+#: ../capplets/appearance/data/appearance.ui.h:2
+msgid "R_esolution:"
+msgstr "_Auflösung:"
+
+#: ../capplets/appearance/data/appearance.ui.h:3
+msgid "dots per inch"
+msgstr "Pixel pro Zoll"
+
+#: ../capplets/appearance/data/appearance.ui.h:4
+msgid "Smoothing"
+msgstr "Kantenglättung"
+
+#: ../capplets/appearance/data/appearance.ui.h:5
+msgid "_None"
+msgstr "_Deaktivieren"
+
+#: ../capplets/appearance/data/appearance.ui.h:6
+msgid "Gra_yscale"
+msgstr "_Graustufen"
+
+#: ../capplets/appearance/data/appearance.ui.h:7
+msgid "Sub_pixel (LCDs)"
+msgstr "_Subpixel (LCDs)"
+
+#. font hinting
+#: ../capplets/appearance/data/appearance.ui.h:9
+msgid "Hinting"
+msgstr "Hinting"
+
+#: ../capplets/appearance/data/appearance.ui.h:10
+msgid "N_one"
+msgstr "D_eaktivieren"
+
+#: ../capplets/appearance/data/appearance.ui.h:11
+msgid "_Slight"
+msgstr "Geri_ng"
+
+#: ../capplets/appearance/data/appearance.ui.h:12
+msgid "_Medium"
+msgstr "_Mittel"
+
+#: ../capplets/appearance/data/appearance.ui.h:13
+msgid "_Full"
+msgstr "S_tark"
+
+#: ../capplets/appearance/data/appearance.ui.h:14
+msgid "Subpixel Order"
+msgstr "Reihenfolge der Subpixel"
+
+#. pixel order red, green, blue
+#: ../capplets/appearance/data/appearance.ui.h:16
+msgid "_RGB"
+msgstr "_RGB"
+
+#. pixel order blue, green, red
+#: ../capplets/appearance/data/appearance.ui.h:18
+msgid "_BGR"
+msgstr "_BGR"
+
+#. vertical hinting, pixel order red, green, blue
+#: ../capplets/appearance/data/appearance.ui.h:20
+msgid "_VRGB"
+msgstr "_VRGB"
+
+#. vertical hinting, pixel order blue, green, red
+#: ../capplets/appearance/data/appearance.ui.h:22
+msgid "VB_GR"
+msgstr "VB_GR"
+
+#: ../capplets/appearance/data/appearance.ui.h:23
+msgid "Appearance Preferences"
+msgstr "Erscheinungsbildeinstellungen"
+
+#: ../capplets/appearance/data/appearance.ui.h:24
+msgid "Save _As..."
+msgstr "Speichern _unter …"
+
+#: ../capplets/appearance/data/appearance.ui.h:25
+msgid "C_ustomize..."
+msgstr "A_npassen …"
+
+#: ../capplets/appearance/data/appearance.ui.h:26
+msgid "_Install..."
+msgstr "_Installieren …"
+
+#: ../capplets/appearance/data/appearance.ui.h:27
+msgid "Get more themes online"
+msgstr "Weitere Themen online erhalten"
+
+#: ../capplets/appearance/data/appearance.ui.h:28
+msgid "Theme"
+msgstr "Thema"
+
+#: ../capplets/appearance/data/appearance.ui.h:29
+msgid "_Style:"
+msgstr "_Stil:"
+
+#: ../capplets/appearance/data/appearance.ui.h:30
+msgid "C_olors:"
+msgstr "_Farben:"
+
+#: ../capplets/appearance/data/appearance.ui.h:31
+msgid "Open a dialog to specify the color"
+msgstr "Einen Dialog zum Festlegen der Farbe öffnen"
+
+#: ../capplets/appearance/data/appearance.ui.h:32
+msgid "Get more backgrounds online"
+msgstr "Weitere Hintergründe online erhalten"
+
+#: ../capplets/appearance/data/appearance.ui.h:33
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:17
+msgid "_Add..."
+msgstr "Hin_zufügen …"
+
+#: ../capplets/appearance/data/appearance.ui.h:34
+msgid "Background"
+msgstr "Hintergrund"
+
+#: ../capplets/appearance/data/appearance.ui.h:35
+msgid "_Document font:"
+msgstr "D_okumenten-Schrift:"
+
+#: ../capplets/appearance/data/appearance.ui.h:36
+msgid "Des_ktop font:"
+msgstr "Schriftart der _Arbeitsfläche:"
+
+#: ../capplets/appearance/data/appearance.ui.h:37
+msgid "_Window title font:"
+msgstr "Schrift in _Fenstertiteln:"
+
+#: ../capplets/appearance/data/appearance.ui.h:38
+msgid "_Fixed width font:"
+msgstr "Dickten_gleiche Schrift:"
+
+#: ../capplets/appearance/data/appearance.ui.h:39
+msgid "_Application font:"
+msgstr "Schriftart in _Anwendungen:"
+
+#: ../capplets/appearance/data/appearance.ui.h:40
+msgid "Rendering"
+msgstr "Schriftwiedergabe"
+
+#: ../capplets/appearance/data/appearance.ui.h:41
+msgid "Sub_pixel smoothing (LCDs)"
+msgstr "Glättung mittels Sub_pixel (LCDs)"
+
+#: ../capplets/appearance/data/appearance.ui.h:42
+msgid "Best co_ntrast"
+msgstr "Bester _Kontrast"
+
+#: ../capplets/appearance/data/appearance.ui.h:43
+msgid "Best _shapes"
+msgstr "Beste Fo_rm"
+
+#: ../capplets/appearance/data/appearance.ui.h:44
+msgid "_Monochrome"
+msgstr "_Schwarz-Weiß"
+
+#: ../capplets/appearance/data/appearance.ui.h:45
+msgid "D_etails..."
+msgstr "De_tails …"
+
+#: ../capplets/appearance/data/appearance.ui.h:46
+msgid "Fonts"
+msgstr "Schriftarten"
+
+#: ../capplets/appearance/data/appearance.ui.h:47
+msgid "Tile"
+msgstr "Kacheln"
+
+#: ../capplets/appearance/data/appearance.ui.h:48
+msgid "Zoom"
+msgstr "Vergrößerung"
+
+#: ../capplets/appearance/data/appearance.ui.h:49
+msgid "Center"
+msgstr "Zentrieren"
+
+#: ../capplets/appearance/data/appearance.ui.h:50
+msgid "Scale"
+msgstr "Skalieren"
+
+#: ../capplets/appearance/data/appearance.ui.h:51
+msgid "Stretch"
+msgstr "Strecken"
+
+#: ../capplets/appearance/data/appearance.ui.h:52
+msgid "Span"
+msgstr "Spannen"
+
+#: ../capplets/appearance/data/appearance.ui.h:53
+msgid "Solid color"
+msgstr "Einfarbig"
+
+#: ../capplets/appearance/data/appearance.ui.h:54
+msgid "Horizontal gradient"
+msgstr "Horizontaler Verlauf"
+
+#: ../capplets/appearance/data/appearance.ui.h:55
+msgid "Vertical gradient"
+msgstr "Vertikaler Verlauf"
+
+#: ../capplets/appearance/data/appearance.ui.h:56
+msgid "Text below items"
+msgstr "Text unter Symbolen"
+
+#: ../capplets/appearance/data/appearance.ui.h:57
+msgid "Text beside items"
+msgstr "Text neben Symbolen"
+
+#: ../capplets/appearance/data/appearance.ui.h:58
+msgid "Icons only"
+msgstr "Nur Symbole"
+
+#: ../capplets/appearance/data/appearance.ui.h:59
+msgid "Text only"
+msgstr "Nur Text"
+
+#: ../capplets/appearance/data/appearance.ui.h:60
+msgid "Customize Theme"
+msgstr "Thema anpassen"
+
+#: ../capplets/appearance/data/appearance.ui.h:61
+msgid "Controls"
+msgstr "Fensterinhalt"
+
+#: ../capplets/appearance/data/appearance.ui.h:62
+msgid "The current controls theme does not support color schemes."
+msgstr "Das derzeitige Thema unterstützt keine Farbschemata."
+
+#: ../capplets/appearance/data/appearance.ui.h:63
+msgid "_Tooltips:"
+msgstr "_Minihilfen:"
+
+#: ../capplets/appearance/data/appearance.ui.h:64
+msgid "_Selected items:"
+msgstr "_Gewählte Einträge:"
+
+#: ../capplets/appearance/data/appearance.ui.h:65
+msgid "_Input boxes:"
+msgstr "_Eingabefelder:"
+
+#: ../capplets/appearance/data/appearance.ui.h:66
+msgid "_Windows:"
+msgstr "_Fenster:"
+
+#: ../capplets/appearance/data/appearance.ui.h:67
+msgid "Text"
+msgstr "Text"
+
+#: ../capplets/appearance/data/appearance.ui.h:68
+msgid "_Reset to Defaults"
+msgstr "Auf Vor_gabewerte zurücksetzen"
+
+#: ../capplets/appearance/data/appearance.ui.h:69
+msgid "Colors"
+msgstr "Farben"
+
+#: ../capplets/appearance/data/appearance.ui.h:70
+msgid "Window Border"
+msgstr "Fensterrahmen"
+
+#: ../capplets/appearance/data/appearance.ui.h:71
+msgid "Icons"
+msgstr "Symbole"
+
+#: ../capplets/appearance/data/appearance.ui.h:72
+msgid "Changing your cursor theme takes effect the next time you log in."
+msgstr "Änderungen am Mauszeigerthema wirken sich erst beim nächsten Anmelden aus"
+
+#: ../capplets/appearance/data/appearance.ui.h:73
+msgid "_Size:"
+msgstr "G_röße:"
+
+#: ../capplets/appearance/data/appearance.ui.h:74
+#: ../capplets/mouse/mate-mouse-properties.ui.h:16
+msgid "Small"
+msgstr "Klein"
+
+#: ../capplets/appearance/data/appearance.ui.h:75
+#: ../capplets/mouse/mate-mouse-properties.ui.h:18
+msgid "Large"
+msgstr "Groß"
+
+#: ../capplets/appearance/data/appearance.ui.h:76
+msgid "Pointer"
+msgstr "Zeiger"
+
+#: ../capplets/appearance/data/appearance.ui.h:77
+msgid "Save Theme As..."
+msgstr "Thema _speichern unter …"
+
+#: ../capplets/appearance/data/appearance.ui.h:78
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:4
+msgid "_Name:"
+msgstr "_Name:"
+
+#: ../capplets/appearance/data/appearance.ui.h:79
+msgid "_Description:"
+msgstr "_Beschreibung:"
+
+#: ../capplets/appearance/data/appearance.ui.h:80
+msgid "Save _background image"
+msgstr "_Hintergrundbild speichern"
+
+#: ../capplets/appearance/data/mate-appearance-properties.desktop.in.in.h:1
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: ../capplets/appearance/data/mate-appearance-properties.desktop.in.in.h:2
+msgid "Customize the look of the desktop"
+msgstr "Aussehen des Schreibtischs anpassen"
+
+#: ../capplets/appearance/data/mate-theme-installer.desktop.in.in.h:1
+msgid "Theme Installer"
+msgstr "Themeninstallation"
+
+#: ../capplets/appearance/data/mate-theme-installer.desktop.in.in.h:2
+msgid "Installs themes packages for various parts of the desktop"
+msgstr "Themenpakete für verschiedene Teile des Schreibtischs installieren"
+
+#: ../capplets/appearance/data/mate-theme-package.xml.in.h:1
+msgid "Mate Theme Package"
+msgstr "MATE Themen-Paket"
+
+#: ../capplets/appearance/mate-wp-info.c:51
+msgid "No Desktop Background"
+msgstr "Kein Schreibtischhintergrund"
+
+#: ../capplets/appearance/mate-wp-item.c:288
+msgid "unknown"
+msgstr "unbekannt"
+
+#: ../capplets/appearance/mate-wp-item.c:295
+msgid "Slide Show"
+msgstr "Diaschau"
+
+#: ../capplets/appearance/mate-wp-item.c:297
+msgid "Image"
+msgstr "Bild"
+
+#: ../capplets/appearance/mate-wp-item.c:303
+msgid "multiple sizes"
+msgstr "mehrere Größen"
+
+#. translators: x pixel(s) by y pixel(s)
+#: ../capplets/appearance/mate-wp-item.c:306
+#, c-format
+msgid "%d %s by %d %s"
+msgstr "%d %s mal %d %s"
+
+#: ../capplets/appearance/mate-wp-item.c:308
+#: ../capplets/appearance/mate-wp-item.c:310
+msgid "pixel"
+msgid_plural "pixels"
+msgstr[0] "Pixel"
+msgstr[1] "Pixel"
+
+#. translators: <b>wallpaper name</b>
+#. * mime type, size
+#. * Folder: /path/to/file
+#. * Artist: wallpaper author
+#: ../capplets/appearance/mate-wp-item.c:319
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"%s, %s\n"
+"Folder: %s\n"
+"Artist: %s"
+msgstr "<b>%s</b>\n%s, %s\nOrdner: %s\nKünstler: %s"
+
+#. translators: <b>wallpaper name</b>
+#. * Image missing
+#. * Folder: /path/to/file
+#. * Artist: wallpaper author
+#: ../capplets/appearance/mate-wp-item.c:334
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"%s\n"
+"Folder: %s\n"
+"Artist: %s"
+msgstr "<b>%s</b>\n%s\nOrdner: %s\nKünstler: %s"
+
+#: ../capplets/appearance/mate-wp-item.c:339
+msgid "Image missing"
+msgstr "Bild fehlt"
+
+#: ../capplets/appearance/theme-installer.c:178
+#: ../capplets/appearance/theme-installer.c:234
+msgid "Cannot install theme"
+msgstr "Das Thema kann nicht installiert werden"
+
+#: ../capplets/appearance/theme-installer.c:180
+#, c-format
+msgid "The %s utility is not installed."
+msgstr "Das %s-Dienstprogramm ist nicht installiert."
+
+#: ../capplets/appearance/theme-installer.c:236
+msgid "There was a problem while extracting the theme."
+msgstr "Beim Entpacken des Themas ist ein Problem aufgetreten."
+
+#: ../capplets/appearance/theme-installer.c:264
+msgid "There was an error installing the selected file"
+msgstr "Beim Installieren der gewählten Datei ist ein Fehler aufgetreten"
+
+#: ../capplets/appearance/theme-installer.c:265
+#, c-format
+msgid "\"%s\" does not appear to be a valid theme."
+msgstr "»%s« scheint kein gültiges Thema zu sein."
+
+#: ../capplets/appearance/theme-installer.c:266
+#, c-format
+msgid ""
+"\"%s\" does not appear to be a valid theme. It may be a theme engine which "
+"you need to compile."
+msgstr "»%s« scheint kein gültiges Thema zu sein. Es ist möglicherweise eine Themen-Engine, die Sie kompilieren müssen."
+
+#: ../capplets/appearance/theme-installer.c:372
+#, c-format
+msgid "Installation for theme \"%s\" failed."
+msgstr "Installation des Themas »%s« gescheitert."
+
+#: ../capplets/appearance/theme-installer.c:411
+#, c-format
+msgid "The theme \"%s\" has been installed."
+msgstr "Das Thema »%s« wurde installiert."
+
+#: ../capplets/appearance/theme-installer.c:421
+msgid "Would you like to apply it now, or keep your current theme?"
+msgstr "Möchten Sie dieses jetzt anwenden oder Ihr derzeitiges Thema behalten?"
+
+#: ../capplets/appearance/theme-installer.c:424
+msgid "Keep Current Theme"
+msgstr "Aktuelles Thema beibehalten"
+
+#: ../capplets/appearance/theme-installer.c:427
+msgid "Apply New Theme"
+msgstr "Neues Thema anwenden"
+
+#: ../capplets/appearance/theme-installer.c:479
+#, c-format
+msgid "MATE Theme %s correctly installed"
+msgstr "Das MATE-Thema »%s« wurde korrekt installiert"
+
+#: ../capplets/appearance/theme-installer.c:541
+msgid "Failed to create temporary directory"
+msgstr "Temporärer Ordner konnte nicht erstellt werden"
+
+#: ../capplets/appearance/theme-installer.c:604
+msgid "New themes have been successfully installed."
+msgstr "Neue Themen wurden erfolgreich installiert."
+
+#: ../capplets/appearance/theme-installer.c:654
+msgid "No theme file location specified to install"
+msgstr "Kein Ort der zu installierenden Themendatei angegeben"
+
+#: ../capplets/appearance/theme-installer.c:678
+#, c-format
+msgid ""
+"Insufficient permissions to install the theme in:\n"
+"%s"
+msgstr "Unzureichende Zugriffsrechte, um das Thema zu installieren in:\n%s"
+
+#: ../capplets/appearance/theme-installer.c:756
+msgid "Select Theme"
+msgstr "Thema auswählen"
+
+#: ../capplets/appearance/theme-installer.c:767
+msgid "Theme Packages"
+msgstr "Themen-Pakete"
+
+#: ../capplets/appearance/theme-save.c:94
+#, c-format
+msgid "Theme name must be present"
+msgstr "Themenname muss vorhanden sein"
+
+#: ../capplets/appearance/theme-save.c:157
+msgid "The theme already exists. Would you like to replace it?"
+msgstr "Das Thema existiert bereits. Wollen Sie es ersetzen?"
+
+#: ../capplets/appearance/theme-save.c:158
+#: ../capplets/common/file-transfer-dialog.c:450
+msgid "_Overwrite"
+msgstr "_Überschreiben"
+
+#: ../capplets/appearance/theme-util.c:73
+msgid "Would you like to delete this theme?"
+msgstr "Möchten Sie dieses Thema entfernen?"
+
+#: ../capplets/appearance/theme-util.c:123
+msgid "Theme cannot be deleted"
+msgstr "Thema kann nicht gelöscht werden"
+
+#: ../capplets/appearance/theme-util.c:249
+msgid "Could not install theme engine"
+msgstr "Die Themen-Engine konnte nicht installiert werden"
+
+#: ../capplets/common/activate-settings-daemon.c:16
+msgid ""
+"Unable to start the settings manager 'mate-settings-daemon'.\n"
+"Without the MATE settings manager running, some preferences may not take effect. This could indicate a problem with DBus, or a non-MATE (e.g. KDE) settings manager may already be active and conflicting with the MATE settings manager."
+msgstr "Der Einstellungsverwalter »mate-settings-daemon« konnte nicht gestartet werden. Ohne den MATE-Einstellungsverwalter werden möglicherweise einige Einstellungen nicht wirksam. Dies könnte auf ein Problem mit MateComponent oder einen bereits aktiven, nicht-MATE- (z.B. KDE-)Einstellungsverwalter hindeuten, der mit dem MATE-Einstellungsverwalter in Konflikt geraten ist."
+
+#: ../capplets/common/capplet-stock-icons.c:66
+#, c-format
+msgid "Unable to load stock icon '%s'\n"
+msgstr "Repertoire-Symbol »%s« konnte nicht geladen werden\n"
+
+#: ../capplets/common/capplet-util.c:88
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Fehler beim Anzeigen der Hilfe: %s"
+
+#: ../capplets/common/file-transfer-dialog.c:98
+#, c-format
+msgid "Copying file: %u of %u"
+msgstr "Dateien werden kopiert: %u von %u"
+
+#: ../capplets/common/file-transfer-dialog.c:145
+#, c-format
+msgid "Copying '%s'"
+msgstr "»%s« wird kopiert"
+
+#: ../capplets/common/file-transfer-dialog.c:185
+#: ../capplets/common/file-transfer-dialog.c:313
+msgid "Copying files"
+msgstr "Dateien werden kopiert"
+
+#: ../capplets/common/file-transfer-dialog.c:224
+msgid "Parent Window"
+msgstr "Elternfenster"
+
+#: ../capplets/common/file-transfer-dialog.c:225
+msgid "Parent window of the dialog"
+msgstr "Elternfenster des Dialogs"
+
+#: ../capplets/common/file-transfer-dialog.c:231
+msgid "From URI"
+msgstr "Von Adresse"
+
+#: ../capplets/common/file-transfer-dialog.c:232
+msgid "URI currently transferring from"
+msgstr "Adresse wird gerade übertragen von"
+
+#: ../capplets/common/file-transfer-dialog.c:239
+msgid "To URI"
+msgstr "Nach Adresse"
+
+#: ../capplets/common/file-transfer-dialog.c:240
+msgid "URI currently transferring to"
+msgstr "Adresse wird gerade übertragen nach"
+
+#: ../capplets/common/file-transfer-dialog.c:247
+msgid "Fraction completed"
+msgstr "Segment fertig"
+
+#: ../capplets/common/file-transfer-dialog.c:248
+msgid "Fraction of transfer currently completed"
+msgstr "Segment des abgeschlossenen Transfers"
+
+#: ../capplets/common/file-transfer-dialog.c:255
+msgid "Current URI index"
+msgstr "Aktueller Adress-Index"
+
+#: ../capplets/common/file-transfer-dialog.c:256
+msgid "Current URI index - starts from 1"
+msgstr "Aktueller Adress-Index - beginnt bei 1"
+
+#: ../capplets/common/file-transfer-dialog.c:263
+msgid "Total URIs"
+msgstr "Adressen gesamt"
+
+#: ../capplets/common/file-transfer-dialog.c:264
+msgid "Total number of URIs"
+msgstr "Gesamtanzahl der Adressen"
+
+#: ../capplets/common/file-transfer-dialog.c:444
+#, c-format
+msgid "File '%s' already exists. Do you want to overwrite it?"
+msgstr "Die Datei »%s« existiert bereits. Möchten Sie sie ersetzen?"
+
+#: ../capplets/common/file-transfer-dialog.c:447
+msgid "_Skip"
+msgstr "Ü_berspringen"
+
+#: ../capplets/common/file-transfer-dialog.c:448
+msgid "Overwrite _All"
+msgstr "_Alle überschreiben"
+
+#: ../capplets/common/mate-theme-info.c:695
+msgid "Default Pointer - Current"
+msgstr "Voreingestellter Zeiger – momentan verwendet"
+
+#: ../capplets/common/mate-theme-info.c:699
+msgid "White Pointer"
+msgstr "Weißer Zeiger"
+
+#: ../capplets/common/mate-theme-info.c:700
+msgid "White Pointer - Current"
+msgstr "Weißer Zeiger – momentan verwendet"
+
+#: ../capplets/common/mate-theme-info.c:704
+msgid "Large Pointer"
+msgstr "Großer Zeiger"
+
+#: ../capplets/common/mate-theme-info.c:705
+msgid "Large Pointer - Current"
+msgstr "Großer Zeiger – momentan verwendet"
+
+#: ../capplets/common/mate-theme-info.c:709
+msgid "Large White Pointer - Current"
+msgstr "Großer weißer Zeiger – momentan verwendet"
+
+#: ../capplets/common/mate-theme-info.c:710
+msgid "Large White Pointer"
+msgstr "Großer weißer Zeiger"
+
+#: ../capplets/common/mate-theme-info.c:1694
+#, c-format
+msgid ""
+"This theme will not look as intended because the required GTK+ theme '%s' is"
+" not installed."
+msgstr "Dieses Thema kann nicht wie gewünscht dargestellt werden, da das benötigte GTK+-Thema »%s« nicht installiert ist."
+
+#: ../capplets/common/mate-theme-info.c:1704
+#, c-format
+msgid ""
+"This theme will not look as intended because the required window manager "
+"theme '%s' is not installed."
+msgstr "Dieses Thema kann nicht wie gewünscht dargestellt werden, da das benötige Thema für die Fensterverwaltung »%s« nicht installiert ist."
+
+#: ../capplets/common/mate-theme-info.c:1712
+#, c-format
+msgid ""
+"This theme will not look as intended because the required icon theme '%s' is"
+" not installed."
+msgstr "Dieses Thema kann nicht wie gewünscht dargestellt werden, da das benötigte Symbol-Thema »%s« nicht installiert ist."
+
+#: ../capplets/default-applications/mate-default-applications-properties.desktop.in.in.h:1
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:1
+msgid "Preferred Applications"
+msgstr "Bevorzugte Anwendungen"
+
+#: ../capplets/default-applications/mate-default-applications-properties.desktop.in.in.h:2
+msgid "Select your default applications"
+msgstr "Bevorzugte Anwendungen auswählen"
+
+#: ../capplets/default-applications/mate-da-capplet.c:448
+msgid "Could not load the main interface"
+msgstr "Haupt-Schnittstelle konnte nicht geladen werden"
+
+#: ../capplets/default-applications/mate-da-capplet.c:449
+msgid "Please make sure that the applet is properly installed"
+msgstr "Bitte stellen Sie sicher, dass dieses Applet korrekt installiert ist."
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/default-applications/mate-da-capplet.c:574
+msgid "Specify the name of the page to show (internet|multimedia|system|a11y)"
+msgstr "Der Namen der anzuzeigenden Seite. Mögliche Werte: »internet«, »multimedia«, »system«, »a11y« (Barrierefreiheit)."
+
+#: ../capplets/default-applications/mate-da-capplet.c:580
+msgid "- MATE Default Applications"
+msgstr "- Vorgabe-Anwendungen von MATE"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:2
+msgid "Web Browser"
+msgstr "Webbrowser"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:4
+#, no-c-format
+msgid "All %s occurrences will be replaced with actual link"
+msgstr "Alle Vorkommen von %s werden durch den übergebenen Link ersetzt"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:5
+msgid "Run in t_erminal"
+msgstr "Im _Terminal ausführen"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:6
+msgid "Open link with web browser _default"
+msgstr "Link in der _Vorgabe des Webbrowsers öffnen"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:7
+msgid "Open link in new _tab"
+msgstr "Link in neuem _Reiter öffnen"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:8
+msgid "Open link in new _window"
+msgstr "Link in neuem _Fenster öffnen"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:9
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:5
+msgid "C_ommand:"
+msgstr "Be_fehl:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:10
+msgid "Mail Reader"
+msgstr "E-Mail-Betrachter"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:11
+msgid "Co_mmand:"
+msgstr "Be_fehl:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:12
+msgid "Instant Messenger"
+msgstr "Sofortnachrichtendienst"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:13
+msgid "Internet"
+msgstr "Internet"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:14
+msgid "Image Viewer"
+msgstr "Bildbetrachter"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:15
+msgid "Multimedia Player"
+msgstr "Medienwiedergabe"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:16
+msgid "Video Player"
+msgstr "Filmwiedergabe"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:17
+msgid "Multimedia"
+msgstr "Multimedia"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:18
+msgid "Text Editor"
+msgstr "Textbearbeiter"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:19
+msgid "Terminal Emulator"
+msgstr "Terminal-Emulator"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:20
+msgid "E_xecute flag:"
+msgstr "»Aus_führen«-Option:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:21
+msgid "File Manager"
+msgstr "Dateiverwaltung"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:22
+msgid "System"
+msgstr "System"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:23
+msgid "Visual"
+msgstr "Visueller Alarm"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:24
+msgid "_Run at start"
+msgstr "Beim Starten _ausführen"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:25
+msgid "Mobility"
+msgstr "Mobilität"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:26
+msgid "Run at st_art"
+msgstr "Beim Starten _ausführen"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:27
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:45
+msgid "Accessibility"
+msgstr "Barrierefreiheit"
+
+#: ../capplets/display/display-capplet.ui.h:1
+msgid "Monitor Preferences"
+msgstr "Bildschirmeinstellungen"
+
+#: ../capplets/display/display-capplet.ui.h:2
+msgid "Sa_me image in all monitors"
+msgstr "Gleiches Bild auf _allen Bildschirmen"
+
+#: ../capplets/display/display-capplet.ui.h:3
+msgid "_Detect monitors"
+msgstr "_Bildschirme erkennen"
+
+#: ../capplets/display/display-capplet.ui.h:4
+msgid "Panel icon"
+msgstr "Leistensymbol"
+
+#: ../capplets/display/display-capplet.ui.h:5
+msgid "_Show monitors in panel"
+msgstr "Bildschirme in der _Leiste anzeigen"
+
+#: ../capplets/display/display-capplet.ui.h:6
+msgid "_Resolution:"
+msgstr "_Auflösung:"
+
+#: ../capplets/display/display-capplet.ui.h:7
+msgid "Re_fresh rate:"
+msgstr "Wiederhol_rate:"
+
+#: ../capplets/display/display-capplet.ui.h:8
+msgid "On"
+msgstr "Ein"
+
+#: ../capplets/display/display-capplet.ui.h:9
+msgid "Off"
+msgstr "Aus"
+
+#: ../capplets/display/display-capplet.ui.h:10
+#: ../capplets/display/xrandr-capplet.c:513
+msgid "Monitor"
+msgstr "Bildschirm"
+
+#: ../capplets/display/display-capplet.ui.h:11
+msgid "R_otation:"
+msgstr "R_otation:"
+
+#: ../capplets/display/display-capplet.ui.h:12
+msgid "Include _panel"
+msgstr "_Leiste einschließen"
+
+#: ../capplets/display/display-capplet.ui.h:13
+msgid "Make Default"
+msgstr "Als Vorgabe verwenden"
+
+#: ../capplets/display/display-capplet.ui.h:14
+#: ../capplets/display/xrandr-capplet.c:309
+#: ../capplets/display/xrandr-capplet.c:348
+msgid "Normal"
+msgstr "Normal"
+
+#: ../capplets/display/display-capplet.ui.h:15
+#: ../capplets/display/xrandr-capplet.c:310
+msgid "Left"
+msgstr "Links"
+
+#: ../capplets/display/display-capplet.ui.h:16
+#: ../capplets/display/xrandr-capplet.c:311
+msgid "Right"
+msgstr "Rechts"
+
+#: ../capplets/display/display-capplet.ui.h:17
+msgid "Upside-down"
+msgstr "Kopfüber"
+
+#: ../capplets/display/mate-display-properties.desktop.in.in.h:1
+msgid "Monitors"
+msgstr "Bildschirme"
+
+#: ../capplets/display/mate-display-properties.desktop.in.in.h:2
+msgid "Change resolution and position of monitors"
+msgstr "Auflösung und Anordnung der Bildschirme ändern"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:44
+#, c-format
+msgid ""
+"Usage: %s SOURCE_FILE DEST_NAME\n"
+"\n"
+"This program installs a RANDR profile for multi-monitor setups into\n"
+"a systemwide location.  The resulting profile will get used when\n"
+"the RANDR plug-in gets run in mate-settings-daemon.\n"
+"\n"
+"SOURCE_FILE - a full pathname, typically /home/username/.config/monitors.xml\n"
+"\n"
+"DEST_NAME - relative name for the installed file.  This will get put in\n"
+"            the systemwide directory for RANDR configurations,\n"
+"            so the result will typically be %s/DEST_NAME\n"
+msgstr "Aufruf: %s QUELLDATEI ZIELNAME\n\nDieses Programm installiert ein RANDR-Profile für den Betrieb mehrerer\nBildschirme an einen systemweit verfügbaren Ort. Das Profil wird verwendet,\nwenn das RANDR-Plugin durch den mate-settings-daemon ausgeführt wird.\n\nQUELLDATEI - vollständiger Pfadname, typischerweise /home/username/.config/monitors.xml\n\nZIELNAME - relativer Name der installierten Datei. Dies wird in den\n           systemweiten Ordner für RANDR-Konfigurationen installiert,\n           so dass das Ergebnis typischerweise %s/ZIELNAME sein wird.\n"
+
+#. Translators: only able to install RANDR profiles as root
+#: ../capplets/display/mate-display-properties-install-systemwide.c:151
+msgid "This program can only be used by the root user"
+msgstr "Dieses Programm darf nur vom Benutzer »root« ausgeführt werden"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:168
+msgid "The source filename must be absolute"
+msgstr "Der Pfad zur Quelldatei muss absolut sein"
+
+#. Translators: first %s is a filename; second %s is an error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:179
+#, c-format
+msgid "Could not open %s: %s\n"
+msgstr "%s konnte nicht geöffnet werden: %s\n"
+
+#. Translators: first %s is a filename; second %s is an error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:188
+#, c-format
+msgid "Could not get information for %s: %s\n"
+msgstr "Informationen für %s konnten nicht erhalten werden: %s\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:195
+#, c-format
+msgid "%s must be a regular file\n"
+msgstr "%s muss eine reguläre Datei sein\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:204
+msgid "This program must only be run through pkexec(1)"
+msgstr "Dieses Programm darf nur durch pkexec(1) ausgeführt werden"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:209
+msgid "PKEXEC_UID must be set to an integer value"
+msgstr "PKEXEC_UID muss auf einen Ganzzahlwert gesetzt sein"
+
+#. Translators: we are complaining that a file must be really owned by the
+#. user who called this program
+#: ../capplets/display/mate-display-properties-install-systemwide.c:215
+#, c-format
+msgid "%s must be owned by you\n"
+msgstr "Sie müssen Eigentümer von %s sein\n"
+
+#. Translators: here we are saying that a plain filename must look like
+#. "filename", not like "some_dir/filename"
+#: ../capplets/display/mate-display-properties-install-systemwide.c:223
+#, c-format
+msgid "%s must not have any directory components\n"
+msgstr "%s darf keine Ordnerkomponenten enthalten\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:231
+#, c-format
+msgid "%s must be a directory\n"
+msgstr "%s muss ein Ordner sein\n"
+
+#. Translators: the first %s/%s is a directory/filename; the last %s is an
+#. error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:242
+#, c-format
+msgid "Could not open %s/%s: %s\n"
+msgstr "%s/%s konnte nicht geöffnet werden: %s\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:262
+#, c-format
+msgid "Could not rename %s to %s: %s\n"
+msgstr "%s konnte nicht in %s umbenannt werden: %s\n"
+
+#: ../capplets/display/org.mate.randr.policy.in.h:1
+msgid "Install multi-monitor settings for the whole system"
+msgstr "Mehrfachbildschirmeinstellungen systemweit installieren"
+
+#: ../capplets/display/org.mate.randr.policy.in.h:2
+msgid ""
+"Authentication is required to install multi-monitor settings for all users"
+msgstr "Zur Installation von Mehrfachbildschirmeinstellungen, für alle Benutzer, ist eine Legitimierung erforderlich"
+
+#: ../capplets/display/xrandr-capplet.c:312
+msgid "Upside Down"
+msgstr "Kopfüber"
+
+#: ../capplets/display/xrandr-capplet.c:354
+#, c-format
+msgid "%d Hz"
+msgstr "%d Hz"
+
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#: ../capplets/display/xrandr-capplet.c:502
+#: ../capplets/display/xrandr-capplet.c:1652
+msgid "Mirror Screens"
+msgstr "Bildschirme spiegeln"
+
+#: ../capplets/display/xrandr-capplet.c:504
+#, c-format
+msgid "Monitor: %s"
+msgstr "Bildschirm: %s"
+
+#: ../capplets/display/xrandr-capplet.c:582
+#, c-format
+msgid "%d x %d"
+msgstr "%d × %d"
+
+#: ../capplets/display/xrandr-capplet.c:1508
+msgid ""
+"Select a monitor to change its properties; drag it to rearrange its "
+"placement."
+msgstr "Wählen Sie einen Bildschirm, um dessen Eigenschaften zu ändern. Ziehen Sie ihn, um ihn neu zu platzieren."
+
+#: ../capplets/display/xrandr-capplet.c:2073
+msgid "Could not save the monitor configuration"
+msgstr "Die Bildschirmkonfiguration konnte nicht gespeichert werden"
+
+#: ../capplets/display/xrandr-capplet.c:2095
+msgid "Could not get session bus while applying display configuration"
+msgstr "Beim Anwenden der Bildschirmeinstellungen konnte der Sitzungsbus nicht angefordert werden"
+
+#: ../capplets/display/xrandr-capplet.c:2137
+msgid "Could not detect displays"
+msgstr "Anzeigen konnten nicht erkannt werden"
+
+#: ../capplets/display/xrandr-capplet.c:2334
+msgid "The monitor configuration has been saved"
+msgstr "Die Bildschirmkonfiguration wurde gespeichert"
+
+#: ../capplets/display/xrandr-capplet.c:2336
+msgid "This configuration will be used the next time someone logs in."
+msgstr "Diese Konfiguration wird verwendet, sobald sich der nächste Benutzer anmeldet."
+
+#: ../capplets/display/xrandr-capplet.c:2345
+msgid "Could not set the default configuration for monitors"
+msgstr "Die Bildschirmkonfiguration konnte nicht gespeichert werden"
+
+#: ../capplets/display/xrandr-capplet.c:2429
+msgid "Could not get screen information"
+msgstr "Bildschirminformationen konnten nicht ausgelesen werden"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:24
+msgid "New shortcut..."
+msgstr "Neue Tastenkombination …"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:160
+#: ../capplets/keybindings/eggcellrendererkeys.c:161
+msgid "Accelerator key"
+msgstr "Auslösetasten der Kombination"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:170
+#: ../capplets/keybindings/eggcellrendererkeys.c:171
+msgid "Accelerator modifiers"
+msgstr "Zusatztasten der Kombination"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:179
+#: ../capplets/keybindings/eggcellrendererkeys.c:180
+msgid "Accelerator keycode"
+msgstr "Tastencode der Kombination"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:190
+msgid "Accel Mode"
+msgstr "Kombinationsmodus"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:191
+msgid "The type of accelerator."
+msgstr "Der Tastenkombinationstyp."
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:234
+#: ../capplets/keybindings/mate-keybinding-properties.c:137
+#: ../typing-break/drwright.c:504
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:219
+msgid "<Unknown Action>"
+msgstr "<Unbekannte Aktion>"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1026
+#: ../capplets/keybindings/mate-keybinding-properties.c:1624
+msgid "Custom Shortcuts"
+msgstr "Eigene Tastenkombinationen"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1204
+msgid "Error saving the new shortcut"
+msgstr "Beim Speichern der neuen Tastenkombination ist ein Fehler aufgetreten"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1280
+#, c-format
+msgid ""
+"The shortcut \"%s\" cannot be used because it will become impossible to type using this key.\n"
+"Please try with a key such as Control, Alt or Shift at the same time."
+msgstr "Die Tastenkombination »%s« kann nicht verwendet werden, da es dann unmöglich wäre, mit dieser Taste zu schreiben.\nBitte versuchen Sie eine Kombination mit einer Taste wie Strg, Alt oder der Umschalttaste."
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1312
+#, c-format
+msgid ""
+"The shortcut \"%s\" is already used for\n"
+"\"%s\""
+msgstr "Die Tastenkombination »%s« wird bereits für\n»%s«\nverwendet."
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1319
+#, c-format
+msgid "If you reassign the shortcut to \"%s\", the \"%s\" shortcut will be disabled."
+msgstr "Wenn Sie diese Tastenkombination »%s« zuweisen, wird die Tastenkombination für »%s« deaktiviert."
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1324
+msgid "_Reassign"
+msgstr "_Zuweisen"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1579
+msgid "Too many custom shortcuts"
+msgstr "Zu viele individuelle Tastenkombinationen"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1867
+msgid "Action"
+msgstr "Aktion"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1889
+msgid "Shortcut"
+msgstr "Tastenkombination"
+
+#. * vim: sw=2 ts=8 cindent noai bs=2
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:1
+#: ../capplets/keybindings/mate-keybinding.desktop.in.in.h:1
+msgid "Keyboard Shortcuts"
+msgstr "Tastenkombinationen"
+
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:2
+msgid ""
+"To edit a shortcut key, click on the corresponding row and type a new key "
+"combination, or press backspace to clear."
+msgstr "Klicken Sie auf eine Zeile und geben Sie eine neue Tastenkombination ein, um diese zu übernehmen, oder drücken Sie die Rücktaste, um sie zu löschen."
+
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:3
+msgid "Custom Shortcut"
+msgstr "Individuelle Tastenkombination"
+
+#: ../capplets/keybindings/mate-keybinding.desktop.in.in.h:2
+msgid "Assign shortcut keys to commands"
+msgstr "Befehlen eine Tastenkombination zuweisen"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:203
+#: ../capplets/keyboard/mate-keyboard-properties.c:208
+msgid ""
+"Just apply settings and quit (compatibility only; now handled by daemon)"
+msgstr "Nur Einstellungen anwenden und beenden (Nur zur Kompatibilität; wird nun durch einen Hintergrunddienst gehandhabt)"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:213
+msgid "Start the page with the typing break settings showing"
+msgstr "Zu Beginn die Seite anzeigen, die die Einstellungen für Tipppausen enthält"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:218
+msgid "Start the page with the accessibility settings showing"
+msgstr "Zu Beginn die Seite anzeigen, die die Einstellungen für Barrierefreiheit enthält"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:224
+msgid "- MATE Keyboard Preferences"
+msgstr "– MATE-Tastatureinstellungen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:1
+msgid "Keyboard Accessibility Audio Feedback"
+msgstr "Tastatur-Barrierefreiheit – Signaltöne"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:2
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:15
+#: ../capplets/mouse/mate-mouse-properties.ui.h:24
+#: ../capplets/windows/mate-window-properties.c:319
+msgid "General"
+msgstr "Allgemein"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:3
+msgid "Beep when _accessibility features are turned on or off"
+msgstr "Signalton ausgeben, wenn Funktionen zur _Barrierefreiheit aktiviert oder deaktiviert werden"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:4
+msgid "Beep when a _toggle key is pressed"
+msgstr "Signalton ausgeben, wenn eine _Umschalttaste gedrückt wird"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:5
+msgid "Visual cues for sounds"
+msgstr "Visuelle Hinweise für Klänge"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:6
+msgid "Show _visual feedback for the alert sound"
+msgstr "_Visuelle Rückmeldungen bei Alarmklängen geben"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:7
+msgid "Flash _window titlebar"
+msgstr "Fensterleiste _blinken"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:8
+msgid "Flash entire _screen"
+msgstr "Ganzen Bildschirm b_linken"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:9
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:39
+msgid "Slow Keys"
+msgstr "Tastenverzögerung"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:10
+msgid "Beep when a key is pr_essed"
+msgstr "Signalton ausgeben, wenn eine _Taste gedrückt wird"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:11
+msgid "Beep when key is _accepted"
+msgstr "Signalton ausgeben, wenn eine Taste ak_zeptiert wird"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:12
+msgid "Beep when key is _rejected"
+msgstr "Signalton ausgeben, wenn Taste ab_gewiesen wird"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:13
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:41
+msgid "Bounce Keys"
+msgstr "Springende Tasten"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:14
+msgid "Beep when a key is reje_cted"
+msgstr "Signalton ausgeben, wenn eine Taste a_bgewiesen wird"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:15
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:36
+msgid "Sticky Keys"
+msgstr "Klebrige Tasten"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:16
+msgid "Beep when a _modifier key is pressed"
+msgstr "Signalton ausgeben, wenn eine _Zusatztaste gedrückt wird"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:1
+msgid "Keyboard Preferences"
+msgstr "Tastatureinstellungen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:2
+msgid "Repeat Keys"
+msgstr "Tastenwiederholung"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:3
+msgid "Key presses _repeat when key is held down"
+msgstr "Tasten _wiederholt auslösen, wenn sie gedrückt gehalten werden"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:4
+msgid "_Delay:"
+msgstr "_Verzögerung:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:5
+msgid "_Speed:"
+msgstr "_Geschwindigkeit:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:6
+#: ../capplets/mouse/mate-mouse-properties.ui.h:21
+msgid "Short"
+msgstr "Kurz"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:7
+#: ../capplets/mouse/mate-mouse-properties.ui.h:10
+msgid "Slow"
+msgstr "Langsam"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:8
+msgid "Repeat keys speed"
+msgstr "Geschwindigkeit der Tastenwiederholung"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:9
+#: ../capplets/mouse/mate-mouse-properties.ui.h:22
+msgid "Long"
+msgstr "Lang"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:10
+#: ../capplets/mouse/mate-mouse-properties.ui.h:11
+msgid "Fast"
+msgstr "Schnell"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:11
+msgid "Cursor Blinking"
+msgstr "Blinkender Cursor"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:12
+msgid "Cursor _blinks in text fields"
+msgstr "B_linkender Cursor in Textfeldern"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:13
+msgid "S_peed:"
+msgstr "Ge_schwindigkeit:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:14
+#: ../capplets/mouse/mate-mouse-properties.ui.h:17
+msgid "Cursor blinks speed"
+msgstr "Blinkgeschwindigkeit des Cursors"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:16
+msgid "List of keyboard layouts selected for usage"
+msgstr "Liste der zur Benutzung ausgewählten Tastaturbelegungen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:18
+msgid "Select a keyboard layout to be added to the list"
+msgstr "Eine zur Liste hinzuzufügende Tastaturbelegung wählen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:19
+msgid "Remove the selected keyboard layout from the list"
+msgstr "Die gewählte Tastaturbelegung aus der Liste entfernen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:20
+msgid "Move _Up"
+msgstr "Hin_auf schieben"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:21
+msgid "Move the selected keyboard layout up in the list"
+msgstr "Die gewählte Tastaturbelegung in der Liste nach oben verschieben"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:22
+msgid "Move _Down"
+msgstr "Hin_unter schieben"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:23
+msgid "Move the selected keyboard layout down in the list"
+msgstr "Die gewählte Tastaturbelegung in der Liste nach unten verschieben"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:24
+msgid "_Show..."
+msgstr "_Anzeigen …"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:25
+msgid "Print a diagram of the selected keyboard layout"
+msgstr "Eine Übersicht der gewählten Tastaturbelegung drucken"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:26
+msgid "_Separate layout for each window"
+msgstr "_Separate Belegung für jedes Fenster"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:27
+msgid "New windows u_se active window's layout"
+msgstr "Neue Fenster _verwenden die Belegung des aktiven Fensters"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:28
+msgid "Keyboard _model:"
+msgstr "Tastatur_modell:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:29
+msgid "_Options..."
+msgstr "_Optionen …"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:30
+msgid "View and edit keyboard layout options"
+msgstr "Tastaturbelegungseinstellungen betrachten und bearbeiten"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:31
+msgid "Reset to De_faults"
+msgstr "Auf Vor_gabewerte zurücksetzen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:32
+msgid ""
+"Replace the current keyboard layout settings with the\n"
+"default settings"
+msgstr "Die aktuellen Einstellungen zur Tastaturbelegung\ndurch die Vorgabeeinstellungen ersetzen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:34
+msgid "Layouts"
+msgstr "Belegungen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:35
+msgid "_Accessibility features can be toggled with keyboard shortcuts"
+msgstr "Funktionen zur _Barrierefreiheit mittels Tastatur ein- und ausschalten"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:37
+msgid "_Simulate simultaneous keypresses"
+msgstr "Gleich_zeitige Tastenanschläge simulieren"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:38
+msgid "Disa_ble sticky keys if two keys are pressed together"
+msgstr "Dea_ktivieren, wenn zwei Tasten zusammen gedrückt werden"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:40
+msgid "_Only accept long keypresses"
+msgstr "Nur _lange Tastenanschläge akzeptieren"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:42
+msgid "_Ignore fast duplicate keypresses"
+msgstr "Schnelle _doppelte Tastenanschläge ignorieren"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:43
+msgid "D_elay:"
+msgstr "_Verzögerung:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:44
+msgid "Audio _Feedback..."
+msgstr "_Signaltöne …"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:46
+msgid "_Pointer can be controlled using the keypad"
+msgstr "_Mauszeiger per Tastatur steuern"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:47
+#: ../capplets/mouse/mate-mouse-properties.ui.h:8
+msgid "_Acceleration:"
+msgstr "_Beschleunigung:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:48
+msgid "Mouse Keys"
+msgstr "Maustasten"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:49
+msgid "_Lock screen to enforce typing break"
+msgstr "Bildschirm sperren und so eine _Tipppause erzwingen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:50
+msgid ""
+"Lock screen after a certain duration to help prevent repetitive keyboard use"
+" injuries"
+msgstr "Bildschirm nach einer bestimmten Zeit sperren, um die Folgen exzessiven Tastaturgebrauchs einzudämmen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:51
+msgid "_Work interval lasts:"
+msgstr "_Arbeitsintervall dauert:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:52
+msgid "_Break interval lasts:"
+msgstr "_Pausenintervall dauert:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:53
+msgid "Duration of work before forcing a break"
+msgstr "Arbeitsdauer, bevor eine Pause erzwungen wird"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:54
+msgid "Duration of the break when typing is disallowed"
+msgstr "Dauer der Pause, während der das Tippen unterbunden wird"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:55
+msgid "minutes"
+msgstr "Minuten"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:56
+msgid "All_ow postponing of breaks"
+msgstr "_Verschieben von Pausen zulassen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:57
+msgid "Check if breaks are allowed to be postponed"
+msgstr "Legt fest, ob Pausen verschoben werden dürfen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:58
+msgid "Typing Break"
+msgstr "Tipppause"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:59
+msgid "_Type to test settings:"
+msgstr "Einstellungen über_prüfen:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:1
+msgid "Choose a Layout"
+msgstr "Wählen Sie eine Tastaturbelegung"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:2
+msgid "_Variants:"
+msgstr "_Varianten:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:3
+msgid "_Country:"
+msgstr "La_nd:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:4
+msgid "By _country"
+msgstr "Nach La_nd"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:5
+msgid "_Language:"
+msgstr "_Sprache:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:6
+msgid "By _language"
+msgstr "Nach _Sprache"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:7
+msgid "Preview:"
+msgstr "Vorschau:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:1
+msgid "Choose a Keyboard Model"
+msgstr "Wählen Sie ein Tastaturmodell"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:2
+msgid "_Vendors:"
+msgstr "_Anbieter:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:3
+msgid "_Models:"
+msgstr "_Modelle:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-options-dialog.ui.h:1
+msgid "Keyboard Layout Options"
+msgstr "Tastaturbelegungseinstellungen"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkb.c:85
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkblt.c:240
+msgid "Layout"
+msgstr "Belegung"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbmc.c:173
+msgid "Vendors"
+msgstr "Hersteller"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbmc.c:239
+msgid "Models"
+msgstr "Modelle"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbot.c:237
+msgid "Default"
+msgstr "Vorgabe"
+
+#: ../capplets/keyboard/mate-keyboard.desktop.in.in.h:1
+msgid "Keyboard"
+msgstr "Tastatur"
+
+#: ../capplets/keyboard/mate-keyboard.desktop.in.in.h:2
+msgid "Set your keyboard preferences"
+msgstr "Die Tastatureinstellungen festlegen"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/mouse/mate-mouse-properties.c:495
+msgid "Specify the name of the page to show (general)"
+msgstr "Geben Sie den Namen der Seite zu zeigen an (allgemein)"
+
+#: ../capplets/mouse/mate-mouse-properties.c:500
+msgid "- MATE Mouse Preferences"
+msgstr "– MATE-Mauseinstellungen"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:1
+msgid "Mouse Preferences"
+msgstr "Mauseinstellungen"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:2
+msgid "Mouse Orientation"
+msgstr "Mausposition"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:3
+msgid "_Right-handed"
+msgstr "Mit _rechts bediente Maus"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:4
+msgid "_Left-handed"
+msgstr "Mit _links bediente Maus"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:5
+msgid "Locate Pointer"
+msgstr "Zeigerposition anzeigen"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:6
+msgid "Sh_ow position of pointer when the Control key is pressed"
+msgstr "_Position des Mauszeigers anzeigen, wenn die Strg-Taste gedrückt wird"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:7
+msgid "Pointer Speed"
+msgstr "Zeigergeschwindigkeit"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:9
+msgid "_Sensitivity:"
+msgstr "_Empfindlichkeit:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:12
+msgid "Low"
+msgstr "Niedrig"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:13
+msgid "High"
+msgstr "Hoch"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:14
+msgid "Drag and Drop"
+msgstr "Ziehen und Ablegen"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:15
+msgid "Thr_eshold:"
+msgstr "_Schwellenwert:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:19
+msgid "Double-Click Timeout"
+msgstr "Max. Doppelklickintervall"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:20
+msgid "_Timeout:"
+msgstr "_Intervall:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:23
+msgid ""
+"To test your double-click settings, try to double-click on the light bulb."
+msgstr "Versuchen Sie, einen Doppelklick auf der Glühlampe auszuführen, um die Doppelklickeinstellungen zu testen."
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:25
+msgid "Disable _touchpad while typing"
+msgstr "_Touchpad beim Tippen sperren"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:26
+msgid "Enable _mouse clicks with touchpad"
+msgstr "Maus_klicks per Touchpad freischalten"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:27
+msgid "Scrolling"
+msgstr "Bildlauf"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:28
+msgid "_Disabled"
+msgstr "_Deaktiviert"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:29
+msgid "_Edge scrolling"
+msgstr "Bildlauf am _Rand"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:30
+msgid "Two-_finger scrolling"
+msgstr "Bildlauf mit zwei _Fingern"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:31
+msgid "Enable h_orizontal scrolling"
+msgstr "_Horizontalen Bildlauf einschalten"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:32
+msgid "Touchpad"
+msgstr "Touchpad"
+
+#: ../capplets/mouse/mate-settings-mouse.desktop.in.in.h:1
+msgid "Mouse"
+msgstr "Maus"
+
+#: ../capplets/mouse/mate-settings-mouse.desktop.in.in.h:2
+msgid "Set your mouse preferences"
+msgstr "Die Mauseinstellungen festlegen"
+
+#: ../capplets/network/mate-network-properties.desktop.in.in.h:1
+msgid "Network Proxy"
+msgstr "Netzwerk-Proxy"
+
+#: ../capplets/network/mate-network-properties.desktop.in.in.h:2
+msgid "Set your network proxy preferences"
+msgstr "Legen Sie hier Ihre Netzwerk-Proxy-Einstellungen fest"
+
+#: ../capplets/network/mate-network-properties.ui.h:1
+msgid "HTTP Proxy Details"
+msgstr "HTTP-Proxy-Details"
+
+#: ../capplets/network/mate-network-properties.ui.h:2
+msgid "<b>_Use authentication</b>"
+msgstr "<b>_Legitimation erforderlich</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:3
+msgid "U_sername:"
+msgstr "_Benutzername:"
+
+#: ../capplets/network/mate-network-properties.ui.h:4
+msgid "_Password:"
+msgstr "_Passwort:"
+
+#: ../capplets/network/mate-network-properties.ui.h:5
+msgid "Network Proxy Preferences"
+msgstr "Netzwerk-Proxy-Einstellungen"
+
+#: ../capplets/network/mate-network-properties.ui.h:6
+msgid "<b>Di_rect internet connection</b>"
+msgstr "<b>Di_rekte Internet-Verbindung</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:7
+msgid "<b>_Manual proxy configuration</b>"
+msgstr "<b>_Manuelle Proxy-Konfiguration</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:8
+msgid "H_TTP proxy:"
+msgstr "H_TTP-Proxy:"
+
+#: ../capplets/network/mate-network-properties.ui.h:9
+msgid "_Secure HTTP proxy:"
+msgstr "_Sicherer HTTP-Proxy:"
+
+#: ../capplets/network/mate-network-properties.ui.h:10
+msgid "_FTP proxy:"
+msgstr "_FTP-Proxy:"
+
+#: ../capplets/network/mate-network-properties.ui.h:11
+msgid "S_ocks host:"
+msgstr "S_ocks-Rechner:"
+
+#: ../capplets/network/mate-network-properties.ui.h:12
+msgid "Port:"
+msgstr "Port:"
+
+#: ../capplets/network/mate-network-properties.ui.h:13
+msgid "_Details"
+msgstr "_Details"
+
+#: ../capplets/network/mate-network-properties.ui.h:14
+msgid "<b>_Automatic proxy configuration</b>"
+msgstr "<b>_Automatische Proxy-Konfiguration</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:15
+msgid "Autoconfiguration _URL:"
+msgstr "A_dresse für automatische Konfiguration:"
+
+#: ../capplets/network/mate-network-properties.ui.h:16
+msgid "Proxy Configuration"
+msgstr "Proxy-Konfiguration"
+
+#: ../capplets/network/mate-network-properties.ui.h:17
+msgid "Ignore Host List"
+msgstr "Ignorierte Rechnerliste"
+
+#: ../capplets/network/mate-network-properties.ui.h:18
+msgid "Ignored Hosts"
+msgstr "Ignorierte Rechner"
+
+#: ../capplets/windows/mate-metacity-support.c:40
+msgid "Metacity Preferences"
+msgstr "Metacity-Einstellungen"
+
+#. Compositing manager
+#: ../capplets/windows/mate-metacity-support.c:51
+#: ../capplets/windows/mate-window-properties.c:333
+msgid "Compositing Manager"
+msgstr "Compositing-Verwaltung"
+
+#: ../capplets/windows/mate-metacity-support.c:58
+#: ../capplets/windows/mate-window-properties.c:339
+msgid "Enable software _compositing window manager"
+msgstr "_Software-Compositing-Fensterverwaltung akivieren"
+
+#: ../capplets/windows/mate-window-properties.c:218
+msgid "The current window manager is unsupported"
+msgstr "Die aktuelle Fensterverwaltung wird nicht unterstützt"
+
+#. Window
+#: ../capplets/windows/mate-window-properties.c:304
+msgid "Window Preferences"
+msgstr "Fenstereinstellungen"
+
+#: ../capplets/windows/mate-window-properties.c:323
+msgid "Behaviour"
+msgstr "Verhalten"
+
+#: ../capplets/windows/mate-window-properties.c:327
+msgid "Placement"
+msgstr "Platzierung"
+
+#: ../capplets/windows/mate-window-properties.c:340
+msgid "Disable _thumbnails in Alt-Tab"
+msgstr "_Vorschaubilder in Alt-Tab deaktivieren"
+
+#. New Windows
+#: ../capplets/windows/mate-window-properties.c:348
+msgid "New Windows"
+msgstr "Neue Fenster"
+
+#: ../capplets/windows/mate-window-properties.c:352
+msgid "Center _new windows"
+msgstr "_Neue Fenster erstellen"
+
+#. Window Snapping
+#: ../capplets/windows/mate-window-properties.c:357
+msgid "Window Snapping"
+msgstr "Fenster einrasten"
+
+#: ../capplets/windows/mate-window-properties.c:361
+msgid "Enable side by side _tiling"
+msgstr "_Nebeneinader kacheln aktivieren"
+
+#. Window Selection
+#: ../capplets/windows/mate-window-properties.c:366
+msgid "Window Selection"
+msgstr "Fensterauswahl"
+
+#: ../capplets/windows/mate-window-properties.c:375
+msgid "_Select windows when the mouse moves over them"
+msgstr "_Fenster auswählen, wenn sich die Maus darüber befindet"
+
+#: ../capplets/windows/mate-window-properties.c:378
+msgid "_Raise selected windows after an interval"
+msgstr "Aktivierte Fenster _nach einer bestimmten Zeit anheben"
+
+#: ../capplets/windows/mate-window-properties.c:384
+msgid "_Interval before raising:"
+msgstr "_Verzögerung vor dem Anheben:"
+
+#: ../capplets/windows/mate-window-properties.c:388
+msgid "seconds"
+msgstr "Sekunden"
+
+#. Titlebar Action
+#: ../capplets/windows/mate-window-properties.c:399
+msgid "Titlebar Action"
+msgstr "Titelleistenaktionen"
+
+#: ../capplets/windows/mate-window-properties.c:403
+msgid "_Double-click titlebar to perform this action:"
+msgstr "_Doppelklick auf Titelleiste führt folgende Aktion aus:"
+
+#. Movement Key
+#: ../capplets/windows/mate-window-properties.c:411
+msgid "Movement Key"
+msgstr "Bewegungstasten"
+
+#: ../capplets/windows/mate-window-properties.c:416
+msgid "To move a window, press-and-hold this key then grab the window:"
+msgstr "Zum Verschieben eines Fensters folgende Taste beim Klicken gedrückt halten:"
+
+#: ../capplets/windows/mate-window-properties.c:427
+#: ../libwindow-settings/marco-window-manager.c:379
+msgid "Roll up"
+msgstr "Einrollen"
+
+#: ../capplets/windows/mate-window-properties.c:428
+#: ../libwindow-settings/marco-window-manager.c:380
+msgid "Maximize"
+msgstr "Maximieren"
+
+#: ../capplets/windows/mate-window-properties.c:429
+#: ../libwindow-settings/marco-window-manager.c:381
+msgid "Maximize Horizontally"
+msgstr "Horizontal maximieren"
+
+#: ../capplets/windows/mate-window-properties.c:430
+#: ../libwindow-settings/marco-window-manager.c:382
+msgid "Maximize Vertically"
+msgstr "Vertikal maximieren"
+
+#: ../capplets/windows/mate-window-properties.c:431
+#: ../libwindow-settings/marco-window-manager.c:383
+msgid "Minimize"
+msgstr "Minimieren"
+
+#: ../capplets/windows/mate-window-properties.c:432
+#: ../libwindow-settings/marco-window-manager.c:384
+msgid "None"
+msgstr "Keine"
+
+#: ../capplets/windows/mate-window-properties.c:636
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../capplets/windows/mate-window-properties.c:642
+msgid "H_yper"
+msgstr "H_yper"
+
+#: ../capplets/windows/mate-window-properties.c:649
+msgid "S_uper (or \"Windows logo\")"
+msgstr "_Super (»Windows-Taste«)"
+
+#: ../capplets/windows/mate-window-properties.c:656
+msgid "_Meta"
+msgstr "_Meta"
+
+#: ../capplets/windows/mate-window-properties.desktop.in.in.h:1
+msgid "Windows"
+msgstr "Fenster"
+
+#: ../capplets/windows/mate-window-properties.desktop.in.in.h:2
+msgid "Set your window properties"
+msgstr "Einstellen des Fensterverhaltens"
+
+#: ../libwindow-settings/mate-wm-manager.c:321
+#, c-format
+msgid "Window manager \"%s\" has not registered a configuration tool\n"
+msgstr "Für die Fensterverwaltung »%s« wurde kein Konfigurationswerkzeug registriert\n"
+
+#: ../shell/control-center.c:61
+#, c-format
+msgid "%s key is empty\n"
+msgstr "%s Schlüssel ist leer\n"
+
+#: ../shell/control-center.c:161
+msgid "Hide on start (useful to preload the shell)"
+msgstr "Beim Start verbergen (nützlich, um die Shell vorab zu laden)"
+
+#: ../shell/control-center.c:201
+msgid "Filter"
+msgstr "Filter"
+
+#: ../shell/control-center.c:201
+msgid "Groups"
+msgstr "Gruppen"
+
+#: ../shell/control-center.c:201
+msgid "Common Tasks"
+msgstr "Häufige Aktionen"
+
+#: ../shell/control-center.c:203 ../shell/matecc.desktop.in.in.h:1
+#: ../shell/matecc.directory.in.h:1
+msgid "Control Center"
+msgstr "Kontrollzentrum"
+
+#: ../shell/matecc.desktop.in.in.h:2
+msgid "The MATE configuration tool"
+msgstr "Das MATE-Konfigurationswerkzeug"
+
+#: ../typing-break/drw-break-window.c:195
+msgid "_Postpone Break"
+msgstr "Pause _verschieben"
+
+#: ../typing-break/drw-break-window.c:256
+msgid "Take a break!"
+msgstr "Zeit für eine Tipppause!"
+
+#: ../typing-break/drwright.c:142
+msgid "_Take a Break"
+msgstr "Eine _Pause machen"
+
+#: ../typing-break/drwright.c:513
+#, c-format
+msgid "Take a break now (next in %dm)"
+msgstr "Jetzt eine Pause einlegen (nächste in %dm)"
+
+#: ../typing-break/drwright.c:515
+#, c-format
+msgid "%d minute until the next break"
+msgid_plural "%d minutes until the next break"
+msgstr[0] "%d Minute bis zur nächsten Pause"
+msgstr[1] "%d Minuten bis zur nächsten Pause"
+
+#: ../typing-break/drwright.c:521
+#, c-format
+msgid "Take a break now (next in less than one minute)"
+msgstr "Jetzt eine Pause einlegen (nächste in weniger als einer Minute)"
+
+#: ../typing-break/drwright.c:523
+#, c-format
+msgid "Less than one minute until the next break"
+msgstr "Weniger als eine Minute bis zur nächsten Pause"
+
+#: ../typing-break/drwright.c:613
+#, c-format
+msgid ""
+"Unable to bring up the typing break properties dialog with the following "
+"error: %s"
+msgstr "Der Tipppausen-Eigenschaftsdialog konnte auf Grund folgenden Fehlers nicht angezeigt werden: %s"
+
+#: ../typing-break/drwright.c:630
+msgid "Written by Richard Hult <richard@imendio.com>"
+msgstr "Geschrieben von Richard Hult <richard@imendio.com>"
+
+#: ../typing-break/drwright.c:631
+msgid "Eye candy added by Anders Carlsson"
+msgstr "Augenschmaus von Anders Carlsson"
+
+#: ../typing-break/drwright.c:640
+msgid "A computer break reminder."
+msgstr "Ein Pausenerinnerer für den Computer."
+
+#: ../typing-break/drwright.c:642
+msgid "translator-credits"
+msgstr "Christian Kintner <mail@christian-kintner.de>\nHendrik Richter <hendrikr@gnome.org>\nChristian Kirbach <christian.kirbach@googlemail.com>\nMario Blättermann <mariobl@gnome.org>"
+
+#: ../typing-break/main.c:67
+msgid "Enable debugging code"
+msgstr "Debugging-Code aktivieren"
+
+#: ../typing-break/main.c:69
+msgid "Don't check whether the notification area exists"
+msgstr "Nicht prüfen, ob ein Benachrichtigungsfeld vorhanden ist"
+
+#: ../typing-break/main.c:95
+msgid "Typing Monitor"
+msgstr "Tippüberwachung"
+
+#: ../typing-break/main.c:112
+msgid ""
+"The typing monitor uses the notification area to display information. You "
+"don't seem to have a notification area on your panel. You can add it by "
+"right-clicking on your panel and choosing 'Add to panel', selecting "
+"'Notification area' and clicking 'Add'."
+msgstr "Die Tippüberwachung verwendet das Benachrichtigungsfeld, um Informationen anzuzeigen. Auf Ihrer Leiste scheint sich kein Benachrichtigungsfeld zu befinden. Sie können es hinzufügen, indem Sie auf Ihre Leiste rechtsklicken, »Zur Leiste hinzufügen« auswählen, im folgenden Dialog das »Benachrichtigungsfeld« markieren und anschließend »Hinzufügen« anklicken."
+
+#: ../font-viewer/font-view.c:303
+msgid "Name:"
+msgstr "Name:"
+
+#: ../font-viewer/font-view.c:306
+msgid "Style:"
+msgstr "Stil:"
+
+#: ../font-viewer/font-view.c:319
+msgid "Type:"
+msgstr "Typ:"
+
+#: ../font-viewer/font-view.c:323
+msgid "Size:"
+msgstr "Größe:"
+
+#: ../font-viewer/font-view.c:367 ../font-viewer/font-view.c:380
+msgid "Version:"
+msgstr "Version:"
+
+#: ../font-viewer/font-view.c:371 ../font-viewer/font-view.c:382
+msgid "Copyright:"
+msgstr "Copyright:"
+
+#: ../font-viewer/font-view.c:375
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#: ../font-viewer/font-view.c:457
+msgid "Installed"
+msgstr "Installiert"
+
+#: ../font-viewer/font-view.c:460
+msgid "Install Failed"
+msgstr "Installation fehlgeschlagen"
+
+#: ../font-viewer/font-view.c:533
+#, c-format
+msgid "usage: %s fontfile\n"
+msgstr "Aufruf: %s Schriftdatei\n"
+
+#: ../font-viewer/font-view.c:606
+msgid "I_nstall Font"
+msgstr "Schrift _installieren"
+
+#: ../font-viewer/mate-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Schriftanzeiger"
+
+#: ../font-viewer/mate-font-viewer.desktop.in.in.h:2
+msgid "Preview fonts"
+msgstr "Vorschau von Schriften anzeigen"
+
+#: ../font-viewer/font-thumbnailer.c:245
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Text der Vorschau (Vorgabe: Aa)"
+
+#: ../font-viewer/font-thumbnailer.c:245
+msgid "TEXT"
+msgstr "TEXT"
+
+#: ../font-viewer/font-thumbnailer.c:247
+msgid "Font size (default: 64)"
+msgstr "Schriftgröße (Vorgabe: 64)"
+
+#: ../font-viewer/font-thumbnailer.c:247
+msgid "SIZE"
+msgstr "GRÖSSE"
+
+#: ../font-viewer/font-thumbnailer.c:249
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "SCHRIFT-DATEI AUSGABE-DATEI"
+
+#: ../font-viewer/font-thumbnailer.c:272
+#, c-format
+msgid "Error parsing arguments: %s\n"
+msgstr "Beim Verarbeiten der Argumente ist ein Fehler aufgetreten: %s\n"
+
+#: ../libslab/app-shell.c:761
+#, c-format
+msgid "Your filter \"%s\" does not match any items."
+msgstr "Ihr Filter »%s« führt zu keinen Übereinstimmungen."
+
+#: ../libslab/app-shell.c:763
+msgid "No matches found."
+msgstr "Keine Treffer gefunden."
+
+#: ../libslab/app-shell.c:864
+msgid "New Applications"
+msgstr "Neue Anwendungen"
+
+#: ../libslab/app-shell.c:919
+msgid "Other"
+msgstr "Sonstige"
+
+#. make start action
+#: ../libslab/application-tile.c:340
+#, c-format
+msgid "Start %s"
+msgstr "%s starten"
+
+#: ../libslab/application-tile.c:361
+msgid "Help"
+msgstr "Hilfe"
+
+#: ../libslab/application-tile.c:629 ../libslab/document-tile.c:735
+msgid "Remove from Favorites"
+msgstr "Aus den Favoriten entfernen"
+
+#: ../libslab/application-tile.c:631 ../libslab/document-tile.c:737
+msgid "Add to Favorites"
+msgstr "Zu den Favoriten hinzufügen"
+
+#: ../libslab/application-tile.c:716
+msgid "Remove from Startup Programs"
+msgstr "Aus den Startprogrammen entfernen"
+
+#: ../libslab/application-tile.c:718
+msgid "Add to Startup Programs"
+msgstr "Zu den Startprogrammen hinzufügen"
+
+#: ../libslab/bookmark-agent.c:1091
+msgid "New Spreadsheet"
+msgstr "Neue Tabelle"
+
+#: ../libslab/bookmark-agent.c:1096
+msgid "New Document"
+msgstr "Neues Dokument"
+
+#: ../libslab/bookmark-agent.c:1149
+msgctxt "Home folder"
+msgid "Home"
+msgstr "Persönlicher Ordner"
+
+#: ../libslab/bookmark-agent.c:1156
+msgid "Documents"
+msgstr "Dokumente"
+
+#: ../libslab/bookmark-agent.c:1164
+msgid "Desktop"
+msgstr "Schreibtisch"
+
+#: ../libslab/bookmark-agent.c:1171
+msgid "File System"
+msgstr "Dateisystem"
+
+#: ../libslab/bookmark-agent.c:1175
+msgid "Network Servers"
+msgstr "Netzwerkserver"
+
+#: ../libslab/bookmark-agent.c:1204
+msgid "Search"
+msgstr "Suchen"
+
+#. make open with default action
+#: ../libslab/directory-tile.c:176
+#, c-format
+msgid "<b>Open</b>"
+msgstr "<b>Öffnen</b>"
+
+#. make rename action
+#: ../libslab/directory-tile.c:195 ../libslab/document-tile.c:241
+msgid "Rename..."
+msgstr "Umbenennen …"
+
+#: ../libslab/directory-tile.c:209 ../libslab/directory-tile.c:218
+#: ../libslab/document-tile.c:255 ../libslab/document-tile.c:264
+msgid "Send To..."
+msgstr "Senden an …"
+
+#. make move to trash action
+#: ../libslab/directory-tile.c:233 ../libslab/document-tile.c:290
+msgid "Move to Trash"
+msgstr "In den Papierkorb verschieben"
+
+#: ../libslab/directory-tile.c:243 ../libslab/directory-tile.c:453
+#: ../libslab/document-tile.c:300 ../libslab/document-tile.c:851
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../libslab/directory-tile.c:530 ../libslab/document-tile.c:1014
+#, c-format
+msgid "Are you sure you want to permanently delete \"%s\"?"
+msgstr "Sind Sie sicher, dass »%s« unwiderruflich gelöscht werden soll?"
+
+#: ../libslab/directory-tile.c:531 ../libslab/document-tile.c:1015
+msgid "If you delete an item, it is permanently lost."
+msgstr "Sobald Sie ein Objekt löschen, geht es dauerhaft verloren."
+
+#: ../libslab/document-tile.c:200
+#, c-format
+msgid "Open with \"%s\""
+msgstr "Mit %s öffnen"
+
+#: ../libslab/document-tile.c:214
+msgid "Open with Default Application"
+msgstr "Mit Vorgabeanwendung öffnen"
+
+#: ../libslab/document-tile.c:225
+msgid "Open in File Manager"
+msgstr "In der Dateiverwaltung öffnen"
+
+#. clean item from menu
+#: ../libslab/document-tile.c:309
+msgid "Remove from recent menu"
+msgstr "Aus dem Menü der kürzlich geöffneten Dateien entfernen"
+
+#. clean all the items from menu
+#: ../libslab/document-tile.c:317
+msgid "Purge all the recent items"
+msgstr "Alle Einträge für kürzlich geöffnete Dateien entfernen"
+
+#: ../libslab/document-tile.c:631
+msgid "?"
+msgstr "?"
+
+#: ../libslab/document-tile.c:638
+msgid "%l:%M %p"
+msgstr "%H:%M"
+
+#: ../libslab/document-tile.c:646
+msgid "Today %l:%M %p"
+msgstr "Heute %H:%M"
+
+#: ../libslab/document-tile.c:656
+msgid "Yesterday %l:%M %p"
+msgstr "Gestern %H:%M"
+
+#: ../libslab/document-tile.c:668
+msgid "%a %l:%M %p"
+msgstr "%a %H:%M"
+
+#: ../libslab/document-tile.c:676
+msgid "%b %d %l:%M %p"
+msgstr "%e %b %H:%m"
+
+#: ../libslab/document-tile.c:678
+msgid "%b %d %Y"
+msgstr "%e %b %Y"
+
+#: ../libslab/search-bar.c:255
+msgid "Find Now"
+msgstr "Jetzt suchen"
+
+#: ../libslab/system-tile.c:126
+#, c-format
+msgid "<b>Open %s</b>"
+msgstr "<b>»%s« öffnen</b>"
+
+#: ../libslab/system-tile.c:139
+#, c-format
+msgid "Remove from System Items"
+msgstr "Aus den Systemelementen entfernen"

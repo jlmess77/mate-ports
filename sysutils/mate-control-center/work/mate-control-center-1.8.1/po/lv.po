@@ -1,0 +1,2847 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Anita Reitere <nitalynx@gmail.com>, 2010
+# Artis Trops <hornet@navigators.lv>, 2001
+# Imants Liepiņš <imzzinator@gmail.com>, 2013
+# Raivis Dejus <orvils@gmail.com>, 2006-2007,2009
+# Rihards Priedītis <rprieditis@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-23 16:27+0100\n"
+"PO-Revision-Date: 2014-02-23 15:29+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Latvian (http://www.transifex.com/projects/p/MATE/language/lv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: lv\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:1
+msgid ""
+"[ 'Change Theme;mate-appearance-properties.desktop', 'Set Preferred "
+"Applications;mate-default-applications-properties.desktop' ]"
+msgstr ""
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:2
+msgid "Task names and associated .desktop files"
+msgstr "Uzdevumu nosaukumi un saistītie .desktop faili"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:3
+msgid ""
+"The task name to be displayed in the control-center followed by a \";\" "
+"separator then the filename of an associated .desktop file to launch for "
+"that task."
+msgstr "Kontroles centrā rādāmās darbības nosaukums, kam seko \";\" kā atdalītājs un tad ar darbību saistītā un šo darbību izsaucošā .desktop faila nosaukums."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:4
+msgid "Close the control-center when a task is activated"
+msgstr "Aizvērt kontroles centru, kad aktivizēts uzdevums"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:5
+msgid ""
+"if true, the control-center will close when a \"Common Task\" is activated."
+msgstr "ja izvēlēts, kontroles centrs aizvērsies, aktivizējot \"Ierasto uzdevumu\"."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:6
+msgid "Exit shell on start action performed"
+msgstr "Iziet no čaulas, izpildot palaišanas darbību"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:7
+msgid "Indicates whether to close the shell when a start action is performed."
+msgstr "Nosaka, vai jāaizver komandrinda, kad veikta palaišanas darbība."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:8
+msgid "Exit shell on help action performed"
+msgstr "Iziet no čaulas, izpildot palīdzības darbību"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:9
+msgid "Indicates whether to close the shell when a help action is performed."
+msgstr "Nosaka, vai jāaizver komandrinda, kad veikta palīdzības darbība."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:10
+msgid "Exit shell on add or remove action performed"
+msgstr "Iziet no čaulas, izpildot pievienošanas vai noņemšanas darbības"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:11
+msgid ""
+"Indicates whether to close the shell when an add or remove action is "
+"performed."
+msgstr "Nosaka, vai jāaizver komandrinda, kad veikta pievienošana vai aizvākšana."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:12
+msgid "Exit shell on upgrade or uninstall action performed"
+msgstr "Iziet no čaulas, izpildot atjaunināšanas vai atinstalēšanas darbības"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:13
+msgid ""
+"Indicates whether to close the shell when an upgrade or uninstall action is "
+"performed."
+msgstr "Nosaka, vai jāaizver komandrinda, kad veikta atjaunināšana vai atinstalēšana."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:14
+msgid "More backgrounds URL"
+msgstr "URL papildu fona attēliem"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:15
+msgid ""
+"URL for where to get more desktop backgrounds. If set to an empty string the"
+" link will not appear."
+msgstr "Tīmekļa URL, kur var iegūt vairāk darbvirsmas fona attēlu. Ja šeit ir tukša virkne, attiecīgā saite neparādās."
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:16
+msgid "More themes URL"
+msgstr "URL papildu tēmām"
+
+#: ../org.mate.control-center.gschema.xml.in.in.h:17
+msgid ""
+"URL for where to get more desktop themes. If set to an empty string the link"
+" will not appear."
+msgstr "Tīmekļa URL, kur var iegūt vairāk darbvirsmas tēmu. Ja šeit ir tukša virkne, attiecīgā saite neparādās."
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:1
+msgid "Keybinding"
+msgstr "Taustiņu sasaistes"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:2
+msgid "Keybinding associated with a custom shortcut."
+msgstr "Taustiņu sasaistes ar pielāgotajiem īsceļiem."
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:3
+msgid "Command"
+msgstr "Komanda"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:4
+msgid "Command associated with a custom keybinding."
+msgstr "Komandas, kas saistītas pielāgotajām taustiņu sasaistēm"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:5
+msgid "Name"
+msgstr "Nosaukums"
+
+#: ../org.mate.control-center.keybinding.gschema.xml.in.in.h:6
+msgid "Description associated with a custom keybinding."
+msgstr "Pielāgoto taustiņu sasaistu asociētais apraksts."
+
+#: ../capplets/about-me/eel-alert-dialog.c:110
+msgid "Image/label border"
+msgstr "Attēla/apzīmējuma apmale"
+
+#: ../capplets/about-me/eel-alert-dialog.c:111
+msgid "Width of border around the label and image in the alert dialog"
+msgstr "Iezīmes un attēla apmales biezums brīdinājuma dialoga logā"
+
+#: ../capplets/about-me/eel-alert-dialog.c:120
+msgid "Alert Type"
+msgstr "Brīdinājuma tips"
+
+#: ../capplets/about-me/eel-alert-dialog.c:121
+msgid "The type of alert"
+msgstr "Brīdinājuma ziņojuma paveids"
+
+#: ../capplets/about-me/eel-alert-dialog.c:129
+msgid "Alert Buttons"
+msgstr "Brīdinājuma pogas"
+
+#: ../capplets/about-me/eel-alert-dialog.c:130
+msgid "The buttons shown in the alert dialog"
+msgstr "brīdinājuma logā redzamās pogas"
+
+#: ../capplets/about-me/eel-alert-dialog.c:194
+msgid "Show more _details"
+msgstr "Parādīt vairāk _detaļu"
+
+#: ../capplets/about-me/mate-about-me.c:288
+msgid "Select Image"
+msgstr "Izvēlēties attēlu"
+
+#: ../capplets/about-me/mate-about-me.c:290
+msgid "No Image"
+msgstr "Nav attēla"
+
+#: ../capplets/about-me/mate-about-me.c:318
+#: ../capplets/appearance/appearance-desktop.c:650
+msgid "Images"
+msgstr " Attēli"
+
+#: ../capplets/about-me/mate-about-me.c:322
+#: ../capplets/appearance/theme-installer.c:774
+msgid "All Files"
+msgstr "Visi faili"
+
+#: ../capplets/about-me/mate-about-me.c:473
+#, c-format
+msgid "About %s"
+msgstr "Par %s"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:1
+#: ../capplets/about-me/mate-about-me.desktop.in.in.h:1
+msgid "About Me"
+msgstr "Par mani"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:2
+msgid "Select your photo"
+msgstr "Izvēlieties savu foto"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:3
+msgid "Full Name"
+msgstr "Pilnais vārds"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:4
+msgid "User name:"
+msgstr "Lietotāja vārds:"
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:5
+msgid "Change Passwo_rd..."
+msgstr "_Mainīt paroli..."
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:6
+msgid "Enable _Fingerprint Login..."
+msgstr "Aktivizēt pieteikšanos ar _pirkstu nospiedumu..."
+
+#: ../capplets/about-me/mate-about-me-dialog.ui.h:7
+msgid "Disable _Fingerprint Login..."
+msgstr "Atslēgt pieteikšanos ar _pirkstu nospiedumu..."
+
+#: ../capplets/about-me/mate-about-me.desktop.in.in.h:2
+msgid "Set your personal information"
+msgstr "Iestatīt personisko informāciju"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:100
+msgid ""
+"You are not allowed to access the device. Contact your system administrator."
+msgstr "Jums nav tiesību piekļūt šai ierīcei. Sazinieties ar sistēmas administratoru."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:102
+msgid "The device is already in use."
+msgstr "Ierīce jau tiek lietota."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:104
+msgid "An internal error occured"
+msgstr "Radusies iekšēja kļūda"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:221
+msgid "Delete registered fingerprints?"
+msgstr "Dzēst reģistrētos pirkstu nospiedumus?"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:224
+msgid "_Delete Fingerprints"
+msgstr "_Dzēst pirkstu nospiedumus"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:231
+msgid ""
+"Do you want to delete your registered fingerprints so fingerprint login is "
+"disabled?"
+msgstr "Vai vēlaties dzēst reģistrētos pirkstu nospiedumus, lai pieteikšanās ar pirkstu nospiedumiem tiktu atslēgta?"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:359
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:15
+msgid "Done!"
+msgstr "Darīts!"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "Could you not access "Digital Persona U.are.U 4000/4000B" device
+#: ../capplets/about-me/mate-about-me-fingerprint.c:405
+#: ../capplets/about-me/mate-about-me-fingerprint.c:427
+#, c-format
+msgid "Could not access '%s' device"
+msgstr "Neizdevās piekļūt ierīcei '%s'"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "Could you not access "Digital Persona U.are.U 4000/4000B" device
+#: ../capplets/about-me/mate-about-me-fingerprint.c:476
+#, c-format
+msgid "Could not start finger capture on '%s' device"
+msgstr "Neizdevās sākt pirkstu nospieduma tveršanu uz '%s' ierīces"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:523
+msgid "Could not access any fingerprint readers"
+msgstr "Neizdevās piekļūt pirkstu nospiedumu lasītājam"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:524
+msgid "Please contact your system administrator for help."
+msgstr "Lūdzu, prasiet palīdzību savam sistēmas administratoram."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:554
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:9
+msgid "Enable Fingerprint Login"
+msgstr "Aktivizēt pieteikšanos ar pirkstu nospiedumu"
+
+#. translators:
+#. * The variable is the name of the device, for example:
+#. * "To enable fingerprint login, you need to save one of your fingerprints,
+#. using the
+#. * 'Digital Persona U.are.U 4000/4000B' device."
+#: ../capplets/about-me/mate-about-me-fingerprint.c:584
+#, c-format
+msgid ""
+"To enable fingerprint login, you need to save one of your fingerprints, "
+"using the '%s' device."
+msgstr "Lai ieslēgtu pieteikšanos ar pirkstu nospiedumiem, jums jāsaglabā sava pirksta nospiedums, izmantojot ierīci '%s'."
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:593
+msgid "Swipe finger on reader"
+msgstr "Pārvelciet pirkstu lasītājam"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.c:595
+msgid "Place finger on reader"
+msgstr "Novietojiet pirkstu uz lasītāja"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:1
+msgid "Left thumb"
+msgstr "Kreisais īkšķis"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:2
+msgid "Left middle finger"
+msgstr "Kreisais vidējais pirksts"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:3
+msgid "Left ring finger"
+msgstr "Kreisais zeltnesis"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:4
+msgid "Left little finger"
+msgstr "Kreisais mazais pirkstiņš"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:5
+msgid "Right thumb"
+msgstr "Labais īkšķis"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:6
+msgid "Right middle finger"
+msgstr "Labais vidējais pirksts"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:7
+msgid "Right ring finger"
+msgstr "Labais zeltnesis"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:8
+msgid "Right little finger"
+msgstr "Labais mazais pirkstiņš"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:10
+msgid "Right index finger"
+msgstr "Labais rādītājpirksts"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:11
+msgid "Left index finger"
+msgstr "Kreisais rādītājpirksts"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:12
+msgid "Other finger: "
+msgstr "Cits pirksts: "
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:13
+msgid "Select finger"
+msgstr "Izvēlēties pirkstu"
+
+#: ../capplets/about-me/mate-about-me-fingerprint.ui.h:14
+msgid ""
+"Your fingerprint was successfully saved. You should now be able to log in "
+"using your fingerprint reader."
+msgstr "Jūsu pirksta nospiedums sekmīgi saglabāts. Tagad, ja viss strādā pareizi, jūs varēsiet pieteikties sistēmā, lietojot pirkstu nospiedumu lasītāju."
+
+#: ../capplets/about-me/mate-about-me-password.c:161
+msgid "Child exited unexpectedly"
+msgstr "Apakšprocess negaidīti beidzās"
+
+#: ../capplets/about-me/mate-about-me-password.c:297
+#, c-format
+msgid "Could not shutdown backend_stdin IO channel: %s"
+msgstr "Neizdevās izslēgt backend_stdin IO kanālu: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:310
+#, c-format
+msgid "Could not shutdown backend_stdout IO channel: %s"
+msgstr "Neizdevās izslēgt backend_stdout IO kanālu: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:409
+msgid "Authenticated!"
+msgstr "Autorizēts!"
+
+#. This is a re-auth, and it failed.
+#. * The password must have been changed in the meantime!
+#. * Ask the user to re-authenticate
+#. Update status message and auth state
+#. Authentication failure
+#: ../capplets/about-me/mate-about-me-password.c:475
+#: ../capplets/about-me/mate-about-me-password.c:560
+msgid ""
+"Your password has been changed since you initially authenticated! Please re-"
+"authenticate."
+msgstr "Jūsu parole ir mainīta kopš jūsu autorizācijas! Lūdzu autorizēties vēlreiz."
+
+#: ../capplets/about-me/mate-about-me-password.c:477
+msgid "That password was incorrect."
+msgstr "Šī parole ir nepareiza."
+
+#: ../capplets/about-me/mate-about-me-password.c:528
+msgid "Your password has been changed."
+msgstr "Jūsu parole ir izmainīta."
+
+#. What does this indicate?
+#. * "Authentication information cannot be recovered?" from libpam?
+#: ../capplets/about-me/mate-about-me-password.c:538
+#, c-format
+msgid "System error: %s."
+msgstr "Sistēmas kļūda: %s."
+
+#: ../capplets/about-me/mate-about-me-password.c:541
+msgid "The password is too short."
+msgstr "Parole ir par īsu."
+
+#: ../capplets/about-me/mate-about-me-password.c:545
+msgid "The password is too simple."
+msgstr "Parole ir pārāk vienkārša."
+
+#: ../capplets/about-me/mate-about-me-password.c:550
+msgid "The old and new passwords are too similar."
+msgstr "Jaunā un vecā parole ir pārāk līdzīgas."
+
+#: ../capplets/about-me/mate-about-me-password.c:552
+msgid "The new password must contain numeric or special character(s)."
+msgstr "Jaunajai parolei jāsatur arī cipari vai īpašās rakstzīmes."
+
+#: ../capplets/about-me/mate-about-me-password.c:555
+msgid "The old and new passwords are the same."
+msgstr "Jaunā un vecā parole ir vienādas."
+
+#: ../capplets/about-me/mate-about-me-password.c:557
+msgid "The new password has already been used recently."
+msgstr "Jaunā parole jau nesen tika lietota."
+
+#. translators: Unable to launch <program>: <error message>
+#: ../capplets/about-me/mate-about-me-password.c:828
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Neizdevās palaist %s: %s"
+
+#: ../capplets/about-me/mate-about-me-password.c:832
+msgid "Unable to launch backend"
+msgstr "Neizdevās palaist aizmuguri"
+
+#: ../capplets/about-me/mate-about-me-password.c:833
+msgid "A system error has occurred"
+msgstr "Gadījās sistēmas kļūda"
+
+#. Update status message
+#: ../capplets/about-me/mate-about-me-password.c:853
+msgid "Checking password..."
+msgstr "Pārbauda paroli..."
+
+#: ../capplets/about-me/mate-about-me-password.c:940
+msgid "Click <b>Change password</b> to change your password."
+msgstr "Spiediet <b>Mainīt paroli</b>, lai mainītu savu paroli."
+
+#: ../capplets/about-me/mate-about-me-password.c:943
+msgid "Please type your password in the <b>New password</b> field."
+msgstr "Ierakstiet savu jauno paroli laukā <b>Jaunā parole</b>."
+
+#: ../capplets/about-me/mate-about-me-password.c:946
+#: ../capplets/about-me/mate-about-me-password.ui.h:9
+msgid ""
+"Please type your password again in the <b>Retype new password</b> field."
+msgstr "Ierakstiet jauno paroli vēlreiz laukā <b>Apstiprinājums</b>."
+
+#: ../capplets/about-me/mate-about-me-password.c:949
+msgid "The two passwords are not equal."
+msgstr "Abas paroles nav vienādas."
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:1
+msgid "Change password"
+msgstr "Mainīt paroli"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:2
+msgid "Change your password"
+msgstr "Nomainīt jūsu paroli"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:3
+msgid ""
+"To change your password, enter your current password in the field below and click <b>Authenticate</b>.\n"
+"After you have authenticated, enter your new password, retype it for verification and click <b>Change password</b>."
+msgstr "Lai mainītu savu paroli, ievadiet savu pašreizējo paroli un klikšķiniet <b>Autorizēties</b>.\nKad autorizācija notikusi, ievadiet jauno paroli, atkārtojiet to apstiprināšanai un klikšķiniet <b>Mainīt paroli</b>."
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:5
+msgid "Current _password:"
+msgstr "Pašreizējā _parole:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:6
+msgid "_New password:"
+msgstr "_Jaunā parole:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:7
+msgid "_Retype new password:"
+msgstr "Jaunā parole _vēlreiz:"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:8
+msgid "_Authenticate"
+msgstr "_Autorizēties"
+
+#: ../capplets/about-me/mate-about-me-password.ui.h:10
+msgid "Change pa_ssword"
+msgstr "Mainīt _paroli"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:1
+msgid "Assistive Technologies Preferences"
+msgstr "Asistējošo tehnoloģiju iestatījumi"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:2
+#: ../capplets/accessibility/at-properties/mate-at-properties.desktop.in.in.h:1
+msgid "Assistive Technologies"
+msgstr "Asistējošās tehnoloģijas"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:3
+msgid "_Preferred Applications"
+msgstr "Noklusētās _programmas"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:4
+msgid "Jump to Preferred Applications dialog"
+msgstr "Pāriet uz Noklusēto programmu logu"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:5
+msgid "_Enable assistive technologies"
+msgstr "_Aktivizēt asistējošās tehnoloģijas"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:6
+msgid ""
+"Changes to enable assistive technologies will not take effect until your "
+"next log in."
+msgstr "Asistējošās tehnoloģijas tiks ieslēgtas jūsu nākamajā pieslēgšanās reizē."
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:7
+msgid "Preferences"
+msgstr "Iestatījumi"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:8
+msgid "_Keyboard Accessibility"
+msgstr "_Tastatūras pieejamība"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:9
+msgid "Jump to the Keyboard Accessibility dialog"
+msgstr "Pāriet uz Tastatūras pieejamības logu"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:10
+msgid "_Mouse Accessibility"
+msgstr "_Peles pieejamība"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:11
+msgid "Jump to the Mouse Accessibility dialog"
+msgstr "Pāriet uz Peles pieejamības logu"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:12
+msgid "Accessible Lo_gin"
+msgstr "Peejamā pieslē_gšanās"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:13
+msgid "Jump to the Accessible Login dialog"
+msgstr "Pāriet uz Pieejamās pieslēgšanās logu"
+
+#: ../capplets/accessibility/at-properties/at-enable-dialog.ui.h:14
+msgid "Close and _Log Out"
+msgstr "Aizvērt un _beigt darbu"
+
+#: ../capplets/accessibility/at-properties/mate-at-properties.desktop.in.in.h:2
+msgid "Choose which accessibility features to enable when you log in"
+msgstr "Izvēlieties, kādas pieejamības iespējas aktivizēt, kad jūs pieslēdzaties sistēmai"
+
+#: ../capplets/appearance/appearance-desktop.c:619
+msgid "Add Wallpaper"
+msgstr "Pievienot tapeti"
+
+#: ../capplets/appearance/appearance-desktop.c:654
+msgid "All files"
+msgstr "Visi faili"
+
+#: ../capplets/appearance/appearance-main.c:59
+#, c-format
+msgid "Could not load user interface file: %s"
+msgstr "Neizdevās ielādēt saskarnes failu: %s"
+
+#: ../capplets/appearance/appearance-main.c:155
+msgid "Specify the filename of a theme to install"
+msgstr "Norādiet instalējamās tēmas faila nosaukumu"
+
+#: ../capplets/appearance/appearance-main.c:156
+msgid "filename"
+msgstr "faila nosaukums"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/appearance/appearance-main.c:163
+msgid ""
+"Specify the name of the page to show (theme|background|fonts|interface)"
+msgstr "Norādiet, kuru lapu rādīt (theme|background|fonts|interface)"
+
+#: ../capplets/appearance/appearance-main.c:164
+#: ../capplets/default-applications/mate-da-capplet.c:575
+#: ../capplets/mouse/mate-mouse-properties.c:496
+msgid "page"
+msgstr "lapa"
+
+#: ../capplets/appearance/appearance-main.c:171
+msgid "[WALLPAPER...]"
+msgstr "[TAPETE...]"
+
+#: ../capplets/appearance/appearance-style.c:171
+#: ../capplets/common/mate-theme-info.c:497
+#: ../capplets/common/mate-theme-info.c:694
+msgid "Default Pointer"
+msgstr "Noklusētais kursors"
+
+#: ../capplets/appearance/appearance-style.c:233
+#: ../capplets/appearance/appearance-themes.c:674
+msgid "Install"
+msgstr "Instalēt"
+
+#: ../capplets/appearance/appearance-style.c:255
+#: ../capplets/common/mate-theme-info.c:1724
+#, c-format
+msgid ""
+"This theme will not look as intended because the required GTK+ theme engine "
+"'%s' is not installed."
+msgstr "Šī tēma nestrādās, kā paredzēts, jo nav instalēts tai vajadzīgais GTK+ tēmu dzinējs '%s'."
+
+#: ../capplets/appearance/appearance-themes.c:662
+msgid "Apply Background"
+msgstr "Pielietot fonu"
+
+#: ../capplets/appearance/appearance-themes.c:666
+msgid "Apply Font"
+msgstr "Pielietot fontu"
+
+#: ../capplets/appearance/appearance-themes.c:670
+msgid "Revert Font"
+msgstr "Atgriezt fontu"
+
+#: ../capplets/appearance/appearance-themes.c:701
+msgid ""
+"The current theme suggests a background and a font. Also, the last applied "
+"font suggestion can be reverted."
+msgstr "Šī tēma iesaka fonu un fontu. Pēdējo pielietoto fontu ieteikumu var atcelt."
+
+#: ../capplets/appearance/appearance-themes.c:703
+msgid ""
+"The current theme suggests a background. Also, the last applied font "
+"suggestion can be reverted."
+msgstr "Šī tēma iesaka fonu. Tāpat var atcelt iepriekšējās fonta izmaiņas."
+
+#: ../capplets/appearance/appearance-themes.c:705
+msgid "The current theme suggests a background and a font."
+msgstr "Šī tēma iesaka fonu un fontu."
+
+#: ../capplets/appearance/appearance-themes.c:707
+msgid ""
+"The current theme suggests a font. Also, the last applied font suggestion "
+"can be reverted."
+msgstr "Šī tēma iesaka fontu. Pēdējo pielietoto fontu ieteikumu var atcelt."
+
+#: ../capplets/appearance/appearance-themes.c:709
+msgid "The current theme suggests a background."
+msgstr "Šī tēma iesaka fonu."
+
+#: ../capplets/appearance/appearance-themes.c:711
+msgid "The last applied font suggestion can be reverted."
+msgstr "Pēdējās veiktās fonta izmaiņas var atcelt."
+
+#: ../capplets/appearance/appearance-themes.c:713
+msgid "The current theme suggests a font."
+msgstr "Šī tēma iesaka fontu."
+
+#: ../capplets/appearance/appearance-themes.c:1029
+msgid "Custom"
+msgstr "Pielāgota"
+
+#: ../capplets/appearance/data/appearance.ui.h:1
+msgid "Font Rendering Details"
+msgstr "Fontu attēlošanas detaļas"
+
+#: ../capplets/appearance/data/appearance.ui.h:2
+msgid "R_esolution:"
+msgstr "_Izšķirtspēja:"
+
+#: ../capplets/appearance/data/appearance.ui.h:3
+msgid "dots per inch"
+msgstr "punkti collā"
+
+#: ../capplets/appearance/data/appearance.ui.h:4
+msgid "Smoothing"
+msgstr "Izlīdzināšana"
+
+#: ../capplets/appearance/data/appearance.ui.h:5
+msgid "_None"
+msgstr "_Nekāda"
+
+#: ../capplets/appearance/data/appearance.ui.h:6
+msgid "Gra_yscale"
+msgstr "_Pelēktoņu"
+
+#: ../capplets/appearance/data/appearance.ui.h:7
+msgid "Sub_pixel (LCDs)"
+msgstr "Sub_pikseļu (LCD monitoriem)"
+
+#. font hinting
+#: ../capplets/appearance/data/appearance.ui.h:9
+msgid "Hinting"
+msgstr "Instruēšana"
+
+#: ../capplets/appearance/data/appearance.ui.h:10
+msgid "N_one"
+msgstr "Ne_kas"
+
+#: ../capplets/appearance/data/appearance.ui.h:11
+msgid "_Slight"
+msgstr "_Viegla"
+
+#: ../capplets/appearance/data/appearance.ui.h:12
+msgid "_Medium"
+msgstr "_Vidēja"
+
+#: ../capplets/appearance/data/appearance.ui.h:13
+msgid "_Full"
+msgstr "_Pilns"
+
+#: ../capplets/appearance/data/appearance.ui.h:14
+msgid "Subpixel Order"
+msgstr "Subpikseļu secība"
+
+#. pixel order red, green, blue
+#: ../capplets/appearance/data/appearance.ui.h:16
+msgid "_RGB"
+msgstr "_RGB"
+
+#. pixel order blue, green, red
+#: ../capplets/appearance/data/appearance.ui.h:18
+msgid "_BGR"
+msgstr "_BGR"
+
+#. vertical hinting, pixel order red, green, blue
+#: ../capplets/appearance/data/appearance.ui.h:20
+msgid "_VRGB"
+msgstr "_VRGB"
+
+#. vertical hinting, pixel order blue, green, red
+#: ../capplets/appearance/data/appearance.ui.h:22
+msgid "VB_GR"
+msgstr "VB_GR"
+
+#: ../capplets/appearance/data/appearance.ui.h:23
+msgid "Appearance Preferences"
+msgstr "Izskata iestatījumi"
+
+#: ../capplets/appearance/data/appearance.ui.h:24
+msgid "Save _As..."
+msgstr "S_aglabāt kā..."
+
+#: ../capplets/appearance/data/appearance.ui.h:25
+msgid "C_ustomize..."
+msgstr "Pielā_got..."
+
+#: ../capplets/appearance/data/appearance.ui.h:26
+msgid "_Install..."
+msgstr "_Instalēt..."
+
+#: ../capplets/appearance/data/appearance.ui.h:27
+msgid "Get more themes online"
+msgstr "Iegūt vairāk tēmu tīmeklī"
+
+#: ../capplets/appearance/data/appearance.ui.h:28
+msgid "Theme"
+msgstr "Tēma"
+
+#: ../capplets/appearance/data/appearance.ui.h:29
+msgid "_Style:"
+msgstr "_Stils:"
+
+#: ../capplets/appearance/data/appearance.ui.h:30
+msgid "C_olors:"
+msgstr "_Krāsas:"
+
+#: ../capplets/appearance/data/appearance.ui.h:31
+msgid "Open a dialog to specify the color"
+msgstr "Atvērt dialoga logu, lai izvēlētos krāsu"
+
+#: ../capplets/appearance/data/appearance.ui.h:32
+msgid "Get more backgrounds online"
+msgstr "Iegūt vairāk fona attēlu tīmeklī"
+
+#: ../capplets/appearance/data/appearance.ui.h:33
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:17
+msgid "_Add..."
+msgstr "_Pievienot..."
+
+#: ../capplets/appearance/data/appearance.ui.h:34
+msgid "Background"
+msgstr "Fons"
+
+#: ../capplets/appearance/data/appearance.ui.h:35
+msgid "_Document font:"
+msgstr "_Dokumentu fonts:"
+
+#: ../capplets/appearance/data/appearance.ui.h:36
+msgid "Des_ktop font:"
+msgstr "_Darbvirsmas fonts:"
+
+#: ../capplets/appearance/data/appearance.ui.h:37
+msgid "_Window title font:"
+msgstr "_Loga virsraksta fonts:"
+
+#: ../capplets/appearance/data/appearance.ui.h:38
+msgid "_Fixed width font:"
+msgstr "_Fiksēta platuma fonts:"
+
+#: ../capplets/appearance/data/appearance.ui.h:39
+msgid "_Application font:"
+msgstr "_Lietotņu fonts:"
+
+#: ../capplets/appearance/data/appearance.ui.h:40
+msgid "Rendering"
+msgstr "Attēlošana"
+
+#: ../capplets/appearance/data/appearance.ui.h:41
+msgid "Sub_pixel smoothing (LCDs)"
+msgstr "Sub_pikseļu izlīdzināšana (LCD)"
+
+#: ../capplets/appearance/data/appearance.ui.h:42
+msgid "Best co_ntrast"
+msgstr "Labākais ko_ntrasts"
+
+#: ../capplets/appearance/data/appearance.ui.h:43
+msgid "Best _shapes"
+msgstr "Labākās _formas"
+
+#: ../capplets/appearance/data/appearance.ui.h:44
+msgid "_Monochrome"
+msgstr "_Melnbalta"
+
+#: ../capplets/appearance/data/appearance.ui.h:45
+msgid "D_etails..."
+msgstr "D_etaļas..."
+
+#: ../capplets/appearance/data/appearance.ui.h:46
+msgid "Fonts"
+msgstr "Fonti"
+
+#: ../capplets/appearance/data/appearance.ui.h:47
+msgid "Tile"
+msgstr "Atkārtot"
+
+#: ../capplets/appearance/data/appearance.ui.h:48
+msgid "Zoom"
+msgstr "Tuvināt"
+
+#: ../capplets/appearance/data/appearance.ui.h:49
+msgid "Center"
+msgstr "Centrēt"
+
+#: ../capplets/appearance/data/appearance.ui.h:50
+msgid "Scale"
+msgstr "Mērogot"
+
+#: ../capplets/appearance/data/appearance.ui.h:51
+msgid "Stretch"
+msgstr "Izstiept"
+
+#: ../capplets/appearance/data/appearance.ui.h:52
+msgid "Span"
+msgstr "Sadalīt"
+
+#: ../capplets/appearance/data/appearance.ui.h:53
+msgid "Solid color"
+msgstr "Viena krāsa"
+
+#: ../capplets/appearance/data/appearance.ui.h:54
+msgid "Horizontal gradient"
+msgstr "Horizontāla krāsu pāreja"
+
+#: ../capplets/appearance/data/appearance.ui.h:55
+msgid "Vertical gradient"
+msgstr "Vertikāla krāsu pāreja"
+
+#: ../capplets/appearance/data/appearance.ui.h:56
+msgid "Text below items"
+msgstr "Teksts apakšā"
+
+#: ../capplets/appearance/data/appearance.ui.h:57
+msgid "Text beside items"
+msgstr "Teksts blakus"
+
+#: ../capplets/appearance/data/appearance.ui.h:58
+msgid "Icons only"
+msgstr "Tikai ikonas"
+
+#: ../capplets/appearance/data/appearance.ui.h:59
+msgid "Text only"
+msgstr "Tikai teksts"
+
+#: ../capplets/appearance/data/appearance.ui.h:60
+msgid "Customize Theme"
+msgstr "Pielāgot tēmu"
+
+#: ../capplets/appearance/data/appearance.ui.h:61
+msgid "Controls"
+msgstr "Vadīklas"
+
+#: ../capplets/appearance/data/appearance.ui.h:62
+msgid "The current controls theme does not support color schemes."
+msgstr "Aktīvā vadīklu tēma neatbalsta krāsu shēmas."
+
+#: ../capplets/appearance/data/appearance.ui.h:63
+msgid "_Tooltips:"
+msgstr "_Paskaidres:"
+
+#: ../capplets/appearance/data/appearance.ui.h:64
+msgid "_Selected items:"
+msgstr "_Izvēlētās vienības:"
+
+#: ../capplets/appearance/data/appearance.ui.h:65
+msgid "_Input boxes:"
+msgstr "_Ievada lauki:"
+
+#: ../capplets/appearance/data/appearance.ui.h:66
+msgid "_Windows:"
+msgstr "_Logi:"
+
+#: ../capplets/appearance/data/appearance.ui.h:67
+msgid "Text"
+msgstr "Teksts"
+
+#: ../capplets/appearance/data/appearance.ui.h:68
+msgid "_Reset to Defaults"
+msgstr "_Atjaunot uz noklusētajiem"
+
+#: ../capplets/appearance/data/appearance.ui.h:69
+msgid "Colors"
+msgstr "Krāsas"
+
+#: ../capplets/appearance/data/appearance.ui.h:70
+msgid "Window Border"
+msgstr "Loga apdare"
+
+#: ../capplets/appearance/data/appearance.ui.h:71
+msgid "Icons"
+msgstr "Ikonas"
+
+#: ../capplets/appearance/data/appearance.ui.h:72
+msgid "Changing your cursor theme takes effect the next time you log in."
+msgstr "Kursora izskata izmaiņas stājas spēkā, nākamo reizi pieslēdzoties."
+
+#: ../capplets/appearance/data/appearance.ui.h:73
+msgid "_Size:"
+msgstr "_Izmērs:"
+
+#: ../capplets/appearance/data/appearance.ui.h:74
+#: ../capplets/mouse/mate-mouse-properties.ui.h:16
+msgid "Small"
+msgstr "Mazs"
+
+#: ../capplets/appearance/data/appearance.ui.h:75
+#: ../capplets/mouse/mate-mouse-properties.ui.h:18
+msgid "Large"
+msgstr "Liels"
+
+#: ../capplets/appearance/data/appearance.ui.h:76
+msgid "Pointer"
+msgstr "Kursors"
+
+#: ../capplets/appearance/data/appearance.ui.h:77
+msgid "Save Theme As..."
+msgstr "Saglabāt tēmu kā..."
+
+#: ../capplets/appearance/data/appearance.ui.h:78
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:4
+msgid "_Name:"
+msgstr "_Nosaukums:"
+
+#: ../capplets/appearance/data/appearance.ui.h:79
+msgid "_Description:"
+msgstr "_Apraksts:"
+
+#: ../capplets/appearance/data/appearance.ui.h:80
+msgid "Save _background image"
+msgstr "Saglabāt _fona attēlu"
+
+#: ../capplets/appearance/data/mate-appearance-properties.desktop.in.in.h:1
+msgid "Appearance"
+msgstr "Izskats"
+
+#: ../capplets/appearance/data/mate-appearance-properties.desktop.in.in.h:2
+msgid "Customize the look of the desktop"
+msgstr "Pielāgot darbvirsmas izskatu"
+
+#: ../capplets/appearance/data/mate-theme-installer.desktop.in.in.h:1
+msgid "Theme Installer"
+msgstr "Tēmu instalators"
+
+#: ../capplets/appearance/data/mate-theme-installer.desktop.in.in.h:2
+msgid "Installs themes packages for various parts of the desktop"
+msgstr "Instalē tēmas dažādām darbvirsmas daļām"
+
+#: ../capplets/appearance/data/mate-theme-package.xml.in.h:1
+msgid "Mate Theme Package"
+msgstr "Mate tēmas pakotne"
+
+#: ../capplets/appearance/mate-wp-info.c:51
+msgid "No Desktop Background"
+msgstr "Bez fona attēla"
+
+#: ../capplets/appearance/mate-wp-item.c:288
+msgid "unknown"
+msgstr ""
+
+#: ../capplets/appearance/mate-wp-item.c:295
+msgid "Slide Show"
+msgstr "Slīdrāde"
+
+#: ../capplets/appearance/mate-wp-item.c:297
+msgid "Image"
+msgstr "Attēls"
+
+#: ../capplets/appearance/mate-wp-item.c:303
+msgid "multiple sizes"
+msgstr "vairāki izmēri"
+
+#. translators: x pixel(s) by y pixel(s)
+#: ../capplets/appearance/mate-wp-item.c:306
+#, c-format
+msgid "%d %s by %d %s"
+msgstr "%d %s × %d %s"
+
+#: ../capplets/appearance/mate-wp-item.c:308
+#: ../capplets/appearance/mate-wp-item.c:310
+msgid "pixel"
+msgid_plural "pixels"
+msgstr[0] "pikselis"
+msgstr[1] "pikseļi"
+msgstr[2] "pikseļu"
+
+#. translators: <b>wallpaper name</b>
+#. * mime type, size
+#. * Folder: /path/to/file
+#. * Artist: wallpaper author
+#: ../capplets/appearance/mate-wp-item.c:319
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"%s, %s\n"
+"Folder: %s\n"
+"Artist: %s"
+msgstr ""
+
+#. translators: <b>wallpaper name</b>
+#. * Image missing
+#. * Folder: /path/to/file
+#. * Artist: wallpaper author
+#: ../capplets/appearance/mate-wp-item.c:334
+#, c-format
+msgid ""
+"<b>%s</b>\n"
+"%s\n"
+"Folder: %s\n"
+"Artist: %s"
+msgstr ""
+
+#: ../capplets/appearance/mate-wp-item.c:339
+msgid "Image missing"
+msgstr "Nav attēla"
+
+#: ../capplets/appearance/theme-installer.c:178
+#: ../capplets/appearance/theme-installer.c:234
+msgid "Cannot install theme"
+msgstr "Neizdevās instalēt tēmu"
+
+#: ../capplets/appearance/theme-installer.c:180
+#, c-format
+msgid "The %s utility is not installed."
+msgstr "Programma %s nav instalēta."
+
+#: ../capplets/appearance/theme-installer.c:236
+msgid "There was a problem while extracting the theme."
+msgstr "Radās problēma, atarhivējot tēmu."
+
+#: ../capplets/appearance/theme-installer.c:264
+msgid "There was an error installing the selected file"
+msgstr "Kļūda, instalējot izvēlēto failu"
+
+#: ../capplets/appearance/theme-installer.c:265
+#, c-format
+msgid "\"%s\" does not appear to be a valid theme."
+msgstr "Neizskatās, ka \"%s\" ir derīga tēma."
+
+#: ../capplets/appearance/theme-installer.c:266
+#, c-format
+msgid ""
+"\"%s\" does not appear to be a valid theme. It may be a theme engine which "
+"you need to compile."
+msgstr "Neizskatās, ka \"%s\" ir derīga tēma. Tas varētu būt tēmu dzinējs, kas jums ir jākompilē."
+
+#: ../capplets/appearance/theme-installer.c:372
+#, c-format
+msgid "Installation for theme \"%s\" failed."
+msgstr "Tēmas \"%s\" instalācija neizdevās."
+
+#: ../capplets/appearance/theme-installer.c:411
+#, c-format
+msgid "The theme \"%s\" has been installed."
+msgstr "Tēma \"%s\" ir instalēta."
+
+#: ../capplets/appearance/theme-installer.c:421
+msgid "Would you like to apply it now, or keep your current theme?"
+msgstr "Vai vēlaties turpmāk lietot šo tēmu vai atstāt esošo?"
+
+#: ../capplets/appearance/theme-installer.c:424
+msgid "Keep Current Theme"
+msgstr "Saglabāt esošo tēmu"
+
+#: ../capplets/appearance/theme-installer.c:427
+msgid "Apply New Theme"
+msgstr "Izmantot jauno tēmu"
+
+#: ../capplets/appearance/theme-installer.c:479
+#, c-format
+msgid "MATE Theme %s correctly installed"
+msgstr "MATE tēma %s sekmīgi instalēta"
+
+#: ../capplets/appearance/theme-installer.c:541
+msgid "Failed to create temporary directory"
+msgstr "Neizdevās izveidot pagaidu mapi"
+
+#: ../capplets/appearance/theme-installer.c:604
+msgid "New themes have been successfully installed."
+msgstr "Jaunās tēmas ir sekmīgi uzinstalētas."
+
+#: ../capplets/appearance/theme-installer.c:654
+msgid "No theme file location specified to install"
+msgstr "Nav norādīta instalējamās tēmas faila atrašanās vieta"
+
+#: ../capplets/appearance/theme-installer.c:678
+#, c-format
+msgid ""
+"Insufficient permissions to install the theme in:\n"
+"%s"
+msgstr "Nepietiekamas atļaujas, lai instalētu tēmu mapē:\n %s"
+
+#: ../capplets/appearance/theme-installer.c:756
+msgid "Select Theme"
+msgstr "Izvēlieties tēmu"
+
+#: ../capplets/appearance/theme-installer.c:767
+msgid "Theme Packages"
+msgstr "Tēmu pakotnes"
+
+#: ../capplets/appearance/theme-save.c:94
+#, c-format
+msgid "Theme name must be present"
+msgstr "Vajadzīgs tēmas nosaukums"
+
+#: ../capplets/appearance/theme-save.c:157
+msgid "The theme already exists. Would you like to replace it?"
+msgstr "Tēma jau eksistē. Vai vēlaties to aizvietot?"
+
+#: ../capplets/appearance/theme-save.c:158
+#: ../capplets/common/file-transfer-dialog.c:450
+msgid "_Overwrite"
+msgstr "_Pārrakstīt"
+
+#: ../capplets/appearance/theme-util.c:73
+msgid "Would you like to delete this theme?"
+msgstr "Vai vēlaties dzēst šo tēmu?"
+
+#: ../capplets/appearance/theme-util.c:123
+msgid "Theme cannot be deleted"
+msgstr "Tēmu nevar izdzēst"
+
+#: ../capplets/appearance/theme-util.c:249
+msgid "Could not install theme engine"
+msgstr "Neizdevās instalēt tēmu dzinēju"
+
+#: ../capplets/common/activate-settings-daemon.c:16
+msgid ""
+"Unable to start the settings manager 'mate-settings-daemon'.\n"
+"Without the MATE settings manager running, some preferences may not take effect. This could indicate a problem with DBus, or a non-MATE (e.g. KDE) settings manager may already be active and conflicting with the MATE settings manager."
+msgstr "Neizdevās palaist iestatījumu pārvaldnieku 'mate-settings-daemon'.\nBez strādājoša MATE iestatījumu pārvaldnieka daži iestatījumi var nestāties spēkā. Tā varētu būt DBus problēma, vai arī konflikts ar jau strādājošu citu (piemēram, KDE) iestatījumu pārvaldnieku."
+
+#: ../capplets/common/capplet-stock-icons.c:66
+#, c-format
+msgid "Unable to load stock icon '%s'\n"
+msgstr "Neizdevās ielādēt ikonu '%s'\n"
+
+#: ../capplets/common/capplet-util.c:88
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Gadījās kļūda, parādot palīdzību: %s"
+
+#: ../capplets/common/file-transfer-dialog.c:98
+#, c-format
+msgid "Copying file: %u of %u"
+msgstr "Kopē failu: %u no %u"
+
+#: ../capplets/common/file-transfer-dialog.c:145
+#, c-format
+msgid "Copying '%s'"
+msgstr "Kopē '%s'"
+
+#: ../capplets/common/file-transfer-dialog.c:185
+#: ../capplets/common/file-transfer-dialog.c:313
+msgid "Copying files"
+msgstr "Kopē failus"
+
+#: ../capplets/common/file-transfer-dialog.c:224
+msgid "Parent Window"
+msgstr "Vecāka logs"
+
+#: ../capplets/common/file-transfer-dialog.c:225
+msgid "Parent window of the dialog"
+msgstr "Dialoga loga vecāka logs"
+
+#: ../capplets/common/file-transfer-dialog.c:231
+msgid "From URI"
+msgstr "No URI"
+
+#: ../capplets/common/file-transfer-dialog.c:232
+msgid "URI currently transferring from"
+msgstr "URI, no kura pašreiz pārsūta"
+
+#: ../capplets/common/file-transfer-dialog.c:239
+msgid "To URI"
+msgstr "Uz URI"
+
+#: ../capplets/common/file-transfer-dialog.c:240
+msgid "URI currently transferring to"
+msgstr "URI, uz kuru pašreiz pārsūta"
+
+#: ../capplets/common/file-transfer-dialog.c:247
+msgid "Fraction completed"
+msgstr "Pabeigtā daļa"
+
+#: ../capplets/common/file-transfer-dialog.c:248
+msgid "Fraction of transfer currently completed"
+msgstr "Dotajā brīdī pabeigtā pārsūtīšanas daļa"
+
+#: ../capplets/common/file-transfer-dialog.c:255
+msgid "Current URI index"
+msgstr "Pašreizējais URI indekss"
+
+#: ../capplets/common/file-transfer-dialog.c:256
+msgid "Current URI index - starts from 1"
+msgstr "Pašreizējais URI indekss - sākas no 1"
+
+#: ../capplets/common/file-transfer-dialog.c:263
+msgid "Total URIs"
+msgstr "URI kopā"
+
+#: ../capplets/common/file-transfer-dialog.c:264
+msgid "Total number of URIs"
+msgstr "URI kopējais skaits"
+
+#: ../capplets/common/file-transfer-dialog.c:444
+#, c-format
+msgid "File '%s' already exists. Do you want to overwrite it?"
+msgstr "Fails '%s' jau eksistē. Vai vēlaties to pārrakstīt?"
+
+#: ../capplets/common/file-transfer-dialog.c:447
+msgid "_Skip"
+msgstr "Izlai_st"
+
+#: ../capplets/common/file-transfer-dialog.c:448
+msgid "Overwrite _All"
+msgstr "Pārr_akstīt visus"
+
+#: ../capplets/common/mate-theme-info.c:695
+msgid "Default Pointer - Current"
+msgstr "Noklusētais kursors - Pašreizējais"
+
+#: ../capplets/common/mate-theme-info.c:699
+msgid "White Pointer"
+msgstr "Balts kursors"
+
+#: ../capplets/common/mate-theme-info.c:700
+msgid "White Pointer - Current"
+msgstr "Balts kursors - pašreizējais"
+
+#: ../capplets/common/mate-theme-info.c:704
+msgid "Large Pointer"
+msgstr "Liels kursors"
+
+#: ../capplets/common/mate-theme-info.c:705
+msgid "Large Pointer - Current"
+msgstr "Liels kursors - pašreizejais"
+
+#: ../capplets/common/mate-theme-info.c:709
+msgid "Large White Pointer - Current"
+msgstr "Liels balts kursors - pašreizējais"
+
+#: ../capplets/common/mate-theme-info.c:710
+msgid "Large White Pointer"
+msgstr "Liels balts kursors"
+
+#: ../capplets/common/mate-theme-info.c:1694
+#, c-format
+msgid ""
+"This theme will not look as intended because the required GTK+ theme '%s' is"
+" not installed."
+msgstr "Šī tēma neizskatīsies, kā paredzēts, jo nav instalēta tai vajadzīgā GTK+ tēma '%s'."
+
+#: ../capplets/common/mate-theme-info.c:1704
+#, c-format
+msgid ""
+"This theme will not look as intended because the required window manager "
+"theme '%s' is not installed."
+msgstr "Šī tēma neizskatīsies, kā paredzēts, jo nav instalēta tai vajadzīgā logu pārvaldnieka tēma '%s'."
+
+#: ../capplets/common/mate-theme-info.c:1712
+#, c-format
+msgid ""
+"This theme will not look as intended because the required icon theme '%s' is"
+" not installed."
+msgstr "Šī tēma neizskatīsies, kā paredzēts, jo nav instalēta tai vajadzīgā ikonu tēma '%s'."
+
+#: ../capplets/default-applications/mate-default-applications-properties.desktop.in.in.h:1
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:1
+msgid "Preferred Applications"
+msgstr "Noklusētās programmas"
+
+#: ../capplets/default-applications/mate-default-applications-properties.desktop.in.in.h:2
+msgid "Select your default applications"
+msgstr "Izvēlieties jūsu noklusētās aplikācijas"
+
+#: ../capplets/default-applications/mate-da-capplet.c:448
+msgid "Could not load the main interface"
+msgstr "Neizdevās ielādēt galveno saskarni"
+
+#: ../capplets/default-applications/mate-da-capplet.c:449
+msgid "Please make sure that the applet is properly installed"
+msgstr "Lūdzu, pārbaudiet, vai sīkrīks ir pareizi instalēts"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/default-applications/mate-da-capplet.c:574
+msgid "Specify the name of the page to show (internet|multimedia|system|a11y)"
+msgstr "Norādiet, kuru lapu rādīt (internet|multimedia|system|a11y)"
+
+#: ../capplets/default-applications/mate-da-capplet.c:580
+msgid "- MATE Default Applications"
+msgstr "- MATE noklusētās programmas"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:2
+msgid "Web Browser"
+msgstr "Tīmekļa pārlūks"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:4
+#, no-c-format
+msgid "All %s occurrences will be replaced with actual link"
+msgstr "Visi %s tiks aizvietoti ar reālo saiti"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:5
+msgid "Run in t_erminal"
+msgstr "Palaist  _terminālī"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:6
+msgid "Open link with web browser _default"
+msgstr "Atvērt saiti, kā iestatīts interneta _pārlūkā"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:7
+msgid "Open link in new _tab"
+msgstr "Atvērt saiti jaunā _cilnē"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:8
+msgid "Open link in new _window"
+msgstr "Atvērt saiti jaunā _logā"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:9
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:5
+msgid "C_ommand:"
+msgstr "K_omanda:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:10
+msgid "Mail Reader"
+msgstr "Pasta lasītājs"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:11
+msgid "Co_mmand:"
+msgstr "Ko_manda:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:12
+msgid "Instant Messenger"
+msgstr "Tūlītējās ziņojumapmaiņas klients"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:13
+msgid "Internet"
+msgstr "Internets"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:14
+msgid "Image Viewer"
+msgstr "Attēlu skatītājs"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:15
+msgid "Multimedia Player"
+msgstr "Multimediju atskaņotājs"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:16
+msgid "Video Player"
+msgstr "Video atskaņotājs"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:17
+msgid "Multimedia"
+msgstr "Multimediji"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:18
+msgid "Text Editor"
+msgstr "Teksta redaktors"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:19
+msgid "Terminal Emulator"
+msgstr "Termināļa emulators"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:20
+msgid "E_xecute flag:"
+msgstr "I_zpildes iezīme:"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:21
+msgid "File Manager"
+msgstr "Failu pārvaldnieks"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:22
+msgid "System"
+msgstr "Sistēma"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:23
+msgid "Visual"
+msgstr "Vizuālā"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:24
+msgid "_Run at start"
+msgstr "_Palaist sākot"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:25
+msgid "Mobility"
+msgstr "Mobilitāte"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:26
+msgid "Run at st_art"
+msgstr "P_alaist sākot"
+
+#: ../capplets/default-applications/mate-default-applications-properties.ui.h:27
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:45
+msgid "Accessibility"
+msgstr "Pieejamība"
+
+#: ../capplets/display/display-capplet.ui.h:1
+msgid "Monitor Preferences"
+msgstr "Monitora iestatījumi"
+
+#: ../capplets/display/display-capplet.ui.h:2
+msgid "Sa_me image in all monitors"
+msgstr "_Viens attēls visos monitoros"
+
+#: ../capplets/display/display-capplet.ui.h:3
+msgid "_Detect monitors"
+msgstr "_Noteikt monitorus"
+
+#: ../capplets/display/display-capplet.ui.h:4
+msgid "Panel icon"
+msgstr "Paneļa ikona"
+
+#: ../capplets/display/display-capplet.ui.h:5
+msgid "_Show monitors in panel"
+msgstr "Rādīt monitoru_s panelī"
+
+#: ../capplets/display/display-capplet.ui.h:6
+msgid "_Resolution:"
+msgstr "_Izšķirtspēja:"
+
+#: ../capplets/display/display-capplet.ui.h:7
+msgid "Re_fresh rate:"
+msgstr "Atsvaidzes _intensitāte:"
+
+#: ../capplets/display/display-capplet.ui.h:8
+msgid "On"
+msgstr "Ieslēgts"
+
+#: ../capplets/display/display-capplet.ui.h:9
+msgid "Off"
+msgstr "Izslēgts"
+
+#: ../capplets/display/display-capplet.ui.h:10
+#: ../capplets/display/xrandr-capplet.c:513
+msgid "Monitor"
+msgstr "Monitors"
+
+#: ../capplets/display/display-capplet.ui.h:11
+msgid "R_otation:"
+msgstr "R_otācija:"
+
+#: ../capplets/display/display-capplet.ui.h:12
+msgid "Include _panel"
+msgstr "Iekļaut _paneli"
+
+#: ../capplets/display/display-capplet.ui.h:13
+msgid "Make Default"
+msgstr "Padarīt par noklusēto"
+
+#: ../capplets/display/display-capplet.ui.h:14
+#: ../capplets/display/xrandr-capplet.c:309
+#: ../capplets/display/xrandr-capplet.c:348
+msgid "Normal"
+msgstr "Normāls"
+
+#: ../capplets/display/display-capplet.ui.h:15
+#: ../capplets/display/xrandr-capplet.c:310
+msgid "Left"
+msgstr "Pa kreisi"
+
+#: ../capplets/display/display-capplet.ui.h:16
+#: ../capplets/display/xrandr-capplet.c:311
+msgid "Right"
+msgstr "Pa labi"
+
+#: ../capplets/display/display-capplet.ui.h:17
+msgid "Upside-down"
+msgstr "Otrādi"
+
+#: ../capplets/display/mate-display-properties.desktop.in.in.h:1
+msgid "Monitors"
+msgstr "Monitori"
+
+#: ../capplets/display/mate-display-properties.desktop.in.in.h:2
+msgid "Change resolution and position of monitors"
+msgstr "Mainīt monitoru izšķirtspēju un izvietojumu"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:44
+#, c-format
+msgid ""
+"Usage: %s SOURCE_FILE DEST_NAME\n"
+"\n"
+"This program installs a RANDR profile for multi-monitor setups into\n"
+"a systemwide location.  The resulting profile will get used when\n"
+"the RANDR plug-in gets run in mate-settings-daemon.\n"
+"\n"
+"SOURCE_FILE - a full pathname, typically /home/username/.config/monitors.xml\n"
+"\n"
+"DEST_NAME - relative name for the installed file.  This will get put in\n"
+"            the systemwide directory for RANDR configurations,\n"
+"            so the result will typically be %s/DEST_NAME\n"
+msgstr "Lietojums: %s SOURCE_FILE DEST_NAME\n\nŠī programma uzstāda RANDR profilu, priekš vairāku displeju atbalstam\niekš sistēmas nozīmes atrašānās vietā. Šo profilu izmantos RANDR spraudnis\nkad tiks laists iekš mate-settings-daemon.\n\nSOURCE_FILE - pilns ceļš, parasti, /home/lietotaja_vards/.config/monitors.xml\n\nDEST_NAME - relatīvais nosaukums pret uzstādīto failu. Šis tiks ievietots sistēmas\n            nozīmes direktorijā, priekš RANDR konfigurācijas, rezultāts parasti būs\n            %s/DEST_NAME\n"
+
+#. Translators: only able to install RANDR profiles as root
+#: ../capplets/display/mate-display-properties-install-systemwide.c:151
+msgid "This program can only be used by the root user"
+msgstr "Šo programmu drīkst lietot tikai administrators"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:168
+msgid "The source filename must be absolute"
+msgstr "Avota faila nosaukumam jābūt absolūtam"
+
+#. Translators: first %s is a filename; second %s is an error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:179
+#, c-format
+msgid "Could not open %s: %s\n"
+msgstr "Nevar atvērt %s: %s\n"
+
+#. Translators: first %s is a filename; second %s is an error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:188
+#, c-format
+msgid "Could not get information for %s: %s\n"
+msgstr "Nevar iegūt informāciju par %s: %s\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:195
+#, c-format
+msgid "%s must be a regular file\n"
+msgstr "%s jābūt parastam failam\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:204
+msgid "This program must only be run through pkexec(1)"
+msgstr "Šo programmu var laist tikai caur pkexec(1)"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:209
+msgid "PKEXEC_UID must be set to an integer value"
+msgstr "PKEXEC_UID vērtībai jābūt veselam skaitlim"
+
+#. Translators: we are complaining that a file must be really owned by the
+#. user who called this program
+#: ../capplets/display/mate-display-properties-install-systemwide.c:215
+#, c-format
+msgid "%s must be owned by you\n"
+msgstr "%s jāpieder jums\n"
+
+#. Translators: here we are saying that a plain filename must look like
+#. "filename", not like "some_dir/filename"
+#: ../capplets/display/mate-display-properties-install-systemwide.c:223
+#, c-format
+msgid "%s must not have any directory components\n"
+msgstr "%s nedrīkst saturēt nevienu direktoriju komponentu\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:231
+#, c-format
+msgid "%s must be a directory\n"
+msgstr "%s jābūt direktorijai\n"
+
+#. Translators: the first %s/%s is a directory/filename; the last %s is an
+#. error message
+#: ../capplets/display/mate-display-properties-install-systemwide.c:242
+#, c-format
+msgid "Could not open %s/%s: %s\n"
+msgstr "Nevar atvērt %s/%s: %s\n"
+
+#: ../capplets/display/mate-display-properties-install-systemwide.c:262
+#, c-format
+msgid "Could not rename %s to %s: %s\n"
+msgstr "Nevar pārdēvēt %s par %s: %s\n"
+
+#: ../capplets/display/org.mate.randr.policy.in.h:1
+msgid "Install multi-monitor settings for the whole system"
+msgstr "Uzstādīt vairāku displeju atbalstu visai sistēmai"
+
+#: ../capplets/display/org.mate.randr.policy.in.h:2
+msgid ""
+"Authentication is required to install multi-monitor settings for all users"
+msgstr "Nepieciešama autentifikācija, lai uzstādītu vairāku displeju atbalstu visiem lietotājiem"
+
+#: ../capplets/display/xrandr-capplet.c:312
+msgid "Upside Down"
+msgstr "Otrādi"
+
+#: ../capplets/display/xrandr-capplet.c:354
+#, c-format
+msgid "%d Hz"
+msgstr "%d Hz"
+
+#. Translators:  this is the feature where what you see on your laptop's
+#. * screen is the same as your external monitor.  Here, "Mirror" is being
+#. * used as an adjective, not as a verb.  For example, the Spanish
+#. * translation could be "Pantallas en Espejo", *not* "Espejar Pantallas".
+#: ../capplets/display/xrandr-capplet.c:502
+#: ../capplets/display/xrandr-capplet.c:1652
+msgid "Mirror Screens"
+msgstr "Spoguļekrāni"
+
+#: ../capplets/display/xrandr-capplet.c:504
+#, c-format
+msgid "Monitor: %s"
+msgstr "Monitors: %s"
+
+#: ../capplets/display/xrandr-capplet.c:582
+#, c-format
+msgid "%d x %d"
+msgstr "%d × %d"
+
+#: ../capplets/display/xrandr-capplet.c:1508
+msgid ""
+"Select a monitor to change its properties; drag it to rearrange its "
+"placement."
+msgstr "Izvēlēties monitoru, lai mainītu tā īpašības; velciet, lai to pārvietotu."
+
+#: ../capplets/display/xrandr-capplet.c:2073
+msgid "Could not save the monitor configuration"
+msgstr "Neizdevās saglabāt monitora konfigurāciju"
+
+#: ../capplets/display/xrandr-capplet.c:2095
+msgid "Could not get session bus while applying display configuration"
+msgstr "Neizdevās iegūt sesijas kopni, pielietojot ekrāna konfigurāciju"
+
+#: ../capplets/display/xrandr-capplet.c:2137
+msgid "Could not detect displays"
+msgstr "Neizdevās noteikt displejus"
+
+#: ../capplets/display/xrandr-capplet.c:2334
+msgid "The monitor configuration has been saved"
+msgstr "Monitora iestatījumi saglabāti"
+
+#: ../capplets/display/xrandr-capplet.c:2336
+msgid "This configuration will be used the next time someone logs in."
+msgstr "Šī konfigurācija tiks izmantota, kad kāds nākamreiz pieteiksies."
+
+#: ../capplets/display/xrandr-capplet.c:2345
+msgid "Could not set the default configuration for monitors"
+msgstr "Nevarēja uzstādīt noklusēto displeju konfigurāciju"
+
+#: ../capplets/display/xrandr-capplet.c:2429
+msgid "Could not get screen information"
+msgstr "Neizdevās iegūt ekrāna informāciju"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:24
+msgid "New shortcut..."
+msgstr "Jauna saīsne..."
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:160
+#: ../capplets/keybindings/eggcellrendererkeys.c:161
+msgid "Accelerator key"
+msgstr "Paātrinājumtaustiņš"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:170
+#: ../capplets/keybindings/eggcellrendererkeys.c:171
+msgid "Accelerator modifiers"
+msgstr "Paātrinātāja modifikatori"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:179
+#: ../capplets/keybindings/eggcellrendererkeys.c:180
+msgid "Accelerator keycode"
+msgstr "Paātrinātāja taustiņkods"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:190
+msgid "Accel Mode"
+msgstr "Paātrināšanas režīms"
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:191
+msgid "The type of accelerator."
+msgstr "Paātrinātāja tips."
+
+#: ../capplets/keybindings/eggcellrendererkeys.c:234
+#: ../capplets/keybindings/mate-keybinding-properties.c:137
+#: ../typing-break/drwright.c:504
+msgid "Disabled"
+msgstr "Atslēgts"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:219
+msgid "<Unknown Action>"
+msgstr "<Nezināma darbība>"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1026
+#: ../capplets/keybindings/mate-keybinding-properties.c:1624
+msgid "Custom Shortcuts"
+msgstr "Pielāgotas saīsnes"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1204
+msgid "Error saving the new shortcut"
+msgstr "Kļūda, saglabājot jauno saīsni"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1280
+#, c-format
+msgid ""
+"The shortcut \"%s\" cannot be used because it will become impossible to type using this key.\n"
+"Please try with a key such as Control, Alt or Shift at the same time."
+msgstr "Saīsni \"%s\" nevar izmantot, jo tas apgrūtinās rakstīšanu.\nLūdzu, mēģiniet to lietot kopā ar tādiem taustiņiem kā Control, Alt vai Shift."
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1312
+#, c-format
+msgid ""
+"The shortcut \"%s\" is already used for\n"
+"\"%s\""
+msgstr "Saīsne \"%s\" jau tiek lietota\n \"%s\""
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1319
+#, c-format
+msgid "If you reassign the shortcut to \"%s\", the \"%s\" shortcut will be disabled."
+msgstr "Ja pārdefinēsiet saīsni par \"%s\", saīsne \"%s\" tiks deaktivizēta."
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1324
+msgid "_Reassign"
+msgstr "Pā_rdefinēt"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1579
+msgid "Too many custom shortcuts"
+msgstr "Pārāk daudz pielāgoto saīsņu"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1867
+msgid "Action"
+msgstr "Darbība"
+
+#: ../capplets/keybindings/mate-keybinding-properties.c:1889
+msgid "Shortcut"
+msgstr "Saīsne"
+
+#. * vim: sw=2 ts=8 cindent noai bs=2
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:1
+#: ../capplets/keybindings/mate-keybinding.desktop.in.in.h:1
+msgid "Keyboard Shortcuts"
+msgstr "Tastatūras saīsnes"
+
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:2
+msgid ""
+"To edit a shortcut key, click on the corresponding row and type a new key "
+"combination, or press backspace to clear."
+msgstr "Saīsņu rediģēšana: klikšķiniet attiecīgajā rindā, tad spiediet jaunos taustiņus vai lietojiet Backspace taustiņu dzēšanai."
+
+#: ../capplets/keybindings/mate-keybinding-properties.ui.h:3
+msgid "Custom Shortcut"
+msgstr "Pielāgota saīsne"
+
+#: ../capplets/keybindings/mate-keybinding.desktop.in.in.h:2
+msgid "Assign shortcut keys to commands"
+msgstr "Piesaistīt komandām saīsņu taustiņus"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:203
+#: ../capplets/keyboard/mate-keyboard-properties.c:208
+msgid ""
+"Just apply settings and quit (compatibility only; now handled by daemon)"
+msgstr "Tikai pielietot iestatījumus un iziet (savietojamības dēļ; tagad to pārvalda dēmons)"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:213
+msgid "Start the page with the typing break settings showing"
+msgstr "Atvērt darba pārtraukuma iestatījumi lapu"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:218
+msgid "Start the page with the accessibility settings showing"
+msgstr "Atvērt pieejamības iestatījumu lapu"
+
+#: ../capplets/keyboard/mate-keyboard-properties.c:224
+msgid "- MATE Keyboard Preferences"
+msgstr "- MATE tastatūras iestatījumi"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:1
+msgid "Keyboard Accessibility Audio Feedback"
+msgstr "Skaņas atgriezeniskā saite tastatūras pieejamībai"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:2
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:15
+#: ../capplets/mouse/mate-mouse-properties.ui.h:24
+#: ../capplets/windows/mate-window-properties.c:319
+msgid "General"
+msgstr "Vispārēji"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:3
+msgid "Beep when _accessibility features are turned on or off"
+msgstr "Pīkstēt, k_ad pieejamības iespējas tiek ieslēgtas vai izslēgtas"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:4
+msgid "Beep when a _toggle key is pressed"
+msgstr "Pīkstēt, kad _tiek nospiests pārslēgs"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:5
+msgid "Visual cues for sounds"
+msgstr "Vizuālās norādes skaņām"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:6
+msgid "Show _visual feedback for the alert sound"
+msgstr "Rādīt _vizuālu indikatoru trauksmes skaņai"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:7
+msgid "Flash _window titlebar"
+msgstr "Zibsnis loga _virsraksta joslā"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:8
+msgid "Flash entire _screen"
+msgstr "Zibsnis pa vi_su ekrānu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:9
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:39
+msgid "Slow Keys"
+msgstr "Lēnie taustiņi"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:10
+msgid "Beep when a key is pr_essed"
+msgstr "Pīkstēt, kad ti_ek nospiests taustiņš"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:11
+msgid "Beep when key is _accepted"
+msgstr "Pīkstēt, j_a taustiņš tiek pieņemts"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:12
+msgid "Beep when key is _rejected"
+msgstr "Pīkstēt, ja taustiņš netiek _pieņemts"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:13
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:41
+msgid "Bounce Keys"
+msgstr "Atlecošie taustiņi"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:14
+msgid "Beep when a key is reje_cted"
+msgstr "Pīkstēt, ja taustiņš tiek _noraidīts"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:15
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:36
+msgid "Sticky Keys"
+msgstr "Lipīgie taustiņi"
+
+#: ../capplets/keyboard/mate-keyboard-properties-a11y-notifications.ui.h:16
+msgid "Beep when a _modifier key is pressed"
+msgstr "Pīkstēt, kad tiek nospiests _modifikators"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:1
+msgid "Keyboard Preferences"
+msgstr "Tastatūras iestatījumi"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:2
+msgid "Repeat Keys"
+msgstr "Atkārtot taustiņus"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:3
+msgid "Key presses _repeat when key is held down"
+msgstr "Kad taustiņu tu_r nospiestu, atkārtot darbību"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:4
+msgid "_Delay:"
+msgstr "Aizt_ure:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:5
+msgid "_Speed:"
+msgstr "Ā_trums:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:6
+#: ../capplets/mouse/mate-mouse-properties.ui.h:21
+msgid "Short"
+msgstr "Īsa"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:7
+#: ../capplets/mouse/mate-mouse-properties.ui.h:10
+msgid "Slow"
+msgstr "Lēni"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:8
+msgid "Repeat keys speed"
+msgstr "Taustiņu atkārtošanās ātrums"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:9
+#: ../capplets/mouse/mate-mouse-properties.ui.h:22
+msgid "Long"
+msgstr "Ilga"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:10
+#: ../capplets/mouse/mate-mouse-properties.ui.h:11
+msgid "Fast"
+msgstr "Ātri"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:11
+msgid "Cursor Blinking"
+msgstr "Kursora mirgošana"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:12
+msgid "Cursor _blinks in text fields"
+msgstr "Kursors _mirgo teksta laukos"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:13
+msgid "S_peed:"
+msgstr "Āt_rums:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:14
+#: ../capplets/mouse/mate-mouse-properties.ui.h:17
+msgid "Cursor blinks speed"
+msgstr "Kursora mirgošanas ātrums"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:16
+msgid "List of keyboard layouts selected for usage"
+msgstr "Lietojamo tastatūras izkārtojumu saraksts"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:18
+msgid "Select a keyboard layout to be added to the list"
+msgstr "Izvēlēties tastatūras izkārtojumu, ko pievienot sarakstam"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:19
+msgid "Remove the selected keyboard layout from the list"
+msgstr "Izņemt izvēlēto tastatūras izkārtojumu no saraksta"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:20
+msgid "Move _Up"
+msgstr "Uz _augšu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:21
+msgid "Move the selected keyboard layout up in the list"
+msgstr "Pārvietot izvēlēto tastatūras izkārtojumu uz saraksta augšgalu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:22
+msgid "Move _Down"
+msgstr "Uz _leju"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:23
+msgid "Move the selected keyboard layout down in the list"
+msgstr "Pārvietot izvēlēto tastatūras izkārtojumu uz saraksta lejasgalu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:24
+msgid "_Show..."
+msgstr "_Parādīt..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:25
+msgid "Print a diagram of the selected keyboard layout"
+msgstr "Izdrukāt izvēlētā tastatūras izkārtojuma diagrammu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:26
+msgid "_Separate layout for each window"
+msgstr "Savs izkārtojums katram _logam"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:27
+msgid "New windows u_se active window's layout"
+msgstr "Jauniem logiem lietot a_ktīvā loga izkārtojumu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:28
+msgid "Keyboard _model:"
+msgstr "Tastatūras _modelis:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:29
+msgid "_Options..."
+msgstr "_Opcijas..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:30
+msgid "View and edit keyboard layout options"
+msgstr "Parādīt un mainīt tastatūras izkārtojumu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:31
+msgid "Reset to De_faults"
+msgstr "A_tjaunot uz noklusētajiem"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:32
+msgid ""
+"Replace the current keyboard layout settings with the\n"
+"default settings"
+msgstr "Aizvietot patreizējo tastatūras izkārtojumu ar\nnoklusējuma izkārtojumu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:34
+msgid "Layouts"
+msgstr "Izkārtojumi"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:35
+msgid "_Accessibility features can be toggled with keyboard shortcuts"
+msgstr "Pieejamības iespējas var pārslēgt ar kl_aviatūras saīsnēm"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:37
+msgid "_Simulate simultaneous keypresses"
+msgstr "_Simulēt vienlaicīgu taustiņu nospiešanu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:38
+msgid "Disa_ble sticky keys if two keys are pressed together"
+msgstr "Atslēgt lipī_gos taustiņus, ja divi taustiņi nospiesti reizē"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:40
+msgid "_Only accept long keypresses"
+msgstr "Ņemt vērā _tikai ilgi nospiestus taustiņus"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:42
+msgid "_Ignore fast duplicate keypresses"
+msgstr "_Ignorēt ātrus taustiņu atkārtojumus"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:43
+msgid "D_elay:"
+msgstr "Aiztur_e:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:44
+msgid "Audio _Feedback..."
+msgstr "Skaņas at_griezeniskā saite..."
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:46
+msgid "_Pointer can be controlled using the keypad"
+msgstr "Kursoru var kontrolēt ar _papildtastatūras bultiņām"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:47
+#: ../capplets/mouse/mate-mouse-properties.ui.h:8
+msgid "_Acceleration:"
+msgstr "_Paātrinājums:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:48
+msgid "Mouse Keys"
+msgstr "Peles taustiņi"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:49
+msgid "_Lock screen to enforce typing break"
+msgstr "S_lēgt ekrānu, lai uzspiestu darba pārtraukumu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:50
+msgid ""
+"Lock screen after a certain duration to help prevent repetitive keyboard use"
+" injuries"
+msgstr "Pēc zināma laika noslēgt ekrānu, lai saudzētu veselību un izvairītos no nepārtraukta darba traumām"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:51
+msgid "_Work interval lasts:"
+msgstr "_Darba intervāls ilgst:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:52
+msgid "_Break interval lasts:"
+msgstr "_Pauzes intervāls ilgst:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:53
+msgid "Duration of work before forcing a break"
+msgstr "Nepārtraukta darba ilgums pirms uzspiestā pārtraukuma"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:54
+msgid "Duration of the break when typing is disallowed"
+msgstr "Pārtraukuma ilgums, kurā nav atļauta drukāšana"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:55
+msgid "minutes"
+msgstr "minūtes"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:56
+msgid "All_ow postponing of breaks"
+msgstr "Atļaut pārtraukumu at_likšanu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:57
+msgid "Check if breaks are allowed to be postponed"
+msgstr "Atzīmējiet, ja pārtraukumus drīkst atlikt"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:58
+msgid "Typing Break"
+msgstr "Drukāšanas pārtraukums"
+
+#: ../capplets/keyboard/mate-keyboard-properties-dialog.ui.h:59
+msgid "_Type to test settings:"
+msgstr "Vieta ies_tatījumu pārbaudei:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:1
+msgid "Choose a Layout"
+msgstr "Izvēlieties izkārtojumu"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:2
+msgid "_Variants:"
+msgstr "_Varianti:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:3
+msgid "_Country:"
+msgstr "_Valsts:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:4
+msgid "By _country"
+msgstr "Pē_c valsts"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:5
+msgid "_Language:"
+msgstr "Va_loda:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:6
+msgid "By _language"
+msgstr "Pēc va_lodas"
+
+#: ../capplets/keyboard/mate-keyboard-properties-layout-chooser.ui.h:7
+msgid "Preview:"
+msgstr "Priekšskatījums:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:1
+msgid "Choose a Keyboard Model"
+msgstr "Izvēlieties tastatūras modeli"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:2
+msgid "_Vendors:"
+msgstr "_Piegādātāji:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-model-chooser.ui.h:3
+msgid "_Models:"
+msgstr "_Modeļi:"
+
+#: ../capplets/keyboard/mate-keyboard-properties-options-dialog.ui.h:1
+msgid "Keyboard Layout Options"
+msgstr "Tastatūras izkārtojuma opcijas"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkb.c:85
+msgid "Unknown"
+msgstr "Nezināms"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkblt.c:240
+msgid "Layout"
+msgstr "Izkārtojums"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbmc.c:173
+msgid "Vendors"
+msgstr "Piegādātāji"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbmc.c:239
+msgid "Models"
+msgstr "Modeļi"
+
+#: ../capplets/keyboard/mate-keyboard-properties-xkbot.c:237
+msgid "Default"
+msgstr "Noklusētais"
+
+#: ../capplets/keyboard/mate-keyboard.desktop.in.in.h:1
+msgid "Keyboard"
+msgstr "Tastatūra"
+
+#: ../capplets/keyboard/mate-keyboard.desktop.in.in.h:2
+msgid "Set your keyboard preferences"
+msgstr "Mainīt tastatūras iestatījumus"
+
+#. TRANSLATORS: don't translate the terms in brackets
+#: ../capplets/mouse/mate-mouse-properties.c:495
+msgid "Specify the name of the page to show (general)"
+msgstr "Norādiet rādāmās lapas nosaukumu (general)"
+
+#: ../capplets/mouse/mate-mouse-properties.c:500
+msgid "- MATE Mouse Preferences"
+msgstr "- MATE peles iestatījumi"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:1
+msgid "Mouse Preferences"
+msgstr "Peles iestatījumi"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:2
+msgid "Mouse Orientation"
+msgstr "Peles orientācija"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:3
+msgid "_Right-handed"
+msgstr "Lab_ročiem"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:4
+msgid "_Left-handed"
+msgstr "_Kreiļiem"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:5
+msgid "Locate Pointer"
+msgstr "Rādīt kursoru"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:6
+msgid "Sh_ow position of pointer when the Control key is pressed"
+msgstr "Nospiežot C_ontrol taustiņu, parādīt kursora atrašanās vietu"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:7
+msgid "Pointer Speed"
+msgstr "Kursora ātrums"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:9
+msgid "_Sensitivity:"
+msgstr "_Jutība:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:12
+msgid "Low"
+msgstr "Zema"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:13
+msgid "High"
+msgstr "Augsta"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:14
+msgid "Drag and Drop"
+msgstr "Vilkt un nomest"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:15
+msgid "Thr_eshold:"
+msgstr "Sli_eksnis:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:19
+msgid "Double-Click Timeout"
+msgstr "Dubultklikšķa noildze"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:20
+msgid "_Timeout:"
+msgstr "_Noildze:"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:23
+msgid ""
+"To test your double-click settings, try to double-click on the light bulb."
+msgstr "Lai pārbaudītu dubultklikšķa iestatījumus, izmēģiniet to uz spuldzītes."
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:25
+msgid "Disable _touchpad while typing"
+msgstr "Atslēgt skārienpaliktni, kad raksta"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:26
+msgid "Enable _mouse clicks with touchpad"
+msgstr "Ieslēgt klikšķus uz _skārienpaliktņa"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:27
+msgid "Scrolling"
+msgstr "Ritināšana"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:28
+msgid "_Disabled"
+msgstr "_Atslēgts"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:29
+msgid "_Edge scrolling"
+msgstr "_Malas ritināšana"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:30
+msgid "Two-_finger scrolling"
+msgstr "Div_pirkstu ritināšana"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:31
+msgid "Enable h_orizontal scrolling"
+msgstr "Ieslēgt h_orizontālo ritināšanu"
+
+#: ../capplets/mouse/mate-mouse-properties.ui.h:32
+msgid "Touchpad"
+msgstr "Skārienpaliktnis"
+
+#: ../capplets/mouse/mate-settings-mouse.desktop.in.in.h:1
+msgid "Mouse"
+msgstr "Pele"
+
+#: ../capplets/mouse/mate-settings-mouse.desktop.in.in.h:2
+msgid "Set your mouse preferences"
+msgstr "Mainīt peles iestatījumus"
+
+#: ../capplets/network/mate-network-properties.desktop.in.in.h:1
+msgid "Network Proxy"
+msgstr "Tīkla starpniekserveris"
+
+#: ../capplets/network/mate-network-properties.desktop.in.in.h:2
+msgid "Set your network proxy preferences"
+msgstr "Mainīt tīkla starpniekservera iestatījumus"
+
+#: ../capplets/network/mate-network-properties.ui.h:1
+msgid "HTTP Proxy Details"
+msgstr "HTTP starpniekservera detaļas"
+
+#: ../capplets/network/mate-network-properties.ui.h:2
+msgid "<b>_Use authentication</b>"
+msgstr "<b>_Lietot autentifikāciju</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:3
+msgid "U_sername:"
+msgstr "Lietotāj_vārds:"
+
+#: ../capplets/network/mate-network-properties.ui.h:4
+msgid "_Password:"
+msgstr "Pa_role:"
+
+#: ../capplets/network/mate-network-properties.ui.h:5
+msgid "Network Proxy Preferences"
+msgstr "Tīkla starpniekservera iestatījumi"
+
+#: ../capplets/network/mate-network-properties.ui.h:6
+msgid "<b>Di_rect internet connection</b>"
+msgstr "<b>Tiešs Inte_rnet pieslēgums</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:7
+msgid "<b>_Manual proxy configuration</b>"
+msgstr "<b>_Pašrocīga starpniekservera konfigurācija</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:8
+msgid "H_TTP proxy:"
+msgstr "H_TTP starpniekserveris:"
+
+#: ../capplets/network/mate-network-properties.ui.h:9
+msgid "_Secure HTTP proxy:"
+msgstr "_Drošā HTTP starpserveris:"
+
+#: ../capplets/network/mate-network-properties.ui.h:10
+msgid "_FTP proxy:"
+msgstr "_FTP starpserveris:"
+
+#: ../capplets/network/mate-network-properties.ui.h:11
+msgid "S_ocks host:"
+msgstr "S_ocks serveris:"
+
+#: ../capplets/network/mate-network-properties.ui.h:12
+msgid "Port:"
+msgstr "Ports:"
+
+#: ../capplets/network/mate-network-properties.ui.h:13
+msgid "_Details"
+msgstr "_Detaļas"
+
+#: ../capplets/network/mate-network-properties.ui.h:14
+msgid "<b>_Automatic proxy configuration</b>"
+msgstr "<b>_Automātiska starpniekservera konfigurācija</b>"
+
+#: ../capplets/network/mate-network-properties.ui.h:15
+msgid "Autoconfiguration _URL:"
+msgstr "Autokonfigurācijas _URL:"
+
+#: ../capplets/network/mate-network-properties.ui.h:16
+msgid "Proxy Configuration"
+msgstr "Starpniekservera konfigurācija"
+
+#: ../capplets/network/mate-network-properties.ui.h:17
+msgid "Ignore Host List"
+msgstr "Ignorējamo datoru saraksts"
+
+#: ../capplets/network/mate-network-properties.ui.h:18
+msgid "Ignored Hosts"
+msgstr "Ignorētie datori"
+
+#: ../capplets/windows/mate-metacity-support.c:40
+msgid "Metacity Preferences"
+msgstr ""
+
+#. Compositing manager
+#: ../capplets/windows/mate-metacity-support.c:51
+#: ../capplets/windows/mate-window-properties.c:333
+msgid "Compositing Manager"
+msgstr "Kompozicionēšanas pārvaldnieks"
+
+#: ../capplets/windows/mate-metacity-support.c:58
+#: ../capplets/windows/mate-window-properties.c:339
+msgid "Enable software _compositing window manager"
+msgstr "Ieslēgt programmatūras _kompozicionēšanas logu pārvaldnieku"
+
+#: ../capplets/windows/mate-window-properties.c:218
+msgid "The current window manager is unsupported"
+msgstr ""
+
+#. Window
+#: ../capplets/windows/mate-window-properties.c:304
+msgid "Window Preferences"
+msgstr "Loga iestatījumi"
+
+#: ../capplets/windows/mate-window-properties.c:323
+msgid "Behaviour"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:327
+msgid "Placement"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:340
+msgid "Disable _thumbnails in Alt-Tab"
+msgstr "Atslēgt _sīktēlus iekš Alt-Tab"
+
+#. New Windows
+#: ../capplets/windows/mate-window-properties.c:348
+msgid "New Windows"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:352
+msgid "Center _new windows"
+msgstr ""
+
+#. Window Snapping
+#: ../capplets/windows/mate-window-properties.c:357
+msgid "Window Snapping"
+msgstr ""
+
+#: ../capplets/windows/mate-window-properties.c:361
+msgid "Enable side by side _tiling"
+msgstr ""
+
+#. Window Selection
+#: ../capplets/windows/mate-window-properties.c:366
+msgid "Window Selection"
+msgstr "Logu izvēle"
+
+#: ../capplets/windows/mate-window-properties.c:375
+msgid "_Select windows when the mouse moves over them"
+msgstr "_Aktivizēt logu, uz kura ir peles kursors"
+
+#: ../capplets/windows/mate-window-properties.c:378
+msgid "_Raise selected windows after an interval"
+msgstr "_Pacelt izvēlēto logu pēc pauzes"
+
+#: ../capplets/windows/mate-window-properties.c:384
+msgid "_Interval before raising:"
+msgstr "_Pauze pirms pacelšanas:"
+
+#: ../capplets/windows/mate-window-properties.c:388
+msgid "seconds"
+msgstr "sekundes"
+
+#. Titlebar Action
+#: ../capplets/windows/mate-window-properties.c:399
+msgid "Titlebar Action"
+msgstr "Virsraksta joslas darbība"
+
+#: ../capplets/windows/mate-window-properties.c:403
+msgid "_Double-click titlebar to perform this action:"
+msgstr "_Dubultklikšķis uz virsraksta joslas nozīmē:"
+
+#. Movement Key
+#: ../capplets/windows/mate-window-properties.c:411
+msgid "Movement Key"
+msgstr "Pārvietošanas taustiņš"
+
+#: ../capplets/windows/mate-window-properties.c:416
+msgid "To move a window, press-and-hold this key then grab the window:"
+msgstr "Lai pārvietotu logu, pieturiet šo taustiņu un velciet logu ar peli:"
+
+#: ../capplets/windows/mate-window-properties.c:427
+#: ../libwindow-settings/marco-window-manager.c:379
+msgid "Roll up"
+msgstr "Uzrullēt"
+
+#: ../capplets/windows/mate-window-properties.c:428
+#: ../libwindow-settings/marco-window-manager.c:380
+msgid "Maximize"
+msgstr "Maksimizēt"
+
+#: ../capplets/windows/mate-window-properties.c:429
+#: ../libwindow-settings/marco-window-manager.c:381
+msgid "Maximize Horizontally"
+msgstr "Maksimizēt horizontāli"
+
+#: ../capplets/windows/mate-window-properties.c:430
+#: ../libwindow-settings/marco-window-manager.c:382
+msgid "Maximize Vertically"
+msgstr "Maksimizēt vertikāli"
+
+#: ../capplets/windows/mate-window-properties.c:431
+#: ../libwindow-settings/marco-window-manager.c:383
+msgid "Minimize"
+msgstr "Minimizēt"
+
+#: ../capplets/windows/mate-window-properties.c:432
+#: ../libwindow-settings/marco-window-manager.c:384
+msgid "None"
+msgstr "Neko"
+
+#: ../capplets/windows/mate-window-properties.c:636
+msgid "_Alt"
+msgstr "_Alt"
+
+#: ../capplets/windows/mate-window-properties.c:642
+msgid "H_yper"
+msgstr "H_iper"
+
+#: ../capplets/windows/mate-window-properties.c:649
+msgid "S_uper (or \"Windows logo\")"
+msgstr "S_uper (vai \"Windows logo\")"
+
+#: ../capplets/windows/mate-window-properties.c:656
+msgid "_Meta"
+msgstr "_Meta"
+
+#: ../capplets/windows/mate-window-properties.desktop.in.in.h:1
+msgid "Windows"
+msgstr "Logi"
+
+#: ../capplets/windows/mate-window-properties.desktop.in.in.h:2
+msgid "Set your window properties"
+msgstr "Iestatīt loga īpašības"
+
+#: ../libwindow-settings/mate-wm-manager.c:321
+#, c-format
+msgid "Window manager \"%s\" has not registered a configuration tool\n"
+msgstr "Logu pārvaldnieks \"%s\" nav reģistrējis konfigurācijas rīku\n"
+
+#: ../shell/control-center.c:61
+#, c-format
+msgid "%s key is empty\n"
+msgstr "%s taustiņš ir tukšs\n"
+
+#: ../shell/control-center.c:161
+msgid "Hide on start (useful to preload the shell)"
+msgstr "Sākumā paslēpt (noder, lai ielādētu čaulu iepriekš)"
+
+#: ../shell/control-center.c:201
+msgid "Filter"
+msgstr "Filtrs"
+
+#: ../shell/control-center.c:201
+msgid "Groups"
+msgstr "Grupas"
+
+#: ../shell/control-center.c:201
+msgid "Common Tasks"
+msgstr "Ierastie uzdevumi"
+
+#: ../shell/control-center.c:203 ../shell/matecc.desktop.in.in.h:1
+#: ../shell/matecc.directory.in.h:1
+msgid "Control Center"
+msgstr "Kontroles centrs"
+
+#: ../shell/matecc.desktop.in.in.h:2
+msgid "The MATE configuration tool"
+msgstr "MATE konfigurācijas rīks"
+
+#: ../typing-break/drw-break-window.c:195
+msgid "_Postpone Break"
+msgstr "_Atlikt pārtraukumu"
+
+#: ../typing-break/drw-break-window.c:256
+msgid "Take a break!"
+msgstr "Laiks atpūtai!"
+
+#: ../typing-break/drwright.c:142
+msgid "_Take a Break"
+msgstr "Laiks a_tpūtai"
+
+#: ../typing-break/drwright.c:513
+#, c-format
+msgid "Take a break now (next in %dm)"
+msgstr "Dodies pārtraukumā (nākamais pēc %dm)"
+
+#: ../typing-break/drwright.c:515
+#, c-format
+msgid "%d minute until the next break"
+msgid_plural "%d minutes until the next break"
+msgstr[0] "%d minūte līdz nākamajam pārtraukumam"
+msgstr[1] "%d minūtes līdz nākamajam pārtraukumam"
+msgstr[2] "%d minūšu līdz nākamajam pārtraukumam"
+
+#: ../typing-break/drwright.c:521
+#, c-format
+msgid "Take a break now (next in less than one minute)"
+msgstr "Dodies pārtraukumā (nākamais pēc mazāk kā vienas minūtes)"
+
+#: ../typing-break/drwright.c:523
+#, c-format
+msgid "Less than one minute until the next break"
+msgstr "Mazāk par vienu minūti līdz nākamajam pārtraukumam"
+
+#: ../typing-break/drwright.c:613
+#, c-format
+msgid ""
+"Unable to bring up the typing break properties dialog with the following "
+"error: %s"
+msgstr "Neizdevās parādīt drukāšanas pārtraukumu iestatījumu logu. Kļūda: %s"
+
+#: ../typing-break/drwright.c:630
+msgid "Written by Richard Hult <richard@imendio.com>"
+msgstr "Programmētājs: Richard Hult <richard@imendio.com>"
+
+#: ../typing-break/drwright.c:631
+msgid "Eye candy added by Anders Carlsson"
+msgstr "Noformētājs: Anders Carlsson"
+
+#: ../typing-break/drwright.c:640
+msgid "A computer break reminder."
+msgstr "Datora pārtraukuma atgādinātājs."
+
+#: ../typing-break/drwright.c:642
+msgid "translator-credits"
+msgstr "Raivis Dejus <orvils@gmail.com> Anita Reitere <nitalynx@gmail.com>"
+
+#: ../typing-break/main.c:67
+msgid "Enable debugging code"
+msgstr "Ieslēgt atkļūdošans kodu"
+
+#: ../typing-break/main.c:69
+msgid "Don't check whether the notification area exists"
+msgstr "Nepārbaudīt, vai eksistē paziņojumu apgabals"
+
+#: ../typing-break/main.c:95
+msgid "Typing Monitor"
+msgstr "Drukāšanas pārraugs"
+
+#: ../typing-break/main.c:112
+msgid ""
+"The typing monitor uses the notification area to display information. You "
+"don't seem to have a notification area on your panel. You can add it by "
+"right-clicking on your panel and choosing 'Add to panel', selecting "
+"'Notification area' and clicking 'Add'."
+msgstr "Drukāšanas pārraugs rāda informāciju paziņojumu laukā. Šķiet, uz jūsu paneļa tāda nav. To var pievienot, klikšķinot ar labo peles taustiņu uz paneļa un izvēloties 'Pievienot panelim', tad 'Paziņojumu lauks', un tad 'Pievienot'."
+
+#: ../font-viewer/font-view.c:303
+msgid "Name:"
+msgstr "Nosaukums:"
+
+#: ../font-viewer/font-view.c:306
+msgid "Style:"
+msgstr "Stils:"
+
+#: ../font-viewer/font-view.c:319
+msgid "Type:"
+msgstr "Tips:"
+
+#: ../font-viewer/font-view.c:323
+msgid "Size:"
+msgstr "Izmērs:"
+
+#: ../font-viewer/font-view.c:367 ../font-viewer/font-view.c:380
+msgid "Version:"
+msgstr "Versija:"
+
+#: ../font-viewer/font-view.c:371 ../font-viewer/font-view.c:382
+msgid "Copyright:"
+msgstr "Autortiesības:"
+
+#: ../font-viewer/font-view.c:375
+msgid "Description:"
+msgstr "Apraksts:"
+
+#: ../font-viewer/font-view.c:457
+msgid "Installed"
+msgstr "Instalēts"
+
+#: ../font-viewer/font-view.c:460
+msgid "Install Failed"
+msgstr "Instalēšana neizdevās"
+
+#: ../font-viewer/font-view.c:533
+#, c-format
+msgid "usage: %s fontfile\n"
+msgstr "pielietojums: %s fonta_fails\n"
+
+#: ../font-viewer/font-view.c:606
+msgid "I_nstall Font"
+msgstr "I_nstalēt fontu"
+
+#: ../font-viewer/mate-font-viewer.desktop.in.in.h:1
+msgid "Font Viewer"
+msgstr "Fontu pārlūks"
+
+#: ../font-viewer/mate-font-viewer.desktop.in.in.h:2
+msgid "Preview fonts"
+msgstr "Priekšskatīt fontus"
+
+#: ../font-viewer/font-thumbnailer.c:245
+msgid "Text to thumbnail (default: Aa)"
+msgstr "Sīktēla teksts (noklusētais: Aa)"
+
+#: ../font-viewer/font-thumbnailer.c:245
+msgid "TEXT"
+msgstr "TEKSTS"
+
+#: ../font-viewer/font-thumbnailer.c:247
+msgid "Font size (default: 64)"
+msgstr "Fonta izmērs (noklusētais: 64)"
+
+#: ../font-viewer/font-thumbnailer.c:247
+msgid "SIZE"
+msgstr "IZMĒRS"
+
+#: ../font-viewer/font-thumbnailer.c:249
+msgid "FONT-FILE OUTPUT-FILE"
+msgstr "FONTA_FAILS IZVADES_FAILS"
+
+#: ../font-viewer/font-thumbnailer.c:272
+#, c-format
+msgid "Error parsing arguments: %s\n"
+msgstr "Kļūda, apstrādājot argumentus: %s\n"
+
+#: ../libslab/app-shell.c:761
+#, c-format
+msgid "Your filter \"%s\" does not match any items."
+msgstr "Jūsu filtram \"%s\" neatbilst neviens objekts."
+
+#: ../libslab/app-shell.c:763
+msgid "No matches found."
+msgstr "Nav sakritību."
+
+#: ../libslab/app-shell.c:864
+msgid "New Applications"
+msgstr "Jauna lietotne"
+
+#: ../libslab/app-shell.c:919
+msgid "Other"
+msgstr "Cita"
+
+#. make start action
+#: ../libslab/application-tile.c:340
+#, c-format
+msgid "Start %s"
+msgstr "Palaist %s"
+
+#: ../libslab/application-tile.c:361
+msgid "Help"
+msgstr "Palīdzība"
+
+#: ../libslab/application-tile.c:629 ../libslab/document-tile.c:735
+msgid "Remove from Favorites"
+msgstr "Izņemt no izlases"
+
+#: ../libslab/application-tile.c:631 ../libslab/document-tile.c:737
+msgid "Add to Favorites"
+msgstr "Pievienot izlasei"
+
+#: ../libslab/application-tile.c:716
+msgid "Remove from Startup Programs"
+msgstr "Izņemt no Sākuma programmu saraksta"
+
+#: ../libslab/application-tile.c:718
+msgid "Add to Startup Programs"
+msgstr "Pievienot Sākuma programmu sarakstam"
+
+#: ../libslab/bookmark-agent.c:1091
+msgid "New Spreadsheet"
+msgstr "Jauna tabullapa"
+
+#: ../libslab/bookmark-agent.c:1096
+msgid "New Document"
+msgstr "Jauns dokuments"
+
+#: ../libslab/bookmark-agent.c:1149
+msgctxt "Home folder"
+msgid "Home"
+msgstr "Mājas"
+
+#: ../libslab/bookmark-agent.c:1156
+msgid "Documents"
+msgstr "Dokumenti"
+
+#: ../libslab/bookmark-agent.c:1164
+msgid "Desktop"
+msgstr "Darbvirsma"
+
+#: ../libslab/bookmark-agent.c:1171
+msgid "File System"
+msgstr "Failu sistēma"
+
+#: ../libslab/bookmark-agent.c:1175
+msgid "Network Servers"
+msgstr "Tīkla serveri"
+
+#: ../libslab/bookmark-agent.c:1204
+msgid "Search"
+msgstr "Meklēt"
+
+#. make open with default action
+#: ../libslab/directory-tile.c:176
+#, c-format
+msgid "<b>Open</b>"
+msgstr ""
+
+#. make rename action
+#: ../libslab/directory-tile.c:195 ../libslab/document-tile.c:241
+msgid "Rename..."
+msgstr ""
+
+#: ../libslab/directory-tile.c:209 ../libslab/directory-tile.c:218
+#: ../libslab/document-tile.c:255 ../libslab/document-tile.c:264
+msgid "Send To..."
+msgstr ""
+
+#. make move to trash action
+#: ../libslab/directory-tile.c:233 ../libslab/document-tile.c:290
+msgid "Move to Trash"
+msgstr ""
+
+#: ../libslab/directory-tile.c:243 ../libslab/directory-tile.c:453
+#: ../libslab/document-tile.c:300 ../libslab/document-tile.c:851
+msgid "Delete"
+msgstr ""
+
+#: ../libslab/directory-tile.c:530 ../libslab/document-tile.c:1014
+#, c-format
+msgid "Are you sure you want to permanently delete \"%s\"?"
+msgstr ""
+
+#: ../libslab/directory-tile.c:531 ../libslab/document-tile.c:1015
+msgid "If you delete an item, it is permanently lost."
+msgstr ""
+
+#: ../libslab/document-tile.c:200
+#, c-format
+msgid "Open with \"%s\""
+msgstr ""
+
+#: ../libslab/document-tile.c:214
+msgid "Open with Default Application"
+msgstr ""
+
+#: ../libslab/document-tile.c:225
+msgid "Open in File Manager"
+msgstr ""
+
+#. clean item from menu
+#: ../libslab/document-tile.c:309
+msgid "Remove from recent menu"
+msgstr ""
+
+#. clean all the items from menu
+#: ../libslab/document-tile.c:317
+msgid "Purge all the recent items"
+msgstr ""
+
+#: ../libslab/document-tile.c:631
+msgid "?"
+msgstr ""
+
+#: ../libslab/document-tile.c:638
+msgid "%l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:646
+msgid "Today %l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:656
+msgid "Yesterday %l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:668
+msgid "%a %l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:676
+msgid "%b %d %l:%M %p"
+msgstr ""
+
+#: ../libslab/document-tile.c:678
+msgid "%b %d %Y"
+msgstr ""
+
+#: ../libslab/search-bar.c:255
+msgid "Find Now"
+msgstr "Meklēt"
+
+#: ../libslab/system-tile.c:126
+#, c-format
+msgid "<b>Open %s</b>"
+msgstr "<b>Atvērt %s</b>"
+
+#: ../libslab/system-tile.c:139
+#, c-format
+msgid "Remove from System Items"
+msgstr "Aizvākt no sistēmas vienībām"

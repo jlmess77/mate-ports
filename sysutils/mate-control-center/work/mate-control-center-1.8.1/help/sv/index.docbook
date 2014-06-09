@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY VERSION "1.5.7">
+]>
+<article id="index" lang="sv">
+  
+  <articleinfo>
+    <abstract role="description">
+      <para>MATE-kontrollpanelen tillhandahåller en central plats för användaren att konfigurera sitt MATE-skrivbord. Det låter dig att konfigurera allt från beteendet för dina fönsterramar till standardtypsnittstypen.</para>
+    </abstract>
+    <title>Kontrollpanel</title>
+    <authorgroup>
+      <author lang="en">
+	<firstname>Kevin</firstname><surname>Breit</surname>
+      </author>
+    </authorgroup>
+    <copyright lang="en">
+      <year>2001, 2002</year>
+      <holder>Ximian, Inc.</holder>
+    </copyright>
+
+    <publisher role="maintainer">
+      <publishername>Dokumentationsprojekt för MATE</publishername>
+    </publisher>
+    
+    <revhistory>
+      <revision lang="en"> 
+        <revnumber>2.14</revnumber> 
+        <date>2006-03</date> 
+      </revision> 
+    </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para lang="en">
+	Permission is granted to copy, distribute and/or modify this document
+        under the terms of the
+        <ulink type="help" url="mate-help:fdl">
+          <citetitle>
+            GNU Free Documentation License
+          </citetitle>
+        </ulink>, Version 1.1 or any later version
+        published by the Free Software Foundation with no Invariant Sections,
+        no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+        can be found <ulink type="help" url="mate-help:fdl">here</ulink>.
+      </para>
+      <para>Många av namnen som används av företag för att urskilja sina produkter och tjänster anses som varumärken. Där dessa namn dyker upp i någon MATE-dokumentation, och att dessa varumärken är identifierade av medlemmarna i MATE:s dokumentationsprojekt, skrivs de ut med versaler eller med inledande versal.</para>
+    </legalnotice>
+
+    <releaseinfo>Denna handbok beskriver version 1.5.7 av MATE-kontrollpanelen.</releaseinfo>
+  </articleinfo>
+  
+  <sect1 id="intro">
+    <title>Introduktion</title>
+    <para><application>MATE-kontrollpanelen</application> tillhandahåller ett enda fönster från vilken alla inställningsverktyg kan startas.</para>
+    <para>För att starta <application>MATE-kontrollpanelen</application>, skriv <command>mate-control-center</command> i ett terminalfönster.</para>
+    <para>För hjälp att använda inställningsverktyg, se <ulink type="help" url="help:user-guide?prefs">användarguiden</ulink>.</para>
+  </sect1>
+  
+  <sect1 id="matecc-interface">
+    <title>Användning</title>
+    <para><application>MATE-kontrollpanelen</application> visar ikoner för alla inställningsverktyg som är installerade på ditt system i ett fönster. Välj ett inställningsverktyg för att se dess beskrivning i statusraden.</para>
+    <para>För att öppna ett inställningsverktyg, dubbelklicka på dess ikon.</para>
+  </sect1>
+</article>

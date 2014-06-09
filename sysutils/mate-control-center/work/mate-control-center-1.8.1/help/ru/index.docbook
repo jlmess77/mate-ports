@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY VERSION "1.5.7">
+]>
+<article id="index" lang="ru">
+  
+  <articleinfo>
+    <abstract role="description">
+      <para>Центр управления MATE позволяет легко и быстро настроить рабочую среду MATE по вашему вкусу. Здесь вы можете изменить все необходимые настройки от поведения границ окон до шрифта по умолчанию.</para>
+    </abstract>
+    <title>Центр управления</title>
+    <authorgroup>
+      <author lang="en">
+	<firstname>Kevin</firstname><surname>Breit</surname>
+      </author>
+    </authorgroup>
+    <copyright lang="en">
+      <year>2001, 2002</year>
+      <holder>Ximian, Inc.</holder>
+    </copyright>
+
+    <publisher role="maintainer">
+      <publishername lang="en">MATE Documentation Project</publishername>
+    </publisher>
+    
+    <revhistory>
+      <revision lang="en"> 
+        <revnumber>2.14</revnumber> 
+        <date>2006-03</date> 
+      </revision> 
+    </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para lang="en">
+	Permission is granted to copy, distribute and/or modify this document
+        under the terms of the
+        <ulink type="help" url="mate-help:fdl">
+          <citetitle>
+            GNU Free Documentation License
+          </citetitle>
+        </ulink>, Version 1.1 or any later version
+        published by the Free Software Foundation with no Invariant Sections,
+        no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license
+        can be found <ulink type="help" url="mate-help:fdl">here</ulink>.
+      </para>
+      <para>Многие из названий, используемых компаниями, помечены торговыми марками с целью определить их продукты и услуги. При появлении торговых марок в документации MATE они печатаются большими буквами или с заглавной буквы.</para>
+    </legalnotice>
+
+    <releaseinfo>Документация описывает Центр Управления MATE версии 1.5.7.</releaseinfo>
+  </articleinfo>
+  
+  <sect1 id="intro">
+    <title>Введение</title>
+    <para><application>Центр Управления MATE</application> является единым окном, из которого можно запустить любые утилиты для настройки.</para>
+    <para>Для запуска <application>Центр Управления MATE</application> напишите <command>mate-control-center</command> в окне терминала.</para>
+    <para>Для получения дополнительной информации по использованию утилит настройки обратитесь к <ulink type="help" url="help:user-guide?prefs">Руководству пользователя</ulink>.</para>
+  </sect1>
+  
+  <sect1 id="matecc-interface">
+    <title>Использование</title>
+    <para><application>Центр Управления MATE</application> показывает вам иконки всех установленных в вашей системе утилит настройки. Выберите утилиту настройки, чтобы увидеть ее описание в строке статуса.</para>
+    <para>Для открытия утилиты настройки дважды кликните на ее иконке.</para>
+  </sect1>
+</article>
