@@ -3,13 +3,13 @@
 	longer conflict.
   2) Remove directories from gnomehier such as mateconf and etc.
 
-- MATE has been updated to 1.6.x, but keep update those ports when upstream
+- MATE has been updated to 1.8.x, but keep update those ports when upstream
   update one of MATE packages.
 
 - Make it bugs free as much as possible.
 
 - Add extra packages if you think it's useful.
-  See here: http://wiki.mate-desktop.org/status:1.6#mate_packages
+  See here: http://wiki.mate-desktop.org/status:1.8#mate_packages
 
 - Merge mate-ports into FreeBSD ports tree when it's stable.
 
@@ -17,50 +17,3 @@
 
 - Document in the bsd.mate.mk.
 
-
-**done** -Ports that need to be recopied. The single space means that it's done.
-
-Base (x11/mate-base):
-------------------------------
- devel/gnome-common -> devel/mate-common
- textproc/gnome-doc-utils -> textproc/mate-doc-utils
- security/libgnome-keyring -> security/libmatekeyring
- security/gnome-keyring -> security/mate-keyring
- x11/libgnomekbd -> x11/libmatekbd
- net/libgweather -> net/libmateweather
- misc/gnome-icon-theme -> x11-themes/mate-icon-theme
- x11/zenity -> x11/mate-dialogs
- x11/gnome-desktop -> x11/mate-desktop
- x11-fm/nautilus -> x11-fm/mate-file-manager
- x11-toolkits/libwnck -> x11-toolkits/libmatewnck
- deskutils/notification-daemon -> deskutils/mate-notification-daemon
- x11-themes/gnome-backgrounds -> x11-themes/mate-backgrounds
- x11/gnome-menus -> x11/mate-menus
- x11-wm/metacity -> x11-wm/mate-window-manager
- sysutils/polkit-gnome -> sysutils/mate-polkit
- sysutils/gnome-settings-daemon -> sysutils/mate-settings-daemon
- sysutils/gnome-control-center -> sysutils/mate-control-center
- x11/gnome-panel -> x11/mate-panel
- x11/gnome-session -> x11/mate-session-manager
- x11-themes/gnome-themes -> x11-themes/mate-themes
-------------------------------
-
-Extras (x11/mate):
-------------------------------
- editors/gedit -> editors/mate-text-editor
- x11/gnome-terminal -> x11/mate-terminal
- x11/gnome-screensaver -> x11/mate-screensaver
- math/gcalctool -> math/mate-calc
- deskutils/gnome-utils -> deskutils/mate-utils
- sysutils/gnome-system-monitor -> sysutils/mate-system-monitor
- graphics/eog -> graphics/mate-image-viewer
- archivers/file-roller -> archivers/mate-file-archiver
- graphics/evince -> graphics/mate-document-viewer
- audio/gnome-media -> audio/mate-media
- sysutils/gnome-power-manager -> sysutils/mate-power-manager
- deskutils/alacarte -> deskutils/mate-menu-editor
- deskutils/gucharmap -> deskutils/mate-character-map
- x11/gnome-applets -> x11/mate-applets
- deskutils/nautilus-open-terminal -> deskutils/mate-file-manager-open-terminal
- x11-themes/mate-icon-theme-faenza
-------------------------------
