@@ -2738,17 +2738,6 @@ share/themes/BlackMATE/gtk-3.0/assets/scale-slider-marks-below-vertical-insensit
 share/themes/BlackMATE/gtk-3.0/assets/scale-slider-vertical-dark.svg
 share/themes/BlackMATE/gtk-3.0/assets/scale-slider-vertical-insensitive-dark.svg
 share/themes/BlackMATE/gtk-3.0/assets/sidebar-radio-checked-dark.svg
-share/themes/BlackMATE/gtk-3.0/assets/sidebar-radio-prelight.svg
-share/themes/BlackMATE/gtk-3.0/assets/sidebar-radio-selected-dark.svg
-share/themes/BlackMATE/gtk-3.0/assets/sidebar-radio-selected-prelight.svg
-share/themes/BlackMATE/gtk-3.0/assets/switch-slider-grip.svg
-share/themes/BlackMATE/gtk-3.0/assets/treeview-border-dark.svg
-share/themes/BlackMATE/gtk-3.0/assets/treeview-focus-border-dark.svg
-share/themes/BlackMATE/gtk-3.0/assets/trough-border-horizontal-dark.svg
-share/themes/BlackMATE/gtk-3.0/assets/trough-border-horizontal-dark1.svg
-share/themes/BlackMATE/gtk-3.0/assets/trough-border-switch-dark.svg
-share/themes/BlackMATE/gtk-3.0/assets/trough-border-vertical-dark.svg
-share/themes/BlackMATE/gtk-3.0/assets/trough-border-vertical-dark1.svg
 share/themes/BlackMATE/gtk-3.0/gtk-dark.css
 share/themes/BlackMATE/gtk-3.0/gtk-main-dark.css
 share/themes/BlackMATE/gtk-3.0/gtk-main.css
@@ -2838,7 +2827,6 @@ share/themes/BlueMenta/gtk-2.0/apps/caja.rc
 share/themes/BlueMenta/gtk-2.0/apps/chromium.rc
 share/themes/BlueMenta/gtk-2.0/apps/combo_down.png
 share/themes/BlueMenta/gtk-2.0/apps/dummy.png
-share/themes/BlueMenta/gtk-2.0/apps/pcmanfm.rc
 share/themes/BlueMenta/gtk-2.0/apps/pluma.rc
 share/themes/BlueMenta/gtk-2.0/apps/stock_back.png
 share/themes/BlueMenta/gtk-2.0/apps/stock_find.png
@@ -3574,7 +3562,6 @@ share/themes/Menta/gtk-2.0/apps/caja.rc
 share/themes/Menta/gtk-2.0/apps/chromium.rc
 share/themes/Menta/gtk-2.0/apps/combo_down.png
 share/themes/Menta/gtk-2.0/apps/dummy.png
-share/themes/Menta/gtk-2.0/apps/pcmanfm.rc
 share/themes/Menta/gtk-2.0/apps/pluma.rc
 share/themes/Menta/gtk-2.0/apps/stock_back.png
 share/themes/Menta/gtk-2.0/apps/stock_find.png
