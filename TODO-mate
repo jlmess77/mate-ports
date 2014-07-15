@@ -17,3 +17,5 @@
 
 - Document in the bsd.mate.mk.
 
+- Fold bsd.mate.mk into USE_GNOME. When bsd.mate.mk only contains mate
+  components and no ltverhack etc.
