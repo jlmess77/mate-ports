@@ -26,7 +26,6 @@ USE_GNOME=	glib20 gnomehier gtk20 intlhack introspection:build \
 		libxml2 pango
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-#CONFIGURE_ENV=	LIBPNG="-L${LOCALBASE}/lib -lpng -lz"
 CONFIGURE_ARGS=	--disable-packagekit \
 		--with-gtk=2.0 \
 		--disable-gtk-doc \
