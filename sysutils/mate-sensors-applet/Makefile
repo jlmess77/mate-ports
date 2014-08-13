@@ -23,12 +23,11 @@ RUN_DEPENDS=	gucharmap:${PORTSDIR}/deskutils/gucharmap
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig tar:xz
+USES=		gettext gmake libtool pathfix pkgconfig python tar:xz
 USE_MATE=	panel 
 USE_XORG=	x11
 USE_GNOME=	gdkpixbuf2 gnomehier gtksourceview2 introspection:build \
 		libxml2 libxslt pygobject pygobject3 libwnck intlhack
-#USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes

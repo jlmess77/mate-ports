@@ -12,9 +12,9 @@ COMMENT=	Implementation of the FreeDesktop Desktop Menu Spec
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig tar:xz
+USES=		gettext gmake libtool pathfix pkgconfig \
+		python tar:xz
 USE_GNOME=	glib20 gnomehier intlhack introspection:build
-USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

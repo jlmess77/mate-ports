@@ -17,12 +17,11 @@ LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig tar:xz
+USES=		gettext gmake libtool pathfix pkgconfig python tar:xz
 USE_MATE=	desktop libmateweather  menus
 USE_XORG=	ice sm x11 xau xrandr
 USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
 		intlhack introspection:build librsvg2 pango libwnck
-USE_PYTHON=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-network-manager \

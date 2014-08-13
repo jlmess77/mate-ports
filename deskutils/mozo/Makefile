@@ -12,10 +12,9 @@ COMMENT=	Editor for the freedesktop.org menu specification
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig tar:xz
+USES=		gettext gmake pathfix pkgconfig python:2 tar:xz
 USE_MATE=	menus
 USE_GNOME=	intlhack pygobject pygtk2
-USE_PYTHON=	yes
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
