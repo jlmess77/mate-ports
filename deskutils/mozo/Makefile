@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team
-# $FreeBSD$
+# $FreeBSD: head/deskutils/mozo/Makefile 367830 2014-09-10 13:11:28Z bapt $
 
 PORTNAME=	mozo
 PORTVERSION=	1.8.0

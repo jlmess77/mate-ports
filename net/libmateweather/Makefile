@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/net/libmateweather/Makefile 367830 2014-09-10 13:11:28Z bapt $
 
 PORTNAME=	libmateweather
 PORTVERSION=	1.8.0

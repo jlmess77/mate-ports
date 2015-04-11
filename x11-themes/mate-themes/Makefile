@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/x11-themes/mate-themes/Makefile 367830 2014-09-10 13:11:28Z bapt $
 
 PORTNAME=	mate-themes
 PORTVERSION=	1.8.1

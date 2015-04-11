@@ -1,8 +1,8 @@
 # Created by: ade, archie
-# $FreeBSD$
+# $FreeBSD: head/x11-fm/caja/Makefile 370157 2014-10-06 12:38:23Z bapt $
 
 PORTNAME=	caja
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.2
 CATEGORIES=	x11-fm mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -22,7 +22,7 @@ USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
 		shared-mime-info tar:xz
 USE_MATE=	desktop icontheme:run
 USE_XORG=	ice x11 xrender
-USE_GNOME=	glib20 gnomehier gtk20 intlhack introspection:build \
+USE_GNOME=	glib20 gtk20 intlhack introspection:build \
 		libxml2 pango
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/sysutils/mate-power-manager/Makefile 370164 2014-10-06 13:04:52Z bapt $
 
 PORTNAME=	mate-power-manager
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -16,16 +16,15 @@ LIB_DEPENDS=	libcanberra-gtk.so:${PORTSDIR}/audio/libcanberra \
 		libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		libunique-1.0.so:${PORTSDIR}/x11-toolkits/unique \
 		libupower-glib.so:${PORTSDIR}/sysutils/upower \
-		libexecinfo.so:${PORTSDIR}/devel/libexecinfo \
 		libnotify.so:${PORTSDIR}/devel/libnotify
 RUN_DEPENDS=	pkexec:${PORTSDIR}/sysutils/polkit
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake libtool pathfix pkgconfig tar:xz
+USES=		execinfo gettext gmake libtool pathfix pkgconfig tar:xz
 USE_MATE=	panel
 USE_XORG=	x11 xext xproto xrandr xrender
-USE_GNOME=	cairo glib20 gnomehier gtk20 intlhack
+USE_GNOME=	cairo glib20 gtk20 intlhack
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CONFIGURE_ENV=	LIBS="-lexecinfo"

@@ -1,8 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/graphics/atril/Makefile 378348 2015-02-03 12:28:23Z kwm $
 
 PORTNAME=	atril
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
+PORTREVISION=	3
 CATEGORIES=	graphics print mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -23,9 +24,9 @@ PORTSCOUT=	limitw:1,even
 
 USES=		desktop-file-utils gettext gmake libtool pathfix \
 		pkgconfig tar:xz
-USE_MATE=	icontheme caja
+USE_MATE=	icontheme
 USE_XORG=	sm
-USE_GNOME=	cairo gnomehier gtk20 intlhack libxml2
+USE_GNOME=	cairo gtk20 intlhack libxml2
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0 \

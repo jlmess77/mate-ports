@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/x11/mate-applets/Makefile 382163 2015-03-24 19:37:43Z marino $
 
 PORTNAME=	mate-applets
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -26,15 +26,15 @@ PORTSCOUT=	limitw:1,even
 USES=		gettext gmake libtool pathfix pkgconfig python tar:xz
 USE_MATE=	desktop icontheme libmateweather panel polkit settingsdaemon
 USE_XORG=	x11
-USE_GNOME=	gdkpixbuf2 gnomehier gtksourceview2 introspection:build \
+USE_GNOME=	gdkpixbuf2 gtksourceview2 introspection:build \
 		libxml2 libxslt pygobject pygobject3 libwnck intlhack
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 CONFIGURE_ARGS=	--disable-networkmanager
 CONFIGURE_ENV=	OS_SYS="/usr/include"
-CPPFLAGS+=	-I${LOCALBASE}/include ${PTHREAD_CFLAGS}
-LDFLAGS+=	-L${LOCALBASE}/lib ${PTHREAD_LIBS}
+CPPFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-lpthread -L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.mate.panel.applet.charpick.gschema.xml \
