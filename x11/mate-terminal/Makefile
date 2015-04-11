@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/x11/mate-terminal/Makefile 370156 2014-10-06 12:32:40Z bapt $
 
 PORTNAME=	mate-terminal
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -16,7 +16,7 @@ PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake pathfix pkgconfig tar:xz
 USE_XORG=	sm x11
-USE_GNOME=	dconf gnomehier gtk20 intlhack vte
+USE_GNOME=	dconf gtk20 intlhack vte
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include

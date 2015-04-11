@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: head/Mk/bsd.mate.mk 367844 2014-09-10 13:53:26Z bapt $
 #	$NetBSD$
 #     $MCom: ports-experimental/Mk/bsd.mate.mk,v 1.13 2012/09/03 17:02:31 mezz Exp $
 #

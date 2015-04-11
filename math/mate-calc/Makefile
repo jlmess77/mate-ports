@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/math/mate-calc/Makefile 375144 2014-12-21 00:32:19Z bapt $
 
 PORTNAME=	mate-calc
 PORTVERSION=	1.8.0
+PORTREVISION=	1
 CATEGORIES=	math mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -14,12 +15,12 @@ BUILD_DEPENDS=	itstool:${PORTSDIR}/textproc/itstool
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig tar:xz
-USE_GNOME=	glib20 gnomehier gtk20 intlhack libxml2
+USES=		gettext gmake pkgconfig tar:xz
+USE_GNOME=	glib20 gtk20 intlhack libxml2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gtk=2.0
 CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+LIBS+=		-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.calc.gschema.xml
 

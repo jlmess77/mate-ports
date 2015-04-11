@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/sysutils/mate-control-center/Makefile 370165 2014-10-06 13:07:40Z bapt $
 
 PORTNAME=	mate-control-center
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.3
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -24,7 +24,7 @@ USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
 		shared-mime-info tar:xz
 USE_MATE=	desktop libmatekbd marco menus settingsdaemon
 USE_XORG=	x11 xcursor xext xxf86misc xft xi xrandr xscrnsaver
-USE_GNOME=	dconf glib20 gnomehier gtk20 intlhack libxml2 librsvg2 \
+USE_GNOME=	dconf glib20 gtk20 intlhack libxml2 librsvg2 \
 		pango
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

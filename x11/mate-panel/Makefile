@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/x11/mate-panel/Makefile 374688 2014-12-13 22:26:15Z des $
 
 PORTNAME=	mate-panel
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 PORTREVISION=	1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
@@ -20,7 +20,7 @@ PORTSCOUT=	limitw:1,even
 USES=		gettext gmake libtool pathfix pkgconfig python tar:xz
 USE_MATE=	desktop libmateweather  menus
 USE_XORG=	ice sm x11 xau xrandr
-USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gnomehier gtk20 \
+USE_GNOME=	cairo dconf gdkpixbuf2 glib20 gtk20 \
 		intlhack introspection:build librsvg2 pango libwnck
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
